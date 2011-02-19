@@ -1,0 +1,6 @@
+#! /usr/bin/lftp -f
+
+slot G
+open gist
+mirror -p -e slot:G httpdocs/
+exit
