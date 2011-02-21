@@ -2,5 +2,5 @@
 
 slot G
 open gist
-mirror -p -e slot:G httpdocs/
+mirror -p -e -X wp-test/ -X blogs/ -X css/ -X img/ -X picture_library/ -X plesk-stat/ -X test/ -X tmp/ -X var/ -X wp-admin/ -X wp-includes/ slot:G httpdocs/
 exit
