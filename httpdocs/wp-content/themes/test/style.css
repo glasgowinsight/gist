@@ -1331,3 +1331,8 @@ code {
 	margin: 10px 1% 10px 1%;
 	float: left;
 }
+
+
+.home div.row {
+  clear:both;
+}
