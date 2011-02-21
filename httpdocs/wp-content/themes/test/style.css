@@ -586,7 +586,6 @@ div.menu li {
 }
 .entry-content,
 .entry-summary {
-	clear: both;
 	padding: 12px 0 0 0;
 }
 #content .entry-summary p:last-child {
@@ -1332,7 +1331,9 @@ code {
 	float: left;
 }
 
-
+.home .post img {
+	float: left;
+}
 .home div.row {
   clear:both;
 }
