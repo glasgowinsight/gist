@@ -53,8 +53,8 @@
 	 *
 	 * Without further ado, the loop:
 	 */ ?>
+<?php $i=0 ?>
 <?php while ( have_posts() ) : the_post(); ?>
-
 <?php /* How to display posts in the Gallery category. */ ?>
 
 	<?php if ( in_category( _x('gallery', 'gallery category slug', 'twentyten') ) ) : ?>
@@ -122,17 +122,21 @@
 <?php /* How to display all other posts. */ ?>
 
 	<?php else : ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-
-			<?php the_post_thumbnail(); ?>
-                        <div class="entry-summary">
-				<?php the_excerpt(); ?>
-			</div><!-- .entry-summary -->
-		</div><!-- #post-## -->
+		<?php if ( $i % 2 == 0): ?><div class="row"><?php endif;?>
+			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+	
+				<?php the_post_thumbnail(); ?>
+	            <div class="entry-summary">
+					<?php the_excerpt(); ?>
+				</div><!-- .entry-summary -->
+			</div><!-- #post-## -->
+		<?php if ( $i % 2 == 1): ?></div><?php endif;?>
         <?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
 
+	<?php $i++ ?>
 <?php endwhile; // End the loop. Whew. ?>
+<?php if ( $i % 2 == 1): ?></div><?php endif;?>
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
