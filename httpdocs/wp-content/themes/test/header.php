@@ -43,6 +43,8 @@
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 
+	wp_enqueue_script("jquery"); 
+	
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which
 	 * generally use this hook to add elements to <head> such
@@ -50,6 +52,12 @@
 	 */
 	wp_head();
 ?>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready( function(){ simpleSlide(); });
+</script>
 </head>
 
 <body <?php body_class(); ?>>
