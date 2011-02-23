@@ -1331,6 +1331,11 @@ code {
 	float: left;
 }
 
+.home .simpleSlide-slide {
+	width: 640px;
+	height: 300px;
+}
+
 .home .post img {
 	float: left;
 }

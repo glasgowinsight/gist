@@ -56,7 +56,14 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
 <script type="text/javascript">
-    $(document).ready( function(){ simpleSlide(); });
+    $(document).ready( function(){ 
+        simpleSlide();
+        $('.auto-slider').each( function() {
+            var related_group = $(this).attr('rel');
+
+            window.setInterval("simpleSlideAction('.right-button', " + related_group + ");", 4000);
+        }); 
+    });
 </script>
 </head>
 

@@ -19,14 +19,19 @@ get_header(); ?>
 			<div id="content" role="main">
 
 			<div class="slider">
+			    <?php $i=1 ?>
+				<?php while (have_posts()) : the_post(); ?>
+		            <span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php the_post_thumbnail(array(32,32)); ?></span>
+			    	<?php $i++ ?>
+			    <?php endwhile; ?>				
+				<?php rewind_posts(); ?>
 			    <div class="left-button" rel="1"></div>
 			    <div class="right-button" rel="1"></div>
 			    <div class="simpleSlide-window" rel="1">
-			    	<div class="simpleSlide-tray" rel="1">
+			    	<div class="simpleSlide-tray auto-slider" rel="1">
 			
 					<?php while (have_posts()) : the_post(); ?>
-			
-			            <div id="slide-<?php the_ID(); ?>" <?php post_class('simpleSlide-slide'); ?> rel="1">
+			            <div id="slide-<?php the_ID(); ?>" class="simpleSlide-slide" rel="1">
 							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 				
 							<?php the_post_thumbnail(); ?>
@@ -34,7 +39,6 @@ get_header(); ?>
 								<?php the_excerpt(); ?>
 							</div><!-- .entry-summary -->
 						</div><!-- #post-## -->
-			
 					<?php endwhile; ?>				
 					<?php rewind_posts(); ?>
 			        </div>
