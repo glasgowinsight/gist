@@ -8,6 +8,66 @@ Tags:
 */
 
 
+/* ---------------            Simon's Faff - Header Styling  -------------------------*/
+a 		{text-decoration: none;
+		}
+
+
+#logo 		{float: left;
+		}
+		
+#rightHeader 	{float:right;
+		background: url('http://the-gist.org/wp-test/wp-content/themes/test/images/mastheadRight.png') 100% 
+
+0 no-repeat;
+		width: 620px;
+		margin-left:-20px;
+		text-align: right;
+		padding: 0px 10px 20px 0;
+		color: #fff;
+		}
+
+#rightHeader h2	{font: italic bold 22px arial;
+		line-height: 120%;
+		}
+
+#searchForm	{margin: 35px 10px 20px 0;
+		}
+
+#tagLine	{float: right; 
+		width: 130px;
+		}
+
+#topNav 	{width: 625px; 
+		float: right;
+		}
+
+#topNav ul	{float: right; 
+		padding: 5px 0 3px;
+		}
+
+#topNav a	{color: #ab1d2a; 
+		padding: 0 0 3px 0;
+		}
+
+#topNav a:hover	{color: #112553; 
+		border-bottom:2px solid blue;
+		}
+
+#navList li	{display: inline; 
+		padding: 0px 15px 0px 15px; 
+		font-size: 15px;  
+		}
+
+#navList li#first{ 
+		border-left: 0;
+		}
+
+div.clearer	{clear: both;
+		}
+
+/* ------------            End of Header Styling --------------------------------> 
+
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 
@@ -216,33 +276,6 @@ hr {
 	margin-bottom: 18px;
 }
 
-/* Text elements */
-p {
-	margin-bottom: 18px;
-}
-ul {
-	list-style: square;
-	margin: 0 0 18px 1.5em;
-}
-ol {
-	list-style: decimal;
-	margin: 0 0 18px 1.5em;
-}
-ol ol {
-	list-style: upper-alpha;
-}
-ol ol ol {
-	list-style: lower-roman;
-}
-ol ol ol ol {
-	list-style: lower-alpha;
-}
-ul ul,
-ol ol,
-ul ol,
-ol ul {
-	margin-bottom: 0;
-}
 dl {
 	margin: 0 0 24px 0;
 }
@@ -586,6 +619,7 @@ div.menu li {
 }
 .entry-content,
 .entry-summary {
+	clear: both;
 	padding: 12px 0 0 0;
 }
 #content .entry-summary p:last-child {
