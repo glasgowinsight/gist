@@ -412,6 +412,7 @@ function simpleSlideAction(action, rel_no) {
 		var status_window_width = $('.simpleSlideStatus-window[rel="' + rel_no + '"]').innerWidth();
 		var status_tray_width = status_window_width * image_count;
 		var current_tray_margin = parseInt($('.simpleSlide-tray[rel="' + rel_no + '"]').css('marginLeft'), 10);
+		current_tray_margin = Math.floor(current_tray_margin / window_width) * window_width;
 		var current_status_window_margin = parseInt($('.simpleSlideStatus-tray .simpleSlideStatus-window[rel="' + rel_no + '"]').css('marginLeft'), 10);
 		var current_status_tray_margin = parseInt($('.simpleSlideStatus-window .simpleSlideStatus-tray[rel="' + rel_no + '"]').css('marginLeft'), 10);
 		
