@@ -57,10 +57,17 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready( function(){ 
-		$('slider').each(function(){
-	        $(this).removeClass("noscript");
-	      })
-
+		$('.noscript').removeClass("noscript");
+	    
+		$('.simpleSlide-window').each(function(){
+			var width = $(this).outerWidth();
+			var height = $(this).outerHeight();
+			$(this).find('.simpleSlide-slide').css({
+				'height': height,
+				'width': width,
+			});
+		}); 
+	    
         simpleSlide();
         $('.auto-slider').each( function() {
             var related_group = $(this).attr('rel');
@@ -80,7 +87,7 @@
 	<div id="header">
 	<div id="masthead">
 		<div id="logo">
-			<a href="http://the-gist.org/wp-test/"><img src="http://the-gist.org/wp-test/wp-content/themes/test/images/gistLogo.png"></a>
+			<a href="<?php echo home_url( ); ?>"><img src="<?php echo home_url( 'wp-content/themes/test/images/gistLogo.png' ); ?>"></a>
 		</div> <!-- #logo --> 
 	
 		<div id="rightHeader">
@@ -88,17 +95,17 @@
 				<?php get_search_form(); ?>
 			</div>
 			<div id="tagLine">
-				<h2> glasgow Insight in Science and Technology </h2>
+				<h2> Glasgow Insight in Science and Technology </h2>
 			</div>
 		</div> <!-- #rightHeader -->	
 	</div> <!-- #Mastheat -->
 	<div id="topNav">
 		<ul id="navList">
-		<li> <a href="http://the-gist.org/wp-test/">home</a></li>
-		<li> <a href="http://the-gist.org/wp-test/category/feature/"> features</a></li> 
-		<li> <a href="http://the-gist.org/wp-test/category/snippets/">news snippets</a></li> 
-		<li> <a href="http://the-gist.org/wp-test/category/podcasts/">podcasts</a></li> 
-		<li> <a href="http://the-gist.org/wp-test/about.php">about gist</a></li> 
+		<li> <a href="<?php echo home_url( ); ?>">home</a></li>
+		<li> <a href="<?php echo home_url( '/category/feature/' ); ?>"> features</a></li> 
+		<li> <a href="<?php echo home_url( '/category/snippets/' ); ?>">news snippets</a></li> 
+		<li> <a href="<?php echo home_url( '/category/podcasts/' ); ?>">podcasts</a></li> 
+		<li> <a href="<?php echo home_url( '/about.php' ); ?>">about gist</a></li> 
 		</ul>
 	</div>  <!-- #topNav -->
 </div><!-- #header -->

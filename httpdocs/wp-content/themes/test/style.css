@@ -1365,8 +1365,8 @@ code {
 	float: left;
 }
 
-.home .simpleSlide-slide {
-	width: 640px;
+.home .simpleSlide-window {
+	width: 100%;
 	height: 300px;
 }
 
