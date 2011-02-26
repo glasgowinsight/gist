@@ -61,10 +61,19 @@
 	    
 		$('.simpleSlide-window').each(function(){
 			var width = $(this).outerWidth();
-			var height = $(this).outerHeight();
+			var max_height = 0;
+			$(this).find('.simpleSlide-slide').each(function(){
+				$(this).css({
+					'width': width
+				});
+				var height = $(this).outerHeight();
+				if ( height > max_height) {
+					max_height = height;
+				}
+				
+			});
 			$(this).find('.simpleSlide-slide').css({
-				'height': height,
-				'width': width,
+				'height': max_height
 			});
 		}); 
 	    

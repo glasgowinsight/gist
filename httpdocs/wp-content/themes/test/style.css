@@ -1365,13 +1365,23 @@ code {
 	float: left;
 }
 
-.home .simpleSlide-window {
-	width: 100%;
-	height: 300px;
+.home .entry-summary {
+	clear: none;
+	padding-top: 0px;
 }
 
-.home .post img {
+
+.home .simpleSlide-window {
+	width: 100%;
+}
+
+.home .simpleSlide-thumbnails {
+	text-align: center;
+}
+
+.home .post img, .home .simpleSlide-window img {
 	float: left;
+	padding-right: 10px;
 }
 .home div.row {
   clear:both;
