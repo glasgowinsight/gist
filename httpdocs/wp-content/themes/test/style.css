@@ -1342,3 +1342,7 @@ code {
 .home div.row {
   clear:both;
 }
+
+.noscript {
+  display: none;
+}

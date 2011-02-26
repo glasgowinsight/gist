@@ -18,7 +18,7 @@ get_header(); ?>
 		<div id="container">
 			<div id="content" role="main">
 
-			<div class="slider">
+			<div class="slider noscript">
 			    <?php $i=1 ?>
 				<?php while (have_posts()) : the_post(); ?>
 		            <span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php the_post_thumbnail(array(32,32)); ?></span>

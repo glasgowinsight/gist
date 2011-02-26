@@ -57,6 +57,10 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready( function(){ 
+		$('.noscript').each(function(){
+	        $(this).removeClass("noscript");
+	      })
+
         simpleSlide();
         $('.auto-slider').each( function() {
             var related_group = $(this).attr('rel');
