@@ -38,14 +38,14 @@ get_header(); ?>
 				    <div class="simpleSlide-thumbnails">
 					    <?php $i=1 ?>
 						<?php while (have_posts()) : the_post(); ?>
-				            <span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php the_post_thumbnail(array(32,32)); ?></span>
+				            <span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php the_post_thumbnail(array(32,32), array('title'=>the_title('', '', false))); ?></span>
 					    	<?php $i++ ?>
 					    <?php endwhile; ?>				
 						<?php rewind_posts(); ?>
 					</div>
 				</div> 
 				<?php 
-					function posts($category, $limit, &$ids) {
+					function add_posts($category, $limit, &$posts, &$ids) {
 						$params = array(
 							'category_name'=>$category,
 							'numberposts'=>$limit,
@@ -56,15 +56,17 @@ get_header(); ?>
 							$params['orderby'] = 'rand';
 						}
 						
-						$posts=get_posts($params);
-						foreach ($posts as $post) {
-							array_push($ids, $post->ID);
+						$p=get_posts($params);
+						foreach ($p as $post) {
+							$ids[] = $post->ID;
+							$posts[] = $post;
 						}
-						return $posts;
 					}
 
 					$ids = array();
-					$posts = posts( 'january-2011', 2, $ids); ?>
+					$posts = array();
+					add_posts( 'january-2011', 2, $posts, $ids); ?>
+						
 					<noscript>	
 						<div class="row">	
 							<?php
@@ -76,17 +78,18 @@ get_header(); ?>
 						</div>
 					</noscript>
 				<?php
-					$posts = posts( 'snippet', 1, $ids );
+					$posts = array();
+					add_posts( 'snippet', 1, $posts, $ids );
 					if ( !$posts ):
-						$posts = posts( 'january-2011', 1, $ids);
+						add_posts( 'january-2011', 1, $posts, $ids);
 					endif;
-					$posts = $posts + posts( 'event', 1, $ids );
-					$posts = $posts + posts( 'podcast', 1, $ids );
-					$numposts = 5;
+					add_posts( 'event', 1, $posts, $ids );
+					add_posts( 'podcast', 1, $posts, $ids );
+					$numposts = 4;
 					if ( count($posts) < $numposts) :
-						$posts = $posts + posts( 'snippet', $numposts-count($posts), $ids );
+						add_posts( 'snippet', $numposts-count($posts), $posts, $ids );
 						if ( count($posts) < $numposts) :
-							$posts = $posts + posts( 'january-2011', $numposts-count($posts), $ids );
+							add_posts( 'january-2011', $numposts-count($posts), $posts, $ids );
 						endif;
 					endif;
 					$i=0;
