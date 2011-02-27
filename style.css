@@ -1449,9 +1449,8 @@ code {
 	float: left;
 }
 
-.archive .slider, .archive .post {
+.archive .post, .archive .slider {
 	padding-right: 35px;
-	background: url(images/post-background.png) no-repeat right top;
 }
 
 .archive .post h2, .archive .slider h2 {
@@ -1460,7 +1459,38 @@ code {
 	font-weight: bold;
 	margin: 0 5px 10px 0;
 	text-align: right;
+}
+
+.archive .category-feature, .archive .slider {
+	background: url(images/background-feature.png) no-repeat right top;
+}
+
+.archive .category-feature h2, .archive .slider h2 {
 	color: #112552;
+}
+
+.archive .category-snippet {
+	background: url(images/background-snippet.png) no-repeat right top;
+}
+
+.archive .category-snippet h2 {
+	color: #93000e;
+}
+
+.archive .category-event {
+	background: url(images/background-event.png) no-repeat right top;
+}
+
+.archive .category-event h2 {
+	color: #0a5b00;
+}
+
+.archive .category-podcast {
+	background: url(images/background-podcast.png) no-repeat right top;
+}
+
+.archive .category-podcast h2 {
+	color: #6e0097;
 }
 
 .archive .post h3 {
