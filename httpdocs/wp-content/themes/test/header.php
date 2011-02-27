@@ -87,7 +87,7 @@
 </script>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php if(is_home()) body_class('archive'); else body_class(); ?>>
 <div id="wrapper" class="hfeed">
 
 
@@ -111,9 +111,9 @@
 	<div id="topNav">
 		<ul id="navList">
 		<li> <a href="<?php echo home_url( ); ?>">home</a></li>
-		<li> <a href="<?php echo home_url( '/category/feature/' ); ?>"> features</a></li> 
-		<li> <a href="<?php echo home_url( '/category/snippets/' ); ?>">news snippets</a></li> 
-		<li> <a href="<?php echo home_url( '/category/podcasts/' ); ?>">podcasts</a></li> 
+		<li> <a href="<?php echo home_url( '/category/feature/' ); ?>">features</a></li> 
+		<li> <a href="<?php echo home_url( '/category/snippet/' ); ?>">news snippets</a></li> 
+		<li> <a href="<?php echo home_url( '/category/podcast/' ); ?>">podcasts</a></li> 
 		<li> <a href="<?php echo home_url( '/about.php' ); ?>">about gist</a></li> 
 		</ul>
 	</div>  <!-- #topNav -->

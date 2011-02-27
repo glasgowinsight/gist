@@ -82,7 +82,7 @@ get_header(); ?>
 					endif;
 					$posts = $posts + posts( 'event', 1, $ids );
 					$posts = $posts + posts( 'podcast', 1, $ids );
-					$numposts = 4;
+					$numposts = 5;
 					if ( count($posts) < $numposts) :
 						$posts = $posts + posts( 'snippet', $numposts-count($posts), $ids );
 						if ( count($posts) < $numposts) :
