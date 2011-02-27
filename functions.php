@@ -407,3 +407,13 @@ function show_post_excerpt($slide=false){
 		</div>
 	</div>
 <?php }
+
+function get_category_link_by_name($cat_name){
+	$id = get_cat_ID($cat_name);
+	return get_category_link($id);
+}
+
+function get_page_link_by_title($page_title){
+	$page = get_page_by_title($page_title);
+	return get_page_link($page->ID);
+}
