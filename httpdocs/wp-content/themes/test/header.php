@@ -53,7 +53,8 @@
 	wp_head();
 ?>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.5.1.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.timers-1.2.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready( function(){ 
@@ -78,11 +79,6 @@
 		}); 
 	    
         simpleSlide();
-        $('.auto-slider').each( function() {
-            var related_group = $(this).attr('rel');
-
-            window.setInterval("simpleSlideAction('.right-button', " + related_group + ");", 4000);
-        }); 
     });
 </script>
 </head>
