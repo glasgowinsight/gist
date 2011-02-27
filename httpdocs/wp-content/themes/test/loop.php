@@ -29,7 +29,7 @@
 
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
-	<div id="post-0" class="post not-found">
+	<div id="post-0" class="not-found">
 		<div class="entry-content">
 			<p><?php _e( "There aren't any posts here yet, but they're coming soon", 'twentyten' ); ?></p>
 		</div><!-- .entry-content -->
