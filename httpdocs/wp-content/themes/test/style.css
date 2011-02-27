@@ -1365,11 +1365,14 @@ code {
 	float: left;
 }
 
+.home .simpleSlide-slide {
+	margin: 0px
+}
+
 .home .entry-summary {
 	clear: none;
 	padding-top: 0px;
 }
-
 
 .home .simpleSlide-window {
 	width: 100%;
