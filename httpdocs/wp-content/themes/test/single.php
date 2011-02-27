@@ -59,7 +59,20 @@ get_header(); ?>
 					<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '</span>' ); ?></div>
 				</div><!-- #nav-below -->
 
-				<?php comments_template( '', true ); ?>
+				<?php //comments_template( '', true ); ?>
+				
+				<div id="comments">
+					<?php 
+						$link = get_permalink(get_the_ID());
+						$link = str_replace(home_url(), 'http://thegistmagazine.wordpress.com/', $link);
+					?>
+					
+					<p>
+						Comments are currently disabled on our beta site. If you'd like to
+						discuss this article, please visit our <a href="<?php echo $link; ?>">existing site</a> 
+					</p>
+				</div>
+
 
 <?php endwhile; // end of the loop. ?>
 
