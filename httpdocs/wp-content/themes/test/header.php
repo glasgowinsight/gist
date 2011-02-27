@@ -117,6 +117,9 @@
 		<li> <a href="<?php echo home_url( '/about.php' ); ?>">about gist</a></li> 
 		</ul>
 	</div>  <!-- #topNav -->
+	<div id="beta">
+		<span>This site is still under development. If you have any problems, please visit our <a href="http://thegistmagazine.wordpress.com/">existing site</a>.</span>
+	</div>
 </div><!-- #header -->
 
 <!----------------------------------- Top Banner Ends Here -------------------------------------->

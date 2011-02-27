@@ -45,6 +45,7 @@ a {
 #topNav {
 	width: 625px;
 	float: right;
+	margin-bottom: 5px;
 }
 
 #topNav ul {
@@ -74,6 +75,23 @@ a {
 
 div.clearer {
 	clear: both;
+}
+
+#beta {
+	clear: both; 
+	text-align: center;
+}
+
+#beta span {
+	padding: 2px; 
+	border: thin solid orange; 
+	background: none repeat scroll 0pt 0pt #ffe7af; 
+	font-weight: bold;
+}
+
+#beta a {
+	text-decoration: underline;
+	color: #666666;
 }
 
 /* ------------            End of Header Styling --------------------------------> 
