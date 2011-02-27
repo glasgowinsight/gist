@@ -114,7 +114,7 @@
 		<li> <a href="<?php echo home_url( '/category/feature/' ); ?>">features</a></li> 
 		<li> <a href="<?php echo home_url( '/category/snippet/' ); ?>">news snippets</a></li> 
 		<li> <a href="<?php echo home_url( '/category/podcast/' ); ?>">podcasts</a></li> 
-		<li> <a href="<?php echo home_url( '/about.php' ); ?>">about gist</a></li> 
+		<li> <a href="<?php echo home_url( '/about-gist' ); ?>">about gist</a></li> 
 		</ul>
 	</div>  <!-- #topNav -->
 	<div id="beta">
