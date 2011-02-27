@@ -19,6 +19,7 @@ get_header(); ?>
 			<div id="content" role="main">
 
 				<div class="slider noscript">
+					<h2>Latest Features</h2>
 				    <div class="left-button" rel="1"></div>
 				    <div class="right-button" rel="1"></div>
 				    <div class="simpleSlide-window" rel="1">
@@ -27,9 +28,7 @@ get_header(); ?>
 								query_posts( 'category_name=january-2011' );
 								while (have_posts()) : 
 									the_post(); 
-					            	$class = 'simpleSlide-slide';
-									include 'post-excerpt.php';
-									$class = '';
+					            	show_post_excerpt(true);
 					        	endwhile;			
 								rewind_posts();
 							?>
@@ -72,7 +71,7 @@ get_header(); ?>
 							<?php
 								foreach ($posts as $post):
 									setup_postdata($post); 
-									include 'post-excerpt.php';
+									show_post_excerpt();
 								endforeach;
 							?>
 						</div>
@@ -96,7 +95,7 @@ get_header(); ?>
 				    foreach ($posts as $post):
 				    	setup_postdata($post); 
 						if ( $i % 2 == 0): ?><div class="row"><?php endif;
-				    	include 'post-excerpt.php';
+				    	show_post_excerpt();
 				    	if ( $i % 2 == 1): ?></div><?php endif;
 				    	$i++;
 					endforeach;

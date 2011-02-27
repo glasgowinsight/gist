@@ -122,7 +122,7 @@
 	<?php 
 		else : 
 			if ( $i % 2 == 0): ?><div class="row"><?php endif;
-    		include 'post-excerpt.php';
+    		show_post_excerpt();
     		if ( $i % 2 == 1): ?></div><?php endif; 
     	endif; // This was the if statement that broke the loop into three parts based on categories. ?>
 

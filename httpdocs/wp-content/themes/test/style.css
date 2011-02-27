@@ -526,13 +526,6 @@ a:active,a:hover {
 	color: #000;
 }
 
-#content h1,#content h2,#content h3,#content h4,#content h5,#content h6
-	{
-	color: #000;
-	line-height: 1.5em;
-	margin: 0 0 20px 0;
-}
-
 #content table {
 	border: 1px solid #e7e7e7;
 	margin: 0 -1px 24px 0;
@@ -598,7 +591,6 @@ a:active,a:hover {
 
 #content .entry-title {
 	color: #000;
-	font-size: 21px;
 	font-weight: bold;
 	line-height: 1.3em;
 	margin-bottom: 0;
@@ -1452,9 +1444,27 @@ code {
 /* =Home Page
 -------------------------------------------------------------- */
 .archive .post {
-	width: 48%;
+	width: 42%;
 	margin: 10px 1% 10px 1%;
 	float: left;
+}
+
+.archive .slider, .archive .post {
+	padding-right: 35px;
+	background: url(images/post-background.png) no-repeat right top;
+}
+
+.archive .post h2, .archive .slider h2 {
+	font-size: 14px;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin: 0 5px 10px 0;
+	text-align: right;
+	color: #112552;
+}
+
+.archive .post h3 {
+	font-size: 18px;
 }
 
 .archive .simpleSlide-slide {
