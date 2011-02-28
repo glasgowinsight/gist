@@ -100,7 +100,7 @@
 				<?php get_search_form(); ?>
 			</div>
 			<div id="tagLine">
-				<h2> Glasgow Insight in Science and Technology </h2>
+				<h2><?php bloginfo('description'); ?></h2>
 			</div>
 		</div> <!-- #rightHeader -->	
 	</div> <!-- #Mastheat -->
