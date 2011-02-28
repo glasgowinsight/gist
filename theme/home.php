@@ -37,7 +37,7 @@ get_header(); ?>
 				    <div class="simpleSlide-thumbnails">
 					    <?php $i=1 ?>
 						<?php while (have_posts()) : the_post(); ?>
-				            <span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php the_post_thumbnail(array(32,32), array('title'=>the_title('', '', false))); ?></span>
+				            <span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php the_post_thumbnail(array(32,32), array('alt'=>'', 'title'=>the_title('', '', false))); ?></span>
 					    	<?php $i++ ?>
 					    <?php endwhile; ?>				
 						<?php rewind_posts(); ?>
