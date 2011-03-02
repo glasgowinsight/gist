@@ -36,6 +36,16 @@
 	width: 100%;
 }
 
+.page-template-home2-php .simpleSlide-thumbnails {
+	text-align: center;
+}
+
+.page-template-home2-php #snippets .post {
+	width: 100%;
+	margin: 0;
+	clear: both;
+}
+
 .page-template-home2-php .post img,.page-template-home2-php .simpleSlide-window img {
 	float: left;
 	padding-right: 10px;
