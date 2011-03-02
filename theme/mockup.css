@@ -86,35 +86,35 @@
 	padding-right: 10px;
 }
 
-.archive .category-feature, .archive .slider {
+.page-template-home4-php .category-feature, .page-template-home4-php .slider {
 	background: url(images/background-feature.png) no-repeat right top;
 }
 
-.archive .category-feature h2, .archive .slider h2 {
+.page-template-home4-php .category-feature h2, .page-template-home4-php .slider h2 {
 	color: #112552;
 }
 
-.archive .category-snippet {
+.page-template-home4-php .category-snippet {
 	background: url(images/background-snippet.png) no-repeat right top;
 }
 
-.archive .category-snippet h2 {
+.page-template-home4-php .category-snippet h2 {
 	color: #93000e;
 }
 
-.archive .category-event {
+.page-template-home4-php .category-event {
 	background: url(images/background-event.png) no-repeat right top;
 }
 
-.archive .category-event h2 {
+.page-template-home4-php .category-event h2 {
 	color: #0a5b00;
 }
 
-.archive .category-podcast {
+.page-template-home4-php .category-podcast {
 	background: url(images/background-podcast.png) no-repeat right top;
 }
 
-.archive .category-podcast h2 {
+.page-template-home4-php .category-podcast h2 {
 	color: #c69246;
 }
 
