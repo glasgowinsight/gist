@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Home 2
+Template Name: Home 3
 */
 ?>
 <?php get_header(); ?>
