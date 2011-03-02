@@ -120,12 +120,13 @@
 
 .page-template-home4-php .post {
 	width: 40%;
+	border: 0;
 }
 
 .page-template-home4-php .post, .page-template .slider {
 	padding-right: 50px;
 }
 
-.page-template-home4-php .post {
+.page-template-home4-php .post h3 {
 	margin: 10px 35px 0 0;
 }
