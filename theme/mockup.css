@@ -40,10 +40,28 @@
 	text-align: center;
 }
 
+.page-template-home2-php #snippets {
+	background: #685459;
+}
+
+.page-template-home2-php a {
+	color: #000000;
+}
+
 .page-template-home2-php #snippets .post {
 	width: 100%;
 	margin: 0;
 	clear: both;
+	padding: 0;
+	border: 0;
+}
+
+.page-template-home2-php #snippets .post h2 {
+	display: none;
+}
+
+.page-template-home2-php #snippets .post img {
+	width: 100%;
 }
 
 .page-template-home2-php .post img,.page-template-home2-php .simpleSlide-window img {
