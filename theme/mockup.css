@@ -60,8 +60,16 @@
 	display: none;
 }
 
+.page-template-home2-php #snippets .post h3 {
+	text-align: center;
+}
+
 .page-template-home2-php #snippets .post img {
 	width: 100%;
+}
+
+.page-template-home2-php #snippets .post p {
+	margin: 0 2px 0 2px;
 }
 
 .page-template-home2-php .post img,.page-template-home2-php .simpleSlide-window img {
