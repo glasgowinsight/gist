@@ -13,42 +13,51 @@
 	float: left;
 }
 
-.page-template-home2-php div.row {
+.page-template-home3-php #content {
+	width: 700px;
+}
+
+.page-template-home3-php #snippets {
+	width: 220px;
+	float: left;
+}
+
+.page-template div.row {
 	clear: both;
 }
 
-.page-template-home2-php .post {
+.page-template .post {
 	width: 42%;
 	margin: 10px 1% 10px 1%;
 	float: left;
 }
 
-.page-template-home2-php .post, .page-template-home2-php .slider {
+.page-template .post, .page-template .slider {
 	padding-right: 35px;
 }
 
-.page-template-home2-php .entry-summary {
+.page-template .entry-summary {
 	clear: none;
 	padding-top: 0px;
 }
 
-.page-template-home2-php .simpleSlide-window {
+.page-template .simpleSlide-window {
 	width: 100%;
 }
 
-.page-template-home2-php .simpleSlide-thumbnails {
+.page-template .simpleSlide-thumbnails {
 	text-align: center;
 }
 
-.page-template-home2-php #snippets {
+.page-template #snippets {
 	background: #685459;
 }
 
-.page-template-home2-php a {
+.page-template a {
 	color: #000000;
 }
 
-.page-template-home2-php #snippets .post {
+.page-template #snippets .post {
 	width: 100%;
 	margin: 0;
 	clear: both;
@@ -56,23 +65,23 @@
 	border: 0;
 }
 
-.page-template-home2-php #snippets .post h2 {
+.page-template #snippets .post h2 {
 	display: none;
 }
 
-.page-template-home2-php #snippets .post h3 {
+.page-template #snippets .post h3 {
 	text-align: center;
 }
 
-.page-template-home2-php #snippets .post img {
+.page-template #snippets .post img {
 	width: 100%;
 }
 
-.page-template-home2-php #snippets .post p {
+.page-template #snippets .post p {
 	margin: 0 2px 0 2px;
 }
 
-.page-template-home2-php .post img,.page-template-home2-php .simpleSlide-window img {
+.page-template .post img,.page-template .simpleSlide-window img {
 	float: left;
 	padding-right: 10px;
 }

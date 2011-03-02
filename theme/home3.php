@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Home 3
+Template Name: Home 2
 */
 ?>
 <?php get_header(); ?>
@@ -68,7 +68,7 @@ Template Name: Home 3
 					</noscript>
 				<?php
 					$posts = array();
-					add_posts( 'snippet', 1, $posts, $ids );
+					#add_posts( 'snippet', 1, $posts, $ids );
 					if ( !$posts ):
 						add_posts( 'january-2011', 1, $posts, $ids);
 					endif;
@@ -76,7 +76,7 @@ Template Name: Home 3
 					add_posts( 'podcast', 1, $posts, $ids );
 					$numposts = 4;
 					if ( count($posts) < $numposts) :
-						add_posts( 'snippet', $numposts-count($posts), $posts, $ids );
+						#add_posts( 'snippet', $numposts-count($posts), $posts, $ids );
 						if ( count($posts) < $numposts) :
 							add_posts( 'january-2011', $numposts-count($posts), $posts, $ids );
 						endif;
@@ -92,11 +92,30 @@ Template Name: Home 3
 					if ( $i % 2 == 1): ?></div><?php endif;
 				?>
 			</div><!-- #content -->
-	
-<div id="sidebar">
-<?php get_sidebar(); ?>
-</div> <!-- #sidebar -->
 
+<div id="snippets">
+	<?php 
+		function custom_excerpt_length( $length ) {
+			return 20;
+		}
+		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+		$posts = array();
+		$ids = array();
+		add_posts( 'snippet', 5, $posts, $ids );
+		foreach ($posts as $post):
+	    	setup_postdata($post); ?>
+			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+			
+				<?php the_post_thumbnail(); ?>
+			    <div class="entry-summary">
+					<?php the_excerpt(); ?>
+				</div>
+			</div><?php 
+	    endforeach;
+	    remove_filter( 'excerpt_length', 'custom_excerpt_length' );
+	?>
+</div>
 
 	<?php get_footer(); ?>
 
