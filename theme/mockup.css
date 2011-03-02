@@ -86,35 +86,46 @@
 	padding-right: 10px;
 }
 
-.page-template .category-feature, .page-template .slider {
+.archive .category-feature, .archive .slider {
 	background: url(images/background-feature.png) no-repeat right top;
 }
 
-.page-template .category-feature h2, .page-template .slider h2 {
+.archive .category-feature h2, .archive .slider h2 {
 	color: #112552;
 }
 
-.page-template .category-snippet {
+.archive .category-snippet {
 	background: url(images/background-snippet.png) no-repeat right top;
 }
 
-.page-template .category-snippet h2 {
+.archive .category-snippet h2 {
 	color: #93000e;
 }
 
-.page-template .category-event {
+.archive .category-event {
 	background: url(images/background-event.png) no-repeat right top;
 }
 
-.page-template .category-event h2 {
+.archive .category-event h2 {
 	color: #0a5b00;
 }
 
-.page-template .category-podcast {
+.archive .category-podcast {
 	background: url(images/background-podcast.png) no-repeat right top;
 }
 
-.page-template .category-podcast h2 {
-	color: #6e0097;
+.archive .category-podcast h2 {
+	color: #c69246;
 }
 
+.page-template-home4-php .post {
+	width: 40%;
+}
+
+.page-template-home4-php .post, .page-template .slider {
+	padding-right: 50px;
+}
+
+.page-template-home4-php .post {
+	margin: 10px 35px 0 0;
+}
