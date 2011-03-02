@@ -97,7 +97,7 @@ Template Name: Home 2
 	<?php 
 		$posts = array();
 		$ids = array();
-		add_posts( 'snippet', 6, $posts, $ids );
+		add_posts( 'snippet', 5, $posts, $ids );
 		foreach ($posts as $post):
 	    	setup_postdata($post); 
 			show_post_excerpt();

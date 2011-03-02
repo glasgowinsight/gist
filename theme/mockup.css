@@ -12,3 +12,32 @@
 	width: 160px;
 	float: left;
 }
+
+.page-template-home2-php div.row {
+	clear: both;
+}
+
+.page-template-home2-php .post {
+	width: 42%;
+	margin: 10px 1% 10px 1%;
+	float: left;
+}
+
+.page-template-home2-php .post, .page-template-home2-php .slider {
+	padding-right: 35px;
+}
+
+.page-template-home2-php .entry-summary {
+	clear: none;
+	padding-top: 0px;
+}
+
+.page-template-home2-php .simpleSlide-window {
+	width: 100%;
+}
+
+.page-template-home2-php .post img,.page-template-home2-php .simpleSlide-window img {
+	float: left;
+	padding-right: 10px;
+}
+
