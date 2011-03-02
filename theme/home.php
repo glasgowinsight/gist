@@ -15,7 +15,6 @@
 
 get_header(); ?>
 
-		<div id="container">
 			<div id="content" role="main">
 
 				<div class="slider noscript">
@@ -102,7 +101,11 @@ get_header(); ?>
 					if ( $i % 2 == 1): ?></div><?php endif;
 				?>
 			</div><!-- #content -->
-		</div><!-- #container -->
-
+	
+<div id="sidebar">
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
+</div> <!-- #sidebar -->
+
+
+	<?php get_footer(); ?>
+
