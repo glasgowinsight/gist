@@ -68,7 +68,7 @@ Template Name: Home 2
 					</noscript>
 				<?php
 					$posts = array();
-					add_posts( 'snippet', 1, $posts, $ids );
+					#add_posts( 'snippet', 1, $posts, $ids );
 					if ( !$posts ):
 						add_posts( 'january-2011', 1, $posts, $ids);
 					endif;
@@ -76,7 +76,7 @@ Template Name: Home 2
 					add_posts( 'podcast', 1, $posts, $ids );
 					$numposts = 4;
 					if ( count($posts) < $numposts) :
-						add_posts( 'snippet', $numposts-count($posts), $posts, $ids );
+						#add_posts( 'snippet', $numposts-count($posts), $posts, $ids );
 						if ( count($posts) < $numposts) :
 							add_posts( 'january-2011', $numposts-count($posts), $posts, $ids );
 						endif;
@@ -92,7 +92,19 @@ Template Name: Home 2
 					if ( $i % 2 == 1): ?></div><?php endif;
 				?>
 			</div><!-- #content -->
-	
+
+<div id="snippets">
+	<?php 
+		$posts = array();
+		$ids = array();
+		add_posts( 'snippet', 6, $posts, $ids );
+		foreach ($posts as $post):
+	    	setup_postdata($post); 
+			show_post_excerpt();
+	    endforeach;
+	?>
+</div>
+
 <div id="sidebar">
 <?php get_sidebar(); ?>
 </div> <!-- #sidebar -->

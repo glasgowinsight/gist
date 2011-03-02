@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+.page-template-home2-php #content {
+	width: 640px;
+}
+
+.page-template-home2-php #sidebar {
+	width: 120px;
+}
+
+.page-template-home2-php #snippets {
+	width: 160px;
+	float: left;
+}
