@@ -7,6 +7,8 @@
  * @since Twenty Ten 1.0
  */
 ?>
+<div id="sidebar">
+
 
 		<div id="primary" class="widget-area" role="complementary">
 			<ul class="xoxo">
@@ -54,3 +56,6 @@
 		</div><!-- #secondary .widget-area -->
 
 <?php endif; ?>
+
+
+</div> <!-- #sidebar -->

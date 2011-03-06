@@ -102,9 +102,9 @@ get_header(); ?>
 				?>
 			</div><!-- #content -->
 	
-<div id="sidebar">
+
 <?php get_sidebar(); ?>
-</div> <!-- #sidebar -->
+
 
 
 	<?php get_footer(); ?>
