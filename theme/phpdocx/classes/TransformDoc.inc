@@ -199,10 +199,23 @@ class TransformDoc
             exit();
         }
 
-        $r = $package->getFromName('_rels/.rels');
-        echo "R:" . $r;
-        $relations = simplexml_load_string(r);
-        echo "Relations:" . $relations;
+        echo "Details:" . $package->statName('_rels/.rels');
+        
+		$r = $package->getFromName('_rels/.rels');
+        print 'R:';
+        print_r(htmlentities($r));
+        if (!$r) {
+        	echo 'No data in _rels/.rels';
+        	exit();
+        }
+        
+        $relations = simplexml_load_string($r);
+        if(!$relations){
+        	echo 'No xml in _rels/.rels';
+        	exit();
+        }
+        echo "Relations:";
+        print_r($relations);
 
         foreach ($relations->Relationship as $rel) {
             if ($rel["Type"] == TransformDoc::SCHEMA_OFFICEDOCUMENT) {
@@ -213,7 +226,10 @@ class TransformDoc
                     )
                 );
 
-                $xmlDOM = new DOMDocument();
+                print 'XML:';
+        		print_r(htmlentities($xml));
+        		
+        		$xmlDOM = new DOMDocument();
                 $xml = str_replace('</w:wordDocument>', '', $xml);
                 $xml = preg_replace(
                     '/(<w:wordDocument)+(.)*(><w:body>)/', '<w:body>', $xml
@@ -222,7 +238,9 @@ class TransformDoc
                 $xsl = new DOMDocument();
                 $xsl->load(dirname(__FILE__) . '/../xsl/docx2html.xsl');
 
+                echo "Loaded XSLT";
                 $xsltProc = new XSLTProcessor();
+                echo "Build processor";
                 
                 $xsltProc->importStylesheet($xsl);
                 $this->_xhtml = $xsltProc->transformToXML($xmlDOM);

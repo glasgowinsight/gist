@@ -1444,7 +1444,7 @@ code {
 /* =Home Page
 -------------------------------------------------------------- */
 .archive .post {
-	width: 42%;
+	width: 150px;
 	margin: 10px 1% 10px 1%;
 	float: left;
 }
@@ -1525,4 +1525,9 @@ code {
 
 .noscript {
 	display: none;
+}
+
+#mainPostSection{
+	width: 400px;
+	background: red;
 }

@@ -7,7 +7,6 @@
 	get_header(); 
 	
 	?><div id="content" role="main"><?php
-	echo phpinfo();
 	
 	$document = new TransformDoc();
 	$document->setStrFile('wp-content/uploads/2011/02/copyedited-green-giants.docx');
