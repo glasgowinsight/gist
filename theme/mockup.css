@@ -130,3 +130,90 @@
 .page-template-home4-php .post h2 {
 	margin: 10px 35px 0 0;
 }
+
+/**************** Simon - 7/03/2011 ********************/
+
+.page-template-home5-php .category-feature, .page-template-home5-php .slider {
+	background: url(images/banner3.png) no-repeat right top;
+	margin-bottom: 20px;
+}
+.simpleSlide-thumbnails{
+	padding: none;
+	border-bottom: 1px solid #122654;
+}
+
+.page-template-home5-php .category-feature h2, .page-template-home5-php .slider h2 {
+	color: #112552;
+}
+
+.page-template-home5-php .category-snippet {
+	background: url(images/background-snippet.png) no-repeat right top;
+}
+
+.page-template-home5-php .category-snippet h2 {
+	color: #93000e;
+}
+
+.page-template-home5-php .category-event {
+	background: url(images/background-event.png) no-repeat right top;
+}
+
+.page-template-home5-php .category-event h2 {
+	color: #0a5b00;
+}
+
+.page-template-home5-php .category-podcast {
+	background: url(images/background-podcast.png) no-repeat right top;
+}
+
+.page-template-home5-php .category-podcast h2 {
+	color: #c69246;
+}
+
+.page-template-home5-php .post {
+	width: 40%;
+	border: 0;
+}
+
+.page-template-home5-php .post, .page-template .slider {
+	padding-right: 50px;
+}
+
+.page-template-home5-php .post h2 {
+	margin: 10px 35px 0 0;
+}
+
+.page-template-home5-php #snippets {
+	background: url('./images/inTheNews.jpg') no-repeat;
+	padding-top: 25px;
+	float:right;
+	width:200px;
+}
+
+
+#snippets .sideSnippets{
+	background: #e1e1e1;
+	border-bottom: 2px solid #000000;
+	margin-bottom: 5px;
+	
+}
+
+#snippets .sideSnippets  h3{
+	background: #2857af; 
+	width: 100%; 
+	border-top: 2px solid #000000;
+}
+#snippets .sideSnippets h3 a {
+	color: white;
+}
+
+.page-template-home5-php .post {
+	width: 90%;
+	margin: 10px 1% 10px 1%;
+	float: left;
+}
+
+.page-template-home5-php #mainPostSection{
+	width:450px;
+	float: left;
+}
