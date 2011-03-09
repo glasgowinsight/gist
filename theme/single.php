@@ -15,36 +15,29 @@ get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-				<div id="nav-above" class="navigation">
-					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentyten' ) . '</span> %title' ); ?></div>
-					<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '</span>' ); ?></div>
-				</div><!-- #nav-above -->
 
 				<div id="post-<?php the_ID(); ?>"  class="<?php post_class('single-Post'); ?>">
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 
+
 					<div class="entry-meta">
 						<?php twentyten_posted_on(); ?>
 					</div><!-- .entry-meta -->
-
+					
 					<div class="entry-content">
+						<div class="authorImage"> 
+						<?php userphoto_the_author_photo() ?>
+						</div>
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
-					</div><!-- .entry-content -->
+		</div><!-- .entry-content -->					
 
 <?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
-					<div id="entry-author-info">
-						<div id="author-avatar">
-							<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyten_author_bio_avatar_size', 60 ) ); ?>
-						</div><!-- #author-avatar -->
+					
 						<div id="author-description">
 							<h2><?php printf( esc_attr__( 'About %s', 'twentyten' ), get_the_author() ); ?></h2>
 							<?php the_author_meta( 'description' ); ?>
-							<div id="author-link">
-								<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-									<?php printf( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'twentyten' ), get_the_author() ); ?>
-								</a>
-							</div><!-- #author-link	-->
+							
 						</div><!-- #author-description -->
 					</div><!-- #entry-author-info -->
 <?php endif; ?>
@@ -53,26 +46,10 @@ get_header(); ?>
 						<?php twentyten_posted_in(); ?>
 						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-utility -->
+		
 				</div><!-- #post-## -->
 
-				<div id="nav-below" class="navigation">
-					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentyten' ) . '</span> %title' ); ?></div>
-					<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '</span>' ); ?></div>
-				</div><!-- #nav-below -->
-
-				<?php //comments_template( '', true ); ?>
-				
-				<div id="comments">
-					<?php 
-						$link = get_permalink(get_the_ID());
-						$link = str_replace(home_url(), 'http://thegistmagazine.wordpress.com/', $link);
-					?>
-					
-					<p>
-						Comments are currently disabled on our beta site. If you'd like to
-						discuss this article, please visit our <a href="<?php echo $link; ?>">existing site</a> 
-					</p>
-				</div>
+		
 
 
 <?php endwhile; // end of the loop. ?>
@@ -80,5 +57,41 @@ get_header(); ?>
 			</div><!-- #content -->
 
 
-<?php get_sidebar(); ?>
+<div id="sidebar" class="widget-area">
+
+
+
+	<div class="sidebarSection"> 
+
+
+	<div class="sidebarSection"> 
+	<h3> Find out more </h3> 
+	<ul>
+		<li> External link 1 </li>
+		<li> External link 2</li>
+		<li> External link 3</li>
+	</ul>
+	</div>
+
+	<div class="sidebarSection"> 
+	<h3> Similar articles </h3> 
+	<ul>
+		<li> post 1 title </li>
+		<li> post 2 title</li>
+		<li> post 3 title</li>
+	</ul>
+	</div>
+
+	<h3> Other articles by Chris </h3> 
+	<ul>
+		<li> post 1 title </li>
+		<li> post 2 title</li>
+		<li> post 3 title</li>
+	</ul>
+	</div>
+
+</div>
+
+
+
 <?php get_footer(); ?>

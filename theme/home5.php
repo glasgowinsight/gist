@@ -93,7 +93,14 @@ Template Name: Home 5
 					if ( $i % 2 == 1): ?><?php endif;
 				?>
 			</div> <!-- #mainPostSection -->
-			<div id="snippets">
+			
+
+			</div><!-- #content -->
+	
+
+
+<div id="sidebar">
+<div id="snippets">
 	<?php 
 		function custom_excerpt_length( $length ) {
 			return 20;
@@ -116,12 +123,6 @@ Template Name: Home 5
 	    remove_filter( 'excerpt_length', 'custom_excerpt_length' );
 	?>
 </div>
-			</div><!-- #content -->
-	
-
-
-<div id="sidebar">
-<?php get_sidebar(); ?>
 </div> <!-- #sidebar -->
 
 
