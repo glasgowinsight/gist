@@ -25,8 +25,9 @@ Template Name: Home 5
 				        </div>
 				    </div>
 				    <div class="simpleSlide-thumbnails">
+				<h3> New articles on The GIST: </h3>
 					    <?php $i=1 ?>
-						<?php while (have_posts()) : the_post(); ?>
+						<?php while ($i<=7) : the_post(); ?>
 				            <span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php the_post_thumbnail(array(32,32), array('alt'=>'', 'title'=>the_title('', '', false))); ?></span>
 					    	<?php $i++ ?>
 					    <?php endwhile; ?>				

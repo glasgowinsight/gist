@@ -85,7 +85,7 @@
 </script>
 </head>
 
-<body <?php if(is_home()) body_class('archive'); else body_class(); ?>>
+<body <?php if(is_home()) body_class('archive'); else body_class('single-post-php'); ?>>
 <div id="wrapper" class="hfeed">
 
 
@@ -94,16 +94,14 @@
 	<div id="header">
 	<div id="masthead">
 		<div id="logo">
-			<a href="<?php echo home_url( ); ?>"><img src="<?php echo home_url( 'wp-content/themes/test/images/gistLogo.png' ); ?>"></a>
+			<a href="<?php echo home_url( ); ?>"><img src="<?php echo home_url( 'wp-content/themes/test/images/gistLogoLive.png' ); ?>"></a>
 		</div> <!-- #logo --> 
 	
 		<div id="rightHeader">
 			<div id="searchForm">
 				<?php get_search_form(); ?>
 			</div>
-			<div id="tagLine">
-				<h2><?php bloginfo('description'); ?></h2>
-			</div>
+			
 		</div> <!-- #rightHeader -->	
 	</div> <!-- #Mastheat -->
 	<div id="topNav">

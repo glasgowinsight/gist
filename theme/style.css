@@ -80,12 +80,14 @@ a {
 
 #logo {
 	float: left;
+	margin-left: -50px;
 }
 
 #rightHeader {
 	float: right;
-	background: url('images/mastheadRight2.png') 100% 0 no-repeat;
-	width: 620px;
+	background: url('images/mastheadRight7.png') 100% 0 no-repeat;
+	width: 670px;
+	height: 180px;
 	margin-left: -20px;
 	text-align: right;
 	padding: 0px 10px 20px 0;
@@ -98,7 +100,7 @@ a {
 }
 
 #searchForm {
-	margin: 35px 10px 20px 0;
+	margin: 160px 10px 20px 0;
 }
 
 #tagLine {
@@ -237,17 +239,29 @@ div.clearer {
 
 
 .widget-area h3{
-	border-top: 1px solid #112552;
+	border-top: 2px solid #112552;
 
 	background: #d2d4d7;
 }
-.sidebarSection ul{
+
+.sidebarSection{ 
+	background: #9da7ba;
+	margin-bottom: 5px;
+	border-bottom: 1px solid black;
+}
+
+.sidebarSection h3{
+	background: #2857af;
+	width: 100%
+	color: #FFFFFF;
+	font-weight: bold;
+
+}
+
+.sidebarSection ul {
 	list-style-type: square;
 	padding-left: 1em;
 }
-
-
-
 /*--------------- Footer Styling -------------------*/
 
 
@@ -279,21 +293,47 @@ div.clearer {
 }
 
 .single-post h1{
-	color: #2857af;
+	color: #822424;
+	border-bottom: 2px solid #822424;
 	font-size: 50px;
 	padding-bottom: 10px;
+	font-family: Georgia, "Bitstream Charter", serif;
+	line-height: 100%;
+}
+
+.single-post strong{ 
+	font-size: 120%;
+	margin-bottom: 20px;
 }
 .single-post h4{
 	font-weight:bold;
 	padding: 5px 0 5px 0;
 }
 
-
-.authorImage {
-	float: right;
-	padding: 5px;
-	margin-top: -60px;
+.single-post-php .wp-caption{
+	float: left;
+	background: #d0d0d0;
+	margin-right: 5px;
 }
 
+.single-post-php .wp-caption img{
+	padding: 5px;
+}
+
+.single-post-php .wp-caption-text{
+	font-size: 80%;
+	line-height: 130%;
+	font-weight: bold;
+	font-family: arial;
+	padding: 5px;
+}
+
+.single-post-php .sidebarSection h3{
+	color: white; 
+
+}
+.single-post-php .authorImage{
+	padding: 5px;
+}
 
 

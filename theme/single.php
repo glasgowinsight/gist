@@ -25,9 +25,7 @@ get_header(); ?>
 					</div><!-- .entry-meta -->
 					
 					<div class="entry-content">
-						<div class="authorImage"> 
-						<?php userphoto_the_author_photo() ?>
-						</div>
+						
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->					
@@ -57,14 +55,22 @@ get_header(); ?>
 			</div><!-- #content -->
 
 
-<div id="sidebar" class="widget-area">
+<div id="sidebar">
 
 
 
-	<div class="sidebarSection"> 
 
+	<div class="sidebarSection">
+	<h3> About the Author </h3> 
+	 <div class="authorImage"> 
+		<?php userphoto_the_author_photo() ?>
+	</div>
+	<div class="AuthorDescprition"> 
+	<?php the_author_meta( 'description' ); ?>
+	</div>
+	</div> <!-- sidebar section -->
 
-	<div class="sidebarSection"> 
+	<div id="find-out" class="sidebarSection"> 
 	<h3> Find out more </h3> 
 	<ul>
 		<li> External link 1 </li>
@@ -73,7 +79,7 @@ get_header(); ?>
 	</ul>
 	</div>
 
-	<div class="sidebarSection"> 
+	<div id="similar-articles" class="sidebarSection">
 	<h3> Similar articles </h3> 
 	<ul>
 		<li> post 1 title </li>
@@ -81,6 +87,8 @@ get_header(); ?>
 		<li> post 3 title</li>
 	</ul>
 	</div>
+
+	<div  id= "author-other" class="sidebarSection"> 
 
 	<h3> Other articles by Chris </h3> 
 	<ul>

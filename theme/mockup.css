@@ -75,13 +75,14 @@
 
 .page-template #snippets .post img {
 	width: 100%;
+
 }
 
 .page-template #snippets .post p {
 	margin: 0 2px 0 2px;
 }
 
-.page-template .post img,.page-template .simpleSlide-window img {
+.page-template .post img, {
 	float: left;
 	padding-right: 10px;
 }
@@ -133,13 +134,50 @@
 
 /**************** Simon - 7/03/2011 ********************/
 
-.page-template-home5-php .category-feature, .page-template-home5-php .slider {
-	background: url(images/banner3.png) no-repeat right top;
-	margin-bottom: 20px;
+.page-template-home5-php .post img{
+	float: left;
 }
-.simpleSlide-thumbnails{
+
+.page-template-home5-php #snippets .post img, .page-template-home5-php .simpleSlide-slide img {
+	float: left;
+
+}
+
+.page-template-home5-php .category-feature, .page-template-home5-php .slider {
+	background:  url(images/banner3large.png) no-repeat right top;
+	margin-bottom: 20px;
+
+}
+
+.page-template-home5-php .slider{ 
+	padding-left: 20px;
+}
+
+.page-template-home5-php .slider h3 {
+	width: 80%;
+	font-weight: bold; 
+}
+.page-template-home5-php .slider h3 a{
+	color: white;
+}
+.page-template-home5-php .simpleSlide-thumbnails{
+	width: 100%;
 	padding: none;
-	border-bottom: 1px solid #122654;
+	border-bottom: 5px solid #112552;
+	border-top: 5px solid #112552;
+	text-align:left;
+	background: #2857af;
+	color: white;
+}
+
+.page-template-home5-php .simpleSlide-thumbnails h3{
+	display: inline;
+	font-weight: bold;
+	text-align:left
+}
+.page-template-home5-php .jump-to img{
+	width:50px;
+	height:50px;
 }
 
 .page-template-home5-php .category-feature h2, .page-template-home5-php .slider h2 {
@@ -184,36 +222,27 @@
 }
 
 .page-template-home5-php #snippets {
-	background: url('./images/inTheNews.jpg') no-repeat;
+	background: url('./images/snippetsTop.jpg') no-repeat;
 	padding-top: 25px;
 	float:right;
-	width:200px;
-}
-
-
-#snippets .sideSnippets{
-	background: #e1e1e1;
-	border-bottom: 2px solid #000000;
+	}
+.page-template-home5-php #snippets .sideSnippets{
+	background: #9da7ba;
 	margin-bottom: 5px;
+}
+.page-template-home5-php #snippets h3{
+	background: #2857af;
+	width: 100%
 	
 }
 
-#snippets .sideSnippets  h3{
-	background: #2857af; 
-	width: 100%; 
-	border-top: 2px solid #000000;
-}
-#snippets .sideSnippets h3 a {
+.page-template-home5-php #snippets h3 a{
 	color: white;
+	font-weight: bold;
 }
 
-.page-template-home5-php .post {
-	width: 90%;
-	margin: 10px 1% 10px 1%;
-	float: left;
-}
 
-.page-template-home5-php #mainPostSection{
-	width:450px;
-	float: left;
+.page-template-home5-php .sideSnippets img{
+	width: 100%;
+	height: 50px;
 }

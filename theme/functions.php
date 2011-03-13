@@ -100,7 +100,7 @@ function twentyten_setup() {
 	// This theme allows users to set a custom background
 	add_custom_background();
 	
-	set_post_thumbnail_size( 180, 66, true );
+	set_post_thumbnail_size( 150, 150 );
 }
 endif;
 

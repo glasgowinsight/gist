@@ -9,7 +9,7 @@
 ?>
 <div id="sidebar">
 
-		<div id="primary" class="widget-area" role="complementary">
+		<div id="primary" role="complementary">
 			
 		<div class="sidebarSection">
 		<h3> Find items about </h3>
