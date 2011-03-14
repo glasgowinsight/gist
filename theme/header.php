@@ -58,6 +58,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.5.1.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.timers-1.2.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script type="text/javascript">
     $(document).ready( function(){ 
 		$('.noscript').removeClass("noscript");
@@ -79,13 +80,51 @@
 				'height': max_height
 			});
 		}); 
-	    
+
+		$('.jump-to[alt="1"]').addClass('current');
+		$('.jump-to').hover(
+			function(){$(this).addClass('hover');},
+			function(){$(this).removeClass('hover');}
+		);
+		
         simpleSlide();
     });
+
+    function show_tweets() {
+    	new TWTR.Widget({
+    		  version: 2,
+    		  type: 'profile',
+    		  rpp: 4,
+    		  interval: 6000,
+    		  width: 200,
+    		  height: 300,
+    		  footer: '',
+    		  theme: {
+    		    shell: {
+    		      background: '#2857af',
+    		      color: '#ffffff'
+    		    },
+    		    tweets: {
+    		      background: '#9da7ba',
+    		      color: '#000000',
+    		      links: '#a16106'
+    		    }
+    		  },
+    		  features: {
+    		    scrollbar: false,
+    		    loop: false,
+    		    live: false,
+    		    hashtags: true,
+    		    timestamp: false,
+    		    avatars: false,
+    		    behavior: 'all'
+    		  }
+    		}).render().setUser('GlasgowGist').start();
+    }
 </script>
 </head>
 
-<body <?php if(is_home()) body_class('archive'); else body_class(); ?>>
+<body <?php if(is_home()) body_class('archive'); else body_class('single-post-php'); ?>>
 <div id="wrapper" class="hfeed">
 
 
@@ -94,16 +133,14 @@
 	<div id="header">
 	<div id="masthead">
 		<div id="logo">
-			<a href="<?php echo home_url( ); ?>"><img src="<?php echo home_url( 'wp-content/themes/test/images/gistLogo.png' ); ?>"></a>
+			<a href="<?php echo home_url( ); ?>"><img src="<?php echo home_url( 'wp-content/themes/test/images/gistLogoLive.png' ); ?>"></a>
 		</div> <!-- #logo --> 
 	
 		<div id="rightHeader">
 			<div id="searchForm">
 				<?php get_search_form(); ?>
 			</div>
-			<div id="tagLine">
-				<h2><?php bloginfo('description'); ?></h2>
-			</div>
+			
 		</div> <!-- #rightHeader -->	
 	</div> <!-- #Mastheat -->
 	<div id="topNav">

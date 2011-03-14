@@ -21,6 +21,9 @@ Template Name: Home 4
 					            	show_post_excerpt(true);
 					        	endwhile;			
 								rewind_posts();
+								the_post();
+								show_post_excerpt(true);
+								rewind_posts();
 							?>
 				        </div>
 				    </div>
@@ -94,7 +97,39 @@ Template Name: Home 4
 			</div><!-- #content -->
 	
 <div id="sidebar">
-<?php get_sidebar(); ?>
+
+		<div id="primary" role="complementary">
+			
+		<div class="sidebarSection">
+		<script>show_tweets();</script>
+		</div>		
+
+		<div class="sidebarSection">
+		<h3> Find items about </h3>
+		
+		<ul> 
+			<li>Local Glasgow science </li> 
+			<li>Internationsl research </li> 
+			<li>interviews with scientists </li> 
+			<li>Current Events </li> 
+			<li>Opinions </li> 
+		</ul>
+		</div> <!-- first sidebarSection -->
+
+
+		<div class="sidebarSection">
+		<h3> Intererest? Find out about </h3> 
+		<ul> 
+			<li>Physics </li> 
+			<li>Engineering</li> 
+			<li>Biology</li> 
+			<li>Chemistry</li> 
+		</ul>
+		</div> <!-- second sidebarSection -->
+		<div class="sidebarSection">
+		<h3>Latest News<a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png"/></a>
+		</div>
+		</div><!-- #primary .widget-area -->
 </div> <!-- #sidebar -->
 
 
