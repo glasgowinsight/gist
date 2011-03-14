@@ -1,121 +1,88 @@
 <?php
 
 /*
-Template Name: Home 3
+Template Name: Home 5
 */
 ?>
-<?php get_header(); ?>
+<?php
+get_header(); ?>
 
+		<div id="container">
 			<div id="content" role="main">
 
-				<div class="slider noscript">
-					<h2>Latest Features</h2>
-				    <div class="left-button" rel="1"></div>
-				    <div class="right-button" rel="1"></div>
-				    <div class="simpleSlide-window" rel="1">
-				    	<div class="simpleSlide-tray auto-slider" rel="1">
-							<?php 
-								query_posts( 'category_name=january-2011' );
-								while (have_posts()) : 
-									the_post(); 
-					            	show_post_excerpt(true);
-					        	endwhile;			
-								rewind_posts();
-							?>
-				        </div>
-				    </div>
-				    <div class="simpleSlide-thumbnails">
-					    <?php $i=1 ?>
-						<?php while (have_posts()) : the_post(); ?>
-				            <span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php the_post_thumbnail(array(32,32), array('alt'=>'', 'title'=>the_title('', '', false))); ?></span>
-					    	<?php $i++ ?>
-					    <?php endwhile; ?>				
-						<?php rewind_posts(); ?>
-					</div>
-				</div> 
-				<?php 
-					function add_posts($category, $limit, &$posts, &$ids) {
-						$params = array(
-							'category_name'=>$category,
-							'numberposts'=>$limit,
-							'post__not_in'=>$ids,
-						);
-						
-						if($category=='january-2011'){
-							$params['orderby'] = 'rand';
-						}
-						
-						$p=get_posts($params);
-						foreach ($p as $post) {
-							$ids[] = $post->ID;
-							$posts[] = $post;
-						}
-					}
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-					$ids = array();
-					$posts = array();
-					add_posts( 'january-2011', 2, $posts, $ids); ?>
+
+				<div id="post-<?php the_ID(); ?>"  <?php post_class('single-post'); ?>>
+					<h1 class="entry-title"><?php the_title(); ?></h1>
+
+
+					<div class="entry-meta">
+						<?php twentyten_posted_on(); ?>
+					</div><!-- .entry-meta -->
+					
+					<div class="entry-content">
 						
-					<noscript>	
-						<div class="row">	
-							<?php
-								foreach ($posts as $post):
-									setup_postdata($post); 
-									show_post_excerpt();
-								endforeach;
-							?>
-						</div>
-					</noscript>
-				<?php
-					$posts = array();
-					#add_posts( 'snippet', 1, $posts, $ids );
-					if ( !$posts ):
-						add_posts( 'january-2011', 1, $posts, $ids);
-					endif;
-					add_posts( 'event', 1, $posts, $ids );
-					add_posts( 'podcast', 1, $posts, $ids );
-					$numposts = 4;
-					if ( count($posts) < $numposts) :
-						#add_posts( 'snippet', $numposts-count($posts), $posts, $ids );
-						if ( count($posts) < $numposts) :
-							add_posts( 'january-2011', $numposts-count($posts), $posts, $ids );
-						endif;
-					endif;
-					$i=0;
-				    foreach ($posts as $post):
-				    	setup_postdata($post); 
-						if ( $i % 2 == 0): ?><div class="row"><?php endif;
-				    	show_post_excerpt();
-				    	if ( $i % 2 == 1): ?></div><?php endif;
-				    	$i++;
-					endforeach;
-					if ( $i % 2 == 1): ?></div><?php endif;
-				?>
+						<?php the_content(); ?>
+						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
+		</div><!-- .entry-content -->					
+
+				</div><!-- #post-## -->
+				<h2>Discussion</h2>
+				<?php comments_template( '', true ); ?>
+
+
+<?php endwhile; // end of the loop. ?>
+
 			</div><!-- #content -->
 
-<div id="snippets">
-	<?php 
-		function custom_excerpt_length( $length ) {
-			return 20;
-		}
-		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-		$posts = array();
-		$ids = array();
-		add_posts( 'snippet', 5, $posts, $ids );
-		foreach ($posts as $post):
-	    	setup_postdata($post); ?>
-			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-			
-				<?php the_post_thumbnail(); ?>
-			    <div class="entry-summary">
-					<?php the_excerpt(); ?>
-				</div>
-			</div><?php 
-	    endforeach;
-	    remove_filter( 'excerpt_length', 'custom_excerpt_length' );
-	?>
+
+<div id="sidebar">
+
+
+
+
+	<div class="sidebarSection">
+	<h3> About the Author </h3> 
+	 <div class="authorImage"> 
+		<?php userphoto_the_author_photo() ?>
+	</div>
+	<div class="AuthorDescprition"> 
+	<?php the_author_meta( 'description' ); ?>
+	</div>
+	</div> <!-- sidebar section -->
+
+	<div id="find-out" class="sidebarSection"> 
+	<h3> Find out more </h3> 
+	<ul>
+		<li> External link 1 </li>
+		<li> External link 2</li>
+		<li> External link 3</li>
+	</ul>
+	</div>
+
+	<div id="similar-articles" class="sidebarSection">
+	<h3> Similar articles </h3> 
+	<ul>
+		<li> post 1 title </li>
+		<li> post 2 title</li>
+		<li> post 3 title</li>
+	</ul>
+	</div>
+
+	<div  id= "author-other" class="sidebarSection"> 
+
+	<h3> Other articles by Chris </h3> 
+	<ul>
+		<li> post 1 title </li>
+		<li> post 2 title</li>
+		<li> post 3 title</li>
+	</ul>
+	</div>
+
 </div>
 
-	<?php get_footer(); ?>
+
+
+<?php get_footer(); ?>
 

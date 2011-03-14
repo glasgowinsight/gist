@@ -16,7 +16,7 @@ get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 
-				<div id="post-<?php the_ID(); ?>"  class="<?php post_class('single-Post'); ?>">
+				<div id="post-<?php the_ID(); ?>"  <?php post_class('single-post'); ?>>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 
 
@@ -30,24 +30,7 @@ get_header(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->					
 
-<?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
-					
-						<div id="author-description">
-							<h2><?php printf( esc_attr__( 'About %s', 'twentyten' ), get_the_author() ); ?></h2>
-							<?php the_author_meta( 'description' ); ?>
-							
-						</div><!-- #author-description -->
-					</div><!-- #entry-author-info -->
-<?php endif; ?>
-
-					<div class="entry-utility">
-						<?php twentyten_posted_in(); ?>
-						<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
-					</div><!-- .entry-utility -->
-		
 				</div><!-- #post-## -->
-
-		
 
 
 <?php endwhile; // end of the loop. ?>
@@ -103,3 +86,4 @@ get_header(); ?>
 
 
 <?php get_footer(); ?>
+

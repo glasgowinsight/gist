@@ -58,6 +58,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.5.1.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.timers-1.2.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script type="text/javascript">
     $(document).ready( function(){ 
 		$('.noscript').removeClass("noscript");
@@ -79,9 +80,47 @@
 				'height': max_height
 			});
 		}); 
-	    
+
+		$('.jump-to[alt="1"]').addClass('current');
+		$('.jump-to').hover(
+			function(){$(this).addClass('hover');},
+			function(){$(this).removeClass('hover');}
+		);
+		
         simpleSlide();
     });
+
+    function show_tweets() {
+    	new TWTR.Widget({
+    		  version: 2,
+    		  type: 'profile',
+    		  rpp: 4,
+    		  interval: 6000,
+    		  width: 200,
+    		  height: 300,
+    		  footer: '',
+    		  theme: {
+    		    shell: {
+    		      background: '#2857af',
+    		      color: '#ffffff'
+    		    },
+    		    tweets: {
+    		      background: '#9da7ba',
+    		      color: '#000000',
+    		      links: '#a16106'
+    		    }
+    		  },
+    		  features: {
+    		    scrollbar: false,
+    		    loop: false,
+    		    live: false,
+    		    hashtags: true,
+    		    timestamp: false,
+    		    avatars: false,
+    		    behavior: 'all'
+    		  }
+    		}).render().setUser('GlasgowGist').start();
+    }
 </script>
 </head>
 

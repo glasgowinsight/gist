@@ -35,7 +35,8 @@ Template Name: Home 5
 					</div>
 				</div> 
 				<div id="mainPostSection">  <!-- #Added 7th March -->
-				<?php 
+				
+<?php 
 					function add_posts($category, $limit, &$posts, &$ids) {
 						$params = array(
 							'category_name'=>$category,
@@ -83,6 +84,10 @@ Template Name: Home 5
 							add_posts( 'january-2011', $numposts-count($posts), $posts, $ids );
 						endif;
 					endif;
+
+
+					$posts = array(); ?> <!--- Added by Simon to suppress 4 posts --> <?php
+
 					$i=0;
 				    foreach ($posts as $post):
 				    	setup_postdata($post); 
@@ -93,10 +98,40 @@ Template Name: Home 5
 					endforeach;
 					if ( $i % 2 == 1): ?><?php endif;
 				?>
+
+
+			<div id="mainPostSectionLeft">
+			<h3> More Features </h3>
+			<ul>
+				<li> <h4> This colomn could be replaced with podcasts when there are enough <h4> </li>
+				<li> <h4> Access to Science </h4> </li> 
+				<li> <h4> Crimes Against Fashion – What to wear at a crime scene </h4> </li> 
+				<li> <h4>Now you see it… </h4> </li> 
+				<li> <h4>NMGBs: Bacteria’s worst nightmare? </h4> </li> 
+			</ul>
+			</div <!-- mainPostSEctionLeft -->
+
+			<div id="mainPostSectionMid">
+			<h3> Podcasts and Events </h3>
+			<ul>
+				<li> <h4> Comming Soon ... GIST podcasts </h4> science podcasts from the GIST team will be with you soon. Check back here soon.</li> 
+				<li> <h4> 13th March 2011 </h4> National Science Weedk </li>
+				<li> <h4> 24th March 2011 </h4> GIST goes to Glasgow Uni </li>  
+	
+		
+
+			</ul>
+			</div <!-- mainPostSectionMid -->
+
+			<div id="mainPostSectionRight">
+			
+			<p> Space for social media boxes twitter, facebook, like etc </p>
+
+			</div <!-- mainPostSEctionRight -->
 			</div> <!-- #mainPostSection -->
 			
 
-			</div><!-- #content -->
+			</div> <!-- #content -->
 	
 
 
@@ -113,7 +148,7 @@ Template Name: Home 5
 		foreach ($posts as $post):
 	    	setup_postdata($post); ?>
 			<div id="post-<?php the_ID(); ?>" class="sideSnippets">
-				<h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+				<h3><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 			
 				<?php the_post_thumbnail(); ?>
 			    <div class="entry-summary">

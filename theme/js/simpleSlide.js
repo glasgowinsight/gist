@@ -411,6 +411,9 @@ function simpleSwipe(this_window) {
 	});
 };
 
+// This has been modified a fair bit from the original. It requires the slideshow to have the first div repeated at the end
+// so that it doesn't have a 'rewind' phase. The jump-to action was modified to work with the auto slider, and the left-button
+// action is probably totally broken
 function simpleSlideAction(action, rel_no) {
 	jQuery(function($) {	
 		var move_speed = $.ss_options.set_speed;
@@ -419,9 +422,12 @@ function simpleSlideAction(action, rel_no) {
 		var status_window_width = $('.simpleSlideStatus-window[rel="' + rel_no + '"]').innerWidth();
 		var status_tray_width = status_window_width * image_count;
 		var current_tray_margin = parseInt($('.simpleSlide-tray[rel="' + rel_no + '"]').css('marginLeft'), 10);
+		// Reset the current_tray_margin. It has a tendency to get stuck at an offset of a few pixels otherwise
 		current_tray_margin = Math.floor(current_tray_margin / window_width) * window_width;
 		var current_status_window_margin = parseInt($('.simpleSlideStatus-tray .simpleSlideStatus-window[rel="' + rel_no + '"]').css('marginLeft'), 10);
 		var current_status_tray_margin = parseInt($('.simpleSlideStatus-window .simpleSlideStatus-tray[rel="' + rel_no + '"]').css('marginLeft'), 10);
+		
+		var current_img = 1 + Math.floor(current_tray_margin / window_width) * -1;
 		
 		if($(action).is('.jump-to')) {
 			var to_page = $(action).attr('alt');
@@ -429,6 +435,9 @@ function simpleSlideAction(action, rel_no) {
 			var st_margin = (to_page - 1) * (status_window_width * (-1));
 			var sw_margin = (to_page - 1) * (status_window_width);
 			
+			$('.jump-to[rel="' + rel_no + '"][alt="' + current_img + '"]').removeClass('current');
+			$('.jump-to[rel="' + rel_no + '"][alt="' + to_page + '"]').addClass('current');
+		
 			move(j_margin, sw_margin, st_margin);
 			
 			var auto = $('.auto-slider[rel="' + rel_no + '"]');
@@ -455,18 +464,35 @@ function simpleSlideAction(action, rel_no) {
 		};
 		
 		if($(action).is('.right-button')) {
-			if(current_tray_margin == (image_count - 1) * (window_width * -1)) {
-				var j_margin = 0;
-				var st_margin = 0;
-				var sw_margin = 0;					
-			} else {
-				var j_margin = current_tray_margin - window_width;
-				var st_margin = current_status_tray_margin - status_window_width;
-				var sw_margin = current_status_window_margin + status_window_width;			
-			};
+			var j_margin = current_tray_margin - window_width;
+			var st_margin = current_status_tray_margin - status_window_width;
+			var sw_margin = current_status_window_margin + status_window_width;	
 			
-			move(j_margin, sw_margin, st_margin);
+			if(current_tray_margin == (image_count - 2) * (window_width * -1)){
+				$('.jump-to[rel="' + rel_no + '"][alt="' + current_img + '"]').removeClass('current');
+				$('.jump-to[rel="' + rel_no + '"][alt="' + 1 + '"]').addClass('current');
+			
+				move_and_reset('.simpleSlide-tray[rel="' + rel_no + '"]', j_margin);
+				move_and_reset('.simpleSlideStatus-window .simpleSlideStatus-tray[rel="' + rel_no + '"]', st_margin);
+				move_and_reset('.simpleSlideStatus-tray .simpleSlideStatus-window[rel="' + rel_no + '"]', sw_margin);
+			}
+			else{
+				$('.jump-to[rel="' + rel_no + '"][alt="' + current_img + '"]').removeClass('current');
+				$('.jump-to[rel="' + rel_no + '"][alt="' + (current_img+1) + '"]').addClass('current');
+
+				move(j_margin, sw_margin, st_margin);
+			}
 		};
+		
+		function move_and_reset(selector, margin){
+			function reset(){
+				$(selector).css('marginLeft', 0);
+			}
+			
+			$(selector).animate({
+				'marginLeft': margin
+			}, move_speed, "swing", reset);
+		}
 		
 		function move(new_margin, new_swindow_margin, new_stray_margin) {
 			$('.simpleSlide-tray[rel="' + rel_no + '"]').animate({

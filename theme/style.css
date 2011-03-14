@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 		sans-serif;
 	clear: both;
 	font-weight: normal;
+	background-color: tranparent;
 }
 
 p {
@@ -167,7 +168,7 @@ div.clearer {
 
 /* ---------------------- Post Styling -----------------------------------------*/
 
-.post {
+.archive .post {
 	width: 45%;
 	float: left;
 	margin: 10px 10px 10px 0;
@@ -178,12 +179,46 @@ div.clearer {
 	padding-right: 35px;
 }
 
-.post h2, .slider h2 {
+.archive .post h2, .slider h2 {
 	font-size: 14px;
 	font-variant: small-caps;
 	font-weight: bold;
 	margin: 0 5px 10px 0;
 	text-align: right;
+}
+
+archive .simpleSlide-slide {
+	margin: 0px
+}
+
+.archive .entry-summary {
+	clear: none;
+	padding-top: 0px;
+}
+
+.archive .simpleSlide-window {
+	width: 100%;
+}
+
+.archive .simpleSlide-thumbnails {
+	text-align: center;
+}
+
+.archive .post img,.archive .simpleSlide-window img {
+	float: left;
+	padding-right: 10px;
+}
+
+.archive div.row {
+	clear: both;
+}
+
+.entry-summary .addthis_default_style {
+	display: none;
+}
+
+.noscript {
+	display: none;
 }
 
 /*-- Feature Categorie posts --*/
@@ -335,5 +370,3 @@ div.clearer {
 .single-post-php .authorImage{
 	padding: 5px;
 }
-
-

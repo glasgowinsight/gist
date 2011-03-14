@@ -401,7 +401,7 @@ function show_post_excerpt($slide=false){
 	<?php endif; ?>
 		<h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 	
-		<?php the_post_thumbnail(); ?>
+		<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
 	    <div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div>
@@ -417,3 +417,31 @@ function get_page_link_by_title($page_title){
 	$page = get_page_by_title($page_title);
 	return get_page_link($page->ID);
 }
+
+function improved_trim_excerpt($text) {
+	$raw_excerpt = $text;
+	if ( '' == $text ) {
+        $text = get_the_content('');
+
+        $text = strip_shortcodes( $text );
+
+        $text = apply_filters('the_content', $text);
+        $text = str_replace(']]>', ']]&gt;', $text);
+        $text = strip_tags($text, '<p><strong><em>');
+        $excerpt_length = apply_filters('excerpt_length', 55);
+        $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+        $words = preg_split("/[\n\r\t ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
+        if ( count($words) > $excerpt_length ) {
+            array_pop($words);
+            $text = implode(' ', $words);
+            $text = $text . $excerpt_more;
+        } else {
+            $text = implode(' ', $words);
+        }
+        $text = force_balance_tags( $text );
+    }
+    return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
+}
+
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_filter('get_the_excerpt', 'improved_trim_excerpt');
