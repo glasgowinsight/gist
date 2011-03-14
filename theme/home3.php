@@ -19,7 +19,7 @@ get_header(); ?>
 
 					<div class="entry-meta">
 						<?php twentyten_posted_on(); ?>
-						<?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'small_toolbox_with_share' ); ?>
+						<?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'fb_tw_sc' ); ?>
 					</div><!-- .entry-meta -->
 					
 					<div class="entry-content">
@@ -30,6 +30,7 @@ get_header(); ?>
 
 				</div><!-- #post-## -->
 				<h2>Discussion</h2>
+				<?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'small_toolbox' ); ?>
 				<?php comments_template( '', true ); ?>
 
 
