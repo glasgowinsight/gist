@@ -19,6 +19,7 @@ get_header(); ?>
 
 					<div class="entry-meta">
 						<?php twentyten_posted_on(); ?>
+						<?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'small_toolbox_with_share' ); ?>
 					</div><!-- .entry-meta -->
 					
 					<div class="entry-content">
