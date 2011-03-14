@@ -240,6 +240,9 @@
     width: 16px;
 }
 
+.page-template-home4-php .addthis_toolbox {
+	float: right;
+}
 /**************** Simon - 7/03/2011 ********************/
 
 .page-template-home6-php .post img{
