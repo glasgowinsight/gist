@@ -29,8 +29,8 @@ get_header(); ?>
 		</div><!-- .entry-content -->					
 
 				</div><!-- #post-## -->
-				<h2>Discussion</h2>
-				<?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'small_toolbox' ); ?>
+				<h2>Discussion <?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'small_toolbox' ); ?></h2>
+				
 				<?php comments_template( '', true ); ?>
 
 
