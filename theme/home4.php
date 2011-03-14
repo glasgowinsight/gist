@@ -105,20 +105,7 @@ Template Name: Home 4
 		</div>		
 
 		<div class="sidebarSection">
-		<h3> Find items about </h3>
-		
-		<ul> 
-			<li>Local Glasgow science </li> 
-			<li>Internationsl research </li> 
-			<li>interviews with scientists </li> 
-			<li>Current Events </li> 
-			<li>Opinions </li> 
-		</ul>
-		</div> <!-- first sidebarSection -->
-
-
-		<div class="sidebarSection">
-		<h3> Intererest? Find out about </h3> 
+		<h3> Interested? Find out about </h3> 
 		<ul> 
 			<li>Physics </li> 
 			<li>Engineering</li> 
@@ -127,7 +114,20 @@ Template Name: Home 4
 		</ul>
 		</div> <!-- second sidebarSection -->
 		<div class="sidebarSection">
-		<h3>Latest News<a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png"/></a>
+		<h3>Keep In Touch</h3>
+		<ul>
+			<li><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png"/>Get the latest news</a></li>
+			<li><a href="mailto:glasgowinsight@gmail.com"><img src="<?php bloginfo('template_directory'); ?>/images/email.png"/>Tell us what's happening</a></li>
+			<li><a href="http://twitter.com/GlasgowGist"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png"/>Follow us on Twitter</a></li>
+			<li><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.jpg"/>Talk to us on Facebook</a></li>
+		</ul>
+		</div>
+		<div class="sidebarSection">
+		<h3>Around The Web</h3>
+		<ul>
+			<li><a href="http://www.bluesci.org/">Bluesci</a></li>
+			<li><a href="http://www.eusci.org/">EUSci</a></li>
+		</ul>
 		</div>
 		</div><!-- #primary .widget-area -->
 </div> <!-- #sidebar -->
