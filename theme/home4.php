@@ -105,7 +105,7 @@ Template Name: Home 4
 		</div>		
 
 		<div class="sidebarSection">
-		<h3> Interested? Find out about </h3> 
+		<h3> Find out about </h3> 
 		<ul> 
 			<li>Physics </li> 
 			<li>Engineering</li> 

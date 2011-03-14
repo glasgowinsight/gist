@@ -228,6 +228,18 @@
 	float: right !important;
 }
 
+.page-template-home4-php .sidebarSection li {
+    list-style: none outside none;
+    vertical-align: middle;
+}
+
+.page-template-home4-php .sidebarSection li img {
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 16px;
+}
+
 /**************** Simon - 7/03/2011 ********************/
 
 .page-template-home6-php .post img{
