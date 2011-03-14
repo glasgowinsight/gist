@@ -105,6 +105,35 @@
 	font-weight: bold !important;
 }
 
+.page-template-home3-php .addthis_toolbox {
+	float: right;
+}
+
+.page-template-home3-php h3#reply-title {
+    border-bottom: 2px solid #112552 !important;
+    color: #112552 !important;
+    font-weight: bold !important;
+    margin-top: 10px;
+}
+.page-template-home3-php .comment-form-comment{
+	float: left;
+	margin-right: 5px;
+}
+
+.page-template-home3-php .comment-form-comment label{
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+.page-template-home3-php .form-submit{
+	clear: both;
+}
+
+.page-template-home3-php .comment-body{
+	width: 90%;
+	float: left;
+}
+
 .page-template-home4-php .category-feature, .page-template-home4-php .slider {
 	background: url(images/background-feature.png) no-repeat right top;
 }
@@ -240,9 +269,6 @@
     width: 16px;
 }
 
-.page-template-home4-php .addthis_toolbox {
-	float: right;
-}
 /**************** Simon - 7/03/2011 ********************/
 
 .page-template-home6-php .post img{
