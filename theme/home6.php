@@ -100,39 +100,7 @@ Template Name: Home 6 - Does this appear?
 
 
 			<div id="mainPostSectionLeft">
-			<h3> More Features </h3>
-			<ul>
-				<li> This colomn could be replaced with podcasts when there are enough </li>
-				<li> Access to Science </li> 
-				<li> Crimes Against Fashion – What to wear at a crime scene </li> 
-				<li> Now you see it… </h4> </li> 
-				<li> NMGBs: Bacteria’s worst nightmare? </li> 
-			</ul>	
-			
-			</div> 
-
-			<div id="mainPostSectionMid">
-			<h3> Podcasts and Events </h3>
-			<ul>
-				<li> <span class="highlight"> Comming Soon ... </span>GIST podcasts science podcasts from the GIST team will be with you soon. Check back here soon.</li> 
-				<li> <span class="highlight"> 13th March 2011 </span>National Science Weedk </li>
-				<li> <span class="highlight"> 24th March 2011 </span>GIST goes to Glasgow Uni </li>  
-			</div> 
-
-			<div id="mainPostSectionRight">
-			
-			<p> Space for social media boxes twitter, facebook, like etc </p>
-
-			</div> 
-			</div> 
-			
-
-			</div> <!-- #content -->
-	
-
-
-<div id="sidebar">
-<div id="snippets">
+			<div id="snippets">
 	<?php 
 		function custom_excerpt_length( $length ) {
 			return 20;
@@ -140,7 +108,7 @@ Template Name: Home 6 - Does this appear?
 		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 		$posts = array();
 		$ids = array();
-		add_posts( 'snippet', 5, $posts, $ids );
+		add_posts( 'snippet', 3, $posts, $ids );
 		foreach ($posts as $post):
 	    	setup_postdata($post); ?>
 			<div id="post-<?php the_ID(); ?>" class="sideSnippets">
@@ -156,8 +124,77 @@ Template Name: Home 6 - Does this appear?
 	    remove_filter( 'excerpt_length', 'custom_excerpt_length' );
 	?>
 </div>
+			
+			</div> 
+
+			<div class="mainPostSectionMid">
+			<h3> Podcasts </h3> 
+			<ul>
+				<li> <span class="highlight"> Comming Soon ... </span>GIST podcasts science podcasts from the GIST team will be with you soon. Check back here soon.</li>  
+			</ul> 
+			</div>
+			<div class="mainPostSectionMid">
+			<h3> More Features </h3> 
+			<ul>
+				<li> Or other things until we get enough podcasts to fill this up </li>
+			</ul>
+
+			</div> 
+			
+			</div>
+			</div> <!-- #content -->
+	
+
+
+<div id="sidebar">
+
+		<div id="primary" role="complementary">
+		
+		<div class="sidebarSection">
+		<h3> Events coming up </h3>
+		<ul>
+				<li> <span class="highlight"> Comming Soon ... </span>GIST podcasts science podcasts from the GIST team will be with you soon. Check back here soon.</li> 
+				<li> <span class="highlight"> 13th March 2011 </span>National Science Weedk </li>
+				<li> <span class="highlight"> 24th March 2011 </span>GIST goes to Glasgow Uni </li>  
+		</ul>
+		</div> 
+
+		
+	
+			
+
+		<div class="sidebarSection">
+		<h3> Find out about </h3> 
+		<ul> 
+			<li>Physics </li> 
+			<li>Engineering</li> 
+			<li>Biology</li> 
+			<li>Chemistry</li> 
+		</ul>
+		<div class="sidebarSection">
+		<script>show_tweets();</script>
+		</div>	
+		</div> <!-- second sidebarSection -->
+		<div class="sidebarSection">
+		<h3>Keep In Touch</h3>
+		<ul>
+			<li><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png"/>Get the latest news</a></li>
+			<li><a href="mailto:glasgowinsight@gmail.com"><img src="<?php bloginfo('template_directory'); ?>/images/email.png"/>Tell us what's happening</a></li>
+			<li><a href="http://twitter.com/GlasgowGist"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png"/>Follow us on Twitter</a></li>
+			<li><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.jpg"/>Talk to us on Facebook</a></li>
+		</ul>
+		</div>
+		<div class="sidebarSection">
+		<h3>Around The Web</h3>
+		<ul>
+			<li><a href="http://www.bluesci.org/">Bluesci</a></li>
+			<li><a href="http://www.eusci.org/">EUSci</a></li>
+		</ul>
+		</div>
+		</div><!-- #primary .widget-area -->
 </div> <!-- #sidebar -->
 
 
 	<?php get_footer(); ?>
 
+		

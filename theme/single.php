@@ -56,8 +56,8 @@ get_header(); ?>
 	<div id="find-out" class="sidebarSection"> 
 	<h3> Find out more </h3> 
 	<ul>
-		<li> External link 1 </li>
-		<li> External link 2</li>
+		<li> Each of these boxes would appear </li>
+		<li> only if releant info was included</li>
 		<li> External link 3</li>
 	</ul>
 	</div>

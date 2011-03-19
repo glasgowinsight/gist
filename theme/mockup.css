@@ -49,9 +49,7 @@
 	text-align: center;
 }
 
-.page-template #snippets {
-	background: #685459;
-}
+
 
 .page-template a {
 	color: #000000;
@@ -74,8 +72,7 @@
 }
 
 .page-template #snippets .post img {
-	width: 100%;
-
+	
 }
 
 .page-template #snippets .post p {
@@ -275,28 +272,49 @@
 	float: left;
 }
 
+.page-template-home6-php h2#sliderTitle{
+	
+	width: 96%;
+}
 
+.page-template-home6-php .img{
+	width: 100%;
+}
+
+.page-template-home6-php .slider .entry-summary {
+	top: 50px;
+	margin-top: 100px;
+	margin-bottom:0;
+	padding: 5px;
+
+}
+
+
+.page-template-home-6-php img{
+	
+}
 .page-template-home6-php #mainPostSectionLeft{
-	width: 220px;
-	margin: 5px;
+	width: 460px;
+	margin: 5px 5px 5px 0;
 	float: left;
-	background: #c1a6a6;
+	padding-bottom: 70px;
 }
 
-.page-template-home6-php #mainPostSectionMid{
-	width: 220px;
+.page-template-home6-php .mainPostSectionMid{
+	width: 230px;
 	margin: 5px;
 	float: left;
-	background: #b1c1a6;
+	background: #c1b9a6;
+	padding-bottom: 115px;
 }
 
-.page-template-home6-php #mainPostSectionLeft h3, .page-template-home6-php #mainPostSectionMid h3{
+.page-template-home6-php #mainPostSectionLeft h3, .page-template-home6-php .mainPostSectionMid h3{
 	color: white;
 	padding: 5px 0 2px 0 ;
 	
 }
 
-.page-template-home6-php #mainPostSectionLeft ul, .page-template-home6-php #mainPostSectionMid ul{
+.page-template-home6-php #mainPostSectionLeft ul, .page-template-home6-php .mainPostSectionMid ul{
 	padding-left: 1.5em;
 	list-style-type: square;
 }
@@ -309,7 +327,7 @@
 
 }
 
-.page-template-home6-php #mainPostSectionMid li {
+.page-template-home6-php .mainPostSectionMid li {
 	font-size: 80%;
 	line-height: 1.4;
 	padding-bottom: 4px;
@@ -322,13 +340,18 @@
 
 
 .page-template-home6-php #mainPostSectionLeft h3 {
-	width: 220px;
-	background: #822424;
+	width: 440px;
+	border-top: 2px solid #2857af;
+	border-bottom: 1px solid #535353;
+	margin-bottom: 2px;
 }
 
-.page-template-home6-php #mainPostSectionMid h3 {
-	width: 220px;
-	background: #1d4400;
+.page-template-home6-php .mainPostSectionMid h3 {
+	width: 230px;
+	border-top: 2px solid #c68b00;
+	border-bottom: 1px solid #535353;
+	margin-bottom: 2px;
+	
 }
 
 .page-template-home6-php #mainPostSectionRight{
@@ -338,25 +361,37 @@
 }
 
 .page-template-home6-php #snippets .post img, .page-template-home6-php .simpleSlide-slide img {
-	float: left;
+
+	width: 100%;
+}
+
+.page-template-home6-php .simpleSlide-slide .sliderImage{
+	top: 0;
+	width: 100%;
+	margin-top: -50px;
+	height: 250px;
+}
+.page-template-home6-php .simpleSlide-slide .sliderImage img{
+	padding: 5px;
+	height: 250px
 }
 
 .page-template-home6-php .category-feature, .page-template-home6-php .slider {
-	background:  url(images/banner3large.png) no-repeat right top;
+	background:  #949dae;
 	margin-bottom: 20px;
-
+	padding-right: 5px;
 }
 
-.page-template-home6-php .slider{ 
-	padding-left: 20px;
-}
 
-.page-template-home6-php .slider h3 {
+.page-template-home6-php .slider .entry-title {
 	width: 80%;
 	font-weight: bold; 
+	margin-top: -200px;
+	padding: 5px;
+
 }
 .page-template-home6-php .slider h3 a{
-	color: white;
+	color: #112552;
 }
 .page-template-home6-php .simpleSlide-thumbnails{
 	width: 100%;
@@ -366,12 +401,13 @@
 	text-align:left;
 	background: #2857af;
 	color: white;
+	margin-top: -40px;
 }
 
 .page-template-home6-php .simpleSlide-thumbnails h3{
 	display: inline;
 	font-weight: bold;
-	text-align:left
+	text-align:left;
 }
 .page-template-home6-php .jump-to img{
 	width:50px;
@@ -414,7 +450,6 @@
 }
 
 .page-template-home6-php .post, .page-template .slider {
-	padding-right: 50px;
 }
 
 .page-template-home6-php .post h2 {
@@ -422,32 +457,29 @@
 }
 
 .page-template-home6-php #snippets {
-	background: url('./images/snippetsTop.jpg') no-repeat;
-	padding-top: 25px;
 	float:right;
 	}
 .page-template-home6-php #snippets .sideSnippets{
-	background: #9da7ba;
+	background: #E5E8FF;
 	margin-bottom: 5px;
 }
 
-.page-template-home6-php .sideSnippets h3{
-        background: #2857af;   
-	width: 200px;
-	
-}
 
 .page-template-home6-php .sideSnippets .entry-summary{
 	padding-left: 3px;
 }
 
 .page-template-home6-php #snippets h3 a{
-	color: white;
+	color: #112552;
 	font-weight: bold;
 }
 
 
 .page-template-home6-php .sideSnippets img{
-	width: 100%;
-	height: 50px;
+	float: left;
+	width: 200px;
+}
+
+.page-template-home6-php .sidebarSection{
+	background: #E5E8FF;
 }
