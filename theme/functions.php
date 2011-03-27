@@ -402,6 +402,33 @@ function show_post_excerpt($slide=false){
 	</div>
 <?php }
 
+function gather_posts($category, $limit, &$posts, &$ids, $order=NULL) {
+	$params = array(
+		'category_name'=>$category,
+		'numberposts'=>$limit,
+		'post__not_in'=>$ids,
+	);
+	
+	if($order != NULL){
+		$params['orderby'] = $order;
+	}
+	
+	$p=get_posts($params);
+	foreach ($p as $post) {
+		$ids[] = $post->ID;
+		$posts[] = $post;
+	}
+}
+
+function get_latest_feature_categories(){
+	$parent = get_category_by_slug('feature'); 
+  	return get_categories(array(
+  		'child_of'=>$parent->cat_ID,
+  		'orderby'=>'id',
+  		'order'=>'desc'
+  	));
+}
+
 function get_category_link_by_name($cat_name){
 	$id = get_cat_ID($cat_name);
 	return get_category_link($id);
