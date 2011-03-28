@@ -63,7 +63,7 @@ get_header(); ?>
 			?><div id="snippets"><?php 
 			while (have_posts()){
 				the_post(); 
-            	show_post_excerpt(post_class());
+            	show_post_excerpt(get_post_class());
 			}
 			?></div><?php 
 		}
@@ -77,7 +77,7 @@ get_header(); ?>
 			?><div id="podcasts"><?php 
 			while (have_posts()){
 				the_post(); 
-            	show_post_excerpt(post_class());
+            	show_post_excerpt(get_post_class());
 			}
 			?></div><?php 
 		}
@@ -86,7 +86,7 @@ get_header(); ?>
 		query_posts( array(
 			'category_name'=>'feature',
 			'num_posts'=>10,
-			'post__not_in'=>$ids,
+			'post__not_in'=>$ids
 		));
 		if(have_posts()){
 			?><div id="old_features"><ul><?php 
