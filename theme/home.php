@@ -36,7 +36,7 @@ get_header(); ?>
 					
 					foreach ($posts as $post){
 	    				setup_postdata($post); 
-						show_post_excerpt(true);
+						show_post_excerpt('simpleSlide-slide');
 					}
 				?>
 	        </div>
@@ -63,7 +63,7 @@ get_header(); ?>
 			?><div id="snippets"><?php 
 			while (have_posts()){
 				the_post(); 
-            	show_post_excerpt(true);
+            	show_post_excerpt(post_class());
 			}
 			?></div><?php 
 		}
@@ -77,7 +77,7 @@ get_header(); ?>
 			?><div id="podcasts"><?php 
 			while (have_posts()){
 				the_post(); 
-            	show_post_excerpt(true);
+            	show_post_excerpt(post_class());
 			}
 			?></div><?php 
 		}
@@ -89,12 +89,12 @@ get_header(); ?>
 			'post__not_in'=>$ids,
 		));
 		if(have_posts()){
-			?><div id="old_features"><?php 
+			?><div id="old_features"><ul><?php 
 			while (have_posts()){
 				the_post(); 
-            	show_post_excerpt(true);
+            	?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php 
 			}
-			?></div><?php 
+			?></ul></div><?php 
 		}
 	?>
 	<?php 
@@ -103,12 +103,12 @@ get_header(); ?>
 			'num_posts'=>5
 		));
 		if(have_posts()){
-			?><div id="events"><?php 
+			?><div id="events"><ul><?php 
 			while (have_posts()){
 				the_post(); 
-            	show_post_excerpt(true);
+            	?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php 
 			}
-			?></div><?php 
+			?></ul></div><?php 
 		}
 	?>
 </div><!-- #content -->
