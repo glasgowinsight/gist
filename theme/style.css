@@ -191,9 +191,19 @@ archive .simpleSlide-slide {
 	margin: 0px
 }
 
-.archive .entry-summary {
+archive .simpleSlide-slide .entry-thumbnail{
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+
+.archive #snippets .entry-summary {
 	clear: none;
 	padding-top: 0px;
+}
+
+archive #snippets .entry-thumbnail{
+	float: left;
 }
 
 .archive .simpleSlide-window {
@@ -245,7 +255,7 @@ archive .simpleSlide-slide {
 .category-event{
 	border-color: #93000e;
 }
-.cetegory-event h2 { 
+.category-event h2 { 
 	color: #93000e;
 }
 
@@ -369,4 +379,15 @@ archive .simpleSlide-slide {
 }
 .single-post-php .authorImage{
 	padding: 5px;
+}
+
+/*------------------- Home Page -------------------*/
+.home #left-content{
+	width: 66%;
+	float: left;
+}
+
+.home #right-content{
+	width: 33%;
+	float: left;
 }

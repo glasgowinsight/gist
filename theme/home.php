@@ -38,6 +38,11 @@ get_header(); ?>
 	    				setup_postdata($post); 
 						show_post_excerpt('simpleSlide-slide');
 					}
+					
+					# Repeat the first div. This is used by simpleSlide.js so we get the
+					# effect of it constantly scrolling forward, without a 'rewind' effect
+					setup_postdata($posts[0]); 
+					show_post_excerpt('simpleSlide-slide');
 				?>
 	        </div>
 	    </div>
@@ -54,63 +59,53 @@ get_header(); ?>
 		     ?>
 		</div>
 	</div>
-	<?php 
-		query_posts( array(
-			'category_name'=>'snippet',
-			'num_posts'=>3
-		));
-		if(have_posts()){
-			?><div id="snippets"><?php 
-			while (have_posts()){
-				the_post(); 
-            	show_post_excerpt(get_post_class());
+	<div id=left-content">
+		<?php 
+			query_posts( array(
+				'category_name'=>'snippet',
+				'num_posts'=>3
+			));
+			if(have_posts()){
+				?><div id="snippets"><?php 
+				while (have_posts()){
+					the_post(); 
+	            	show_post_excerpt(implode(' ', get_post_class()));
+				}
+				?></div><?php 
 			}
-			?></div><?php 
-		}
-	?>
-	<?php 
-		query_posts( array(
-			'category_name'=>'podcast',
-			'num_posts'=>2
-		));
-		if(have_posts()){
-			?><div id="podcasts"><?php 
-			while (have_posts()){
-				the_post(); 
-            	show_post_excerpt(get_post_class());
+		?>
+	</div>
+	<div id="right-content">
+		<?php 
+			query_posts( array(
+				'category_name'=>'podcast',
+				'num_posts'=>2
+			));
+			if(have_posts()){
+				?><div id="podcasts"><?php 
+				while (have_posts()){
+					the_post(); 
+	            	show_post_excerpt(implode(' ', get_post_class()));
+				}
+				?></div><?php 
 			}
-			?></div><?php 
-		}
-	?>
-	<?php 
-		query_posts( array(
-			'category_name'=>'feature',
-			'num_posts'=>10,
-			'post__not_in'=>$ids
-		));
-		if(have_posts()){
-			?><div id="old_features"><ul><?php 
-			while (have_posts()){
-				the_post(); 
-            	?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php 
+		?>
+		<?php 
+			query_posts( array(
+				'category_name'=>'feature',
+				'num_posts'=>10,
+				'post__not_in'=>$ids
+			));
+			if(have_posts()){
+				?><div id="old_features"><ul><?php 
+				while (have_posts()){
+					the_post(); 
+	            	?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php 
+				}
+				?></ul></div><?php 
 			}
-			?></ul></div><?php 
-		}
-	?>
-	<?php 
-		query_posts( array(
-			'category_name'=>'event',
-			'num_posts'=>5
-		));
-		if(have_posts()){
-			?><div id="events"><ul><?php 
-			while (have_posts()){
-				the_post(); 
-            	?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php 
-			}
-			?></ul></div><?php 
-		}
-	?>
+		?>
+	</div>
 </div><!-- #content -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

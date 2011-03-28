@@ -128,7 +128,7 @@ add_filter( 'wp_page_menu_args', 'twentyten_page_menu_args' );
  * @return int
  */
 function twentyten_excerpt_length( $length ) {
-	return 40;
+	return 20;
 }
 add_filter( 'excerpt_length', 'twentyten_excerpt_length' );
 
@@ -379,7 +379,7 @@ endif;
 function show_post_excerpt($class){
 	?><div id="post-<?php the_ID(); ?>" class="<?php echo $class; ?>">
 		<h3><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-	    <div><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a></div>
+	    <div class="entry-thumbnail"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a></div>
 	 	<div class="entry-summary"><?php the_excerpt(); ?></div>
 	</div><?php
 }

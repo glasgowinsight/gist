@@ -11,28 +11,42 @@
 
 		<div id="primary" role="complementary">
 			
-		<div class="sidebarSection">
-		<h3> Find items about </h3>
-		
-		<ul> 
-			<li>Local Glasgow science </li> 
-			<li>Internationsl research </li> 
-			<li>interviews with scientists </li> 
-			<li>Current Events </li> 
-			<li>Opinions </li> 
-		</ul>
-		</div> <!-- first sidebarSection -->
-
-
-		<div class="sidebarSection">
-		<h3> Intererest? Find out about </h3> 
-		<ul> 
-			<li>Physics </li> 
-			<li>Engineering</li> 
-			<li>Biology</li> 
-			<li>Chemistry</li> 
-		</ul>
-		</div> <!-- second sidebarSection -->
+			<?php 
+				query_posts( array(
+					'category_name'=>'event',
+					'num_posts'=>5
+				));
+				if(have_posts()){
+					?><div id="events"><ul><?php 
+					while (have_posts()){
+						the_post(); 
+		            	?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php 
+					}
+					?></ul></div><?php 
+				}
+			?>
+			<div class="sidebarSection">
+			<h3> Find items about </h3>
+			
+			<ul> 
+				<li>Local Glasgow science </li> 
+				<li>Internationsl research </li> 
+				<li>interviews with scientists </li> 
+				<li>Current Events </li> 
+				<li>Opinions </li> 
+			</ul>
+			</div> <!-- first sidebarSection -->
+	
+	
+			<div class="sidebarSection">
+			<h3> Intererest? Find out about </h3> 
+			<ul> 
+				<li>Physics </li> 
+				<li>Engineering</li> 
+				<li>Biology</li> 
+				<li>Chemistry</li> 
+			</ul>
+			</div> <!-- second sidebarSection -->
 
 		</div><!-- #primary .widget-area -->
 
