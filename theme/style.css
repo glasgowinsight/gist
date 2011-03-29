@@ -238,7 +238,7 @@ div.clearer {
 }
 
 .sidebarSection ul {
-	list-style-type: square;
+	list-style-type: none;
 	padding-left: 1em;
 }
 /*--------------- Footer Styling -------------------*/
@@ -406,16 +406,19 @@ div.clearer {
 
 #snippets .post{
 	background: #E5E8FF;
-	margin-bottom: 5px;
+	margin: 5px;
 	overflow: auto;
 }
 
 #snippets .post h3{
-	color: #112552;
 	margin-bottom: 2px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	width: 100%;
+}
+
+#snippets .post h3, #snippets .post h3 a{
+	color: #112552;
 }
 
 #podcasts .post{
@@ -431,6 +434,10 @@ div.clearer {
 	width: 100%;
 }
 
+#podcasts .post h3, #podcasts .post h3 a{
+	color: #ffffff;
+}
+
 #old_features{
 	background: #C1B9A6;
 	margin: 5px;
@@ -444,6 +451,10 @@ div.clearer {
 	width: 100%;
 }
 
-#sidebar{
-	list-style: none;
+#sidebar a{
+	color: #000000;
+}
+
+#sidebar img{
+	marging-right: 2px;
 }
