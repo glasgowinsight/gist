@@ -15,7 +15,7 @@
 				'num_posts'=>5
 			));
 			if(have_posts()){
-				?><div id="events" class="sidebarSection"><ul><?php 
+				?><div id="events" class="sidebarSection"><h3>Upcoming Events</h3><ul><?php 
 				while (have_posts()){
 					the_post(); 
 	            	?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php 

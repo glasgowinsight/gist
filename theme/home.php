@@ -94,7 +94,7 @@ get_header(); ?>
 				'post__not_in'=>$ids
 			));
 			if(have_posts()){
-				?><div id="old_features"><ul><?php 
+				?><div id="old_features"><h3>Older Stories</h3><ul><?php 
 				while (have_posts()){
 					the_post(); 
 	            	?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php 

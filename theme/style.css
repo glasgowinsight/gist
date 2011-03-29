@@ -370,7 +370,7 @@ div.clearer {
 	text-align: center;
 }
 
-.page-template-home4-php .jump-to img {
+.home .jump-to img {
 	width: 40px;
 	height: 40px;
 	padding: 2px;
@@ -407,9 +407,11 @@ div.clearer {
 #snippets .post{
 	background: #E5E8FF;
 	margin-bottom: 5px;
+	overflow: auto;
 }
 
 #snippets .post h3{
+	color: #112552;
 	margin-bottom: 2px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -419,10 +421,10 @@ div.clearer {
 #podcasts .post{
 	background: #C1B9A6;
 	margin: 5px;
-	overflow: auto;
 }
 
 #podcasts .post h3{
+	color: #ffffff;
 	margin-bottom: 2px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -432,4 +434,16 @@ div.clearer {
 #old_features{
 	background: #C1B9A6;
 	margin: 5px;
+}
+
+#old_features h3{
+	color: #ffffff;
+	margin-bottom: 2px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+#sidebar{
+	list-style: none;
 }
