@@ -18,10 +18,7 @@ get_header(); ?>
 <div id="content" role="main">
 
 	<div class="slider noscript">
-		<h2>Latest Features</h2>
-	    <div class="left-button" rel="1"></div>
-	    <div class="right-button" rel="1"></div>
-	    <div class="simpleSlide-window" rel="1">
+		<div class="simpleSlide-window" rel="1">
 	    	<div class="simpleSlide-tray auto-slider" rel="1">
 				<?php 
 					$categories = get_latest_feature_categories();
@@ -59,7 +56,7 @@ get_header(); ?>
 		     ?>
 		</div>
 	</div>
-	<div id=left-content">
+	<div id="left-content">
 		<?php 
 			query_posts( array(
 				'category_name'=>'snippet',
