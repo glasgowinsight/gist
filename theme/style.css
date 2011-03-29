@@ -44,7 +44,7 @@ p {
 
 #body{
 	background: #f1f1f1;
-
+	font-size: 10pt;
 }
 
 #wrapper {
@@ -225,17 +225,16 @@ div.clearer {
 }
 
 .sidebarSection{ 
-	background: #9da7ba;
+	background: #E5E8FF;
 	margin-bottom: 5px;
 	border-bottom: 1px solid black;
 }
 
 .sidebarSection h3{
-	background: #2857af;
-	width: 100%
+	background: #2857AF;
+	width: 100%;
 	color: #FFFFFF;
 	font-weight: bold;
-
 }
 
 .sidebarSection ul {
@@ -371,6 +370,27 @@ div.clearer {
 	text-align: center;
 }
 
+.page-template-home4-php .jump-to img {
+	width: 40px;
+	height: 40px;
+	padding: 2px;
+}
+
+.home .simpleSlide-tray img {
+	width: 200px;
+	height: 200px;
+}
+
+.home .current img {
+	border: 1px #112552 solid;
+	padding: 1px;
+}
+
+.home .hover img{
+	border: 1px #a16106 solid;
+	padding: 1px;
+}
+
 .archive .post img {
 	float: left;
 	padding-right: 10px;
@@ -384,24 +404,32 @@ div.clearer {
 	display: none;
 }
 
-#snippets post{
+#snippets .post{
 	background: #E5E8FF;
 	margin-bottom: 5px;
 }
 
-#snippets post h3{
+#snippets .post h3{
 	margin-bottom: 2px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	width: 100%;
 }
 
-#podcasts post{
+#podcasts .post{
 	background: #C1B9A6;
 	margin: 5px;
+	overflow: auto;
 }
 
-#events{
+#podcasts .post h3{
+	margin-bottom: 2px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+#old_features{
 	background: #C1B9A6;
 	margin: 5px;
 }
