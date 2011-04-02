@@ -40,7 +40,8 @@ get_header(); ?>
 					
 					# Repeat the first div. This is used by simpleSlide.js so we get the
 					# effect of it constantly scrolling forward, without a 'rewind' effect
-					setup_postdata($posts[0]); 
+					$post = $posts[0];
+					setup_postdata($post); 
 					show_post_excerpt('simpleSlide-slide');
 				?>
 	        </div>
