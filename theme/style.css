@@ -28,8 +28,6 @@ a:hover{
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L",
-		sans-serif;
 	clear: both;
 	font-weight: normal;
 	background-color: tranparent;
@@ -52,7 +50,6 @@ p {
 	width: 940px;
 	background: #ffffff;
 	padding:0 20px;
-	font-family: Georgia, "Bitstream Charter", serif;
 	line-height: 150%;
 }
 
@@ -124,13 +121,12 @@ a {
 }
 
 #topNav a {
-	color: #722f31;
 	padding: 0 0 3px 0;
 }
 
 #topNav a:hover {
-	color: #444b56 ;
-	border-bottom: 2px solid blue;
+	color: #a16106;
+	border-bottom: 2px solid #a16106;
 }
 
 #navList li {
@@ -227,7 +223,6 @@ div.clearer {
 .sidebarSection{ 
 	background: #E5E8FF;
 	margin-bottom: 5px;
-	border-bottom: 1px solid black;
 }
 
 .sidebarSection h3{
@@ -275,7 +270,6 @@ div.clearer {
 	border-bottom: 2px solid #822424;
 	font-size: 50px;
 	padding-bottom: 10px;
-	font-family: Georgia, "Bitstream Charter", serif;
 	line-height: 100%;
 }
 
@@ -302,7 +296,6 @@ div.clearer {
 	font-size: 80%;
 	line-height: 130%;
 	font-weight: bold;
-	font-family: arial;
 	padding: 5px;
 }
 
@@ -395,7 +388,7 @@ h3 a {
 }
 
 .home .current img {
-	border: 1px #112552 solid;
+	border: 1px #ffffff solid;
 	padding: 1px;
 }
 
