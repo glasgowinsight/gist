@@ -325,10 +325,6 @@ div.clearer {
 	float: left;
 }
 
-.slider {
-	padding-right: 35px;
-}
-
 .archive .post h2, .slider h2 {
 	font-size: 14px;
 	font-variant: small-caps;
@@ -345,6 +341,7 @@ div.clearer {
 	width: 100%;
 	clear: both;
 	text-align: center;
+	margin: 5px;
 }
 
 .archive .simpleSlide-slide .entry-summary {
@@ -422,7 +419,7 @@ h3 a {
 
 #snippets .post{
 	background: #E5E8FF;
-	margin: 5px;
+	margin: 5px 5px 5px 0px;
 	overflow: auto;
 }
 
@@ -439,7 +436,7 @@ h3 a {
 
 #podcasts .post{
 	background: #C1B9A6;
-	margin: 5px;
+	margin: 5px 0px 5px 5px;
 }
 
 #podcasts .post h3{
@@ -456,7 +453,7 @@ h3 a {
 
 #old_features{
 	background: #C1B9A6;
-	margin: 5px;
+	margin: 5px 0px 5px 5px;
 }
 
 #old_features h3{

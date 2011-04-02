@@ -63,7 +63,7 @@ get_header(); ?>
 		<?php 
 			query_posts( array(
 				'category_name'=>'snippet',
-				'num_posts'=>3
+				'posts_per_page'=>3
 			));
 			if(have_posts()){
 				?><div id="snippets"><?php 
@@ -79,7 +79,7 @@ get_header(); ?>
 		<?php 
 			query_posts( array(
 				'category_name'=>'podcast',
-				'num_posts'=>2
+				'posts_per_page'=>2
 			));
 			if(have_posts()){
 				?><div id="podcasts"><?php 
@@ -93,7 +93,7 @@ get_header(); ?>
 		<?php 
 			query_posts( array(
 				'category_name'=>'feature',
-				'num_posts'=>10,
+				'posts_per_page'=>10,
 				'post__not_in'=>$ids
 			));
 			if(have_posts()){
