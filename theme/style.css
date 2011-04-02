@@ -393,7 +393,7 @@ div.clearer {
 
 .archive .post img {
 	float: left;
-	padding-right: 10px;
+	padding: 5px;
 }
 
 .entry-summary .addthis_default_style {
@@ -456,5 +456,5 @@ div.clearer {
 }
 
 #sidebar img{
-	marging-right: 2px;
+	margin: 2px;
 }
