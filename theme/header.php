@@ -105,7 +105,7 @@
     		    tweets: {
     		      background: '#E5E8FF',
     		      color: '#000000',
-    		      links: '#ffffff'
+    		      links: '#a16106'
     		    }
     		  },
     		  features: {

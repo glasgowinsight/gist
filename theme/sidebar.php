@@ -30,8 +30,7 @@
 					the_post();	?>
 					<li>
 	            		<a href="<?php the_permalink(); ?>">
-	            			<?php echo get_post_meta($post->ID, 'display_date', true)?><br/>
-	            			<?php the_title(); ?>
+	            			<strong><?php echo get_post_meta($post->ID, 'display_date', true)?>:</strong><?php the_title(); ?>
 	            		</a>
 	            	</li><?php 
 				}

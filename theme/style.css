@@ -19,13 +19,13 @@ Tags:
 }
 
 a {
-	color: #722f31;
+	color: #a16106;
 	text-decoration: none; 
 }
 
 a:hover{
-	color: #444b56;
-	}
+	color: #000000;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L",
@@ -430,7 +430,7 @@ h3 a {
 	width: 100%;
 }
 
-#left-content .post h3, #snippets .post h3 a{
+#left-content .post h3, #left-content .post h3 a{
 	color: #112552;
 }
 
@@ -447,7 +447,7 @@ h3 a {
 	width: 100%;
 }
 
-#right-content .post h3, #podcasts .post h3 a{
+#right-content .post h3, #right-content .post h3 a{
 	color: #ffffff;
 }
 
