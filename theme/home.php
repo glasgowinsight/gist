@@ -66,44 +66,25 @@ get_header(); ?>
 				'posts_per_page'=>3
 			));
 			if(have_posts()){
-				?><div id="snippets"><?php 
 				while (have_posts()){
 					the_post(); 
 	            	show_post_excerpt(implode(' ', get_post_class()));
 				}
-				?></div><?php 
 			}
 		?>
 	</div>
 	<div id="right-content">
 		<?php 
-			query_posts( array(
-				'category_name'=>'podcast',
-				'posts_per_page'=>2
-			));
-			if(have_posts()){
-				?><div id="podcasts"><?php 
-				while (have_posts()){
-					the_post(); 
-	            	show_post_excerpt(implode(' ', get_post_class()));
-				}
-				?></div><?php 
+			$posts = array();
+			$min_features=2;
+			gather_posts( 'podcast', $min_features, $posts, $ids);
+			if(count($posts)<$min_features){
+				gather_posts( 'feature', $min_features-count($posts), $posts, $ids);
 			}
-		?>
-		<?php 
-			query_posts( array(
-				'category_name'=>'feature',
-				'posts_per_page'=>10,
-				'post__not_in'=>$ids
-			));
-			if(have_posts()){
-				?><div id="old_features"><h3>Older Stories</h3><ul><?php 
-				while (have_posts()){
-					the_post(); 
-	            	?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php 
-				}
-				?></ul></div><?php 
-			}
+			foreach ($posts as $post){
+    			setup_postdata($post); 
+				show_post_excerpt(implode(' ', get_post_class()));
+			}					
 		?>
 	</div>
 </div><!-- #content -->

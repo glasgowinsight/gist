@@ -322,7 +322,7 @@ div.clearer {
 
 .home #right-content{
 	width: 33%;
-	float: left;
+	float: right;
 }
 
 .archive .post h2, .slider h2 {
@@ -417,29 +417,29 @@ h3 a {
 	display: none;
 }
 
-#snippets .post{
+#left-content .post{
 	background: #E5E8FF;
 	margin: 5px 5px 5px 0px;
 	overflow: auto;
 }
 
-#snippets .post h3{
+#left-content .post h3{
 	margin-bottom: 2px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	width: 100%;
 }
 
-#snippets .post h3, #snippets .post h3 a{
+#left-content .post h3, #snippets .post h3 a{
 	color: #112552;
 }
 
-#podcasts .post{
+#right-content .post{
 	background: #C1B9A6;
 	margin: 5px 0px 5px 5px;
 }
 
-#podcasts .post h3{
+#right-content .post h3{
 	color: #ffffff;
 	margin-bottom: 2px;
 	border-top: 1px solid black;
@@ -447,21 +447,8 @@ h3 a {
 	width: 100%;
 }
 
-#podcasts .post h3, #podcasts .post h3 a{
+#right-content .post h3, #podcasts .post h3 a{
 	color: #ffffff;
-}
-
-#old_features{
-	background: #C1B9A6;
-	margin: 5px 0px 5px 5px;
-}
-
-#old_features h3{
-	color: #ffffff;
-	margin-bottom: 2px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	width: 100%;
 }
 
 #sidebar a{
@@ -470,4 +457,8 @@ h3 a {
 
 #sidebar img{
 	margin: 2px;
+}
+
+.followLinks a span{
+	vertical-align: top;
 }
