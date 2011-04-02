@@ -18,6 +18,8 @@ get_header(); ?>
 <div id="content" role="main">
 
 	<div class="slider noscript">
+		<div class="left-button" rel="1"></div>
+		<div class="right-button" rel="1"></div>
 		<div class="simpleSlide-window" rel="1">
 	    	<div class="simpleSlide-tray auto-slider" rel="1">
 				<?php 

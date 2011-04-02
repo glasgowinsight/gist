@@ -330,8 +330,8 @@ function ssInit(){
 		
         $('.auto-slider').each( function() {
             var related_group = $(this).attr('rel');
-			$(this).everyTime(5000, "autoslide", function(){
-				simpleSlideAction('.right-button', related_group);
+            $(this).everyTime(5000, "autoslide", function(){
+            	simpleSlideAction('.right-button', related_group);
 			});
         }); 
 	});
