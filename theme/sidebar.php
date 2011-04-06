@@ -12,7 +12,7 @@
 		<?php 
 			$events = get_posts( array(
 				'category_name'=>'event',
-				'num_posts'=>5,
+				'numberposts'=>5,
 				'order'=>'ASC',
 				'orderby'=>'meta_value',
 				'meta_key'=>'start_date',

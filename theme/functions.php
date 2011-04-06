@@ -268,8 +268,8 @@ function sidebar($id, $title, $collection, $callback) {
 			<h3> <?php echo $title ?> </h3> 
 			<ul> 
 				<?php 
-					foreach ($in as $collection){
-						?><li>$callback($in)</li><?php 
+					foreach ($collection as $in){
+						?><li><?php $callback($in) ?></li><?php 
 					}
 				?>
 			</ul>

@@ -25,37 +25,49 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div><!-- #content -->
 		<div id="sidebar">
-			<div class="sidebarSection">
-				<h3> About the Author </h3> 
-				<div class="authorImage"><?php userphoto_the_author_photo() ?></div>
-				<div class="authorDescription"><?php the_author_meta( 'description' ); ?></div>
-			</div> <!-- sidebar section -->
-		
 			<?php 
+				$description = get_the_author_meta('description');
+				if($description){ ?>
+					<div class="sidebarSection">
+						<h3> About the Author </h3> 
+						<div class="authorImage"><?php userphoto_the_author_photo() ?></div>
+						<div class="authorDescription"><?php echo $description; ?></div>
+					</div> <?php 
+				}
+
 				$links = get_post_custom_values('external_link');
 				function format_link($tag){
 					echo $link;
 				}
 				sidebar('find-out', 'Find out more', get_tags(), 'format_link');
-			?>
-		
-			<div id="similar-articles" class="sidebarSection">
-				<h3> Similar articles </h3> 
-				<ul>
-					<li> post 1 title </li>
-					<li> post 2 title</li>
-					<li> post 3 title</li>
-				</ul>
-			</div>
-		
-			<div  id= "author-other" class="sidebarSection"> 
-				<h3> Other articles by Chris </h3> 
-				<ul>
-					<li> post 1 title </li>
-					<li> post 2 title</li>
-					<li> post 3 title</li>
-				</ul>
-			</div>
+				
+				$tags = get_the_tags();
+				$tag_ids = array();
+				foreach ($tags as $tag){
+					$tag_ids[] = $tag->term_id;
+				}
+				$similar = get_posts( array(
+					'numberposts'=>3,
+					'tag__in'=>$tag_ids
+				));
+				
+				$ids = array();
+				foreach ($similar as $p){
+					$ids[] = $p->ID;
+				}
+				function format_article($article){
+					?><a href="<?php echo get_permalink($article->ID); ?>"><?php echo $article->post_title; ?></a><?php 
+				}
+				sidebar('similar-articles', 'Similar articles', $similar, 'format_article');
+				
+				$other = get_posts( array(
+					'numberposts'=>3,
+					'author_name'=>get_the_author(),
+					'post__not_in'=>$ids
+				));
+			
+				sidebar('author-other', 'Other articles by ' . get_the_author(), $other, 'format_article');
+			?>	
 		</div>
 	</div>
 <?php get_footer(); ?>
