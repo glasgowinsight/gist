@@ -261,3 +261,18 @@ function improved_trim_excerpt($text) {
 
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'improved_trim_excerpt');
+
+function sidebar($id, $title, $collection, $callback) {
+	if(count($collection)>0){?>
+		<div id="<?php echo $id ?>" class="sidebarSection">
+			<h3> <?php echo $title ?> </h3> 
+			<ul> 
+				<?php 
+					foreach ($in as $collection){
+						?><li>$callback($in)</li><?php 
+					}
+				?>
+			</ul>
+		</div><?php 
+	}
+}

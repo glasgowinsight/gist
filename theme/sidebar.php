@@ -10,7 +10,7 @@
 <div id="sidebar">
 	<div id="primary" role="complementary">
 		<?php 
-			query_posts( array(
+			$events = get_posts( array(
 				'category_name'=>'event',
 				'num_posts'=>5,
 				'order'=>'ASC',
@@ -25,34 +25,19 @@
 					)
 				)
 			));
-			if(have_posts()){
-				?><div id="events" class="sidebarSection"><h3>Upcoming Events</h3><ul><?php 
-				while (have_posts()){
-					the_post();	?>
-					<li>
-	            		<a href="<?php the_permalink(); ?>">
-	            			<strong><?php echo get_post_meta($post->ID, 'display_date', true)?>:</strong><?php the_title(); ?>
-	            		</a>
-	            	</li><?php 
-				}
-				?></ul></div><?php 
-			}
+			
+			sidebar('events', 'Upcoming Events', $events, function($post){
+				setup_postdata($post);
+				?><a href="<?php the_permalink(); ?>">
+            		<strong><?php echo get_post_meta($post->ID, 'display_date', true)?>:</strong><?php the_title(); ?>
+            	</a><?php 
+			});
 		?>
 		
 		<?php 
-			$tags = get_tags();
-			if(count($tags)>0){?>
-				<div class="sidebarSection">
-					<h3> Find out about </h3> 
-					<ul> 
-						<?php 
-							foreach ($tags as $tag){
-								?><li><a href="<?php echo get_tag_link($tag->term_id)?>"><?php echo $tag->name ?></a></li><?php 
-							}
-						?>
-					</ul>
-				</div><?php 
-			}
+			sidebar('tags', 'Find out about', get_tags(), function($tag){
+				?><a href="<?php echo get_tag_link($tag->term_id)?>"><?php echo $tag->name ?></a><?php 
+			});
 		?>
 		
 		<div class="sidebarSection">
