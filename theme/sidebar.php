@@ -26,18 +26,20 @@
 				)
 			));
 			
-			sidebar('events', 'Upcoming Events', $events, function($post){
+			function format_event($post){
 				setup_postdata($post);
 				?><a href="<?php the_permalink(); ?>">
             		<strong><?php echo get_post_meta($post->ID, 'display_date', true)?>:</strong><?php the_title(); ?>
             	</a><?php 
-			});
+			}
+			sidebar('events', 'Upcoming Events', $events, 'format_event');
 		?>
 		
 		<?php 
-			sidebar('tags', 'Find out about', get_tags(), function($tag){
+			function format_tag($tag){
 				?><a href="<?php echo get_tag_link($tag->term_id)?>"><?php echo $tag->name ?></a><?php 
-			});
+			}
+			sidebar('tags', 'Find out about', get_tags(), 'format_tag');
 		?>
 		
 		<div class="sidebarSection">

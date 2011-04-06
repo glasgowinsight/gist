@@ -33,9 +33,10 @@ get_header(); ?>
 		
 			<?php 
 				$links = get_post_custom_values('external_link');
-				sidebar('find-out', 'Find out more', get_tags(), function($tag){
-					echo $link
-				});
+				function format_link($tag){
+					echo $link;
+				}
+				sidebar('find-out', 'Find out more', get_tags(), 'format_link');
 			?>
 		
 			<div id="similar-articles" class="sidebarSection">
