@@ -40,6 +40,7 @@ p {
 body{
 	background: #f1f1f1;
 	font-size: 10pt;
+	font-family: Bookman, Georgia, "Bitstream Charter", serif;
 }
 
 #wrapper {
@@ -53,7 +54,7 @@ body{
 #main{
 	width: 100%;
 	clear: both; 
-	padding: 40px 0 0 0;
+	padding: 5px 0 0 0;
 }
 
 #sidebar{
@@ -69,9 +70,6 @@ body{
 }
 
 /* ---------------       Header Styling  -------------------------*/
-a {
-	text-decoration: none;
-}
 
 #logo {
 	float: left;
@@ -452,4 +450,82 @@ h3 a {
 
 .followLinks a span{
 	vertical-align: top;
+}
+
+
+/* --------------------   Category Styling ------------------- */
+
+.headlinePost{ 
+	width: 100%;
+}
+
+.category p{
+	padding-left: 30px;
+}
+.headlinePost h3{ 	
+	padding: 5px 0;
+	width: 100%;
+	font-size: 200%;
+	
+}
+.headlinePost h3 a{
+	color: white;
+}
+
+.headlinePost .entry-thumbnail, .smallPost .entry-thumbnail{
+	margin: 3px;
+	float: left;
+}
+
+/*--- Feature Category ---*/
+.category-feature .headlinePost {
+	background:#fce3bd;
+	border-bottom: 2px solid #754700;
+}
+
+.category-feature .headlinePost h3 {
+	background:#754700;
+}
+
+.category-feature  a{
+	color: #a16106;
+}
+
+/*--- Snippets Category ---*/
+.category-snippet .headlinePost {
+	background:#feeded;
+	border-bottom: 2px solid #750000;
+}
+
+.category-snippet .headlinePost h3 {
+	background:#750000;
+}
+
+.category-snippet a{
+	color: #a10606;
+}
+
+/*--- Podcasts Category ---*/
+.category-podcast .headlinePost {
+	background:#e6f6ff;
+	border-bottom: 2px solid #004875;
+}
+
+.category-podcast .headlinePost h3 {
+	background:#004875;
+}
+
+.category-podcast a{
+	color: #068ba1;
+}
+
+/*--- End of Category specific details --*/
+.smallPost{
+	width: 47%;
+	margin: 5px 20px 0 0;
+	float: left;
+}
+
+.row{
+	border-bottom: 1px solid #c1b9a6;
 }

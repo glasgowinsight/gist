@@ -68,7 +68,7 @@ get_header(); ?>
 			if(have_posts()){
 				while (have_posts()){
 					the_post(); 
-	            	show_post_excerpt(implode(' ', get_post_class()));
+	            	show_post_excerpt(implode(' ', get_post_class()), 'thumbnail');
 				}
 			}
 		?>
@@ -83,7 +83,7 @@ get_header(); ?>
 			}
 			foreach ($posts as $post){
     			setup_postdata($post); 
-				show_post_excerpt(implode(' ', get_post_class()));
+				show_post_excerpt(implode(' ', get_post_class()), 'thumbnail');
 			}					
 		?>
 	</div>
