@@ -260,21 +260,14 @@ div.clearer {
 
 }
 
-.single-post h1{
-	color: #822424;
-	border-bottom: 2px solid #822424;
-	font-size: 50px;
-	padding-bottom: 10px;
-	line-height: 100%;
+.single-post h1, .single-post h2, .single-post h3, .single-post h4{
+	color: #112552;
+	font-weight: bold;
 }
 
-.single-post strong{ 
-	font-size: 120%;
-	margin-bottom: 20px;
-}
-.single-post h4{
-	font-weight:bold;
-	padding: 5px 0 5px 0;
+.single-post h1{
+	border-bottom: 2px solid #112552;
+	font-size: 16px;
 }
 
 .single-post-php .wp-caption{
