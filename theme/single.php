@@ -38,10 +38,10 @@ get_header(); ?>
 				}
 
 				$links = get_post_custom_values('external_link');
-				function format_link($tag){
-					echo $tag;
+				function format_link($links){
+					echo $link;
 				}
-				sidebar('find-out', 'Find out more', get_tags(), 'format_link');
+				sidebar('find-out', 'Find out more', $links, 'format_link');
 				
 				$tags = get_the_tags();
 				$tag_ids = array();
