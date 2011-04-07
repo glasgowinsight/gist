@@ -39,16 +39,12 @@
 <?php
 	/* Start the Loop.
 	 *
-	 * In Twenty Ten we use the same loop in multiple contexts.
-	 * It is broken into three main parts: when we're displaying
-	 * posts that are in the gallery category, when we're displaying
-	 * posts in the asides category, and finally all other posts.
-	 *
-	 * Additionally, we sometimes check for whether we are on an
-	 * archive page, a search page, etc., allowing for small differences
-	 * in the loop on each template without actually duplicating
-	 * the rest of the loop that is shared.
-	 *
+	 * This loop is used specifically for cateorgy pages: features, snippets, podcasts at the moment
+	 * Design is to highlihgt the first post asa a headline then display remainder underneath in 
+	 * double col format. 
+	 * 
+	 * For the generic, standard loop see loop.php
+	 * 
 	 * Without further ado, the loop:
 	 */ ?>
 <?php $i=0 ?>
@@ -59,7 +55,7 @@
 <?php /* How to display all other posts.*/ ?>
 
 	<?php 
-			if ($i ==0):  	show_post_excerpt('headlinePost', 'medium'); 
+			if ($i ==0):  	show_headline_post_excerpt('headlinePost', 'medium'); 
 			else:
 			
 				if ( $i % 2 == 1): ?><div class="row"><?php endif;
