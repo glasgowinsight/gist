@@ -61,10 +61,14 @@ get_header(); ?>
 	</div>
 	<div id="left-content">
 		<?php 
-			query_posts( array(
+			$args = array(
 				'category_name'=>'snippet',
 				'posts_per_page'=>3
-			));
+			);
+			if(isset($wp_query->query_vars['post_status']) && current_user_can( 'publish_posts' )) {
+			    $args['post_status'] = $wp_query->query_vars['post_status'];
+			}
+			query_posts($args);
 			if(have_posts()){
 				while (have_posts()){
 					the_post(); 
