@@ -475,77 +475,135 @@ h3 a {
 
 /* --------------------   Category Styling ------------------- */
 
-.headlinePost{ 
+.category h1{
+	width: 100%
+	font-size: 250%;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 5px 0 10px 0;
+	font-family: Bookman, Georgia, "Bitstream Charter", serif;
+	}
+
+
+.category .headlinePost{ 
 	width: 100%;
 }
 
-.category p{
-	padding-left: 30px;
-}
-.headlinePost h3{ 	
-	padding: 5px 0;
+
+.category .headlinePost h3{ 	
+	margin: 15px 0;
+	padding-bottom: 5px;
 	width: 100%;
 	font-size: 200%;
+	font-weigth: normal;
+	border-bottom: 1px solid; 
 	
 }
-.headlinePost h3 a{
-	color: white;
+
+.category .headlinePost p{
+	font-size: 120%;
+	line-height: 150%;
 }
 
-.headlinePost .entry-thumbnail, .smallPost .entry-thumbnail{
+.category .headlinPostImage{
+	width: 320px;
+	float: left;
+}
+
+.category .headlinPostImage img{
+	padding: 5px;
+}
+
+.category .headlinePostSummary{
+	width: 400px;
+	float: right;
+}
+
+.category .headlinePost strong, .category .smallPost strong{
+	font-weight: normal;
+}
+
+.category .headlinePost .entry-thumbnail, .category .smallPost .entry-thumbnail{
 	margin: 3px;
 	float: left;
 }
 
+.category .smallPost p{
+	line-height: 150%;
+}
+
+.category .smallPost h3{
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+
 /*--- Feature Category ---*/
-.category-feature .headlinePost {
+
+.category.category-feature h1 {
+	background:#754700;
+}
+
+.category.category-feature h3 {
+	border-color: #754700;
+}
+
+.category.category-feature .headlinePost {
 	background:#fce3bd;
 	border-bottom: 2px solid #754700;
 }
 
-.category-feature .headlinePost h3 {
-	background:#754700;
-}
-
-.category-feature  a{
+.category.category-feature  a{
 	color: #a16106;
 }
 
+
+
 /*--- Snippets Category ---*/
-.category-snippet .headlinePost {
+
+.category.category-snippet h1 {
+	background:#750000;
+}
+
+.category.category-snippet h3 {
+	border-color: #750000;
+}
+
+.category.category-snippet .headlinePost {
 	background:#feeded;
 	border-bottom: 2px solid #750000;
 }
 
-.category-snippet .headlinePost h3 {
-	background:#750000;
-}
 
-.category-snippet a{
+.category.category-snippet a{
 	color: #a10606;
 }
 
 /*--- Podcasts Category ---*/
-.category-podcast .headlinePost {
+
+.category.category-podcast h1 {
+	background:#004875;
+}
+
+.category.category-podcast h3 {
+	border-color: #004875;
+}
+
+.category.category-podcast .headlinePost {
 	background:#e6f6ff;
 	border-bottom: 2px solid #004875;
 }
 
-.category-podcast .headlinePost h3 {
-	background:#004875;
-}
 
-.category-podcast a{
+.category.category-podcast a{
 	color: #068ba1;
 }
 
 /*--- End of Category specific details --*/
-.smallPost{
+.category .smallPost{
 	width: 47%;
 	margin: 5px 20px 0 0;
 	float: left;
 }
 
-.row{
-	border-bottom: 1px solid #c1b9a6;
-}
+

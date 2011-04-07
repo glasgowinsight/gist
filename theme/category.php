@@ -12,9 +12,9 @@ get_header(); ?>
 		<div id="container">
 			<div id="content" role="main">
 
-	<!---			<h1 class="page-title"><?php
-					printf( __( '%ss', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-				?></h1>  -->
+				<h1 class="page-title"><?php
+					printf( __( '%s Articles' , 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' )
+				?></h1> 
 				<?php
 					$category_description = category_description();
 					if ( ! empty( $category_description ) )
@@ -30,6 +30,6 @@ get_header(); ?>
 			<!-- #content -->
 		</div><!-- #container -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('category'); ?>
 
 <?php get_footer(); ?>

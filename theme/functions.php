@@ -197,6 +197,23 @@ function show_post_excerpt($class, $thumbSize){
 	<div class="clearer"> </div> </div><?php
 }
 
+
+function show_headline_post_excerpt($class, $thumbSize){
+	?><div id="post-<?php the_ID(); ?>" class="<?php echo $class; ?>">
+		<div class="headlinPostImage">
+			<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbSize ); ?></a>
+		</div>
+		<div class="headlinePostSummary">
+		<h3>
+			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php 	
+				$title = get_post_meta($post->ID, 'short_title', true);
+				if($title) echo $title;	else the_title(); ?>
+			</a>
+		</h3>
+	 	<div class="entry-summary"><?php the_excerpt(); ?></div> </div>
+	<div class="clearer"> </div> </div><?php
+}
+
 function gather_posts($category, $limit, &$posts, &$ids, $order=NULL) {
 	$params = array(
 		'category_name'=>$category,
