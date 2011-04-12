@@ -35,14 +35,14 @@ get_header(); ?>
 					
 					foreach ($posts as $post){
 	    				setup_postdata($post); 
-						show_post_excerpt('simpleSlide-slide');
+						show_post_excerpt('simpleSlide-slide', 'slideshow');
 					}
 					
 					# Repeat the first div. This is used by simpleSlide.js so we get the
 					# effect of it constantly scrolling forward, without a 'rewind' effect
 					$post = $posts[0];
 					setup_postdata($post); 
-					show_post_excerpt('simpleSlide-slide');
+					show_post_excerpt('simpleSlide-slide', 'slideshow');
 				?>
 	        </div>
 	    </div>
@@ -52,7 +52,7 @@ get_header(); ?>
 		    	foreach ($posts as $post){
     				setup_postdata($post); 
 					?><span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php 
-					the_post_thumbnail(array(50,50), array('alt'=>'', 'title'=>the_title('', '', false))); 
+					the_post_thumbnail('jump', array('alt'=>'', 'title'=>the_title('', '', false))); 
 					?></span><?php 
 					$i++;
 				}
@@ -66,13 +66,14 @@ get_header(); ?>
 				'posts_per_page'=>3
 			);
 			if(isset($wp_query->query_vars['post_status']) && current_user_can( 'publish_posts' )) {
-			    $args['post_status'] = $wp_query->query_vars['post_status'];
+			    echo "post_status set";
+				$args['post_status'] = $wp_query->query_vars['post_status'];
 			}
 			query_posts($args);
 			if(have_posts()){
 				while (have_posts()){
 					the_post(); 
-	            	show_post_excerpt(implode(' ', get_post_class()), 'thumbnail');
+	            	show_post_excerpt(implode(' ', get_post_class()), 'left-column');
 				}
 			}
 		?>
@@ -87,7 +88,7 @@ get_header(); ?>
 			}
 			foreach ($posts as $post){
     			setup_postdata($post); 
-				show_post_excerpt(implode(' ', get_post_class()), 'thumbnail');
+				show_post_excerpt(implode(' ', get_post_class()), 'right-column');
 			}					
 		?>
 	</div>

@@ -79,6 +79,10 @@ function twentyten_setup() {
 
 	// This theme uses post thumbnails
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'slideshow', 9999, 300 );
+	add_image_size( 'jump', 40, 40, true );
+	add_image_size( 'left-column', 150, 9999 );
+	add_image_size( 'right-column', 100, 9999 );
 
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
@@ -91,8 +95,6 @@ function twentyten_setup() {
 	$locale_file = TEMPLATEPATH . "/languages/$locale.php";
 	if ( is_readable( $locale_file ) )
 		require_once( $locale_file );
-
-	set_post_thumbnail_size( 150, 150 );
 }
 endif;
 

@@ -397,15 +397,8 @@ h3 a {
 }
 
 .home .jump-to img {
-	width: 40px;
-	height: 40px;
 	padding: 2px;
 	margin-top: 2px;
-}
-
-.home .simpleSlide-tray img {
-	width: 200px;
-	height: 200px;
 }
 
 .home .current img {
