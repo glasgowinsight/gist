@@ -81,7 +81,7 @@ get_header(); ?>
 	<div id="right-content">
 		<?php 
 			$posts = array();
-			$min_features=2;
+			$min_features=3;
 			gather_posts( 'podcast', $min_features, $posts, $ids);
 			if(count($posts)<$min_features){
 				gather_posts( 'feature', $min_features-count($posts), $posts, $ids);
