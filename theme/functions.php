@@ -298,7 +298,7 @@ function sidebar($id, $title, $collection, $callback) {
 
 function rss_feed($query) {
 	if ($query->is_feed) {
-		$query->set('cat',get_cat_ID('about gist'));
+		$query->set('cat',0 - get_cat_ID('about gist'));
 	}
 	return $query;
 }
