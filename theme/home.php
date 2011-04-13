@@ -26,11 +26,16 @@ get_header(); ?>
 					$categories = get_latest_feature_categories();
 					$ids = array();
 					$posts = array();
-					gather_posts( $categories[0]->name, -1, $posts, $ids);
 					$min_features=6;
-					$i=1;
-					while($i<count($categories) && count($posts)<$min_features){
-						gather_posts( $categories[i]->name, $min_features-count($posts), $posts, $ids);
+					$num_posts=-1;
+					for($i=1; $i<=count($categories); $i++){
+						gather_posts( $categories[i]->name, $num_posts, $posts, $ids);
+						if(count($posts) >= $min_features){
+							break;
+						}
+						if(count($posts) > 0){
+							$num_posts = $min_features-count($posts);
+						}
 					}
 					
 					foreach ($posts as $post){
@@ -61,15 +66,10 @@ get_header(); ?>
 	</div>
 	<div id="left-content">
 		<?php 
-			$args = array(
+			query_posts(array(
 				'category_name'=>'snippet',
 				'posts_per_page'=>3
-			);
-			if(isset($wp_query->query_vars['post_status']) && current_user_can( 'publish_posts' )) {
-			    echo "post_status set";
-				$args['post_status'] = $wp_query->query_vars['post_status'];
-			}
-			query_posts($args);
+			));
 			if(have_posts()){
 				while (have_posts()){
 					the_post(); 

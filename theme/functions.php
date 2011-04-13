@@ -300,6 +300,9 @@ function rss_feed($query) {
 	if ($query->is_feed) {
 		$query->set('category__not_in', array(get_cat_ID('about gist')));
 	}
+	else if(current_user_can( 'publish_posts' )){
+		$query->set('post_status', array('draft', 'publish'));
+	}
 	return $query;
 }
 add_filter('pre_get_posts','rss_feed');
