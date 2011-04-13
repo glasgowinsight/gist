@@ -329,6 +329,10 @@ div.clearer {
 	float: left;
 }
 
+.sidebarSection .addthis_toolbox a{
+	clear: both
+}
+
 /*------------------- Home Page -------------------*/
 .home #left-content{
 	width: 66%;

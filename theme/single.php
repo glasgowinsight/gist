@@ -14,7 +14,7 @@ get_header(); ?>
 		<div id="content" role="main">
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				<div id="post-<?php the_ID(); ?>"  <?php post_class('single-post'); ?>>
-					<h1 class="entry-title"><?php the_title(); ?> <?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'fb_tw_sc' ); ?></h1>
+					<h1 class="entry-title"><?php the_title(); ?></h1>
 
 					<div class="entry-content">
 						<?php the_content(); ?>
@@ -70,6 +70,10 @@ get_header(); ?>
 			
 				sidebar('author-other', 'Other articles by ' . get_the_author(), $other, 'format_article');
 			?>	
+			<div class="sidebarSection">
+				<h3>Spread The Word</h3>
+				<?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'fb_tw_sc' ); ?>
+			</div>
 		</div>
 	</div>
 <?php get_footer(); ?>
