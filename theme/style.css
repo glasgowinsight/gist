@@ -329,14 +329,17 @@ div.clearer {
 	float: right;
 }
 
+.sidebarSection .addthis_toolbox{
+	padding: 2px;
+}
+
 .sidebarSection .addthis_toolbox a{
 	clear: both;
-	margin: 2px;
 }
 
 .sidebarSection .addthis_toolbox a.addthis_counter{
-	margin-left: 5px
-} 
+	margin-left: 3px
+}
 
 /*------------------- Home Page -------------------*/
 .home #left-content{
