@@ -239,7 +239,8 @@ function get_latest_feature_categories(){
   	return get_categories(array(
   		'child_of'=>$parent->cat_ID,
   		'orderby'=>'id',
-  		'order'=>'desc'
+  		'order'=>'desc',
+  		'hide_empty'=>0
   	));
 }
 

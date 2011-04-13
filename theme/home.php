@@ -28,8 +28,10 @@ get_header(); ?>
 					$posts = array();
 					$min_features=6;
 					$num_posts=-1;
-					for($i=1; $i<=count($categories); $i++){
-						gather_posts( $categories[i]->name, $num_posts, $posts, $ids);
+					echo('Gathering posts');
+					foreach($categories as $category){
+						echo($category->name);
+						gather_posts( $category->name, $num_posts, $posts, $ids);
 						if(count($posts) >= $min_features){
 							break;
 						}
