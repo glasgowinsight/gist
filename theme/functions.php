@@ -295,3 +295,11 @@ function sidebar($id, $title, $collection, $callback) {
 		</div><?php 
 	}
 }
+
+function rss_feed($query) {
+	if ($query->is_feed) {
+		$query->set('cat',get_cat_ID('about gist'));
+	}
+	return $query;
+}
+add_filter('pre_get_posts','rss_feed');
