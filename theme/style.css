@@ -302,10 +302,6 @@ div.clearer {
 	padding: 5px;
 }
 
-.single-post .addthis_toolbox {
-	float: right;
-}
-
 .single-post h3#reply-title {
     border-bottom: 2px solid #112552;
     margin-top: 10px;
@@ -329,9 +325,18 @@ div.clearer {
 	float: left;
 }
 
-.sidebarSection .addthis_toolbox a{
-	clear: both
+.single-post h2 .addthis_toolbox {
+	float: right;
 }
+
+.sidebarSection .addthis_toolbox a{
+	clear: both;
+	margin: 2px;
+}
+
+.sidebarSection .addthis_toolbox a.addthis_counter{
+	margin-left: 5px
+} 
 
 /*------------------- Home Page -------------------*/
 .home #left-content{
