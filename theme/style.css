@@ -294,7 +294,7 @@ div.clearer {
 	padding: 5px;
 }
 
-.single-post .sidebarSection h3, .single-post .sidebarSection h3 a{
+.single-post .sidebarSection h3, .single-post #sidebar h3 a{
 	color: white; 
 
 }
@@ -472,7 +472,7 @@ h3 a {
 	color: #ffffff;
 }
 
-.sidebarSection a{
+#sidebar a{
 	color: #000000;
 }
 
@@ -574,59 +574,59 @@ h3 a {
 
 /*--- Feature Category ---*/
 
-.category .category-feature h1 {
+.category-feature h1 {
 	background:#754700;
 }
 
-.category .category-feature h3 {
+.category-feature h3 {
 	border-color: #754700;
 }
 
-.category .category-feature .headlinePost {
+.category-feature .headlinePost {
 	background:#fce3bd;
 	border-bottom: 2px solid #754700;
 }
 
-.category .category-feature  a{
+.category-feature  a{
 	color: #a16106;
 }
 
 /*--- Snippets Category ---*/
 
-.category .category-snippet h1 {
+.category-snippet h1 {
 	background:#750000;
 }
 
-.category .category-snippet h3 {
+.category-snippet h3 {
 	border-color: #750000;
 }
 
-.category .category-snippet .headlinePost {
+.category-snippet .headlinePost {
 	background:#feeded;
 	border-bottom: 2px solid #750000;
 }
 
 
-.category .category-snippet a{
+.category-snippet a{
 	color: #a10606;
 }
 
 /*--- Podcasts Category ---*/
 
-.category .category-podcast h1 {
+.category-podcast h1 {
 	background:#004875;
 }
 
-.category .category-podcast h3 {
+.category-podcast h3 {
 	border-color: #004875;
 }
 
-.category .category-podcast .headlinePost {
+.category-podcast .headlinePost {
 	background:#e6f6ff;
 	border-bottom: 2px solid #004875;
 }
 
-.category .category-podcast a{
+.category-podcast a{
 	color: #068ba1;
 }
 
