@@ -113,19 +113,20 @@
 
 	<?php 
 		else : 
-			if ($i ==0):
-			  	show_headline_post_excerpt('headlinePost', 'medium'); 
+			if (!in_category('about') && $i == 0):
+			  	show_headline_post_excerpt('headlinePost', 'medium');
+			  	// Hack to not show the main feature on the about page
+			  	$i++;
 			else:
-			
-				if ( $i % 2 == 1): ?><div class="row"><?php endif;
+				if ( $i % 2 == 0): ?><div class="row"><?php endif;
 				show_post_excerpt('smallPost', 'thumbnail');
-				if ( $i % 2 == 0): ?></div><?php endif;
+				if ( $i % 2 == 1): ?></div><?php endif;
 			endif; 
 		endif; // This was the if statement that broke the loop into three parts based on categories. ?>
 
 	<?php $i++ ?>
 <?php endwhile; // End the loop. Whew. ?>
-<?php if ( $i % 2 == 1): ?></div><?php endif;?>
+<?php if ( $i % 2 == 0): ?></div><?php endif;?>
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>

@@ -552,6 +552,26 @@ h3 a {
 .row{
 	clear: both;
 }
+
+/*--- Generic Archives: Tags, Dates, Authors ---*/
+
+.archive h1 {
+	background:#754700;
+}
+
+.archive h3 {
+	border-color: #754700;
+}
+
+.archive .headlinePost {
+	background:#fce3bd;
+	border-bottom: 2px solid #754700;
+}
+
+.archive  a{
+	color: #a16106;
+}
+
 /*--- Feature Category ---*/
 
 .category .category-feature h1 {
@@ -570,8 +590,6 @@ h3 a {
 .category .category-feature  a{
 	color: #a16106;
 }
-
-
 
 /*--- Snippets Category ---*/
 

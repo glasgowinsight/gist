@@ -9,6 +9,8 @@
 ?>
 <div id="sidebar">
 	<div id="primary" role="complementary">
+		<?php wp_reset_query();?>
+		
 		<?php 
 			if(is_home()){
 				$events = get_posts( array(
@@ -36,7 +38,7 @@
 				sidebar('events', 'Upcoming Events', $events, 'format_event');
 			}
 
-			if(!is_category('about-gist')){
+			if(!is_category('about')){
 				function format_tag($tag){
 					?><a href="<?php echo get_tag_link($tag->term_id)?>"><?php echo $tag->name ?></a><?php 
 				}
@@ -44,7 +46,7 @@
 			}
 			
 			if(is_category()){
-				$category = get_the_category();
+				$category = get_category(get_query_var('cat'));
 				$features_id = get_cat_ID('features');
 				if($category->cat_ID == $features_id || $category->category_parent == $features_id){
 					$features = get_latest_feature_categories();
