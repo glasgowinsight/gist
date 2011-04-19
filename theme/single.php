@@ -68,7 +68,7 @@ get_header(); ?>
 					'post__not_in'=>$ids
 				));
 			
-				sidebar('author-other', 'Other articles by <a href="' . get_the_author_link() . '">' . get_the_author() . '</a>', $other, 'format_article');
+				sidebar('author-other', 'Other articles by <a href="' . get_author_posts_url() . '">' . get_the_author() . '</a>', $other, 'format_article');
 			?>	
 			<div class="sidebarSection">
 				<h3>Spread The Word</h3>

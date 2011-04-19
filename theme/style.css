@@ -294,7 +294,7 @@ div.clearer {
 	padding: 5px;
 }
 
-.single-post .sidebarSection h3{
+.single-post .sidebarSection h3, .single-post .sidebarSection h3 a{
 	color: white; 
 
 }
