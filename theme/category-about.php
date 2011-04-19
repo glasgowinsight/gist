@@ -12,9 +12,7 @@ get_header(); ?>
 		<div id="container">
 			<div id="content" role="main">
 
-				<h1 class="page-title"><?php
-					printf( __( '%s Articles' , 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' )
-				?></h1> 
+				<h1 class="page-title"><?php echo single_cat_title( '', false ) ?></h1> 
 				<div class="archive-meta">
 					Glasgow Insight into Science and Technology report on science and 
 					technology news, both in Glasgow and the wider world. We’re still 

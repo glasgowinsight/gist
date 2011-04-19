@@ -549,6 +549,12 @@ h3 a {
 	border-bottom: 1px solid;
 }
 
+.archive .smallPost{
+	width: 47%;
+	margin: 5px 20px 0 0;
+	float: left;
+}
+
 .row{
 	clear: both;
 }
@@ -631,10 +637,3 @@ h3 a {
 }
 
 /*--- End of Category specific details --*/
-.category .smallPost{
-	width: 47%;
-	margin: 5px 20px 0 0;
-	float: left;
-}
-
-

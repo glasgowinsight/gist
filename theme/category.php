@@ -25,7 +25,7 @@ get_header(); ?>
 				get_template_part( 'loop', 'category' );
 				?>
 
-			<!-- #content -->
+			</div><!-- #content -->
 		</div><!-- #container -->
 
 <?php get_sidebar('category'); ?>
