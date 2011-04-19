@@ -196,7 +196,7 @@ function show_post_excerpt($class, $thumbSize){
 		</h3>
 	    <div class="entry-thumbnail"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbSize ); ?></a></div>
 	 	<div class="entry-summary"><?php the_excerpt(); ?></div>
-	<div class="clearer"> </div> </div><?php
+	</div><?php
 }
 
 
@@ -213,7 +213,7 @@ function show_headline_post_excerpt($class, $thumbSize){
 			</a>
 		</h3>
 	 	<div class="entry-summary"><?php the_excerpt(); ?></div> </div>
-	<div class="clearer"> </div> </div><?php
+	</div><?php
 }
 
 function gather_posts($category, $limit, &$posts, &$ids, $order=NULL) {

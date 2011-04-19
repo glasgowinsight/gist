@@ -10,36 +10,50 @@
 <div id="sidebar">
 	<div id="primary" role="complementary">
 		<?php 
-			$events = get_posts( array(
-				'category_name'=>'event',
-				'numberposts'=>5,
-				'order'=>'ASC',
-				'orderby'=>'meta_value',
-				'meta_key'=>'start_date',
-				'meta_query'=>array(
-					array(
-						'key'=>'end_date',
-						'value'=>date('Y-m-d'),
-						'compare'=>'>=',
-						'type'=>'DATE'
+			if(is_home()){
+				$events = get_posts( array(
+					'category_name'=>'event',
+					'numberposts'=>5,
+					'order'=>'ASC',
+					'orderby'=>'meta_value',
+					'meta_key'=>'start_date',
+					'meta_query'=>array(
+						array(
+							'key'=>'end_date',
+							'value'=>date('Y-m-d'),
+							'compare'=>'>=',
+							'type'=>'DATE'
+						)
 					)
-				)
-			));
+				));
+				
+				function format_event($post){
+					setup_postdata($post);
+					?><a href="<?php the_permalink(); ?>">
+	            		<strong><?php echo get_post_meta($post->ID, 'display_date', true)?>:</strong><?php the_title(); ?>
+	            	</a><?php 
+				}
+				sidebar('events', 'Upcoming Events', $events, 'format_event');
+			}
+
+			if(!is_category('about-gist')){
+				function format_tag($tag){
+					?><a href="<?php echo get_tag_link($tag->term_id)?>"><?php echo $tag->name ?></a><?php 
+				}
+				sidebar('tags', 'Find out about', get_tags(), 'format_tag');
+			}
 			
-			function format_event($post){
-				setup_postdata($post);
-				?><a href="<?php the_permalink(); ?>">
-            		<strong><?php echo get_post_meta($post->ID, 'display_date', true)?>:</strong><?php the_title(); ?>
-            	</a><?php 
+			if(is_category()){
+				$category = get_the_category();
+				$features_id = get_cat_ID('features');
+				if($category->cat_ID == $features_id || $category->category_parent == $features_id){
+					$features = get_latest_feature_categories();
+					function format_category($category){
+						?><a href="<?php echo get_category_link($category->cat_ID)?>"><?php echo $category->cat_name ?></a><?php 
+					}
+					sidebar('old_features', 'Older Features', $features, 'format_category');
+				}
 			}
-			sidebar('events', 'Upcoming Events', $events, 'format_event');
-		?>
-		
-		<?php 
-			function format_tag($tag){
-				?><a href="<?php echo get_tag_link($tag->term_id)?>"><?php echo $tag->name ?></a><?php 
-			}
-			sidebar('tags', 'Find out about', get_tags(), 'format_tag');
 		?>
 		
 		<div class="sidebarSection">

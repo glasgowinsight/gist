@@ -549,7 +549,9 @@ h3 a {
 	border-bottom: 1px solid;
 }
 
-
+.row{
+	clear: both;
+}
 /*--- Feature Category ---*/
 
 .category .category-feature h1 {
