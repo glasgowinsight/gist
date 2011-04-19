@@ -472,7 +472,7 @@ h3 a {
 	color: #ffffff;
 }
 
-#sidebar a{
+.sidebarSection a{
 	color: #000000;
 }
 
@@ -487,7 +487,7 @@ h3 a {
 
 /* --------------------   Category Styling ------------------- */
 
-.category h1{
+.archive h1{
 	width: 100%
 	font-size: 250%;
 	font-weight: bold;
@@ -497,12 +497,12 @@ h3 a {
 	}
 
 
-.category .headlinePost{ 
+.archive .headlinePost{ 
 	width: 100%;
 }
 
 
-.category .headlinePost h3{ 	
+.archive .headlinePost h3{ 	
 	margin: 15px 0;
 	padding-bottom: 5px;
 	width: 100%;
@@ -512,39 +512,39 @@ h3 a {
 	
 }
 
-.category .headlinePost p{
+.archive .headlinePost p{
 	font-size: 120%;
 	line-height: 150%;
 }
 
-.category .headlinPostImage{
+.archive .headlinPostImage{
 	width: 320px;
 	float: left;
 }
 
-.category .headlinPostImage img{
+.archive .headlinPostImage img{
 	padding: 5px;
 }
 
-.category .headlinePostSummary{
+.archive .headlinePostSummary{
 	width: 400px;
 	float: right;
 }
 
-.category .headlinePost strong, .category .smallPost strong{
+.archive .headlinePost strong, .archive .smallPost strong{
 	font-weight: normal;
 }
 
-.category .headlinePost .entry-thumbnail, .category .smallPost .entry-thumbnail{
+.archive .headlinePost .entry-thumbnail, .archive .smallPost .entry-thumbnail{
 	margin: 3px;
 	float: left;
 }
 
-.category .smallPost p{
+.archive .smallPost p{
 	line-height: 150%;
 }
 
-.category .smallPost h3{
+.archive .smallPost h3{
 	border-top: 1px solid;
 	border-bottom: 1px solid;
 }

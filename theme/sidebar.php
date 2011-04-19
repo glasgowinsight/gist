@@ -47,7 +47,7 @@
 			
 			if(is_category()){
 				$category = get_category(get_query_var('cat'));
-				$features_id = get_cat_ID('features');
+				$features_id = get_cat_ID('feature');
 				
 				?><div class="sidebarSection followLinks">
 					<h3>Keep In Touch</h3>
