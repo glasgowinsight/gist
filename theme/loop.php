@@ -43,24 +43,25 @@
 	 *
 	 * Without further ado, the loop:
 	 */ ?>
-<?php $i=0 ?>
+<?php 
+	if ( !in_category('about') && !is_author() && have_posts() ){
+		the_post();
+		show_headline_post_excerpt('headlinePost', 'medium');
+	}
+?>
+
+<?php $row=False ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <?php /* How to display posts in the Gallery category. */ ?>
 
 	<?php 
-		if (!in_category('about') && !is_author() && $i == 0):
-		  	show_headline_post_excerpt('headlinePost', 'medium');
-		  	// Hack to not show the main feature on the about page
-		  	$i++;
-		else:
-			if ( $i % 2 == 0): ?><div class="row"><?php endif;
-			show_post_excerpt('smallPost', 'thumbnail');
-			if ( $i % 2 == 1): ?></div><?php endif;
-		endif; 
-
-	$i++ ?>
+		if ( !$row ): ?><div class="row"><?php endif;
+		show_post_excerpt('smallPost', 'thumbnail');
+		if ( $row ): ?></div><?php endif;
+		$row = !$row;
+	?>
 <?php endwhile; // End the loop. Whew. ?>
-<?php if ( $i % 2 == 0): ?></div><?php endif;?>
+<?php if ( $row ): ?></div><?php endif;?>
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>

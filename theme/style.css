@@ -555,8 +555,16 @@ h3 a {
 	float: left;
 }
 
-.row{
+.row, #nav-below{
 	clear: both;
+}
+
+.nav-previous{
+	float: left;
+}
+
+.nav-next{
+	float: right;
 }
 
 /*--- Generic Archives: Tags, Dates, Authors ---*/
