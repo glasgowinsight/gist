@@ -297,13 +297,23 @@ function sidebar($id, $title, $collection, $callback) {
 	}
 }
 
-function rss_feed($query) {
+function custom_posts($query) {
 	if ($query->is_feed) {
 		$query->set('category__not_in', array(get_cat_ID('about gist')));
 	}
-	else if(current_user_can( 'publish_posts' )){
-		$query->set('post_status', array('draft', 'publish'));
+	else{
+		if(current_user_can( 'publish_posts' )){
+			$query->set('post_status', array('draft', 'publish'));
+		}
+		
+		if(get_query_var('category_name') == 'about'){
+			set_query_var('posts_per_page', 1);
+		}
+		
+		if(get_query_var('author')){
+			set_query_var('posts_per_page', 1);
+		}
 	}
 	return $query;
 }
-add_filter('pre_get_posts','rss_feed');
+add_filter('pre_get_posts','custom_posts');

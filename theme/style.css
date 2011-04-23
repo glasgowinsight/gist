@@ -229,12 +229,12 @@ div.clearer {
 	font-weight: bold;
 }
 
-.sidebarSection ul {
+.sidebarSection li {
 	list-style-type: none;
+	padding: 1px 2px 1px 2px;
 }
+
 /*--------------- Footer Styling -------------------*/
-
-
 
 #site-info {
 	float: left;
@@ -257,7 +257,7 @@ div.clearer {
 }
 /*------------------- Single Post -------------------*/
 
-.single-post img{
+.single-post #content img{
 	float: left;
 	margin: 5px;
 }
@@ -487,7 +487,7 @@ h3 a {
 
 /* --------------------   Category Styling ------------------- */
 
-.archive h1{
+.archive .page-title{
 	width: 100%
 	font-size: 250%;
 	font-weight: bold;
@@ -569,11 +569,11 @@ h3 a {
 
 /*--- Generic Archives: Tags, Dates, Authors ---*/
 
-.archive h1 {
+.archive .page-title {
 	background:#754700;
 }
 
-.archive h3 {
+.archive .smallPost h3 {
 	border-color: #754700;
 }
 
@@ -588,11 +588,11 @@ h3 a {
 
 /*--- Feature Category ---*/
 
-.category-feature h1 {
+.category-feature .page-title {
 	background:#754700;
 }
 
-.category-feature h3 {
+.category-feature .smallPost h3 {
 	border-color: #754700;
 }
 
@@ -607,11 +607,11 @@ h3 a {
 
 /*--- Snippets Category ---*/
 
-.category-snippet h1 {
+.category-snippet .page-title {
 	background:#750000;
 }
 
-.category-snippet h3 {
+.category-snippet .smallPost h3 {
 	border-color: #750000;
 }
 
@@ -627,11 +627,11 @@ h3 a {
 
 /*--- Podcasts Category ---*/
 
-.category-podcast h1 {
+.category-podcast .page-title {
 	background:#004875;
 }
 
-.category-podcast h3 {
+.category-podcast .smallPost h3 {
 	border-color: #004875;
 }
 
