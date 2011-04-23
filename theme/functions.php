@@ -307,11 +307,11 @@ function custom_posts($query) {
 		}
 		
 		if(get_query_var('category_name') == 'about' || get_query_var('cat') == get_cat_ID('about gist')){
-			set_query_var('posts_per_page', 1);
+			set_query_var('posts_per_page', 4);
 		}
 		
 		if(get_query_var('author')){
-			set_query_var('posts_per_page', 1);
+			set_query_var('posts_per_page', 8);
 		}
 	}
 	return $query;
