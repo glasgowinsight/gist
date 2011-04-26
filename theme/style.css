@@ -79,7 +79,7 @@ body{
 
 #rightHeader {
 	float: right;
-	background: url('images/mastheadRight7.png') 100% 0 no-repeat;
+	background: url('images/masthead.png') 100% 0 no-repeat;
 	width: 693px;
 	margin-left: -20px;
 	text-align: right;
@@ -94,14 +94,6 @@ body{
 
 #searchForm {
 	margin: 190px 10px 0px 0;
-}
-
-#tagLine {
-	float: right;
-	width: 230px;
-	background: url('images/beta.png') 100% 0 no-repeat;
-	margin: -8px -10px 0 0;
-	padding: 40px 50px 0 0;
 }
 
 #topNav {

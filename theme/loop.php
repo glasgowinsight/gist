@@ -14,8 +14,7 @@
  * <code>get_template_part( 'loop', 'index' );</code>
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Gist
  */
 ?>
 
@@ -23,26 +22,11 @@
 <?php if ( ! have_posts() ) : ?>
 	<div id="post-0" class="not-found">
 		<div class="entry-content">
-			<p><?php _e( "There aren't any posts here yet, but they're coming soon", 'twentyten' ); ?></p>
+			<p>There aren't any posts here yet, but they're coming soon</p>
 		</div><!-- .entry-content -->
 	</div><!-- #post-0 -->
 <?php endif; ?>
 
-<?php
-	/* Start the Loop.
-	 *
-	 * In Twenty Ten we use the same loop in multiple contexts.
-	 * It is broken into three main parts: when we're displaying
-	 * posts that are in the gallery category, when we're displaying
-	 * posts in the asides category, and finally all other posts.
-	 *
-	 * Additionally, we sometimes check for whether we are on an
-	 * archive page, a search page, etc., allowing for small differences
-	 * in the loop on each template without actually duplicating
-	 * the rest of the loop that is shared.
-	 *
-	 * Without further ado, the loop:
-	 */ ?>
 <?php 
 	if ( !in_category('about') && !is_author() && have_posts() ){
 		the_post();
@@ -65,8 +49,8 @@
 
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-				<div id="nav-below" class="navigation">
-					<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentyten' ) ); ?></div>
-					<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
-				</div><!-- #nav-below -->
+	<div id="nav-below" class="navigation">
+		<div class="nav-previous"><?php next_posts_link( '<span class="meta-nav">&larr;</span> Older posts' ); ?></div>
+		<div class="nav-next"><?php previous_posts_link( 'Newer posts <span class="meta-nav">&rarr;</span>' ); ?></div>
+	</div>
 <?php endif; ?>

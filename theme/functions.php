@@ -1,41 +1,18 @@
 <?php
 /**
- * TwentyTen functions and definitions
+ * Functions and definitions
  *
  * Sets up the theme and provides some helper functions. Some helper functions
  * are used in the theme as custom template tags. Others are attached to action and
  * filter hooks in WordPress to change core functionality.
  *
- * The first function, twentyten_setup(), sets up the theme by registering support
+ * The first function, gist_setup(), sets up the theme by registering support
  * for various features in WordPress, such as post thumbnails, navigation menus, and the like.
- *
- * When using a child theme (see http://codex.wordpress.org/Theme_Development and
- * http://codex.wordpress.org/Child_Themes), you can override certain functions
- * (those wrapped in a function_exists() call) by defining them first in your child theme's
- * functions.php file. The child theme's functions.php file is included before the parent
- * theme's file, so the child theme functions would be used.
- *
- * Functions that are not pluggable (not wrapped in function_exists()) are instead attached
- * to a filter or action hook. The hook can be removed by using remove_action() or
- * remove_filter() and you can attach your own function to the hook.
- *
- * We can remove the parent theme's hook only after it is attached, which means we need to
- * wait until setting up the child theme:
- *
- * <code>
- * add_action( 'after_setup_theme', 'my_child_theme_setup' );
- * function my_child_theme_setup() {
- *     // We are providing our own filter for excerpt_length (or using the unfiltered value)
- *     remove_filter( 'excerpt_length', 'twentyten_excerpt_length' );
- *     ...
- * }
- * </code>
  *
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
  * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
+ * @subpackage Gist
  */
 
 /**
@@ -47,110 +24,67 @@
 if ( ! isset( $content_width ) )
 	$content_width = 640;
 
-/** Tell WordPress to run twentyten_setup() when the 'after_setup_theme' hook is run. */
-add_action( 'after_setup_theme', 'twentyten_setup' );
-
-if ( ! function_exists( 'twentyten_setup' ) ):
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which runs
- * before the init hook. The init hook is too late for some features, such as indicating
- * support post thumbnails.
- *
- * To override twentyten_setup() in a child theme, add your own twentyten_setup to your child theme's
- * functions.php file.
- *
- * @uses add_theme_support() To add support for post thumbnails and automatic feed links.
- * @uses register_nav_menus() To add support for navigation menus.
- * @uses add_custom_background() To add support for a custom background.
- * @uses add_editor_style() To style the visual editor.
- * @uses load_theme_textdomain() For translation/localization support.
- * @uses add_custom_image_header() To add support for a custom header.
- * @uses register_default_headers() To register the default custom header images provided with the theme.
- * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
- *
- * @since Twenty Ten 1.0
- */
-function twentyten_setup() {
-
-	// This theme styles the visual editor with editor-style.css to match the theme style.
-	add_editor_style();
-
-	// This theme uses post thumbnails
-	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'slideshow', 9999, 300 );
-	add_image_size( 'jump', 40, 40, true );
-	add_image_size( 'left-column', 150, 9999 );
-	add_image_size( 'right-column', 100, 9999 );
-
-	// Add default posts and comments RSS feed links to head
-	add_theme_support( 'automatic-feed-links' );
-
-	// Make theme available for translation
-	// Translations can be filed in the /languages/ directory
-	load_theme_textdomain( 'twentyten', TEMPLATEPATH . '/languages' );
-
-	$locale = get_locale();
-	$locale_file = TEMPLATEPATH . "/languages/$locale.php";
-	if ( is_readable( $locale_file ) )
-		require_once( $locale_file );
-}
+add_action( 'after_setup_theme', 'gist_setup' );
+if ( ! function_exists( 'gist_setup' ) ):
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * Note that this function is hooked into the after_setup_theme hook, which runs
+	 * before the init hook. The init hook is too late for some features, such as indicating
+	 * support post thumbnails.
+	 */
+	function gist_setup() {
+	
+		// This theme styles the visual editor with editor-style.css to match the theme style.
+		add_editor_style();
+	
+		// This theme uses post thumbnails
+		add_theme_support( 'post-thumbnails' );
+		add_image_size( 'slideshow', 9999, 300 );
+		add_image_size( 'jump', 40, 40, true );
+		add_image_size( 'left-column', 150, 9999 );
+		add_image_size( 'right-column', 100, 9999 );
+	
+		// Add default posts and comments RSS feed links to head
+		add_theme_support( 'automatic-feed-links' );
+	
+	}
 endif;
 
 /**
  * Returns a "Continue Reading" link for excerpts
  *
- * @since Twenty Ten 1.0
  * @return string "Continue Reading" link
  */
-function twentyten_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">' . __( 'More&nbsp;<span class="meta-nav">&rarr;</span>', 'twentyten' ) . '</a>';
+function gist_continue_reading() {
+	return ' <a href="'. get_permalink() . '">More&nbsp;<span class="meta-nav">&rarr;</span></a>';
 }
 
 /**
- * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and twentyten_continue_reading_link().
+ * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and gist_continue_reading().
  *
- * To override this in a child theme, remove the filter and add your own
- * function tied to the excerpt_more filter hook.
- *
- * @since Twenty Ten 1.0
  * @return string An ellipsis
  */
-function twentyten_auto_excerpt_more( $more ) {
-	return ' &hellip;' . twentyten_continue_reading_link();
+function gist_excerpt_auto( $more ) {
+	return ' &hellip;' . gist_continue_reading();
 }
-add_filter( 'excerpt_more', 'twentyten_auto_excerpt_more' );
+add_filter( 'excerpt_more', 'gist_excerpt' );
 
 /**
  * Adds a pretty "Continue Reading" link to custom post excerpts.
  *
- * To override this link in a child theme, remove the filter and add your own
- * function tied to the get_the_excerpt filter hook.
- *
- * @since Twenty Ten 1.0
  * @return string Excerpt with a pretty "Continue Reading" link
  */
-function twentyten_custom_excerpt_more( $output ) {
+function gist_excerpt_custom( $output ) {
 	if ( has_excerpt() && ! is_attachment() ) {
-		$output .= twentyten_continue_reading_link();
+		$output .= gist_continue_reading();
 	}
 	return $output;
 }
-add_filter( 'get_the_excerpt', 'twentyten_custom_excerpt_more' );
+add_filter( 'get_the_excerpt', 'gist_excerpt_custom' );
 
-if ( ! function_exists( 'twentyten_comment' ) ) :
-/**
- * Template for comments and pingbacks.
- *
- * To override this walker in a child theme without modifying the comments template
- * simply create your own twentyten_comment(), and that function will be used instead.
- *
- * Used as a callback by wp_list_comments() for displaying the comments.
- *
- * @since Twenty Ten 1.0
- */
-function twentyten_comment( $comment, $args, $depth ) {
+if ( ! function_exists( 'show_comment' ) ) :
+function show_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
 		case '' :
@@ -159,10 +93,10 @@ function twentyten_comment( $comment, $args, $depth ) {
 		<div id="comment-<?php comment_ID(); ?>">
 		<div class="comment-author vcard">
 			<?php echo get_avatar( $comment, 40 ); ?>
-			<?php printf( __( 'At %1$s on %2$s %3$s said', 'twentyten' ), get_comment_time(), get_comment_date(), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+			<?php printf( 'At %1$s on %2$s %3$s said', get_comment_time(), get_comment_date(), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 		</div><!-- .comment-author .vcard -->
 		<?php if ( $comment->comment_approved == '0' ) : ?>
-			<em><?php _e( 'Your comment is awaiting moderation.', 'twentyten' ); ?></em>
+			<em>Your comment is awaiting moderation.</em>
 			<br />
 		<?php endif; ?>
 
@@ -179,7 +113,7 @@ function twentyten_comment( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'twentyten' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __('(Edit)', 'twentyten'), ' ' ); ?></p>
+		<p>Pingback: <?php comment_author_link(); ?><?php edit_comment_link( '(Edit)', ' ' ); ?></p>
 	<?php
 			break;
 	endswitch;
@@ -194,7 +128,7 @@ function show_post_excerpt($class, $thumbSize){
 				if($title) echo $title;	else the_title(); ?>
 			</a>
 		</h3>
-	    <div class="entry-thumbnail"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbSize ); ?></a></div>
+	    <div class="entry-thumbnail"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbSize ); ?></a></div>
 	 	<div class="entry-summary"><?php the_excerpt(); ?></div>
 	</div><?php
 }
@@ -203,7 +137,7 @@ function show_post_excerpt($class, $thumbSize){
 function show_headline_post_excerpt($class, $thumbSize){
 	?><div id="post-<?php the_ID(); ?>" class="<?php echo $class; ?>">
 		<div class="headlinPostImage">
-			<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbSize ); ?></a>
+			<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbSize ); ?></a>
 		</div>
 		<div class="headlinePostSummary">
 		<h3>
