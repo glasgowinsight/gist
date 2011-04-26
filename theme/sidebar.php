@@ -80,5 +80,12 @@
 				<li><a href="http://www.eusci.org/">EUSci</a></li>
 			</ul>
 		</div>
+
+		<div class="sidebarSection">
+			<h3>Members Login</h3>
+			<ul>
+				<li><a href="http://www.the-gist.org/wp-login.php">login here </li>
+			</ul>
+		</div>
 	</div>
 </div>

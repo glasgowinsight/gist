@@ -46,8 +46,8 @@ body{
 #wrapper {
 	margin: 20px auto;
 	width: 940px;
-	background: #ffffff;
-	padding:0 0;
+	background: #ffffff url('images/bodyTop.png') repeat-x;
+	padding:0 10px;
 	line-height: 120%;
 }
 
