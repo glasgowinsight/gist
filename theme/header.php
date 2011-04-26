@@ -51,11 +51,11 @@
 	wp_head();
 ?>
 
-<script src="/js/jquery-1.5.1.min.js" type="text/javascript"></script>
-<script src="/js/jquery.timers-1.2.js" type="text/javascript"></script>
-<script src="/js/simpleSlide.js" type="text/javascript"></script>
-<script src="/js/twitter-widget.js" type="text/javascript"></script>
-<script src="/js/gist.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.5.1.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.timers-1.2.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/twitter-widget.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/gist.js" type="text/javascript"></script>
 </head>
 
 <body <?php if(is_home()) body_class('archive'); else body_class('single-post-php'); ?>>

@@ -68,7 +68,7 @@ function gist_continue_reading() {
 function gist_excerpt_auto( $more ) {
 	return ' &hellip;' . gist_continue_reading();
 }
-add_filter( 'excerpt_more', 'gist_excerpt' );
+add_filter( 'excerpt_more', 'gist_excerpt_auto' );
 
 /**
  * Adds a pretty "Continue Reading" link to custom post excerpts.

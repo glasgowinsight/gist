@@ -14,7 +14,7 @@ Tags:
 	width: 720px;
 }
 
-a {
+a, .home #content p a {
 	color: #a16106;
 	text-decoration: none; 
 }
@@ -226,6 +226,25 @@ div.clearer {
 	padding: 1px 2px 1px 2px;
 }
 
+.twtr-doc h3 {
+        display: none;
+}
+
+.twtr-doc h4 {
+        clear: none;
+        float: left;
+        font-weight: bold !important;
+        margin-left: 5px !important;
+}
+
+.twtr-doc, .twtr-timeline {
+        -moz-border-radius: 0px !important;
+}
+
+.twtr-ft a {
+        float: right !important;
+}
+
 /*--------------- Footer Styling -------------------*/
 
 #site-info {
@@ -306,6 +325,10 @@ div.clearer {
 .single-post .comment-form-comment label{
 	vertical-align: top;
 	margin-right: 5px;
+}
+
+.single-post .form-allowed-tags{
+	font-size: 10pt;
 }
 
 .single-post .form-submit{

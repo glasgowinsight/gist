@@ -66,9 +66,9 @@
 			<h3>Keep In Touch</h3>
 			<ul>
 				<li><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png"/><span>Get the latest news</span></a></li>
-				<li><a href="mailto:glasgowinsight@gmail.com"><img src="<?php bloginfo('template_directory'); ?>/images/email.png"/><span>Tell us what's happening</span></a></li>
+				<li><a href="mailto:glasgowinsight@gmail.com"><img src="<?php bloginfo('template_directory'); ?>/images/email.png"/><span>Talk to us</span></a></li>
 				<li><a href="http://twitter.com/GlasgowGist"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png"/><span>Follow us on Twitter</span></a></li>
-				<li><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.jpg"/><span>Talk to us on Facebook</span></a></li>
+				<li><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.jpg"/><span>Join us on Facebook</span></a></li>
 			</ul>
 		</div>
 		
@@ -81,9 +81,9 @@
 		</div>
 
 		<div class="sidebarSection">
-			<h3>Members Login</h3>
+			<h3>GIST Contributors</h3>
 			<ul>
-				<li><a href="http://www.the-gist.org/wp-login.php">login here </li>
+				<li><a href="http://www.the-gist.org/wp-login.php">Login</a> </li>
 			</ul>
 		</div>
 	</div>
