@@ -58,7 +58,14 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/gist.js" type="text/javascript"></script>
 </head>
 
-<body <?php if(is_home()) body_class('archive'); else body_class('single-post-php'); ?>>
+<?php if (is_single()){
+
+	foreach((get_the_category()) as $category){
+		$catTag.=' category-';
+		$catTag.=$category->category_nicename;
+		}
+} ?>
+<body <?php if(is_home()) body_class('archive'); elseif(is_single()) body_class('single-post-php'.$catTag); else body_class('single-post-php')?>>
 <div id="wrapper" class="hfeed">
 
 	<div id="header">

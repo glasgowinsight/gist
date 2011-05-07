@@ -14,6 +14,10 @@ Tags:
 	width: 720px;
 }
 
+#content li {
+	list-style: disc inside none;
+}
+
 a, .home #content p a {
 	color: #a16106;
 	text-decoration: none; 
@@ -40,7 +44,7 @@ p {
 body{
 	background: #f1f1f1;
 	font-size: 12pt;
-	font-family: Bookman, Georgia, "Bitstream Charter", serif;
+	font-family: Georgia, "Bitstream Charter", serif;
 }
 
 #wrapper {
@@ -132,23 +136,6 @@ div.clearer {
 	clear: both;
 }
 
-#beta {
-	clear: both; 
-	text-align: center;
-}
-
-#beta span {
-	padding: 2px; 
-	border: thin solid orange; 
-	background: none repeat scroll 0pt 0pt #ffe7af; 
-	font-weight: bold;
-}
-
-#beta a {
-	text-decoration: underline;
-	color: #666666;
-}
-
 /* ------------            End of Header Styling --------------------------------*/
 
 /*-- Feature Category posts --*/
@@ -223,8 +210,9 @@ div.clearer {
 
 .sidebarSection li {
 	list-style-type: none;
-	padding: 1px 2px 1px 2px;
+	padding: 1px 2px 10px 2px;
 }
+
 
 .twtr-doc h3 {
         display: none;
@@ -279,10 +267,12 @@ div.clearer {
 }
 
 .single-post h1{
-	border-bottom: 2px solid #112552;
+	border-bottom: 2px solid;
 	font-size: 16px;
-	height: 24px;
+	line-height: 30px;
 }
+
+
 
 .single-post h1{
 	margin-bottom: 5px;
@@ -294,8 +284,9 @@ div.clearer {
 	margin-right: 5px;
 }
 
-.single-post .wp-caption img{
+.single-post #content .wp-caption img{
 	padding: 5px;
+	margin: 0px;
 }
 
 .single-post .wp-caption-text{
@@ -487,7 +478,7 @@ h3 a {
 	color: #ffffff;
 }
 
-#sidebar a{
+#sidebar h3 a{
 	color: #000000;
 }
 
@@ -521,15 +512,16 @@ h3 a {
 	margin: 15px 0;
 	padding-bottom: 5px;
 	width: 100%;
-	font-size: 200%;
+	font-size: 150%;
 	font-weigth: normal;
 	border-bottom: 1px solid; 
+	line-height: 1.0;
 	
 }
 
 .archive .headlinePost p{
 	font-size: 120%;
-	line-height: 150%;
+	line-height: 120%;
 }
 
 .archive .headlinPostImage{
@@ -582,6 +574,13 @@ h3 a {
 	float: right;
 }
 
+
+/*--- Single Page ---*/
+.single-post h1{
+	font-size: 30px;
+}
+
+
 /*--- Generic Archives: Tags, Dates, Authors ---*/
 
 .archive .page-title {
@@ -616,10 +615,13 @@ h3 a {
 	border-bottom: 2px solid #754700;
 }
 
-.category-feature  a{
+.category-feature  a, .category-feature h1, .category-feature #content  h2, .category-feature #content h3{
 	color: #a16106;
 }
 
+.category-features .single-post h1{
+	border-color: #a16106;
+	}
 /*--- Snippets Category ---*/
 
 .category-snippet .page-title {
@@ -636,9 +638,13 @@ h3 a {
 }
 
 
-.category-snippet a{
+.category-snippet a, .category-snippet h1, .category-snippet #content  h2, .category-snippet #content h3{
 	color: #a10606;
 }
+
+.category-snippets .single-post h1{
+	border-color: #750000;
+	}
 
 /*--- Podcasts Category ---*/
 
@@ -655,8 +661,17 @@ h3 a {
 	border-bottom: 2px solid #004875;
 }
 
-.category-podcast a{
+.category-podcast a, .category-podcast h1, .category-podcast #content h2, .category-podcast #content h3{
 	color: #068ba1;
 }
 
+.category-snippets .single-post h1{
+	border-color: #068ba1;
+	}
+
 /*--- End of Category specific details --*/
+
+
+.sidebarSection ul li a{
+	color: #A16106;
+}
