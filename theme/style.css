@@ -1,0 +1,677 @@
+/*
+Theme Name: The GIST
+Theme URI: http://the-gist.org/
+Description: The GIST theme
+Author: GIST
+Version: 1.1
+Tags: 
+*/
+
+/*---------------- General Styling -------------------------------*/
+
+#content {
+	float: left;
+	width: 720px;
+}
+
+#content li {
+	list-style: disc inside none;
+}
+
+a, .home #content p a {
+	color: #a16106;
+	text-decoration: none; 
+}
+
+a:hover{
+	color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+	background-color: tranparent;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+p {
+	padding-top: 5px; 
+	padding-bottom: 5px;
+}
+/*-----------------     Layouts  --------------------------------*/
+
+
+body{
+	background: #f1f1f1;
+	font-size: 12pt;
+	font-family: Georgia, "Bitstream Charter", serif;
+}
+
+#wrapper {
+	margin: 20px auto;
+	width: 940px;
+	background: #ffffff url('images/bodyTop.png') repeat-x;
+	padding:0 10px;
+	line-height: 120%;
+}
+
+#main{
+	width: 100%;
+	clear: both; 
+	padding: 5px 0 0 0;
+}
+
+#sidebar{
+	width: 200px;
+	float: right;
+}
+
+#footer {
+	border-top: 2px solid #000;
+	width: 100%;
+	padding: 5px 0 20px 0;
+	clear: both;
+}
+
+/* ---------------       Header Styling  -------------------------*/
+
+#logo {
+	float: left;
+	margin-left: -100px;
+	margin-right: -20px;
+}
+
+#rightHeader {
+	float: right;
+	background: url('images/masthead.png') 100% 0 no-repeat;
+	width: 693px;
+	margin-left: -20px;
+	text-align: right;
+	padding: 0px 10px 20px 0;
+	color: #fff;
+}
+
+#rightHeader h2 {
+	font: italic bold 22px arial;
+	line-height: 120%;
+}
+
+#searchForm {
+	margin: 190px 10px 0px 0;
+}
+
+#topNav {
+	width: 625px;
+	float: right;
+	margin-bottom: 5px;
+}
+
+#topNav ul {
+	float: right;
+	padding: 5px 0 3px;
+}
+
+#topNav a {
+	color: #a16106;
+	text-decoration: none; 
+	padding: 0 0 3px 0;
+}
+
+#topNav a:hover {
+	color: #a16106;
+	border-bottom: 2px solid #a16106;
+}
+
+#navList li {
+	display: inline;
+	padding: 0px 15px 0px 15px;
+	font-size: 15px;
+}
+
+#navList li#first {
+	border-left: 0;
+}
+
+div.clearer {
+	clear: both;
+}
+
+/* ------------            End of Header Styling --------------------------------*/
+
+/*-- Feature Category posts --*/
+
+.category-feature{
+	border-color: #6e0097;
+}
+
+.category-feature h2{
+	color: #6e0097;
+}
+
+
+/*-- Snippet Category posts --*/
+.category-snippet{
+	border-color: #112552;
+}
+
+.category-snippet h2 { 
+	color: #112552;
+}
+/*-- Event Category posts --*/
+
+.category-event{
+	border-color: #93000e;
+}
+.category-event h2 { 
+	color: #93000e;
+}
+
+/*--Podcast Category posts --*/
+
+.category-podcasts{
+	border-color: #0a5b00;
+}
+
+.category-podcast h2 {
+	color: #0a5b00;
+}
+
+
+/*----------------Sidebar Styling -----------------*/
+
+
+.widget-area ul {
+	list-style: none;
+	margin: 5px 0 20px 0;
+}
+.widget-area ul li{
+	border-bottom: 1px dashed #6e0097;
+}
+
+
+
+.widget-area h3{
+	border-top: 2px solid #112552;
+
+	background: #d2d4d7;
+}
+
+.sidebarSection{ 
+	background: #E5E8FF;
+	margin-bottom: 5px;
+}
+
+.sidebarSection h3{
+	background: #2857AF;
+	width: 100%;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.sidebarSection li {
+	list-style-type: none;
+	padding: 1px 2px 10px 2px;
+}
+
+
+.twtr-doc h3 {
+        display: none;
+}
+
+.twtr-doc h4 {
+        clear: none;
+        float: left;
+        font-weight: bold !important;
+        margin-left: 5px !important;
+}
+
+.twtr-doc, .twtr-timeline {
+        -moz-border-radius: 0px !important;
+}
+
+.twtr-ft a {
+        float: right !important;
+}
+
+/*--------------- Footer Styling -------------------*/
+
+#site-info {
+	float: left;
+	font-weight: bold;
+}
+
+#site-info a {
+	color: #d2d4d7;
+}
+#site-generator {
+	float: right;
+}
+
+#site-generator a {
+	background: url(images/wordpress.png) center left no-repeat;
+	color: #666;
+	display: inline-block;
+	padding-left: 20px;
+
+}
+/*------------------- Single Post -------------------*/
+
+.single-post #content img{
+	float: left;
+	margin: 5px;
+}
+
+.single-post h1, .single-post h2, .single-post h3, .single-post h4{
+	color: #112552;
+	font-weight: bold;
+}
+
+.single-post h1{
+	border-bottom: 2px solid;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+
+
+.single-post h1{
+	margin-bottom: 5px;
+}
+
+.single-post .wp-caption{
+	float: left;
+	background: #d0d0d0;
+	margin-right: 5px;
+}
+
+.single-post #content .wp-caption img{
+	padding: 5px;
+	margin: 0px;
+}
+
+.single-post .wp-caption-text{
+	font-size: 80%;
+	line-height: 130%;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.single-post .sidebarSection h3, .single-post #sidebar h3 a{
+	color: white; 
+
+}
+.single-post .authorImage{
+	padding: 5px;
+}
+
+.single-post h3#reply-title {
+    border-bottom: 2px solid #112552;
+    margin-top: 10px;
+}
+.single-post .comment-form-comment{
+	float: left;
+	margin-right: 5px;
+}
+
+.single-post .comment-form-comment label{
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+.single-post .form-allowed-tags{
+	font-size: 10pt;
+}
+
+.single-post .form-submit{
+	clear: both;
+}
+
+.single-post .comment-body{
+	width: 90%;
+	float: left;
+}
+
+.single-post h2 .addthis_toolbox {
+	float: right;
+}
+
+.sidebarSection .addthis_toolbox{
+	padding: 2px;
+}
+
+.sidebarSection .addthis_toolbox a{
+	clear: both;
+}
+
+.sidebarSection .addthis_toolbox a.addthis_counter{
+	margin-left: 3px
+}
+
+/*------------------- Home Page -------------------*/
+.home #left-content{
+	width: 66%;
+	float: left;
+}
+
+.home #right-content{
+	width: 33%;
+	float: right;
+}
+
+.archive .post h2, .slider h2 {
+	font-size: 14px;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin: 0 5px 10px 0;
+	text-align: right;
+}
+
+.archive .simpleSlide-slide {
+	margin: 0px
+}
+
+.archive .simpleSlide-slide .entry-thumbnail{
+	width: 100%;
+	clear: both;
+	text-align: center;
+	margin: 5px;
+}
+
+.archive .simpleSlide-slide .entry-summary {
+	clear: both;
+	padding-top: 0px;
+}
+
+.archive #snippets .entry-summary {
+	clear: none;
+	padding-top: 0px;
+}
+
+.archive #snippets .entry-thumbnail{
+	float: left;
+}
+
+.archive .simpleSlide-window {
+	width: 100%;
+	background: #E5E8FF;
+}
+
+.archive .simpleSlide-window h3 {
+	background: #2857AF;
+}
+
+.archive .simpleSlide-window h3 a {
+	color: white;
+}
+
+h3 a {
+	font-weight: bold;
+}
+
+.archive .simpleSlide-thumbnails {
+	text-align: center;
+	vertical-align: middle;
+	background: #2857AF;
+	border-top: 5px solid;
+	border-bottom: 5px solid;
+}
+
+.home .jump-to img {
+	padding: 2px;
+	margin-top: 2px;
+}
+
+.home .current img {
+	border: 1px #ffffff solid;
+	padding: 1px;
+}
+
+.home .hover img{
+	border: 1px #a16106 solid;
+	padding: 1px;
+}
+
+.archive .post img {
+	float: left;
+	padding: 5px;
+}
+
+.entry-summary .addthis_default_style {
+	display: none;
+}
+
+.noscript {
+	display: none;
+}
+
+#left-content .post{
+	background: #E5E8FF;
+	margin: 5px 5px 5px 0px;
+	overflow: auto;
+}
+
+#left-content .post h3{
+	margin-bottom: 2px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+#left-content .post h3, #left-content .post h3 a{
+	color: #112552;
+}
+
+#right-content .post{
+	background: #C1B9A6;
+	margin: 5px 0px 5px 5px;
+}
+
+#right-content .post h3{
+	color: #ffffff;
+	margin-bottom: 2px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+
+#right-content .post h3, #right-content .post h3 a{
+	color: #ffffff;
+}
+
+#sidebar h3 a{
+	color: #000000;
+}
+
+#sidebar img{
+	margin: 2px;
+}
+
+.followLinks a span{
+	vertical-align: top;
+}
+
+
+/* --------------------   Category Styling ------------------- */
+
+.archive .page-title{
+	width: 100%
+	font-size: 250%;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 5px 0 10px 0;
+	font-family: Bookman, Georgia, "Bitstream Charter", serif;
+	}
+
+
+.archive .headlinePost{ 
+	width: 100%;
+}
+
+
+.archive .headlinePost h3{ 	
+	margin: 15px 0;
+	padding-bottom: 5px;
+	width: 100%;
+	font-size: 150%;
+	font-weigth: normal;
+	border-bottom: 1px solid; 
+	line-height: 1.0;
+	
+}
+
+.archive .headlinePost p{
+	font-size: 120%;
+	line-height: 120%;
+}
+
+.archive .headlinPostImage{
+	width: 320px;
+	float: left;
+}
+
+.archive .headlinPostImage img{
+	padding: 5px;
+}
+
+.archive .headlinePostSummary{
+	width: 400px;
+	float: right;
+}
+
+.archive .headlinePost strong, .archive .smallPost strong{
+	font-weight: normal;
+}
+
+.archive .headlinePost .entry-thumbnail, .archive .smallPost .entry-thumbnail{
+	margin: 3px;
+	float: left;
+}
+
+.archive .smallPost p{
+	line-height: 150%;
+}
+
+.archive .smallPost h3{
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.archive .smallPost{
+	width: 47%;
+	margin: 5px 20px 0 0;
+	float: left;
+}
+
+.row, #nav-below{
+	clear: both;
+}
+
+.nav-previous{
+	float: left;
+}
+
+.nav-next{
+	float: right;
+}
+
+
+/*--- Single Page ---*/
+.single-post h1{
+	font-size: 30px;
+}
+
+
+/*--- Generic Archives: Tags, Dates, Authors ---*/
+
+.archive .page-title {
+	background:#754700;
+}
+
+.archive .smallPost h3 {
+	border-color: #754700;
+}
+
+.archive .headlinePost {
+	background:#fce3bd;
+	border-bottom: 2px solid #754700;
+}
+
+.archive  a{
+	color: #a16106;
+}
+
+/*--- Feature Category ---*/
+
+.category-feature .page-title {
+	background:#754700;
+}
+
+.category-feature .smallPost h3 {
+	border-color: #754700;
+}
+
+.category-feature .headlinePost {
+	background:#fce3bd;
+	border-bottom: 2px solid #754700;
+}
+
+.category-feature  a, .category-feature h1, .category-feature #content  h2, .category-feature #content h3{
+	color: #a16106;
+}
+
+.category-features .single-post h1{
+	border-color: #a16106;
+	}
+/*--- Snippets Category ---*/
+
+.category-snippet .page-title {
+	background:#750000;
+}
+
+.category-snippet .smallPost h3 {
+	border-color: #750000;
+}
+
+.category-snippet .headlinePost {
+	background:#feeded;
+	border-bottom: 2px solid #750000;
+}
+
+
+.category-snippet a, .category-snippet h1, .category-snippet #content  h2, .category-snippet #content h3{
+	color: #a10606;
+}
+
+.category-snippets .single-post h1{
+	border-color: #750000;
+	}
+
+/*--- Podcasts Category ---*/
+
+.category-podcast .page-title {
+	background:#004875;
+}
+
+.category-podcast .smallPost h3 {
+	border-color: #004875;
+}
+
+.category-podcast .headlinePost {
+	background:#e6f6ff;
+	border-bottom: 2px solid #004875;
+}
+
+.category-podcast a, .category-podcast h1, .category-podcast #content h2, .category-podcast #content h3{
+	color: #068ba1;
+}
+
+.category-snippets .single-post h1{
+	border-color: #068ba1;
+	}
+
+/*--- End of Category specific details --*/
+
+
+.sidebarSection ul li a{
+	color: #A16106;
+}
