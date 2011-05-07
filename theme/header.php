@@ -65,7 +65,7 @@
 		$catTag.=$category->category_nicename;
 		}
 } ?>
-<body <?php if(is_home()) body_class('archive'); elseif(is_single()) body_class('single-post-php'.$catTag); else body_class('single-post-php')?>>
+<body <?php if(is_home() || is_search()) body_class('archive'); else body_class()?>>
 <div id="wrapper" class="hfeed">
 
 	<div id="header">

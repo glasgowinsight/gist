@@ -28,7 +28,7 @@
 <?php endif; ?>
 
 <?php 
-	if ( !in_category('about') && !is_author() && have_posts() ){
+	if ( !in_category('about') && !is_search() && !is_author() && have_posts() ){
 		the_post();
 		show_headline_post_excerpt('headlinePost', 'medium');
 	}
@@ -40,7 +40,8 @@
 
 	<?php 
 		if ( !$row ): ?><div class="row"><?php endif;
-		show_post_excerpt('smallPost', 'thumbnail');
+		$thumbSize = is_search() ? '' : 'thumbnail';
+		show_post_excerpt('smallPost', $thumbSize);
 		if ( $row ): ?></div><?php endif;
 		$row = !$row;
 	?>
