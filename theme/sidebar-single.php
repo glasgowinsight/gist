@@ -26,6 +26,9 @@ get_header(); ?>
 		}
 		sidebar('find-out', 'Find out more', $links, 'format_link');
 		
+		$ids = array();
+		$ids[] = get_the_ID();
+		
 		$tags = get_the_tags();
 		$tag_ids = array();
 		foreach ($tags as $tag){
@@ -33,10 +36,10 @@ get_header(); ?>
 		}
 		$similar = get_posts( array(
 			'numberposts'=>3,
-			'tag__in'=>$tag_ids
+			'tag__in'=>$tag_ids,
+			'post__not_in'=>$ids
 		));
 		
-		$ids = array();
 		foreach ($similar as $p){
 			$ids[] = $p->ID;
 		}
