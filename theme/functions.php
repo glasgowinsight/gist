@@ -242,7 +242,7 @@ function custom_posts($query) {
 			$query->set('post_status', array('draft', 'publish'));
 		}
 		
-		if(get_query_var('category_name') == 'about' || get_query_var('cat') == get_cat_ID('about gist')){
+		if(get_query_var('category_name') == 'about-gist' || get_query_var('cat') == get_cat_ID('about gist')){
 			set_query_var('posts_per_page', 4);
 		}
 		

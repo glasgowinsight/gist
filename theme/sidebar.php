@@ -37,7 +37,7 @@
 				sidebar('events', 'Upcoming Events', $events, 'format_event');
 			}
 
-			if(!is_category('about')){
+			if(!is_category('about-gist')){
 				function format_tag($tag){
 					?><a href="<?php echo get_tag_link($tag->term_id)?>"><?php echo $tag->name ?></a><?php 
 				}

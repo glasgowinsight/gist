@@ -28,7 +28,7 @@
 <?php endif; ?>
 
 <?php 
-	if ( !in_category('about') && !is_search() && !is_author() && have_posts() ){
+	if ( !in_category('about-gist') && !is_search() && !is_author() && have_posts() ){
 		the_post();
 		show_headline_post_excerpt('headlinePost', 'medium');
 	}
