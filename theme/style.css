@@ -273,6 +273,9 @@ div.clearer {
 }
 
 
+.alignright{ 
+	float: right;
+}
 
 .single-post h1{
 	margin-bottom: 5px;
@@ -580,6 +583,29 @@ h3 a {
 	font-size: 30px;
 }
 
+
+div.alignright{
+	float: right;
+	padding: 5px;
+}
+
+table.infoDisplay{
+	border:none;
+}
+
+table.infoDisplay tr{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background: #dfdfdf;
+}
+
+table.infoDisplay tr.alt{
+	background: #f1f1f1;
+}
+
+table.infoDisplay td{
+	padding: 0 5px 0 5px;
+}
 
 /*--- Generic Archives: Tags, Dates, Authors ---*/
 
