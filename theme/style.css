@@ -305,6 +305,7 @@ div.clearer {
 }
 .single-post .authorImage{
 	padding: 5px;
+	text-align: center;
 }
 
 .single-post h3#reply-title {
