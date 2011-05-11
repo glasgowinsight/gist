@@ -364,6 +364,11 @@ div.clearer {
 	margin-left: 2em
 }
 
+#comments li{
+	margin-left: 0;
+	list-style: none;
+}
+
 /*------------------- Home Page -------------------*/
 .home #left-content{
 	width: 66%;
