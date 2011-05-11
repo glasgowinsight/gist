@@ -357,6 +357,10 @@ div.clearer {
 	background: none repeat scroll 0% 0% lightGrey; 
 }
 
+.single-post #content li{
+	margin-left: 2em
+}
+
 /*------------------- Home Page -------------------*/
 .home #left-content{
 	width: 66%;
