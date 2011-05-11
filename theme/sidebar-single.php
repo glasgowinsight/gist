@@ -46,7 +46,7 @@ get_header(); ?>
 		sidebar('author-other', 'Other articles by <a href="' . get_author_posts_url(get_the_author_meta('first_name')) . '">' . get_the_author() . '</a>', $other, 'format_article');
 		
 		$links = get_post_custom_values('external_link');
-		function format_link($links){
+		function format_link($link){
 			echo $link;
 		}
 		sidebar('find-out', 'Find out more', $links, 'format_link');
