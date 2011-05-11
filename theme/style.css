@@ -351,6 +351,15 @@ div.clearer {
 	margin-left: 3px
 }
 
+.aside{
+	float: right; 
+	width: 50%; 
+	border: 1px solid; 
+	padding: 5px; 
+	margin: 5px; 
+	background: none repeat scroll 0% 0% lightGrey; 
+}
+
 /*------------------- Home Page -------------------*/
 .home #left-content{
 	width: 66%;
