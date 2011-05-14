@@ -17,8 +17,6 @@ get_header(); ?>
 			if ( ! empty( $category_description ) )
 				echo '<div class="archive-meta">' . $category_description . '</div>'; 
 
-			tdomf_the_form(1);
-			
 			$posts=array();
 			$ids=array();
 			$votes=array();
@@ -37,7 +35,8 @@ get_header(); ?>
 	        	</div><?php 
 	        	  
 	        }
-        
+	        
+	        tdomf_the_form(1);
 		?>
 
 	</div><!-- #content -->
