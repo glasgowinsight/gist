@@ -38,7 +38,7 @@ get_header(); ?>
 	        	<?php 
 	        	  
 	        }?>
-        <div>
+	    <div class="idea-form">
         	<?php tdomf_the_form(1); ?>
         </div>
 	</div><!-- #content -->
