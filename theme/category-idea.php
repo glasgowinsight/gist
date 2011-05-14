@@ -25,7 +25,7 @@ get_header(); ?>
 			foreach($ids as $id){
 	        	$votes[] = GetVotes($id);
 	        }
-	        array_multisort($votes, 'SORT_DESC', $posts);
+	        array_multisort($votes, SORT_DESC, $posts);
 	        foreach($posts as $post){
 	        	setup_postdata($post); ?>
 	        	<div class="idea">
