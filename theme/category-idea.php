@@ -30,7 +30,7 @@ get_header(); ?>
 	        	setup_postdata($post); ?>
 	        	<div class="idea">
 		        	<div class="vote"><?php DisplayVotes(get_the_ID()); ?></div>
-		        	<div>
+		        	<div class="idea-details">
 			        	<h3><?php the_title();  ?></h3>
 			        	<p><?php the_content(); ?></p>
 		        	</div>
