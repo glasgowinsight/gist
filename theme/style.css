@@ -522,6 +522,11 @@ h3 a {
 	}
 
 
+.archive-meta h3{
+	color:#754700;
+	font-weight: bold;
+}
+
 .archive .headlinePost{ 
 	width: 100%;
 }
@@ -535,7 +540,6 @@ h3 a {
 	font-weigth: normal;
 	border-bottom: 1px solid; 
 	line-height: 1.0;
-	
 }
 
 .archive .headlinePost p{
@@ -693,4 +697,18 @@ h3 a {
 
 .sidebarSection ul li a{
 	color: #A16106;
+}
+
+dt {
+	float: left;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+dd {
+	margin-bottom: 10px;
+}
+
+#content ol li {
+    list-style: decimal;
 }
