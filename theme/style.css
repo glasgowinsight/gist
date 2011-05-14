@@ -715,14 +715,13 @@ dd {
 
 .vote{
 	float:left;
-	clear:left;
-	margin-bottom: 5px;
 	margin-right: 5px;
 }
 
-.idea{
+.idea-details{
 	float:left;
-	clear:right;
+}
+.idea{
 	margin-bottom: 5px;
 }
 

@@ -28,11 +28,14 @@ get_header(); ?>
 	        array_multisort($votes, 'SORT_DESC', $posts);
 	        foreach($posts as $post){
 	        	setup_postdata($post); ?>
-	        	<div class="vote"><?php DisplayVotes(get_the_ID()); ?></div>
 	        	<div class="idea">
-		        	<h3><?php the_title();  ?></h3>
-		        	<p><?php the_content(); ?></p>
-	        	</div><?php 
+		        	<div class="vote"><?php DisplayVotes(get_the_ID()); ?></div>
+		        	<div>
+			        	<h3><?php the_title();  ?></h3>
+			        	<p><?php the_content(); ?></p>
+		        	</div>
+	        	</div>
+	        	<?php 
 	        	  
 	        }
 	        
