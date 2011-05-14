@@ -37,11 +37,10 @@ get_header(); ?>
 	        	</div>
 	        	<?php 
 	        	  
-	        }
-	        
-	        tdomf_the_form(1);
-		?>
-
+	        }?>
+        <div>
+        	<?php tdomf_the_form(1); ?>
+        </div>
 	</div><!-- #content -->
 </div><!-- #container -->
 
