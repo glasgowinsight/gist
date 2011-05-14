@@ -712,3 +712,16 @@ dd {
 #content ol li {
     list-style: decimal;
 }
+
+.vote{
+	float:left;
+	clear:left;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.idea{
+	float:left;
+	clear:right;
+	margin-bottom: 5px;
+}
