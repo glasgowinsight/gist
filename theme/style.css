@@ -103,6 +103,23 @@ a, .home #content p a, #topNav a { text-decoration: none; }
 .archive .simpleSlide-thumbnails { vertical-align: middle; }
 .followLinks a span{ vertical-align: top; }
 
+/*---------------- Borders -------------------------------*/
+
+.twtr-doc, .twtr-timeline { -moz-border-radius: 0px !important; }
+
+#navList li#first {	border-left: 0; }
+
+.aside, .home .current img, .home .hover img { border-style: solid; }
+
+#topNav a:hover, .single-post h1, .single-post h3#reply-title, .archive .simpleSlide-thumbnails, #left-content .post h3, #right-content .post h3, .archive .headlinePost h3, .archive .smallPost h3, .archive .headlinePost, .category-feature .headlinePost, .category-snippet .headlinePost, .category-podcast .headlinePost { border-bottom-style: solid; }
+.widget-area ul li{ border-bottom-style: dashed; }
+
+#footer, .widget-area h3, .archive .simpleSlide-thumbnails, #left-content .post h3, #right-content .post h3, .archive .smallPost h3 { border-top-style: solid; }
+
+.widget-area ul li, .aside, .home .current img, .home .hover img, #left-content .post h3, #right-content .post h3, .archive .headlinePost h3, .archive .smallPost h3 { border-width: 1px; }
+#footer, #topNav a:hover, .widget-area h3, .single-post h1, .single-post h3#reply-title, .archive .headlinePost, .category-feature .headlinePost, .category-snippet .headlinePost, .category-podcast .headlinePost  { border-width: 2px; }
+.archive .simpleSlide-thumbnails{ border-width: 5px; }
+
 /*---------------- General Styling -------------------------------*/
 
 #content {
@@ -151,8 +168,6 @@ p {
 }
 
 #footer {
-	border-top-style: solid;
-	border-width: 2px;
 	width: 100%;
 	padding: 5px 0 20px 0;
 	clear: both;
@@ -193,19 +208,14 @@ p {
 	padding: 0 0 3px 0;
 }
 
-#topNav a:hover {
-	border-width: 2px;
-	border-bottom-style: solid;
-}
+
 
 #navList li {
 	display: inline;
 	padding: 0px 15px 0px 15px;	
 }
 
-#navList li#first {
-	border-left: 0;
-}
+
 
 div.clearer {
 	clear: both;
@@ -219,15 +229,6 @@ div.clearer {
 .widget-area ul {
 	list-style: none;
 	margin: 5px 0 20px 0;
-}
-.widget-area ul li{
-	border-bottom-style: dashed;
-	border-width: 1px;
-}
-
-.widget-area h3{
-	border-style-top: solid;
-	border-width: 2px;
 }
 
 .sidebarSection{ 
@@ -252,10 +253,6 @@ div.clearer {
         clear: none;
         float: left;
         margin-left: 5px !important;
-}
-
-.twtr-doc, .twtr-timeline {
-        -moz-border-radius: 0px !important;
 }
 
 .twtr-ft a {
@@ -286,13 +283,6 @@ div.clearer {
 }
 
 .single-post h1{
-	border-bottom-style: solid;
-	border-width: 2px;
-}
-
-
-
-.single-post h1{
 	margin-bottom: 5px;
 }
 
@@ -315,10 +305,9 @@ div.clearer {
 }
 
 .single-post h3#reply-title {
-    border-bottom-style: solid;
-    border-width: 2px;
     margin-top: 10px;
 }
+
 .single-post .comment-form-comment{
 	float: left;
 	margin-right: 5px;
@@ -357,8 +346,6 @@ div.clearer {
 .aside{
 	float: right; 
 	width: 50%; 
-	border-style: solid;
-	border-width: 1px; 
 	padding: 5px; 
 	margin: 5px; 
 }
@@ -415,19 +402,12 @@ div.clearer {
 	width: 100%;
 }
 
-.archive .simpleSlide-thumbnails {
-	border-top: 5px solid;
-	border-bottom: 5px solid;
-}
-
 .home .jump-to img {
 	padding: 2px;
 	margin-top: 2px;
 }
 
 .home .current img, .home .hover img {
-	border-style: solid;
-	border-width: 1px;
 	padding: 1px;
 }
 
@@ -451,9 +431,6 @@ div.clearer {
 
 #left-content .post h3{
 	margin-bottom: 2px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-width: 1px;
 	width: 100%;
 }
 
@@ -463,9 +440,6 @@ div.clearer {
 
 #right-content .post h3{
 	margin-bottom: 2px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-width: 1px;
 	width: 100%;
 }
 
@@ -491,7 +465,6 @@ div.clearer {
 	margin: 15px 0;
 	padding-bottom: 5px;
 	width: 100%;
-	border-bottom: 1px solid; 
 }
 
 .archive .headlinPostImage{
@@ -513,11 +486,6 @@ div.clearer {
 	float: left;
 }
 
-.archive .smallPost h3{
-	border-top: 1px solid;
-	border-bottom: 1px solid;
-}
-
 .archive .smallPost{
 	width: 47%;
 	margin: 5px 20px 0 0;
@@ -535,39 +503,6 @@ div.clearer {
 .nav-next{
 	float: right;
 }
-
-
-/*--- Generic Archives: Tags, Dates, Authors ---*/
-
-.archive .headlinePost {
-	border-bottom-style: solid;
-	border-width: 2px;
-}
-
-/*--- Feature Category ---*/
-
-.category-feature .headlinePost {
-	border-bottom-style: solid;
-	border-width: 2px;
-}
-
-/*--- Snippets Category ---*/
-
-.category-snippet .headlinePost {
-	border-bottom-style: solid;
-	border-width: 2px;
-}
-
-
-/*--- Podcasts Category ---*/
-
-.category-podcast .headlinePost {
-	border-bottom-style: solid;
-	border-width: 2px 
-}
-
-/*--- End of Category specific details --*/
-
 
 dt {
 	float: left;
