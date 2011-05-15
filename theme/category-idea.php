@@ -29,18 +29,19 @@ get_header(); ?>
 	        foreach($posts as $post){
 	        	setup_postdata($post); ?>
 	        	<div class="idea">
-		        	<div class="vote"><?php DisplayVotes(get_the_ID()); ?></div>
+		        	<div class="idea-vote"><?php DisplayVotes(get_the_ID()); ?></div>
 		        	<div class="idea-details">
 			        	<h3><?php the_title();  ?></h3>
-			        	<p><?php the_content(); ?></p>
-		        	</div>
-	        	</div>
+			        	<?php the_content(); ?>
+			        	<div class="idea-comments">
+			        		<a href="<?php the_permalink(); ?>"><?php comments_number('Comment on this idea'); ?></a>
+			        	</div>
+	        		</div>
+		        </div>
 	        	<?php 
 	        	  
 	        }?>
-	    <div class="idea-form">
-        	<?php tdomf_the_form(1); ?>
-        </div>
+	    <?php tdomf_the_form(1); ?>
 	</div><!-- #content -->
 </div><!-- #container -->
 

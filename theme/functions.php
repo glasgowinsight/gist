@@ -185,8 +185,8 @@ function get_latest_feature_categories(){
   	));
 }
 
-function get_category_link_by_name($cat_name){
-	$id = get_cat_ID($cat_name);
+function get_category_link_by_slug($cat_name){
+	$id = id_by_slug($cat_name);
 	return get_category_link($id);
 }
 
@@ -240,14 +240,18 @@ function sidebar($id, $title, $collection, $callback) {
 
 function custom_posts($query) {
 	if ($query->is_feed) {
-		$query->set('category__not_in', array(get_cat_ID('about gist')));
+		$query->set('category__not_in', array(id_by_slug('about-gist'), id_by_slug('idea')));
 	}
 	else{
+		if(get_query_var('category_name') != 'idea'){
+			$query->set('category__not_in', array(id_by_slug('idea')));
+		}
+		
 		if(current_user_can( 'publish_posts' )){
 			$query->set('post_status', array('draft', 'publish'));
 		}
 		
-		if(get_query_var('category_name') == 'about-gist' || get_query_var('cat') == get_cat_ID('about gist')){
+		if(get_query_var('category_name') == 'about-gist' || get_query_var('cat') == id_by_slug('about-gist')){
 			set_query_var('posts_per_page', 4);
 		}
 		
@@ -259,4 +263,6 @@ function custom_posts($query) {
 }
 add_filter('pre_get_posts','custom_posts');
 
-
+function id_by_slug($slug){
+	return get_category_by_slug($slug)->term_id;
+}

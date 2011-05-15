@@ -713,7 +713,7 @@ dd {
     list-style: decimal;
 }
 
-.vote{
+.idea-vote{
 	float:left;
 	margin-right: 5px;
 }
@@ -723,11 +723,8 @@ dd {
 }
 .idea{
 	margin-bottom: 5px;
-	clear: both;
-}
-
-.idea-form{
-	clear: both;
+	width:100%;
+	overflow:auto;
 }
 
 .idea h3{
