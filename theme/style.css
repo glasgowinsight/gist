@@ -7,6 +7,76 @@ Version: 1.1
 Tags: 
 */
 
+/*---------------- Colours -------------------------------*/
+
+a:hover { color: #000000; }
+#footer, #left-content #right-content { border-color: #000000; }
+
+.category-podcast .page-title { background:#004875; }
+.category-podcast { border-color: #004875; }
+.category-podcast a, .category-podcast h1, .category-podcast h2, .category-podcast h3{ color: #068ba1; }
+
+.category-snippet .page-title {	background:#750000; }
+.category-snippet { border-color: #750000; }
+.category-snippet a, .category-snippet h1, .category-snippet h2, .category-snippet h3{ color: #a10606; }
+
+.single-post { border-color: #112552; }
+.single-post h1, .single-post h2, .single-post h3, .single-post h4, #left-content h3, #left-content h3 a { color: #112552; }
+
+.sidebarSection h3, .simpleSlide-window h3, .simpleSlide-thumbnails{ background: #2857af; }
+
+.archive .page-title{ background:#754700; }
+.archive{ border-color: #754700; }
+
+a, .home #content p a, #topNav a, #topNav a:hover, .archive a, .archive  a, .archive h1, .archive h2, .archive h3, .sidebarSection ul li a, .idea h3{	color: #a16106; }
+#topNav a:hover, .hover { border-color: #a16106; }
+
+#right-content .post{ background: #c1b9a6; }
+
+body, .single-post .wp-caption, .aside{ background: #d0d0d0; }
+#site-generator a, #site-info a  { color: #d0d0d0; }
+
+.sidebarSection, .archive .simpleSlide-window, #left-content .post { background: #e5e8ff; }
+
+#rightHeader, .sidebarSection h3, .sidebarSection h3 a, .simpleSlide-window h3 a, #right-content h3, #right-content h3 a, .archive .page-title { color: #ffffff;}
+.current { border-color: #ffffff; }
+#wrapper { background-colour: #ffffff }
+
+/*---------------- Fonts -------------------------------*/
+
+h1, h2, h3, h4, h5, h6 { font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
+body, .archive .page-title{ font-family: Georgia, "Bitstream Charter", serif; }
+
+.single-post .wp-caption-text, .archive .post h2, .slider h2, .single-post .form-allowed-tags { font-size: 12px; }
+body{ font-size: 16px; }
+.archive .headlinePost p{ font-size: 20px; }
+.single-post h1, .archive .page-title{ font-size: 30px; }
+
+#site-info, .single-post .wp-caption-text, dt { font-weight: bold; }
+
+.single-post h1, .archive .headlinePost h3 { line-height: 100%; }
+#wrapper, .archive .headlinePost p, .wp-caption-text { line-height: 120%; }
+
+.archive .simpleSlide-slide .entry-thumbnail, .archive .simpleSlide-thumbnails, .single-post .authorImage { text-align: center; }
+#rightHeader, .archive .post h2, .slider h2  { text-align: right; }
+
+a, .home #content p a, #topNav a { text-decoration: none; }
+
+.archive .simpleSlide-thumbnails { vertical-align: middle; }
+.followLinks a span{ vertical-align: top; }
+
+/*---------------- Borders -------------------------------*/
+
+.twtr-doc, .twtr-timeline { -moz-border-radius: 0px !important; }
+
+.aside, .current img, .hover img { border-style: solid; }
+#topNav a:hover, .single-post h1, .single-post h3#reply-title, .simpleSlide-thumbnails, #left-content .post h3, #right-content .post h3, .headlinePost h3, .smallPost h3, .headlinePost { border-bottom-style: solid; }
+#footer, .archive .simpleSlide-thumbnails, #left-content .post h3, #right-content .post h3, .archive .smallPost h3 { border-top-style: solid; }
+
+.aside, .current, .hover, #left-content, #right-content { border-width: 1px; }
+body  { border-width: 2px; }
+.simpleSlide-thumbnails{ border-width: 5px; }
+
 /*---------------- General Styling -------------------------------*/
 
 #content {
@@ -14,45 +84,41 @@ Tags:
 	width: 720px;
 }
 
-#content li {
+ul li {
 	list-style: disc inside none;
 }
 
-a, .home #content p a {
-	color: #a16106;
-	text-decoration: none; 
+ol li {
+    list-style: decimal inside none;
 }
 
-a:hover{
-	color: #000000;
+dt {
+	float: left;
+	margin-right: 5px;
+}
+
+dd {
+	margin-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-weight: normal;
 	background-color: tranparent;
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 
 p {
 	padding-top: 5px; 
 	padding-bottom: 5px;
 }
+
 /*-----------------     Layouts  --------------------------------*/
-
-
-body{
-	background: #f1f1f1;
-	font-size: 12pt;
-	font-family: Georgia, "Bitstream Charter", serif;
-}
 
 #wrapper {
 	margin: 20px auto;
 	width: 940px;
-	background: #ffffff url('images/bodyTop.png') repeat-x;
+	background-image: url('images/bodyTop.png');
+	background-repeat: repeat-x;
 	padding:0 10px;
-	line-height: 120%;
 }
 
 #main{
@@ -67,7 +133,6 @@ body{
 }
 
 #footer {
-	border-top: 2px solid #000;
 	width: 100%;
 	padding: 5px 0 20px 0;
 	clear: both;
@@ -86,14 +151,7 @@ body{
 	background: url('images/masthead.png') 100% 0 no-repeat;
 	width: 693px;
 	margin-left: -20px;
-	text-align: right;
 	padding: 0px 10px 20px 0;
-	color: #fff;
-}
-
-#rightHeader h2 {
-	font: italic bold 22px arial;
-	line-height: 120%;
 }
 
 #searchForm {
@@ -112,107 +170,28 @@ body{
 }
 
 #topNav a {
-	color: #a16106;
-	text-decoration: none; 
 	padding: 0 0 3px 0;
-}
-
-#topNav a:hover {
-	color: #a16106;
-	border-bottom: 2px solid #a16106;
 }
 
 #navList li {
 	display: inline;
-	padding: 0px 15px 0px 15px;
-	font-size: 15px;
+	padding: 0px 15px 0px 15px;	
 }
-
-#navList li#first {
-	border-left: 0;
-}
-
-div.clearer {
-	clear: both;
-}
-
-/* ------------            End of Header Styling --------------------------------*/
-
-/*-- Feature Category posts --*/
-
-.category-feature{
-	border-color: #6e0097;
-}
-
-.category-feature h2{
-	color: #6e0097;
-}
-
-
-/*-- Snippet Category posts --*/
-.category-snippet{
-	border-color: #112552;
-}
-
-.category-snippet h2 { 
-	color: #112552;
-}
-/*-- Event Category posts --*/
-
-.category-event{
-	border-color: #93000e;
-}
-.category-event h2 { 
-	color: #93000e;
-}
-
-/*--Podcast Category posts --*/
-
-.category-podcasts{
-	border-color: #0a5b00;
-}
-
-.category-podcast h2 {
-	color: #0a5b00;
-}
-
 
 /*----------------Sidebar Styling -----------------*/
 
-
-.widget-area ul {
-	list-style: none;
-	margin: 5px 0 20px 0;
-}
-.widget-area ul li{
-	border-bottom: 1px dashed #6e0097;
-}
-
-
-
-.widget-area h3{
-	border-top: 2px solid #112552;
-
-	background: #d2d4d7;
-}
-
 .sidebarSection{ 
-	background: #E5E8FF;
 	margin-bottom: 5px;
 }
 
 .sidebarSection h3{
-	background: #2857AF;
 	width: 100%;
-	color: #FFFFFF;
-	font-weight: bold;
 }
 
 .sidebarSection li {
 	list-style-type: none;
 	padding: 1px 2px 10px 2px;
 }
-
 
 .twtr-doc h3 {
         display: none;
@@ -221,12 +200,7 @@ div.clearer {
 .twtr-doc h4 {
         clear: none;
         float: left;
-        font-weight: bold !important;
         margin-left: 5px !important;
-}
-
-.twtr-doc, .twtr-timeline {
-        -moz-border-radius: 0px !important;
 }
 
 .twtr-ft a {
@@ -237,19 +211,14 @@ div.clearer {
 
 #site-info {
 	float: left;
-	font-weight: bold;
 }
 
-#site-info a {
-	color: #d2d4d7;
-}
 #site-generator {
 	float: right;
 }
 
 #site-generator a {
 	background: url(images/wordpress.png) center left no-repeat;
-	color: #666;
 	display: inline-block;
 	padding-left: 20px;
 
@@ -261,26 +230,12 @@ div.clearer {
 	margin: 5px;
 }
 
-.single-post h1, .single-post h2, .single-post h3, .single-post h4{
-	color: #112552;
-	font-weight: bold;
-}
-
-.single-post h1{
-	border-bottom: 2px solid;
-	font-size: 16px;
-	line-height: 30px;
-}
-
-
-
 .single-post h1{
 	margin-bottom: 5px;
 }
 
 .single-post .wp-caption{
 	float: left;
-	background: #d0d0d0;
 	margin-right: 5px;
 }
 
@@ -290,25 +245,17 @@ div.clearer {
 }
 
 .single-post .wp-caption-text{
-	font-size: 80%;
-	line-height: 130%;
-	font-weight: bold;
 	padding: 5px;
 }
 
-.single-post .sidebarSection h3, .single-post #sidebar h3 a{
-	color: white; 
-
-}
 .single-post .authorImage{
 	padding: 5px;
-	text-align: center;
 }
 
 .single-post h3#reply-title {
-    border-bottom: 2px solid #112552;
     margin-top: 10px;
 }
+
 .single-post .comment-form-comment{
 	float: left;
 	margin-right: 5px;
@@ -317,10 +264,6 @@ div.clearer {
 .single-post .comment-form-comment label{
 	vertical-align: top;
 	margin-right: 5px;
-}
-
-.single-post .form-allowed-tags{
-	font-size: 10pt;
 }
 
 .single-post .form-submit{
@@ -351,10 +294,8 @@ div.clearer {
 .aside{
 	float: right; 
 	width: 50%; 
-	border: 1px solid; 
 	padding: 5px; 
 	margin: 5px; 
-	background: none repeat scroll 0% 0% lightGrey; 
 }
 
 .single-post #content li{
@@ -378,11 +319,7 @@ div.clearer {
 }
 
 .archive .post h2, .slider h2 {
-	font-size: 14px;
-	font-variant: small-caps;
-	font-weight: bold;
 	margin: 0 5px 10px 0;
-	text-align: right;
 }
 
 .archive .simpleSlide-slide {
@@ -392,7 +329,6 @@ div.clearer {
 .archive .simpleSlide-slide .entry-thumbnail{
 	width: 100%;
 	clear: both;
-	text-align: center;
 	margin: 5px;
 }
 
@@ -412,27 +348,6 @@ div.clearer {
 
 .archive .simpleSlide-window {
 	width: 100%;
-	background: #E5E8FF;
-}
-
-.archive .simpleSlide-window h3 {
-	background: #2857AF;
-}
-
-.archive .simpleSlide-window h3 a {
-	color: white;
-}
-
-h3 a {
-	font-weight: bold;
-}
-
-.archive .simpleSlide-thumbnails {
-	text-align: center;
-	vertical-align: middle;
-	background: #2857AF;
-	border-top: 5px solid;
-	border-bottom: 5px solid;
 }
 
 .home .jump-to img {
@@ -440,13 +355,7 @@ h3 a {
 	margin-top: 2px;
 }
 
-.home .current img {
-	border: 1px #ffffff solid;
-	padding: 1px;
-}
-
-.home .hover img{
-	border: 1px #a16106 solid;
+.home .current img, .home .hover img {
 	padding: 1px;
 }
 
@@ -464,68 +373,35 @@ h3 a {
 }
 
 #left-content .post{
-	background: #E5E8FF;
 	margin: 5px 5px 5px 0px;
 	overflow: auto;
 }
 
 #left-content .post h3{
 	margin-bottom: 2px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
 	width: 100%;
 }
 
-#left-content .post h3, #left-content .post h3 a{
-	color: #112552;
-}
-
 #right-content .post{
-	background: #C1B9A6;
 	margin: 5px 0px 5px 5px;
 }
 
 #right-content .post h3{
-	color: #ffffff;
 	margin-bottom: 2px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
 	width: 100%;
-}
-
-#right-content .post h3, #right-content .post h3 a{
-	color: #ffffff;
-}
-
-#sidebar h3 a{
-	color: #000000;
 }
 
 #sidebar img{
 	margin: 2px;
 }
 
-.followLinks a span{
-	vertical-align: top;
-}
-
-
 /* --------------------   Category Styling ------------------- */
 
 .archive .page-title{
-	width: 100%
-	font-size: 250%;
-	font-weight: bold;
-	color: #ffffff;
+	width: 100%;
 	padding: 5px 0 10px 0;
-	font-family: Bookman, Georgia, "Bitstream Charter", serif;
-	}
-
-
-.archive-meta h3{
-	color:#754700;
-	font-weight: bold;
 }
+
 
 .archive .headlinePost{ 
 	width: 100%;
@@ -536,15 +412,6 @@ h3 a {
 	margin: 15px 0;
 	padding-bottom: 5px;
 	width: 100%;
-	font-size: 150%;
-	font-weigth: normal;
-	border-bottom: 1px solid; 
-	line-height: 1.0;
-}
-
-.archive .headlinePost p{
-	font-size: 120%;
-	line-height: 120%;
 }
 
 .archive .headlinPostImage{
@@ -561,22 +428,9 @@ h3 a {
 	float: right;
 }
 
-.archive .headlinePost strong, .archive .smallPost strong{
-	font-weight: normal;
-}
-
 .archive .headlinePost .entry-thumbnail, .archive .smallPost .entry-thumbnail{
 	margin: 3px;
 	float: left;
-}
-
-.archive .smallPost p{
-	line-height: 150%;
-}
-
-.archive .smallPost h3{
-	border-top: 1px solid;
-	border-bottom: 1px solid;
 }
 
 .archive .smallPost{
@@ -597,122 +451,6 @@ h3 a {
 	float: right;
 }
 
-
-/*--- Single Page ---*/
-.single-post h1{
-	font-size: 30px;
-}
-
-
-/*--- Generic Archives: Tags, Dates, Authors ---*/
-
-.archive .page-title {
-	background:#754700;
-}
-
-.archive .smallPost h3 {
-	border-color: #754700;
-}
-
-.archive .headlinePost {
-	background:#fce3bd;
-	border-bottom: 2px solid #754700;
-}
-
-.archive  a{
-	color: #a16106;
-}
-
-/*--- Feature Category ---*/
-
-.category-feature .page-title {
-	background:#754700;
-}
-
-.category-feature .smallPost h3 {
-	border-color: #754700;
-}
-
-.category-feature .headlinePost {
-	background:#fce3bd;
-	border-bottom: 2px solid #754700;
-}
-
-.category-feature  a, .category-feature h1, .category-feature #content  h2, .category-feature #content h3{
-	color: #a16106;
-}
-
-.category-features .single-post h1{
-	border-color: #a16106;
-	}
-/*--- Snippets Category ---*/
-
-.category-snippet .page-title {
-	background:#750000;
-}
-
-.category-snippet .smallPost h3 {
-	border-color: #750000;
-}
-
-.category-snippet .headlinePost {
-	background:#feeded;
-	border-bottom: 2px solid #750000;
-}
-
-
-.category-snippet a, .category-snippet h1, .category-snippet #content  h2, .category-snippet #content h3{
-	color: #a10606;
-}
-
-.category-snippets .single-post h1{
-	border-color: #750000;
-	}
-
-/*--- Podcasts Category ---*/
-
-.category-podcast .page-title {
-	background:#004875;
-}
-
-.category-podcast .smallPost h3 {
-	border-color: #004875;
-}
-
-.category-podcast .headlinePost {
-	background:#e6f6ff;
-	border-bottom: 2px solid #004875;
-}
-
-.category-podcast a, .category-podcast h1, .category-podcast #content h2, .category-podcast #content h3{
-	color: #068ba1;
-}
-
-.category-snippets .single-post h1{
-	border-color: #068ba1;
-	}
-
-/*--- End of Category specific details --*/
-
-
-.sidebarSection ul li a{
-	color: #A16106;
-}
-
-dt {
-	float: left;
-	font-weight: bold;
-	margin-right: 5px;
-}
-
-dd {
-	margin-bottom: 10px;
-}
-
-#content ol li {
-    list-style: decimal;
-}
-
 .idea-vote{
 	float:left;
 	margin-right: 5px;
@@ -725,9 +463,4 @@ dd {
 	margin-bottom: 5px;
 	width:100%;
 	overflow:auto;
-}
-
-.idea h3{
-	color:#754700;
-	font-weight:bold;
 }
