@@ -83,9 +83,9 @@
 		<div id="topNav">
 			<ul id="navList">
 			<li> <a href="<?php echo home_url( ); ?>">home</a></li>
-			<li> <a href="<?php echo get_category_link_by_slug( 'features' ); ?>">features</a></li> 
-			<li> <a href="<?php echo get_category_link_by_slug( 'snippets' ); ?>">news snippets</a></li> 
-			<li> <a href="<?php echo get_category_link_by_slug( 'podcasts' ); ?>">podcasts</a></li> 
+			<li> <a href="<?php echo get_category_link_by_slug( 'feature' ); ?>">features</a></li> 
+			<li> <a href="<?php echo get_category_link_by_slug( 'snippet' ); ?>">news snippets</a></li> 
+			<li> <a href="<?php echo get_category_link_by_slug( 'podcast' ); ?>">podcasts</a></li> 
 			<li> <a href="<?php echo get_category_link_by_slug( 'about-gist' ); ?>">about gist</a></li> 
 			</ul>
 		</div>
