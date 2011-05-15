@@ -40,7 +40,7 @@ body, .single-post .wp-caption, .aside{ background: #d0d0d0; }
 
 #rightHeader, .sidebarSection h3, .sidebarSection h3 a, .simpleSlide-window h3 a, #right-content h3, #right-content h3 a, .archive .page-title { color: #ffffff;}
 .current { border-color: #ffffff; }
-#wrapper { background-colour: #ffffff }
+#wrapper { background-color: #ffffff }
 
 /*---------------- Fonts -------------------------------*/
 
@@ -52,7 +52,7 @@ body{ font-size: 16px; }
 .archive .headlinePost p{ font-size: 20px; }
 .single-post h1, .archive .page-title{ font-size: 30px; }
 
-#site-info, .single-post .wp-caption-text, dt { font-weight: bold; }
+#site-info, .single-post .wp-caption-text, dt, h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 .single-post h1, .archive .headlinePost h3 { line-height: 100%; }
 #wrapper, .archive .headlinePost p, .wp-caption-text { line-height: 120%; }
@@ -74,7 +74,7 @@ a, .home #content p a, #topNav a { text-decoration: none; }
 #footer, .archive .simpleSlide-thumbnails, #left-content .post h3, #right-content .post h3, .archive .smallPost h3 { border-top-style: solid; }
 
 .aside, .current, .hover, #left-content, #right-content { border-width: 1px; }
-body  { border-width: 2px; }
+ h1, h2, h3, h4, h5, h6, a, #footer { border-width: 2px; }
 .simpleSlide-thumbnails{ border-width: 5px; }
 
 /*---------------- General Styling -------------------------------*/
