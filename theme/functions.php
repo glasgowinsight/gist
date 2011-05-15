@@ -47,7 +47,12 @@ if ( ! function_exists( 'gist_setup' ) ):
 	
 		// Add default posts and comments RSS feed links to head
 		add_theme_support( 'automatic-feed-links' );
+		
 	
+		$filters = array('pre_term_description', 'pre_link_description', 'pre_link_notes', 'pre_user_description');
+		foreach ( $filters as $filter ) {
+		    remove_filter($filter, 'wp_filter_kses');
+		}
 	}
 endif;
 
@@ -253,3 +258,5 @@ function custom_posts($query) {
 	return $query;
 }
 add_filter('pre_get_posts','custom_posts');
+
+
