@@ -40,7 +40,7 @@ body, .single-post .wp-caption, .aside{ background: #d0d0d0; }
 
 #rightHeader, .sidebarSection h3, .sidebarSection h3 a, .simpleSlide-window h3 a, #right-content h3, #right-content h3 a, .archive .page-title { color: #ffffff;}
 .current { border-color: #ffffff; }
-#main,#footer { background-color: #ffffff }
+#wrapper { background-color: #ffffff }
 
 /*---------------- Fonts -------------------------------*/
 
