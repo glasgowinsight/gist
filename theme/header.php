@@ -59,14 +59,18 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/analytics.js" type="text/javascript"></script>
 </head>
 
-<?php if (is_single()){
-
-	foreach((get_the_category()) as $category){
-		$catTag.=' category-';
-		$catTag.=$category->category_nicename;
+<?php 
+	$classes='';
+	if(is_home() || is_search()){
+		$classes.='archive ';
+	}
+	if (is_single()){
+		foreach((get_the_category()) as $category){
+			$classes.='category-'.$category->slug.' ';
 		}
-} ?>
-<body <?php if(is_home() || is_search()) body_class('archive'); else body_class()?>>
+	}
+?>
+<body <?php body_class($classes)?>>
 <div id="wrapper" class="hfeed">
 
 	<div id="header">
