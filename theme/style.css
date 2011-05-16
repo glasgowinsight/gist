@@ -40,7 +40,7 @@ body, .single-post .wp-caption, .aside{ background: #d0d0d0; }
 
 #rightHeader, .sidebarSection h3, .sidebarSection h3 a, .simpleSlide-window h3 a, #right-content h3, #right-content h3 a, .archive .page-title { color: #ffffff;}
 .current { border-color: #ffffff; }
-#wrapper { background-color: #ffffff }
+#main,#footer { background-color: #ffffff }
 
 /*---------------- Fonts -------------------------------*/
 
@@ -116,8 +116,6 @@ p {
 #wrapper {
 	margin: 20px auto;
 	width: 940px;
-	background-image: url('images/bodyTop.png');
-	background-repeat: repeat-x;
 	padding:0 10px;
 }
 
@@ -140,10 +138,15 @@ p {
 
 /* ---------------       Header Styling  -------------------------*/
 
+#header {
+	margin-top: 80px;
+}
+
 #logo {
 	float: left;
 	margin-left: -100px;
 	margin-right: -20px;
+	margin-top: -60px
 }
 
 #rightHeader {
@@ -151,6 +154,7 @@ p {
 	background: url('images/masthead.png') 100% 0 no-repeat;
 	width: 693px;
 	margin-left: -20px;
+	margin-top: -60px;
 	padding: 0px 10px 20px 0;
 }
 
