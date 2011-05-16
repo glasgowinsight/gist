@@ -56,6 +56,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/twitter-widget.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/gist.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/analytics.js" type="text/javascript"></script>
 </head>
 
 <?php if (is_single()){
