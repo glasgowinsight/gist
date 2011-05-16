@@ -21,7 +21,7 @@ a:hover { color: #000000; }
 .archive h3 { border-color: #754700; }
 
 a, .home #content p a, #topNav a, #topNav a:hover, .archive a, .archive  a, .archive h1, .archive h2, .archive h3, .sidebarSection ul li a, .idea h3{	color: #a16106; }
-#topNav a:hover, .hover { border-color: #a16106; }
+#topNav a:hover, .hover img { border-color: #a16106; }
 
 #right-content .post{ background: #c1b9a6; }
 
@@ -30,8 +30,8 @@ body, .single-post .wp-caption, .aside, table.infoDisplay tr, .infoDisplay tr.al
 
 .sidebarSection, .archive .simpleSlide-window, #left-content .post { background: #e5e8ff; }
 
-#rightHeader, .sidebarSection h3, .sidebarSection h3 a, .simpleSlide-window h3 a, #right-content h3, #right-content h3 a, .archive .page-title { color: #ffffff;}
-.current { border-color: #ffffff; }
+#rightHeader, #sidebar .sidebarSection h3, #sidebar .sidebarSection h3 a, .simpleSlide-window h3 a, #right-content h3, #right-content h3 a, .archive .page-title { color: #ffffff;}
+.current img { border-color: #ffffff; }
 #wrapper { background-color: #ffffff }
 
 .category-podcast .page-title { background:#004875; }
