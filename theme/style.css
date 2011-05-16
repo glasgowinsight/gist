@@ -10,15 +10,7 @@ Tags:
 /*---------------- Colours -------------------------------*/
 
 a:hover { color: #000000; }
-#footer, #left-content #right-content, .infoDisplay tr { border-color: #000000; }
-
-.category-podcast .page-title { background:#004875; }
-.category-podcast { border-color: #004875; }
-.category-podcast a, .category-podcast h1, .category-podcast h2, .category-podcast h3{ color: #068ba1; }
-
-.category-snippet .page-title {	background:#750000; }
-.category-snippet { border-color: #750000; }
-.category-snippet a, .category-snippet h1, .category-snippet h2, .category-snippet h3{ color: #a10606; }
+#footer, #left-content h3, #right-content h3, .infoDisplay tr { border-color: #000000; }
 
 .single-post { border-color: #112552; }
 .single-post h1, .single-post h2, .single-post h3, .single-post h4, #left-content h3, #left-content h3 a { color: #112552; }
@@ -26,7 +18,7 @@ a:hover { color: #000000; }
 .sidebarSection h3, .simpleSlide-window h3, .simpleSlide-thumbnails{ background: #2857af; }
 
 .archive .page-title{ background:#754700; }
-.archive{ border-color: #754700; }
+.archive h3 { border-color: #754700; }
 
 a, .home #content p a, #topNav a, #topNav a:hover, .archive a, .archive  a, .archive h1, .archive h2, .archive h3, .sidebarSection ul li a, .idea h3{	color: #a16106; }
 #topNav a:hover, .hover { border-color: #a16106; }
@@ -42,14 +34,22 @@ body, .single-post .wp-caption, .aside, table.infoDisplay tr, .infoDisplay tr.al
 .current { border-color: #ffffff; }
 #wrapper { background-color: #ffffff }
 
+.category-podcast .page-title { background:#004875; }
+.category-podcast { border-color: #004875; }
+.category-podcast a, .category-podcast h1, .category-podcast h2, .category-podcast h3{ color: #068ba1; }
+
+.category-snippet .page-title {	background:#750000; }
+.category-snippet { border-color: #750000; }
+.category-snippet a, .category-snippet h1, .category-snippet h2, .category-snippet h3{ color: #a10606; }
+
 /*---------------- Fonts -------------------------------*/
 
 h1, h2, h3, h4, h5, h6 { font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
-body, .archive .page-title{ font-family: Georgia, "Bitstream Charter", serif; }
+body, .archive .page-title{ font-family: Bookman, Georgia, "Bitstream Charter", serif; }
 
 .single-post .wp-caption-text, .archive .post h2, .slider h2, .single-post .form-allowed-tags { font-size: 12px; }
 body{ font-size: 16px; }
-.archive .headlinePost p{ font-size: 20px; }
+.archive .headlinePost{ font-size: 20px; }
 .single-post h1, .archive .page-title{ font-size: 30px; }
 
 #site-info, .single-post .wp-caption-text, dt, h1, h2, h3, h4, h5, h6 { font-weight: bold; }
@@ -73,9 +73,9 @@ a, .home #content p a, #topNav a { text-decoration: none; }
 
 .aside, .current img, .hover img { border-style: solid; }
 #topNav a:hover, .single-post h1, .single-post h3#reply-title, .simpleSlide-thumbnails, #left-content .post h3, #right-content .post h3, .headlinePost h3, .smallPost h3, .headlinePost, .infoDisplay tr { border-bottom-style: solid; }
-#footer, .archive .simpleSlide-thumbnails, #left-content .post h3, #right-content .post h3, .archive .smallPost h3, .infoDisplay tr { border-top-style: solid; }
+#footer, .archive .simpleSlide-thumbnails, #left-content h3, #right-content h3, .archive .smallPost h3, .infoDisplay tr { border-top-style: solid; }
 
-.aside, .current, .hover, #left-content, #right-content, .infoDisplay tr { border-width: 1px; }
+.aside, .current img, .hover img, #left-content, #right-content, .infoDisplay tr { border-width: 1px; }
  h1, h2, h3, h4, h5, h6, a, #footer { border-width: 2px; }
 .simpleSlide-thumbnails{ border-width: 5px; }
 
