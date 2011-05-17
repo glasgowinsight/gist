@@ -23,15 +23,15 @@ h1, h2, h3, h4, h5, h6, .hover img { color: #2F415F;  border-color: #2F415F; }
 .archive .simpleSlide-window, .headlinePost, .home .post { background: #A9BFE5; }
 
 a{color: #A16106}
-a:hover{color: #FFFFFF; background: #A16106;}
 a:visited{color: #E62F17}
-a:hover:visited{color: #FFFFFF; background: #E62F17}
+a:visited:hover{color: #FFFFFF; background: #E62F17}
+a:hover{color: #FFFFFF; background: #A16106;}
 
-h3 a{color: #FFFFFF; background: transparent;}
-.sidebarSection a{color: #FFFFFF; background: transparent;}
-#topNav a{color: #00225D; background: transparent;}
-#topNav a:hover{color: #FFFFFF; background: #00225D;}
-#site-generator a, #site-info a { color: #D0D0D0; }
+h3 a, h3 a:visited, h3 a:visited:hover, h3 a:hover{color: #FFFFFF; background: transparent;}
+.sidebarSection a, .sidebarSection a:visited, .sidebarSection a:visited:hover, .sidebarSection a:hover{color: #00225D; background: transparent;}
+#topNav a, #topNav a:visited{color: #00225D; background: transparent;}
+#topNav a:hover, #topNav a:visited:hover{color: #FFFFFF; background: #00225D;}
+#footer a, #footer a:visited, #footer a:visited:hover, #footer a:hover { color: #D0D0D0; }
 
 /*---------------- Fonts -------------------------------*/
 
