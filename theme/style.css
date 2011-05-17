@@ -10,17 +10,22 @@ Tags:
 /*---------------- Colours -------------------------------*/
 
 #footer, #left-content h3, #right-content h3, .infoDisplay tr { border-color: #000000; }
-body, .single-post .wp-caption, .aside, table.infoDisplay tr, .infoDisplay tr.alt{ background: #d0d0d0; }
-#site-generator a, #site-info a  { color: #d0d0d0; }
-#rightHeader, #sidebar .sidebarSection h3, #sidebar .sidebarSection h3 a, .home h3, .home h3 a, .archive .page-title { color: #ffffff;}
-.current img { border-color: #ffffff; }
-#wrapper { background-color: #ffffff }
+body, .single-post .wp-caption, .aside, table.infoDisplay tr, .infoDisplay tr.alt{ background: #D0D0D0; }
+#site-generator a, #site-info a  { color: #D0D0D0; }
+#rightHeader, .sidebarSection h3, h3 a, .home h3, .page-title { color: #FFFFFF;}
+.current img { border-color: #FFFFFF; }
+#wrapper { background-color: #FFFFFF }
 
 /* Blues */
-.sidebarSection h3, .simpleSlide-window h3, .simpleSlide-thumbnails, .archive .page-title{ background: #1C4A98; }
+.sidebarSection h3, .simpleSlide-window h3, .simpleSlide-thumbnails, .page-title, .home .post h3{ background: #1C4A98; }
 .archive h3 { border-color: #1C4A98; }
-a, h1, h2, h3, h4, h5, h6, .sidebarSection ul li a, .hover img { color: #2F415F;  border-color: #2F415F; }
-.sidebarSection, .archive .simpleSlide-window, .headlinePost { background: #A9BFE5; }
+h1, h2, h3, h4, h5, h6, .sidebarSection ul li a, .hover img { color: #2F415F;  border-color: #2F415F; }
+.sidebarSection { background: #A9BFE5; }
+.archive .simpleSlide-window, .headlinePost, .home .post { background: #719CE5; }
+
+a{color: #A16106}
+a:hover{background: #A16106; color:#FFFFFF}
+a:visited{color: #E62F17}
 
 /*---------------- Fonts -------------------------------*/
 
