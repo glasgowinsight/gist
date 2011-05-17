@@ -147,13 +147,15 @@ function show_headline_post_excerpt($class, $thumbSize){
 			<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbSize ); ?></a>
 		</div>
 		<div class="headlinePostSummary">
-		<h3>
-			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php 	
-				$title = get_post_meta($post->ID, 'short_title', true);
-				if($title) echo $title;	else the_title(); ?>
-			</a>
-		</h3>
-	 	<div class="entry-summary"><?php the_excerpt(); ?></div> </div>
+			<h3>
+				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php 	
+					$title = get_post_meta($post->ID, 'short_title', true);
+					if($title) echo $title;	else the_title(); ?>
+				</a>
+			</h3>
+		 	<div class="entry-summary"><?php the_excerpt(); ?></div> 
+	 	</div>
+	 	<br style="clear:both"/>
 	</div><?php
 }
 
