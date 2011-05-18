@@ -24,7 +24,7 @@ get_header(); ?>
 	    			?>
 				</div>
 				<div class="authorDescription"><?php echo $description; ?></div>
-				<div class="authorLink"><a href="<?php echo get_author_posts_url(); ?>">More &rarr;</a></div>
+				<div class="authorLink"><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">More &rarr;</a></div>
 			</div> <?php 
 		}
 

@@ -88,7 +88,19 @@
 		<div id="topNav">
 		<?php 
 			function show_link($slug, $name){
-				?><li> <a href="<?php echo get_category_link_by_slug($slug); ?>" <?php if(is_category($slug) || in_category($slug)) echo 'class="current"'; ?>><?php echo $name?></a></li><?php 
+				$current=False;
+				if(is_category($slug)) $current=True;
+				if(is_single()){
+					$id=id_by_slug($slug);
+					foreach((get_the_category()) as $category){
+						if($category->cat_ID == $id || $category->category_parent == $id){
+							$current=True;
+							break;
+						}
+					}
+				}
+				
+				?><li> <a href="<?php echo get_category_link_by_slug($slug); ?>" <?php if($current) echo 'class="current"'; ?>><?php echo $name?></a></li><?php 
 			}
 		?>
 			<ul id="navList">
