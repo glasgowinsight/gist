@@ -10,7 +10,7 @@ Tags:
 /*---------------- Colours -------------------------------*/
 
 #footer, #left-content h3, #right-content h3, .infoDisplay tr { border-color: #000000; }
-body, .aside, table.infoDisplay tr, .infoDisplay tr.alt { background: #D0D0D0; }
+body { background: #D0D0D0; }
 #rightHeader, .sidebarSection h3, .home h3, .page-title { color: #FFFFFF;}
 .current img { border-color: #FFFFFF; }
 #wrapper { background-color: #FFFFFF }
@@ -20,13 +20,13 @@ body, .aside, table.infoDisplay tr, .infoDisplay tr.alt { background: #D0D0D0; }
 .archive h3 { border-color: #1C4A98; }
 h1, h2, h3, h4, h5, h6 { color: #2F415F;  border-color: #2F415F; }
 .sidebarSection, #content .single-post { background: #E5E8FF; }
-.archive .simpleSlide-window, .headlinePost, .home .post, .wp-caption { background: #A9BFE5; }
+.archive .simpleSlide-window, .headlinePost, .home .post, .wp-caption, .aside, .infoDisplay tr { background: #A9BFE5; }
 
-p a{color: #A16106}
+p a, .single-post #content a{color: #A16106}
 .hover img{border-color: #A16106}
-p a:visited{color: #E62F17}
-p a:visited:hover{color: #FFFFFF; background: #E62F17}
-p a:hover{color: #FFFFFF; background: #A16106;}
+p a:visited,.single-post #content a:visited{color: #E62F17}
+p a:visited:hover,.single-post #content a:visited:hover{color: #FFFFFF; background: #E62F17}
+p a:hover,.single-post #content a:hover{color: #FFFFFF; background: #A16106;}
 
 .twtr-widget a:visited, .twtr-widget a:hover{background: transparent;}
 
