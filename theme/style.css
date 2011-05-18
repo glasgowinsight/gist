@@ -10,7 +10,7 @@ Tags:
 /*---------------- Colours -------------------------------*/
 
 #footer, #left-content h3, #right-content h3, .infoDisplay tr { border-color: #000000; }
-body { background: #D0D0D0; }
+body { background: #F1F1F1; }
 #rightHeader, .sidebarSection h3, .home h3, .page-title { color: #FFFFFF;}
 .current img { border-color: #FFFFFF; }
 #wrapper { background-color: #FFFFFF }
@@ -36,7 +36,7 @@ h3 a {color: #FFFFFF; background: transparent;}
 #topNav a, #topNav a:visited{color: #00225D; background: transparent;}
 #topNav a.current{color: #FFFFFF; background: #00225D;}
 #topNav a:hover, #topNav a:visited:hover{color: #FFFFFF; background: #A16106;}
-#footer a { color: #D0D0D0; background: transparent; }
+#footer a { color: #F1F1F1; background: transparent; }
 
 /*---------------- Fonts -------------------------------*/
 
