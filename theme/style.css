@@ -18,11 +18,12 @@ body, .aside, table.infoDisplay tr, .infoDisplay tr.alt { background: #D0D0D0; }
 /* Blues */
 .sidebarSection h3, .simpleSlide-window h3, .simpleSlide-thumbnails, .page-title, .home .post h3, .smallPost h3{ background: #1C4A98; }
 .archive h3 { border-color: #1C4A98; }
-h1, h2, h3, h4, h5, h6, .hover img { color: #2F415F;  border-color: #2F415F; }
+h1, h2, h3, h4, h5, h6 { color: #2F415F;  border-color: #2F415F; }
 .sidebarSection, #content .single-post { background: #E5E8FF; }
 .archive .simpleSlide-window, .headlinePost, .home .post, .wp-caption { background: #A9BFE5; }
 
 p a{color: #A16106}
+.hover img{border-color: #A16106}
 p a:visited{color: #E62F17}
 p a:visited:hover{color: #FFFFFF; background: #E62F17}
 p a:hover{color: #FFFFFF; background: #A16106;}
@@ -32,7 +33,8 @@ p a:hover{color: #FFFFFF; background: #A16106;}
 h3 a {color: #FFFFFF; background: transparent;}
 .sidebarSection a{color: #A16106; background: transparent;}
 #topNav a, #topNav a:visited{color: #00225D; background: transparent;}
-#topNav a:hover, #topNav a:visited:hover{color: #FFFFFF; background: #00225D;}
+#topNav a.current{color: #FFFFFF; background: #00225D;}
+#topNav a:hover, #topNav a:visited:hover{color: #FFFFFF; background: #A16106;}
 #footer a { color: #D0D0D0; background: transparent; }
 
 /*---------------- Fonts -------------------------------*/
@@ -51,7 +53,7 @@ body{ font-size: 16px; }
 #wrapper, .archive .headlinePost p, .wp-caption-text { line-height: 120%; }
 
 .archive .simpleSlide-slide .entry-thumbnail, .archive .simpleSlide-thumbnails, .single-post .authorImage { text-align: center; }
-#rightHeader, .archive .post h2, .slider h2  { text-align: right; }
+#rightHeader, .archive .post h2, .slider h2, .authorLink  { text-align: right; }
 
 a, .home #content p a, #topNav a { text-decoration: none; }
 
@@ -133,6 +135,10 @@ p {
 
 .alignright{
 	float: right;
+}
+
+.alignleft{
+	float: left;
 }
 
 /* ---------------       Header Styling  -------------------------*/
@@ -233,6 +239,10 @@ p {
 	margin: 5px;
 }
 
+#content .single-post{
+	padding: 5px;
+}
+
 div.alignright{
        float: right;
        padding: 5px;
@@ -247,7 +257,6 @@ table.infoDisplay td{
 }
 
 .single-post .wp-caption{
-	float: left;
 	margin: 5px;
 }
 

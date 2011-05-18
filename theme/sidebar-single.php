@@ -24,6 +24,7 @@ get_header(); ?>
 	    			?>
 				</div>
 				<div class="authorDescription"><?php echo $description; ?></div>
+				<div class="authorLink"><a href="<?php echo get_author_posts_url(); ?>">More &rarr;</a></div>
 			</div> <?php 
 		}
 
@@ -43,7 +44,7 @@ get_header(); ?>
 			$ids[] = $p->ID;
 		}
 		
-		sidebar('author-other', 'Other articles by <a href="' . get_author_posts_url(get_the_author_meta('first_name')) . '">' . get_the_author() . '</a>', $other, 'format_article');
+		sidebar('author-other', 'Articles by ' . get_the_author(), $other, 'format_article');
 		
 		$links = get_post_custom_values('external_link');
 		function format_link($link){

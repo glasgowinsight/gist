@@ -86,12 +86,17 @@
 			</div>	
 		</div>
 		<div id="topNav">
+		<?php 
+			function show_link($slug, $name){
+				?><li> <a href="<?php echo get_category_link_by_slug($slug); ?>" <?php if(is_category($slug) || in_category($slug)) echo 'class="current"'; ?>><?php echo $name?></a></li><?php 
+			}
+		?>
 			<ul id="navList">
-			<li> <a href="<?php echo home_url( ); ?>">home</a></li>
-			<li> <a href="<?php echo get_category_link_by_slug( 'feature' ); ?>">features</a></li> 
-			<li> <a href="<?php echo get_category_link_by_slug( 'snippet' ); ?>">news snippets</a></li> 
-			<li> <a href="<?php echo get_category_link_by_slug( 'podcast' ); ?>">podcasts</a></li> 
-			<li> <a href="<?php echo get_category_link_by_slug( 'about-gist' ); ?>">about gist</a></li> 
+			<li> <a href="<?php echo home_url( ); ?>" <?php if(is_home()) echo 'class="current"'; ?>>home</a></li>
+			<?php show_link('feature', 'features')?>
+			<?php show_link('snippet', 'news snippets')?>
+			<?php show_link('podcast', 'podcasts')?>
+			<?php show_link('about-gist', 'about gist')?>
 			</ul>
 		</div>
 	</div>
