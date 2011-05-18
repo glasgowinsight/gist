@@ -76,14 +76,15 @@
 			<h3>Around The Web</h3>
 			<ul>
 				<li><a href="http://www.bluesci.org/">Bluesci</a></li>
-				<li><a href="http://www.eusci.org/">EUSci</a></li>
+				<li><a href="http://www.eusci.org.uk/">EUSci</a></li>
+				<li><a href="http://www.aumag.co.uk/">Au magazine</a></li>
 			</ul>
 		</div>
 
 		<div class="sidebarSection">
 			<h3>GIST Contributors</h3>
 			<ul>
-				<li><a href="http://www.the-gist.org/wp-login.php">Login</a> </li>
+				<li><a href="<?php echo site_url('/wp-login.php')?>">Login</a> </li>
 			</ul>
 		</div>
 	</div>
