@@ -472,17 +472,3 @@ table.infoDisplay td{
 .nav-next{
 	float: right;
 }
-
-.idea-vote{
-	float:left;
-	margin-right: 5px;
-}
-
-.idea-details{
-	float:left;
-}
-.idea{
-	margin-bottom: 5px;
-	width:100%;
-	overflow:auto;
-}
