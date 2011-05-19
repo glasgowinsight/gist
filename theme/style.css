@@ -63,7 +63,7 @@ a, .home #content p a, #topNav a { text-decoration: none; }
 
 /*---------------- Borders -------------------------------*/
 
-.twtr-doc, .twtr-timeline { -moz-border-radius: 0px !important; }
+.twtr-doc, .twtr-timeline { border-radius: 0px !important;-moz-border-radius: 0px !important;-webkit-border-radius: 0px !important; }
 
 .infoDisplay{ border:none; }
 
