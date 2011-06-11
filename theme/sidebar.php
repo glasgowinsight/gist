@@ -29,9 +29,8 @@
 				));
 				
 				function format_event($post){
-					setup_postdata($post);
 					?><a href="<?php the_permalink(); ?>">
-	            		<strong><?php echo get_post_meta($post->ID, 'display_date', true)?>:</strong><?php the_title(); ?>
+	            		<strong><?php echo get_post_meta($post->ID, 'display_date', true)?>:</strong><?php echo $post->post_title; ?>
 	            	</a><?php 
 				}
 				sidebar('events', 'Upcoming Events', $events, 'format_event');
