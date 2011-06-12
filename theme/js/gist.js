@@ -28,7 +28,7 @@ $(document).ready( function(){
     simpleSlide();
     
 	new TWTR.Widget({
-		  id: 'twtr-widget'
+		  id: 'twtr-widget',
 		  version: 2,
 		  type: 'profile',
 		  rpp: 4,
