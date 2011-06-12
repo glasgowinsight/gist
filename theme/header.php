@@ -43,6 +43,14 @@
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 
+		
+	wp_enqueue_script('jquery');
+	wp_enqueue_script('twitter');
+	wp_enqueue_script('jquery-timers');
+	wp_enqueue_script('simple-slide');
+	wp_enqueue_script('gist');
+	wp_enqueue_script('analytics');
+		
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which
 	 * generally use this hook to add elements to <head> such
@@ -50,13 +58,6 @@
 	 */
 	wp_head();
 ?>
-
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.5.1.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.timers-1.2.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/twitter-widget.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/gist.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/analytics.js" type="text/javascript"></script>
 </head>
 
 <?php 

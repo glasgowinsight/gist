@@ -53,6 +53,14 @@ if ( ! function_exists( 'gist_setup' ) ):
 		foreach ( $filters as $filter ) {
 		    remove_filter($filter, 'wp_filter_kses');
 		}
+		
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js', array(), '1.6.1', True);
+		wp_register_script('twitter', 'http://widgets.twimg.com/j/2/widget.js', array(), False, True);
+		wp_register_script('jquery-timers', bloginfo('template_directory') . '/js/jquery.timers-1.2.js', array(), '1.2', True);
+		wp_register_script('simple-slide', bloginfo('template_directory') . '/js/simpleSlide.js', array(), False, True);
+		wp_register_script('gist', bloginfo('template_directory') . '/js/gist.js', array(), False, True);
+		wp_register_script('analytics', bloginfo('template_directory') . '/js/analytics.js', array(), False, True);
 	}
 endif;
 
