@@ -35,5 +35,6 @@
 
 	wp_footer();
 ?>
+<!-- WP-Minify JS -->
 </body>
 </html>
