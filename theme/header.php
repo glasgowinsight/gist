@@ -73,8 +73,6 @@
 ?>
 <body <?php body_class($classes)?>>
 <div id="wrapper" class="hfeed">
-<!-- WP-Minify JS -->
-<!-- WP-Minify CSS -->
 	<div id="header">
 		<div id="masthead">
 			<div id="logo">

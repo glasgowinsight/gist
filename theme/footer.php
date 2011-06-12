@@ -35,6 +35,8 @@
 
 	wp_footer();
 ?>
-
+<!-- The scripts should be between this -->
+<!-- WP-Minify JS -->
+<!-- and this -->
 </body>
 </html>
