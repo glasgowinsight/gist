@@ -27,6 +27,9 @@
 
 </div><!-- #wrapper -->
 
+<!-- The scripts should be between this -->
+<!-- WP-Minify JS -->
+<!-- and this -->
 <?php
 	/* Always have wp_footer() just before the closing </body>
 	 * tag of your theme, or you will break many plugins, which
@@ -35,8 +38,6 @@
 
 	wp_footer();
 ?>
-<!-- The scripts should be between this -->
-<!-- WP-Minify JS -->
-<!-- and this -->
+
 </body>
 </html>
