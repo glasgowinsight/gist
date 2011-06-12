@@ -58,7 +58,7 @@
 		?>
 		
 		<div class="sidebarSection">
-			<script>show_tweets();</script>
+			<div id="twtr-widget"></div>
 		</div>		
 
 		<div class="sidebarSection followLinks">
