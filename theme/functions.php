@@ -15,6 +15,7 @@
  * @subpackage Gist
  */
 
+add_theme_support( 'post-thumbnails' );
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
@@ -39,7 +40,6 @@ if ( ! function_exists( 'gist_setup' ) ):
 		add_editor_style();
 	
 		// This theme uses post thumbnails
-		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'slideshow', 9999, 300 );
 		add_image_size( 'jump', 40, 40, true );
 		add_image_size( 'left-column', 150, 9999 );
