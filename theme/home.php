@@ -22,20 +22,10 @@ get_header(); ?>
 		<div class="simpleSlide-window" rel="1">
 	    	<div class="simpleSlide-tray auto-slider" rel="1">
 				<?php 
-					$categories = get_latest_feature_categories();
 					$ids = array();
 					$posts = array();
-					$min_features=6;
-					$num_posts=-1;
-					foreach($categories as $category){
-						gather_posts( $category->name, $num_posts, $posts, $ids);
-						if(count($posts) >= $min_features){
-							break;
-						}
-						if(count($posts) > 0){
-							$num_posts = $min_features-count($posts);
-						}
-					}
+					$num_posts=10;
+					gather_posts( 'feature', $num_posts, $posts, $ids);
 					
 					foreach ($posts as $post){
 	    				setup_postdata($post); 
