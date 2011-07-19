@@ -236,7 +236,6 @@ p {
 /*------------------- Single Post -------------------*/
 
 .single-post #content img{
-	float: left;
 	margin: 5px;
 }
 
