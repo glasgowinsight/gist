@@ -106,9 +106,9 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: tranparent;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-	padding: 5px; 
-}
+p { padding: 5px 2px 5px 2px; }
+h1, h2, h3, h4, h5, h6 { padding: 2px; }
+
 
 /*-----------------     Layouts  --------------------------------*/
 
