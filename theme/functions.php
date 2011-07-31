@@ -129,7 +129,7 @@ function show_post_excerpt($class, $thumbSize){
 	?><div id="post-<?php the_ID(); ?>" class="<?php echo $class; ?>">
 		<h3>
 			<a href="<?php the_permalink(); ?>" rel="bookmark"><?php 	
-				$title = get_post_meta($post->ID, 'short_title', true);
+				$title = get_post_meta(get_the_ID(), 'short_title', true);
 				if($title) echo $title;	else the_title(); ?>
 			</a>
 		</h3>
