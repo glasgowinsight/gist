@@ -49,8 +49,9 @@ body{ font-size: 16px; }
 
 #site-info, .single-post .wp-caption-text, dt, h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
-.single-post h1, .archive .headlinePost h3 { line-height: 100%; }
-#wrapper, .archive .headlinePost p, .wp-caption-text { line-height: 120%; }
+.single-post h1, .archive .headlinePost h3 { line-height: 1.1em; }
+#wrapper, .archive .headlinePost p, .wp-caption-text { line-height: 1.4em; }
+sup, sub { line-height: 0}
 
 .archive .simpleSlide-slide .entry-thumbnail, .archive .simpleSlide-thumbnails, .single-post .authorImage { text-align: center; }
 #rightHeader, .archive .post h2, .slider h2, .authorLink  { text-align: right; }
@@ -59,6 +60,8 @@ a, .home #content p a, #topNav a { text-decoration: none; }
 
 .archive .simpleSlide-thumbnails { vertical-align: middle; }
 .followLinks a span{ vertical-align: top; }
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
 
 /*---------------- Borders -------------------------------*/
 
