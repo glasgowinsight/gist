@@ -57,6 +57,6 @@ $(document).ready( function(){
 		function(){$(this).removeClass('hover');}
 	);
 	
-    simpleSlide();
+    simpleSlide({'auto_speed': 10000});
 });
 

@@ -90,7 +90,8 @@ function simpleSlide(incoming_options) {
 			'set_speed': 500,
 			'fullscreen' : 'false',
 			'swipe': 'false',
-			'callback': 'function()'
+			'callback': 'function()',
+			'auto_speed': 5000
 		};
 		
 		$.extend(options, incoming_options);
@@ -330,7 +331,7 @@ function ssInit(){
 		
         $('.auto-slider').each( function() {
             var related_group = $(this).attr('rel');
-            $(this).everyTime(5000, "autoslide", function(){
+            $(this).everyTime($.ss_options.auto_speed, "autoslide", function(){
             	simpleSlideAction('.right-button', related_group);
 			});
         }); 
