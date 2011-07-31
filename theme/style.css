@@ -58,7 +58,7 @@ sup, sub { line-height: 0}
 
 a, .home #content p a, #topNav a { text-decoration: none; }
 
-.archive .simpleSlide-thumbnails { vertical-align: middle; }
+.archive .simpleSlide-thumbnails, .sidebarSection img { vertical-align: middle; }
 .followLinks a span{ vertical-align: top; }
 sup { vertical-align: super; }
 sub { vertical-align: sub; }
@@ -415,7 +415,7 @@ table.infoDisplay td{
 }
 
 #sidebar img{
-	margin: 2px;
+	margin: 2px 5px 2px 2px;
 }
 
 /* --------------------   Category Styling ------------------- */
