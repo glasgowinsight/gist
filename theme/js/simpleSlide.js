@@ -444,7 +444,7 @@ function simpleSlideAction(action, rel_no) {
 			var auto = $('.auto-slider[rel="' + rel_no + '"]');
 			if(auto){
 				auto.stopTime("autoslide");
-				auto.everyTime(5000, "autoslide", function(){
+				auto.everyTime($.ss_options.auto_speed, "autoslide", function(){
 					simpleSlideAction('.right-button', rel_no);
 				});
 			}
