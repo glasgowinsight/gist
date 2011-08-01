@@ -33,6 +33,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Josefin+Slab:400,400italic,700,700italic">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/clearTheStyle.css">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -59,7 +60,6 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/twitter-widget.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/gist.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/analytics.js" type="text/javascript"></script>
-<link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC|Nova+Square|Josefin+Sans|Coda+Caption:800|Didact+Gothic|Nova+Round|Nova+Slim|Nova+Flat|Nova+Cut|Nova+Oval|Aclonica' rel='stylesheet' type='text/css'>
 </head>
 
 <?php 

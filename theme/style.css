@@ -39,8 +39,8 @@ h3 a {color: #FFFFFF; background: transparent;}
 
 /*---------------- Fonts -------------------------------*/
 
-#tagline, h1, h2, h3, h4, h5, h6 { font-family: "Nova Oval", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-body, .archive .page-title{ font-family: Bookman, Georgia, "Bitstream Charter", serif; }
+#tagline, h1, h2, h3, h4, h5, h6 { font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body, .archive .page-title{ font-family: "Josefin Slab", Bookman, Georgia, "Bitstream Charter", serif; }
 
 .single-post .wp-caption-text, .archive .post h2, .slider h2, .single-post .form-allowed-tags { font-size: 12px; }
 body{ font-size: 16px; }
