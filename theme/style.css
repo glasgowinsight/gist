@@ -32,7 +32,7 @@ p a:hover,.single-post #content a:hover{color: #FFFFFF; background: #A16106;}
 h3 a {color: #FFFFFF; background: transparent;}
 .smallPost h3 a {color: #2F415F; background: transparent;}
 .sidebarSection a{color: #A16106; background: transparent;}
-#topNav a, #topNav a:visited{color: #00225D; background: transparent;}
+#topNav a, #topNav a:visited, #tagline {color: #00225D; background: transparent;}
 #topNav a.current{color: #FFFFFF; background: #00225D;}
 #topNav a:hover, #topNav a:visited:hover{color: #FFFFFF; background: #A16106;}
 #footer a { color: #F1F1F1; background: transparent; }
@@ -44,10 +44,10 @@ body, .archive .page-title{ font-family: Bookman, Georgia, "Bitstream Charter", 
 
 .single-post .wp-caption-text, .archive .post h2, .slider h2, .single-post .form-allowed-tags { font-size: 12px; }
 body{ font-size: 16px; }
-.archive .headlinePost{ font-size: 20px; }
+.archive .headlinePost, #tagline{ font-size: 20px; }
 .single-post h1, .archive .page-title{ font-size: 30px; }
 
-#site-info, .single-post .wp-caption-text, dt, h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+#site-info, .single-post .wp-caption-text, dt, h1, h2, h3, h4, h5, h6, #tagline { font-weight: bold; }
 
 .single-post h1, .archive .headlinePost h3 { line-height: 1.1em; }
 #wrapper, .archive .headlinePost p, .wp-caption-text { line-height: 1.4em; }
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 { padding: 2px; }
 }
 
 #tagline { margin: 60px 0 -80px 0; }
-#searchForm { margin: 110px 10px 0 0; }
+#searchForm { margin: 190px 10px 0 0; }
 
 #topNav {
 	width: 625px;
