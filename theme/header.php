@@ -82,6 +82,7 @@
 			</div> <!-- #logo --> 
 	
 			<div id="rightHeader">
+				<div id="tagline"><?php bloginfo('description')?></div>
 				<div id="searchForm">
 					<?php get_search_form(); ?>
 				</div>

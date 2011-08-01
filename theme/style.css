@@ -39,7 +39,7 @@ h3 a {color: #FFFFFF; background: transparent;}
 
 /*---------------- Fonts -------------------------------*/
 
-h1, h2, h3, h4, h5, h6 { font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
+#tagline, h1, h2, h3, h4, h5, h6 { font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
 body, .archive .page-title{ font-family: Bookman, Georgia, "Bitstream Charter", serif; }
 
 .single-post .wp-caption-text, .archive .post h2, .slider h2, .single-post .form-allowed-tags { font-size: 12px; }
@@ -165,9 +165,8 @@ h1, h2, h3, h4, h5, h6 { padding: 2px; }
 	padding: 0px 10px 20px 0;
 }
 
-#searchForm {
-	margin: 190px 10px 0px 0;
-}
+#tagline { margin: 60px 0 -80px 0; }
+#searchForm { margin: 110px 10px 0 0; }
 
 #topNav {
 	width: 625px;
