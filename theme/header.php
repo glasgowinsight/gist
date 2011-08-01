@@ -33,7 +33,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Josefin+Slab:400,400italic,700,700italic">
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Josefin+Slab:400,400italic,700,700italic|Istok+Web:400,400italic,700,700italic|Muli:400,400italic|Open+Sans:400,400italic,700,700italic|Hammersmith+One|Metrophobic|Nobile:400,400italic,700,700italic|Nunito:400,700|Droid+Sans:400,700|EB+Garamond|IM+Fell+English|Neuton:400,400italic|Crimson+Text:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/clearTheStyle.css">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
