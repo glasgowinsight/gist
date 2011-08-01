@@ -43,7 +43,7 @@ h3 a {color: #FFFFFF; background: transparent;}
 body, .archive .page-title, .twtr-tweet-text{ font-family: "EB Garamond", Bookman, Georgia, "Bitstream Charter", serif; }
 
 .single-post .wp-caption-text, .archive .post h2, .slider h2, .single-post .form-allowed-tags { font-size: 12px; }
-body{ font-size: 16px; }
+body, .twtr-tweet-text { font-size: 16px; }
 .archive .headlinePost, #tagline{ font-size: 20px; }
 .single-post h1, .archive .page-title{ font-size: 30px; }
 
