@@ -33,6 +33,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|EB+Garamond' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/clearTheStyle.css">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

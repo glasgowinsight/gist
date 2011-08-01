@@ -39,11 +39,11 @@ h3 a {color: #FFFFFF; background: transparent;}
 
 /*---------------- Fonts -------------------------------*/
 
-#tagline, h1, h2, h3, h4, h5, h6 { font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
-body, .archive .page-title{ font-family: Bookman, Georgia, "Bitstream Charter", serif; }
+#tagline, h1, h2, h3, h4, h5, h6 { font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body, .archive .page-title, .twtr-tweet-text{ font-family: "EB Garamond", Bookman, Georgia, "Bitstream Charter", serif; }
 
 .single-post .wp-caption-text, .archive .post h2, .slider h2, .single-post .form-allowed-tags { font-size: 12px; }
-body{ font-size: 16px; }
+body, .twtr-tweet-text { font-size: 16px; }
 .archive .headlinePost, #tagline{ font-size: 20px; }
 .single-post h1, .archive .page-title{ font-size: 30px; }
 
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p { padding: 5px 2px 5px 2px; }
-h1, h2, h3, h4, h5, h6 { padding: 2px; }
+a, h1, h2, h3, h4, h5, h6 { padding: 2px; }
 
 
 /*-----------------     Layouts  --------------------------------*/
