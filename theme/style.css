@@ -54,7 +54,7 @@ body{ font-size: 16px; }
 sup, sub { line-height: 0}
 
 .archive .simpleSlide-slide .entry-thumbnail, .archive .simpleSlide-thumbnails, .single-post .authorImage { text-align: center; }
-#rightHeader, .archive .post h2, .slider h2, .authorLink  { text-align: right; }
+#searchForm, .archive .post h2, .slider h2, .authorLink { text-align: right; }
 
 a, .home #content p a, #topNav a { text-decoration: none; }
 
@@ -165,8 +165,8 @@ h1, h2, h3, h4, h5, h6 { padding: 2px; }
 	padding: 0px 10px 20px 0;
 }
 
-#tagline { margin: 60px 0 -80px 0; }
-#searchForm { margin: 190px 10px 0 0; }
+#tagline { margin: 60px 0 -80px 0; padding: 10px 10px 0 0;}
+#searchForm { margin: 180px 10px 0 0; }
 
 #topNav {
 	width: 625px;
