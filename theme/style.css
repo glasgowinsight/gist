@@ -39,7 +39,7 @@ h3 a {color: #FFFFFF; background: transparent;}
 
 /*---------------- Fonts -------------------------------*/
 
-#tagline, h1, h2, h3, h4, h5, h6 { font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif; }
+#tagline, h1, h2, h3, h4, h5, h6 { font-family: "Nova Oval", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 body, .archive .page-title{ font-family: Bookman, Georgia, "Bitstream Charter", serif; }
 
 .single-post .wp-caption-text, .archive .post h2, .slider h2, .single-post .form-allowed-tags { font-size: 12px; }
