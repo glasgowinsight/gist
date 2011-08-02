@@ -51,6 +51,7 @@
 	wp_enqueue_script('simple-slide');
 	wp_enqueue_script('gist');
 	wp_enqueue_script('analytics');
+	wp_localize_script('gist', 'gist', array('ajaxurl' => admin_url('admin-ajax.php')));
 		
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which

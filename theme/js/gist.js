@@ -1,6 +1,22 @@
 $(document).ready( function(){ 
-	$('.noscript').removeClass("noscript");
-    
+	$.post(
+			gist.ajaxurl,
+			{action: 'load_slider'},
+			load_slider
+	)
+	
+	show_tweets();	
+});
+
+function load_slider(response){
+	$('#slider').empty();
+	$('#slider').append(response.slides);
+	$('#slider-thumbs').empty();
+	$('#slider-thumbs').append(response.thumbs);
+	start_slider();
+}
+
+function start_slider(){
 	$('.simpleSlide-window').each(function(){
 		var width = $(this).outerWidth();
 		var max_height = 0;
@@ -26,7 +42,9 @@ $(document).ready( function(){
 	);
 	
     simpleSlide({'auto_speed': 10000});
-    
+}
+
+function show_tweets(){
 	new TWTR.Widget({
 		  id: 'twtr-widget',
 		  version: 2,
@@ -57,5 +75,4 @@ $(document).ready( function(){
 		    behavior: 'all'
 		  }
 		}).render().setUser('GlasgowGist').start();
-});
-
+}

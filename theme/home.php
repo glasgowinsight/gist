@@ -16,41 +16,26 @@ get_header(); ?>
 
 <div id="content" role="main">
 
-	<div class="slider noscript">
+	<div class="slider">
 		<div class="left-button" rel="1"></div>
 		<div class="right-button" rel="1"></div>
 		<div class="simpleSlide-window" rel="1">
-	    	<div class="simpleSlide-tray auto-slider" rel="1">
+	    	<div id="slider" class="simpleSlide-tray auto-slider" rel="1">
 				<?php 
 					$ids = array();
 					$posts = array();
+					# At the moment we have to get 10 posts even though we only show 1
+					# so we get the right posts for the right-content div
 					$num_posts=10;
 					gather_posts( 'feature', $num_posts, $posts, $ids);
 					
-					foreach ($posts as $post){
-	    				setup_postdata($post); 
-						show_post_excerpt('simpleSlide-slide', 'slideshow');
-					}
-					
-					# Repeat the first div. This is used by simpleSlide.js so we get the
-					# effect of it constantly scrolling forward, without a 'rewind' effect
 					$post = $posts[0];
 					setup_postdata($post); 
 					show_post_excerpt('simpleSlide-slide', 'slideshow');
 				?>
 	        </div>
 	    </div>
-	    <div class="simpleSlide-thumbnails">
-		    <?php 
-		    	$i=1;
-		    	foreach ($posts as $post){
-    				setup_postdata($post); 
-					?><span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php 
-					the_post_thumbnail('jump', array('alt'=>'', 'title'=>the_title('', '', false))); 
-					?></span><?php 
-					$i++;
-				}
-		     ?>
+	    <div id="slider-thumbs" class="simpleSlide-thumbnails">
 		</div>
 	</div>
 	<div id="left-content">

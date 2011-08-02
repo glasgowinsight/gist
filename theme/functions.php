@@ -282,3 +282,42 @@ add_filter('pre_get_posts','custom_posts');
 function id_by_slug($slug){
 	return get_category_by_slug($slug)->term_id;
 }
+
+add_action( 'wp_ajax_nopriv_load_slider', 'load_slider' );
+add_action( 'wp_ajax_load_slider', 'load_slider' );
+
+function load_slider() {
+	ob_start();
+	$ids = array();
+	$posts = array();
+	$num_posts=10;
+	gather_posts( 'feature', $num_posts, $posts, $ids);
+	
+	foreach ($posts as $post){
+    	setup_postdata($post); 
+		show_post_excerpt('simpleSlide-slide', 'slideshow');
+	}
+	
+	# Repeat the first div. This is used by simpleSlide.js so we get the
+	# effect of it constantly scrolling forward, without a 'rewind' effect
+	$post = $posts[0];
+	setup_postdata($post); 
+	show_post_excerpt('simpleSlide-slide', 'slideshow');
+	$slides = ob_get_clean();
+	
+	ob_start();
+    $i=1;
+    foreach ($posts as $post){
+    	setup_postdata($post); 
+		?><span class="jump-to" rel="1" alt="<?php echo($i)?>"><?php 
+		the_post_thumbnail('jump', array('alt'=>'', 'title'=>the_title('', '', false))); 
+		?></span><?php 
+		$i++;
+	}
+	$thumbs = ob_get_clean();
+	
+	$response = json_encode( array( 'slides' => slides, 'thumbs' => thumbs ) );
+	header( "Content-Type: application/json" );
+	echo $response;
+	exit;
+}
