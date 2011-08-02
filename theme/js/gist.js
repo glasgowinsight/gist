@@ -1,4 +1,4 @@
-$(document).load( function(){ 
+$(document).ready( function(){ 
 	$.post(
 			gist.ajaxurl,
 			{action: 'load_slider'},
