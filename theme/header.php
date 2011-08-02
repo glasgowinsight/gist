@@ -33,9 +33,6 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|EB+Garamond' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/clearTheStyle.css">
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -44,7 +41,16 @@
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 
-	wp_enqueue_script("jquery");	
+	wp_enqueue_style('fonts');
+	wp_enqueue_style('clear');
+	wp_enqueue_style('gist');
+		
+	wp_enqueue_script('jquery');
+	wp_enqueue_script('twitter');
+	wp_enqueue_script('jquery-timers');
+	wp_enqueue_script('simple-slide');
+	wp_enqueue_script('gist');
+	wp_enqueue_script('analytics');
 		
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which
@@ -53,13 +59,6 @@
 	 */
 	wp_head();
 ?>
-
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.5.1.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.timers-1.2.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/simpleSlide.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/twitter-widget.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/gist.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/analytics.js" type="text/javascript"></script>
 </head>
 
 <?php 
@@ -75,7 +74,6 @@
 ?>
 <body <?php body_class($classes)?>>
 <div id="wrapper" class="hfeed">
-
 	<div id="header">
 		<div id="masthead">
 			<div id="logo">

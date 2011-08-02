@@ -1,35 +1,3 @@
-function show_tweets() {
-	new TWTR.Widget({
-		  version: 2,
-		  type: 'profile',
-		  rpp: 4,
-		  interval: 6000,
-		  width: 200,
-		  height: 300,
-		  footer: '',
-		  theme: {
-		    shell: {
-		      background: '#2857af',
-		      color: '#ffffff'
-		    },
-		    tweets: {
-		      background: '#E5E8FF',
-		      color: '#000000',
-		      links: '#a16106'
-		    }
-		  },
-		  features: {
-		    scrollbar: false,
-		    loop: false,
-		    live: false,
-		    hashtags: true,
-		    timestamp: false,
-		    avatars: false,
-		    behavior: 'all'
-		  }
-		}).render().setUser('GlasgowGist').start();
-}
-
 $(document).ready( function(){ 
 	$('.noscript').removeClass("noscript");
     
@@ -58,5 +26,36 @@ $(document).ready( function(){
 	);
 	
     simpleSlide({'auto_speed': 10000});
+    
+	new TWTR.Widget({
+		  id: 'twtr-widget',
+		  version: 2,
+		  type: 'profile',
+		  rpp: 4,
+		  interval: 6000,
+		  width: 200,
+		  height: 300,
+		  footer: '',
+		  theme: {
+		    shell: {
+		      background: '#2857af',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#E5E8FF',
+		      color: '#000000',
+		      links: '#a16106'
+		    }
+		  },
+		  features: {
+		    scrollbar: false,
+		    loop: false,
+		    live: false,
+		    hashtags: true,
+		    timestamp: false,
+		    avatars: false,
+		    behavior: 'all'
+		  }
+		}).render().setUser('GlasgowGist').start();
 });
 
