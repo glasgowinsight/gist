@@ -287,6 +287,8 @@ add_action( 'wp_ajax_nopriv_load_slider', 'load_slider' );
 add_action( 'wp_ajax_load_slider', 'load_slider' );
 
 function load_slider() {
+	global $post;
+	
 	ob_start();
 	$ids = array();
 	$posts = array();
@@ -295,7 +297,7 @@ function load_slider() {
 	
 	foreach ($posts as $post){
     	setup_postdata($post); 
-		show_post_excerpt('simpleSlide-slide', 'slideshow');
+    	show_post_excerpt('simpleSlide-slide', 'slideshow');
 	}
 	
 	# Repeat the first div. This is used by simpleSlide.js so we get the
@@ -316,7 +318,7 @@ function load_slider() {
 	}
 	$thumbs = ob_get_clean();
 	
-	$response = json_encode( array( 'slides' => slides, 'thumbs' => thumbs ) );
+	$response = json_encode( array( 'slides' => $slides, 'thumbs' => $thumbs ) );
 	header( "Content-Type: application/json" );
 	echo $response;
 	exit;
