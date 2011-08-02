@@ -59,7 +59,6 @@ sup, sub { line-height: 0}
 a, .home #content p a, #topNav a { text-decoration: none; }
 
 .archive .simpleSlide-thumbnails, .sidebarSection img { vertical-align: middle; }
-.followLinks a span{ vertical-align: top; }
 sup { vertical-align: super; }
 sub { vertical-align: sub; }
 
