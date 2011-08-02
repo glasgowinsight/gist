@@ -55,12 +55,13 @@
 					sidebar('old_features', 'Older Features', $features, 'format_category');
 				}
 			}
-		?>
 		
-		<div class="sidebarSection">
-			<div id="twtr-widget"></div>
-		</div>		
-
+			if(is_home()){ 
+				?><div class="sidebarSection">
+					<div id="twtr-widget"></div>
+				</div><?php
+			} ?>
+		
 		<div class="sidebarSection followLinks">
 			<h3>Keep In Touch</h3>
 			<ul>
