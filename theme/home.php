@@ -36,6 +36,10 @@ get_header(); ?>
 	        </div>
 	    </div>
 	    <div id="slider-thumbs" class="simpleSlide-thumbnails">
+	    	<span class="jump-to" style="visibility:hidden; width: 1px;">
+	    		<?php the_post_thumbnail('jump');?>
+	    	</span>
+	    	Loading slideshow...
 		</div>
 	</div>
 	<div id="left-content">

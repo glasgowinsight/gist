@@ -9,9 +9,9 @@ Tags:
 
 /*---------------- Colours -------------------------------*/
 
-#footer, #left-content h3, #right-content h3, .infoDisplay tr { border-color: #000000; }
+#footer, #left-content h3, #right-content h3, .infoDisplay tr, #slider-thumbs { border-color: #000000; }
 body { background: #F1F1F1; }
-#rightHeader, .sidebarSection h3, .home h3, .page-title { color: #FFFFFF;}
+#rightHeader, .sidebarSection h3, .home h3, .page-title, #slider-thumbs { color: #FFFFFF;}
 .current img { border-color: #FFFFFF; }
 #wrapper { background-color: #FFFFFF }
 
@@ -58,7 +58,7 @@ sup, sub { line-height: 0}
 
 a, .home #content p a, #topNav a { text-decoration: none; }
 
-.archive .simpleSlide-thumbnails, .sidebarSection img { vertical-align: middle; }
+.archive .simpleSlide-thumbnails, .sidebarSection img, #slider-thumbs { vertical-align: middle; }
 sup { vertical-align: super; }
 sub { vertical-align: sub; }
 

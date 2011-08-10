@@ -1,19 +1,49 @@
+$(document).ready( show_tweets )
+
 $(window).load( function(){ 
 	$.post(
 			gist.ajaxurl,
 			{action: 'load_slider'},
 			load_slider
 	)
-	
-	show_tweets();	
 });
 
 function load_slider(response){
-	$('#slider').empty();
-	$('#slider').append(response.slides);
-	$('#slider-thumbs').empty();
-	$('#slider-thumbs').append(response.thumbs);
-	start_slider();
+	// I've possibly entirely over-engineered this just to get some pre-loading
+	
+	var slides = $(response.slides)
+	var thumbs = $(response.thumbs)
+	var imgs = $.merge(slides.find('img'), thumbs.find('img'));
+
+	var called = false;
+	var start = function() {
+		if(!called){
+			// There's a bit of a race condition here, but should be rare
+			// and worst case is it replaces the div contents twice
+			called = true;
+			clearTimeout(timeout);
+			$('#slider').empty();
+			$('#slider').append(slides);
+			$('#slider-thumbs').empty();
+			$('#slider-thumbs').append(thumbs);
+			start_slider();
+		}
+	}
+	
+	// Don't load the slider into the div until all
+	// the images and thumbnails have been loaded
+	var i = 0;
+	var count_imgs = function(){
+		i++;
+		if(i>=imgs.length){
+			start();
+		}
+	}; 
+	imgs.load(count_imgs);
+	
+	// Sometimes not all the onload events get fired especially
+	// if they've been cached
+	var timeout=setTimeout(start, 10000);
 }
 
 function start_slider(){
