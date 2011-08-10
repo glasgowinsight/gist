@@ -58,7 +58,7 @@ sup, sub { line-height: 0}
 
 a, .home #content p a, #topNav a { text-decoration: none; }
 
-.archive .simpleSlide-thumbnails, .sidebarSection img, #slider-thumbs { vertical-align: middle; }
+.archive .simpleSlide-thumbnails, .sidebarSection img, .invisible-thumb span, .invisible-thumb img { vertical-align: middle; }
 sup { vertical-align: super; }
 sub { vertical-align: sub; }
 
@@ -346,6 +346,15 @@ table.infoDisplay td{
 	width: 100%;
 	clear: both;
 	margin: 5px;
+}
+
+.invisible-thumb img{
+	visibility: hidden;
+	width: 1px;
+}
+
+.invisible-thumb span{
+	display: inline-block;
 }
 
 .archive .simpleSlide-slide .entry-summary {
