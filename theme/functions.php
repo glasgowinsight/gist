@@ -239,6 +239,24 @@ function improved_trim_excerpt($text) {
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'improved_trim_excerpt');
 
+function add_excerpt( $data, $postarr) {
+	if($data['post_excerpt'] == ''){
+		$text = $data['post_content'];
+		$text = strip_shortcodes($text);
+		$text = apply_filters('the_content', $text);
+        $text = str_replace(']]>', ']]&gt;', $text);
+        $text = strip_tags($text, '<p><strong><em>');
+        $to = strpos($text, '</p>');
+        if($to !== false){
+            $text = substr($text, 0, $to + 4);
+        }
+        $text = force_balance_tags( $text );
+        $data['post_excerpt'] = $text;
+	}
+	return $data;
+}
+add_filter('wp_insert_post_data', 'add_excerpt', 10, 2);
+
 function sidebar($id, $title, $collection, $callback) {
 	if(count($collection)>0){?>
 		<div id="<?php echo $id ?>" class="sidebarSection">
