@@ -41,7 +41,6 @@
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 
-	wp_enqueue_style('fonts');
 	wp_enqueue_style('clear');
 	wp_enqueue_style('gist');
 		

@@ -64,7 +64,6 @@ if ( ! function_exists( 'gist_setup' ) ):
 		wp_register_script('gist', f('/js/gist.js'), array(), False, True);
 		wp_register_script('analytics', f('/js/analytics.js'), array(), False, True);
 
-		wp_register_style('fonts', 'http://fonts.googleapis.com/css?family=Josefin+Sans:400,700|EB+Garamond');
 		wp_register_style('clear', f('/clearTheStyle.css'));
 		wp_register_style('gist', f('/style.css'));
 	}
