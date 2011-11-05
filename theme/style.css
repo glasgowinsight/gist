@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 { color: #2F415F;  border-color: #2F415F; }
 .sidebarSection, #content .single-post { background: #E5E8FF; }
 .archive .simpleSlide-window, .headlinePost, .home .post, .wp-caption, #main #content .wp-caption a, .aside, .infoDisplay tr { background: #A9BFE5; }
 
-p a, .single-post #content a{color: #A16106}
+p a, .single-post #content a, .entry-summary li a{color: #A16106}
 .hover img{border-color: #A16106}
 p a:visited,.single-post #content a:visited{color: #E62F17}
 p a:visited:hover,.single-post #content a:visited:hover{color: #FFFFFF; background: #E62F17}
@@ -412,6 +412,11 @@ table.infoDisplay td{
 
 #sidebar img{
 	margin: 2px 5px 2px 2px;
+}
+
+.entry-summary li {
+	list-style-type: none;
+	padding: 1px 2px 10px 2px;
 }
 
 /* --------------------   Category Styling ------------------- */
