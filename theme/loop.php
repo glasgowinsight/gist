@@ -28,7 +28,11 @@
 <?php endif; ?>
 
 <?php 
-	if ( !in_category('about-gist') && !is_search() && !is_author() && have_posts() ){
+	if ( have_posts() && !(	
+			in_category('about-gist') ||
+			in_category('study') ||
+			is_search() ||
+			is_author()) ){
 		the_post();
 		show_headline_post_excerpt('headlinePost', 'medium');
 	}
