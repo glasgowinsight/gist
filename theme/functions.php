@@ -318,7 +318,7 @@ function get_licence($post){
 	switch($licence_id){
 		case "None":
 			return NULL;
-		case "BY-SA":
+		case "CC-BY-SA":
 			return array(
 				'url'=>'http://creativecommons.org/licenses/by-sa/3.0/',
 				'image'=>'http://i.creativecommons.org/l/by-sa/3.0/80x15.png',
