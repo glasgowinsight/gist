@@ -19,6 +19,16 @@ get_header(); ?>
 					<?php the_content(); ?>
 				</div>
 				
+				<div class="licence"><?php 
+					$licence=get_licence($post);
+					if( $licence != NULL ){ ?>
+						<a rel="license" href="<?php echo $licence['url']; ?>">
+							<img alt="Creative Commons License" style="border-width:0" src="<?php echo $licence['image']; ?>" />
+						</a><br />
+						<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><?php the_title(); ?></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><?php the_author(); ?></span> is licensed under a <a rel="license" href="<?php echo $licence['url']; ?>"><?php echo $licence['licence']; ?></a>.
+					<?php } ?>
+				</div>
+				
 				<h2>Discussion <?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'small_toolbox' ); ?></h2>
 			
 				<?php comments_template( '', true ); ?>
