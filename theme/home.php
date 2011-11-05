@@ -46,7 +46,7 @@ get_header(); ?>
 		<?php 
 			query_posts(array(
 				'category_name'=>'snippet',
-				'posts_per_page'=>3
+				'posts_per_page'=>4
 			));
 			if(have_posts()){
 				while (have_posts()){
@@ -58,15 +58,15 @@ get_header(); ?>
 	</div>
 	<div id="right-content">
 		<?php 
-			$posts = array();
-			$min_features=2;
-			gather_posts( 'podcast', $min_features, $posts, $ids);
-			if(count($posts)<$min_features){
-				gather_posts( 'feature', $min_features-count($posts), $posts, $ids);
-			}
-			foreach ($posts as $post){
-    			setup_postdata($post); 
-				show_post_excerpt(implode(' ', get_post_class()), 'right-column');
+			query_posts(array(
+				'category_name'=>'podcast',
+				'posts_per_page'=>1
+			));
+			if(have_posts()){
+				while (have_posts()){
+					the_post(); 
+	            	show_post_excerpt(implode(' ', get_post_class()), 'right-column');
+				}
 			}					
 		
 		?><div id="news" class="post news">

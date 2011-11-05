@@ -55,12 +55,7 @@
 					sidebar('old_features', 'Older Features', $features, 'format_category');
 				}
 			}
-		
-			if(is_home()){ 
-				?><div class="sidebarSection">
-					<div id="twtr-widget"></div>
-				</div><?php
-			} ?>
+		?>
 		
 		<div class="sidebarSection followLinks">
 			<h3>Keep In Touch</h3>
@@ -70,9 +65,15 @@
 				<li><a href="mailto:glasgowinsight@gmail.com"><img src="<?php bloginfo('template_directory'); ?>/images/email.png"/><span>Talk to us</span></a></li>
 				<li><a href="http://twitter.com/GlasgowGist"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png"/><span>Follow us on Twitter</span></a></li>
 				<li><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.jpg"/><span>Join us on Facebook</span></a></li>
-			</ul>
+			</ul>	
 		</div>
 		
+		<?php if(is_home()){ ?>
+			<div class="sidebarSection">
+				<div id="twtr-widget"></div>
+			</div>
+		<?php } ?>
+	
 		<div class="sidebarSection">
 			<h3>Around The Web</h3>
 			<ul>

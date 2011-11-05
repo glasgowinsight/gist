@@ -79,7 +79,7 @@ function show_tweets(){
 		  id: 'twtr-widget',
 		  version: 2,
 		  type: 'profile',
-		  rpp: 4,
+		  rpp: 3,
 		  interval: 6000,
 		  width: 200,
 		  height: 300,
