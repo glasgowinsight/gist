@@ -82,8 +82,7 @@ get_header(); ?>
 				 				'http://www.gla.ac.uk/rss/news/index.xml,' .
 				 				'http://feeds2.feedburner.com/uos/hp,' .
 				 				'http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn',
-			 				'rssformat'=>'Y (x)', 
-				 			'rssdateformat'=>'j F',
+			 				'rssformat'=>'Y',
 				 			'rssitems'=>5
 			 			)); 
 			 		?>
