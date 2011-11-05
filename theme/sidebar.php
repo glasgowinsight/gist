@@ -29,7 +29,7 @@
 				));
 				
 				function format_event($post){
-					?><a href="<?php the_permalink(); ?>">
+					?><a href="<?php echo get_permalink($post->ID); ?>">
 	            		<strong><?php echo get_post_meta($post->ID, 'display_date', true)?>:</strong><?php echo $post->post_title; ?>
 	            	</a><?php 
 				}
