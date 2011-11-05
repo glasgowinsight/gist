@@ -59,7 +59,7 @@ get_header(); ?>
 	<div id="right-content">
 		<?php 
 			$posts = array();
-			$min_features=3;
+			$min_features=2;
 			gather_posts( 'podcast', $min_features, $posts, $ids);
 			if(count($posts)<$min_features){
 				gather_posts( 'feature', $min_features-count($posts), $posts, $ids);
@@ -68,7 +68,30 @@ get_header(); ?>
     			setup_postdata($post); 
 				show_post_excerpt(implode(' ', get_post_class()), 'right-column');
 			}					
-		?>
+		
+		query_posts(array(
+			'category_name'=>'study',
+			'posts_per_page'=>5
+		));
+		if(have_posts()){ 
+			?><div id="news" class="post news">
+				<h3>Local News</h3>
+			 	<div class="entry-summary">
+			 		<?php echo do_shortcode(
+				 			"[rssinpage" . 
+				 			"rssfeed='" .
+				 				"http://www.gla.ac.uk/rss/news/index.xml," .
+				 				"http://feeds2.feedburner.com/uos/hp," .
+				 				"http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn" .
+				 			"'" .
+				 			"rssformat='Y (x)'" . 
+				 			"rssdateformat='j F'" .
+				 			"rssitems=5]"
+			 			); 
+			 		?>
+			 	</div>
+			 </div><?php 
+		} ?>
 	</div>
 </div><!-- #content -->
 <?php get_sidebar(); ?>
