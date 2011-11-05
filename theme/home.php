@@ -77,17 +77,15 @@ get_header(); ?>
 			?><div id="news" class="post news">
 				<h3>Local News</h3>
 			 	<div class="entry-summary">
-			 		<?php echo do_shortcode(
-				 			"[rssinpage" . 
-				 			"rssfeed='" .
-				 				"http://www.gla.ac.uk/rss/news/index.xml," .
-				 				"http://feeds2.feedburner.com/uos/hp," .
-				 				"http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn" .
-				 			"'" .
-				 			"rssformat='Y (x)'" . 
-				 			"rssdateformat='j F'" .
-				 			"rssitems=5]"
-			 			); 
+			 		<?php echo rssinpage(array( 
+				 			'rssfeed'=>
+				 				'http://www.gla.ac.uk/rss/news/index.xml,' .
+				 				'http://feeds2.feedburner.com/uos/hp,' .
+				 				'http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn',
+			 				'rssformat'=>'Y (x)', 
+				 			'rssdateformat'=>'j F',
+				 			'rssitems'=>5
+			 			)); 
 			 		?>
 			 	</div>
 			 </div><?php 
