@@ -69,6 +69,20 @@ get_header(); ?>
 				show_post_excerpt(implode(' ', get_post_class()), 'right-column');
 			}					
 		
+		?><div id="news" class="post news">
+			<h3>Local News</h3>
+		 	<div class="entry-summary">
+		 		<?php echo rssinpage(array( 
+			 			'rssfeed'=>
+			 				'http://www.gla.ac.uk/rss/news/index.xml,' .
+			 				'http://feeds2.feedburner.com/uos/hp,' .
+			 				'http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn',
+		 				'rssformat'=>'Y',
+			 			'rssitems'=>5
+		 			)); 
+		 		?>
+			</div>
+		</div><?php
 		query_posts(array(
 			'category_name'=>'study',
 			'posts_per_page'=>5
@@ -82,7 +96,7 @@ get_header(); ?>
 			 		<ul><?php
 						while (have_posts()){
 							the_post(); 
-			            	?><li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php 	
+					            	?><li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php 	
 								$title = get_post_meta(get_the_ID(), 'short_title', true);
 								if($title) echo $title;	else the_title(); ?>
 							</a></li><?php 
