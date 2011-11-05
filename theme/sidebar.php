@@ -65,6 +65,7 @@
 		<div class="sidebarSection followLinks">
 			<h3>Keep In Touch</h3>
 			<ul>
+				<li><a href="https://groups.google.com/group/the-gist"><img src="<?php bloginfo('template_directory'); ?>/images/icon.png"/><span>Join us</span></a></li>
 				<li><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png"/><span>Get the latest news</span></a></li>
 				<li><a href="mailto:glasgowinsight@gmail.com"><img src="<?php bloginfo('template_directory'); ?>/images/email.png"/><span>Talk to us</span></a></li>
 				<li><a href="http://twitter.com/GlasgowGist"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png"/><span>Follow us on Twitter</span></a></li>
