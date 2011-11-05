@@ -59,7 +59,7 @@ get_header(); ?>
 	<div id="right-content">
 		<?php 
 			$posts = array();
-			$min_features=3;
+			$min_features=2;
 			gather_posts( 'podcast', $min_features, $posts, $ids);
 			if(count($posts)<$min_features){
 				gather_posts( 'feature', $min_features-count($posts), $posts, $ids);
@@ -68,7 +68,30 @@ get_header(); ?>
     			setup_postdata($post); 
 				show_post_excerpt(implode(' ', get_post_class()), 'right-column');
 			}					
-		?>
+		
+		query_posts(array(
+			'category_name'=>'study',
+			'posts_per_page'=>5
+		));
+		if(have_posts()){ 
+			?><div id="studies" class="post studies">
+				<h3>
+					<a href="<?php echo get_category_link_by_slug('study'); ?>" rel="bookmark">Current Studies</a>
+				</h3>
+			 	<div class="entry-summary">
+			 		<ul><?php
+						while (have_posts()){
+							the_post(); 
+			            	?><li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php 	
+								$title = get_post_meta(get_the_ID(), 'short_title', true);
+								if($title) echo $title;	else the_title(); ?>
+							</a></li><?php 
+						}?>
+					</ul>
+					<p><a href="<?php echo get_category_link_by_slug('study'); ?>" rel="bookmark">More&nbsp;<span class="meta-nav">&rarr;</span></a></p>
+			 	</div>
+			 </div><?php 
+		} ?>
 	</div>
 </div><!-- #content -->
 <?php get_sidebar(); ?>
