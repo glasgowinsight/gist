@@ -70,7 +70,7 @@ get_header(); ?>
 			}					
 		
 		?><div id="news" class="post news">
-			<h3>Local News</h3>
+			<h3>University News</h3>
 		 	<div class="entry-summary">
 		 		<?php echo rssinpage(array( 
 			 			'rssfeed'=>
@@ -90,7 +90,7 @@ get_header(); ?>
 		if(have_posts()){ 
 			?><div id="studies" class="post studies">
 				<h3>
-					<a href="<?php echo get_category_link_by_slug('study'); ?>" rel="bookmark">Current Studies</a>
+					<a href="<?php echo get_category_link_by_slug('study'); ?>" rel="bookmark">Studies</a>
 				</h3>
 			 	<div class="entry-summary">
 			 		<ul><?php
