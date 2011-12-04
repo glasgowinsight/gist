@@ -316,19 +316,19 @@ function load_slider() {
 function get_licence($post){
 	$licence_id = get_post_meta($post->ID, 'licence', true);
 	switch($licence_id){
-		case "None":
-			return NULL;
-		case "CC-BY-SA":
+		case "CC BY":
+			return array(
+				'url'=>'http://creativecommons.org/licenses/by/3.0/',
+				'image'=>'http://i.creativecommons.org/l/by/3.0/80x15.png',
+				'licence'=>'Creative Commons Attribution 3.0 Unported License'		
+			);
+		case "CC BY-SA":
 			return array(
 				'url'=>'http://creativecommons.org/licenses/by-sa/3.0/',
 				'image'=>'http://i.creativecommons.org/l/by-sa/3.0/80x15.png',
 				'licence'=>'Creative Commons Attribution-Share-Alike 3.0 Unported License'		
 			);
 		default:
-			return array(
-				'url'=>'http://creativecommons.org/licenses/by/3.0/',
-				'image'=>'http://i.creativecommons.org/l/by/3.0/80x15.png',
-				'licence'=>'Creative Commons Attribution 3.0 Unported License'		
-			);
+			return NULL;
 	}
 }
