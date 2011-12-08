@@ -244,14 +244,14 @@ function sidebar($id, $title, $collection, $callback) {
 }
 
 function custom_posts($query) {
+	if(is_admin()){
+		return $query;
+	}
+	
 	if ($query->is_feed) {
-		$query->set('category__not_in', array(id_by_slug('about-gist'), id_by_slug('idea')));
+		$query->set('category__not_in', array(id_by_slug('about-gist'), id_by_slug('study')));
 	}
 	else{
-		if(get_query_var('category_name') != 'idea'){
-			$query->set('category__not_in', array(id_by_slug('idea')));
-		}
-		
 		if(current_user_can( 'publish_posts' )){
 			$query->set('post_status', 'any');
 		}
