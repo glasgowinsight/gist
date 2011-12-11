@@ -248,7 +248,7 @@ function custom_posts($query) {
 		$query->set('category__not_in', array(id_by_slug('about-gist'), id_by_slug('study')));
 	}
 	else{
-		if((is_home() || is_cat()) && current_user_can( 'publish_posts' )){
+		if((is_home() || is_archive()) && current_user_can( 'publish_posts' )){
 			$query->set('post_status', 'any');
 		}
 		
