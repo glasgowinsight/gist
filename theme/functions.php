@@ -56,8 +56,6 @@ if ( ! function_exists( 'gist_setup' ) ):
 		
 		function f($n){return get_bloginfo('template_directory') . $n;}
 		
-		wp_deregister_script('jquery');
-		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', array(), '1.7.1');
 		wp_register_script('twitter', 'http://widgets.twimg.com/j/2/widget.js', array(), False, True);
 		wp_register_script('jquery-timers', f('/js/jquery.timers-1.2.js'), array(), '1.2', True);
 		wp_register_script('simple-slide', f('/js/simpleSlide.js'), array(), False, True);

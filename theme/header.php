@@ -45,7 +45,6 @@
 	wp_enqueue_style('gist');
 		
 	if(is_home() || is_admin()){
-		wp_enqueue_script('jquery');
 		wp_enqueue_script('twitter');
 		wp_enqueue_script('jquery-timers');
 		wp_enqueue_script('simple-slide');
