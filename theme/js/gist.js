@@ -1,7 +1,7 @@
-$(document).ready( show_tweets )
+jQuery(document).ready( show_tweets )
 
-$(document).ready( function(){ 
-	$.post(
+jQuery(document).ready( function(){ 
+	jQuery.post(
 			gist.ajaxurl,
 			{action: 'load_slider'},
 			load_slider
@@ -11,9 +11,9 @@ $(document).ready( function(){
 function load_slider(response){
 	// I've possibly entirely over-engineered this just to get some pre-loading
 	
-	var slides = $(response.slides)
-	var thumbs = $(response.thumbs)
-	var imgs = $.merge(slides.find('img'), thumbs.find('img'));
+	var slides = jQuery(response.slides)
+	var thumbs = jQuery(response.thumbs)
+	var imgs = jQuery.merge(slides.find('img'), thumbs.find('img'));
 
 	var called = false;
 	var start = function() {
@@ -22,10 +22,10 @@ function load_slider(response){
 			// and worst case is it replaces the div contents twice
 			called = true;
 			clearTimeout(timeout);
-			$('#slider').empty();
-			$('#slider').append(slides);
-			$('#slider-thumbs').empty();
-			$('#slider-thumbs').append(thumbs);
+			jQuery('#slider').empty();
+			jQuery('#slider').append(slides);
+			jQuery('#slider-thumbs').empty();
+			jQuery('#slider-thumbs').append(thumbs);
 			start_slider();
 		}
 	}
@@ -47,28 +47,28 @@ function load_slider(response){
 }
 
 function start_slider(){
-	$('.simpleSlide-window').each(function(){
-		var width = $(this).outerWidth();
+	jQuery('.simpleSlide-window').each(function(){
+		var width = jQuery(this).outerWidth();
 		var max_height = 0;
-		$(this).find('.simpleSlide-slide').each(function(){
-			$(this).css({
+		jQuery(this).find('.simpleSlide-slide').each(function(){
+			jQuery(this).css({
 				'width': width
 			});
-			var height = $(this).outerHeight();
+			var height = jQuery(this).outerHeight();
 			if ( height > max_height) {
 				max_height = height;
 			}
 			
 		});
-		$(this).find('.simpleSlide-slide').css({
+		jQuery(this).find('.simpleSlide-slide').css({
 			'height': max_height
 		});
 	}); 
 
-	$('.jump-to[alt="1"]').addClass('current');
-	$('.jump-to').hover(
-		function(){$(this).addClass('hover');},
-		function(){$(this).removeClass('hover');}
+	jQuery('.jump-to[alt="1"]').addClass('current');
+	jQuery('.jump-to').hover(
+		function(){jQuery(this).addClass('hover');},
+		function(){jQuery(this).removeClass('hover');}
 	);
 	
     simpleSlide({'auto_speed': 10000});
