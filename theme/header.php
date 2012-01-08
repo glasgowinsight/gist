@@ -45,15 +45,15 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/clear.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory(); ?>/clear.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <!--[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/large.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory(); ?>/large.css" />
 <![endif]-->
-<link rel="stylesheet" type="text/css" media="all and (min-width: 970px)" href="<?php echo get_template_directory_uri(); ?>/large.css" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 724px) and (max-width: 969px)" href="<?php echo get_template_directory_uri(); ?>/medium.css" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 478px) and (max-width: 723px)" href="<?php echo get_template_directory_uri(); ?>/small.css" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 478px)" href="<?php echo get_template_directory_uri(); ?>/bleeds.css" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 970px)" href="<?php echo get_stylesheet_directory(); ?>/large.css" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 724px) and (max-width: 969px)" href="<?php echo get_stylesheet_directory(); ?>/medium.css" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 478px) and (max-width: 723px)" href="<?php echo get_stylesheet_directory(); ?>/small.css" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 478px)" href="<?php echo get_stylesheet_directory(); ?>/bleeds.css" />
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
