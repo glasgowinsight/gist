@@ -45,15 +45,19 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/clear.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('clear.css'); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <!--[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/large.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('large.css'); ?>" />
 <![endif]-->
-<link rel="stylesheet" type="text/css" media="all and (min-width: 970px)" href="<?php echo get_stylesheet_directory_uri(); ?>/large.css" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 724px) and (max-width: 969px)" href="<?php echo get_stylesheet_directory_uri(); ?>/medium.css" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 478px) and (max-width: 723px)" href="<?php echo get_stylesheet_directory_uri(); ?>/small.css" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 478px)" href="<?php echo get_stylesheet_directory_uri(); ?>/bleeds.css" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 970px)" href="<?php echo resource('large.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 724px) and (max-width: 969px)" href="<?php echo resource('medium.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 478px) and (max-width: 723px)" href="<?php echo resource('small.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 478px)" href="<?php echo resource('bleeds.css'); ?>" />
+
+<?php wp_enqueue_script('twitter') ?>
+<?php wp_enqueue_script( 'jquery' ); ?>
+<?php wp_enqueue_script('load_twitter') ?>
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
@@ -93,6 +97,5 @@
 				</ul>
 			</nav>
 	</header>
-
 
 	<div id="main">

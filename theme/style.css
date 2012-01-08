@@ -17,7 +17,21 @@ body {
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6, nav, hgroup {
+.twtr-widget { 
+  font-family:	Calibri,
+		"Gill Sans",
+		"Gill Sans MT",
+		"DejaVu Sans Condensed",
+		"Liberation Sans",
+		"Nimbus Sans L",
+		Tahoma,
+		sans-serif
+		!important;
+		
+  font-size: 14px !important;
+}
+
+h1, h2, h3, h4, h5, h6, #access, hgroup {
   font-family:	"Century Gothic",
 		Futura,
 		"URW Gothic L",
@@ -30,21 +44,42 @@ h1, h2, h3, h4, h5, h6, nav, hgroup {
   font-weight: bold;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, nav a { color: white; }
+.entry-header { text-transform: uppercase; text-align: center; }
+
+#access a, section h2 { color: white; }
 a { text-decoration: none; }
 
-h1, h2, h3, h4, h5, h6 { background-color: rgb(255,24,0); }
+h1 { background-color: rgb(255,24,0); }
+section.feature h2 { background-color: rgb(255,24,0); }
+section.snippet h2 { background-color: rgb(64,19,175); }
+section.podcast h2 { background-color: rgb(255,217,0); }
+section.about h2 { background-color: rgb(0,139,43); }
+section.feature li { list-style: url(images/bullet_feature.png) inside; }
+section.snippet li { list-style: url(images/bullet_snippet.png) inside; }
+section.podcast li { list-style: url(images/bullet_podcast.png) inside; }
+section.about li { list-style: url(images/bullet_about.png) inside; }
+section ul.blank li { list-style: none inside; }
 
-hgroup { width: 15em; height: 8em; position: relative; overflow: hidden; margin: 1em auto; }
+hgroup { position: relative; overflow: hidden; }
 hgroup > span { background: url("images/logo.png") no-repeat rgb(255,24,0); position: absolute; width: 100%; height: 100%; }
 
-nav { width: 15em; margin: 1em auto; overflow: hidden; }
-nav li { padding: 2px 20px 2px 5px; }
-nav .feature { background: rgb(149,71,71); }
-nav .snippet { background: rgb(62,49,103); }
-nav .podcast { background: rgb(149,136,71); }
-nav .about { background: rgb(57,119,57); }
+#access .feature { background: rgb(149,71,71); }
+#access .snippet { background: rgb(62,49,103); }
+#access .podcast { background: rgb(149,136,71); }
+#access .about { background: rgb(57,119,57); }
 
-.cap-right, .cap-left { position: relative; }
+.cap-right, .cap-left { position: relative; overflow: hidden; }
 .cap-right:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
 .cap-left:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
+
+.twtr-hd h3 { display: none; }
+.twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
+
+/* Stuff for the 1 column layout that will mostly get overwritten */
+article, .articles { width: 30em; margin: 1em auto; }
+.twtr-doc { width: 30em !important; margin: 1em auto; }
+.entry-thumbnail { text-align: center; margin-bottom: 1em; }
+#access { width: 15em; margin: 1em auto; }
+#access li, section h2 { padding: 2px 20px 2px 5px; }
+section h2 { width: 15em; margin: 1em auto; }
+hgroup { width: 15em; height: 8em; margin: 1em auto; }
