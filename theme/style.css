@@ -17,8 +17,7 @@ body {
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6, nav, hgroup,
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, nav a, hgroup a {
+h1, h2, h3, h4, h5, h6, nav, hgroup {
   font-family:	"Century Gothic",
 		Futura,
 		"URW Gothic L",
@@ -29,16 +28,18 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, nav a, hgroup a {
 		sans-serif;
   font-size: 16px;
   font-weight: bold;
-  color: white;
 }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, nav a { color: white; }
+a { text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 { background-color: rgb(255,24,0); }
 
 hgroup { width: 15em; height: 8em; position: relative; overflow: hidden; margin: 1em auto; }
 hgroup > span { background: url("images/logo.png") no-repeat rgb(255,24,0); position: absolute; width: 100%; height: 100%; }
 
-nav { width: 15em; margin: 1em auto; }
-nav li { padding-right: 20px }
+nav { width: 15em; margin: 1em auto; overflow: hidden; }
+nav li { padding: 2px 20px 2px 5px; }
 nav .feature { background: rgb(149,71,71); }
 nav .snippet { background: rgb(62,49,103); }
 nav .podcast { background: rgb(149,136,71); }
