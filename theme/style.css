@@ -17,7 +17,8 @@ body {
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6, nav {
+h1, h2, h3, h4, h5, h6, nav, hgroup,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, nav a, hgroup a {
   font-family:	"Century Gothic",
 		Futura,
 		"URW Gothic L",
@@ -43,6 +44,6 @@ nav .snippet { background: rgb(62,49,103); }
 nav .podcast { background: rgb(149,136,71); }
 nav .about { background: rgb(57,119,57); }
 
-.cap-right, .cap-left { position: relative; z-index: -1; }
+.cap-right, .cap-left { position: relative; }
 .cap-right:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
 .cap-left:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
