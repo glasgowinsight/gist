@@ -84,7 +84,7 @@
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 
-			<nav id="access" role="navigation">
+			<nav id="access" role="navigation" class="cap-right">
 				<ul id="navList">
 					<li class="feature"><a href="<?php echo get_category_link_by_slug('feature'); ?>">Features</a></li>
 					<li class="snippet"><a href="<?php echo get_category_link_by_slug('snippet'); ?>">Snippets</a></li>
