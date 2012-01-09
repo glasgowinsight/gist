@@ -21,11 +21,11 @@ get_header(); ?>
 				<header class="page-header">
 					<h2 class="page-title cap-right">
 						<?php if ( is_day() ) : ?>
-							<span><?php the_date(); ?></span>
+							<span><?php echo get_the_date(); ?></span>
 						<?php elseif ( is_month() ) : ?>
-							<span><?php the_date( _x( 'F Y', 'monthly archives date format', 'twentyeleven' ) ); ?></span>
+							<span><?php echo get_the_date( _x( 'F Y', 'monthly archives date format', 'twentyeleven' ) ); ?></span>
 						<?php elseif ( is_year() ) : ?>
-							<span><?php the_date( _x( 'Y', 'yearly archives date format', 'twentyeleven' ) ); ?></span>
+							<span><?php echo get_the_date( _x( 'Y', 'yearly archives date format', 'twentyeleven' ) ); ?></span>
 						<?php else : ?>
 							<?php _e( 'Archives', 'twentyeleven' ); ?>
 						<?php endif; ?>
