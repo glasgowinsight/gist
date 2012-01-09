@@ -47,18 +47,26 @@ h1, h2, h3, h4, h5, h6, #access, hgroup {
 .entry-content { line-height: 1.5em; }
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 1em; }
 
-#access a, section h2, .archive h2, .archive #nav-below h3{ color: white; }
+#access a, section h2, .archive h2, .single h2, .archive #nav-below h3{ color: white; }
 a { text-decoration: none; }
 
 h1 { background-color: rgb(255,24,0); }
-section.feature h2, .archive h2, .category-feature h2, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
-section.snippet h2, .category-snippet h2, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
-section.podcast h2, .category-podcast h2, .category-podcast #nav-below h3 { background-color: rgb(255,217,0); }
-section.about h2, .category-about-gist h2, .category-about-gist #nav-below h3 { background-color: rgb(0,139,43); }
-section.feature li, .category-feature li { list-style: url(images/bullet_feature.png) inside; }
-section.snippet li, .category-snippet li { list-style: url(images/bullet_snippet.png) inside; }
-section.podcast li, .category-podcast li { list-style: url(images/bullet_podcast.png) inside; }
-section.about li, .category-about-gist li { list-style: url(images/bullet_about.png) inside; }
+section.feature h2, .archive h2, .category-feature h2, .parent-feature h2, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
+section.snippet h2, .category-snippet h2, .parent-snippet h2, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
+section.podcast h2, .category-podcast h2, .parent-podcast h2, .category-podcast #nav-below h3 { background-color: rgb(255,217,0); }
+section.about h2, .category-about-gist h2, .parent-about-gist h2, .category-about-gist #nav-below h3 { background-color: rgb(0,139,43); }
+.parent-feature .wp-caption p { background-color: rgb(255,128,115); }
+.parent-snippet .wp-caption p { background-color: rgb(140,109,215); }
+.parent-podcast .wp-caption p { background-color: rgb(255,234,115); }
+.parent-about .wp-caption p { background-color: rgb(101,224,128); }
+.parent-feature .wp-caption:before, .parent-feature .wp-caption:after { content: url(images/img_feature.png); }
+.parent-snippet .wp-caption:before, .parent-snippet .wp-caption:after { content: url(images/img_snippet.png); }
+.parent-podcast .wp-caption:before, .parent-podcast .wp-caption:after { content: url(images/img_podcast.png); }
+.parent-about .wp-caption:before, .parent-about .wp-caption:after { content: url(images/img_about.png); }
+section.feature li, .category-feature li, .category-feature li { list-style: url(images/bullet_feature.png) inside; }
+section.snippet li, .category-snippet li, .category-snippet li { list-style: url(images/bullet_snippet.png) inside; }
+section.podcast li, .category-podcast li, .category-podcast li { list-style: url(images/bullet_podcast.png) inside; }
+section.about li, .category-about-gist li, .category-about-gist li { list-style: url(images/bullet_about.png) inside; }
 ul.blank li { list-style: none inside; }
 
 hgroup { position: relative; overflow: hidden; }
@@ -82,6 +90,10 @@ article, .articles, #nav-below div, .category-archive-meta, #author-info { width
 .twtr-doc { width: 30em !important; margin: 1em auto; }
 .entry-thumbnail { text-align: center; margin-bottom: 1em; }
 #access { width: 15em; margin: 1em auto; }
-#access li, section h2, .archive h2, #nav-below h3 { padding: 2px 20px 2px 5px; }
-section h2, .archive h2, #nav-below h3 { width: 15em; margin: 1em auto; }
+#access li, section h2, .archive h2, .single h2, #nav-below h3 { padding: 2px 20px 2px 5px; }
+section h2, .archive h2, .single h2, #nav-below h3 { width: 15em; margin: 1em auto; }
 hgroup { width: 15em; height: 8em; margin: 1em auto; }
+.wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; }
+.wp-caption:before { position: absolute; left: 0; top: 0; }
+.wp-caption:after{ position: absolute; right: 0; top: 0; }
+
