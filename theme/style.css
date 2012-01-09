@@ -94,6 +94,7 @@ article, .articles, #nav-below div, .category-archive-meta, #author-info { width
 section h2, .archive h2, .single h2, #nav-below h3 { width: 15em; margin: 1em auto; }
 hgroup { width: 15em; height: 8em; margin: 1em auto; }
 .wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; }
+.wp-caption p { line-height: 1.5em; }
 .wp-caption:before { position: absolute; left: 0; top: 0; }
 .wp-caption:after{ position: absolute; right: 0; top: 0; }
 

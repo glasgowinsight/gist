@@ -42,4 +42,23 @@ function get_category_link_by_slug($cat_name){
         $id = id_by_slug($cat_name);
         return get_category_link($id);
 }
+
+add_filter('img_caption_shortcode', 'fix_caption_width');
+function fix_caption_width($attr, $content = null) {
+
+	extract(shortcode_atts(array(
+		'id'	=> '',
+		'align'	=> 'alignnone',
+		'width'	=> '',
+		'caption' => ''
+	), $attr));
+
+	if ( 1 > (int) $width || empty($caption) )
+		return $content;
+
+	if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
+
+	return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" style="width: ' . ((int) $width) . 'px">'
+	. do_shortcode( $content ) . '<p class="wp-caption-text">' . $caption . '</p></div>';
+}
 ?>
