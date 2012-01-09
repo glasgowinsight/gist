@@ -44,7 +44,7 @@ function get_category_link_by_slug($cat_name){
 }
 
 add_filter('img_caption_shortcode', 'fix_caption_width', 10, 3);
-function fix_caption_width($attr, $content = null) {
+function fix_caption_width($val, $attr, $content = null) {
 
 	extract(shortcode_atts(array(
 		'id'	=> '',
