@@ -69,15 +69,16 @@ hgroup > span { background: url("images/logo.png") no-repeat rgb(255,24,0); posi
 #access .podcast { background: rgb(149,136,71); }
 #access .about { background: rgb(57,119,57); }
 
-.cap-right, .cap-left { position: relative; overflow: hidden; }
-.cap-right:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
+.cap-right, .cap-left, #nav-below h3 { position: relative; overflow: hidden; }
+.cap-right:after, #nav-below h3:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
 .cap-left:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
 
 .twtr-hd h3 { display: none; }
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
-article, .articles, #nav-below > div { width: 30em; margin: 1em auto; }
+article, .articles, #nav-below div { width: 30em; margin: 1em auto; }
+#nav-below div { text-align: center; }
 .twtr-doc { width: 30em !important; margin: 1em auto; }
 .entry-thumbnail { text-align: center; margin-bottom: 1em; }
 #access { width: 15em; margin: 1em auto; }
