@@ -12,9 +12,9 @@ get_header(); ?>
 			<div id="content" role="main">
 
 				<header class="page-header">
-					<h2 class="page-title cap-right"><?php
-						printf( __( 'Category Archives: %s', 'twentyeleven' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-					?></h2>
+					<h2 class="page-title cap-right">
+						<span><?php single_cat_title( '', false ); ?></span>
+					</h2>
 
 					<?php
 						$category_description = category_description();
