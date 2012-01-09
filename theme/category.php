@@ -13,7 +13,7 @@ get_header(); ?>
 
 				<header class="page-header">
 					<h2 class="page-title cap-right">
-						<span><?php single_cat_title( '', false ); ?></span>
+						<span><?php echo single_cat_title( '', false ); ?></span>
 					</h2>
 
 					<?php
