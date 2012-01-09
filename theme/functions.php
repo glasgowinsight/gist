@@ -59,6 +59,6 @@ function fix_caption_width($val, $attr, $content = null) {
 	if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
 
 	return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" style="width: ' . ((int) $width) . 'px">'
-	. do_shortcode( $content ) . '<p class="wp-caption-text">' . $caption . '</p></div>';
+	. do_shortcode( $content ) . '<p class="wp-caption-text">// ' . $caption . '</p></div>';
 }
 ?>

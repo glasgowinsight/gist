@@ -44,6 +44,8 @@ h1, h2, h3, h4, h5, h6, #access, hgroup {
   font-weight: bold;
 }
 
+.wp-caption p { font-weight: bold; }
+
 .entry-content { line-height: 1.5em; }
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 1em; }
 
