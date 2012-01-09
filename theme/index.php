@@ -21,19 +21,7 @@ get_header(); ?>
 					<?php query_posts('category_name=feature&posts_per_page=10'); ?>
 					<?php $i=0; ?>
 					<?php while ( $i<4 && have_posts() ) : the_post(); ?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<header class="entry-header">
-								<h3 class="entry-title"><?php the_title(); ?></h3>
-							</header>
-							<div class="entry-thumbnail">
-								<a href="<?php the_permalink(); ?>" rel="bookmark">
-									<?php the_post_thumbnail( 'medium_thumb' ); ?>
-								</a>
-							</div>
-							<div class="entry-content">
-								<?php the_excerpt(); ?>
-							</div>
-						</article>
+						<?php get_template_part( 'content', 'extract' ); ?>
 						<?php $i++; ?>
 					<?php endwhile; ?>
 					<nav class="articles">
@@ -54,19 +42,7 @@ get_header(); ?>
 					<header><h2 class="cap-right">// Snippets</h2></header>
 					<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<header class="entry-header">
-								<h3 class="entry-title"><?php the_title(); ?></h3>
-							</header>
-							<div class="entry-thumbnail">
-								<a href="<?php the_permalink(); ?>" rel="bookmark">
-									<?php the_post_thumbnail( 'medium_thumb' ); ?>
-								</a>
-							</div>
-							<div class="entry-content">
-								<?php the_excerpt(); ?>
-							</div>
-						</article>
+						<?php get_template_part( 'content', 'extract' ); ?>
 					<?php endwhile; ?>
 				</section>
 				
@@ -74,19 +50,7 @@ get_header(); ?>
 					<header><h2 class="cap-right">// Communication</h2></header>
 					<?php query_posts('category_name=podcast&posts_per_page=1'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<header class="entry-header">
-								<h3 class="entry-title"><?php the_title(); ?></h3>
-							</header>
-							<div class="entry-thumbnail">
-								<a href="<?php the_permalink(); ?>" rel="bookmark">
-									<?php the_post_thumbnail( 'medium_thumb' ); ?>
-								</a>
-							</div>
-							<div class="entry-content">
-								<?php the_excerpt(); ?>
-							</div>
-						</article>
+						<?php get_template_part( 'content', 'extract' ); ?>
 					<?php endwhile; ?>
 				
 	                <nav class="articles">
