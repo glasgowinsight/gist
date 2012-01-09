@@ -89,7 +89,7 @@
 			</hgroup>
 
 			<nav id="access" role="navigation" class="cap-right">
-				<ul id="navList">
+				<ul id="navList" class="blank">
 					<li class="feature"><a href="<?php echo get_category_link_by_slug('feature'); ?>">Features</a></li>
 					<li class="snippet"><a href="<?php echo get_category_link_by_slug('snippet'); ?>">Snippets</a></li>
 					<li class="podcast"><a href="<?php echo get_category_link_by_slug('podcast'); ?>">Podcasts</a></li>
