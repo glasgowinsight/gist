@@ -10,7 +10,8 @@
 get_header(); ?>
 
 <?php if ( have_posts() ): the_post();?>
-<?php $main_post = get_postdata(); ?>
+		<?php global $post; ?>
+		<?php $main_post = get_post(get_the_ID()); ?>
 		<div id="primary">
 			<div id="content" role="main">
 
@@ -18,7 +19,6 @@ get_header(); ?>
 				<?php if ( $rel ): ?>
 						<div id="related">
 							<h2>Related Articles</h2>  
-							<?php global $post; ?>
 							<?php foreach ($rel as $post) : ?>
 			        			<?php setup_postdata($post); ?>
 			        			<?php get_template_part( 'content', 'extract' ); ?>
