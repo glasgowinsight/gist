@@ -43,7 +43,7 @@ get_header(); ?>
 						<h2>Latest Articles</h2>  
 						<?php while ( $i<3 && have_posts() ) : the_post(); ?>
 		        			<?php get_template_part( 'content', 'extract' ); ?>
-		        			$i++;
+		        			<?php $i++; ?>
 		    			<?php endwhile; ?>
 		    		</div>
 	    		<?php endif; ?>		
