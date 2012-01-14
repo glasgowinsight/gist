@@ -15,7 +15,7 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 
-				<?php $rel = $related->show($main_post->ID, true); ?>
+				<?php $rel = $related->show(get_the_ID(), true); ?>
 				<?php if ( $rel ): ?>
 						<div id="related">
 							<h2>Related Articles</h2>  
