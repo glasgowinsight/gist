@@ -64,6 +64,7 @@ get_header(); ?>
 	    		<?php endif; ?>
 				
 				<?php $post = $main_post; setup_postdata($post); ?>
+				<?php $withcomments = 1; ?>
 				<?php comments_template( '', true ); ?>
 				
 			</div><!-- #content -->
