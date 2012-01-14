@@ -22,10 +22,11 @@ get_header(); ?>
 				
 				<?php 
 					if ( have_posts() ) :
+						global $post;
 						the_post();
 						$rel = $related->show(get_the_ID(), true); 
-					    foreach ($rel as $r) :
-	        				setup_postdata($r);
+					    foreach ($rel as $post) :
+	        				setup_postdata($post);
 	        				get_template_part( 'content', 'extract' );
 	    				endforeach;
 	    				wp_reset_postdata();
