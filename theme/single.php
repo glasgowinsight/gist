@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <?php if ( have_posts() ): the_post();?>
-<?php $main_post<-get_postdata(); ?>
+<?php $main_post = get_postdata(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 
