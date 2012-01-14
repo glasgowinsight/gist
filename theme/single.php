@@ -14,8 +14,16 @@ get_header(); ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php echo $related->show(get_the_ID()); ?>
-
+					<?php 
+						$rel = $related->show(get_the_ID(), true); 
+					    foreach ($rel as $r) :
+        					setup_postdata($r);
+        					the_post();
+        					get_template_part( 'content', 'extract' );
+    					endforeach;
+    					wp_reset_postdata();		
+					?>
+					
 					<?php get_template_part( 'content', 'single' ); ?>
 
 					<?php comments_template( '', true ); ?>
