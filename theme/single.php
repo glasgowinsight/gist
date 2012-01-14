@@ -41,7 +41,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
 					<div id="latest">
 						<h2>Latest Articles</h2>  
-						<?php while ( $i<3 && have_posts() ) : the_post; ?>
+						<?php while ( $i<3 && have_posts() ) : the_post(); ?>
 		        			<?php get_template_part( 'content', 'extract' ); ?>
 		    			<?php endwhile; ?>
 		    		</div>
@@ -49,11 +49,11 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
 					<div id="other">
 						<h2>Other Articles</h2>  
-						<?php while ( have_posts() ) : the_post; ?>
+						<?php while ( have_posts() ) : the_post(); ?>
 		        			<?php get_template_part( 'content', 'extract' ); ?>
 		    			<?php endwhile; ?>
 		    		</div>
-	    		<?php endif; ?>		
+	    		<?php endif; ?>
 				
 			</div><!-- #content -->
 		</div><!-- #primary -->
