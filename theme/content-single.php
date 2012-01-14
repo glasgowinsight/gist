@@ -15,5 +15,6 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+		<a href="#comments">Discuss &rarr;</a> <?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'small_toolbox' ); ?>
 	</div>
 </article>

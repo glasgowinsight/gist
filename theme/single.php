@@ -28,7 +28,6 @@ get_header(); ?>
 
 				<?php $post = $main_post; setup_postdata($post); ?>
 				<?php get_template_part( 'content', 'single' ); ?>
-				<a href="#comments">Discuss &rarr;</a> <?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'small_toolbox' ); ?>
 				
 				<?php if ( get_the_author_meta( 'description' ) && ( ! function_exists( 'is_multi_author' ) || is_multi_author() ) ) : ?>
 				<div id="author-info">
