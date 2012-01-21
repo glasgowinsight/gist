@@ -73,7 +73,7 @@ section.about li, .category-about-gist li, .category-about-gist li { list-style:
 ul.blank li { list-style: none inside; }
 
 #branding hgroup { width:240px; height: 128px; background: url("images/logo.png") no-repeat rgb(255,24,0); text-indent: -9999px; }
-#branding hgroup h1, #branding hgroup h2 { margin: 0; width: auto; }
+#branding hgroup h1, #branding hgroup h2 { margin: 0; padding: 0; width: auto; background: none; }
 #access .feature { background: rgb(149,71,71); }
 #access .snippet { background: rgb(62,49,103); }
 #access .podcast { background: rgb(149,136,71); }
