@@ -72,8 +72,7 @@ section.podcast li, .category-podcast li, .category-podcast li { list-style: url
 section.about li, .category-about-gist li, .category-about-gist li { list-style: url(images/bullet_about.png) inside; }
 ul.blank li { list-style: none inside; }
 
-hgroup { position: relative; overflow: hidden; }
-hgroup > span { background: url("images/logo.png") no-repeat rgb(255,24,0); position: absolute; width: 100%; height: 100%; }
+header hgroup { width:240px; height: 128px; background: url("images/logo.png") no-repeat rgb(255,24,0); text-indent: -9999px; }
 
 #access .feature { background: rgb(149,71,71); }
 #access .snippet { background: rgb(62,49,103); }
