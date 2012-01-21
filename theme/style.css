@@ -87,6 +87,7 @@ header hgroup { width:240px; height: 128px; background: url("images/logo.png") n
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
+article.extract img { max-width: 14em; height: 100%; margin-right: 1em; float: left; } 
 article, .articles, #nav-below div, .category-archive-meta, #author-info, #comments { width: 30em; margin: 1em auto; }
 #nav-below div { text-align: center; }
 .twtr-doc { width: 30em !important; margin: 1em auto; }
