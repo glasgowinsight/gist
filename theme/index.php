@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
-				<section class="feature">
+				<section class="section section-feature">
 					<header><h2 class="cap-right">// Features</h2></header>
 					<?php query_posts('category_name=feature&posts_per_page=10'); ?>
 					<?php $i=0; ?>
@@ -38,7 +38,7 @@ get_header(); ?>
 					</nav>
 				</section>
 				
-				<section class="snippet">
+				<section class="section  section-snippet">
 					<header><h2 class="cap-right">// Snippets</h2></header>
 					<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -46,7 +46,7 @@ get_header(); ?>
 					<?php endwhile; ?>
 				</section>
 				
-				<section class="podcast">
+				<section class="section  section-podcast">
 					<header><h2 class="cap-right">// Communication</h2></header>
 					<?php query_posts('category_name=podcast&posts_per_page=1'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -71,7 +71,7 @@ get_header(); ?>
                     <div id="twtr-widget"></div>
                 </section>
 				
-				<section class="about">
+				<section class="section  section-about">
 					<header><h2 class="cap-right">// Outside GIST</h2></header>
 					<nav class="articles">
 						<header class="entry-header">

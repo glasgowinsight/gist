@@ -31,7 +31,7 @@ div.twtr-widget {
   font-size: 14px !important;
 }
 
-h1, h2, h3, h4, h5, h6, #access, hgroup {
+h1, h2, h3, h4, h5, h6, #access {
   font-family:	"Century Gothic",
 		Futura,
 		"URW Gothic L",
@@ -50,14 +50,14 @@ h1, h2, h3, h4, h5, h6, #access, hgroup {
 .entry-content p, .entry-content br, .category-archive-meta p, .category-archive-meta br, #author-info p, #author-info br { margin-bottom: 1em; }
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 1em; }
 
-#access a, section h2, .archive h2, .single h2, .archive #nav-below h3{ color: white; }
+#access a, #primary h2, .section h2, .archive h2, .single h2, .archive #nav-below h3{ color: white; }
 a { text-decoration: none; }
 
 h1 { background-color: rgb(255,24,0); }
-section.feature h2, .archive h2, .category-feature h2, .parent-feature h2, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
-section.snippet h2, .category-snippet h2, .parent-snippet h2, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
-section.podcast h2, .category-podcast h2, .parent-podcast h2, .category-podcast #nav-below h3 { background-color: rgb(255,217,0); }
-section.about h2, .category-about-gist h2, .parent-about-gist h2, .category-about-gist #nav-below h3 { background-color: rgb(0,139,43); }
+section-feature h2, .archive h2, .category-feature h2, .parent-feature h2, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
+section-snippet h2, .category-snippet h2, .parent-snippet h2, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
+section-podcast h2, .category-podcast h2, .parent-podcast h2, .category-podcast #nav-below h3 { background-color: rgb(255,217,0); }
+section-about h2, .category-about-gist h2, .parent-about-gist h2, .category-about-gist #nav-below h3 { background-color: rgb(0,139,43); }
 .parent-feature .wp-caption p { background-color: rgb(255,128,115); }
 .parent-snippet .wp-caption p { background-color: rgb(140,109,215); }
 .parent-podcast .wp-caption p { background-color: rgb(255,234,115); }
@@ -66,14 +66,14 @@ section.about h2, .category-about-gist h2, .parent-about-gist h2, .category-abou
 .parent-snippet .wp-caption:before, .parent-snippet .wp-caption:after { content: url(images/img_snippet.png); }
 .parent-podcast .wp-caption:before, .parent-podcast .wp-caption:after { content: url(images/img_podcast.png); }
 .parent-about .wp-caption:before, .parent-about .wp-caption:after { content: url(images/img_about.png); }
-section.feature li, .category-feature li, .category-feature li { list-style: url(images/bullet_feature.png) inside; }
-section.snippet li, .category-snippet li, .category-snippet li { list-style: url(images/bullet_snippet.png) inside; }
-section.podcast li, .category-podcast li, .category-podcast li { list-style: url(images/bullet_podcast.png) inside; }
-section.about li, .category-about-gist li, .category-about-gist li { list-style: url(images/bullet_about.png) inside; }
+section-feature li, .category-feature li, .category-feature li { list-style: url(images/bullet_feature.png) inside; }
+section-snippet li, .category-snippet li, .category-snippet li { list-style: url(images/bullet_snippet.png) inside; }
+section-podcast li, .category-podcast li, .category-podcast li { list-style: url(images/bullet_podcast.png) inside; }
+section-about li, .category-about-gist li, .category-about-gist li { list-style: url(images/bullet_about.png) inside; }
 ul.blank li { list-style: none inside; }
 
-#branding hgroup { width:240px; height: 128px; background: url("images/logo.png") no-repeat rgb(255,24,0); text-indent: -9999px; }
-#branding hgroup h1, #branding hgroup h2 { margin: 0; padding: 0; width: auto; background: none; }
+#logo { width:240px; height: 128px; background: url("images/logo.png") no-repeat rgb(255,24,0); text-indent: -9999px; }
+#logo h1, #logo h2 { margin: 0; padding: 0; width: auto; background: none; }
 #access .feature { background: rgb(149,71,71); }
 #access .snippet { background: rgb(62,49,103); }
 #access .podcast { background: rgb(149,136,71); }
@@ -87,15 +87,15 @@ ul.blank li { list-style: none inside; }
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
-article.extract img { max-width: 14em; height: 100%; margin-right: 1em; float: left; } 
-article, .articles, #nav-below div, .category-archive-meta, #author-info, #comments { width: 30em; margin: 1em auto; }
+.extract img { max-width: 14em; height: 100%; margin-right: 1em; float: left; } 
+.post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments { width: 30em; margin: 1em auto; }
 #nav-below div { text-align: center; }
 .twtr-doc { width: 30em !important; margin: 1em auto; }
 .entry-thumbnail { text-align: center; margin-bottom: 1em; }
 #access { width: 15em; margin: 1em auto; }
-#access li, section h2, .archive h2, .single h2, #nav-below h3 { padding: 2px 20px 2px 5px; }
-section h2, .archive h2, .single h2, #nav-below h3 { width: 15em; margin: 1em auto; }
-hgroup { width: 15em; height: 8em; margin: 1em auto; }
+#access li, .section h2, #primary h2, .archive h2, .single h2, #nav-below h3 { padding: 2px 20px 2px 5px; }
+.section h2, #primary h2, .archive h2, .single h2, #nav-below h3 { width: 15em; margin: 1em auto; }
+#logo { width: 15em; height: 8em; margin: 1em auto; }
 .wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; }
 .wp-caption p, .wp-caption br{ line-height: 1.5em; margin: 0; }
 .wp-caption:before { position: absolute; left: 0; top: 0; }
