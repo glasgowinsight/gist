@@ -8,10 +8,10 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('extract'); ?>>
-	<header class="entry-header">
+<div id="post-<?php the_ID(); ?>" <?php post_class('extract'); ?>>
+	<div class="entry-header">
 		<h3 class="entry-title"><?php the_title(); ?></h3>
-	</header>
+	</div>
 	<div class="entry-thumbnail">
 		<a href="<?php the_permalink(); ?>" rel="bookmark">
 			<?php the_post_thumbnail( 'medium_thumb' ); ?>
@@ -21,4 +21,4 @@
 		<?php the_excerpt(); ?>
 	</div>
 	<br style="clear:both"/>
-</article>
+</div>

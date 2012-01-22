@@ -8,10 +8,10 @@
 
 get_header(); ?>
 
-		<section id="primary">
+		<div id="primary">
 			<div id="content" role="main">
 
-				<header class="page-header">
+				<div class="page-header">
 					<h2 class="page-title cap-right">
 						<span><?php echo single_cat_title( '', false ); ?></span>
 					</h2>
@@ -21,7 +21,7 @@ get_header(); ?>
 						if ( ! empty( $category_description ) )
 							echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
 					?>
-				</header>
+				</div>
 
 			<?php if ( have_posts() ) : ?>
 
@@ -33,20 +33,20 @@ get_header(); ?>
 
 			<?php else : ?>
 
-				<article id="post-0" class="post no-results not-found">
-					<header class="entry-header">
+				<div id="post-0" class="post no-results not-found">
+					<div class="entry-header">
 						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
-					</header><!-- .entry-header -->
+					</div><!-- .entry-header -->
 
 					<div class="entry-content">
 						<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyeleven' ); ?></p>
 						<?php get_search_form(); ?>
 					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
+				</div><!-- #post-0 -->
 
 			<?php endif; ?>
 
 			</div><!-- #content -->
-		</section><!-- #primary -->
+		</div><!-- #primary -->
 
 <?php get_footer(); ?>
