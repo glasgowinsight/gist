@@ -95,7 +95,7 @@ ul.blank li { list-style: none inside; }
 #access { width: 15em; margin: 1em auto; }
 #access li, .section h2, #primary h2, .archive h2, .single h2, #nav-below h3 { padding: 2px 20px 2px 5px; }
 .section h2, #primary h2, .archive h2, .single h2, #nav-below h3 { width: 15em; margin: 1em auto; }
-#logo { width: 15em; height: 8em; margin: 1em auto; }
+#logo { margin: 1em auto; }
 .wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; }
 .wp-caption p, .wp-caption br{ line-height: 1.5em; margin: 0; }
 .wp-caption:before { position: absolute; left: 0; top: 0; }
