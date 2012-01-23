@@ -87,11 +87,10 @@ ul.blank li { list-style: none inside; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
 .extract img { max-width: 14em; height: auto; margin-right: 1em; float: left; } 
-.post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments { width: 30em; margin: 1em auto; }
-.post > *, .articles > *, #nav-below div > *, .category-archive-meta > *, #author-info > *, #comments > * { margin: 0 1em; }
+.post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { width: 30em; margin: 1em auto; }
+.post > *, .articles > *, #nav-below div > *, .category-archive-meta > *, #author-info > *, #comments > *, #site-generator > * { margin: 0 1em; }
 #nav-below div { text-align: center; }
-.twtr-doc { width: 30em !important; margin: 1em auto; }
-.twtr-doc > * { margin: 0 1em !important; }
+.twtr-doc { width: 28em !important; margin: 1em auto; }
 .entry-thumbnail { text-align: center; margin-bottom: 1em; }
 #access { width: 15em; margin: 1em auto; }
 #access li, .section h2, #primary h2, .archive h2, .single h2, #nav-below h3 { padding: 2px 20px 2px 5px; }
