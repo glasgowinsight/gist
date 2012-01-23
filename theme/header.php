@@ -79,14 +79,16 @@
 ?>
 </head>
 
+
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<div id="branding" role="banner">
-			<div id="logo">
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</div>
-
+			<h2>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" rel="home">
+					<img id="logo" width="240" height="128" src="images/logo.png"/>
+				</a>
+			</h2>
+			
 			<div id="access" role="navigation" class="cap-right">
 				<ul id="navList" class="blank">
 					<li class="feature"><a href="<?php echo get_category_link_by_slug('feature'); ?>">Features</a></li>
@@ -96,5 +98,4 @@
 				</ul>
 			</div>
 	</div>
-
 	<div id="main">

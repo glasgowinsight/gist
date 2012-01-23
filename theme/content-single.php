@@ -3,14 +3,13 @@
  * The template for displaying content in the single.php template
  *
  * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @subpackage The GIST
  */
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-header">
-		<h2 class="entry-title cap-right"><?php the_title(); ?></h2>
+		<h1 class="entry-title cap-right"><?php the_title(); ?></h1>
 	</div>
 
 	<div class="entry-content">
