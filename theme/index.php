@@ -68,7 +68,9 @@ get_header(); ?>
 						</div>
                     </div>
                     
-                    <div id="twtr-widget"></div>
+                    <div class="articles">
+                    	<div id="twtr-widget"></div>
+                    </div>
                 </div>
 				
 				<div class="section  section-about">
