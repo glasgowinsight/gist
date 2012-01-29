@@ -61,4 +61,28 @@ function fix_caption_width($val, $attr, $content = null) {
 	return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" style="width: ' . ((int) $width) . 'px">'
 	. do_shortcode( $content ) . '<p class="wp-caption-text">// ' . $caption . '</p></div>';
 }
+
+add_action( 'after_setup_theme', 'remove_filters' );
+function remove_filters() {
+	remove_filter( 'excerpt_more', 'twentyeleven_auto_excerpt_more' );
+	remove_filter( 'get_the_excerpt', 'twentyeleven_custom_excerpt_more' );
+}
+    
+function gist_continue_reading_link() {
+	return ' <a href="'. esc_url( get_permalink() ) . '">More</a>';
+}
+
+function gist_auto_excerpt_more( $more ) {
+	return ' &hellip;' . gist_continue_reading_link();
+}
+add_filter( 'excerpt_more', 'gist_auto_excerpt_more' );
+
+function gist_custom_excerpt_more( $output ) {
+	if ( has_excerpt() && ! is_attachment() ) {
+		$output .= gist_continue_reading_link();
+	}
+	return $output;
+}
+add_filter( 'get_the_excerpt', 'gist_custom_excerpt_more' );
+
 ?>

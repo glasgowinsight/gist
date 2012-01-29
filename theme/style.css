@@ -51,8 +51,10 @@ h1, h2, h3, h4, h5, h6, #access {
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 1em; }
 
 #access a, #primary h2, .section h2, .archive h2, .single h2, .archive #nav-below h3{ color: white; }
-a { text-decoration: none; }
-
+a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
+.entry-thumbnail, #twtr-widget { font-weight: normal; border-bottom: none; }
+.entry-thumbnail a:after, #twtr-widget a:after { content: none; }
+	
 h1 { background-color: rgb(255,24,0); }
 .section-feature h2, .archive h2, .category-feature h2, .parent-feature h2, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
 .section-snippet h2, .category-snippet h2, .parent-snippet h2, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
@@ -70,6 +72,14 @@ h1 { background-color: rgb(255,24,0); }
 .section-snippet li, .category-snippet li, .category-snippet li { list-style: url(images/bullet_snippet.png) inside; }
 .section-podcast li, .category-podcast li, .category-podcast li { list-style: url(images/bullet_podcast.png) inside; }
 .section-about li, .category-about-gist li, .category-about-gist li { list-style: url(images/bullet_about.png) inside; }
+.section-feature a, .archive a, .category-feature a, .parent-feature a, .archive #nav-below a, .category-feature #nav-below a  { border-color: rgb(255,24,0); }
+.section-snippet a, .category-snippet a, .parent-snippet a, .category-snippet #nav-below a { border-color: rgb(64,19,175); }
+.section-podcast a, .category-podcast a, .parent-podcast a, .category-podcast #nav-below a { border-color: rgb(255,217,0); }
+.section-about a, .category-about-gist a, .parent-about-gist a, .category-about-gist #nav-below a { border-color: rgb(0,139,43); }
+.section-feature a:after, .archive a:after, .category-feature a:after, .parent-feature a:after, .archive #nav-below a:after, .category-feature #nav-below a:after  { content: url(images/arrow_feature.png); padding-left: 2px; }
+.section-snippet a:after, .category-snippet a:after, .parent-snippet a:after, .category-snippet #nav-below a:after { content: url(images/arrow_snippet.png); padding-left: 2px; }
+.section-podcast a:after, .category-podcast a:after, .parent-podcast a:after, .category-podcast #nav-below a:after { content: url(images/arrow_podcast.png); padding-left: 2px; }
+.section-about a:after, .category-about-gist a:after, .parent-about-gist a:after, .category-about-gist #nav-below a:after { content: url(images/arrow_about.png); padding-left: 2px; }
 ul.blank li { list-style: none inside; }
 
 #logo { background: rgb(255,24,0); width: 240px; height: 128px; }
