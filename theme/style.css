@@ -52,8 +52,8 @@ h1, h2, h3, h4, h5, h6, #access {
 
 #access a, #primary h2, .section h2, .archive h2, .single h2, .archive #nav-below h3{ color: white; }
 a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
-.entry-thumbnail, #twtr-widget { font-weight: normal; border-bottom: none; }
-.entry-thumbnail a:after, #twtr-widget a:after { content: none; }
+.entry-thumbnail a, #twtr-widget a, #navList a { font-weight: normal; border-bottom: none; }
+.entry-thumbnail a:after, #twtr-widget a:after { content: none !important; padding-left: 0; }
 	
 h1 { background-color: rgb(255,24,0); }
 .section-feature h2, .archive h2, .category-feature h2, .parent-feature h2, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
