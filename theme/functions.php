@@ -85,4 +85,11 @@ function gist_custom_excerpt_more( $output ) {
 }
 add_filter( 'get_the_excerpt', 'gist_custom_excerpt_more' );
 
+function modify_attachment_link( $markup )
+{
+    return str_replace( '<a', '<a class="plain"', $markup );
+}
+
+add_filter( 'wp_get_attachment_link', 'modify_attachment_link', 10, 1 );
+
 ?>
