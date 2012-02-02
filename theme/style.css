@@ -53,8 +53,8 @@ h1, h2, h3, h4, h5, h6, #access #navList a {
 #access a, #primary h2, .section h2, .archive h2, .single h1, .archive #nav-below h3{ color: white; }
 a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
 a:hover { color: #ffffff; }
-.entry-thumbnail a, #twtr-widget a, #navList a, #logo a, a.plain { font-weight: normal; border-bottom: none; }
-.entry-thumbnail a:after, #twtr-widget a:after, #navList a:after, #logo a:after, a.plain:after { content: none !important; padding-left: 0; }
+.entry-thumbnail a, #twtr-widget a, #navList a, #logo a, a.plain, #wpadminbar a { font-weight: normal; border-bottom: none; background: none !important; }
+.entry-thumbnail a:after, #twtr-widget a:after, #navList a:after, #logo a:after, a.plain:after, #wpadminbar a:after { content: none !important; padding-left: 0; }
 	
 h2 { background-color: rgb(255,24,0); }
 .section-feature h2, .archive h2, .category-feature h2, .parent-feature h1, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
