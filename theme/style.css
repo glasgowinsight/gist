@@ -53,9 +53,10 @@ h1, h2, h3, h4, h5, h6, #access #navList a {
 #access a, #primary h2, .section h2, .archive h2, .single h1, .archive #nav-below h3, #site-generator h2 { color: white; }
 a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
 a:hover { color: #ffffff; }
-.entry-thumbnail a, #twtr-widget a, #navList a, #logo a, a.plain, #wpadminbar a, .addthis_ a { font-weight: normal; border-bottom: none; background: none !important; }
-.entry-thumbnail a:after, #twtr-widget a:after, #navList a:after, #logo a:after, a.plain:after, #wpadminbar a:after, .addthis_ a:after { content: none !important; padding-left: 0; }
-	
+.entry-thumbnail a, #twtr-widget a, #navList a, #logo a, a.plain, #wpadminbar a, .addthis_ a, #at20mc a { font-weight: normal; border-bottom: none; background: none !important; }
+.entry-thumbnail a:after, #twtr-widget a:after, #navList a:after, #logo a:after, a.plain:after, #wpadminbar a:after, .addthis_ a:after, #at20mc a:after { content: none !important; padding-left: 0; }
+a.plain:hover { color: #000000; }
+
 h2 { background-color: rgb(255,24,0); }
 .section-feature h2, .archive h2, .category-feature h2, .parent-feature h1, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
 .section-snippet h2, .category-snippet h2, .parent-snippet h1, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
