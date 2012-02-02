@@ -82,14 +82,14 @@ h2 { background-color: rgb(255,24,0); }
 .section-podcast a:hover, .category-podcast a:hover, .parent-podcast a:hover, .category-podcast #nav-below a:hover { background-color: rgb(255,217,0); }
 .section-about a, .category-about-gist a, .parent-about-gist a, .category-about-gist #nav-below a { border-color: rgb(0,139,43); }
 .section-about a:hover, .category-about-gist a:hover, .parent-about-gist a:hover, .category-about-gist #nav-below a:hover { background-color: rgb(0,139,43); }
-.section-feature a:after, .archive a:after, .category-feature a:after, .parent-feature a:after, .archive #nav-below a:after, .category-feature #nav-below a:after  { content: url(images/arrow_feature.png); padding-left: 2px; }
-.section-feature a:hover:after, .archive a:hover:after, .category-feature a:hover:after, .parent-feature a:hover:after, .archive #nav-below a:hover:after, .category-feature #nav-below a:hover:after  { content: url(images/arrow_hover.png); }
-.section-snippet a:after, .category-snippet a:after, .parent-snippet a:after, .category-snippet #nav-below a:after { content: url(images/arrow_snippet.png); padding-left: 2px; }
-.section-snippet a:hover:after, .category-snippet a:hover:after, .parent-snippet a:hover:after, .category-snippet #nav-below a:hover:after { content: url(images/arrow_hover.png); }
-.section-podcast a:after, .category-podcast a:after, .parent-podcast a:after, .category-podcast #nav-below a:after { content: url(images/arrow_podcast.png); padding-left: 2px; }
-.section-podcast a:hover:after, .category-podcast a:hover:after, .parent-podcast a:hover:after, .category-podcast #nav-below a:hover:after { content: url(images/arrow_hover.png); }
-.section-about a:after, .category-about-gist a:after, .parent-about-gist a:after, .category-about-gist #nav-below a:after { content: url(images/arrow_about.png); padding-left: 2px; }
-.section-about a:hover:after, .category-about-gist a:hover:after, .parent-about-gist a:hover:after, .category-about-gist #nav-below a:hover:after { content: url(images/arrow_hover.png); }
+.section-feature a:after, .archive a:after, .category-feature a:after, .parent-feature a:after { content: url(images/arrow_feature.png); padding-left: 2px; }
+.section-feature a:hover:after, .archive a:hover:after, .category-feature a:hover:after, .parent-feature a:hover:after { content: url(images/arrow_hover.png); }
+.section-snippet a:after, .category-snippet a:after, .parent-snippet a:after { content: url(images/arrow_snippet.png); padding-left: 2px; }
+.section-snippet a:hover:after, .category-snippet a:hover:after, .parent-snippet a:hover:after { content: url(images/arrow_hover.png); }
+.section-podcast a:after, .category-podcast a:after, .parent-podcast a:after { content: url(images/arrow_podcast.png); padding-left: 2px; }
+.section-podcast a:hover:after, .category-podcast a:hover:after, .parent-podcast a:hover:after { content: url(images/arrow_hover.png); }
+.section-about a:after, .category-about-gist a:after, .parent-about-gist a:after { content: url(images/arrow_about.png); padding-left: 2px; }
+.section-about a:hover:after, .category-about-gist a:hover:after, .parent-about-gist a:hover:after { content: url(images/arrow_hover.png); }
 ul.blank li { list-style: none inside; }
 
 #logo { background: rgb(255,24,0); width: 240px; height: 128px; }
