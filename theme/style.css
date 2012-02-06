@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6, #access #navList a {
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 1em; }
 
 #access a, #primary h2, .section h2, .archive h2, .single h1, .archive #nav-below h3, #site-generator h2 { color: white; }
+a { text-decoration: none; }
 a.link-feature, a.link-snippet, a.link-podcast, a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
 a.link-feature:hover, a.link-snippet:hover, a.link-podcast:hover, a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
 
