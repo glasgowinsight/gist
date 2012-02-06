@@ -69,7 +69,7 @@ function remove_filters() {
 }
     
 function gist_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . ' ' . get_the_link_class() . '">More</a>';
+	return ' <a href="'. esc_url( get_permalink() ) . '" ' . get_the_link_class() . '>More</a>';
 }
 
 function gist_auto_excerpt_more( $more ) {

@@ -83,7 +83,7 @@ get_header(); ?>
 							<ul>
 								<?php query_posts('category_name=event'); ?>
 								<?php while ( have_posts() ) : the_post(); ?>
-									<li><a href="<?php the_permalink(); ?>" class="link-podcast" rel="bookmark"><?php the_title(); ?></a></li>
+									<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
 								<?php endwhile; ?>
 							</ul>
 						</div>
@@ -112,7 +112,7 @@ get_header(); ?>
 									'http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn',
 								'rssformat'=>'Y',
 								'rssitems'=>5,
-								'rsscss'=>'link-about'
+								'rsscss'=>'link-container-about'
 							));	?>
 						</div>
                     </div>
