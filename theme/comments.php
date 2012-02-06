@@ -14,7 +14,7 @@
 ?>
 	<div id="comments">
 	<h2 id="comments-title">Discussion</h2>
-	<a name="comments" class="plain"></a>
+	<a name="comments"></a>
 	
 	<?php if ( post_password_required() ) : ?>
 		<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyeleven' ); ?></p>

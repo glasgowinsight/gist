@@ -51,11 +51,8 @@ h1, h2, h3, h4, h5, h6, #access #navList a {
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 1em; }
 
 #access a, #primary h2, .section h2, .archive h2, .single h1, .archive #nav-below h3, #site-generator h2 { color: white; }
-a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
-a:hover { color: #ffffff; }
-.entry-thumbnail a, #twtr-widget a, #navList a, #logo a, a.plain, #wpadminbar a, .addthis_ a, #at20mc a { font-weight: normal; border-bottom: none; background: none !important; }
-.entry-thumbnail a:after, #twtr-widget a:after, #navList a:after, #logo a:after, a.plain:after, #wpadminbar a:after, .addthis_ a:after, #at20mc a:after, #nav-below a:after { content: none !important; padding-left: 0; }
-a.plain:hover { color: #000000; }
+a.link-feature, a.link-snippet, a.link-podcast, a.link-about { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
+a.link-feature:hover, a.link-snippet:hover, a.link-podcast:hover, a.link-about:hover { color: #ffffff; }
 
 h2 { background-color: rgb(255,24,0); }
 .section-feature h2, .archive h2, .category-feature h2, .parent-feature h1, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
@@ -74,22 +71,22 @@ h2 { background-color: rgb(255,24,0); }
 .section-snippet li, .category-snippet li, .category-snippet li { list-style: url(images/bullet_snippet.png) inside; }
 .section-podcast li, .category-podcast li, .category-podcast li { list-style: url(images/bullet_podcast.png) inside; }
 .section-about li, .category-about-gist li, .category-about-gist li { list-style: url(images/bullet_about.png) inside; }
-.section-feature a, .archive a, .category-feature a, .parent-feature a, .archive #nav-below a, .category-feature #nav-below a  { border-color: rgb(255,24,0); }
-.section-feature a:hover, .archive a:hover, .category-feature a:hover, .parent-feature a:hover, .archive #nav-below a:hover, .category-feature #nav-below a:hover  { background-color: rgb(255,24,0); }
-.section-snippet a, .category-snippet a, .parent-snippet a, .category-snippet #nav-below a { border-color: rgb(64,19,175); }
-.section-snippet a:hover, .category-snippet a:hover, .parent-snippet a:hover, .category-snippet #nav-below a:hover { background-color: rgb(64,19,175); }
-.section-podcast a, .category-podcast a, .parent-podcast a, .category-podcast #nav-below a { border-color: rgb(255,217,0); }
-.section-podcast a:hover, .category-podcast a:hover, .parent-podcast a:hover, .category-podcast #nav-below a:hover { background-color: rgb(255,217,0); }
-.section-about a, .category-about-gist a, .parent-about-gist a, .category-about-gist #nav-below a { border-color: rgb(0,139,43); }
-.section-about a:hover, .category-about-gist a:hover, .parent-about-gist a:hover, .category-about-gist #nav-below a:hover { background-color: rgb(0,139,43); }
-.section-feature a:after, .archive a:after, .category-feature a:after, .parent-feature a:after { content: url(images/arrow_feature.png); padding-left: 2px; }
-.section-feature a:hover:after, .archive a:hover:after, .category-feature a:hover:after, .parent-feature a:hover:after { content: url(images/arrow_hover.png); }
-.section-snippet a:after, .category-snippet a:after, .parent-snippet a:after { content: url(images/arrow_snippet.png); padding-left: 2px; }
-.section-snippet a:hover:after, .category-snippet a:hover:after, .parent-snippet a:hover:after { content: url(images/arrow_hover.png); }
-.section-podcast a:after, .category-podcast a:after, .parent-podcast a:after { content: url(images/arrow_podcast.png); padding-left: 2px; }
-.section-podcast a:hover:after, .category-podcast a:hover:after, .parent-podcast a:hover:after { content: url(images/arrow_hover.png); }
-.section-about a:after, .category-about-gist a:after, .parent-about-gist a:after { content: url(images/arrow_about.png); padding-left: 2px; }
-.section-about a:hover:after, .category-about-gist a:hover:after, .parent-about-gist a:hover:after { content: url(images/arrow_hover.png); }
+a.link-feature  { border-color: rgb(255,24,0); }
+a.link-feature:hover { background-color: rgb(255,24,0); }
+a.link-feature:after { content: url(images/arrow_feature.png); padding-left: 2px; }
+a.link-feature:hover:after { content: url(images/arrow_hover.png); }
+a.link-snippet { border-color: rgb(64,19,175); }
+a.link-snippet:hover { background-color: rgb(64,19,175); }
+a.link-snippet:after { content: url(images/arrow_snippet.png); padding-left: 2px; }
+a.link-snippet:hover:after { content: url(images/arrow_hover.png); }
+a.link-podcast { border-color: rgb(255,217,0); }
+a.link-podcast:hover { background-color: rgb(255,217,0); }
+a.link-podcast:after { content: url(images/arrow_podcast.png); padding-left: 2px; }
+a.link-podcast:hover:after { content: url(images/arrow_hover.png); }
+a.link-about { border-color: rgb(0,139,43); }
+a.link-about:hover { background-color: rgb(0,139,43); }
+a.link-about:hover { content: url(images/arrow_about.png); padding-left: 2px; }
+a.link-about:hover:after { content: url(images/arrow_hover.png); }
 ul.blank li { list-style: none inside; }
 
 #logo { background: rgb(255,24,0); width: 240px; height: 128px; }

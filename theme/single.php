@@ -33,7 +33,7 @@ get_header(); ?>
 				<div id="author-info">
 					<h2>Author</h2>
 					<div id="author-avatar">
-						<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" class="plain" rel="author">
+						<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
 							<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyeleven_author_bio_avatar_size', 68 ) ); ?>
 						</a>
 					</div><!-- #author-avatar -->

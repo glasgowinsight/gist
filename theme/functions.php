@@ -69,7 +69,7 @@ function remove_filters() {
 }
     
 function gist_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . '">More</a>';
+	return ' <a href="'. esc_url( get_permalink() ) . ' ' . get_the_link_class() . '">More</a>';
 }
 
 function gist_auto_excerpt_more( $more ) {
@@ -85,11 +85,17 @@ function gist_custom_excerpt_more( $output ) {
 }
 add_filter( 'get_the_excerpt', 'gist_custom_excerpt_more' );
 
-function modify_attachment_link( $markup )
-{
-    return str_replace( '<a', '<a class="plain"', $markup );
+function get_the_link_class( $classes = '' ) {
+	$categories = array('feature', 'snippet', 'podcast', 'about');
+	foreach ($categories as $category) {
+		if ( in_category($category) ){
+			return 'class="link-' . $category . ' ' . $classes . '"';
+		}
+	}
+	
+	if ( $classes ) {
+		return 'class="' . $classes . '"';
+	}
+	return '';
 }
-
-add_filter( 'wp_get_attachment_link', 'modify_attachment_link', 10, 1 );
-
 ?>

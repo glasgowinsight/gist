@@ -31,7 +31,7 @@ get_header(); ?>
 						<div class="entry-content">
 							<ul>
 								<?php while ( have_posts() ) : the_post(); ?>
-									<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
+									<li><a href="<?php the_permalink(); ?>" class="link-feature" rel="bookmark"><?php the_title(); ?></a></li>
 								<?php endwhile; ?>
 							</ul>
 						</div>
@@ -59,11 +59,11 @@ get_header(); ?>
 						</div>
 						<div class="entry-content">
 							<ul class="blank">
-								<li><a href="https://groups.google.com/group/the-gist"><img src="<?php echo resource('images/icon.png');?>"/><span>Join us</span></a></li>
-								<li><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php echo resource('images/rss.png');?>"/><span>Get the latest news</span></a></li>
-								<li><a href="mailto:glasgowinsight@gmail.com"><img src="<?php echo resource('images/email.png');?>"/><span>Talk to us</span></a></li>
-								<li><a href="http://twitter.com/GlasgowGist"><img src="<?php echo resource('images/twitter.png');?>"/><span>Follow us</span></a></li>
-								<li><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238"><img src="<?php echo resource('images/facebook.jpg');?>"/><span>Like us</span></a></li>
+								<li><img src="<?php echo resource('images/icon.png');?>"/><a href="https://groups.google.com/group/the-gist" class="link-podcast"><span>Join us</span></a></li>
+								<li><img src="<?php echo resource('images/rss.png');?>"/><a href="<?php bloginfo('rss2_url'); ?>" class="link-podcast"><span>Get the latest news</span></a></li>
+								<li><img src="<?php echo resource('images/email.png');?>"/><a href="mailto:glasgowinsight@gmail.com" class="link-podcast"><span>Talk to us</span></a></li>
+								<li><img src="<?php echo resource('images/twitter.png');?>"/><a href="http://twitter.com/GlasgowGist" class="link-podcast"><span>Follow us</span></a></li>
+								<li><img src="<?php echo resource('images/facebook.jpg');?>"/><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238" class="link-podcast"><span>Like us</span></a></li>
 							</ul>
 						</div>
                     </div>
@@ -83,7 +83,7 @@ get_header(); ?>
 							<ul>
 								<?php query_posts('category_name=event'); ?>
 								<?php while ( have_posts() ) : the_post(); ?>
-									<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
+									<li><a href="<?php the_permalink(); ?>" class="link-podcast" rel="bookmark"><?php the_title(); ?></a></li>
 								<?php endwhile; ?>
 							</ul>
 						</div>
@@ -94,9 +94,9 @@ get_header(); ?>
 						</div>
 						<div class="entry-content">
 							<ul>
-								<li><a href="http://www.bluesci.org/">Bluesci</a></li>
-								<li><a href="http://www.eusci.org.uk/">EUSci</a></li>
-								<li><a href="http://www.aumag.co.uk/">Au magazine</a></li>
+								<li><a href="http://www.bluesci.org/" class="link-about">Bluesci</a></li>
+								<li><a href="http://www.eusci.org.uk/" class="link-about">EUSci</a></li>
+								<li><a href="http://www.aumag.co.uk/" class="link-about">Au magazine</a></li>
 							</ul>
 						</div>
                     </div>
@@ -111,7 +111,8 @@ get_header(); ?>
 									'http://feeds2.feedburner.com/uos/hp,' .
 									'http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn',
 								'rssformat'=>'Y',
-								'rssitems'=>5
+								'rssitems'=>5,
+								'rsscss'=>'link-about'
 							));	?>
 						</div>
                     </div>
@@ -123,7 +124,7 @@ get_header(); ?>
 							<ul>
 								<?php query_posts('category_name=study'); ?>
 								<?php while ( have_posts() ) : the_post(); ?>
-									<li><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></li>
+									<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
 								<?php endwhile; ?>
 							</ul>
 						</div>
