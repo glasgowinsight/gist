@@ -50,10 +50,10 @@
 <!--[if (lt IE 9) & (!IEMobile)]>
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('large.css'); ?>" />
 <![endif]-->
-<link rel="stylesheet" type="text/css" media="all and (min-width: 970px)" href="<?php echo resource('large.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 724px) and (max-width: 969px)" href="<?php echo resource('medium.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 478px) and (max-width: 723px)" href="<?php echo resource('small.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 478px)" href="<?php echo resource('bleeds.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 69em)" href="<?php echo resource('large.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 51em) and (max-width: 69em)" href="<?php echo resource('medium.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 34em) and (max-width: 51em)" href="<?php echo resource('small.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 34em)" href="<?php echo resource('bleeds.css'); ?>" />
 
 <?php wp_enqueue_script('twitter') ?>
 <?php wp_enqueue_script( 'jquery' ); ?>

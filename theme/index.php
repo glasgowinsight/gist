@@ -18,119 +18,140 @@ get_header(); ?>
 			<div id="content" role="main">
 				<div class="section section-feature">
 					<div><h2 class="cap-right">// Features</h2></div>
-					<?php query_posts('category_name=feature&posts_per_page=10'); ?>
-					<?php $i=0; ?>
-					<?php while ( $i<4 && have_posts() ) : the_post(); ?>
+					<div class="posts">
+						<?php query_posts('category_name=feature&posts_per_page=10'); ?>
+						<?php the_post(); ?>
 						<?php get_template_part( 'content', 'extract' ); ?>
-						<?php $i++; ?>
-					<?php endwhile; ?>
-					<div class="articles">
-						<div class="entry-header">
-							<h3 class="entry-title">More Features</h3>
+						<div class="row">
+							<?php the_post(); ?>
+							<?php get_template_part( 'content', 'extract' ); ?>
+							<?php the_post(); ?>
+							<?php get_template_part( 'content', 'extract' ); ?>
+							<br class="clear"/>
 						</div>
-						<div class="entry-content">
-							<ul>
-								<?php while ( have_posts() ) : the_post(); ?>
-									<li><a href="<?php the_permalink(); ?>" class="link-feature" rel="bookmark"><?php the_title(); ?></a></li>
-								<?php endwhile; ?>
-							</ul>
+						<div class="row">
+							<?php the_post(); ?>
+							<?php get_template_part( 'content', 'extract' ); ?>
+							<div class="articles">
+								<div class="entry-header">
+									<h3 class="entry-title">More Features</h3>
+								</div>
+								<div class="entry-content">
+									<ul>
+										<?php while ( have_posts() ) : the_post(); ?>
+											<li><a href="<?php the_permalink(); ?>" class="link-feature" rel="bookmark"><?php the_title(); ?></a></li>
+										<?php endwhile; ?>
+									</ul>
+								</div>
+							</div>
+							<br class="clear"/>
 						</div>
 					</div>
 				</div>
 				
 				<div class="section  section-snippet">
 					<div><h2 class="cap-right">// Snippets</h2></div>
-					<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'content', 'extract' ); ?>
-					<?php endwhile; ?>
+					<div class="posts">
+						<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+							<?php get_template_part( 'content', 'extract' ); ?>
+						<?php endwhile; ?>
+					</div>
 				</div>
 				
 				<div class="section  section-podcast">
 					<div><h2 class="cap-right">// Communication</h2></div>
-					<?php query_posts('category_name=podcast&posts_per_page=1'); ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'content', 'extract' ); ?>
-					<?php endwhile; ?>
-				
-	                <div class="articles">
-                        <div class="entry-header">
-							<h3 class="entry-title">Keep In Touch</h3>
-						</div>
-						<div class="entry-content">
-							<ul class="blank">
-								<li><img src="<?php echo resource('images/icon.png');?>"/><a href="https://groups.google.com/group/the-gist" class="link-podcast"><span>Join us</span></a></li>
-								<li><img src="<?php echo resource('images/rss.png');?>"/><a href="<?php bloginfo('rss2_url'); ?>" class="link-podcast"><span>Get the latest news</span></a></li>
-								<li><img src="<?php echo resource('images/email.png');?>"/><a href="mailto:glasgowinsight@gmail.com" class="link-podcast"><span>Talk to us</span></a></li>
-								<li><img src="<?php echo resource('images/twitter.png');?>"/><a href="http://twitter.com/GlasgowGist" class="link-podcast"><span>Follow us</span></a></li>
-								<li><img src="<?php echo resource('images/facebook.jpg');?>"/><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238" class="link-podcast"><span>Like us</span></a></li>
-							</ul>
-						</div>
-                    </div>
-                    
-                    <div class="articles">
-                    	<div id="twtr-widget"></div>
+					<div class="posts">
+						<?php query_posts('category_name=podcast&posts_per_page=1'); ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+							<?php get_template_part( 'content', 'extract' ); ?>
+						<?php endwhile; ?>
+					
+		                <div class="articles">
+	                        <div class="entry-header">
+								<h3 class="entry-title">Keep In Touch</h3>
+							</div>
+							<div class="entry-content">
+								<ul class="blank">
+									<li><img src="<?php echo resource('images/icon.png');?>"/><a href="https://groups.google.com/group/the-gist" class="link-podcast"><span>Join us</span></a></li>
+									<li><img src="<?php echo resource('images/rss.png');?>"/><a href="<?php bloginfo('rss2_url'); ?>" class="link-podcast"><span>Get the latest news</span></a></li>
+									<li><img src="<?php echo resource('images/email.png');?>"/><a href="mailto:glasgowinsight@gmail.com" class="link-podcast"><span>Talk to us</span></a></li>
+									<li><img src="<?php echo resource('images/twitter.png');?>"/><a href="http://twitter.com/GlasgowGist" class="link-podcast"><span>Follow us</span></a></li>
+									<li><img src="<?php echo resource('images/facebook.jpg');?>"/><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238" class="link-podcast"><span>Like us</span></a></li>
+								</ul>
+							</div>
+	                    </div>
+	                    
+	                    <div class="articles">
+	                    	<div id="twtr-widget"></div>
+	                    </div>
                     </div>
                 </div>
 				
 				<div class="section  section-about">
 					<div><h2 class="cap-right">// Outside GIST</h2></div>
-					<div class="articles">
-						<div class="entry-header">
-							<h3 class="entry-title">Events</h3>
+					<div class="posts">
+						<div class="row">
+							<div class="articles">
+								<div class="entry-header">
+									<h3 class="entry-title">Events</h3>
+								</div>
+								<div class="entry-content">
+									<ul>
+										<?php query_posts('category_name=event'); ?>
+										<?php while ( have_posts() ) : the_post(); ?>
+											<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
+										<?php endwhile; ?>
+									</ul>
+								</div>
+							</div>
+							<div class="articles">
+								<div class="entry-header">
+									<h3 class="entry-title">Around The Web</h3>
+								</div>
+								<div class="entry-content">
+									<ul>
+										<li><a href="http://www.bluesci.org/" class="link-about">Bluesci</a></li>
+										<li><a href="http://www.eusci.org.uk/" class="link-about">EUSci</a></li>
+										<li><a href="http://www.aumag.co.uk/" class="link-about">Au magazine</a></li>
+									</ul>
+								</div>
+							</div>
+							<br class="clear"/>
 						</div>
-						<div class="entry-content">
-							<ul>
-								<?php query_posts('category_name=event'); ?>
-								<?php while ( have_posts() ) : the_post(); ?>
-									<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
-								<?php endwhile; ?>
-							</ul>
-						</div>
-					</div>
-					<div class="articles">
-                        <div class="entry-header">
-							<h3 class="entry-title">Around The Web</h3>
-						</div>
-						<div class="entry-content">
-							<ul>
-								<li><a href="http://www.bluesci.org/" class="link-about">Bluesci</a></li>
-								<li><a href="http://www.eusci.org.uk/" class="link-about">EUSci</a></li>
-								<li><a href="http://www.aumag.co.uk/" class="link-about">Au magazine</a></li>
-							</ul>
-						</div>
-                    </div>
-                    <div class="articles">
-                        <div class="entry-header">
-							<h3 class="entry-title">University News</h3>
-						</div>
-						<div class="entry-content">
-							<?php echo rssinpage(array(
-								'rssfeed'=>
-									'http://www.gla.ac.uk/rss/news/index.xml,' .
-									'http://feeds2.feedburner.com/uos/hp,' .
-									'http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn',
-								'rssformat'=>'Y',
-								'rssitems'=>5,
-								'rsscss'=>'link-container-about'
-							));	?>
-						</div>
-                    </div>
-                    <div class="articles">
-						<div class="entry-header">
-							<h3 class="entry-title">Participants Needed</h3>
-						</div>
-						<div class="entry-content">
-							<ul>
-								<?php query_posts('category_name=study'); ?>
-								<?php while ( have_posts() ) : the_post(); ?>
-									<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
-								<?php endwhile; ?>
-							</ul>
+						<div class="articles">
+	                        <div class="entry-header">
+								<h3 class="entry-title">University News</h3>
+							</div>
+							<div class="entry-content">
+								<?php echo rssinpage(array(
+									'rssfeed'=>
+										'http://www.gla.ac.uk/rss/news/index.xml,' .
+										'http://feeds2.feedburner.com/uos/hp,' .
+										'http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn',
+									'rssformat'=>'Y',
+									'rssitems'=>5,
+									'rsscss'=>'link-container-about'
+								));	?>
+							</div>
+	                    </div>
+	                    <div class="articles">
+							<div class="entry-header">
+								<h3 class="entry-title">Participants Needed</h3>
+							</div>
+							<div class="entry-content">
+								<ul>
+									<?php query_posts('category_name=study'); ?>
+									<?php while ( have_posts() ) : the_post(); ?>
+										<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
+									<?php endwhile; ?>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<br class="clear"/>
 		</div>
 
 <?php get_footer(); ?>
