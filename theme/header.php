@@ -52,8 +52,8 @@
 <![endif]-->
 <link rel="stylesheet" type="text/css" media="all and (min-width: 69em)" href="<?php echo resource('large.css'); ?>" />
 <link rel="stylesheet" type="text/css" media="all and (min-width: 51em) and (max-width: 69em)" href="<?php echo resource('medium.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 34em) and (max-width: 51em)" href="<?php echo resource('small.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 34em)" href="<?php echo resource('bleeds.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 32em) and (max-width: 51em)" href="<?php echo resource('small.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 32em)" href="<?php echo resource('bleeds.css'); ?>" />
 
 <?php wp_enqueue_script('twitter') ?>
 <?php wp_enqueue_script( 'jquery' ); ?>

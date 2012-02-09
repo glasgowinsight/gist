@@ -1,6 +1,8 @@
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-.section, #site-generator { max-width: 60em; width: auto; margin: 0 auto; }
+.section, #site-generator { max-width: 50em; width: auto; margin: 0 auto; }
 #site-generator { margin: 1em auto; float: none; }
-.posts > .post:first-child, .posts > .articles:first-child { max-width: 60em; width: auto; }
+.posts > .post:first-child, .posts > .articles:first-child { max-width: 50em; width: auto; }
+.extract img { max-width: 15em; height: auto; } 
+.posts > .post:first-child img, .posts > .articles:first-child img { float: left; margin-right: 1em; }
 .posts .post, .posts .articles { width: 50%; max-width: none; }
 .row, .clear { clear:both; } 

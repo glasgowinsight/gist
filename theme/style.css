@@ -104,7 +104,7 @@ ul.blank li { list-style: none inside; }
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
-.extract img { max-width: 14em; height: auto; margin-right: 1em; float: left; } 
+.extract img { max-width: 14em; height: auto; } 
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { max-width: 30em; margin: 1em auto; }
 .post > *, .articles > *, #nav-below div > *, .category-archive-meta > *, #author-info > *, #comments > *, #site-generator > * { margin: 0 1em; }
 #nav-below div { text-align: center; }
