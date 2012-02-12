@@ -1,0 +1,8 @@
+.post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
+.section, #site-generator { max-width: 68em; width: auto; margin: 0 auto; }
+#site-generator { margin: 1em auto; float: none; }
+.section-feature .posts > .post:first-child { max-width: 68em; width: auto; }
+.extract img { max-width: 25em; height: auto; } 
+.section-feature .posts > .post:first-child img { float: left; margin-right: 1em; }
+.posts .post, .posts .articles { width: 33%; max-width: none; }
+.row, .clear { clear:both; } 
