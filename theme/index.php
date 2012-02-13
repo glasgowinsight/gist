@@ -20,14 +20,16 @@ get_header(); ?>
 					<div><h2 class="cap-right">// Features</h2></div>
 					<div class="posts">
 						<?php query_posts('category_name=feature&posts_per_page=10'); ?>
-						<?php the_post(); ?>
-						<?php get_template_part( 'content', 'extract' ); ?>
-						<div class="row">
+						<div class="row3">
 							<?php the_post(); ?>
 							<?php get_template_part( 'content', 'extract' ); ?>
-							<?php the_post(); ?>
-							<?php get_template_part( 'content', 'extract' ); ?>
-							<br class="clear"/>
+							<div class="row">
+								<?php the_post(); ?>
+								<?php get_template_part( 'content', 'extract' ); ?>
+								<?php the_post(); ?>
+								<?php get_template_part( 'content', 'extract' ); ?>
+								<br class="clear"/>
+							</div>
 						</div>
 						<div class="row">
 							<?php the_post(); ?>
