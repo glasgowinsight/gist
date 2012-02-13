@@ -1,5 +1,6 @@
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 .section, #site-generator { max-width: 942px; width: auto; margin: 0 auto; }
 #site-generator { margin: 14px auto; float: none; }
-.posts .post, .posts .articles { width: 33%; max-width: none; }
+.posts .post, .posts .articles, .section-about .row { width: 33%; max-width: none; float: left; }
+.section-about .row .posts .articles { width: 100%; }
 .row3, .clear { clear:both; } 
