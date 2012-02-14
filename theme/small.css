@@ -1,7 +1,7 @@
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 .section, #site-generator { max-width: 696px; width: auto; margin: 0 auto; }
 #site-generator { margin: 14px auto; float: none; }
-.posts > .post:first-child, .posts > .articles:first-child { max-width: 696px; width: auto; }
-.posts > .post:first-child img, .posts > .articles:first-child img { float: left; margin-right: 14px; }
+.row3 > .post:first-child, .posts > .post:first-child, .posts > .articles:first-child { max-width: 696px; width: auto; }
+.row3 > .post:first-child img, .posts > .post:first-child img, .posts > .articles:first-child img { float: left; margin-right: 14px; }
 .posts .post, .posts .articles { width: 50%; max-width: none; }
 .row, .clear { clear:both; } 

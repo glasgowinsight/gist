@@ -1,0 +1,11 @@
+#wrapper { width: 970px; margin: 0 auto; }
+#main { clear: both; position: relative; }
+.post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
+.section, #site-generator { max-width: 942px; width: auto; margin: 0 auto; }
+#site-generator { margin: 14px auto; float: none; }
+.posts .post { width: 314px; max-width: none; }
+.section-feature .posts .post { width: 232px; max-width: none; }
+.section-feature .posts .row3 .post:first-child { width: 478px; max-width: none;  position: relative; right: 246px; }
+.section-feature .posts .row3 .post:last-child, .section-feature .posts .row3 .articles:last-child { position: relative; left: 478px; }
+.section-about .row .articles { width: 100%; }
+.row3, .clear { clear:both; } 
