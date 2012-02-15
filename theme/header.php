@@ -89,7 +89,7 @@
 				</a>
 			</h2>
 			
-			<div id="access" role="navigation" class="cap-right">
+			<div id="access" role="navigation">
 				<ul id="navList" class="blank">
 					<li class="feature"><a href="<?php echo get_category_link_by_slug('feature'); ?>">Features</a></li>
 					<li class="snippet"><a href="<?php echo get_category_link_by_slug('snippet'); ?>">Snippets</a></li>

@@ -11,7 +11,9 @@
 .section-about .row .articles { width: 100%; }
 
 #logo { margin: 14px 0; float: left; }
+#access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px}
 #access { position: relative; float: right; overflow: visible; }
+#access:after { content: ''; }
 #access .feature { background: url(images/nav_features.png) no-repeat; position: absolute; top: 0; right: 250px; width: 400px; }
 #access .snippet { background: url(images/nav_snippets.png) no-repeat; position: absolute; top: 0; right: 100px; width: 400px; }
 #access .podcast { background: url(images/nav_podcasts.png) no-repeat; position: absolute; top: 0; right: -50px; width: 400px; }

@@ -44,8 +44,6 @@ h1, h2, h3, h4, h5, h6, #access #navList a {
   font-weight: bold;
 }
 
-#access li { line-height: 1.2em; padding: 5px 0 5px 25px}
-
 .wp-caption p { font-weight: bold; }
 
 .entry-content { line-height: 21px; }
@@ -98,8 +96,8 @@ ul.blank li { list-style: none inside; }
 #access .podcast { background: rgb(149,136,71); }
 #access .about { background: rgb(57,119,57); }
 
-.cap-right, .cap-left, #nav-below h3 { position: relative; overflow: hidden; }
-.cap-right:after, #nav-below h3:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
+.cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow: hidden; }
+.cap-right:after, #nav-below h3:after, #access:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
 .cap-left:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
 
 .twtr-hd h3 { display: none; }
