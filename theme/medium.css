@@ -1,6 +1,20 @@
+#page { width: 724px; margin: 0 auto; }
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-.section, #site-generator { max-width: 942px; width: auto; margin: 0 auto; }
+.section, #site-generator { width: 724px; width: auto; margin: 0 auto; }
 #site-generator { margin: 14px auto; float: none; }
 .posts .post, .posts .articles, .section-about .row { width: 33%; max-width: none; float: left; }
 .section-about .row .articles { width: 100%; }
-.row3, .clear { clear:both; } 
+#main, .row3, .clear { clear:both; } 
+
+#logo { margin: 14px 0; float: left; }
+#access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px}
+#access { position: relative; float: right; overflow: visible; }
+#access:after { content: ''; }
+#access .feature { background: url(images/nav_features.png) no-repeat; position: absolute; top: 0; right: 50px; width: 400px; }
+#access .snippet { background: url(images/nav_snippets.png) no-repeat; position: absolute; top: 0; right: -50px; width: 400px; }
+#access .podcast { background: url(images/nav_podcasts.png) no-repeat; position: absolute; top: 0; right: -150px; width: 400px; }
+#access .about { background: url(images/nav_about.png) no-repeat; position: absolute; top: 0; right: -250px; width: 400px; }
+#access .feature:hover { background: url(images/nav_features_hover.png) no-repeat; }
+#access .snippet:hover { background: url(images/nav_snippets_hover.png) no-repeat; }
+#access .podcast:hover { background: url(images/nav_podcasts_hover.png) no-repeat; }
+#access .about:hover { background: url(images/nav_about_hover.png) no-repeat; }

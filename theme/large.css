@@ -1,7 +1,7 @@
 #page { width: 970px; margin: 0 auto; }
 #main, .clear { clear: both; }
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-.section, #site-generator { max-width: 942px; width: auto; margin: 0 auto; }
+.section, #site-generator { max-width: 970px; width: auto; margin: 0 auto; }
 #site-generator { margin: 14px auto; float: none; }
 .section-feature { position: relative; }
 .posts .post, .posts .articles, .section-about .row { width: 314px; max-width: none; float: left; }
