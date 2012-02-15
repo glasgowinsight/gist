@@ -9,3 +9,15 @@
 .section-feature .posts .row3 > .post:first-child, .section-feature .posts .row3 > .articles:first-child { width: 478px; max-width: none; position: absolute; left: 232px; }
 .section-feature .posts .row > div + .post, .section-feature .posts .row > div + .articles { position: relative; left: 478px; }
 .section-about .row .articles { width: 100%; }
+
+#logo { margin: 14px 0; }
+#access .feature { background: url(nav_features.png) no-repeat; position: absolute; top: 0; right: 250px; width: 400px; }
+#access .snippet { background: url(nav_snippets.png) no-repeat; position: absolute; top: 0; right: 100px; width: 400px; }
+#access .podcast { background: url(nav_podcasts.png) no-repeat; position: absolute; top: 0; right: -50px; width: 400px; }
+#access .about { background: url(nav_about.png) no-repeat; position: absolute; top: 0; right: -200px; width: 400px; }
+#access .feature:hover { background: url(nav_features_hover.png) no-repeat; }
+#access .snippet:hover { background: url(nav_snippets_hover.png) no-repeat; }
+#access .podcast:hover { background: url(nav_podcasts_hover.png) no-repeat; }
+#access .about:hover { background: url(nav_about_hover.png) no-repeat; }
+
+
