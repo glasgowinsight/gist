@@ -9,3 +9,5 @@
 
 #logo { margin: 14px 0; float: left; }
 #access { float: right; }
+
+.section h2, #primary h2, .archive h2, .single h1 { width: 227px; margin: 14px 0; }

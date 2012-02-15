@@ -18,3 +18,5 @@
 #access .snippet:hover { background: url(images/nav_snippets_hover.png) no-repeat; }
 #access .podcast:hover { background: url(images/nav_podcasts_hover.png) no-repeat; }
 #access .about:hover { background: url(images/nav_about_hover.png) no-repeat; }
+
+.section h2, #primary h2, .archive h2, .single h1 { width: 232px; margin: 14px 0; }
