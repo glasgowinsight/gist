@@ -1,10 +1,11 @@
 #wrapper { width: 970px; margin: 0 auto; }
-#main { clear: both; }
+#main, .clear { clear: both; }
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 .section, #site-generator { max-width: 942px; width: auto; margin: 0 auto; }
 #site-generator { margin: 14px auto; float: none; }
+.section-feature { position: relative; }
 .posts .post, .posts .articles, .section-about .row { width: 314px; max-width: none; float: left; }
 .section-feature .posts .post, .section-feature .posts .articles { width: 232px; max-width: none; }
-.section-feature .posts .row3 > .post:first-child, .section-feature .posts .row3 > .articles:first-child { width: 478px; max-width: none; }
-.section-feature .posts .row > .post:first-child, .section-feature .posts .row > .articles:first-child { }
+.section-feature .posts .row3 > .post:first-child, .section-feature .posts .row3 > .articles:first-child { width: 478px; max-width: none; position: absolute; left: 232px; }
+.section-feature .posts .row > .post:last-child, .section-feature .posts .row > .articles:last-child { position: relative; left: 478px; }
 .section-about .row .articles { width: 100%; }
