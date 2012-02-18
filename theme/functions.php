@@ -148,7 +148,7 @@ function get_navigation(){
 
 	if ( $wp_query->max_num_pages > 1 ) { ?>
 		<nav id="nav-below">
-			<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
+			<h3 class="assistive-text cap-right bleed-left"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
 			<div <?php echo get_the_link_class('nav-previous', 'container-back-'); ?>><?php next_posts_link( 'Older articles' ); ?></div>
 			<div <?php echo get_the_link_class('nav-next', 'container-'); ?>><?php previous_posts_link( 'Newer articles' ); ?></div>
 		</nav><?php

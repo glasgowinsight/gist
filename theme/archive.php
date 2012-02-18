@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<div class="page-header">
-					<h1 class="page-title cap-right">
+					<h1 class="page-title cap-right bleed-left">
 						<?php if ( is_day() ) : ?>
 							<span><?php echo get_the_date(); ?></span>
 						<?php elseif ( is_month() ) : ?>

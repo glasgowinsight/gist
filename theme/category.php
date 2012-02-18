@@ -12,7 +12,7 @@ get_header(); ?>
 			<div id="content" role="main">
 
 				<div class="page-header">
-					<h1 class="page-title cap-right">
+					<h1 class="page-title cap-right bleed-left">
 						<span><?php echo single_cat_title( '', false ); ?></span>
 					</h1>
 
