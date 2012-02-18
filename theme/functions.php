@@ -26,7 +26,7 @@ function gist_setup() {
 }
 
 function filter_query($query) {
-	if ( $query->is_archive ) {
+	if ( $query->is_archive && !isset($query->query_vars['posts_per_page'])) {
 		$query->query_vars['posts_per_page'] = 12;
 	}
  
