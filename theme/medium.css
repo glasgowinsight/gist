@@ -1,9 +1,10 @@
-#page { width: 696px; margin: 0 auto; }
+#page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; overflow-x: hidden; }
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-.section, #site-generator { width: 696px; width: auto; margin: 0 auto; }
 #site-generator { margin: 14px auto; float: none; }
-.posts .post, .posts .articles, .section-about .row { width: 33%; max-width: none; float: left; }
-.section-about .row .articles { width: 100%; }
+.posts .post, .posts .articles, .section-about .row { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .main, .section-about .row { margin-right: 14px; }
+.posts .right { margin-left: 14px; }
+.section-about .row .right { margin: 14px 0; }
 #main, .row3, .clear { clear:both; } 
 
 #logo { margin: 14px 0; float: left; }
@@ -19,4 +20,4 @@
 #access .podcast:hover { background: url(images/nav_podcasts_hover.png) no-repeat; }
 #access .about:hover { background: url(images/nav_about_hover.png) no-repeat; }
 
-.section h2, #primary h2, .archive h2, .single h1 { width: 232px; margin: 14px 0; }
+.section h2, #primary h2, .archive h2, .single h1 { width: 218px; margin: 14px 0; }
