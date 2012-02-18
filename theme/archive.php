@@ -33,6 +33,7 @@ get_header(); ?>
 				</div>
 
 				<?php get_archive_posts(); ?>
+				<?php get_navigation(); ?>
 
 			<?php else : ?>
 
