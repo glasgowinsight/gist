@@ -115,4 +115,18 @@ function get_extract( $classes = '', $thumb = 'small_thumb' ) {	?>
 		<br style="clear:both"/>
 	</div><?php 
 }
+
+function get_archive_posts(){
+	$i = 0;
+	while ( have_posts() ) {
+		the_post();
+		$class = '';
+		if ($i % 2 == 0) $class .= ' clear2';
+		if ($i % 3 == 0) $class .= ' clear3';
+		get_extract($class);
+		$i++;
+	}
+
+	twentyeleven_content_nav( 'nav-below' );
+}
 ?>

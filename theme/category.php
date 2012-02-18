@@ -25,11 +25,7 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_extract(); ?>
-				<?php endwhile; ?>
-
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
+				<?php get_archive_posts(); ?>
 
 			<?php else : ?>
 
