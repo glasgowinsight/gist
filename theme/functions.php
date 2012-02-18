@@ -75,13 +75,13 @@ add_filter('comment_form_default_fields', 'comments');
 function comments(){
 	return array(
 		'author' => '<label for="author">Name *</label>' .
-		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />',
+		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /><br/>',
 		'email'  => '<label for="email">Email *</label>' .
-		            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />',
+		            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /><br/>',
 		'url'    => '<label for="url">Website</label>' .
-		            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+		            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /><br/>',
 		'comment'=> '<label for="comment">Comment</label>' .
-		            '<textarea id="comment" name="comment" cols="34" rows="8" aria-required="true"></textarea>' 
+		            '<textarea id="comment" name="comment" cols="34" rows="8" aria-required="true"></textarea><br/>' 
 	);
 }
 
