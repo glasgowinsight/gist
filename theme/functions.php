@@ -80,10 +80,15 @@ function comments(){
 		            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /><br/>',
 		'url'    => '<label for="url">Website</label>' .
 		            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /><br/>',
-		'comment'=> '<label for="comment">Comment</label>' .
-		            '<textarea id="comment" name="comment" cols="34" rows="8" aria-required="true"></textarea><br/>' 
 	);
 }
+
+add_filter('comment_form_field_comment', 'narrow_textarea');
+function narrow_textarea(){
+	return '<label for="comment">Comment</label>' .
+		   '<textarea id="comment" name="comment" cols="34" rows="8" aria-required="true"></textarea><br/>';
+}
+
 
 add_action( 'after_setup_theme', 'remove_filters' );
 function remove_filters() {
