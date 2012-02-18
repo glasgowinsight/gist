@@ -136,6 +136,24 @@ function get_archive_posts(){
 		$i++;
 	}
 
-	twentyeleven_content_nav( 'nav-below' );
+	global $wp_query;
+
+	$prevClass = '';
+	$nextClass = '';
+	$categories = array('feature', 'snippet', 'podcast');
+	foreach ($categories as $category) {
+		if (is_category($category)){
+			$prevClass = 'link-container-back-' . $category;
+			$nextClass = 'link-container-' . $category;
+			break;
+		}
+	}
+	if ( $wp_query->max_num_pages > 1 ) { ?>
+		<nav id="<?php echo $nav_id; ?>">
+			<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
+			<div class="nav-previous <?php echo $prevClass; ?>"><?php next_posts_link( 'Older articles' ); ?></div>
+			<div class="nav-next <?php echo $nextClass; ?>"><?php previous_posts_link( 'Newer articles' ); ?></div>
+		</nav><?php
+	}
 }
 ?>
