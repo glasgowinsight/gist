@@ -1,7 +1,6 @@
 #page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; overflow-x: hidden; }
 #main, .clear { clear: both; }
 .post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-#latest { float: right; }
 #site-generator { margin: 14px auto; float: none; }
 .section-feature { position: relative; }
 .posts .post, .posts .articles, .section-about .row, .archive .post, .single #latest, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
@@ -12,6 +11,7 @@
 .posts .right { margin-left: 14px; }
 .section-about .row .right { margin: 14px 0; }
 .single #article { width: 450px; max-width: none; float: left; margin-right: 14px; padding: 0; } 
+.single #latest { float: right; }
 .archive .post { margin-left: 14px; }
 .archive .clear3 { clear:left; margin-left: 0; }
 
