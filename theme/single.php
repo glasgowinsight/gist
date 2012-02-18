@@ -44,22 +44,16 @@ get_header(); ?>
 				<?php endif; ?>
 				
 				<?php query_posts('category_name=feature,snippet&posts_per_page=7'); ?>
-				<?php $i=0; ?>
 				<?php if ( have_posts() ) : ?>
 					<div id="latest">
 						<h2 class="cap-right">Latest Articles</h2>  
-						<?php while ( $i<3 && have_posts() ) : the_post(); ?>
-		        			<?php get_extract(); ?>
-		        			<?php $i++; ?>
-		    			<?php endwhile; ?>
+						<?php get_archive_posts(3); ?>
 		    		</div>
 	    		<?php endif; ?>		
 				<?php if ( have_posts() ) : ?>
 					<div id="other">
 						<h2 class="cap-right">Other Articles</h2>  
-						<?php while ( have_posts() ) : the_post(); ?>
-		        			<?php get_extract(); ?>
-		    			<?php endwhile; ?>
+						<?php get_archive_posts(); ?>
 		    		</div>
 	    		<?php endif; ?>
 				

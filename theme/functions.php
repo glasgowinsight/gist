@@ -130,9 +130,9 @@ function get_extract( $classes = '', $thumb = 'small_thumb' ) {	?>
 	</div><?php 
 }
 
-function get_archive_posts(){
+function get_archive_posts($limit=9999){
 	$i = 0;
-	while ( have_posts() ) {
+	while ( have_posts() && $i < $limit) {
 		the_post();
 		$class = '';
 		if ($i % 2 == 0) $class .= ' clear2';
