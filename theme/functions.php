@@ -71,6 +71,11 @@ function fix_caption_width($val, $attr, $content = null) {
 	. do_shortcode( $content ) . '<p class="wp-caption-text">// ' . $caption . '</p></div>';
 }
 
+add_filter('comment_form_field_comment', 'narrow_textarea');
+function narrow_textarea(){
+	return '<textarea aria-required="true" rows="8" cols="34" name="comment" id="comment"></textarea>';
+}
+
 add_action( 'after_setup_theme', 'remove_filters' );
 function remove_filters() {
 	remove_filter( 'excerpt_more', 'twentyeleven_auto_excerpt_more' );
