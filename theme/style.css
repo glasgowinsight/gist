@@ -52,8 +52,9 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 .entry-content { line-height: 21px; }
 .entry-content p, .entry-content br, .category-archive-meta p, .category-archive-meta br, #author-info p, #author-info br { margin-bottom: 14px; }
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
+.single #content .entry-header { text-transform: none; text-align: left; }
 
-#access a, h1, .archive #nav-below h3, #site-generator h2 { color: white; }
+#access a, h1, .single h2, .archive #nav-below h3, #site-generator h2 { color: white; }
 a { text-decoration: none; }
 a.link-feature, .link-container-feature a, a.link-snippet, .link-container-snippet a, a.link-podcast, .link-container a, a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
 a.link-feature:hover, .link-container-feature a:hover, a.link-snippet:hover, .link-container-snippet a:hover, a.link-podcast:hover, .link-container-podcast a:hover, a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
@@ -61,10 +62,10 @@ a.link-back-feature, .link-container-back-feature a, a.link-back-snippet, .link-
 a.link-back-feature:hover, .link-container-back-feature a:hover, a.link-back-snippet:hover, .link-container-back-snippet a:hover, a.link-back-podcast:hover, .link-container-back-podcast a:hover, a.link-back-about:hover, .link-container-back-about a:hover { color: #ffffff; }
 
 h1 { background-color: rgb(255,24,0); }
-.section-feature h1, .archive h1, .category-feature h1, .parent-feature h1, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
-.section-snippet h1, .category-snippet h1, .parent-snippet h1, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
-.section-podcast h1, .category-podcast h1, .parent-podcast h1, .category-podcast #nav-below h3 { background-color: rgb(255,217,0); }
-.section-about h1, .category-about-gist h1, .parent-about-gist h1, .category-about-gist #nav-below h3 { background-color: rgb(0,139,43); }
+.section-feature h1, .archive h1, .category-feature h1, .parent-feature h1, .parent-feature h2, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
+.section-snippet h1, .category-snippet h1, .parent-snippet h1, .parent-snippet h2, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
+.section-podcast h1, .category-podcast h1, .parent-podcast h1, .parent-podcast h2, .category-podcast #nav-below h3 { background-color: rgb(255,217,0); }
+.section-about h1, .category-about-gist h1, .parent-about-gist h1, .parent-about-gist h2, .category-about-gist #nav-below h3 { background-color: rgb(0,139,43); }
 .parent-feature .wp-caption p { background-color: rgb(255,128,115); }
 .parent-snippet .wp-caption p { background-color: rgb(140,109,215); }
 .parent-podcast .wp-caption p { background-color: rgb(255,234,115); }
@@ -132,8 +133,8 @@ ul.blank li { list-style: none inside; }
 .twtr-doc { width: 100% !important; margin: 14px auto; }
 .entry-thumbnail { text-align: center; margin-bottom: 14px; }
 #access { max-width: 227px; margin: 14px auto; }
-#access li, h1, #nav-below h3 { padding: 2px 20px 2px 5px; }
-h1, #nav-below h3 { max-width: 202px; margin: 14px auto; }
+#access li, h1, .single h2, #nav-below h3 { padding: 2px 20px 2px 5px; }
+h1, .single h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 .post, .articles { margin: 14px auto; } 
 #logo { margin: 14px auto; }
 .single #content .post img { max-width: 100%; height: auto; margin: auto; display: block; }
