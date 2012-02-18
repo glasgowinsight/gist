@@ -113,7 +113,7 @@ a.link-back-about:hover:before, .link-container-back-about a:hover:before { cont
 
 ul.blank li { list-style: none inside; }
 
-#logo { background: rgb(255,24,0); width: 240px; height: 128px; }
+#logo { background: rgb(255,24,0); width: 212px; height: 128px; max-width: none; }
 #access .feature { background: rgb(149,71,71); }
 #access .snippet { background: rgb(62,49,103); }
 #access .podcast { background: rgb(149,136,71); }
