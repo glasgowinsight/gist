@@ -68,6 +68,6 @@
 		<p class="nocomments"><?php _e( 'Comments are closed.', 'twentyeleven' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+	<?php comment_form(array('comment_field' => '<textarea aria-required="true" rows="8" cols="34" name="comment" id="comment"></textarea>')); ?>
 
 </div><!-- #comments -->

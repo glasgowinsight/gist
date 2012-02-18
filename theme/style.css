@@ -110,8 +110,6 @@ a.link-back-about:hover, .link-container-back-about a:hover { background-color: 
 a.link-back-about:before, .link-container-back-about a:before { content: url(images/arrow_about_back.png); padding-right: 2px; }
 a.link-back-about:hover:before, .link-container-back-about a:hover:before { content: url(images/arrow_hover_back.png); }
 
-
-
 ul.blank li { list-style: none inside; }
 
 #logo { background: rgb(255,24,0); width: 240px; height: 128px; }
@@ -138,7 +136,8 @@ ul.blank li { list-style: none inside; }
 h1, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 .post, .articles { margin: 14px auto; } 
 #logo { margin: 14px auto; }
-.wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; }
+.single #content .post img { max-width: 100%; height: auto; margin: auto; }
+.wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; max-width: 100%; height: auto; }
 .wp-caption p, .wp-caption br{ line-height: 21px; margin: 0; }
 .wp-caption:before { position: absolute; left: 0; top: 0; }
 .wp-caption:after{ position: absolute; right: 0; top: 0; }

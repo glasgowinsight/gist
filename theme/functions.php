@@ -94,11 +94,11 @@ function gist_custom_excerpt_more( $output ) {
 }
 add_filter( 'get_the_excerpt', 'gist_custom_excerpt_more' );
 
-function get_the_link_class( $classes = '' ) {
+function get_the_link_class( $classes = '', $container = '' ) {
 	$categories = array('feature', 'snippet', 'podcast', 'about');
 	foreach ($categories as $category) {
-		if ( in_category($category) ){
-			return 'class="link-' . $category . ' ' . $classes . '"';
+		if ( in_category($category) || is_category($category) ){
+			return 'class="link-' . $container . $category . ' ' . $classes . '"';
 		}
 	}
 	
@@ -138,21 +138,11 @@ function get_archive_posts(){
 
 	global $wp_query;
 
-	$prevClass = '';
-	$nextClass = '';
-	$categories = array('feature', 'snippet', 'podcast');
-	foreach ($categories as $category) {
-		if (is_category($category)){
-			$prevClass = 'link-container-back-' . $category;
-			$nextClass = 'link-container-' . $category;
-			break;
-		}
-	}
 	if ( $wp_query->max_num_pages > 1 ) { ?>
 		<nav id="nav-below">
 			<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
-			<div class="nav-previous <?php echo $prevClass; ?>"><?php next_posts_link( 'Older articles' ); ?></div>
-			<div class="nav-next <?php echo $nextClass; ?>"><?php previous_posts_link( 'Newer articles' ); ?></div>
+			<div <?php echo get_the_link_class('nav-previous', 'container-back-'); ?>><?php next_posts_link( 'Older articles' ); ?></div>
+			<div <?php echo get_the_link_class('nav-next', 'container-'); ?>><?php previous_posts_link( 'Newer articles' ); ?></div>
 		</nav><?php
 	}
 }
