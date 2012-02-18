@@ -22,19 +22,19 @@ get_header(); ?>
 						<?php query_posts('category_name=feature&posts_per_page=10'); ?>
 						<div class="row3">
 							<?php the_post(); ?>
-							<?php get_extract(); ?>
+							<?php get_extract('main'); ?>
 							<div class="row">
 								<?php the_post(); ?>
-								<?php get_extract(); ?>
+								<?php get_extract('left'); ?>
 								<?php the_post(); ?>
-								<?php get_extract(); ?>
+								<?php get_extract('right'); ?>
 								<br class="clear"/>
 							</div>
 						</div>
 						<div class="row">
 							<?php the_post(); ?>
-							<?php get_extract(); ?>
-							<div class="articles">
+							<?php get_extract('left'); ?>
+							<div class="articles right">
 								<div class="entry-header">
 									<h3 class="entry-title">More Features</h3>
 								</div>
@@ -55,9 +55,12 @@ get_header(); ?>
 					<div><h2 class="cap-right">// Snippets</h2></div>
 					<div class="posts">
 						<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
-						<?php while ( have_posts() ) : the_post(); ?>
-							<?php get_extract(); ?>
-						<?php endwhile; ?>
+						<?php the_post(); ?>
+						<?php get_extract('main'); ?>
+						<?php the_post(); ?>
+						<?php get_extract('left'); ?>
+						<?php the_post(); ?>
+						<?php get_extract('right'); ?>
 					</div>
 				</div>
 				
@@ -65,11 +68,10 @@ get_header(); ?>
 					<div><h2 class="cap-right">// Communication</h2></div>
 					<div class="posts">
 						<?php query_posts('category_name=podcast&posts_per_page=1'); ?>
-						<?php while ( have_posts() ) : the_post(); ?>
-							<?php get_extract(); ?>
-						<?php endwhile; ?>
-					
-		                <div class="articles">
+						<?php the_post(); ?>
+						<?php get_extract('main'); ?>
+						
+		                <div class="articles left">
 	                        <div class="entry-header">
 								<h3 class="entry-title">Keep In Touch</h3>
 							</div>
@@ -84,7 +86,7 @@ get_header(); ?>
 							</div>
 	                    </div>
 	                    
-	                    <div class="articles">
+	                    <div class="articles right">
 	                    	<div id="twtr-widget"></div>
 	                    </div>
                     </div>
@@ -94,7 +96,7 @@ get_header(); ?>
 					<div><h2 class="cap-right">// Outside GIST</h2></div>
 					<div class="posts">
 						<div class="row">
-							<div class="articles">
+							<div class="articles left">
 								<div class="entry-header">
 									<h3 class="entry-title">Events</h3>
 								</div>
@@ -107,7 +109,7 @@ get_header(); ?>
 									</ul>
 								</div>
 							</div>
-							<div class="articles">
+							<div class="articles right">
 								<div class="entry-header">
 									<h3 class="entry-title">Around The Web</h3>
 								</div>
@@ -121,7 +123,7 @@ get_header(); ?>
 							</div>
 							<br class="clear"/>
 						</div>
-						<div class="articles">
+						<div class="articles left">
 	                        <div class="entry-header">
 								<h3 class="entry-title">University News</h3>
 							</div>
@@ -137,7 +139,7 @@ get_header(); ?>
 								));	?>
 							</div>
 	                    </div>
-	                    <div class="articles">
+	                    <div class="articles right">
 							<div class="entry-header">
 								<h3 class="entry-title">Participants Needed</h3>
 							</div>

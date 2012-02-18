@@ -1,12 +1,13 @@
 #page { width: 440px; max-width: none; margin: 0 auto; padding: 0 14px; }
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
-.row3 > .post:first-child, .posts > .post:first-child, .posts > .articles:first-child { width: 454px; }
-.row3 > .post:first-child img, .posts > .post:first-child img, .posts > .articles:first-child img { float: left; margin-right: 14px; }
-.posts .post, .posts .articles { width: 50%; max-width: none; }
+.main img { float: left; margin-right: 14px; }
+.posts .post, .posts .articles { width: 213px; max-width: none; }
+.posts .main { width: 440px; }
+.left { margin-right: 14px; }
 .row, .clear { clear:both; } 
 
 #logo { margin: 14px 0; float: left; }
 #access { float: right; }
 
-.section h2, #primary h2, .archive h2, .single h1 { width: 227px; margin: 14px 0; }
+.section h2, #primary h2, .archive h2, .single h1 { width: 440px; margin: 14px 0; }
