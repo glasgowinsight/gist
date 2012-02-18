@@ -1,5 +1,5 @@
 #page { width: 440px; max-width: none; margin: 0 auto; padding: 0 14px; }
-.post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
+.post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
 .main img { float: left; margin-right: 14px; }
 .posts .post, .posts .articles, .archive .post { width: 213px; max-width: none; margin: 14px 0; padding: 0; }
@@ -11,4 +11,6 @@
 #logo { margin: 14px 0; float: left; }
 #access { float: right; }
 
-h1 { width: 440px; margin: 14px 0; }
+h1, #nav-below h3 { width: 440px; margin: 14px 0; }
+#nav-below .nav-previous { float: left; }
+#nav-below .nav-next { float: right; }

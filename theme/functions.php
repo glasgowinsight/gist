@@ -25,6 +25,15 @@ function gist_setup() {
 	wp_register_script('load_twitter', resource('js/twitter.js'), array(), False, True);
 }
 
+function filter_query($query) {
+	if ( $query->is_archive ) {
+		$query->query_vars['posts_per_page'] = 12;
+	}
+ 
+	return $query;
+}
+add_filter('pre_get_posts', 'filter_query');
+
 function resource($resource) {
 	return get_stylesheet_directory_uri() . '/' . $resource;
 }

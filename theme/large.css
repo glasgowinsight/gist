@@ -1,6 +1,6 @@
 #page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; overflow-x: hidden; }
 #main, .clear { clear: both; }
-.post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
+.post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
 .section-feature { position: relative; }
 .posts .post, .posts .articles, .section-about .row, .archive .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
@@ -26,5 +26,6 @@
 #access .podcast:hover { background: url(images/nav_podcasts_hover.png) no-repeat; }
 #access .about:hover { background: url(images/nav_about_hover.png) no-repeat; }
 
-h1 { width: 300px; max-width: none; margin: 14px 0; }
-
+h1, #nav-below h3 { width: 300px; max-width: none; margin: 14px 0; }
+#nav-below .nav-previous { float: left; }
+#nav-below .nav-next { float: right; }
