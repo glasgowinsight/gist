@@ -140,7 +140,10 @@ function get_archive_posts($limit=9999){
 		get_extract($class);
 		$i++;
 	}
+}
 
+
+function get_navigation(){
 	global $wp_query;
 
 	if ( $wp_query->max_num_pages > 1 ) { ?>

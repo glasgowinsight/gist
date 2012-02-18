@@ -26,6 +26,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<?php get_archive_posts(); ?>
+				<?php get_navigation(); ?>
 
 			<?php else : ?>
 

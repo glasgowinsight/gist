@@ -50,6 +50,7 @@ get_header(); ?>
 				<?php endif; ?>
 
 				<?php get_archive_posts(); ?>
+				<?php get_navigation(); ?>
 
 			<?php else : ?>
 
