@@ -17,7 +17,7 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 				<div class="section section-feature">
-					<div><h2 class="cap-right">// Features</h2></div>
+					<div><h1 class="cap-right">// Features</h1></div>
 					<div class="posts">
 						<?php query_posts('category_name=feature&posts_per_page=10'); ?>
 						<div class="row3">
@@ -52,7 +52,7 @@ get_header(); ?>
 				</div>
 				
 				<div class="section  section-snippet">
-					<div><h2 class="cap-right">// Snippets</h2></div>
+					<div><h1 class="cap-right">// Snippets</h1></div>
 					<div class="posts">
 						<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
 						<?php the_post(); ?>
@@ -65,7 +65,7 @@ get_header(); ?>
 				</div>
 				
 				<div class="section  section-podcast">
-					<div><h2 class="cap-right">// Communication</h2></div>
+					<div><h1 class="cap-right">// Communication</h1></div>
 					<div class="posts">
 						<?php query_posts('category_name=podcast&posts_per_page=1'); ?>
 						<?php the_post(); ?>
@@ -93,7 +93,7 @@ get_header(); ?>
                 </div>
 				
 				<div class="section  section-about">
-					<div><h2 class="cap-right">// Outside GIST</h2></div>
+					<div><h1 class="cap-right">// Outside GIST</h1></div>
 					<div class="posts">
 						<div class="row">
 							<div class="articles left">
