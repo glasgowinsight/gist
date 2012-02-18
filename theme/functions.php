@@ -73,7 +73,7 @@ function fix_caption_width($val, $attr, $content = null) {
 
 add_filter('comment_form_field_comment', 'narrow_textarea');
 function narrow_textarea(){
-	return '<textarea aria-required="true" rows="8" cols="34" name="comment" id="comment"></textarea>';
+	return '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" name="comment" cols="34" rows="8" aria-required="true"></textarea></p>'
 }
 
 add_action( 'after_setup_theme', 'remove_filters' );
