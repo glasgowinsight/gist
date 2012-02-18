@@ -1,6 +1,5 @@
-#page { width: 454px; margin: 0 auto; }
+#page { width: 440px; max-width: none; margin: 0 auto; padding: 0 14px; }
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-.section, #site-generator { width: 454px; auto; margin: 0 auto; }
 #site-generator { margin: 14px auto; float: none; }
 .row3 > .post:first-child, .posts > .post:first-child, .posts > .articles:first-child { width: 454px; }
 .row3 > .post:first-child img, .posts > .post:first-child img, .posts > .articles:first-child img { float: left; margin-right: 14px; }

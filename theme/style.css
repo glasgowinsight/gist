@@ -44,6 +44,9 @@ h1, h2, h3, h4, h5, h6, #access #navList a {
   font-weight: bold;
 }
 
+h1 { font-size: 24px; margin-bottom: 14px; }
+h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: uppercase; }
+
 .wp-caption p { font-weight: bold; }
 
 .entry-content { line-height: 21px; }
@@ -105,14 +108,14 @@ ul.blank li { list-style: none inside; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
 .extract img { max-width: 100%; height: auto; } 
-.post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { max-width: 454px; margin: 14px auto; }
-.post > *, .articles > *, #nav-below div > *, .category-archive-meta > *, #author-info > *, #comments > *, #site-generator > * { margin: 0 14px; }
+#page { max-width: 454px; margin: 0 auto; }
 #nav-below div { text-align: center; }
 .twtr-doc { width: 100% !important; margin: 14px auto; }
 .entry-thumbnail { text-align: center; margin-bottom: 14px; }
 #access { max-width: 227px; margin: 14px auto; }
 #access li, .section h2, #primary h2, .archive h2, .single h1, #nav-below h3 { padding: 2px 20px 2px 5px; }
-.section h2, #primary h2, .archive h2, .single h1, #nav-below h3 { max-width: 227px; margin: 14px auto; }
+.section h2, #primary h2, .archive h2, .single h1, #nav-below h3 { max-width: 202px; margin: 14px auto; }
+.post, .articles { margin: 14px auto; padding: 0 14px; } 
 #logo { margin: 14px auto; }
 .wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; }
 .wp-caption p, .wp-caption br{ line-height: 21px; margin: 0; }
