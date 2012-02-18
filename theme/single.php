@@ -62,6 +62,7 @@ get_header(); ?>
 				    		</div>
 			    		<?php endif; ?>
 		    		</div>
+		    		<br style="clear:both"/>
 	    		</div>
 	    		
 				<?php if ( have_posts() ) : ?>

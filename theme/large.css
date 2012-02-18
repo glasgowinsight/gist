@@ -4,8 +4,8 @@ body { overflow-x: hidden; }
 .post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
 .section-feature { position: relative; }
-.posts .post, .posts .articles, .section-about .row, .archive .post, .single #sidebar, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
-.section-feature .posts .post, .section-feature .posts .articles, .single #latest, .single #other .post { width: 221px; max-width: none; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .single #latest, .single .references, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
+.section-feature .posts .post, .section-feature .posts .articles, .single #latest, .single .references, .single #other .post { width: 221px; max-width: none; }
 .section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 .section-feature .posts .right { position: relative; left: 456px; }
 .section-feature .posts .left, .posts .main, .section-about .row { margin-right: 14px; }
