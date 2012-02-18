@@ -55,8 +55,10 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 
 #access a, h1, .archive #nav-below h3, #site-generator h2 { color: white; }
 a { text-decoration: none; }
-a.link-feature, a.link-snippet, a.link-podcast, a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
-a.link-feature:hover, a.link-snippet:hover, a.link-podcast:hover, a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
+a.link-feature, .link-container-feature a, a.link-snippet, .link-container-snippet a, a.link-podcast, .link-container a, a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
+a.link-feature:hover, .link-container-feature a:hover, a.link-snippet:hover, .link-snippet-feature a:hover, a.link-podcast:hover, .link-container-podcast a:hover, a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
+a.link-back-feature, .link-container-back-feature a, a.link-back-snippet, .link-container-back-snippet a, a.link-back-podcast, .link-back-container a, a.link-back-about, .link-container-back-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
+a.link-back-feature:hover, .link-container-back-feature a:hover, a.link-back-snippet:hover, .link-back-snippet-feature a:hover, a.link-back-podcast:hover, .link-container-back-podcast a:hover, a.link-back-about:hover, .link-container-back-about a:hover { color: #ffffff; }
 
 h1 { background-color: rgb(255,24,0); }
 .section-feature h1, .archive h1, .category-feature h1, .parent-feature h1, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
@@ -91,7 +93,7 @@ a.link-about, .link-container-about a { border-color: rgb(0,139,43); }
 a.link-about:hover, .link-container-about a:hover { background-color: rgb(0,139,43); }
 a.link-about:after, .link-container-about a:after { content: url(images/arrow_about.png); padding-left: 2px; }
 a.link-about:hover:after, .link-container-about a:hover:after { content: url(images/arrow_hover.png); }
-a.link-back-feature-back, .link-container-back-feature  a { border-color: rgb(255,24,0); }
+a.link-back-feature, .link-container-back-feature  a { border-color: rgb(255,24,0); }
 a.link-back-feature:hover, .link-container-back-feature a:hover { background-color: rgb(255,24,0); }
 a.link-back-feature:before, .link-container-back-feature a:before { content: url(images/arrow_features_back.png); padding-right: 2px; }
 a.link-back-feature:hover:before, .link-container-back-feature a:hover:before { content: url(images/arrow_hover_back.png); }
