@@ -1,0 +1,2 @@
+.bleed-right:after { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
+.bleed-left:before { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; right: 50px; top: 0; }
