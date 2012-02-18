@@ -149,7 +149,7 @@ function get_archive_posts(){
 		}
 	}
 	if ( $wp_query->max_num_pages > 1 ) { ?>
-		<nav id="<?php echo $nav_id; ?>">
+		<nav id="nav-below">
 			<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
 			<div class="nav-previous <?php echo $prevClass; ?>"><?php next_posts_link( 'Older articles' ); ?></div>
 			<div class="nav-next <?php echo $nextClass; ?>"><?php previous_posts_link( 'Newer articles' ); ?></div>
