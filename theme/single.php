@@ -21,7 +21,7 @@ get_header(); ?>
 							<h2>Related Articles</h2>  
 							<?php foreach ($rel as $post) : ?>
 			        			<?php setup_postdata($post); ?>
-			        			<?php get_template_part( 'content', 'extract' ); ?>
+			        			<?php get_extract(); ?>
 			    			<?php endforeach; ?>
 			    		</div>
     			<?php endif; ?>
@@ -49,7 +49,7 @@ get_header(); ?>
 					<div id="latest">
 						<h2>Latest Articles</h2>  
 						<?php while ( $i<3 && have_posts() ) : the_post(); ?>
-		        			<?php get_template_part( 'content', 'extract' ); ?>
+		        			<?php get_extract(); ?>
 		        			<?php $i++; ?>
 		    			<?php endwhile; ?>
 		    		</div>
@@ -58,7 +58,7 @@ get_header(); ?>
 					<div id="other">
 						<h2>Other Articles</h2>  
 						<?php while ( have_posts() ) : the_post(); ?>
-		        			<?php get_template_part( 'content', 'extract' ); ?>
+		        			<?php get_extract(); ?>
 		    			<?php endwhile; ?>
 		    		</div>
 	    		<?php endif; ?>

@@ -98,4 +98,21 @@ function get_the_link_class( $classes = '' ) {
 	}
 	return '';
 }
+
+function get_extract( $classes = '' ) {	?>
+	<div id="post-<?php the_ID(); ?>" <?php post_class('extract ' . $classes); ?>>
+		<div class="entry-header">
+			<h3 class="entry-title"><?php the_title(); ?></h3>
+		</div>
+		<div class="entry-thumbnail">
+			<a href="<?php the_permalink(); ?>" rel="bookmark">
+				<?php the_post_thumbnail( 'medium_thumb' ); ?>
+			</a>
+		</div>
+		<div class="entry-content">
+			<?php the_excerpt(); ?>
+		</div>
+		<br style="clear:both"/>
+	</div><?php 
+}
 ?>

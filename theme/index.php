@@ -22,18 +22,18 @@ get_header(); ?>
 						<?php query_posts('category_name=feature&posts_per_page=10'); ?>
 						<div class="row3">
 							<?php the_post(); ?>
-							<?php get_template_part( 'content', 'extract' ); ?>
+							<?php get_extract(); ?>
 							<div class="row">
 								<?php the_post(); ?>
-								<?php get_template_part( 'content', 'extract' ); ?>
+								<?php get_extract(); ?>
 								<?php the_post(); ?>
-								<?php get_template_part( 'content', 'extract' ); ?>
+								<?php get_extract(); ?>
 								<br class="clear"/>
 							</div>
 						</div>
 						<div class="row">
 							<?php the_post(); ?>
-							<?php get_template_part( 'content', 'extract' ); ?>
+							<?php get_extract(); ?>
 							<div class="articles">
 								<div class="entry-header">
 									<h3 class="entry-title">More Features</h3>
@@ -56,7 +56,7 @@ get_header(); ?>
 					<div class="posts">
 						<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-							<?php get_template_part( 'content', 'extract' ); ?>
+							<?php get_extract(); ?>
 						<?php endwhile; ?>
 					</div>
 				</div>
@@ -66,7 +66,7 @@ get_header(); ?>
 					<div class="posts">
 						<?php query_posts('category_name=podcast&posts_per_page=1'); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-							<?php get_template_part( 'content', 'extract' ); ?>
+							<?php get_extract(); ?>
 						<?php endwhile; ?>
 					
 		                <div class="articles">
