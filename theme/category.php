@@ -12,9 +12,9 @@ get_header(); ?>
 			<div id="content" role="main">
 
 				<div class="page-header">
-					<h2 class="page-title cap-right">
+					<h1 class="page-title cap-right">
 						<span><?php echo single_cat_title( '', false ); ?></span>
-					</h2>
+					</h1>
 
 					<?php
 						$category_description = category_description();
@@ -35,7 +35,7 @@ get_header(); ?>
 
 				<div id="post-0" class="post no-results not-found">
 					<div class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
+						<h3 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h3>
 					</div><!-- .entry-header -->
 
 					<div class="entry-content">

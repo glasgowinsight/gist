@@ -53,16 +53,16 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 .entry-content p, .entry-content br, .category-archive-meta p, .category-archive-meta br, #author-info p, #author-info br { margin-bottom: 14px; }
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
 
-#access a, #primary h2, .section h2, .archive h2, .single h1, .archive #nav-below h3, #site-generator h2 { color: white; }
+#access a, h1, .archive #nav-below h3, #site-generator h2 { color: white; }
 a { text-decoration: none; }
 a.link-feature, a.link-snippet, a.link-podcast, a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
 a.link-feature:hover, a.link-snippet:hover, a.link-podcast:hover, a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
 
-h2 { background-color: rgb(255,24,0); }
-.section-feature h2, .archive h2, .category-feature h2, .parent-feature h1, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
-.section-snippet h2, .category-snippet h2, .parent-snippet h1, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
-.section-podcast h2, .category-podcast h2, .parent-podcast h1, .category-podcast #nav-below h3 { background-color: rgb(255,217,0); }
-.section-about h2, .category-about-gist h2, .parent-about-gist h1, .category-about-gist #nav-below h3 { background-color: rgb(0,139,43); }
+h1 { background-color: rgb(255,24,0); }
+.section-feature h1, .archive h1, .category-feature h1, .parent-feature h1, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
+.section-snippet h1, .category-snippet h1, .parent-snippet h1, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
+.section-podcast h1, .category-podcast h1, .parent-podcast h1, .category-podcast #nav-below h3 { background-color: rgb(255,217,0); }
+.section-about h1, .category-about-gist h1, .parent-about-gist h1, .category-about-gist #nav-below h3 { background-color: rgb(0,139,43); }
 .parent-feature .wp-caption p { background-color: rgb(255,128,115); }
 .parent-snippet .wp-caption p { background-color: rgb(140,109,215); }
 .parent-podcast .wp-caption p { background-color: rgb(255,234,115); }
@@ -113,8 +113,8 @@ ul.blank li { list-style: none inside; }
 .twtr-doc { width: 100% !important; margin: 14px auto; }
 .entry-thumbnail { text-align: center; margin-bottom: 14px; }
 #access { max-width: 227px; margin: 14px auto; }
-#access li, .section h2, #primary h2, .archive h2, .single h1, #nav-below h3 { padding: 2px 20px 2px 5px; }
-.section h2, #primary h2, .archive h2, .single h1, #nav-below h3 { max-width: 202px; margin: 14px auto; }
+#access li, h1, #nav-below h3 { padding: 2px 20px 2px 5px; }
+h1, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 .post, .articles { margin: 14px auto; padding: 0 14px; } 
 #logo { margin: 14px auto; }
 .wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; }

@@ -24,7 +24,7 @@ get_header(); ?>
 				?>
 
 				<div class="page-header">
-					<h2 class="page-title author cap-right"><span><?php the_author() ?></span></h2>
+					<h1 class="page-title author cap-right"><span><?php the_author() ?></span></h1>
 				</div>
 
 				<?php
@@ -43,7 +43,7 @@ get_header(); ?>
 						<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyeleven_author_bio_avatar_size', 60 ) ); ?>
 					</div><!-- #author-avatar -->
 					<div id="author-description">
-						<h2><?php printf( __( 'About %s', 'twentyeleven' ), get_the_author() ); ?></h2>
+						<h3><?php printf( __( 'About %s', 'twentyeleven' ), get_the_author() ); ?></h3>
 						<?php the_author_meta( 'description' ); ?>
 					</div><!-- #author-description	-->
 				</div><!-- #entry-author-info -->
