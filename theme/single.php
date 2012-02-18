@@ -18,7 +18,7 @@ get_header(); ?>
 					<?php $rel = $related->show(get_the_ID(), true); ?>
 					<?php if ( $rel ): ?>
 							<div id="related">
-								<h2 class="cap-switch">Related Articles</h2>  
+								<h2 class="cap-switch bleed-switch">Related Articles</h2>  
 								<?php foreach ($rel as $post) : ?>
 				        			<?php setup_postdata($post); ?>
 				        			<?php get_extract(); ?>
@@ -46,7 +46,7 @@ get_header(); ?>
 				<?php query_posts('category_name=feature,snippet&posts_per_page=7'); ?>
 				<?php if ( have_posts() ) : ?>
 					<div id="latest">
-						<h2 class="cap-switch">Latest Articles</h2>  
+						<h2 class="cap-switch bleed-switch">Latest Articles</h2>  
 						<?php get_archive_posts(3); ?>
 		    		</div>
 	    		<?php endif; ?>		

@@ -54,7 +54,6 @@
 <link rel="stylesheet" type="text/css" media="all and (min-width: 724px) and (max-width: 970px)" href="<?php echo resource('medium.css'); ?>" />
 <link rel="stylesheet" type="text/css" media="all and (min-width: 478px) and (max-width: 724px)" href="<?php echo resource('small.css'); ?>" />
 <link rel="stylesheet" type="text/css" media="all and (min-width: 478px)" href="<?php echo resource('bleeds.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 724px)" href="<?php echo resource('bleeds-switch.css'); ?>" />
 
 <?php wp_enqueue_script('twitter') ?>
 <?php wp_enqueue_script( 'jquery' ); ?>
