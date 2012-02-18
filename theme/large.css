@@ -12,6 +12,8 @@
 .section-about .row .right { margin: 14px 0; }
 .single #article { width: 450px; max-width: none; float: left; margin-right: 14px; padding: 0; } 
 .single #latest { float: right; }
+.single #other .post { margin-left: 14px; }
+.single #other h2 + .post { margin-left: 0px; }
 .archive .post { margin-left: 14px; }
 .archive .clear3 { clear:left; margin-left: 0; }
 
