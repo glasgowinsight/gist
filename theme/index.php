@@ -22,18 +22,18 @@ get_header(); ?>
 						<?php query_posts('category_name=feature&posts_per_page=10'); ?>
 						<div class="row3">
 							<?php the_post(); ?>
-							<?php get_extract('main'); ?>
+							<?php get_extract('main', 'large_thumb'); ?>
 							<div class="row">
 								<?php the_post(); ?>
-								<?php get_extract('left'); ?>
+								<?php get_extract('left', 'medium_thumb'); ?>
 								<?php the_post(); ?>
-								<?php get_extract('right'); ?>
+								<?php get_extract('right', 'medium_thumb'); ?>
 								<br class="clear"/>
 							</div>
 						</div>
 						<div class="row">
 							<?php the_post(); ?>
-							<?php get_extract('left'); ?>
+							<?php get_extract('left', 'medium_thumb'); ?>
 							<div class="articles right">
 								<div class="entry-header">
 									<h3 class="entry-title">More Features</h3>

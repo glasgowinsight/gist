@@ -14,9 +14,9 @@ function gist_setup() {
 
 	// This theme uses post thumbnails
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'large_thumb', 478, 9999 );
-	add_image_size( 'medium_thumb', 314, 9999 );
-	add_image_size( 'small_thumb', 232, 9999 );
+	add_image_size( 'large_thumb', 456, 456, True );
+	add_image_size( 'medium_thumb', 221, 110, True );
+	add_image_size( 'small_thumb', 150, 110, True );
 	
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
@@ -99,14 +99,14 @@ function get_the_link_class( $classes = '' ) {
 	return '';
 }
 
-function get_extract( $classes = '' ) {	?>
+function get_extract( $classes = '', $thumb = 'small_thumb' ) {	?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class('extract ' . $classes); ?>>
 		<div class="entry-header">
 			<h3 class="entry-title"><?php the_title(); ?></h3>
 		</div>
 		<div class="entry-thumbnail">
 			<a href="<?php the_permalink(); ?>" rel="bookmark">
-				<?php the_post_thumbnail( 'medium_thumb' ); ?>
+				<?php the_post_thumbnail( $thumb ); ?>
 			</a>
 		</div>
 		<div class="entry-content">
