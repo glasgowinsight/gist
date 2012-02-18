@@ -1,9 +1,11 @@
 body { overflow-x: hidden; }
 #page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; }
 .post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-#latest { float: right; }
+.single #sidebar { float: right; }
+.single #container { position: relative; } 
 #site-generator { margin: 14px auto; float: none; }
-.posts .post, .posts .articles, .section-about .row, .archive .post, .single #latest, .single #other .post { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .single #sidebar, .single #other .post { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
+.references { position: absolute; bottom: 0; }
 .single #other .post { width: 160px; margin-left: 14px; }
 .single #other h2 + .post { margin-left: 0px; }
 .single #article { width: 450px; max-width: none; float: left; margin-right: 14px; padding: 0; } 

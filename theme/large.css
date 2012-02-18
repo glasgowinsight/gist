@@ -4,7 +4,7 @@ body { overflow-x: hidden; }
 .post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
 .section-feature { position: relative; }
-.posts .post, .posts .articles, .section-about .row, .archive .post, .single #latest, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
+.posts .post, .posts .articles, .section-about .row, .archive .post, .single #sidebar, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
 .section-feature .posts .post, .section-feature .posts .articles, .single #latest, .single #other .post { width: 221px; max-width: none; }
 .section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 .section-feature .posts .right { position: relative; left: 456px; }
@@ -12,7 +12,9 @@ body { overflow-x: hidden; }
 .posts .right { margin-left: 14px; }
 .section-about .row .right { margin: 14px 0; }
 .single #article { width: 450px; max-width: none; float: left; margin-right: 14px; padding: 0; } 
-.single #latest { float: right; }
+.single #sidebar { float: right; }
+.single #container { position: relative; }
+.references { position: absolute; bottom: 0; }
 .single #other .post { margin-left: 14px; }
 .single #other h2 + .post { margin-left: 0px; }
 .archive .post { margin-left: 14px; }
