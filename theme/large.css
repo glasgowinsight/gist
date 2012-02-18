@@ -1,4 +1,5 @@
-#page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; overflow-x: hidden; }
+body { overflow-x: hidden; }
+#page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; }
 #main, .clear { clear: both; }
 .post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
