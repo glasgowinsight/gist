@@ -1,14 +1,16 @@
-#page { width: 946px; margin: 0 auto; }
+#page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; overflow-x: hidden; }
 #main, .clear { clear: both; }
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-.section, #site-generator { max-width: 946px; width: auto; margin: 0 auto; }
 #site-generator { margin: 14px auto; float: none; }
 .section-feature { position: relative; }
-.posts .post, .posts .articles, .section-about .row { width: 314px; max-width: none; float: left; }
-.section-feature .posts .post, .section-feature .posts .articles { width: 232px; max-width: none; }
-.section-feature .posts .row3 > .post:first-child, .section-feature .posts .row3 > .articles:first-child { width: 478px; max-width: none; position: absolute; left: 232px; }
-.section-feature .posts .row > div + .post, .section-feature .posts .row > div + .articles { position: relative; left: 478px; }
-.section-about .row .articles { width: 100%; }
+.posts .post, .posts .articles, .section-about .row { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
+.section-feature .posts .post, .section-feature .posts .articles { width: 221px; max-width: none; }
+.section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
+.section-feature .posts .right { position: relative; left: 456px; }
+.section-feature .posts .left, .posts .main, .section-about .row { margin-right: 14px; }
+.posts .right { margin-left: 14px; }
+.section-about .row .right { margin: 14px 0; }
+
 
 #logo { margin: 14px 0; float: left; }
 #access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px}
@@ -23,5 +25,5 @@
 #access .podcast:hover { background: url(images/nav_podcasts_hover.png) no-repeat; }
 #access .about:hover { background: url(images/nav_about_hover.png) no-repeat; }
 
-.section h2, #primary h2, .archive h2, .single h1 { width: 314px; margin: 14px 0; }
+.section h2, #primary h2, .archive h2, .single h1 { width: 300px; margin: 14px 0; }
 
