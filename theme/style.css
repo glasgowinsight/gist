@@ -108,14 +108,14 @@ ul.blank li { list-style: none inside; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
 .extract img { max-width: 100%; height: auto; } 
-#page { max-width: 454px; margin: 0 auto; }
+#page { max-width: 454px; margin: 0 auto; padding: 0 14px; }
 #nav-below div { text-align: center; }
 .twtr-doc { width: 100% !important; margin: 14px auto; }
 .entry-thumbnail { text-align: center; margin-bottom: 14px; }
 #access { max-width: 227px; margin: 14px auto; }
 #access li, h1, #nav-below h3 { padding: 2px 20px 2px 5px; }
 h1, #nav-below h3 { max-width: 202px; margin: 14px auto; }
-.post, .articles { margin: 14px auto; padding: 0 14px; } 
+.post, .articles { margin: 14px auto; } 
 #logo { margin: 14px auto; }
 .wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; }
 .wp-caption p, .wp-caption br{ line-height: 21px; margin: 0; }

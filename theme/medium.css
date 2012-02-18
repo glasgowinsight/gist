@@ -1,11 +1,13 @@
 #page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; overflow-x: hidden; }
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
-.posts .post, .posts .articles, .section-about .row { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-about .row, .archive .post { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
 .posts .main, .section-about .row { margin-right: 14px; }
 .posts .right { margin-left: 14px; }
 .section-about .row .right { margin: 14px 0; }
-#main, .row3, .clear { clear:both; } 
+#main, .row3, .clear { clear:both; }
+.archive .post { margin-left: 14px; }
+.archive .clear3 { clear:left; margin-left: 0; }
 
 #logo { margin: 14px 0; float: left; }
 #access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px}

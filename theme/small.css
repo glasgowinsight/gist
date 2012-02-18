@@ -2,10 +2,11 @@
 .post, .articles, #nav-below div, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
 .main img { float: left; margin-right: 14px; }
-.posts .post, .posts .articles { width: 213px; max-width: none; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .archive .post { width: 213px; max-width: none; margin: 14px 0; padding: 0; }
 .posts .main { width: 440px; }
 .posts .left { margin-right: 14px; }
-.row, .clear { clear:both; } 
+.row, .clear { clear:both; }
+.archive .clear2 { clear: left; margin-right: 14px; }
 
 #logo { margin: 14px 0; float: left; }
 #access { float: right; }

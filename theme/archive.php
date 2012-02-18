@@ -32,11 +32,13 @@ get_header(); ?>
 					</h1>
 				</div>
 
-								<?php /* Start the Loop */ ?>
+				<?php $i = 0;?>
 				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_extract(); ?>
-
+					<?php $class = ''; ?>
+					<?php if ($i % 2 == 0) $class .= ' clear2'?>
+					<?php if ($i % 3 == 0) $class .= ' clear3'?>
+					<?php get_extract($class); ?>
+					<?php $i++; ?>
 				<?php endwhile; ?>
 
 				<?php twentyeleven_content_nav( 'nav-below' ); ?>
