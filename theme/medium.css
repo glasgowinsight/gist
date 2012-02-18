@@ -14,6 +14,7 @@
 .archive .clear3 { clear:left; margin-left: 0; }
 
 #logo { margin: 14px 0; float: left; }
+#access { margin: 0; }
 #access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px}
 #access { position: relative; float: right; overflow: visible; }
 #access:after { content: ''; }
