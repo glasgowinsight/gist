@@ -71,9 +71,18 @@ function fix_caption_width($val, $attr, $content = null) {
 	. do_shortcode( $content ) . '<p class="wp-caption-text">// ' . $caption . '</p></div>';
 }
 
-add_filter('comment_form_field_comment', 'narrow_textarea');
-function narrow_textarea(){
-	return '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" name="comment" cols="34" rows="8" aria-required="true"></textarea></p>';
+add_filter('comment_form_default_fields', 'comments');
+function comments(){
+	return array(
+		'author' => '<label for="author">Name *</label>' .
+		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />',
+		'email'  => '<label for="email">Email *</label>' .
+		            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />',
+		'url'    => '<label for="url">Website</label>' .
+		            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+		'comment'=> '<label for="comment">Comment</label>' .
+		            '<textarea id="comment" name="comment" cols="34" rows="8" aria-required="true"></textarea>' 
+	);
 }
 
 add_action( 'after_setup_theme', 'remove_filters' );

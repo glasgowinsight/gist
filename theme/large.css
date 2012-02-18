@@ -37,3 +37,5 @@ body { overflow-x: hidden; }
 h1, .single h2, #nav-below h3 { width: 300px; max-width: none; margin: 14px 0; }
 #nav-below .nav-previous { float: left; }
 #nav-below .nav-next { float: right; }
+
+label { display: inline-block; width: 10em; }

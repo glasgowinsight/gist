@@ -142,4 +142,5 @@ h1, .single h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 .wp-caption p, .wp-caption br{ line-height: 21px; margin: 0; }
 .wp-caption:before { position: absolute; left: 0; top: 0; }
 .wp-caption:after{ position: absolute; right: 0; top: 0; }
+label { display: block; }
 
