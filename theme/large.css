@@ -25,5 +25,5 @@
 #access .podcast:hover { background: url(images/nav_podcasts_hover.png) no-repeat; }
 #access .about:hover { background: url(images/nav_about_hover.png) no-repeat; }
 
-h1 { width: 300px; margin: 14px 0; }
+h1 { width: 300px; max-width: none; margin: 14px 0; }
 
