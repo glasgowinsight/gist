@@ -15,18 +15,18 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 				<div id="container">
+					<?php $rel = $related->show(get_the_ID(), true); ?>
+					<?php if ( $rel ): ?>
+							<div id="related">
+								<h2 class="cap-switch bleed-switch">Related Articles</h2>  
+								<?php foreach ($rel as $post) : ?>
+				        			<?php setup_postdata($post); ?>
+				        			<?php get_extract(); ?>
+				    			<?php endforeach; ?>
+				    		</div>
+	    			<?php endif; ?>
+	
 					<div id="article">
-						<?php $rel = $related->show(get_the_ID(), true); ?>
-						<?php if ( $rel ): ?>
-								<div id="related">
-									<h2 class="cap-switch bleed-switch">Related Articles</h2>  
-									<?php foreach ($rel as $post) : ?>
-					        			<?php setup_postdata($post); ?>
-					        			<?php get_extract(); ?>
-					    			<?php endforeach; ?>
-					    		</div>
-		    			<?php endif; ?>
-		
 						<?php $post = $main_post; setup_postdata($post); ?>
 						<?php get_template_part( 'content', 'single' ); ?>
 						
