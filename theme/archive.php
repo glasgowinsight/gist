@@ -35,8 +35,8 @@ get_header(); ?>
 				<?php $i = 0;?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php $class = ''; ?>
-					<?php if ($i % 2 == 0) $class .= ' clear2'?>
-					<?php if ($i % 3 == 0) $class .= ' clear3'?>
+					<?php if ($i % 2 == 0) $class .= ' clear2'; ?>
+					<?php if ($i % 3 == 0) $class .= ' clear3'; ?>
 					<?php get_extract($class); ?>
 					<?php $i++; ?>
 				<?php endwhile; ?>
