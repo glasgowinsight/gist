@@ -1,13 +1,14 @@
 #page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; overflow-x: hidden; }
-.post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
+.post, .articles, .category-archive-meta, #author-info, #comments, #site-generator, #latest { float: left; }
 #site-generator { margin: 14px auto; float: none; }
-.posts .post, .posts .articles, .section-about .row, .archive .post { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, single #latest, .single #other .post { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
+.single #article { width: 450px; max-width: none; float: left; margin-right: 14px; padding: 0; } 
 .posts .main, .section-about .row { margin-right: 14px; }
 .posts .right { margin-left: 14px; }
 .section-about .row .right { margin: 14px 0; }
 #main, .row3, .clear { clear:both; }
-.archive .post { margin-left: 14px; }
-.archive .clear3 { clear:left; margin-left: 0; }
+.archive .post, #other .post { margin-left: 14px; }
+.archive .clear3, #other .clear3 { clear:left; margin-left: 0; }
 
 #logo { margin: 14px 0; float: left; }
 #access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px}
@@ -22,6 +23,6 @@
 #access .podcast:hover { background: url(images/nav_podcasts_hover.png) no-repeat; }
 #access .about:hover { background: url(images/nav_about_hover.png) no-repeat; }
 
-h1, #nav-below h3 { width: 218px; max-width: none; margin: 14px 0; }
+h1, .single h2, #nav-below h3 { width: 218px; max-width: none; margin: 14px 0; }
 #nav-below .nav-previous { float: left; }
 #nav-below .nav-next { float: right; }
