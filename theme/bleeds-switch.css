@@ -1,6 +1,2 @@
-.cap-switch:after { content: ""; }
-.cap-switch:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
-
-
-.bleed-switch:after { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
-.bleed-switch:before { width: 0; height: 0; right: 0; }
+.cap-switch:after { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
+.cap-switch:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; width: auto; }
