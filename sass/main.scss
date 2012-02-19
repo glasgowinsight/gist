@@ -50,72 +50,90 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 
 #access a, h1, .single h2, .archive #nav-below h3, #site-generator h2 { color: white; }
 a { text-decoration: none; }
-a.link-feature, .link-container-feature a, a.link-snippet, .link-container-snippet a, a.link-podcast, .link-container a, a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
-a.link-feature:hover, .link-container-feature a:hover, a.link-snippet:hover, .link-container-snippet a:hover, a.link-podcast:hover, .link-container-podcast a:hover, a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
-a.link-back-feature, .link-container-back-feature a, a.link-back-snippet, .link-container-back-snippet a, a.link-back-podcast, .link-back-container a, a.link-back-about, .link-container-back-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
-a.link-back-feature:hover, .link-container-back-feature a:hover, a.link-back-snippet:hover, .link-container-back-snippet a:hover, a.link-back-podcast:hover, .link-container-back-podcast a:hover, a.link-back-about:hover, .link-container-back-about a:hover { color: #ffffff; }
 
-h1 { background-color: rgb(255,24,0); }
-.single-feature h1, .single-feature h2, .section-feature h1, .archive h1, .category-feature h1, .parent-feature h1, .parent-feature h2, .archive #nav-below h3, .category-feature #nav-below h3  { background-color: rgb(255,24,0); }
-.single-snippet h1, .single-snippet h2, .section-snippet h1, .category-snippet h1, .parent-snippet h1, .parent-snippet h2, .category-snippet #nav-below h3 { background-color: rgb(64,19,175); }
-.single-podcast h1, .single-podcast h2, .section-podcast h1, .category-podcast h1, .parent-podcast h1, .parent-podcast h2, .category-podcast #nav-below h3 { background-color: rgb(255,217,0); }
-.single-about h1, .single-about h2, .section-about h1, .category-about h1, .parent-about h1, .parent-about h2, .category-about #nav-below h3 { background-color: rgb(0,139,43); }
-.parent-feature .wp-caption p { background-color: rgb(255,128,115); }
-.parent-snippet .wp-caption p { background-color: rgb(140,109,215); }
-.parent-podcast .wp-caption p { background-color: rgb(255,234,115); }
-.parent-about .wp-caption p { background-color: rgb(101,224,128); }
-.parent-feature .wp-caption:before, .parent-feature .wp-caption:after { content: url(images/img_feature.png); }
-.parent-snippet .wp-caption:before, .parent-snippet .wp-caption:after { content: url(images/img_snippet.png); }
-.parent-podcast .wp-caption:before, .parent-podcast .wp-caption:after { content: url(images/img_podcast.png); }
-.parent-about .wp-caption:before, .parent-about .wp-caption:after { content: url(images/img_about.png); }
-.section-feature li, .category-feature li, .category-feature li { list-style: url(images/bullet_feature.png) inside; }
-.section-snippet li, .category-snippet li, .category-snippet li { list-style: url(images/bullet_snippet.png) inside; }
-.section-podcast li, .category-podcast li, .category-podcast li { list-style: url(images/bullet_podcast.png) inside; }
-.section-about li, .category-about li, .category-about li { list-style: url(images/bullet_about.png) inside; }
-a.link-feature, .link-container-feature  a { border-color: rgb(255,24,0); }
-a.link-feature:hover, .link-container-feature a:hover { background-color: rgb(255,24,0); }
-a.link-feature:after, .link-container-feature a:after { content: url(images/arrow_features.png); padding-left: 2px; }
-a.link-feature:hover:after, .link-container-feature a:hover:after { content: url(images/arrow_hover.png); }
-a.link-snippet, .link-container-snippet a { border-color: rgb(64,19,175); }
-a.link-snippet:hover, .link-container-snippet a:hover { background-color: rgb(64,19,175); }
-a.link-snippet:after, .link-container-snippet a:after { content: url(images/arrow_snippets.png); padding-left: 2px; }
-a.link-snippet:hover:after, .link-container-snippet a:hover:after { content: url(images/arrow_hover.png); }
-a.link-podcast, .link-container-podcast a { border-color: rgb(255,217,0); }
-a.link-podcast:hover, .link-container-podcast a:hover { background-color: rgb(255,217,0); }
-a.link-podcast:after, .link-container-podcast a:after, .link-container-podcast a:after, .link-container-podcast a:after { content: url(images/arrow_podcasts.png); padding-left: 2px; }
-a.link-podcast:hover:after, .link-container-podcast a:hover:after { content: url(images/arrow_hover.png); }
-a.link-about, .link-container-about a { border-color: rgb(0,139,43); }
-a.link-about:hover, .link-container-about a:hover { background-color: rgb(0,139,43); }
-a.link-about:after, .link-container-about a:after { content: url(images/arrow_about.png); padding-left: 2px; }
-a.link-about:hover:after, .link-container-about a:hover:after { content: url(images/arrow_hover.png); }
-a.link-back-feature, .link-container-back-feature  a { border-color: rgb(255,24,0); }
-a.link-back-feature:hover, .link-container-back-feature a:hover { background-color: rgb(255,24,0); }
-a.link-back-feature:before, .link-container-back-feature a:before { content: url(images/arrow_features_back.png); padding-right: 2px; }
-a.link-back-feature:hover:before, .link-container-back-feature a:hover:before { content: url(images/arrow_hover_back.png); }
-a.link-back-snippet, .link-container-back-snippet a { border-color: rgb(64,19,175); }
-a.link-back-snippet:hover, .link-container-back-snippet a:hover { background-color: rgb(64,19,175); }
-a.link-back-snippet:before, .link-container-back-snippet a:before { content: url(images/arrow_snippets_back.png); padding-right: 2px; }
-a.link-back-snippet:hover:before, .link-container-back-snippet a:hover:before { content: url(images/arrow_hover_back.png); }
-a.link-back-podcast, .link-container-back-podcast a { border-color: rgb(255,217,0); }
-a.link-back-podcast:hover, .link-container-back-podcast a:hover { background-color: rgb(255,217,0); }
-a.link-back-podcast:before, .link-container-back-podcast a:before { content: url(images/arrow_podcasts_back.png); padding-right: 2px; }
-a.link-back-podcast:hover:before, .link-container-back-podcast a:hover:before { content: url(images/arrow_hover_back.png); }
-a.link-back-about, .link-container-back-about a { border-color: rgb(0,139,43); }
-a.link-back-about:hover, .link-container-back-about a:hover { background-color: rgb(0,139,43); }
-a.link-back-about:before, .link-container-back-about a:before { content: url(images/arrow_about_back.png); padding-right: 2px; }
-a.link-back-about:hover:before, .link-container-back-about a:hover:before { content: url(images/arrow_hover_back.png); }
+$featureLight: rgb(255,128,115);
+$featureDark: rgb(149,71,71);
+$feature: rgb(255,24,0);
+
+$snippet: rgb(64,19,175);
+$snippetDark: rgb(62,49,103);
+$snippetLight: rgb(140,109,215);
+
+$podcast: rgb(255,217,0);
+$podcastDark: rgb(149,136,71);
+$podcastLight: rgb(255,234,115);
+
+$about: rgb(0,139,43);
+$aboutDark: rgb(57,119,57);
+$aboutLight: rgb(101,224,128);
+
+@function colour($cat, $style) {
+	@if $cat == 'feature' { 
+		@if $style == 'normal' { @return $feature } 
+		@else if $style == 'dark' { @return $featureDark } 
+		@else if $style == 'light' { @return $featureLight } 
+	}
+	@else if $cat == 'snippet' { 
+		@if $style == 'normal' { @return $snippet } 
+		@else if $style == 'dark' { @return $snippetDark } 
+		@else if $style == 'light' { @return $snippetLight } 
+	}
+	@else if $cat == 'podcast' { 
+		@if $style == 'normal' { @return $podcast } 
+		@else if $style == 'dark' { @return $podcastDark } 
+		@else if $style == 'light' { @return $podcastLight } 
+	}
+	@else if $cat == 'about' { 
+		@if $style == 'normal' { @return $about } 
+		@else if $style == 'dark' { @return $aboutDark } 
+		@else if $style == 'light' { @return $aboutLight } 
+	}
+}
+
+@mixin link{ 
+	text-decoration: none; 
+	color: #000000; 
+	font-weight: bold; 
+	border-bottom: 1px dotted;
+	
+	&:hover { color: #ffffff; } 
+}
+
+@each $category in feature, snippet, podcast, about {
+	.parent-#{$category} .wp-caption:before, .parent-#{$category} .wp-caption:after { content: url(images/img_#{$category}.png); }
+	.section-#{$category} li, .category-#{$category} li { list-style: url(images/bullet_#{$category}.png) inside; }
+	a.link-#{$category}, .link-container-#{$category} a {
+		@include link;
+		border-color: colour(#{$category}, 'normal');
+		&:hover { background-color: colour(#{$category}, 'normal'); }
+		&:after { content: url(images/arrow_#{$category}.png); padding-left: 2px; }
+		&:hover:after{ content: url(images/arrow_hover.png); }
+	}
+	a.link-back-#{$category}, .link-container-back-#{$category} a {
+		@include link;
+		border-color: colour(#{$category}, 'normal');
+		&:hover { background-color: colour(#{$category}, 'normal'); }
+		&:after { content: url(images/arrow_#{$category}_back.png); padding-right: 2px;	}
+		&:hover:after{ content: url(images/arrow_hover_back.png); }
+	}
+	
+	#access .#{$category} { 
+		background: colour(#{$category}, 'dark'); 
+		&:hover { background: colour(#{$category}, 'normal'); }
+	}
+	
+	.single-#{$category}, .section-#{$category}, .category-#{$category}, .parent-#{$category} {
+		h1, h2, #nav-below h3 { background-color: colour(#{$category}, 'normal'); }
+	}
+	
+	.parent-#{$category} .wp-caption p { background-color: colour(#{$category}, 'light'); }
+}
+h1 { background-color: $feature }
+.archive h1, .archive #nav-below h3 { background-color: $feature }
 
 ul.blank li { list-style: none inside; }
 
-#logo { background: rgb(255,24,0); width: 240px; height: 128px; max-width: none; }
-#access .feature { background: rgb(149,71,71); }
-#access .snippet { background: rgb(62,49,103); }
-#access .podcast { background: rgb(149,136,71); }
-#access .about { background: rgb(57,119,57); }
-#access .feature:hover { background: rgb(255,24,0); }
-#access .snippet:hover { background: rgb(64,19,175); }
-#access .podcast:hover { background: rgb(255,217,0); }
-#access .about:hover { background: rgb(0,139,43); }
+#logo { background: $feature; width: 240px; height: 128px; max-width: none; }
 #access a { display: block; width:100%; }
 
 .cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow-y: hidden; }

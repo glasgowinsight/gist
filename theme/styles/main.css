@@ -22,131 +22,105 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 
 a { text-decoration: none; }
 
-a.link-feature, .link-container-feature a, a.link-snippet, .link-container-snippet a, a.link-podcast, .link-container a, a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
+.parent-feature .wp-caption:before, .parent-feature .wp-caption:after { content: url(images/img_feature.png); }
 
-a.link-feature:hover, .link-container-feature a:hover, a.link-snippet:hover, .link-container-snippet a:hover, a.link-podcast:hover, .link-container-podcast a:hover, a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
+.section-feature li, .category-feature li { list-style: url(images/bullet_feature.png) inside; }
 
-a.link-back-feature, .link-container-back-feature a, a.link-back-snippet, .link-container-back-snippet a, a.link-back-podcast, .link-back-container a, a.link-back-about, .link-container-back-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; }
+a.link-feature, .link-container-feature a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #ff1800; }
+a.link-feature:hover, .link-container-feature a:hover { color: #ffffff; }
+a.link-feature:hover, .link-container-feature a:hover { background-color: #ff1800; }
+a.link-feature:after, .link-container-feature a:after { content: url(images/arrow_feature.png); padding-left: 2px; }
+a.link-feature:hover:after, .link-container-feature a:hover:after { content: url(images/arrow_hover.png); }
 
-a.link-back-feature:hover, .link-container-back-feature a:hover, a.link-back-snippet:hover, .link-container-back-snippet a:hover, a.link-back-podcast:hover, .link-container-back-podcast a:hover, a.link-back-about:hover, .link-container-back-about a:hover { color: #ffffff; }
+a.link-back-feature, .link-container-back-feature a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #ff1800; }
+a.link-back-feature:hover, .link-container-back-feature a:hover { color: #ffffff; }
+a.link-back-feature:hover, .link-container-back-feature a:hover { background-color: #ff1800; }
+a.link-back-feature:after, .link-container-back-feature a:after { content: url(images/arrow_feature_back.png); padding-right: 2px; }
+a.link-back-feature:hover:after, .link-container-back-feature a:hover:after { content: url(images/arrow_hover_back.png); }
 
-h1 { background-color: #ff1800; }
+#access .feature { background: #954747; }
+#access .feature:hover { background: #ff1800; }
 
-.single-feature h1, .single-feature h2, .section-feature h1, .archive h1, .category-feature h1, .parent-feature h1, .parent-feature h2, .archive #nav-below h3, .category-feature #nav-below h3 { background-color: #ff1800; }
-
-.single-snippet h1, .single-snippet h2, .section-snippet h1, .category-snippet h1, .parent-snippet h1, .parent-snippet h2, .category-snippet #nav-below h3 { background-color: #4013af; }
-
-.single-podcast h1, .single-podcast h2, .section-podcast h1, .category-podcast h1, .parent-podcast h1, .parent-podcast h2, .category-podcast #nav-below h3 { background-color: #ffd900; }
-
-.single-about h1, .single-about h2, .section-about h1, .category-about h1, .parent-about h1, .parent-about h2, .category-about #nav-below h3 { background-color: #008b2b; }
+.single-feature h1, .single-feature h2, .single-feature #nav-below h3, .section-feature h1, .section-feature h2, .section-feature #nav-below h3, .category-feature h1, .category-feature h2, .category-feature #nav-below h3, .parent-feature h1, .parent-feature h2, .parent-feature #nav-below h3 { background-color: #ff1800; }
 
 .parent-feature .wp-caption p { background-color: #ff8073; }
 
-.parent-snippet .wp-caption p { background-color: #8c6dd7; }
-
-.parent-podcast .wp-caption p { background-color: #ffea73; }
-
-.parent-about .wp-caption p { background-color: #65e080; }
-
-.parent-feature .wp-caption:before, .parent-feature .wp-caption:after { content: url(images/img_feature.png); }
-
 .parent-snippet .wp-caption:before, .parent-snippet .wp-caption:after { content: url(images/img_snippet.png); }
+
+.section-snippet li, .category-snippet li { list-style: url(images/bullet_snippet.png) inside; }
+
+a.link-snippet, .link-container-snippet a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #4013af; }
+a.link-snippet:hover, .link-container-snippet a:hover { color: #ffffff; }
+a.link-snippet:hover, .link-container-snippet a:hover { background-color: #4013af; }
+a.link-snippet:after, .link-container-snippet a:after { content: url(images/arrow_snippet.png); padding-left: 2px; }
+a.link-snippet:hover:after, .link-container-snippet a:hover:after { content: url(images/arrow_hover.png); }
+
+a.link-back-snippet, .link-container-back-snippet a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #4013af; }
+a.link-back-snippet:hover, .link-container-back-snippet a:hover { color: #ffffff; }
+a.link-back-snippet:hover, .link-container-back-snippet a:hover { background-color: #4013af; }
+a.link-back-snippet:after, .link-container-back-snippet a:after { content: url(images/arrow_snippet_back.png); padding-right: 2px; }
+a.link-back-snippet:hover:after, .link-container-back-snippet a:hover:after { content: url(images/arrow_hover_back.png); }
+
+#access .snippet { background: #3e3167; }
+#access .snippet:hover { background: #4013af; }
+
+.single-snippet h1, .single-snippet h2, .single-snippet #nav-below h3, .section-snippet h1, .section-snippet h2, .section-snippet #nav-below h3, .category-snippet h1, .category-snippet h2, .category-snippet #nav-below h3, .parent-snippet h1, .parent-snippet h2, .parent-snippet #nav-below h3 { background-color: #4013af; }
+
+.parent-snippet .wp-caption p { background-color: #8c6dd7; }
 
 .parent-podcast .wp-caption:before, .parent-podcast .wp-caption:after { content: url(images/img_podcast.png); }
 
-.parent-about .wp-caption:before, .parent-about .wp-caption:after { content: url(images/img_about.png); }
+.section-podcast li, .category-podcast li { list-style: url(images/bullet_podcast.png) inside; }
 
-.section-feature li, .category-feature li, .category-feature li { list-style: url(images/bullet_feature.png) inside; }
-
-.section-snippet li, .category-snippet li, .category-snippet li { list-style: url(images/bullet_snippet.png) inside; }
-
-.section-podcast li, .category-podcast li, .category-podcast li { list-style: url(images/bullet_podcast.png) inside; }
-
-.section-about li, .category-about li, .category-about li { list-style: url(images/bullet_about.png) inside; }
-
-a.link-feature, .link-container-feature a { border-color: #ff1800; }
-
-a.link-feature:hover, .link-container-feature a:hover { background-color: #ff1800; }
-
-a.link-feature:after, .link-container-feature a:after { content: url(images/arrow_features.png); padding-left: 2px; }
-
-a.link-feature:hover:after, .link-container-feature a:hover:after { content: url(images/arrow_hover.png); }
-
-a.link-snippet, .link-container-snippet a { border-color: #4013af; }
-
-a.link-snippet:hover, .link-container-snippet a:hover { background-color: #4013af; }
-
-a.link-snippet:after, .link-container-snippet a:after { content: url(images/arrow_snippets.png); padding-left: 2px; }
-
-a.link-snippet:hover:after, .link-container-snippet a:hover:after { content: url(images/arrow_hover.png); }
-
-a.link-podcast, .link-container-podcast a { border-color: #ffd900; }
-
+a.link-podcast, .link-container-podcast a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #ffd900; }
+a.link-podcast:hover, .link-container-podcast a:hover { color: #ffffff; }
 a.link-podcast:hover, .link-container-podcast a:hover { background-color: #ffd900; }
-
-a.link-podcast:after, .link-container-podcast a:after, .link-container-podcast a:after, .link-container-podcast a:after { content: url(images/arrow_podcasts.png); padding-left: 2px; }
-
+a.link-podcast:after, .link-container-podcast a:after { content: url(images/arrow_podcast.png); padding-left: 2px; }
 a.link-podcast:hover:after, .link-container-podcast a:hover:after { content: url(images/arrow_hover.png); }
 
-a.link-about, .link-container-about a { border-color: #008b2b; }
+a.link-back-podcast, .link-container-back-podcast a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #ffd900; }
+a.link-back-podcast:hover, .link-container-back-podcast a:hover { color: #ffffff; }
+a.link-back-podcast:hover, .link-container-back-podcast a:hover { background-color: #ffd900; }
+a.link-back-podcast:after, .link-container-back-podcast a:after { content: url(images/arrow_podcast_back.png); padding-right: 2px; }
+a.link-back-podcast:hover:after, .link-container-back-podcast a:hover:after { content: url(images/arrow_hover_back.png); }
 
+#access .podcast { background: #958847; }
+#access .podcast:hover { background: #ffd900; }
+
+.single-podcast h1, .single-podcast h2, .single-podcast #nav-below h3, .section-podcast h1, .section-podcast h2, .section-podcast #nav-below h3, .category-podcast h1, .category-podcast h2, .category-podcast #nav-below h3, .parent-podcast h1, .parent-podcast h2, .parent-podcast #nav-below h3 { background-color: #ffd900; }
+
+.parent-podcast .wp-caption p { background-color: #ffea73; }
+
+.parent-about .wp-caption:before, .parent-about .wp-caption:after { content: url(images/img_about.png); }
+
+.section-about li, .category-about li { list-style: url(images/bullet_about.png) inside; }
+
+a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #008b2b; }
+a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
 a.link-about:hover, .link-container-about a:hover { background-color: #008b2b; }
-
 a.link-about:after, .link-container-about a:after { content: url(images/arrow_about.png); padding-left: 2px; }
-
 a.link-about:hover:after, .link-container-about a:hover:after { content: url(images/arrow_hover.png); }
 
-a.link-back-feature, .link-container-back-feature a { border-color: #ff1800; }
-
-a.link-back-feature:hover, .link-container-back-feature a:hover { background-color: #ff1800; }
-
-a.link-back-feature:before, .link-container-back-feature a:before { content: url(images/arrow_features_back.png); padding-right: 2px; }
-
-a.link-back-feature:hover:before, .link-container-back-feature a:hover:before { content: url(images/arrow_hover_back.png); }
-
-a.link-back-snippet, .link-container-back-snippet a { border-color: #4013af; }
-
-a.link-back-snippet:hover, .link-container-back-snippet a:hover { background-color: #4013af; }
-
-a.link-back-snippet:before, .link-container-back-snippet a:before { content: url(images/arrow_snippets_back.png); padding-right: 2px; }
-
-a.link-back-snippet:hover:before, .link-container-back-snippet a:hover:before { content: url(images/arrow_hover_back.png); }
-
-a.link-back-podcast, .link-container-back-podcast a { border-color: #ffd900; }
-
-a.link-back-podcast:hover, .link-container-back-podcast a:hover { background-color: #ffd900; }
-
-a.link-back-podcast:before, .link-container-back-podcast a:before { content: url(images/arrow_podcasts_back.png); padding-right: 2px; }
-
-a.link-back-podcast:hover:before, .link-container-back-podcast a:hover:before { content: url(images/arrow_hover_back.png); }
-
-a.link-back-about, .link-container-back-about a { border-color: #008b2b; }
-
+a.link-back-about, .link-container-back-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #008b2b; }
+a.link-back-about:hover, .link-container-back-about a:hover { color: #ffffff; }
 a.link-back-about:hover, .link-container-back-about a:hover { background-color: #008b2b; }
+a.link-back-about:after, .link-container-back-about a:after { content: url(images/arrow_about_back.png); padding-right: 2px; }
+a.link-back-about:hover:after, .link-container-back-about a:hover:after { content: url(images/arrow_hover_back.png); }
 
-a.link-back-about:before, .link-container-back-about a:before { content: url(images/arrow_about_back.png); padding-right: 2px; }
+#access .about { background: #397739; }
+#access .about:hover { background: #008b2b; }
 
-a.link-back-about:hover:before, .link-container-back-about a:hover:before { content: url(images/arrow_hover_back.png); }
+.single-about h1, .single-about h2, .single-about #nav-below h3, .section-about h1, .section-about h2, .section-about #nav-below h3, .category-about h1, .category-about h2, .category-about #nav-below h3, .parent-about h1, .parent-about h2, .parent-about #nav-below h3 { background-color: #008b2b; }
+
+.parent-about .wp-caption p { background-color: #65e080; }
+
+h1 { background-color: #ff1800; }
+
+.archive h1, .archive #nav-below h3 { background-color: #ff1800; }
 
 ul.blank li { list-style: none inside; }
 
 #logo { background: #ff1800; width: 240px; height: 128px; max-width: none; }
-
-#access .feature { background: #954747; }
-
-#access .snippet { background: #3e3167; }
-
-#access .podcast { background: #958847; }
-
-#access .about { background: #397739; }
-
-#access .feature:hover { background: #ff1800; }
-
-#access .snippet:hover { background: #4013af; }
-
-#access .podcast:hover { background: #ffd900; }
-
-#access .about:hover { background: #008b2b; }
 
 #access a { display: block; width: 100%; }
 
