@@ -1,7 +1,7 @@
 .bleed-right:after { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
 .bleed-left:before { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; right: 50px; top: 0; }
 
-.cap-switch { position: relative; z-index: -1; }
+.cap-switch { position: relative; overflow-y: hidden; }
 @media all and (max-width: 724px) {
 	.bleed-switch:before { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; right: 50px; top: 0; }
 	.cap-switch:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
