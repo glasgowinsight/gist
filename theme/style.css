@@ -131,6 +131,9 @@ ul.blank li { list-style: none inside; }
 .twtr-hd h3 { display: none; }
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
 
+dt { float: left; margin-right: 5px; }
+dd { margin-bottom: 10px; }
+
 /* Stuff for the 1 column layout that will mostly get overwritten */
 .extract img { max-width: 100%; height: auto; } 
 #page { max-width: 454px; margin: 0 auto; padding: 0 14px; }
