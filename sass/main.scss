@@ -51,51 +51,17 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 #access a, h1, .single h2, .archive #nav-below h3, #site-generator h2 { color: white; }
 a { text-decoration: none; }
 
-$featureLight: rgb(255,128,115);
-$featureDark: rgb(149,71,71);
-$feature: rgb(255,24,0);
+$categories: feature snippet podcast about;
+$normals: rgb(255,24,0) rgb(64,19,175) rgb(255,217,0) rgb(0,139,43);
+$darks: rgb(149,71,71) rgb(62,49,103) rgb(149,136,71) rgb(57,119,57);
+$lights: rgb(255,128,115) rgb(140,109,215) rgb(255,234,115) rgb(101,224,128);
 
-$snippet: rgb(64,19,175);
-$snippetDark: rgb(62,49,103);
-$snippetLight: rgb(140,109,215);
-
-$podcast: rgb(255,217,0);
-$podcastDark: rgb(149,136,71);
-$podcastLight: rgb(255,234,115);
-
-$about: rgb(0,139,43);
-$aboutDark: rgb(57,119,57);
-$aboutLight: rgb(101,224,128);
-
-@function colour($cat, $style) {
-	@if $cat == 'feature' { 
-		@if $style == 'normal' { @return $feature } 
-		@else if $style == 'dark' { @return $featureDark } 
-		@else if $style == 'light' { @return $featureLight } 
-	}
-	@else if $cat == 'snippet' { 
-		@if $style == 'normal' { @return $snippet } 
-		@else if $style == 'dark' { @return $snippetDark } 
-		@else if $style == 'light' { @return $snippetLight } 
-	}
-	@else if $cat == 'podcast' { 
-		@if $style == 'normal' { @return $podcast } 
-		@else if $style == 'dark' { @return $podcastDark } 
-		@else if $style == 'light' { @return $podcastLight } 
-	}
-	@else if $cat == 'about' { 
-		@if $style == 'normal' { @return $about } 
-		@else if $style == 'dark' { @return $aboutDark } 
-		@else if $style == 'light' { @return $aboutLight } 
-	}
-}
-
-h1 { background-color: $feature }
-.archive h1, .archive #nav-below h3 { background-color: $feature }
+h1 { background-color: nth($normals, 1); }
+.archive h1, .archive #nav-below h3 { background-color: nth($normals, 1); }
 
 ul.blank li { list-style: none inside; }
 
-#logo { background: $feature; width: 240px; height: 128px; max-width: none; }
+#logo { background: nth($normals, 1); width: 240px; height: 128px; max-width: none; }
 #access a { display: block; width:100%; }
 
 .cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow-y: hidden; }
@@ -117,34 +83,39 @@ dd { margin-bottom: 10px; }
 	&:hover { color: #ffffff; } 
 }
 
-@each $category in feature, snippet, podcast, about {
+@for $i from 1 to 5 {
+	$category: nth($categories, $i);
+	$normal: nth($normals, $i);
+	$dark: nth($darks, $i);
+	$light: nth($lights, $i);
+	
 	.parent-#{$category} .wp-caption:before, .parent-#{$category} .wp-caption:after { content: url(../images/img_#{$category}.png); }
 	.section-#{$category} li, .category-#{$category} li { list-style: url(../images/bullet_#{$category}.png) inside; }
 	a.link-#{$category}, .link-container-#{$category} a {
 		@include link;
-		border-color: colour(#{$category}, 'normal');
-		&:hover { background-color: colour(#{$category}, 'normal'); }
+		border-color: #{$normal};
+		&:hover { background-color: #{$normal}; }
 		&:after { content: url(../images/arrow_#{$category}.png); padding-left: 2px; }
 		&:hover:after{ content: url(../images/arrow_hover.png); }
 	}
 	a.link-back-#{$category}, .link-container-back-#{$category} a {
 		@include link;
-		border-color: colour(#{$category}, 'normal');
-		&:hover { background-color: colour(#{$category}, 'normal'); }
+		border-color: #{$normal};
+		&:hover { background-color: #{$normal}; }
 		&:after { content: url(../images/arrow_#{$category}_back.png); padding-right: 2px;	}
 		&:hover:after{ content: url(../images/arrow_hover_back.png); }
 	}
 	
 	#access .#{$category} { 
-		background: colour(#{$category}, 'dark'); 
-		&:hover { background: colour(#{$category}, 'normal'); }
+		background: #{$dark}; 
+		&:hover { background: #{$normal}; }
 	}
 	
 	.single-#{$category}, .section-#{$category}, .category-#{$category}, .parent-#{$category} {
-		h1, h2, #nav-below h3 { background-color: colour(#{$category}, 'normal'); }
+		h1, h2, #nav-below h3 { background-color: #{$normal}; }
 	}
 	
-	.parent-#{$category} .wp-caption p { background-color: colour(#{$category}, 'light'); }
+	.parent-#{$category} .wp-caption p { background-color: #{$light}; }
 }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
