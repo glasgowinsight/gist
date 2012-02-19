@@ -22,6 +22,30 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 
 a { text-decoration: none; }
 
+h1 { background-color: #ff1800; }
+
+.archive h1, .archive #nav-below h3 { background-color: #ff1800; }
+
+ul.blank li { list-style: none inside; }
+
+#logo { background: #ff1800; width: 240px; height: 128px; max-width: none; }
+
+#access a { display: block; width: 100%; }
+
+.cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow-y: hidden; }
+
+.cap-right:after, #nav-below h3:after, #access:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
+
+.cap-left:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
+
+.twtr-hd h3 { display: none; }
+
+.twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
+
+dt { float: left; margin-right: 5px; font-weight: bold; }
+
+dd { margin-bottom: 10px; }
+
 .parent-feature .wp-caption:before, .parent-feature .wp-caption:after { content: url(images/img_feature.png); }
 
 .section-feature li, .category-feature li { list-style: url(images/bullet_feature.png) inside; }
@@ -113,30 +137,6 @@ a.link-back-about:hover:after, .link-container-back-about a:hover:after { conten
 .single-about h1, .single-about h2, .single-about #nav-below h3, .section-about h1, .section-about h2, .section-about #nav-below h3, .category-about h1, .category-about h2, .category-about #nav-below h3, .parent-about h1, .parent-about h2, .parent-about #nav-below h3 { background-color: #008b2b; }
 
 .parent-about .wp-caption p { background-color: #65e080; }
-
-h1 { background-color: #ff1800; }
-
-.archive h1, .archive #nav-below h3 { background-color: #ff1800; }
-
-ul.blank li { list-style: none inside; }
-
-#logo { background: #ff1800; width: 240px; height: 128px; max-width: none; }
-
-#access a { display: block; width: 100%; }
-
-.cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow-y: hidden; }
-
-.cap-right:after, #nav-below h3:after, #access:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
-
-.cap-left:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
-
-.twtr-hd h3 { display: none; }
-
-.twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
-
-dt { float: left; margin-right: 5px; font-weight: bold; }
-
-dd { margin-bottom: 10px; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
 .extract img { max-width: 100%; height: auto; }

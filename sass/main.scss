@@ -90,6 +90,24 @@ $aboutLight: rgb(101,224,128);
 	}
 }
 
+h1 { background-color: $feature }
+.archive h1, .archive #nav-below h3 { background-color: $feature }
+
+ul.blank li { list-style: none inside; }
+
+#logo { background: $feature; width: 240px; height: 128px; max-width: none; }
+#access a { display: block; width:100%; }
+
+.cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow-y: hidden; }
+.cap-right:after, #nav-below h3:after, #access:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
+.cap-left:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
+
+.twtr-hd h3 { display: none; }
+.twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
+
+dt { float: left; margin-right: 5px; font-weight: bold; }
+dd { margin-bottom: 10px; }
+
 @mixin link{ 
 	text-decoration: none; 
 	color: #000000; 
@@ -128,23 +146,6 @@ $aboutLight: rgb(101,224,128);
 	
 	.parent-#{$category} .wp-caption p { background-color: colour(#{$category}, 'light'); }
 }
-h1 { background-color: $feature }
-.archive h1, .archive #nav-below h3 { background-color: $feature }
-
-ul.blank li { list-style: none inside; }
-
-#logo { background: $feature; width: 240px; height: 128px; max-width: none; }
-#access a { display: block; width:100%; }
-
-.cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow-y: hidden; }
-.cap-right:after, #nav-below h3:after, #access:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
-.cap-left:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
-
-.twtr-hd h3 { display: none; }
-.twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
-
-dt { float: left; margin-right: 5px; font-weight: bold; }
-dd { margin-bottom: 10px; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
 .extract img { max-width: 100%; height: auto; } 
