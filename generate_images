@@ -1,0 +1,39 @@
+#!/bin/sh
+
+feature="255,24,0"
+featuredim="255,128,115"
+featuredark="149,71,71"
+snippet="64,19,175"
+snippetdim="140,109,215"
+snippetdark="62,49,103"
+podcast="255,217,0"
+podcastdim="255,234,115"
+podcastdark="149,136,71"
+about="0,139,43"
+aboutdim="101,224,128"
+aboutdark="57,119,57"
+
+for type in feature snippet podcast about; do
+  eval bright="\$${type}"
+  eval dim="\$${type}dim"
+  eval dark="\$${type}dark"
+
+  convert -size 8x8 "canvas:rgb($bright)" -background none -shear 14x0 "theme/images/bullet_$type.png"
+  convert -size 400x40 "canvas:rgb($dark)" -background none -shear 14x0 "theme/images/nav_$type.png"
+  convert -size 400x40 "canvas:rgb($bright)" -background none -shear 14x0 "theme/images/nav_${type}_hover.png"
+  convert -size 20x400 "canvas:rgba($dim,0.2)" "theme/images/img_$type.png"
+  convert arrow_black.png -fill "rgb($bright)" -opaque black theme/images/arrow_${type}.png
+  convert theme/images/arrow_${type}.png -flop theme/images/arrow_${type}_back.png
+done
+
+convert arrow_black.png -fill "rgb(255,255,255)" -opaque black theme/images/arrow_hover.png
+convert theme/images/arrow_hover.png -flop theme/images/arrow_hover_back.png
+
+capheight=100
+offset=14
+width=24
+crop="-crop ${width}x${capheight}+${offset}x0"
+convert -size 14x$capheight canvas:none -size 200x$capheight canvas:white +append -background none -shear 14x0 $crop "theme/images/cap_right.png"
+convert -size 14x$capheight canvas:white -size 200x$capheight canvas:none +append -background white -shear 14x0 $crop "theme/images/cap_left.png"
+
+sass --style compact --update sass/:theme/styles/
