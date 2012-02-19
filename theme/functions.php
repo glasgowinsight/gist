@@ -151,6 +151,7 @@ function get_archive_posts($limit=9999){
 		$class = '';
 		if ($i % 2 == 0) $class .= ' clear2';
 		if ($i % 3 == 0) $class .= ' clear3';
+		if ($i % 4 == 0) $class .= ' clear4';
 		get_extract($class);
 		$i++;
 	}
