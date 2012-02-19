@@ -131,7 +131,7 @@ ul.blank li { list-style: none inside; }
 .twtr-hd h3 { display: none; }
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
 
-dt { float: left; margin-right: 5px; }
+dt { float: left; margin-right: 5px; font-weight: bold; }
 dd { margin-bottom: 10px; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
