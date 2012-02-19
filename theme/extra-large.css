@@ -11,6 +11,7 @@ body { overflow-x: hidden; }
 .section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 .section-feature .posts .right { position: relative; left: 456px; }
 .section-feature .posts .left, .posts .main, .section-about .row { margin-right: 14px; }
+.section-podcast post { margin-left: 0; margin-right: 0; }
 .posts .right { margin-left: 14px; }
 .section-about .row .right { margin: 14px 0; }
 .single #article { width: 550px; max-width: none; float: left; margin-right: 14px; padding: 0; } 
