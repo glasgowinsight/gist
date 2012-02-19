@@ -1,0 +1,47 @@
+body { overflow-x: hidden; }
+#page { width: 1242px; max-width: none; margin: 0 auto; padding: 0 14px; }
+#sections { width: 928px; float: left; }
+.section-podcast { float:right; width: 221px; }
+#main, .clear { clear: both; }
+.post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
+#site-generator { margin: 14px auto; float: none; }
+.section-feature { position: relative; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .single #related, .single #latest, .single .references, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
+.section-feature .posts .post, .section-feature .posts .articles, .section-podcast .posts .post, .section-podcast .posts .articles { width: 221px; max-width: none; }
+.section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
+.section-feature .posts .right { position: relative; left: 456px; }
+.section-feature .posts .left, .posts .main, .section-about .row { margin-right: 14px; }
+.section-podcast .posts .post, .section-podcast .posts .articles { margin-left: 0; margin-right: 14px; }
+.posts .right { margin-left: 14px; }
+.section-about .row .right { margin: 14px 0; }
+.single #article { width: 550px; max-width: none; float: left; margin-right: 14px; padding: 0; } 
+.single #sidebar, .single #related { float: right; clear: right; }
+.single #container { position: relative; }
+.references { position: absolute; bottom: 0; }
+.single #other .post { margin-left: 14px; }
+.single #other h2 + .post { margin-left: 0px; }
+.archive .post { margin-left: 14px; }
+.archive .clear4 { clear:left; margin-left: 0; }
+
+#logo { margin: 14px 0; float: left; }
+#access { margin: 0; }
+#access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px}
+#access { position: relative; float: right; overflow: visible; }
+#access:after { content: ''; }
+#access .feature { background: url(../images/nav_features.png) no-repeat; position: absolute; top: 0; right: 200px; width: 400px; }
+#access .snippet { background: url(../images/nav_snippets.png) no-repeat; position: absolute; top: 0; right: 50px; width: 400px; }
+#access .podcast { background: url(../images/nav_podcasts.png) no-repeat; position: absolute; top: 0; right: -100px; width: 400px; }
+#access .about { background: url(../images/nav_about.png) no-repeat; position: absolute; top: 0; right: -250px; width: 400px; }
+#access .feature:hover { background: url(../images/nav_features_hover.png) no-repeat; }
+#access .snippet:hover { background: url(../images/nav_snippets_hover.png) no-repeat; }
+#access .podcast:hover { background: url(../images/nav_podcasts_hover.png) no-repeat; }
+#access .about:hover { background: url(../images/nav_about_hover.png) no-repeat; }
+
+h1, .single h2, #nav-below h3 { width: 300px; max-width: none; margin: 14px 0; }
+#nav-below .nav-previous { float: left; }
+#nav-below .nav-next { float: right; }
+
+label { display: inline-block; width: 10em; }
+
+.cap-right, .cap-left, #nav-below h3, #access { overflow-y: visible; }
+.cap-right, .cap-left, #nav-below h3 { z-index: -1; }
