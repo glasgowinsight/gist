@@ -44,7 +44,9 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 .wp-caption p { font-weight: bold; }
 
 .entry-content { line-height: 21px; }
-.entry-content p, .entry-content br, .category-archive-meta p, .category-archive-meta br, #author-info p, #author-info br { margin-bottom: 14px; }
+.entry-content, .category-archive-meta, #author-info { 
+	p, br { margin-bottom: 14px; }
+}
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
 .single #content .entry-header { text-transform: none; text-align: left; }
 
@@ -62,10 +64,14 @@ h1 { background-color: nth($normals, 1); }
 ul.blank li { list-style: none inside; }
 
 #logo { background: nth($normals, 1); width: 240px; height: 128px; max-width: none; }
-#access a { display: block; width:100%; }
 
-.cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow-y: hidden; }
-.cap-right:after, #nav-below h3:after, #access:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
+.cap-right, .cap-left, #nav-below h3, #access {
+	position: relative; 
+	overflow-y: hidden; 
+}
+.cap-right, #nav-below h3, #access { 
+	&:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
+}
 .cap-left:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; }
 
 .twtr-hd h3 { display: none; }
@@ -125,14 +131,26 @@ dd { margin-bottom: 10px; }
 .twtr-doc { width: 100% !important; margin: 14px auto; }
 .entry-thumbnail { text-align: center; margin-bottom: 14px; }
 #access { max-width: 227px; margin: 14px auto; }
+#access a { display: block; width:100%; }
 #access li, h1, .single h2, #nav-below h3 { padding: 2px 20px 2px 5px; }
 h1, .single h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 .post, .articles { margin: 14px auto; } 
 #logo { margin: 14px auto; }
-.single #content .post img, #author-avatar img { max-width: 100%; height: auto; margin: auto; display: block; }
-.wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; max-width: 100%; height: auto; }
-.wp-caption p, .wp-caption br{ line-height: 21px; margin: 0; }
-.wp-caption:before { position: absolute; left: 0; top: 0; }
-.wp-caption:after{ position: absolute; right: 0; top: 0; }
+.single #content .post, #author-avatar {
+	img { max-width: 100%; height: auto; margin: auto; display: block; }
+}
+.wp-caption { 
+	margin: auto; 
+	position: relative; 
+	overflow: hidden; 
+	line-height: 0; 
+	max-width: 100%; 
+	height: auto;
+	
+	p, br { line-height: 21px; margin: 0; }
+	&:before { position: absolute; left: 0; top: 0; }
+	&:after{ position: absolute; right: 0; top: 0; }
+	
+}
 label { display: block; }
 

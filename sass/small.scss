@@ -3,14 +3,15 @@ body { overflow-x: hidden }
 .post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
 .main img { float: left; margin-right: 14px; }
-.posts .post, .posts .articles, .archive .post, #latest .post, #other .post { width: 213px; max-width: none; margin: 14px 0; padding: 0; }
-.posts .main { width: 440px; }
-.posts .left { margin-right: 14px; }
+.posts, .archive, #latest, #other {
+	.post, .articles { width: 213px; max-width: none; margin: 14px 0; padding: 0; }
+	.main { width: 440px; }
+	.left { margin-right: 14px; }
+	.clear2 { clear: left; margin-right: 14px; }
+}
 .row, .clear { clear:both; }
-.archive .clear2, #latest .clear2, #other .clear2 { clear: left; margin-right: 14px; }
 
 #logo { margin: 14px 0; float: left; }
-#access { float: right; }
 
 h1, .single h2, #nav-below h3 { width: 213px; max-width: none; margin: 14px 0; }
 #nav-below .nav-previous { float: left; }
@@ -21,10 +22,21 @@ label { display: inline-block; width: 10em; }
 .cap-right, .cap-left, #nav-below h3, #access { overflow-y: visible; }
 .cap-right, .cap-left, #nav-below h3 { z-index: -1; }
 
-#access { margin: 0 auto; width: 150px; position: relative; }
-#access:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; }
-#access:after { content: ""; }
-#access li { padding: 0; }
-#access li a { position: relative; left: 30px; background-color: inherit; padding: 2px 0; }
-#access li a:after { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
-
+#access { 
+	margin: 0 auto; 
+	width: 150px; 
+	position: relative;
+	float: right;
+	&:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; }
+	&:after { content: ""; }
+	li { 
+		padding: 0;
+		a { 
+			position: relative; 
+			left: 30px; 
+			background-color: inherit; 
+			padding: 2px 0;
+			&:after { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
+		}
+	}
+}
