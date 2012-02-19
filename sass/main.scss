@@ -99,8 +99,8 @@ ul.blank li { list-style: none inside; }
 #access a { display: block; width:100%; }
 
 .cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow-y: hidden; }
-.cap-right:after, #nav-below h3:after, #access:after { content: url(images/cap_right.png); position: absolute; top: 0; right: 0; }
-.cap-left:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
+.cap-right:after, #nav-below h3:after, #access:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
+.cap-left:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; }
 
 .twtr-hd h3 { display: none; }
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
@@ -118,21 +118,21 @@ dd { margin-bottom: 10px; }
 }
 
 @each $category in feature, snippet, podcast, about {
-	.parent-#{$category} .wp-caption:before, .parent-#{$category} .wp-caption:after { content: url(images/img_#{$category}.png); }
-	.section-#{$category} li, .category-#{$category} li { list-style: url(images/bullet_#{$category}.png) inside; }
+	.parent-#{$category} .wp-caption:before, .parent-#{$category} .wp-caption:after { content: url(../images/img_#{$category}.png); }
+	.section-#{$category} li, .category-#{$category} li { list-style: url(../images/bullet_#{$category}.png) inside; }
 	a.link-#{$category}, .link-container-#{$category} a {
 		@include link;
 		border-color: colour(#{$category}, 'normal');
 		&:hover { background-color: colour(#{$category}, 'normal'); }
-		&:after { content: url(images/arrow_#{$category}.png); padding-left: 2px; }
-		&:hover:after{ content: url(images/arrow_hover.png); }
+		&:after { content: url(../images/arrow_#{$category}.png); padding-left: 2px; }
+		&:hover:after{ content: url(../images/arrow_hover.png); }
 	}
 	a.link-back-#{$category}, .link-container-back-#{$category} a {
 		@include link;
 		border-color: colour(#{$category}, 'normal');
 		&:hover { background-color: colour(#{$category}, 'normal'); }
-		&:after { content: url(images/arrow_#{$category}_back.png); padding-right: 2px;	}
-		&:hover:after{ content: url(images/arrow_hover_back.png); }
+		&:after { content: url(../images/arrow_#{$category}_back.png); padding-right: 2px;	}
+		&:hover:after{ content: url(../images/arrow_hover_back.png); }
 	}
 	
 	#access .#{$category} { 
