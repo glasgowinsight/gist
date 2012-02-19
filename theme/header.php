@@ -45,16 +45,16 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('clear.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('styles/clear.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('styles/main.css'); ?>" />
 <!--[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('large.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('styles/large.css'); ?>" />
 <![endif]-->
-<link rel="stylesheet" type="text/css" media="all and (min-width: 1280px)" href="<?php echo resource('extra-large.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 970px) and (max-width: 1280px)" href="<?php echo resource('large.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 724px) and (max-width: 970px)" href="<?php echo resource('medium.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 478px) and (max-width: 724px)" href="<?php echo resource('small.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 478px)" href="<?php echo resource('bleeds.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 1280px)" href="<?php echo resource('styles/extra-large.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 970px) and (max-width: 1280px)" href="<?php echo resource('styles/large.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 724px) and (max-width: 970px)" href="<?php echo resource('styles/medium.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 478px) and (max-width: 724px)" href="<?php echo resource('styles/small.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all and (min-width: 478px)" href="<?php echo resource('styles/bleeds.css'); ?>" />
 
 <?php wp_enqueue_script('twitter') ?>
 <?php wp_enqueue_script( 'jquery' ); ?>
