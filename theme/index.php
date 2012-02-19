@@ -16,56 +16,58 @@ get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
-				<div class="section section-feature">
-					<div><h1 class="cap-right bleed-left">//&nbsp;Features</h1></div>
-					<div class="posts">
-						<?php query_posts('category_name=feature&posts_per_page=10'); ?>
-						<div class="row3">
-							<?php the_post(); ?>
-							<?php get_extract('main', 'large_thumb'); ?>
+				<div id="sections">
+					<div class="section section-feature">
+						<div><h1 class="cap-right bleed-left">//&nbsp;Features</h1></div>
+						<div class="posts">
+							<?php query_posts('category_name=feature&posts_per_page=10'); ?>
+							<div class="row3">
+								<?php the_post(); ?>
+								<?php get_extract('main', 'large_thumb'); ?>
+								<div class="row">
+									<?php the_post(); ?>
+									<?php get_extract('left', 'medium_thumb'); ?>
+									<?php the_post(); ?>
+									<?php get_extract('right', 'medium_thumb'); ?>
+									<br class="clear"/>
+								</div>
+							</div>
 							<div class="row">
 								<?php the_post(); ?>
 								<?php get_extract('left', 'medium_thumb'); ?>
-								<?php the_post(); ?>
-								<?php get_extract('right', 'medium_thumb'); ?>
+								<div class="articles right">
+									<div class="entry-header">
+										<h3 class="entry-title">More Features</h3>
+									</div>
+									<div class="entry-content">
+										<ul>
+											<?php while ( have_posts() ) : the_post(); ?>
+												<li><a href="<?php the_permalink(); ?>" class="link-feature" rel="bookmark"><?php the_title(); ?></a></li>
+											<?php endwhile; ?>
+										</ul>
+									</div>
+								</div>
 								<br class="clear"/>
 							</div>
 						</div>
-						<div class="row">
-							<?php the_post(); ?>
-							<?php get_extract('left', 'medium_thumb'); ?>
-							<div class="articles right">
-								<div class="entry-header">
-									<h3 class="entry-title">More Features</h3>
-								</div>
-								<div class="entry-content">
-									<ul>
-										<?php while ( have_posts() ) : the_post(); ?>
-											<li><a href="<?php the_permalink(); ?>" class="link-feature" rel="bookmark"><?php the_title(); ?></a></li>
-										<?php endwhile; ?>
-									</ul>
-								</div>
-							</div>
-							<br class="clear"/>
-						</div>
 					</div>
-				</div>
-				
-				<div class="section  section-snippet">
-					<div><h1 class="cap-right bleed-left">//&nbsp;Snippets</h1></div>
-					<div class="posts">
-						<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
-						<?php the_post(); ?>
-						<?php get_extract('main'); ?>
-						<?php the_post(); ?>
-						<?php get_extract('left'); ?>
-						<?php the_post(); ?>
-						<?php get_extract('right'); ?>
+					
+					<div class="section  section-snippet">
+						<div><h1 class="cap-right bleed-left">//&nbsp;Snippets</h1></div>
+						<div class="posts">
+							<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
+							<?php the_post(); ?>
+							<?php get_extract('main'); ?>
+							<?php the_post(); ?>
+							<?php get_extract('left'); ?>
+							<?php the_post(); ?>
+							<?php get_extract('right'); ?>
+						</div>
 					</div>
 				</div>
 				
 				<div class="section  section-podcast">
-					<div><h1 class="cap-right bleed-left">//&nbsp;Communication</h1></div>
+					<div><h1 class="cap-switch2 bleed-switch2">//&nbsp;Communication</h1></div>
 					<div class="posts">
 						<?php query_posts('category_name=podcast&posts_per_page=1'); ?>
 						<?php the_post(); ?>
