@@ -94,7 +94,7 @@
 					<li class="feature"><a href="<?php echo get_category_link_by_slug('feature'); ?>">Features</a></li>
 					<li class="snippet"><a href="<?php echo get_category_link_by_slug('snippet'); ?>">Snippets</a></li>
 					<li class="podcast"><a href="<?php echo get_category_link_by_slug('podcast'); ?>">Podcasts</a></li>
-					<li class="about"><a href="<?php echo get_category_link_by_slug('about-gist'); ?>">About</a></li>
+					<li class="about"><a href="<?php echo get_category_link_by_slug('about'); ?>">About</a></li>
 				</ul>
 			</div>
 	</div>
