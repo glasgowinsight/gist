@@ -28,14 +28,14 @@ body { overflow-x: hidden; }
 #access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px}
 #access { position: relative; float: right; overflow: visible; }
 #access:after { content: ''; }
-#access .feature { background: url(images/nav_features.png) no-repeat; position: absolute; top: 0; right: 200px; width: 400px; }
-#access .snippet { background: url(images/nav_snippets.png) no-repeat; position: absolute; top: 0; right: 50px; width: 400px; }
-#access .podcast { background: url(images/nav_podcasts.png) no-repeat; position: absolute; top: 0; right: -100px; width: 400px; }
-#access .about { background: url(images/nav_about.png) no-repeat; position: absolute; top: 0; right: -250px; width: 400px; }
-#access .feature:hover { background: url(images/nav_features_hover.png) no-repeat; }
-#access .snippet:hover { background: url(images/nav_snippets_hover.png) no-repeat; }
-#access .podcast:hover { background: url(images/nav_podcasts_hover.png) no-repeat; }
-#access .about:hover { background: url(images/nav_about_hover.png) no-repeat; }
+#access .feature { background: url(../images/nav_features.png) no-repeat; position: absolute; top: 0; right: 200px; width: 400px; }
+#access .snippet { background: url(../images/nav_snippets.png) no-repeat; position: absolute; top: 0; right: 50px; width: 400px; }
+#access .podcast { background: url(../images/nav_podcasts.png) no-repeat; position: absolute; top: 0; right: -100px; width: 400px; }
+#access .about { background: url(../images/nav_about.png) no-repeat; position: absolute; top: 0; right: -250px; width: 400px; }
+#access .feature:hover { background: url(../images/nav_features_hover.png) no-repeat; }
+#access .snippet:hover { background: url(../images/nav_snippets_hover.png) no-repeat; }
+#access .podcast:hover { background: url(../images/nav_podcasts_hover.png) no-repeat; }
+#access .about:hover { background: url(../images/nav_about_hover.png) no-repeat; }
 
 h1, .single h2, #nav-below h3 { width: 300px; max-width: none; margin: 14px 0; }
 #nav-below .nav-previous { float: left; }

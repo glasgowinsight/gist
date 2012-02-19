@@ -22,7 +22,7 @@ label { display: inline-block; width: 10em; }
 .cap-right, .cap-left, #nav-below h3 { z-index: -1; }
 
 #access { margin: 0 auto; width: 150px; position: relative; }
-#access:before { content: url(images/cap_left.png); position: absolute; bottom: 0; left: 0; }
+#access:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; }
 #access:after { content: ""; }
 #access li { padding: 0; }
 #access li a { position: relative; left: 30px; background-color: inherit; padding: 2px 0; }
