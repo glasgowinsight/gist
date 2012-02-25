@@ -58,9 +58,6 @@ $normals: rgb(255,24,0) rgb(64,19,175) rgb(255,217,0) rgb(0,139,43);
 $darks: rgb(149,71,71) rgb(62,49,103) rgb(149,136,71) rgb(57,119,57);
 $lights: rgb(255,128,115) rgb(140,109,215) rgb(255,234,115) rgb(101,224,128);
 
-h1 { background-color: nth($normals, 1); }
-.archive h1, .archive #nav-below h3 { background-color: nth($normals, 1); }
-
 ul.blank li { list-style: none inside; }
 
 #logo { background: nth($normals, 1); width: 240px; height: 128px; max-width: none; }
@@ -118,7 +115,11 @@ dd { margin-bottom: 10px; }
 	}
 	
 	.single-#{$category}, .section-#{$category}, .category-#{$category}, .parent-#{$category} {
-		h1, h2, #nav-below h3 { img {} }
+		h1, h2, #nav-below h3 { 
+			img { 
+				position: absolute; 
+			}
+		}
 	}
 	
 	.parent-#{$category} .wp-caption p { background-color: #{$light}; }
