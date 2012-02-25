@@ -30,21 +30,9 @@ get_header(); ?>
 						<?php $post = $main_post; setup_postdata($post); ?>
 						<?php get_template_part( 'content', 'single' ); ?>
 						
-						<div class="licence">
-							<?php 
-								$licence=get_licence($post);
-								if( $licence != NULL ): ?>
-									<p>
-										<a rel="license" href="<?php echo $licence['url']; ?>"><img alt="Creative Commons License" src="<?php echo $licence['image']; ?>" /></a>
-										<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><?php the_title(); ?></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><?php the_author(); ?></span> is licensed under a <a rel="license" href="<?php echo $licence['url']; ?>"><?php echo $licence['licence']; ?></a>.
-									</p>
-								<?php endif; 
-							?>
-						</div>
-
 						<?php if ( get_the_author_meta( 'description' ) && ( ! function_exists( 'is_multi_author' ) || is_multi_author() ) ) : ?>
 						<div id="author-info">
-							<h2 class="bleed-left">Author</h2>
+							<h2 class="bleed-left"><?php echo get_bleed(); ?>Author</h2>
 							<div id="author-avatar">
 								<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
 									<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyeleven_author_bio_avatar_size', 68 ) ); ?>
@@ -57,6 +45,18 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 					
+					<div class="licence">
+						<?php 
+							$licence=get_licence($post);
+							if( $licence != NULL ): ?>
+								<p>
+									<a rel="license" href="<?php echo $licence['url']; ?>"><img alt="Creative Commons License" src="<?php echo $licence['image']; ?>" /></a>
+									<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><?php the_title(); ?></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><?php the_author(); ?></span> is licensed under a <a rel="license" href="<?php echo $licence['url']; ?>"><?php echo $licence['licence']; ?></a>.
+								</p>
+							<?php endif; 
+						?>
+					</div>
+
 					<div id="sidebar">
 						<div class="references">
 							<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
