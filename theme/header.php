@@ -97,5 +97,10 @@
 					<li class="about"><a href="<?php echo get_category_link_by_slug('about'); ?>">About</a></li>
 				</ul>
 			</div>
+			
+			<div id="searchForm">
+				<?php get_search_form(); ?>
+			</div>
+			
 	</div>
 	<div id="main">
