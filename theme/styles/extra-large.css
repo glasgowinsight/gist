@@ -44,7 +44,6 @@
 #logo { margin: 14px 0 0 0; float: left; }
 
 #searchForm { position: absolute; bottom: 0; right: 0; }
-#searchForm label { display: none; }
 
 #access { margin: 0; position: relative; float: right; overflow: visible; }
 #access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px; }
