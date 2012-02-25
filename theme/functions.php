@@ -131,7 +131,7 @@ function get_bleed(  ) {
 	$categories = array('feature', 'snippet', 'podcast', 'about');
 	foreach ($categories as $category) {
 		if ( in_category($category) || is_category($category) ){
-			return "<img src=" . resource('images/bleed_' . $category . '.png') . "/>";
+			return '<img src="' . resource('images/bleed_' . $category . '.png') . '"/>';
 		}
 	}
 
