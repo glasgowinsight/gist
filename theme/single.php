@@ -18,7 +18,7 @@ get_header(); ?>
 					<?php $rel = $related->show(get_the_ID(), true); ?>
 					<?php if ( $rel ): ?>
 							<div id="related">
-								<h2 class="cap-switch bleed-switch">Related Articles</h2>  
+								<h2 class="cap-switch bleed-switch"><?php echo get_bleed(); ?>Related Articles</h2>  
 								<?php foreach ($rel as $post) : ?>
 				        			<?php setup_postdata($post); ?>
 				        			<?php get_extract(); ?>

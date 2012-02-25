@@ -57,7 +57,7 @@ get_header(); ?>
 			<div id="content" role="main">
 				<div id="sections">
 					<div class="section section-feature">
-						<div><h1 class="cap-right bleed-left">//&nbsp;Features</h1></div>
+						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_feature.png'); ?>"/>//&nbsp;Features</h1></div>
 						<div class="posts">
 							<div class="row3">
 								<?php $post = $posts['feature'][0]; ?>
@@ -97,7 +97,7 @@ get_header(); ?>
 					</div>
 					
 					<div class="section  section-snippet">
-						<div><h1 class="cap-right bleed-left">//&nbsp;Snippets</h1></div>
+						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_snippet.png'); ?>"/>//&nbsp;Snippets</h1></div>
 						<div class="posts">
 							<?php $post = $posts['snippet'][0]; ?>
 							<?php setup_postdata($post); ?>
@@ -113,7 +113,7 @@ get_header(); ?>
 				</div>
 				
 				<div class="section  section-podcast">
-					<div><h1 class="cap-switch2 bleed-switch2">//&nbsp;Communication</h1></div>
+					<div><h1 class="bleed-switch2"><img src="<?php echo resource('images/bleed_podcast.png'); ?>"/>//&nbsp;Communication</h1></div>
 					<div class="posts">
 						<?php $post = $posts['podcast'][0]; ?>
 						<?php setup_postdata($post); ?>
@@ -141,7 +141,7 @@ get_header(); ?>
                 </div>
 				
 				<div class="section  section-about">
-					<div><h1 class="cap-right bleed-left">//&nbsp;Outside GIST</h1></div>
+					<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_about.png'); ?>"/>//&nbsp;Outside GIST</h1></div>
 					<div class="posts">
 						<div class="row">
 							<div class="articles left">

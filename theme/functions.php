@@ -127,6 +127,17 @@ function get_the_link_class( $classes = '', $container = '' ) {
 	return '';
 }
 
+function get_bleed(  ) {
+	$categories = array('feature', 'snippet', 'podcast', 'about');
+	foreach ($categories as $category) {
+		if ( in_category($category) || is_category($category) ){
+			return "<img src=" . resource('images/bleed_' . $category . '.png') . "/>";
+		}
+	}
+
+	return "<img src=" . resource('images/bleed_feature.png') . "/>";
+}
+
 function get_extract( $classes = '', $thumb = 'small_thumb' ) {	?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class('extract ' . $classes); ?>>
 		<div class="entry-header">
@@ -163,7 +174,7 @@ function get_navigation(){
 
 	if ( $wp_query->max_num_pages > 1 ) { ?>
 		<nav id="nav-below">
-			<h3 class="assistive-text cap-right bleed-left"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
+			<h3 class="assistive-text cap-right bleed-left"><?php echo get_bleed(); ?><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
 			<div <?php echo get_the_link_class('nav-previous', 'container-back-'); ?>><?php next_posts_link( 'Older articles' ); ?></div>
 			<div <?php echo get_the_link_class('nav-next', 'container-'); ?>><?php previous_posts_link( 'Newer articles' ); ?></div>
 		</nav><?php

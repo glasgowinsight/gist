@@ -24,7 +24,7 @@ get_header(); ?>
 				?>
 
 				<div class="page-header">
-					<h1 class="page-title author cap-right bleed-left"><span><?php the_author() ?></span></h1>
+					<h1 class="page-title author bleed-left"><?php echo get_bleed(); ?><?php the_author() ?></h1>
 				</div>
 
 				<?php
