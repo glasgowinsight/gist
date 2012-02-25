@@ -101,6 +101,6 @@
 			<div id="searchForm">
 				<?php get_search_form(); ?>
 			</div>
-			
+			<br style="clear:both"/>
 	</div>
 	<div id="main">

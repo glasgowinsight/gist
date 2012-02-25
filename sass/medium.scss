@@ -17,7 +17,14 @@
 .archive .post, #other .post { margin-left: 14px; }
 .archive .clear3 { clear:left; margin-left: 0; }
 
-#logo { margin: 14px 0; float: left; }
+#branding { position: relative; }
+#logo { margin: 14px 0 0 0; float: left; }
+#searchForm {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	label { display: none; }
+}
 
 $categories: feature snippet podcast about;
 $positions: -40px -140px -240px -340px;
