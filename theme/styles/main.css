@@ -142,7 +142,7 @@ a.link-back-about:hover:after, .link-container-back-about a:hover:after { conten
 
 .addthis_toolbox { float: right; }
 
-.licence { clear: both; margin-top: 14px; }
+.licence { clear: both; padding-top: 14px; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
 .extract img { max-width: 100%; height: auto; }
