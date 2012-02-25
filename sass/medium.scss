@@ -1,7 +1,7 @@
 #page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; }
 .post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
 #site-generator { margin: 14px auto; float: none; }
-.posts .post, .posts .articles, .section-about .row, .archive .post, .single #related, .single #latest, .single .references, .single #other .post { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
 .references { position: absolute; bottom: 0; }
 .single{
 	#sidebar, #related { float: right; clear: right; }
@@ -14,8 +14,10 @@
 .posts .right { margin-left: 14px; }
 .section-about .row .right { margin: 14px 0; }
 #main, .row3, .clear { clear:both; }
-.archive .post, #other .post { margin-left: 14px; }
-.archive .clear3 { clear:left; margin-left: 0; }
+.archive, .search, #other {
+	.post { margin-left: 14px; }
+	.clear3 { clear:left; margin-left: 0; }
+}
 
 #branding { position: relative; }
 #logo { margin: 14px 0 0 0; float: left; }

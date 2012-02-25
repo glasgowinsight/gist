@@ -6,10 +6,10 @@
 
 .main img { float: left; margin-right: 14px; }
 
-.posts .post, .posts .articles, .archive .post, .archive .articles, #latest .post, #latest .articles, #other .post, #other .articles { width: 213px; max-width: none; margin: 14px 0; padding: 0; }
-.posts .main, .archive .main, #latest .main, #other .main { width: 440px; }
-.posts .left, .archive .left, #latest .left, #other .left { margin-right: 14px; }
-.posts .clear2, .archive .clear2, #latest .clear2, #other .clear2 { clear: left; margin-right: 14px; }
+.posts .post, .posts .articles, .archive .post, .archive .articles, .search .post, .search .articles, #latest .post, #latest .articles, #other .post, #other .articles { width: 213px; max-width: none; margin: 14px 0; padding: 0; }
+.posts .main, .archive .main, .search .main, #latest .main, #other .main { width: 440px; }
+.posts .left, .archive .left, .search .left, #latest .left, #other .left { margin-right: 14px; }
+.posts .clear2, .archive .clear2, .search .clear2, #latest .clear2, #other .clear2 { clear: left; margin-right: 14px; }
 
 .row, .clear { clear: both; }
 

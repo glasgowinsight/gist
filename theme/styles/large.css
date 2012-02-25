@@ -8,7 +8,7 @@
 
 .section-feature { position: relative; }
 
-.posts .post, .posts .articles, .section-about .row, .archive .post, .single #related, .single #latest, .single .references, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0; }
 
 .section-feature .posts .post, .section-feature .posts .articles, .single #related, .single #latest, .single .references, .single #other .post { width: 221px; max-width: none; }
 
@@ -30,9 +30,8 @@
 
 .references { position: absolute; bottom: 0; }
 
-.archive .post { margin-left: 14px; }
-
-.archive .clear3 { clear: left; margin-left: 0; }
+.archive .post, .search .post { margin-left: 14px; }
+.archive .clear3, .search .clear3 { clear: left; margin-left: 0; }
 
 #branding { position: relative; }
 
