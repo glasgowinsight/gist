@@ -14,26 +14,68 @@
 
 get_header(); ?>
 
+	<?php 
+		global $post;
+		$categories = array('feature'=>10, 'snippet'=>3, 'podcast'=>1, 'event'=>-1, 'study'=>5);
+		$posts = array();
+		foreach (array_keys($categories) as $category) {
+			$posts[$category] = array();
+		}
+		
+		foreach (get_posts(array('meta_query'=>array(array('key'=>'homepage', 'value'=>'0', 'compare'=>'!=')))) as $post){
+			$position = get_post_meta($post->ID, 'homepage');
+			$position = intval($position[0]) - 1;
+			foreach(get_the_category($post->ID) as $category){
+				$category_name = $category->category_nicename;
+				$posts[$category_name][$position] = $post;
+			}			
+		}
+		
+		foreach (array_keys($categories) as $category) {
+			$posts_per_page = $categories[$category];
+			$i = 0;
+			$loaded = array();
+			foreach ($posts[$category] as $post){
+				$loaded[] = $post->ID;
+			}
+			$cat_posts = get_posts(array(
+				'category_name'=>$category, 
+				'posts_per_page'=>$posts_per_page,
+				'post__not_in'=>$loaded
+			));
+			foreach ($cat_posts as $post){
+				while(array_key_exists($i, $posts[$category])){
+					$i++;
+				}
+				$posts[$category][$i] = $post;
+				$i++;
+			}
+		}
+	?>
+
 		<div id="primary">
 			<div id="content" role="main">
 				<div id="sections">
 					<div class="section section-feature">
 						<div><h1 class="cap-right bleed-left">//&nbsp;Features</h1></div>
 						<div class="posts">
-							<?php query_posts('category_name=feature&posts_per_page=10'); ?>
 							<div class="row3">
-								<?php the_post(); ?>
+								<?php $post = $posts['feature'][0]; ?>
+								<?php setup_postdata($post); ?>
 								<?php get_extract('main', 'large_thumb'); ?>
 								<div class="row">
-									<?php the_post(); ?>
+									<?php $post = $posts['feature'][1]; ?>
+									<?php setup_postdata($post); ?>
 									<?php get_extract('left', 'medium_thumb'); ?>
-									<?php the_post(); ?>
+									<?php $post = $posts['feature'][2]; ?>
+									<?php setup_postdata($post); ?>
 									<?php get_extract('right', 'medium_thumb'); ?>
 									<br class="clear"/>
 								</div>
 							</div>
 							<div class="row">
-								<?php the_post(); ?>
+								<?php $post = $posts['feature'][3]; ?>
+								<?php setup_postdata($post); ?>
 								<?php get_extract('left', 'medium_thumb'); ?>
 								<div class="articles right">
 									<div class="entry-header">
@@ -41,9 +83,11 @@ get_header(); ?>
 									</div>
 									<div class="entry-content">
 										<ul>
-											<?php while ( have_posts() ) : the_post(); ?>
+											<?php for ($i = 4; $i < count($posts['feature']); $i++):
+												$post = $posts['feature'][$i];
+												setup_postdata($post); ?>
 												<li><a href="<?php the_permalink(); ?>" class="link-feature" rel="bookmark"><?php the_title(); ?></a></li>
-											<?php endwhile; ?>
+											<?php endfor; ?>
 										</ul>
 									</div>
 								</div>
@@ -55,12 +99,14 @@ get_header(); ?>
 					<div class="section  section-snippet">
 						<div><h1 class="cap-right bleed-left">//&nbsp;Snippets</h1></div>
 						<div class="posts">
-							<?php query_posts('category_name=snippet&posts_per_page=3'); ?>
-							<?php the_post(); ?>
+							<?php $post = $posts['snippet'][0]; ?>
+							<?php setup_postdata($post); ?>
 							<?php get_extract('main'); ?>
-							<?php the_post(); ?>
+							<?php $post = $posts['snippet'][1]; ?>
+							<?php setup_postdata($post); ?>
 							<?php get_extract('left'); ?>
-							<?php the_post(); ?>
+							<?php $post = $posts['snippet'][2]; ?>
+							<?php setup_postdata($post); ?>
 							<?php get_extract('right'); ?>
 						</div>
 					</div>
@@ -69,8 +115,8 @@ get_header(); ?>
 				<div class="section  section-podcast">
 					<div><h1 class="cap-switch2 bleed-switch2">//&nbsp;Communication</h1></div>
 					<div class="posts">
-						<?php query_posts('category_name=podcast&posts_per_page=1'); ?>
-						<?php the_post(); ?>
+						<?php $post = $posts['podcast'][0]; ?>
+						<?php setup_postdata($post); ?>
 						<?php get_extract('main'); ?>
 						
 		                <div class="articles left">
@@ -104,10 +150,10 @@ get_header(); ?>
 								</div>
 								<div class="entry-content">
 									<ul>
-										<?php query_posts('category_name=event'); ?>
-										<?php while ( have_posts() ) : the_post(); ?>
+										<?php foreach (array_slice($posts['event'], 0, $categories['event']) as $post):
+											setup_postdata($post); ?>
 											<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
-										<?php endwhile; ?>
+										<?php endforeach; ?>
 									</ul>
 								</div>
 							</div>
@@ -147,10 +193,10 @@ get_header(); ?>
 							</div>
 							<div class="entry-content">
 								<ul>
-									<?php query_posts('category_name=study'); ?>
-									<?php while ( have_posts() ) : the_post(); ?>
+									<?php foreach (array_slice($posts['study'], 0, $categories['study']) as $post):
+										setup_postdata($post); ?>
 										<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
-									<?php endwhile; ?>
+									<?php endforeach; ?>
 								</ul>
 							</div>
 						</div>
