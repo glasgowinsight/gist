@@ -78,7 +78,7 @@ get_header(); ?>
 	    		
 				<?php if ( have_posts() ) : ?>
 					<div id="other">
-						<h2 class="bleed-left">Other Articles</h2>  
+						<h2 class="bleed-left"><?php echo get_bleed(); ?>Other Articles</h2>  
 						<?php get_archive_posts(); ?>
 		    		</div>
 	    		<?php endif; ?>
