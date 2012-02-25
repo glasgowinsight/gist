@@ -1,4 +1,4 @@
-body { font-family: Calibri, "Gill Sans", "Gill Sans MT", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, sans-serif; font-size: 13px; }
+body { font-family: Calibri, "Gill Sans", "Gill Sans MT", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, sans-serif; font-size: 13px; overflow-x: hidden; }
 
 div.twtr-widget { font-family: Calibri, "Gill Sans", "Gill Sans MT", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, sans-serif !important; font-size: 13px !important; }
 
@@ -131,6 +131,14 @@ a.link-back-about:hover:after, .link-container-back-about a:hover:after { conten
 .single-about h1 img, .single-about h2 img, .single-about #nav-below h3 img, .section-about h1 img, .section-about h2 img, .section-about #nav-below h3 img, .category-about h1 img, .category-about h2 img, .category-about #nav-below h3 img, .parent-about h1 img, .parent-about h2 img, .parent-about #nav-below h3 img { position: absolute !important; height: 100% !important; max-height: none !important; max-width: none !important; z-index: -1; }
 
 .parent-about .wp-caption p { background-color: #65e080; }
+
+.bleed-right img { left: 0; top: 0; }
+
+.bleed-left img { right: 0; top: 0; }
+
+.bleed-switch2 img { right: 0; top: 0; }
+
+.bleed-switch2 img { right: 0; top: 0; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
 .extract img { max-width: 100%; height: auto; }
