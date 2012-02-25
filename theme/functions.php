@@ -135,7 +135,7 @@ function get_bleed(  ) {
 		}
 	}
 
-	return "<img src=" . resource('images/bleed_feature.png') . "/>";
+	return '<img src="' . resource('images/bleed_' . $category . '.png') . '"/>';
 }
 
 function get_extract( $classes = '', $thumb = 'small_thumb' ) {	?>

@@ -107,22 +107,22 @@ dd { margin-bottom: 10px; }
 		&:hover { background: #{$normal}; }
 	}
 	
-	.single-#{$category}, .section-#{$category}, .category-#{$category}, .parent-#{$category} {
-		h1, h2, #nav-below h3 { 
-			position: relative;
-			img { 
-				position: absolute !important; 
-				height: 100% !important; 
-				max-height: none !important; 
-				max-width: none !important; 
-				z-index: -1; 
-			}
-		}
-	}
-	
 	.parent-#{$category} .wp-caption p { background-color: #{$light}; }
 }
 
+.single, .section, .archive, .search {
+	h1, h2, #nav-below h3 { 
+		position: relative;
+		img { 
+			position: absolute !important; 
+			height: 100% !important; 
+			max-height: none !important; 
+			max-width: none !important; 
+			z-index: -1; 
+		}
+	}
+}
+	
 .bleed-right img { left: 0; top: 0; }
 .bleed-left img { right: 0; top: 0; }
 .bleed-switch2 img { right: 0; top: 0; }
