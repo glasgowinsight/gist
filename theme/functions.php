@@ -17,7 +17,7 @@ function gist_setup() {
 	add_image_size( 'large_thumb', 456, 456, True );
 	add_image_size( 'medium_thumb', 221, 110, True );
 	add_image_size( 'small_thumb', 150, 110, True );
-	
+
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
 
@@ -29,7 +29,7 @@ function filter_query($query) {
 	if ( $query->is_archive && !isset($query->query_vars['posts_per_page'])) {
 		$query->query_vars['posts_per_page'] = 12;
 	}
- 
+
 	return $query;
 }
 add_filter('pre_get_posts', 'filter_query');
@@ -39,17 +39,17 @@ function resource($resource) {
 }
 
 function id_by_slug($slug){
-        return get_category_by_slug($slug)->term_id;
+	return get_category_by_slug($slug)->term_id;
 }
-        
+
 function get_category_name_by_slug($cat_name){
-        $id = id_by_slug($cat_name);
-        return get_cat_name($id);
+	$id = id_by_slug($cat_name);
+	return get_cat_name($id);
 }
 
 function get_category_link_by_slug($cat_name){
-        $id = id_by_slug($cat_name);
-        return get_category_link($id);
+	$id = id_by_slug($cat_name);
+	return get_category_link($id);
 }
 
 add_filter('img_caption_shortcode', 'fix_caption_width', 10, 3);
@@ -68,7 +68,7 @@ function fix_caption_width($val, $attr, $content = null) {
 	if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
 
 	return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" style="width: ' . ((int) $width) . 'px">'
-	. do_shortcode( $content ) . '<p class="wp-caption-text">// ' . $caption . '</p></div>';
+		. do_shortcode( $content ) . '<p class="wp-caption-text">// ' . $caption . '</p></div>';
 }
 
 add_filter('comment_form_default_fields', 'comments');
@@ -95,7 +95,7 @@ function remove_filters() {
 	remove_filter( 'excerpt_more', 'twentyeleven_auto_excerpt_more' );
 	remove_filter( 'get_the_excerpt', 'twentyeleven_custom_excerpt_more' );
 }
-    
+
 function gist_continue_reading_link() {
 	return ' <a href="'. esc_url( get_permalink() ) . '" ' . get_the_link_class() . '>More</a>';
 }
@@ -120,7 +120,7 @@ function get_the_link_class( $classes = '', $container = '' ) {
 			return 'class="link-' . $container . $category . ' ' . $classes . '"';
 		}
 	}
-	
+
 	if ( $classes ) {
 		return 'class="' . $classes . '"';
 	}
@@ -152,7 +152,7 @@ function get_extract( $classes = '', $thumb = 'small_thumb' ) {	?>
 			<?php the_excerpt(); ?>
 		</div>
 		<br style="clear:both"/>
-	</div><?php 
+	</div><?php
 }
 
 function get_archive_posts($limit=9999){
@@ -180,4 +180,25 @@ function get_navigation(){
 		</nav><?php
 	}
 }
+
+function get_licence($post){
+	$licence_id = get_post_meta($post->ID, 'licence', true);
+	switch($licence_id){
+		case "CC BY":
+			return array(
+				'url'=>'http://creativecommons.org/licenses/by/3.0/',
+				'image'=>'http://i.creativecommons.org/l/by/3.0/80x15.png',
+				'licence'=>'Creative Commons Attribution 3.0 Unported License'
+			);
+		case "CC BY-SA":
+			return array(
+				'url'=>'http://creativecommons.org/licenses/by-sa/3.0/',
+				'image'=>'http://i.creativecommons.org/l/by-sa/3.0/80x15.png',
+				'licence'=>'Creative Commons Attribution-Share-Alike 3.0 Unported License'
+			);
+		default:
+			return NULL;
+	}
+}
+
 ?>
