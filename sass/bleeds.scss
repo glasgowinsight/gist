@@ -1,17 +1,17 @@
-.bleed-right img { height: 100%; z-index: -1; left: 0; top: 0; }
-.bleed-left img { height: 100%; z-index: -1; right: 0; top: 0; }
+.bleed-right img { left: 0; top: 0; }
+.bleed-left img { right: 0; top: 0; }
 
 @media all and (max-width: 724px) {
-	.bleed-switch2 img { height: 100%; z-index: -1; right: 0; top: 0; }
+	.bleed-switch2 img { right: 0; top: 0; }
 }
 
 @media all and (min-width: 724px) {
-	.bleed-switch img { height: 100%; z-index: -1; left: 0; top: 0; }
+	.bleed-switch img { left: 0; top: 0; }
 }
 
 @media all and (max-width: 1280px) {
-	.bleed-switch2 img { height: 100%; z-index: -1; right: 0; top: 0; }
+	.bleed-switch2 img { right: 0; top: 0; }
 }
 @media all and (min-width: 1280px) {
-	.bleed-switch2 img { height: 100%; z-index: -1; left: 0; top: 0; }
+	.bleed-switch2 img { left: 0; top: 0; }
 }

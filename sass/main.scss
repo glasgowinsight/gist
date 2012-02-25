@@ -110,6 +110,10 @@ dd { margin-bottom: 10px; }
 			position: relative;
 			img { 
 				position: absolute; 
+				height: 100%; 
+				max-height: none; 
+				max-width: none; 
+				z-index: -1; 
 			}
 		}
 	}
