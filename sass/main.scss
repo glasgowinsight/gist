@@ -67,8 +67,6 @@ ul.blank li { list-style: none inside; }
 #access {
 	position: relative; 
 	overflow-y: hidden; 
-}
-#access { 
 	&:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
 }
 
@@ -138,9 +136,9 @@ dd { margin-bottom: 10px; }
 
 .addthis_toolbox { float: right; }
 .licence { clear: both; padding-top: 14px; }
-#searchform { 
+#searchForm { 
 	text-align: center; 
-	margin-top: 14px;
+	form { margin-top: 14px; }
 	label { display: none; }
 }
 
