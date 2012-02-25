@@ -1,4 +1,3 @@
-body { overflow-x: hidden; }
 #page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; }
 #main, .clear { clear: both; }
 .post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
@@ -52,3 +51,5 @@ h1, .single h2, #nav-below h3 { width: 300px; max-width: none; margin: 14px 0; }
 #nav-below .nav-next { float: right; }
 
 label { display: inline-block; width: 10em; }
+
+.bleed-switch img { left: 0; top: 0; }

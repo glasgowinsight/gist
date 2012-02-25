@@ -9,6 +9,7 @@ body {
 		sans-serif;
 		
   font-size: 13px;
+  overflow-x: hidden;
 }
 
 div.twtr-widget { 
@@ -121,6 +122,11 @@ dd { margin-bottom: 10px; }
 	
 	.parent-#{$category} .wp-caption p { background-color: #{$light}; }
 }
+
+.bleed-right img { left: 0; top: 0; }
+.bleed-left img { right: 0; top: 0; }
+.bleed-switch2 img { right: 0; top: 0; }
+.bleed-switch2 img { right: 0; top: 0; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
 .extract img { max-width: 100%; height: auto; } 
