@@ -13,7 +13,7 @@
  */
 ?>
 	<div id="comments">
-	<h2 id="comments-title" class="cap-right bleed-left"><?php echo get_bleed(); ?>Discussion</h2>
+	<h2 id="comments-title" class="bleed-left"><?php echo get_bleed(); ?>Discussion</h2>
 	<a name="comments"></a>
 	
 	<?php if ( post_password_required() ) : ?>

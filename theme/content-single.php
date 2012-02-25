@@ -9,7 +9,7 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-header">
-		<h1 class="entry-title cap-right bleed-left"><?php echo get_bleed(); ?><?php the_title(); ?></h1>
+		<h1 class="entry-title bleed-left"><?php echo get_bleed(); ?><?php the_title(); ?></h1>
 	</div>
 
 	<div class="entry-content">
