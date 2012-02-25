@@ -1,14 +1,8 @@
-.bleed-right:after { content: ""; position: absolute; width: 1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
+.bleed-right img { height: 100%; z-index: -1; left: 0; top: 0; }
 
-.bleed-left:before { content: ""; position: absolute; width: 1000px; height: 100%; z-index: -1; background-color: inherit; right: 50px; top: 0; }
+.bleed-left img { height: 100%; z-index: -1; right: 0; top: 0; }
 
-.cap-switch, .cap-switch2 { position: relative; z-index: -1; }
-
-@media all and (max-width: 724px) { .bleed-switch:before { content: ""; position: absolute; width: 1000px; height: 100%; z-index: -1; background-color: inherit; right: 50px; top: 0; }
-  .cap-switch:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; } }
-@media all and (min-width: 724px) { .bleed-switch:after { content: ""; position: absolute; width: 1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
-  .cap-switch:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; } }
-@media all and (max-width: 1280px) { .bleed-switch2:before { content: ""; position: absolute; width: 1000px; height: 100%; z-index: -1; background-color: inherit; right: 50px; top: 0; }
-  .cap-switch2:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; } }
-@media all and (min-width: 1280px) { .bleed-switch2:after { content: ""; position: absolute; width: 1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
-  .cap-switch2:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; } }
+@media all and (max-width: 724px) { .bleed-switch2 img { height: 100%; z-index: -1; right: 0; top: 0; } }
+@media all and (min-width: 724px) { .bleed-switch img { height: 100%; z-index: -1; left: 0; top: 0; } }
+@media all and (max-width: 1280px) { .bleed-switch2 img { height: 100%; z-index: -1; right: 0; top: 0; } }
+@media all and (min-width: 1280px) { .bleed-switch2 img { height: 100%; z-index: -1; left: 0; top: 0; } }

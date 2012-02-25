@@ -26,12 +26,6 @@ ul.blank li { list-style: none inside; }
 
 #logo { background: #ff1800; width: 240px; height: 128px; max-width: none; }
 
-.cap-right, .cap-left, #nav-below h3, #access { position: relative; overflow-y: hidden; }
-
-.cap-right:after, #nav-below h3:after, #access:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
-
-.cap-left:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; }
-
 .twtr-hd h3 { display: none; }
 
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
@@ -59,6 +53,7 @@ a.link-back-feature:hover:after, .link-container-back-feature a:hover:after { co
 #access .feature { background: #954747; }
 #access .feature:hover { background: #ff1800; }
 
+.single-feature h1, .single-feature h2, .single-feature #nav-below h3, .section-feature h1, .section-feature h2, .section-feature #nav-below h3, .category-feature h1, .category-feature h2, .category-feature #nav-below h3, .parent-feature h1, .parent-feature h2, .parent-feature #nav-below h3 { position: relative; }
 .single-feature h1 img, .single-feature h2 img, .single-feature #nav-below h3 img, .section-feature h1 img, .section-feature h2 img, .section-feature #nav-below h3 img, .category-feature h1 img, .category-feature h2 img, .category-feature #nav-below h3 img, .parent-feature h1 img, .parent-feature h2 img, .parent-feature #nav-below h3 img { position: absolute; }
 
 .parent-feature .wp-caption p { background-color: #ff8073; }
@@ -82,6 +77,7 @@ a.link-back-snippet:hover:after, .link-container-back-snippet a:hover:after { co
 #access .snippet { background: #3e3167; }
 #access .snippet:hover { background: #4013af; }
 
+.single-snippet h1, .single-snippet h2, .single-snippet #nav-below h3, .section-snippet h1, .section-snippet h2, .section-snippet #nav-below h3, .category-snippet h1, .category-snippet h2, .category-snippet #nav-below h3, .parent-snippet h1, .parent-snippet h2, .parent-snippet #nav-below h3 { position: relative; }
 .single-snippet h1 img, .single-snippet h2 img, .single-snippet #nav-below h3 img, .section-snippet h1 img, .section-snippet h2 img, .section-snippet #nav-below h3 img, .category-snippet h1 img, .category-snippet h2 img, .category-snippet #nav-below h3 img, .parent-snippet h1 img, .parent-snippet h2 img, .parent-snippet #nav-below h3 img { position: absolute; }
 
 .parent-snippet .wp-caption p { background-color: #8c6dd7; }
@@ -105,6 +101,7 @@ a.link-back-podcast:hover:after, .link-container-back-podcast a:hover:after { co
 #access .podcast { background: #958847; }
 #access .podcast:hover { background: #ffd900; }
 
+.single-podcast h1, .single-podcast h2, .single-podcast #nav-below h3, .section-podcast h1, .section-podcast h2, .section-podcast #nav-below h3, .category-podcast h1, .category-podcast h2, .category-podcast #nav-below h3, .parent-podcast h1, .parent-podcast h2, .parent-podcast #nav-below h3 { position: relative; }
 .single-podcast h1 img, .single-podcast h2 img, .single-podcast #nav-below h3 img, .section-podcast h1 img, .section-podcast h2 img, .section-podcast #nav-below h3 img, .category-podcast h1 img, .category-podcast h2 img, .category-podcast #nav-below h3 img, .parent-podcast h1 img, .parent-podcast h2 img, .parent-podcast #nav-below h3 img { position: absolute; }
 
 .parent-podcast .wp-caption p { background-color: #ffea73; }
@@ -128,6 +125,7 @@ a.link-back-about:hover:after, .link-container-back-about a:hover:after { conten
 #access .about { background: #397739; }
 #access .about:hover { background: #008b2b; }
 
+.single-about h1, .single-about h2, .single-about #nav-below h3, .section-about h1, .section-about h2, .section-about #nav-below h3, .category-about h1, .category-about h2, .category-about #nav-below h3, .parent-about h1, .parent-about h2, .parent-about #nav-below h3 { position: relative; }
 .single-about h1 img, .single-about h2 img, .single-about #nav-below h3 img, .section-about h1 img, .section-about h2 img, .section-about #nav-below h3 img, .category-about h1 img, .category-about h2 img, .category-about #nav-below h3 img, .parent-about h1 img, .parent-about h2 img, .parent-about #nav-below h3 img { position: absolute; }
 
 .parent-about .wp-caption p { background-color: #65e080; }

@@ -25,10 +25,6 @@ h1, .single h2, #nav-below h3 { width: 213px; max-width: none; margin: 14px 0; }
 
 label { display: inline-block; width: 10em; }
 
-.cap-right, .cap-left, #nav-below h3, #access { overflow-y: visible; }
-
-.cap-right, .cap-left, #nav-below h3 { z-index: -1; }
-
 #access { margin: 0 auto; width: 150px; position: relative; float: right; }
 #access:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; }
 #access:after { content: ""; }

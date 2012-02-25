@@ -49,7 +49,3 @@ h1, .single h2, #nav-below h3 { width: 218px; max-width: none; margin: 14px 0; }
 #nav-below .nav-next { float: right; }
 
 label { display: inline-block; width: 10em; }
-
-.cap-right, .cap-left, #nav-below h3, #access { overflow-y: visible; }
-
-.cap-right, .cap-left, #nav-below h3 { z-index: -1; }
