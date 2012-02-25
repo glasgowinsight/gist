@@ -64,6 +64,14 @@ ul.blank li { list-style: none inside; }
 #logo { background: nth($normals, 1); width: 240px; height: 128px; max-width: none; }
 #logo img { z-index: 0 !important; }
 
+#access {
+	position: relative; 
+	overflow-y: hidden; 
+}
+#access { 
+	&:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
+}
+
 .twtr-hd h3 { display: none; }
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
 

@@ -25,6 +25,7 @@ label { display: inline-block; width: 10em; }
 	width: 150px; 
 	position: relative;
 	float: right;
+	overflow-y: visible;
 	&:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; }
 	&:after { content: ""; }
 	li { 

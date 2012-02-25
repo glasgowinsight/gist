@@ -30,4 +30,11 @@ done
 convert arrow_black.png -fill "rgb(255,255,255)" -opaque black theme/images/arrow_hover.png
 convert theme/images/arrow_hover.png -flop theme/images/arrow_hover_back.png
 
+capheight=100
+offset=14
+width=24
+crop="-crop ${width}x${capheight}+${offset}x0"
+convert -size 14x$capheight canvas:none -size 200x$capheight canvas:white +append -background none -shear 14x0 $crop "theme/images/cap_right.png"
+convert -size 14x$capheight canvas:white -size 200x$capheight canvas:none +append -background white -shear 14x0 $crop "theme/images/cap_left.png"
+
 sass --style compact --update sass/:theme/styles/
