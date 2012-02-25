@@ -99,6 +99,7 @@
 			</div>
 			
 			<div id="searchForm">
+				<a href="<?php echo site_url('/wp-login.php')?>" class="link-feature">Contributor Login</a>
 				<?php get_search_form(); ?>
 			</div>
 			<br style="clear:both"/>
