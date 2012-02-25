@@ -49,7 +49,7 @@ get_header(); ?>
 						<div class="references">
 							<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
 							<?php if ($references ): ?>
-								<h2 class="bleed-switch">References</h2>
+								<h2 class="bleed-switch"><?php echo get_bleed(); ?>References</h2>
 								<?php echo $references; ?>
 							<?php endif;?>
 						</div>
@@ -57,7 +57,7 @@ get_header(); ?>
 						<?php query_posts('category_name=feature,snippet&posts_per_page=7'); ?>
 						<?php if ( have_posts() ) : ?>
 							<div id="latest">
-								<h2 class="bleed-switch">Latest Articles</h2>  
+								<h2 class="bleed-switch"><?php echo get_bleed(); ?>Latest Articles</h2>  
 								<?php get_archive_posts(3); ?>
 				    		</div>
 			    		<?php endif; ?>
