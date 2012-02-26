@@ -3,15 +3,17 @@
 feature="88,14,173"
 featuredim="156,106,214"
 featuredark="55,4,112"
-snippet="5,125,159"
-snippetdim="97,183,207"
-snippetdark="2,81,103"
-podcast="177,241,0"
-podcastdim="212,248,112"
-podcastdark="115,157,0"
-about="255,187,0"
-aboutdim="255,218,115"
-aboutdark="166,122,0"
+snippet="177,241,0"
+snippetdim="212,248,112"
+snippetdark="115,157,0"
+podcast="255,187,0"
+podcastdim="255,218,115"
+podcastdark="166,122,0"
+about="255,0,0"
+aboutdim="255,115,115"
+aboutdark="166,0,0"
+
+
 
 for type in feature snippet podcast about; do
   eval bright="\$${type}"
