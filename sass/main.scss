@@ -113,7 +113,9 @@ dd { margin-bottom: 10px; }
 		&:hover { background: #{$normal}; }
 	}
 	
-	.parent-#{$category} .wp-caption p { background-color: #{$light}; }
+	.parent-#{$category} {
+		.aside, .wp-caption p { background-color: #{$light}; }
+	}
 }
 
 .single, .section, .archive, .search {
