@@ -49,13 +49,13 @@
 #access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px; }
 #access:after { content: ''; }
 #access .feature { background: url(../images/nav_feature.png) no-repeat; position: absolute; top: 0; right: 200px; width: 400px; }
-#access .feature:hover { background: url(../images/nav_feature_hover.png) no-repeat; }
+#access .feature:hover { background-position: 0 -25px; }
 #access .snippet { background: url(../images/nav_snippet.png) no-repeat; position: absolute; top: 0; right: 50px; width: 400px; }
-#access .snippet:hover { background: url(../images/nav_snippet_hover.png) no-repeat; }
+#access .snippet:hover { background-position: 0 -25px; }
 #access .podcast { background: url(../images/nav_podcast.png) no-repeat; position: absolute; top: 0; right: -100px; width: 400px; }
-#access .podcast:hover { background: url(../images/nav_podcast_hover.png) no-repeat; }
+#access .podcast:hover { background-position: 0 -25px; }
 #access .about { background: url(../images/nav_about.png) no-repeat; position: absolute; top: 0; right: -250px; width: 400px; }
-#access .about:hover { background: url(../images/nav_about_hover.png) no-repeat; }
+#access .about:hover { background-position: 0 -25px; }
 
 h1, .single h2, #nav-below h3 { width: 300px; max-width: none; margin: 14px 0; }
 
