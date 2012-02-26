@@ -91,8 +91,12 @@ dd { margin-bottom: 10px; }
 	$dark: nth($darks, $i);
 	$light: nth($lights, $i);
 	
-	.parent-#{$category} .wp-caption:before, .parent-#{$category} .wp-caption:after { content: url(../images/img_#{$category}.png); }
-	.section-#{$category} li, .category-#{$category} li { list-style: url(../images/bullet_#{$category}.png) inside; }
+	.parent-#{$category} .wp-caption {
+		&:before, &:after { content: url(../images/img_#{$category}.png); } 
+	}
+	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
+		li { list-style: url(../images/bullet_#{$category}.png) inside; }
+	}
 	a.link-#{$category}, .link-container-#{$category} a {
 		@include link;
 		border-color: #{$normal};
