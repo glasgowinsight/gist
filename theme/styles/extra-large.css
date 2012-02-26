@@ -49,6 +49,7 @@
 .wp-caption { width: 450px; }
 .wp-caption img { width: 300px; float: left; }
 .wp-caption p { width: 150px; float: right; }
+.wp-caption:after { right: 150px; }
 
 #access { margin: 0; position: relative; float: right; overflow: visible; }
 #access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px; }

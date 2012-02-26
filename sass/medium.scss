@@ -33,6 +33,7 @@
 	width: 450px;
 	img { width: 300px; float: left; }
 	p { width: 150px; float: right; }
+	&:after { right: 150px; }
 }
 
 $categories: feature snippet podcast about;
