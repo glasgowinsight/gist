@@ -92,8 +92,8 @@ dd { margin-bottom: 10px; }
 	$light: nth($lights, $i);
 	
 	.single-#{$category} .wp-caption {
-		&:before, &:after { content: url(../images/img_#{$category}.png); } 
-		p { background-color: #{$normal}; }
+		&:before, &:after { content: url(../images/img_#{$category}.png); z-index: -1; } 
+		p { background-color: #{$light}; }
 	}
 	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
 		li { list-style: url(../images/bullet_#{$category}.png) inside; }
@@ -135,6 +135,7 @@ dd { margin-bottom: 10px; }
 		}
 	}
 }
+#article .post { float: none; }
 	
 .bleed-right img { left: 0; top: 0; }
 .bleed-left img { right: 0; top: 0; }
