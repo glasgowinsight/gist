@@ -13,6 +13,7 @@
 .single #other .post { width: 160px; margin-left: 14px; }
 .single #other h2 + .post { margin-left: 0px; }
 .single #article { width: 450px; max-width: none; float: left; margin-right: 14px; padding: 0; }
+.single .aside { width: 225px; float: right; }
 
 .posts .main, .section-about .row { margin-right: 14px; }
 

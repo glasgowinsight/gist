@@ -23,6 +23,7 @@
 .section-about .row .right { margin: 14px 0; }
 
 .single #article { width: 450px; max-width: none; float: left; margin-right: 14px; padding: 0; }
+.single .aside { width: 225px; float: right; }
 .single #sidebar, .single #related { float: right; clear: right; }
 .single #container { position: relative; }
 .single #other .post { margin-left: 14px; }
