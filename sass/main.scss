@@ -92,8 +92,9 @@ dd { margin-bottom: 10px; }
 	$light: nth($lights, $i);
 	
 	.single-#{$category} .wp-caption {
-		&:before, &:after { content: url(../images/img_#{$category}.png); z-index: -1; } 
-		p { background-color: #{$light}; }
+		background-color: #{$light};
+		&:before, &:after { content: url(../images/img_#{$category}.png); }
+		p { z-index: 1; } 
 	}
 	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
 		li { list-style: url(../images/bullet_#{$category}.png) inside; }

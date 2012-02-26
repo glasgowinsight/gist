@@ -33,6 +33,12 @@
 	right: 0;
 }
 
+.wp-caption {
+	width: 450px;
+	img { width: 300px; float: left; }
+	p { width: 150px; float: right; }
+}
+
 $categories: feature snippet podcast about;
 $positions: 200px 50px -100px -250px;
 #access { 

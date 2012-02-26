@@ -29,6 +29,12 @@
 	right: 0;
 }
 
+.wp-caption {
+	width: 450px;
+	img { width: 300px; float: left; }
+	p { width: 150px; float: right; }
+}
+
 $categories: feature snippet podcast about;
 $positions: -40px -140px -240px -340px;
 #access { 
