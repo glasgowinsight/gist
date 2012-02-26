@@ -85,7 +85,7 @@
 	<div id="branding" role="banner">
 			<h2 id="logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" rel="home">
-					<img width="240" height="128" src="<?php echo resource('images/logo.png'); ?>"/>
+					<img width="212" height="128" src="<?php echo resource('images/logo.png'); ?>"/>
 				</a>
 			</h2>
 			

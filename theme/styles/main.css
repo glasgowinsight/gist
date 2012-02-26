@@ -24,7 +24,7 @@ a { text-decoration: none; }
 
 ul.blank li { list-style: none inside; }
 
-#logo { background: #ff1800; width: 240px; height: 128px; max-width: none; }
+#logo { background: #ff1800; width: 212px; height: 128px; max-width: none; }
 
 #logo img { z-index: 0 !important; }
 
