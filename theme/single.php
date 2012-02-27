@@ -51,8 +51,8 @@ get_header(); ?>
 								$licence=get_licence($post);
 								if( $licence != NULL ): ?>
 									<p>
-										<a rel="license" href="<?php echo $licence['url']; ?>" <?php echo $link_class; ?>><img alt="Creative Commons License" src="<?php echo $licence['image']; ?>" /></a>
-										<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><?php the_title(); ?></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><?php the_author(); ?></span> is licensed under a <a rel="license" href="<?php echo $licence['url']; ?>"><?php echo $licence['licence']; ?></a>.
+										<a rel="license" href="<?php echo $licence['url']; ?>"><img alt="Creative Commons License" src="<?php echo $licence['image']; ?>" /></a>
+										<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><?php the_title(); ?></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><?php the_author(); ?></span> is licensed under a <a rel="license" href="<?php echo $licence['url']; ?>" <?php echo $link_class; ?>><?php echo $licence['licence']; ?></a>.
 									</p>
 								<?php endif; 
 							?>
