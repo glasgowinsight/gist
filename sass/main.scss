@@ -64,7 +64,10 @@ ul.blank li { list-style: none inside; }
 
 #logo { background: nth($normals, 1); width: 212px; height: 128px; max-width: none; }
 #logo img { z-index: 0 !important; }
-.home #searchForm a.link-snippet { border-color: nth($normals, 1); }
+.home #searchForm a { 
+	border-color: nth($normals, 1);
+	&:after { content: url(../images/arrow_feature.png); }
+}
 
 #access {
 	position: relative; 
