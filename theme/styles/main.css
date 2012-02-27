@@ -31,6 +31,7 @@ ul.blank li { list-style: none inside; }
 .home #searchForm a { border-color: #580ead; }
 .home #searchForm a:hover { background-color: #580ead; }
 .home #searchForm a:after { content: url(../images/arrow_feature.png); }
+.home #searchForm a:hover:after { content: url(../images/arrow_hover.png); }
 
 #access { position: relative; overflow-y: hidden; }
 #access:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }

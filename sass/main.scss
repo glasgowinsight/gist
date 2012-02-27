@@ -68,6 +68,7 @@ ul.blank li { list-style: none inside; }
 	border-color: nth($normals, 1);
 	&:hover { background-color: nth($normals, 1); }
 	&:after { content: url(../images/arrow_feature.png); }
+	&:hover:after{ content: url(../images/arrow_hover.png); }
 }
 
 #access {
