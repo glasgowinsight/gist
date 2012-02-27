@@ -66,6 +66,7 @@ ul.blank li { list-style: none inside; }
 #logo img { z-index: 0 !important; }
 .home #searchForm a { 
 	border-color: nth($normals, 1);
+	&:hover { background-color: nth($normals, 1); }
 	&:after { content: url(../images/arrow_feature.png); }
 }
 
