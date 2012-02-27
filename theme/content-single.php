@@ -8,6 +8,8 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php global $bleed; ?>
+	<?php global $link_class; ?>
 	<div class="entry-header">
 		<h1 class="entry-title bleed-left"><?php echo $bleed; ?><?php the_title(); ?></h1>
 	</div>

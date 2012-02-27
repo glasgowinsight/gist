@@ -13,11 +13,8 @@ get_header(); ?>
 		<?php global $post; ?>
 		<?php $main_post = get_post(get_the_ID()); ?>
 		<?php $post = $main_post; setup_postdata($post); ?>
-		<?php global $bleed; ?>
 		<?php $bleed = get_bleed(); ?>
-		<?php global $link_class; ?>
 		<?php $link_class = get_the_link_class(); ?>
-		<?php echo $bleed; ?>
 		<div id="primary">
 			<div id="content" role="main">
 				<div id="container">

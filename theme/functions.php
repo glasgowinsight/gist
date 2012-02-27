@@ -97,6 +97,7 @@ function remove_filters() {
 }
 
 function gist_continue_reading_link() {
+	global $link_class;
 	$link = isset($link_class) ? $link_class : get_the_link_class();
 	return ' <a href="'. esc_url( get_permalink() ) . '" ' . $link . '>More</a>';
 }
