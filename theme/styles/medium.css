@@ -34,7 +34,7 @@
 
 .wp-caption { width: 450px; }
 .wp-caption img { width: 300px; float: left; }
-.wp-caption p { width: 150px; float: right; }
+.wp-caption p { width: 146px; float: right; }
 .wp-caption:after { right: 150px; }
 
 #access { margin: 0; position: relative; float: right; overflow: visible; }
