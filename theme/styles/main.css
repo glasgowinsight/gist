@@ -28,6 +28,8 @@ ul.blank li { list-style: none inside; }
 
 #logo img { z-index: 0 !important; }
 
+.home #searchForm a.link-snippet { border-color: #580ead; }
+
 #access { position: relative; overflow-y: hidden; }
 #access:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
 
