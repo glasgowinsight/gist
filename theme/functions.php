@@ -97,7 +97,8 @@ function remove_filters() {
 }
 
 function gist_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . '" ' . get_the_link_class() . '>More</a>';
+	$link = isset($link_class) ? $link_class : get_the_link_class();
+	return ' <a href="'. esc_url( get_permalink() ) . '" ' . $link . '>More</a>';
 }
 
 function gist_auto_excerpt_more( $more ) {
