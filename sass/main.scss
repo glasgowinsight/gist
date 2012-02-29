@@ -37,9 +37,11 @@ h1, h2, h3, h4, h5, h6, #access #navList a {
 		sans-serif;
   font-size: 16px;
   font-weight: bold;
+  a { color: black; }
 }
 
-h1 { font-size: 24px; margin-bottom: 14px; }
+.section-link { clear:both; }
+h1, .section-link { font-size: 24px; margin-bottom: 14px; }
 h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: uppercase; }
 #colophon { clear: both; }
 #site-generator { margin: 14px 0; float: right; }
@@ -52,7 +54,10 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
 .single #content .entry-header { text-transform: none; text-align: left; }
 
-#access a, h1, .single h2, .archive #nav-below h3, .search #nav-below h3 { color: white; }
+#access a, h1, .single h2, .archive #nav-below h3, .search #nav-below h3 { 
+	color: white;
+	a { color: white; } 
+}
 a { text-decoration: none; }
 
 $categories: feature snippet podcast about;

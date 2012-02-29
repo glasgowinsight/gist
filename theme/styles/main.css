@@ -3,8 +3,11 @@ body { font-family: Calibri, "Gill Sans", "Gill Sans MT", "DejaVu Sans Condensed
 div.twtr-widget { font-family: Calibri, "Gill Sans", "Gill Sans MT", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, sans-serif !important; font-size: 13px !important; }
 
 h1, h2, h3, h4, h5, h6, #access #navList a { font-family: "Century Gothic", Futura, "URW Gothic L", "Trebuchet MS", Verdana, "DejaVu Sans", "Nimbus Sans L", sans-serif; font-size: 16px; font-weight: bold; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #access #navList a a { color: black; }
 
-h1 { font-size: 24px; margin-bottom: 14px; }
+.section-link { clear: both; }
+
+h1, .section-link { font-size: 24px; margin-bottom: 14px; }
 
 h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: uppercase; }
 
@@ -23,6 +26,7 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 .single #content .entry-header { text-transform: none; text-align: left; }
 
 #access a, h1, .single h2, .archive #nav-below h3, .search #nav-below h3 { color: white; }
+#access a a, h1 a, .single h2 a, .archive #nav-below h3 a, .search #nav-below h3 a { color: white; }
 
 a { text-decoration: none; }
 
