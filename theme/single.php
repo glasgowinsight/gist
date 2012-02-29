@@ -73,7 +73,7 @@ get_header(); ?>
 						<?php query_posts(array(
 							'category_name'=>'feature,snippet',
 							'posts_per_page'=>7,
-							'post__not_in'=>$posts)); ?>
+							'post__not_in'=>$post_ids)); ?>
 						<?php if ( have_posts() ) : ?>
 							<div id="latest">
 								<h2 class="bleed-switch"><?php echo $bleed; ?>Latest Articles</h2>  
