@@ -140,13 +140,15 @@ function get_bleed(  ) {
 	return '<img src="' . resource('images/bleed_' . $category . '.png') . '"/>';
 }
 
+function the_short_title(){
+	$title = get_post_meta(get_the_ID(), 'short_title', true);
+	if($title) echo $title; else the_title();
+}
+
 function get_extract( $classes = '', $thumb = 'small_thumb' ) {	?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class('extract ' . $classes); ?>>
 		<div class="entry-header">
-			<h3 class="entry-title">
-				<?php $title = get_post_meta(get_the_ID(), 'short_title', true); ?>
-				<?php if($title) echo $title; else the_title(); ?>
-			</h3>
+			<h3 class="entry-title"><?php the_short_title(); ?></h3>
 		</div>
 		<div class="entry-thumbnail">
 			<a href="<?php the_permalink(); ?>" rel="bookmark">
