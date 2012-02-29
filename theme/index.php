@@ -86,7 +86,12 @@ get_header(); ?>
 											<?php for ($i = 4; $i < count($posts['feature']); $i++):
 												$post = $posts['feature'][$i];
 												setup_postdata($post); ?>
-												<li><a href="<?php the_permalink(); ?>" class="link-feature" rel="bookmark"><?php the_title(); ?></a></li>
+												<li>
+													<a href="<?php the_permalink(); ?>" class="link-feature" rel="bookmark">
+														<?php $title = get_post_meta(get_the_ID(), 'short_title', true); ?>
+														<?php if($title) echo $title; else the_title(); ?>
+													</a>
+												</li>
 											<?php endfor; ?>
 										</ul>
 									</div>
@@ -152,7 +157,12 @@ get_header(); ?>
 									<ul>
 										<?php foreach (array_slice($posts['event'], 0, $categories['event']) as $post):
 											setup_postdata($post); ?>
-											<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
+											<li>
+												<a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark">
+													<?php $title = get_post_meta(get_the_ID(), 'short_title', true); ?>
+													<?php if($title) echo $title; else the_title(); ?>
+												</a>
+											</li>
 										<?php endforeach; ?>
 									</ul>
 								</div>
@@ -195,7 +205,12 @@ get_header(); ?>
 								<ul>
 									<?php foreach (array_slice($posts['study'], 0, $categories['study']) as $post):
 										setup_postdata($post); ?>
-										<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_title(); ?></a></li>
+										<li>
+											<a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark">
+												<?php $title = get_post_meta(get_the_ID(), 'short_title', true); ?>
+												<?php if($title) echo $title; else the_title(); ?>
+											</a>
+										</li>
 									<?php endforeach; ?>
 								</ul>
 							</div>
