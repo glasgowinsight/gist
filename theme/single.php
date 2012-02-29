@@ -15,6 +15,7 @@ get_header(); ?>
 		<?php $post = $main_post; setup_postdata($post); ?>
 		<?php $bleed = get_bleed(); ?>
 		<?php $link_class = get_the_link_class(); ?>
+		<?php $post_ids = array(get_the_ID()); ?>
 		<div id="primary">
 			<div id="content" role="main">
 				<div id="container">
@@ -23,6 +24,7 @@ get_header(); ?>
 							<div id="related">
 								<h2 class="bleed-switch"><?php echo $bleed; ?>Related Articles</h2>  
 								<?php foreach ($rel as $post) : ?>
+									<?php $post_ids[] = $post->ID; ?>
 				        			<?php setup_postdata($post); ?>
 				        			<?php get_extract(); ?>
 				    			<?php endforeach; ?>
@@ -68,7 +70,10 @@ get_header(); ?>
 							<?php endif;?>
 						</div>
 						
-						<?php query_posts('category_name=feature,snippet&posts_per_page=7'); ?>
+						<?php query_posts(array(
+							'category_name'=>'feature,snippet',
+							'posts_per_page'=>7,
+							'post__not_in'=>$posts)); ?>
 						<?php if ( have_posts() ) : ?>
 							<div id="latest">
 								<h2 class="bleed-switch"><?php echo $bleed; ?>Latest Articles</h2>  
