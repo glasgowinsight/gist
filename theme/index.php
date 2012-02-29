@@ -57,7 +57,7 @@ get_header(); ?>
 			<div id="content" role="main">
 				<div id="sections">
 					<div class="section section-feature">
-						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_feature.png'); ?>"/>//&nbsp;Features</h1></div>
+						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_feature.png'); ?>"/><a href="<?php echo get_category_link_by_slug('feature'); ?>">//&nbsp;Features</a></h1></div>
 						<div class="posts">
 							<div class="row3">
 								<?php $post = $posts['feature'][0]; ?>
@@ -94,10 +94,11 @@ get_header(); ?>
 								<br class="clear"/>
 							</div>
 						</div>
+						<div class="section-link"><a href="<?php echo get_category_link_by_slug('feature'); ?>" class="link-feature">All Features</a></div>
 					</div>
 					
 					<div class="section  section-snippet">
-						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_snippet.png'); ?>"/>//&nbsp;Snippets</h1></div>
+						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_snippet.png'); ?>"/><a href="<?php echo get_category_link_by_slug('snippet'); ?>">//&nbsp;Snippets</a></h1></div>
 						<div class="posts">
 							<?php $post = $posts['snippet'][0]; ?>
 							<?php setup_postdata($post); ?>
@@ -110,10 +111,11 @@ get_header(); ?>
 							<?php get_extract('right'); ?>
 						</div>
 					</div>
+					<div class="section-link"><a href="<?php echo get_category_link_by_slug('snippet'); ?>" class="link-snippet">All Snippets</a></div>
 				</div>
 				
 				<div class="section  section-podcast">
-					<div><h1 class="bleed-switch2"><img src="<?php echo resource('images/bleed_podcast.png'); ?>"/>//&nbsp;Communication</h1></div>
+					<div><h1 class="bleed-switch2"><img src="<?php echo resource('images/bleed_podcast.png'); ?>"/><a href="<?php echo get_category_link_by_slug('podcast'); ?>">//&nbsp;Communication</a></h1></div>
 					<div class="posts">
 						<?php $post = $posts['podcast'][0]; ?>
 						<?php setup_postdata($post); ?>
@@ -138,10 +140,11 @@ get_header(); ?>
 	                    	<div id="twtr-widget"></div>
 	                    </div>
                     </div>
+                    <div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link-podcast">All Podcasts</a></div>
                 </div>
 				
 				<div class="section  section-about">
-					<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_about.png'); ?>"/>//&nbsp;Outside GIST</h1></div>
+					<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_about.png'); ?>"/><a href="<?php echo get_category_link_by_slug('about'); ?>">//&nbsp;Outside GIST</a></h1></div>
 					<div class="posts">
 						<div class="row">
 							<div class="articles left">
@@ -201,6 +204,7 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
+					<div class="section-link"><a href="<?php echo get_category_link_by_slug('about'); ?>" class="link-about">About The GIST</a></div>
 				</div>
 			</div>
 			<br class="clear"/>

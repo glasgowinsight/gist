@@ -148,7 +148,7 @@ function the_short_title(){
 function get_extract( $classes = '', $thumb = 'small_thumb' ) {	?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class('extract ' . $classes); ?>>
 		<div class="entry-header">
-			<h3 class="entry-title"><?php the_short_title(); ?></h3>
+			<h3 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_short_title(); ?></a></h3>
 		</div>
 		<div class="entry-thumbnail">
 			<a href="<?php the_permalink(); ?>" rel="bookmark">
