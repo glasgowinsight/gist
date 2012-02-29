@@ -48,8 +48,8 @@ dd { margin-bottom: 10px; }
 .single-feature .wp-caption:before, .single-feature .wp-caption:after { content: url(../images/img_feature.png); }
 .single-feature .wp-caption p { z-index: 1; }
 
-.section-feature li, .category-feature li, .parent-feature li { list-style: url(../images/bullet_feature.png) inside; }
-.section-feature #logo, .category-feature #logo, .parent-feature #logo { background: #580ead; }
+.section-feature li, .category-feature li, .parent-feature li, .single-feature li { list-style: url(../images/bullet_feature.png) inside; }
+.section-feature #logo, .category-feature #logo, .parent-feature #logo, .single-feature #logo { background: #580ead; }
 
 a.link-feature, .link-container-feature a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #580ead; }
 a.link-feature:hover, .link-container-feature a:hover { color: #ffffff; }
@@ -72,8 +72,8 @@ a.link-back-feature:hover:after, .link-container-back-feature a:hover:after { co
 .single-snippet .wp-caption:before, .single-snippet .wp-caption:after { content: url(../images/img_snippet.png); }
 .single-snippet .wp-caption p { z-index: 1; }
 
-.section-snippet li, .category-snippet li, .parent-snippet li { list-style: url(../images/bullet_snippet.png) inside; }
-.section-snippet #logo, .category-snippet #logo, .parent-snippet #logo { background: #b1f100; }
+.section-snippet li, .category-snippet li, .parent-snippet li, .single-snippet li { list-style: url(../images/bullet_snippet.png) inside; }
+.section-snippet #logo, .category-snippet #logo, .parent-snippet #logo, .single-snippet #logo { background: #b1f100; }
 
 a.link-snippet, .link-container-snippet a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #b1f100; }
 a.link-snippet:hover, .link-container-snippet a:hover { color: #ffffff; }
@@ -96,8 +96,8 @@ a.link-back-snippet:hover:after, .link-container-back-snippet a:hover:after { co
 .single-podcast .wp-caption:before, .single-podcast .wp-caption:after { content: url(../images/img_podcast.png); }
 .single-podcast .wp-caption p { z-index: 1; }
 
-.section-podcast li, .category-podcast li, .parent-podcast li { list-style: url(../images/bullet_podcast.png) inside; }
-.section-podcast #logo, .category-podcast #logo, .parent-podcast #logo { background: #ffbb00; }
+.section-podcast li, .category-podcast li, .parent-podcast li, .single-podcast li { list-style: url(../images/bullet_podcast.png) inside; }
+.section-podcast #logo, .category-podcast #logo, .parent-podcast #logo, .single-podcast #logo { background: #ffbb00; }
 
 a.link-podcast, .link-container-podcast a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #ffbb00; }
 a.link-podcast:hover, .link-container-podcast a:hover { color: #ffffff; }
@@ -120,8 +120,8 @@ a.link-back-podcast:hover:after, .link-container-back-podcast a:hover:after { co
 .single-about .wp-caption:before, .single-about .wp-caption:after { content: url(../images/img_about.png); }
 .single-about .wp-caption p { z-index: 1; }
 
-.section-about li, .category-about li, .parent-about li { list-style: url(../images/bullet_about.png) inside; }
-.section-about #logo, .category-about #logo, .parent-about #logo { background: red; }
+.section-about li, .category-about li, .parent-about li, .single-about li { list-style: url(../images/bullet_about.png) inside; }
+.section-about #logo, .category-about #logo, .parent-about #logo, .single-about #logo { background: red; }
 
 a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
 a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
