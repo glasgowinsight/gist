@@ -6,9 +6,7 @@
 
 #main, .clear { clear: both; }
 
-.post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-
-#site-generator { margin: 14px auto; float: none; }
+.post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 
 .section-feature { position: relative; }
 

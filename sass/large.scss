@@ -1,7 +1,6 @@
 #page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; }
 #main, .clear { clear: both; }
-.post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-#site-generator { margin: 14px auto; float: none; }
+.post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 .section-feature { position: relative; }
 .posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
 .section-feature .posts .post, .section-feature .posts .articles, .single #related,  .single #latest, .single .references, .single #other .post { width: 221px; max-width: none; }

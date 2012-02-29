@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, #access #navList a {
 
 h1 { font-size: 24px; margin-bottom: 14px; }
 h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: uppercase; }
-
+#site-generator { margin: 14px 0; float: right; }
 .wp-caption p { font-weight: bold; }
 
 .entry-content { line-height: 21px; }
@@ -51,7 +51,7 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
 .single #content .entry-header { text-transform: none; text-align: left; }
 
-#access a, h1, .single h2, .archive #nav-below h3, .search #nav-below h3, #site-generator h2 { color: white; }
+#access a, h1, .single h2, .archive #nav-below h3, .search #nav-below h3 { color: white; }
 a { text-decoration: none; }
 
 $categories: feature snippet podcast about;

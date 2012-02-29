@@ -2,8 +2,7 @@
 #sections { width: 928px; float: left; }
 .section-podcast { float:right; width: 221px; }
 #main, .clear { clear: both; }
-.post, .articles, .category-archive-meta, #author-info, #comments, #site-generator { float: left; }
-#site-generator { margin: 14px auto; float: none; }
+.post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 .section-feature { position: relative; }
 .posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0;}
 .section-feature .posts .post, .section-feature .posts .articles, .section-podcast .posts .post, .section-podcast .posts .articles { width: 221px; max-width: none; }
