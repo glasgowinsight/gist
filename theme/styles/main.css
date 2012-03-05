@@ -1,4 +1,4 @@
-body { font-family: Calibri, "Gill Sans", "Gill Sans MT", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, sans-serif; font-size: 13px; overflow-x: hidden; }
+body, html { font-family: Calibri, "Gill Sans", "Gill Sans MT", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, sans-serif; font-size: 13px; overflow-x: hidden; }
 
 div.twtr-widget { font-family: Calibri, "Gill Sans", "Gill Sans MT", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, sans-serif !important; font-size: 13px !important; }
 
