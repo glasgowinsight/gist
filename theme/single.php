@@ -25,11 +25,11 @@ get_header(); ?>
 								<h2 class="bleed-switch"><?php echo $bleed; ?>Related Articles</h2>  
 								<?php foreach ($rel as $post) : ?>
 									<?php $post_ids[] = $post->ID; ?>
-				        			<?php setup_postdata($post); ?>
-				        			<?php get_extract(); ?>
-				    			<?php endforeach; ?>
-				    		</div>
-	    			<?php endif; ?>
+									<?php setup_postdata($post); ?>
+									<?php get_extract(); ?>
+								<?php endforeach; ?>
+							</div>
+					<?php endif; ?>
 	
 					<div id="article">
 						<?php $post = $main_post; setup_postdata($post); ?>
@@ -78,18 +78,18 @@ get_header(); ?>
 							<div id="latest">
 								<h2 class="bleed-switch"><?php echo $bleed; ?>Latest Articles</h2>  
 								<?php get_archive_posts(3); ?>
-				    		</div>
-			    		<?php endif; ?>
-		    		</div>
-		    		<br style="clear:both"/>
-	    		</div>
-	    		
+							</div>
+						<?php endif; ?>
+					</div>
+					<br style="clear:both"/>
+				</div>
+				
 				<?php if ( have_posts() ) : ?>
 					<div id="other">
 						<h2 class="bleed-left"><?php echo $bleed; ?>Other Articles</h2>  
 						<?php get_archive_posts(); ?>
-		    		</div>
-	    		<?php endif; ?>
+					</div>
+				<?php endif; ?>
 				
 				<?php $post = $main_post; setup_postdata($post); ?>
 				<?php $withcomments = 1; ?>

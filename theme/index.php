@@ -117,16 +117,16 @@ get_header(); ?>
 				<div class="section  section-podcast">
 					<div><h1 class="bleed-switch2"><img src="<?php echo resource('images/bleed_podcast.png'); ?>"/><a href="<?php echo get_category_link_by_slug('podcast'); ?>">//&nbsp;Communicate</a></h1></div>
 					<div class="posts">
-					    <div class="articles right">
-	                    	<div id="twtr-widget"></div>
-	                    </div>
-                    
-                    	<?php $post = $posts['podcast'][0]; ?>
+						<div class="articles right">
+							<div id="twtr-widget"></div>
+						</div>
+					
+						<?php $post = $posts['podcast'][0]; ?>
 						<?php setup_postdata($post); ?>
 						<?php get_extract('main'); ?>
 						
-		                <div class="articles left">
-	                        <div class="entry-header">
+						<div class="articles left">
+							<div class="entry-header">
 								<h3 class="entry-title">Keep In Touch</h3>
 							</div>
 							<div class="entry-content">
@@ -138,10 +138,10 @@ get_header(); ?>
 									<li><img src="<?php echo resource('images/facebook.jpg');?>"/><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238" class="link-podcast"><span>Like us</span></a></li>
 								</ul>
 							</div>
-	                    </div>
-	                </div>
-                    <div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link-podcast">All Podcasts</a></div>
-                </div>
+						</div>
+					</div>
+					<div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link-podcast">All Podcasts</a></div>
+				</div>
 				
 				<div class="section  section-about">
 					<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_about.png'); ?>"/><a href="<?php echo get_category_link_by_slug('about'); ?>">//&nbsp;Outside GIST</a></h1></div>
@@ -175,7 +175,7 @@ get_header(); ?>
 							<br class="clear"/>
 						</div>
 						<div class="articles left">
-	                        <div class="entry-header">
+							<div class="entry-header">
 								<h3 class="entry-title">University News</h3>
 							</div>
 							<div class="entry-content">
@@ -189,8 +189,8 @@ get_header(); ?>
 									'rsscss'=>'link-container-about'
 								));	?>
 							</div>
-	                    </div>
-	                    <div class="articles right">
+						</div>
+						<div class="articles right">
 							<div class="entry-header">
 								<h3 class="entry-title">Participants Needed</h3>
 							</div>
