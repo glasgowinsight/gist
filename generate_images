@@ -9,8 +9,6 @@ for i in $(seq 2 5); do
   dim=${dim/rgb/rgba}
   dim=${dim/)/,0.5)}
   
-  echo $type $bright $dark $dim
-
   convert -size 8x8 "canvas:$bright" -background none -shear 14x0 "theme/images/bullet_$type.png"
   convert -size 400x40 \( "canvas:$dark" -background none -shear 14x0 \) \( "canvas:$bright" -background none -shear 14x0 \) -append "theme/images/nav_$type.png"
   convert -size 1000x40 "canvas:$bright" -background none -shear 14x0 "theme/images/bleed_${type}.png"
