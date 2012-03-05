@@ -112,21 +112,22 @@ dd { margin-bottom: 10px; }
 			&:before, &:after { content: url(../images/img_#{$category}.png); }
 			p { z-index: 1; } 
 		}
+		a.link, .link-container a {
+			@include link;
+			border-color: #{$normal};
+			&:hover { background-color: #{$normal}; }
+			&:after { content: url(../images/arrow_#{$category}.png); white-space: nowrap; padding-left: 2px; }
+			&:hover:after{ content: url(../images/arrow_hover.png); }
+		}
+		a.link-back, .link-container-back a {
+			@include link;
+			border-color: #{$normal};
+			&:hover { background-color: #{$normal}; }
+			&:after { content: url(../images/arrow_#{$category}_back.png); white-space: nowrap; padding-right: 2px;	}
+			&:hover:after{ content: url(../images/arrow_hover_back.png); }
+		}
 	}
-	a.link-#{$category}, .link-container-#{$category} a {
-		@include link;
-		border-color: #{$normal};
-		&:hover { background-color: #{$normal}; }
-		&:after { content: url(../images/arrow_#{$category}.png); white-space: nowrap; padding-left: 2px; }
-		&:hover:after{ content: url(../images/arrow_hover.png); }
-	}
-	a.link-back-#{$category}, .link-container-back-#{$category} a {
-		@include link;
-		border-color: #{$normal};
-		&:hover { background-color: #{$normal}; }
-		&:after { content: url(../images/arrow_#{$category}_back.png); white-space: nowrap; padding-right: 2px;	}
-		&:hover:after{ content: url(../images/arrow_hover_back.png); }
-	}
+	
 	
 	#access .#{$category} { 
 		background: #{$dark}; 

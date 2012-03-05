@@ -86,7 +86,7 @@ get_header(); ?>
 											<?php for ($i = 4; $i < count($posts['feature']); $i++):
 												$post = $posts['feature'][$i];
 												setup_postdata($post); ?>
-												<li><a href="<?php the_permalink(); ?>" class="link-feature" rel="bookmark"><?php the_short_title(); ?></a></li>
+												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 											<?php endfor; ?>
 										</ul>
 									</div>
@@ -94,7 +94,7 @@ get_header(); ?>
 								<br class="clear"/>
 							</div>
 						</div>
-						<div class="section-link"><a href="<?php echo get_category_link_by_slug('feature'); ?>" class="link-feature">All Features</a></div>
+						<div class="section-link"><a href="<?php echo get_category_link_by_slug('feature'); ?>" class="link">All Features</a></div>
 					</div>
 					
 					<div class="section  section-snippet">
@@ -111,7 +111,7 @@ get_header(); ?>
 							<?php get_extract('right'); ?>
 						</div>
 					</div>
-					<div class="section-link"><a href="<?php echo get_category_link_by_slug('snippet'); ?>" class="link-snippet">All Snippets</a></div>
+					<div class="section-link"><a href="<?php echo get_category_link_by_slug('snippet'); ?>" class="link">All Snippets</a></div>
 				</div>
 				
 				<div class="section  section-podcast">
@@ -131,16 +131,16 @@ get_header(); ?>
 							</div>
 							<div class="entry-content">
 								<ul class="blank">
-									<li><img src="<?php echo resource('images/icon.png');?>"/><a href="https://groups.google.com/group/the-gist" class="link-podcast"><span>Join us</span></a></li>
-									<li><img src="<?php echo resource('images/rss.png');?>"/><a href="<?php bloginfo('rss2_url'); ?>" class="link-podcast"><span>Get the latest news</span></a></li>
-									<li><img src="<?php echo resource('images/email.png');?>"/><a href="mailto:glasgowinsight@gmail.com" class="link-podcast"><span>Talk to us</span></a></li>
-									<li><img src="<?php echo resource('images/twitter.png');?>"/><a href="http://twitter.com/GlasgowGist" class="link-podcast"><span>Follow us</span></a></li>
-									<li><img src="<?php echo resource('images/facebook.jpg');?>"/><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238" class="link-podcast"><span>Like us</span></a></li>
+									<li><img src="<?php echo resource('images/icon.png');?>"/><a href="https://groups.google.com/group/the-gist" class="link"><span>Join us</span></a></li>
+									<li><img src="<?php echo resource('images/rss.png');?>"/><a href="<?php bloginfo('rss2_url'); ?>" class="link"><span>Get the latest news</span></a></li>
+									<li><img src="<?php echo resource('images/email.png');?>"/><a href="mailto:glasgowinsight@gmail.com" class="link"><span>Talk to us</span></a></li>
+									<li><img src="<?php echo resource('images/twitter.png');?>"/><a href="http://twitter.com/GlasgowGist" class="link"><span>Follow us</span></a></li>
+									<li><img src="<?php echo resource('images/facebook.jpg');?>"/><a href="http://www.facebook.com/pages/The-GIST-Glasgow-Insight-into-Science-and-Technology/185836941455238" class="link"><span>Like us</span></a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link-podcast">All Podcasts</a></div>
+					<div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link">All Podcasts</a></div>
 				</div>
 				
 				<div class="section  section-about">
@@ -155,7 +155,7 @@ get_header(); ?>
 									<ul>
 										<?php foreach (array_slice($posts['event'], 0, $categories['event']) as $post):
 											setup_postdata($post); ?>
-											<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_short_title(); ?></a></li>
+											<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 										<?php endforeach; ?>
 									</ul>
 								</div>
@@ -166,9 +166,9 @@ get_header(); ?>
 								</div>
 								<div class="entry-content">
 									<ul>
-										<li><a href="http://www.bluesci.org/" class="link-about">Bluesci</a></li>
-										<li><a href="http://www.eusci.org.uk/" class="link-about">EUSci</a></li>
-										<li><a href="http://www.aumag.co.uk/" class="link-about">Au magazine</a></li>
+										<li><a href="http://www.bluesci.org/" class="link">Bluesci</a></li>
+										<li><a href="http://www.eusci.org.uk/" class="link">EUSci</a></li>
+										<li><a href="http://www.aumag.co.uk/" class="link">Au magazine</a></li>
 									</ul>
 								</div>
 							</div>
@@ -186,7 +186,7 @@ get_header(); ?>
 										'http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn',
 									'rssformat'=>'Y',
 									'rssitems'=>5,
-									'rsscss'=>'link-container-about'
+									'rsscss'=>'link-container'
 								));	?>
 							</div>
 						</div>
@@ -198,13 +198,13 @@ get_header(); ?>
 								<ul>
 									<?php foreach (array_slice($posts['study'], 0, $categories['study']) as $post):
 										setup_postdata($post); ?>
-										<li><a href="<?php the_permalink(); ?>" class="link-about" rel="bookmark"><?php the_short_title(); ?></a></li>
+										<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 									<?php endforeach; ?>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="section-link"><a href="<?php echo get_category_link_by_slug('about'); ?>" class="link-about">About The GIST</a></div>
+					<div class="section-link"><a href="<?php echo get_category_link_by_slug('about'); ?>" class="link">About The GIST</a></div>
 				</div>
 			</div>
 			<br class="clear"/>

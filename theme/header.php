@@ -99,7 +99,7 @@
 			</div>
 			
 			<div id="searchForm">
-				<a href="<?php echo site_url('/wp-login.php')?>" <?php echo get_the_link_class(); ?>>Contributor Login</a>
+				<a href="<?php echo site_url('/wp-login.php')?>" class="link">Contributor Login</a>
 				<?php get_search_form(); ?>
 			</div>
 			<br style="clear:both"/>

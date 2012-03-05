@@ -13,7 +13,6 @@
  */
 ?>
 	<?php global $bleed; ?>
-	<?php global $link_class; ?>
 	<div id="comments">
 	<h2 id="comments-title" class="bleed-left"><?php echo $bleed; ?>Discussion</h2>
 	<a name="comments"></a>

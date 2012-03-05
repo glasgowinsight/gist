@@ -14,7 +14,6 @@ get_header(); ?>
 		<?php $main_post = get_post(get_the_ID()); ?>
 		<?php $post = $main_post; setup_postdata($post); ?>
 		<?php $bleed = get_bleed(); ?>
-		<?php $link_class = get_the_link_class(); ?>
 		<?php $post_ids = array(get_the_ID()); ?>
 		<div id="primary">
 			<div id="content" role="main">
@@ -54,7 +53,7 @@ get_header(); ?>
 								if( $licence != NULL ): ?>
 									<p>
 										<a rel="license" href="<?php echo $licence['url']; ?>"><img alt="Creative Commons License" src="<?php echo $licence['image']; ?>" /></a>
-										<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><?php the_title(); ?></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><?php the_author(); ?></span> is licensed under a <a rel="license" href="<?php echo $licence['url']; ?>" <?php echo $link_class; ?>><?php echo $licence['licence']; ?></a>.
+										<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><?php the_title(); ?></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName"><?php the_author(); ?></span> is licensed under a <a rel="license" href="<?php echo $licence['url']; ?>" class="link"><?php echo $licence['licence']; ?></a>.
 									</p>
 								<?php endif; 
 							?>
