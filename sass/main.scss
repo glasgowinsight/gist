@@ -153,9 +153,9 @@ dd { margin-bottom: 10px; }
 #article .post { float: none; }
 	
 .bleed-right img { left: 0; top: 0; }
-.bleed-left img { right: 0; top: 0; }
-.bleed-switch2 img { right: 0; top: 0; }
-.bleed-switch2 img { right: 0; top: 0; }
+.bleed-left, .bleed-switch, .bleed-switch2 {
+	 img { right: 0; top: 0; }
+}
 
 .aside { padding: 7px; margin: 7px; }
 .addthis_toolbox { float: right; }
