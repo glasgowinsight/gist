@@ -1,30 +1,21 @@
 #!/bin/sh
 
-feature="88,14,173"
-featuredim="156,106,214"
-featuredark="55,4,112"
-snippet="177,241,0"
-snippetdim="212,248,112"
-snippetdark="115,157,0"
-podcast="255,187,0"
-podcastdim="255,218,115"
-podcastdark="166,122,0"
-about="255,0,0"
-aboutdim="255,115,115"
-aboutdark="166,0,0"
+for i in $(seq 2 5); do
+  args=($(sed -e "s/;//g" sass/_colours.scss | cut -d" " -f$i))
+  type=${args[0]}
+  bright=${args[1]}
+  dark=${args[2]}
+  dim=${args[3]}
+  dim=${dim/rgb/rgba}
+  dim=${dim/)/,0.5)}
+  
+  echo $type $bright $dark $dim
 
-
-
-for type in feature snippet podcast about; do
-  eval bright="\$${type}"
-  eval dim="\$${type}dim"
-  eval dark="\$${type}dark"
-
-  convert -size 8x8 "canvas:rgb($bright)" -background none -shear 14x0 "theme/images/bullet_$type.png"
-  convert -size 400x40 \( "canvas:rgb($dark)" -background none -shear 14x0 \) \( "canvas:rgb($bright)" -background none -shear 14x0 \) -append "theme/images/nav_$type.png"
-  convert -size 1000x40 "canvas:rgb($bright)" -background none -shear 14x0 "theme/images/bleed_${type}.png"
-  convert -size 20x400 "canvas:rgba($dim,0.5)" "theme/images/img_$type.png"
-  convert arrow_black.png -fill "rgb($bright)" -opaque black theme/images/arrow_${type}.png
+  convert -size 8x8 "canvas:$bright" -background none -shear 14x0 "theme/images/bullet_$type.png"
+  convert -size 400x40 \( "canvas:$dark" -background none -shear 14x0 \) \( "canvas:$bright" -background none -shear 14x0 \) -append "theme/images/nav_$type.png"
+  convert -size 1000x40 "canvas:$bright" -background none -shear 14x0 "theme/images/bleed_${type}.png"
+  convert -size 20x400 "canvas:$dim" "theme/images/img_$type.png"
+  convert arrow_black.png -fill "$bright" -opaque black theme/images/arrow_${type}.png
   convert theme/images/arrow_${type}.png -flop theme/images/arrow_${type}_back.png
 done
 
