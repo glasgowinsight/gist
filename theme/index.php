@@ -117,7 +117,11 @@ get_header(); ?>
 				<div class="section  section-podcast">
 					<div><h1 class="bleed-switch2"><img src="<?php echo resource('images/bleed_podcast.png'); ?>"/><a href="<?php echo get_category_link_by_slug('podcast'); ?>">//&nbsp;Communicate</a></h1></div>
 					<div class="posts">
-						<?php $post = $posts['podcast'][0]; ?>
+					    <div class="articles right">
+	                    	<div id="twtr-widget"></div>
+	                    </div>
+                    
+                    	<?php $post = $posts['podcast'][0]; ?>
 						<?php setup_postdata($post); ?>
 						<?php get_extract('main'); ?>
 						
@@ -135,11 +139,7 @@ get_header(); ?>
 								</ul>
 							</div>
 	                    </div>
-	                    
-	                    <div class="articles right">
-	                    	<div id="twtr-widget"></div>
-	                    </div>
-                    </div>
+	                </div>
                     <div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link-podcast">All Podcasts</a></div>
                 </div>
 				
