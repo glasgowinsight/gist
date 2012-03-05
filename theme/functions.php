@@ -151,9 +151,11 @@ function get_extract( $classes = '', $thumb = 'small_thumb' ) {	?>
 			<h3 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_short_title(); ?></a></h3>
 		</div>
 		<div class="entry-thumbnail">
-			<a href="<?php the_permalink(); ?>" rel="bookmark">
-				<?php the_post_thumbnail( $thumb ); ?>
-			</a>
+			<div class="thumbnail-caption">
+				<a href="<?php the_permalink(); ?>" rel="bookmark">
+					<?php the_post_thumbnail( $thumb ); ?>
+				</a>
+			</div>
 		</div>
 		<div class="entry-content">
 			<?php the_excerpt(); ?>

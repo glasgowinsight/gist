@@ -52,12 +52,11 @@ dt { float: left; margin-right: 5px; font-weight: bold; }
 
 dd { margin-bottom: 10px; }
 
-.single-feature .wp-caption { background-color: #9c6ad6; }
-.single-feature .wp-caption:before, .single-feature .wp-caption:after { content: url(../images/img_feature.png); }
-.single-feature .wp-caption p { z-index: 1; }
-
 .section-feature li, .category-feature li, .parent-feature li, .single-feature li { list-style: url(../images/bullet_feature.png) inside; }
 .section-feature #logo, .category-feature #logo, .parent-feature #logo, .single-feature #logo { background: #580ead; }
+.section-feature .wp-caption, .section-feature .thumbnail-caption, .category-feature .wp-caption, .category-feature .thumbnail-caption, .parent-feature .wp-caption, .parent-feature .thumbnail-caption, .single-feature .wp-caption, .single-feature .thumbnail-caption { background-color: #9c6ad6; }
+.section-feature .wp-caption:before, .section-feature .wp-caption:after, .section-feature .thumbnail-caption:before, .section-feature .thumbnail-caption:after, .category-feature .wp-caption:before, .category-feature .wp-caption:after, .category-feature .thumbnail-caption:before, .category-feature .thumbnail-caption:after, .parent-feature .wp-caption:before, .parent-feature .wp-caption:after, .parent-feature .thumbnail-caption:before, .parent-feature .thumbnail-caption:after, .single-feature .wp-caption:before, .single-feature .wp-caption:after, .single-feature .thumbnail-caption:before, .single-feature .thumbnail-caption:after { content: url(../images/img_feature.png); }
+.section-feature .wp-caption p, .section-feature .thumbnail-caption p, .category-feature .wp-caption p, .category-feature .thumbnail-caption p, .parent-feature .wp-caption p, .parent-feature .thumbnail-caption p, .single-feature .wp-caption p, .single-feature .thumbnail-caption p { z-index: 1; }
 
 a.link-feature, .link-container-feature a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #580ead; }
 a.link-feature:hover, .link-container-feature a:hover { color: #ffffff; }
@@ -76,12 +75,11 @@ a.link-back-feature:hover:after, .link-container-back-feature a:hover:after { co
 
 .parent-feature .aside, .parent-feature .wp-caption p { background-color: #9c6ad6; }
 
-.single-snippet .wp-caption { background-color: #d4f870; }
-.single-snippet .wp-caption:before, .single-snippet .wp-caption:after { content: url(../images/img_snippet.png); }
-.single-snippet .wp-caption p { z-index: 1; }
-
 .section-snippet li, .category-snippet li, .parent-snippet li, .single-snippet li { list-style: url(../images/bullet_snippet.png) inside; }
 .section-snippet #logo, .category-snippet #logo, .parent-snippet #logo, .single-snippet #logo { background: #b1f100; }
+.section-snippet .wp-caption, .section-snippet .thumbnail-caption, .category-snippet .wp-caption, .category-snippet .thumbnail-caption, .parent-snippet .wp-caption, .parent-snippet .thumbnail-caption, .single-snippet .wp-caption, .single-snippet .thumbnail-caption { background-color: #d4f870; }
+.section-snippet .wp-caption:before, .section-snippet .wp-caption:after, .section-snippet .thumbnail-caption:before, .section-snippet .thumbnail-caption:after, .category-snippet .wp-caption:before, .category-snippet .wp-caption:after, .category-snippet .thumbnail-caption:before, .category-snippet .thumbnail-caption:after, .parent-snippet .wp-caption:before, .parent-snippet .wp-caption:after, .parent-snippet .thumbnail-caption:before, .parent-snippet .thumbnail-caption:after, .single-snippet .wp-caption:before, .single-snippet .wp-caption:after, .single-snippet .thumbnail-caption:before, .single-snippet .thumbnail-caption:after { content: url(../images/img_snippet.png); }
+.section-snippet .wp-caption p, .section-snippet .thumbnail-caption p, .category-snippet .wp-caption p, .category-snippet .thumbnail-caption p, .parent-snippet .wp-caption p, .parent-snippet .thumbnail-caption p, .single-snippet .wp-caption p, .single-snippet .thumbnail-caption p { z-index: 1; }
 
 a.link-snippet, .link-container-snippet a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #b1f100; }
 a.link-snippet:hover, .link-container-snippet a:hover { color: #ffffff; }
@@ -100,12 +98,11 @@ a.link-back-snippet:hover:after, .link-container-back-snippet a:hover:after { co
 
 .parent-snippet .aside, .parent-snippet .wp-caption p { background-color: #d4f870; }
 
-.single-podcast .wp-caption { background-color: #ffda73; }
-.single-podcast .wp-caption:before, .single-podcast .wp-caption:after { content: url(../images/img_podcast.png); }
-.single-podcast .wp-caption p { z-index: 1; }
-
 .section-podcast li, .category-podcast li, .parent-podcast li, .single-podcast li { list-style: url(../images/bullet_podcast.png) inside; }
 .section-podcast #logo, .category-podcast #logo, .parent-podcast #logo, .single-podcast #logo { background: #ffbb00; }
+.section-podcast .wp-caption, .section-podcast .thumbnail-caption, .category-podcast .wp-caption, .category-podcast .thumbnail-caption, .parent-podcast .wp-caption, .parent-podcast .thumbnail-caption, .single-podcast .wp-caption, .single-podcast .thumbnail-caption { background-color: #ffda73; }
+.section-podcast .wp-caption:before, .section-podcast .wp-caption:after, .section-podcast .thumbnail-caption:before, .section-podcast .thumbnail-caption:after, .category-podcast .wp-caption:before, .category-podcast .wp-caption:after, .category-podcast .thumbnail-caption:before, .category-podcast .thumbnail-caption:after, .parent-podcast .wp-caption:before, .parent-podcast .wp-caption:after, .parent-podcast .thumbnail-caption:before, .parent-podcast .thumbnail-caption:after, .single-podcast .wp-caption:before, .single-podcast .wp-caption:after, .single-podcast .thumbnail-caption:before, .single-podcast .thumbnail-caption:after { content: url(../images/img_podcast.png); }
+.section-podcast .wp-caption p, .section-podcast .thumbnail-caption p, .category-podcast .wp-caption p, .category-podcast .thumbnail-caption p, .parent-podcast .wp-caption p, .parent-podcast .thumbnail-caption p, .single-podcast .wp-caption p, .single-podcast .thumbnail-caption p { z-index: 1; }
 
 a.link-podcast, .link-container-podcast a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #ffbb00; }
 a.link-podcast:hover, .link-container-podcast a:hover { color: #ffffff; }
@@ -124,12 +121,11 @@ a.link-back-podcast:hover:after, .link-container-back-podcast a:hover:after { co
 
 .parent-podcast .aside, .parent-podcast .wp-caption p { background-color: #ffda73; }
 
-.single-about .wp-caption { background-color: #ff7373; }
-.single-about .wp-caption:before, .single-about .wp-caption:after { content: url(../images/img_about.png); }
-.single-about .wp-caption p { z-index: 1; }
-
 .section-about li, .category-about li, .parent-about li, .single-about li { list-style: url(../images/bullet_about.png) inside; }
 .section-about #logo, .category-about #logo, .parent-about #logo, .single-about #logo { background: red; }
+.section-about .wp-caption, .section-about .thumbnail-caption, .category-about .wp-caption, .category-about .thumbnail-caption, .parent-about .wp-caption, .parent-about .thumbnail-caption, .single-about .wp-caption, .single-about .thumbnail-caption { background-color: #ff7373; }
+.section-about .wp-caption:before, .section-about .wp-caption:after, .section-about .thumbnail-caption:before, .section-about .thumbnail-caption:after, .category-about .wp-caption:before, .category-about .wp-caption:after, .category-about .thumbnail-caption:before, .category-about .thumbnail-caption:after, .parent-about .wp-caption:before, .parent-about .wp-caption:after, .parent-about .thumbnail-caption:before, .parent-about .thumbnail-caption:after, .single-about .wp-caption:before, .single-about .wp-caption:after, .single-about .thumbnail-caption:before, .single-about .thumbnail-caption:after { content: url(../images/img_about.png); }
+.section-about .wp-caption p, .section-about .thumbnail-caption p, .category-about .wp-caption p, .category-about .thumbnail-caption p, .parent-about .wp-caption p, .parent-about .thumbnail-caption p, .single-about .wp-caption p, .single-about .thumbnail-caption p { z-index: 1; }
 
 a.link-about, .link-container-about a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
 a.link-about:hover, .link-container-about a:hover { color: #ffffff; }
@@ -196,9 +192,11 @@ h1, .single h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 
 .single #content .post img, #author-avatar img { max-width: 100%; height: auto; margin: auto; display: block; }
 
-.wp-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; max-width: 100%; height: auto; }
-.wp-caption p, .wp-caption br { line-height: 21px; margin: 0; padding: 3px; }
-.wp-caption:before { position: absolute; left: 0; top: 0; }
-.wp-caption:after { position: absolute; right: 0; top: 0; }
+.wp-caption, .thumbnail-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; max-width: 100%; height: auto; }
+.wp-caption p, .wp-caption br, .thumbnail-caption p, .thumbnail-caption br { line-height: 21px; margin: 0; padding: 3px; }
+.wp-caption:before, .thumbnail-caption:before { position: absolute; left: 0; top: 0; }
+.wp-caption:after, .thumbnail-caption:after { position: absolute; right: 0; top: 0; }
+
+.thumbnail-caption { display: inline-block; }
 
 label { display: block; }
