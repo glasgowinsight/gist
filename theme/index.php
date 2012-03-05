@@ -110,8 +110,8 @@ get_header(); ?>
 							<?php setup_postdata($post); ?>
 							<?php get_extract('right'); ?>
 						</div>
+						<div class="section-link"><a href="<?php echo get_category_link_by_slug('snippet'); ?>" class="link">All Snippets</a></div>
 					</div>
-					<div class="section-link"><a href="<?php echo get_category_link_by_slug('snippet'); ?>" class="link">All Snippets</a></div>
 				</div>
 				
 				<div class="section  section-podcast">

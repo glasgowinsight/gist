@@ -36,7 +36,8 @@ ul.blank li { list-style: none inside; }
 
 #logo img { z-index: 0 !important; }
 
-.home #searchForm a { border-color: #580ead; }
+.home #searchForm a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #580ead; }
+.home #searchForm a:hover { color: #ffffff; }
 .home #searchForm a:hover { background-color: #580ead; }
 .home #searchForm a:after { content: url(../images/arrow_feature.png); }
 .home #searchForm a:hover:after { content: url(../images/arrow_hover.png); }

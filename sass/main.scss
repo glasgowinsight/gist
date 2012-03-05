@@ -68,9 +68,19 @@ $lights: rgb(156,106,214) rgb(212,248,112) rgb(255,218,115) rgb(255,115,115);
 
 ul.blank li { list-style: none inside; }
 
+@mixin link{ 
+	text-decoration: none; 
+	color: #000000; 
+	font-weight: bold; 
+	border-bottom: 1px dotted;
+	
+	&:hover { color: #ffffff; } 
+}
+
 #logo { background: nth($normals, 1); width: 212px; height: 128px; max-width: none; }
 #logo img { z-index: 0 !important; }
 .home #searchForm a { 
+	@include link;
 	border-color: nth($normals, 1);
 	&:hover { background-color: nth($normals, 1); }
 	&:after { content: url(../images/arrow_feature.png); }
@@ -88,15 +98,6 @@ ul.blank li { list-style: none inside; }
 
 dt { float: left; margin-right: 5px; font-weight: bold; }
 dd { margin-bottom: 10px; }
-
-@mixin link{ 
-	text-decoration: none; 
-	color: #000000; 
-	font-weight: bold; 
-	border-bottom: 1px dotted;
-	
-	&:hover { color: #ffffff; } 
-}
 
 @for $i from 1 to 5 {
 	$category: nth($categories, $i);
