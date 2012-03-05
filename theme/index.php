@@ -115,7 +115,7 @@ get_header(); ?>
 				</div>
 				
 				<div class="section  section-podcast">
-					<div><h1 class="bleed-switch2"><img src="<?php echo resource('images/bleed_podcast.png'); ?>"/><a href="<?php echo get_category_link_by_slug('podcast'); ?>">//&nbsp;Communication</a></h1></div>
+					<div><h1 class="bleed-switch2"><img src="<?php echo resource('images/bleed_podcast.png'); ?>"/><a href="<?php echo get_category_link_by_slug('podcast'); ?>">//&nbsp;Communicate</a></h1></div>
 					<div class="posts">
 						<?php $post = $posts['podcast'][0]; ?>
 						<?php setup_postdata($post); ?>
