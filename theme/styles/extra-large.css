@@ -1,6 +1,6 @@
 #page { width: 1242px; max-width: none; margin: 0 auto; padding: 0 14px; }
 
-#sections { width: 928px; float: left; }
+#sections, .section-about { width: 928px; float: left; }
 
 .section-podcast { float: right; width: 221px; }
 
