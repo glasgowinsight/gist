@@ -1,27 +1,30 @@
 @import "colours";
 
 body, html { 
-  font-family:	Calibri,
-		"Gill Sans",
-		"Gill Sans MT",
-		"DejaVu Sans Condensed",
-		"Liberation Sans",
-		"Nimbus Sans L",
-		Tahoma,
+	font-family: "Franklin Gothic Book",
+		"Franklin Gothic Medium",
+		"Franklin Gothic",
+		"ITC Franklin Gothic",
+		"ITC Franklin Gothic Std",
+		TradeGothic,
+		"News Gothic MT",
+		"URW Gothic L",
+		Arial,
 		sans-serif;
-		
   font-size: 13px;
   overflow-x: hidden;
 }
 
 div.twtr-widget { 
-  font-family:	Calibri,
-		"Gill Sans",
-		"Gill Sans MT",
-		"DejaVu Sans Condensed",
-		"Liberation Sans",
-		"Nimbus Sans L",
-		Tahoma,
+	font-family: "Franklin Gothic Book",
+		"Franklin Gothic Medium",
+		"Franklin Gothic",
+		"ITC Franklin Gothic",
+		"ITC Franklin Gothic Std",
+		TradeGothic,
+		"News Gothic MT",
+		"URW Gothic L",
+		Arial,
 		sans-serif
 		!important;
 		
@@ -29,14 +32,6 @@ div.twtr-widget {
 }
 
 h1, h2, h3, h4, h5, h6, #access #navList a {
-  font-family:	"Century Gothic",
-		Futura,
-		"URW Gothic L",
-		"Trebuchet MS",
-		Verdana,
-		"DejaVu Sans",
-		"Nimbus Sans L",
-		sans-serif;
   font-size: 16px;
   font-weight: bold;
   a { color: black; }
