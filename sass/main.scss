@@ -115,8 +115,8 @@ dd { margin-bottom: 10px; }
 			@include link;
 			border-color: #{$normal};
 			&:hover { background-color: #{$normal}; }
-			&:after { content: url(../images/arrow_#{$category}_back.png); white-space: nowrap; padding-right: 2px;	}
-			&:hover:after{ content: url(../images/arrow_hover_back.png); }
+			&:before { content: url(../images/arrow_#{$category}_back.png); white-space: nowrap; padding-right: 2px;	}
+			&:hover:before{ content: url(../images/arrow_hover_back.png); }
 		}
 	}
 	
