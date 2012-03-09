@@ -105,7 +105,7 @@ dd { margin-bottom: 10px; }
 		}
 	}
 	
-	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} .searchForm {
+	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} #searchForm {
 		a.link, .link-container a {
 			@include link;
 			border-color: #{$normal};
