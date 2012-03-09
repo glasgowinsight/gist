@@ -9,3 +9,5 @@
 
 .section-about .bleed-left, .section-about .bleed-right, .section-about .bleed-switch, .section-about .bleed-switch2, .category-about .bleed-left, .category-about .bleed-right, .category-about .bleed-switch, .category-about .bleed-switch2, .parent-about .bleed-left, .parent-about .bleed-right, .parent-about .bleed-switch, .parent-about .bleed-switch2, .single-about .bleed-left, .single-about .bleed-right, .single-about .bleed-switch, .single-about .bleed-switch2 { background: red; }
 .section-about .bleed-left img, .section-about .bleed-right img, .section-about .bleed-switch img, .section-about .bleed-switch2 img, .category-about .bleed-left img, .category-about .bleed-right img, .category-about .bleed-switch img, .category-about .bleed-switch2 img, .parent-about .bleed-left img, .parent-about .bleed-right img, .parent-about .bleed-switch img, .parent-about .bleed-switch2 img, .single-about .bleed-left img, .single-about .bleed-right img, .single-about .bleed-switch img, .single-about .bleed-switch2 img { display: none !important; }
+
+#searchForm { top: 50px; }
