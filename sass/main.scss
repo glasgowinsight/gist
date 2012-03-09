@@ -98,12 +98,14 @@ dd { margin-bottom: 10px; }
 	
 	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
 		li { list-style: url(../images/bullet_#{$category}.png) inside; }
-		#logo { background: $normal; }
 		.wp-caption, .thumbnail-caption {
 			background-color: #{$light};
 			&:before, &:after { content: url(../images/img_#{$category}.png); }
 			p { z-index: 1; } 
 		}
+	}
+	
+	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} .searchForm {
 		a.link, .link-container a {
 			@include link;
 			border-color: #{$normal};
@@ -120,6 +122,10 @@ dd { margin-bottom: 10px; }
 		}
 	}
 	
+	.single-#{$category} {
+		#logo { background: $normal; }
+	}
+
 	
 	#access .#{$category} { 
 		background: #{$dark}; 
