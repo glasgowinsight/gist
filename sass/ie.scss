@@ -6,7 +6,7 @@
 	$dark: nth($darks, $i);
 	$light: nth($lights, $i);
 	
-	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
+	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} {
 		.bleed-left, .bleed-right, .bleed-switch, .bleed-switch2 {
 			background: #{$normal};
 			img { display:none !important; }
