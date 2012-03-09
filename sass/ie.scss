@@ -9,7 +9,7 @@
 	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
 		.bleed-left, .bleed-right, .bleed-switch, .bleed-switch2 {
 			background: #{$normal};
-			img { display:none; }
+			img { display:none !important; }
 		}
 	}
 }
