@@ -96,7 +96,7 @@ dd { margin-bottom: 10px; }
 	$dark: nth($darks, $i);
 	$light: nth($lights, $i);
 	
-	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} {
+	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
 		li { list-style: url(../images/bullet_#{$category}.png) inside; }
 		#logo { background: $normal; }
 		.wp-caption, .thumbnail-caption {
