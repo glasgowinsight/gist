@@ -49,6 +49,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('styles/main.css'); ?>" />
 <!--[if (lt IE 9) & (!IEMobile)]>
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('styles/large.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('styles/ie.css'); ?>" />
 <![endif]-->
 <link rel="stylesheet" type="text/css" media="all and (min-width: 1280px)" href="<?php echo resource('styles/extra-large.css'); ?>" />
 <link rel="stylesheet" type="text/css" media="all and (min-width: 970px) and (max-width: 1280px)" href="<?php echo resource('styles/large.css'); ?>" />

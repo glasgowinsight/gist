@@ -1,0 +1,15 @@
+@import "colours";
+
+@for $i from 1 to 5 {
+	$category: nth($categories, $i);
+	$normal: nth($normals, $i);
+	$dark: nth($darks, $i);
+	$light: nth($lights, $i);
+	
+	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
+		.bleed-left, .bleed-right, .bleed-switch, .bleed-switch2 {
+			background: #{$normal};
+			img { display:none; }
+		}
+	}
+}
