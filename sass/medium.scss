@@ -48,12 +48,12 @@ $positions: -40px -140px -240px -340px;
 		$category: nth($categories, $i);
 		$position: nth($positions, $i);
 		.#{$category} { 
-			background: url(../images/nav_#{$category}.png) no-repeat 0 0; 
+			background: url(../images/nav_#{$category}.png) no-repeat 0  -40px; 
 			position: absolute; 
 			top: 0; 
 			right: #{$position}; 
 			width: 400px;
-			&:hover { background: url(../images/nav_#{$category}.png) no-repeat 0 -40px; }
+			&:hover { background: url(../images/nav_#{$category}.png) no-repeat 0 0; }
 		}
 	}
 }
