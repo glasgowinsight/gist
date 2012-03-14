@@ -40,7 +40,7 @@
 
 .wp-caption { width: 442px; }
 .wp-caption img { width: 221px; float: left; }
-.wp-caption p { width: 221px; float: right; }
+.wp-caption p { width: 217px; float: right; }
 .wp-caption:after { right: 221px; }
 
 #access { margin: 0; position: relative; float: right; overflow: visible; }

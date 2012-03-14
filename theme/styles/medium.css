@@ -31,9 +31,9 @@
 #searchForm { text-align: left; position: absolute; bottom: 0; right: 0; }
 
 .wp-caption { width: 436px; }
-.wp-caption img { width: 327px; float: left; }
-.wp-caption p { width: 109px; float: right; }
-.wp-caption:after { right: 109px; }
+.wp-caption img { width: 218px; float: left; }
+.wp-caption p { width: 214px; float: right; }
+.wp-caption:after { right: 218px; }
 
 #access { margin: 0; position: relative; float: right; overflow: visible; }
 #access #navList li { line-height: 1.2em; padding: 7px 0 7px 28px; }

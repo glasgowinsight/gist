@@ -40,7 +40,7 @@ $wide_column: 300px;
 .wp-caption {
 	width: 2 * $column;
 	img { width: $column; float: left; }
-	p { width: $column; float: right; }
+	p { width: $column - 2 * $inner; float: right; }
 	&:after { right: $column; }
 }
 
