@@ -1,9 +1,3 @@
-#page { width: 1242px; max-width: none; margin: 0 auto; padding: 0 14px; }
-
-#sections, .section-about { width: 926px; float: left; }
-
-.section-podcast { float: right; width: 221px; }
-
 #main, .clear { clear: both; }
 
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
@@ -12,22 +6,18 @@
 
 .posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 300px; max-width: none; float: left; margin: 14px 0; padding: 0; }
 
-.section-feature .posts .post, .section-feature .posts .articles, .section-podcast .posts .post, .section-podcast .posts .articles { width: 221px; max-width: none; }
-
 .section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 
 .section-feature .posts .right { position: relative; left: 456px; }
 
 .section-feature .posts .left, .posts .main, .section-about .row { margin-right: 14px; }
 
-.section-podcast .posts .post, .section-podcast .posts .articles { margin-left: 0; margin-right: 14px; }
-
 .posts .right { margin-left: 14px; }
 
 .section-about .row .right { margin: 14px 0; }
 
-.single #article { width: 600px; max-width: none; float: left; margin-right: 14px; padding: 0; }
-.single .aside { width: 300px; float: right; }
+.single #article { max-width: none; float: left; margin-right: 14px; padding: 0; }
+.single .aside { float: right; }
 .single #sidebar, .single #related { float: right; clear: right; }
 .single #container { position: relative; }
 .single #other .post { margin-left: 14px; }
@@ -36,37 +26,47 @@
 .references { position: absolute; bottom: 0; }
 
 .archive .post, .search .post { margin-left: 14px; }
-.archive .clear4, .search .clear4 { clear: left; margin-left: 0; }
 
 #branding { position: relative; }
 
 #logo { margin: 14px 0 0 0; float: left; }
 
 #searchForm { text-align: left; position: absolute; bottom: 0; right: 0; }
+#searchForm #access { margin: 0; position: relative; float: right; overflow: visible; }
+#searchForm #access #navList li { line-height: 1.2em; padding: 7px 0 7px 28px; }
+#searchForm #access:after { content: ''; }
+#searchForm #access .feature { background: url(../images/nav_feature.png) no-repeat 0 -40px; position: absolute; top: 0; right: 200px; width: 400px; }
+#searchForm #access .feature:hover { background: url(../images/nav_feature.png) no-repeat 0 0; }
+#searchForm #access .snippet { background: url(../images/nav_snippet.png) no-repeat 0 -40px; position: absolute; top: 0; right: 50px; width: 400px; }
+#searchForm #access .snippet:hover { background: url(../images/nav_snippet.png) no-repeat 0 0; }
+#searchForm #access .podcast { background: url(../images/nav_podcast.png) no-repeat 0 -40px; position: absolute; top: 0; right: -100px; width: 400px; }
+#searchForm #access .podcast:hover { background: url(../images/nav_podcast.png) no-repeat 0 0; }
+#searchForm #access .about { background: url(../images/nav_about.png) no-repeat 0 -40px; position: absolute; top: 0; right: -250px; width: 400px; }
+#searchForm #access .about:hover { background: url(../images/nav_about.png) no-repeat 0 0; }
+#searchForm h1, #searchForm .single h2, #searchForm #nav-below h3 { width: 300px; max-width: none; margin: 14px 0; }
+#searchForm #nav-below .nav-previous { float: left; }
+#searchForm #nav-below .nav-next { float: right; }
+#searchForm label { display: inline-block; width: 10em; }
+#searchForm .bleed-switch img { left: 0; top: 0; }
+
+#page { width: 1242px; max-width: none; margin: 0 auto; padding: 0 14px; }
+
+#sections, .section-about { width: 926px; float: left; }
+
+.section-podcast { float: right; width: 221px; }
+
+.section-feature .posts .post, .section-feature .posts .articles, .section-podcast .posts .post, .section-podcast .posts .articles { width: 221px; max-width: none; }
+
+.section-podcast .posts .post, .section-podcast .posts .articles { margin-left: 0; margin-right: 14px; }
+
+.single #article { width: 600px; }
+.single .aside { width: 300px; }
+
+.archive .clear4, .search .clear4 { clear: left; margin-left: 0; }
 
 .wp-caption { width: 600px; }
 .wp-caption img { width: 450px; float: left; }
 .wp-caption p { width: 146px; float: right; }
 .wp-caption:after { right: 150px; }
 
-#access { margin: 0; position: relative; float: right; overflow: visible; }
-#access #navList li { line-height: 1.2em; padding: 7px 0 7px 28px; }
-#access:after { content: ''; }
-#access .feature { background: url(../images/nav_feature.png) no-repeat 0 -40px; position: absolute; top: 0; right: 200px; width: 400px; }
-#access .feature:hover { background: url(../images/nav_feature.png) no-repeat 0 0; }
-#access .snippet { background: url(../images/nav_snippet.png) no-repeat 0 -40px; position: absolute; top: 0; right: 50px; width: 400px; }
-#access .snippet:hover { background: url(../images/nav_snippet.png) no-repeat 0 0; }
-#access .podcast { background: url(../images/nav_podcast.png) no-repeat 0 -40px; position: absolute; top: 0; right: -100px; width: 400px; }
-#access .podcast:hover { background: url(../images/nav_podcast.png) no-repeat 0 0; }
-#access .about { background: url(../images/nav_about.png) no-repeat 0 -40px; position: absolute; top: 0; right: -250px; width: 400px; }
-#access .about:hover { background: url(../images/nav_about.png) no-repeat 0 0; }
-
-h1, .single h2, #nav-below h3 { width: 300px; max-width: none; margin: 14px 0; }
-
-#nav-below .nav-previous { float: left; }
-
-#nav-below .nav-next { float: right; }
-
-label { display: inline-block; width: 10em; }
-
-.bleed-switch img, .bleed-switch2 img { left: 0; top: 0; }
+.bleed-switch2 img { left: 0; top: 0; }
