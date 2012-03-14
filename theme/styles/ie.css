@@ -1,4 +1,6 @@
-#ie7, #ie7 body { overflow-x: auto; }
+#ie7 { overflow-x: auto; }
+
+#ie7 body { overflow-x: none; }
 
 #ie8, #ie8 body { overflow-x: visible; }
 
