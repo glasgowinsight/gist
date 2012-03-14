@@ -1,4 +1,6 @@
-html, body { overflow-x: auto; }
+#ie7, #ie7 body { overflow-x: auto; }
+
+#ie8, #ie8 body { overflow-x: visible; }
 
 .extract img, .single #content .post img { max-width: none; }
 

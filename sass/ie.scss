@@ -1,4 +1,5 @@
-html, body { overflow-x: auto; }
+#ie7, #ie7 body { overflow-x: auto; }
+#ie8, #ie8 body { overflow-x: visible; }
 .extract img, .single #content .post img { max-width: none; }
 .single h1 img, .single h2 img, .single #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { height: auto !important; } 
 #searchForm { top: 100px; }
