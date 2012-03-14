@@ -10,7 +10,7 @@
 
 .section-feature .posts .post, .section-feature .posts .articles, .single #related, .single #latest, .single .references, .single #other .post { width: 221px; max-width: none; }
 
-.section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 249px; margin: 14px 0; }
+.section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 
 .section-feature .posts .right { position: relative; left: 456px; }
 
@@ -38,10 +38,10 @@
 
 #searchForm { text-align: left; position: absolute; bottom: 0; right: 0; }
 
-.wp-caption { width: 450px; }
-.wp-caption img { width: 300px; float: left; }
-.wp-caption p { width: 150px; float: right; }
-.wp-caption:after { right: 150px; }
+.wp-caption { width: 442px; }
+.wp-caption img { width: 221px; float: left; }
+.wp-caption p { width: 221px; float: right; }
+.wp-caption:after { right: 221px; }
 
 #access { margin: 0; position: relative; float: right; overflow: visible; }
 #access #navList li { line-height: 1.2em; padding: 7px 0 7px 28px; }

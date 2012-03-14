@@ -9,7 +9,7 @@ $wide_column: 300px;
 .section-feature { position: relative; }
 .posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $wide_column; max-width: none; float: left; margin: $margin 0; padding: 0;}
 .section-feature .posts .post, .section-feature .posts .articles, .single #related,  .single #latest, .single .references, .single #other .post { width: $column; max-width: none; }
-.section-feature .posts .main { width: 2 * $column + $margin; max-width: none; position: absolute; left: $column + 2 * $margin; margin: $margin 0; }
+.section-feature .posts .main { width: 2 * $column + $margin; max-width: none; position: absolute; left: $column + $margin; margin: $margin 0; }
 .section-feature .posts .right { position: relative; left: 2 * $column + $margin; }
 .section-feature .posts .left, .posts .main, .section-about .row { margin-right: $margin; }
 .posts .right { margin-left: $margin; }
@@ -38,10 +38,10 @@ $wide_column: 300px;
 }
 
 .wp-caption {
-	width: 1.5 * $wide_column;
-	img { width: $wide_column; float: left; }
-	p { width: 0.5 * $wide_column; float: right; }
-	&:after { right: 0.5 * $wide_column; }
+	width: 2 * $column;
+	img { width: $column; float: left; }
+	p { width: $column; float: right; }
+	&:after { right: $column; }
 }
 
 $categories: feature snippet podcast about;
