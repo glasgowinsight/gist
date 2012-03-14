@@ -34,7 +34,10 @@ $wide_column: 300px;
 	text-align: left; 
 	position: absolute;
 	bottom: 0;
-	right: 0;$categories: feature snippet podcast about;
+	right: 0;
+}
+	
+$categories: feature snippet podcast about;
 $positions: 200px 50px -100px -250px;
 #access { 
 	margin: 0;
@@ -64,6 +67,4 @@ h1, .single h2, #nav-below h3 { width: $wide_column; max-width: none; margin: $m
 label { display: inline-block; width: 10em; }
 
 .bleed-switch img { left: 0; top: 0; }
-}
-
 
