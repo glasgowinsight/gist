@@ -1,70 +1,22 @@
-@import "widths";
+$positions: 200px 50px -100px -250px;
+@import "medium_plus";
 
 $column: 221px;
 $wide_column: 300px;
 
 #main, .clear { clear: both; }
-.post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 .section-feature { position: relative; }
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $wide_column; max-width: none; float: left; margin: $margin 0; padding: 0;}
+.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $wide_column; }
 
 .section-feature .posts .main { width: 2 * $column + $margin; max-width: none; position: absolute; left: $column + $margin; margin: $margin 0; }
 .section-feature .posts .right { position: relative; left: 2 * $column + $margin; }
 .section-feature .posts .left, .posts .main, .section-about .row { margin-right: $margin; }
-
-.posts .right { margin-left: $margin; }
-.section-about .row .right { margin: $margin 0; }
-.single {
-	#article { max-width: none; float: left; margin-right: $margin; padding: 0; }
-	.aside { float: right; }
-	#sidebar, #related { float: right; clear: right; }
-	#container { position: relative; }
-	#other .post { margin-left: $margin; }
-	#other h2 + .post { margin-left: 0; }
-}
 
 .references { position: absolute; bottom: 0; }
 .archive, .search {
 	.post { margin-left: $margin; }
 }
 
-#branding { position: relative; }
-#logo { margin: $margin 0 0 0; float: left; }
-#searchForm {
-	text-align: left; 
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
 	
-$categories: feature snippet podcast about;
-$positions: 200px 50px -100px -250px;
-#access { 
-	margin: 0;
-	position: relative; 
-	float: right; 
-	overflow: visible;
-	#navList li { line-height: 1.2em; padding: $half_margin 0 $half_margin $extrabig_margin}
-	&:after { content: ''; }
-	@for $i from 1 to 5 {
-		$category: nth($categories, $i);
-		$position: nth($positions, $i);
-		.#{$category} { 
-			background: url(../images/nav_#{$category}.png) no-repeat 0 -40px; 
-			position: absolute; 
-			top: 0; 
-			right: #{$position}; 
-			width: 400px;
-			&:hover { background: url(../images/nav_#{$category}.png) no-repeat 0 0; }
-		}
-	}
-}
-
-h1, .single h2, #nav-below h3 { width: $wide_column; max-width: none; margin: $margin 0; }
-#nav-below .nav-previous { float: left; }
-#nav-below .nav-next { float: right; }
-
-label { display: inline-block; width: 10em; }
-
-.bleed-switch img { left: 0; top: 0; }
+h1, .single h2, #nav-below h3 { width: $wide_column; }
 
