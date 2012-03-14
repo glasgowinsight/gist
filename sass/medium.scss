@@ -1,26 +1,30 @@
-#page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; }
+@import "widths";
+
+$column: 218px;
+
+#page { width: 3 * $column + 2 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 218px; max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $column; max-width: none; float: left; margin: $margin 0; padding: 0; }
 .references { position: absolute; bottom: 0; }
 .single{
 	#sidebar, #related { float: right; clear: right; }
 	#container { position: relative; } 
-	#other .post { width: 160px; margin-left: 14px; }
-	#other h2 + .post { margin-left: 0px; }
-	#article { width: 450px; max-width: none; float: left; margin-right: 14px; padding: 0; }
-	.aside { width: 225px; float: right; }
+	#other .post { width: $column; margin-left: $margin; }
+	#other h2 + .post { margin-left: 0; }
+	#article { width: 2 * $column; max-width: none; float: left; margin-right: $margin; padding: 0; }
+	.aside { width: $column; float: right; }
 } 
-.posts .main, .section-about .row { margin-right: 14px; }
-.posts .right { margin-left: 14px; }
-.section-about .row .right { margin: 14px 0; }
+.posts .main, .section-about .row { margin-right: $margin; }
+.posts .right { margin-left: $margin; }
+.section-about .row .right { margin: $margin 0; }
 #main, .row3, .clear { clear:both; }
 .archive, .search, #other {
-	.post { margin-left: 14px; }
+	.post { margin-left: $margin; }
 	.clear3 { clear:left; margin-left: 0; }
 }
 
 #branding { position: relative; }
-#logo { margin: 14px 0 0 0; float: left; }
+#logo { margin: $margin 0 0 0; float: left; }
 #searchForm {
 	text-align: left; 
 	position: absolute;
@@ -29,10 +33,10 @@
 }
 
 .wp-caption {
-	width: 450px;
-	img { width: 300px; float: left; }
-	p { width: 144px; float: right; }
-	&:after { right: 150px; }
+	width: 2 * $column;
+	img { width: 1.5 * $column; float: left; }
+	p { width: 0.5 * $column; float: right; }
+	&:after { right: 0.5 * $column; }
 }
 
 $categories: feature snippet podcast about;
@@ -42,7 +46,7 @@ $positions: -40px -140px -240px -340px;
 	position: relative; 
 	float: right; 
 	overflow: visible;
-	#navList li { line-height: 1.2em; padding: 5px 0 5px 25px}
+	#navList li { line-height: 1.2em; padding: $half_margin 0 $half_margin $extrabig_margin}
 	&:after { content: ''; }
 	@for $i from 1 to 5 {
 		$category: nth($categories, $i);
@@ -58,7 +62,7 @@ $positions: -40px -140px -240px -340px;
 	}
 }
 
-h1, .single h2, #nav-below h3 { width: 218px; max-width: none; margin: 14px 0; }
+h1, .single h2, #nav-below h3 { width: $column; max-width: none; margin: $margin 0; }
 #nav-below .nav-previous { float: left; }
 #nav-below .nav-next { float: right; }
 

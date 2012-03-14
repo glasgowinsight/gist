@@ -1,6 +1,6 @@
 #page { width: 1242px; max-width: none; margin: 0 auto; padding: 0 14px; }
 
-#sections, .section-about { width: 928px; float: left; }
+#sections, .section-about { width: 926px; float: left; }
 
 .section-podcast { float: right; width: 221px; }
 
@@ -26,12 +26,12 @@
 
 .section-about .row .right { margin: 14px 0; }
 
-.single #article { width: 550px; max-width: none; float: left; margin-right: 14px; padding: 0; }
-.single .aside { width: 275px; float: right; }
+.single #article { width: 600px; max-width: none; float: left; margin-right: 14px; padding: 0; }
+.single .aside { width: 300px; float: right; }
 .single #sidebar, .single #related { float: right; clear: right; }
 .single #container { position: relative; }
 .single #other .post { margin-left: 14px; }
-.single #other h2 + .post { margin-left: 0px; }
+.single #other h2 + .post { margin-left: 0; }
 
 .references { position: absolute; bottom: 0; }
 
@@ -46,11 +46,11 @@
 
 .wp-caption { width: 450px; }
 .wp-caption img { width: 300px; float: left; }
-.wp-caption p { width: 144px; float: right; }
+.wp-caption p { width: 150px; float: right; }
 .wp-caption:after { right: 150px; }
 
 #access { margin: 0; position: relative; float: right; overflow: visible; }
-#access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px; }
+#access #navList li { line-height: 1.2em; padding: 7px 0 7px 28px; }
 #access:after { content: ''; }
 #access .feature { background: url(../images/nav_feature.png) no-repeat 0 -40px; position: absolute; top: 0; right: 200px; width: 400px; }
 #access .feature:hover { background: url(../images/nav_feature.png) no-repeat 0 0; }

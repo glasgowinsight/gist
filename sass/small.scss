@@ -1,18 +1,22 @@
-#page { width: 440px; max-width: none; margin: 0 auto; padding: 0 14px; }
+@import "widths";
+
+$column: 213px;
+
+#page { width: 2 * $column + $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
-.main img { float: left; margin-right: 14px; }
+.main img { float: left; margin-right: $margin; }
 .posts, .archive, .search, #latest, #other {
-	.post, .articles { width: 213px; max-width: none; margin: 14px 0; padding: 0; }
-	.main { width: 440px; }
-	.left { margin-right: 14px; }
-	.clear2 { clear: left; margin-right: 14px; }
+	.post, .articles { width: $column; max-width: none; margin: $margin 0; padding: 0; }
+	.main { width: 2 * $column + $margin; }
+	.left { margin-right: $margin; }
+	.clear2 { clear: left; margin-right: $margin; }
 }
 .row, .clear { clear:both; }
 
-#logo { margin: 14px 0; float: left; }
+#logo { margin: $margin 0; float: left; }
 #searchForm { clear: both; text-align: left; }
 
-h1, .single h2, #nav-below h3 { width: 213px; max-width: none; margin: 14px 0; }
+h1, .single h2, #nav-below h3 { width: $column; max-width: none; margin: $margin 0; }
 #nav-below .nav-previous { float: left; }
 #nav-below .nav-next { float: right; }
 
@@ -32,7 +36,7 @@ label { display: inline-block; width: 10em; }
 			position: relative; 
 			left: 30px; 
 			background-color: inherit; 
-			padding: 2px 0;
+			padding: $inner 0;
 			&:after { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
 		}
 	}

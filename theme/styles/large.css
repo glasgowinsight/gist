@@ -10,7 +10,7 @@
 
 .section-feature .posts .post, .section-feature .posts .articles, .single #related, .single #latest, .single .references, .single #other .post { width: 221px; max-width: none; }
 
-.section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
+.section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 249px; margin: 14px 0; }
 
 .section-feature .posts .right { position: relative; left: 456px; }
 
@@ -20,12 +20,12 @@
 
 .section-about .row .right { margin: 14px 0; }
 
-.single #article { width: 450px; max-width: none; float: left; margin-right: 14px; padding: 0; }
-.single .aside { width: 225px; float: right; }
+.single #article { width: 442px; max-width: none; float: left; margin-right: 14px; padding: 0; }
+.single .aside { width: 221px; float: right; }
 .single #sidebar, .single #related { float: right; clear: right; }
 .single #container { position: relative; }
 .single #other .post { margin-left: 14px; }
-.single #other h2 + .post { margin-left: 0px; }
+.single #other h2 + .post { margin-left: 0; }
 
 .references { position: absolute; bottom: 0; }
 
@@ -40,11 +40,11 @@
 
 .wp-caption { width: 450px; }
 .wp-caption img { width: 300px; float: left; }
-.wp-caption p { width: 144px; float: right; }
+.wp-caption p { width: 150px; float: right; }
 .wp-caption:after { right: 150px; }
 
 #access { margin: 0; position: relative; float: right; overflow: visible; }
-#access #navList li { line-height: 1.2em; padding: 5px 0 5px 25px; }
+#access #navList li { line-height: 1.2em; padding: 7px 0 7px 28px; }
 #access:after { content: ''; }
 #access .feature { background: url(../images/nav_feature.png) no-repeat 0 -40px; position: absolute; top: 0; right: 200px; width: 400px; }
 #access .feature:hover { background: url(../images/nav_feature.png) no-repeat 0 0; }

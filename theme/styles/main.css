@@ -9,7 +9,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #access #navList a a { color: black; }
 
 h1, .section-link { font-size: 24px; margin-bottom: 14px; }
 
-h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: uppercase; }
+h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: uppercase; }
 
 #colophon { clear: both; }
 
@@ -49,9 +49,9 @@ ul.blank li { list-style: none inside none; }
 
 .twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
 
-dt { float: left; margin-right: 5px; font-weight: bold; }
+dt { float: left; margin-right: 7px; font-weight: bold; }
 
-dd { margin-bottom: 10px; }
+dd { margin-bottom: 14px; }
 
 .section-feature li, .category-feature li, .parent-feature li { list-style: url(../images/bullet_feature.png) inside; }
 .section-feature .wp-caption, .section-feature .thumbnail-caption, .category-feature .wp-caption, .category-feature .thumbnail-caption, .parent-feature .wp-caption, .parent-feature .thumbnail-caption { background-color: #9c6ad6; }
@@ -179,7 +179,7 @@ dd { margin-bottom: 10px; }
 
 #access a { display: block; width: 100%; }
 
-#access li, h1, .single h2, #nav-below h3 { padding: 2px 20px 2px 5px; }
+#access li, h1, .single h2, #nav-below h3 { padding: 2px 21px 2px 7px; }
 
 h1, .single h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 
@@ -190,7 +190,7 @@ h1, .single h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 .single #content .post img, #author-avatar img { max-width: 100%; height: auto; margin: auto; display: block; }
 
 .wp-caption, .thumbnail-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; max-width: 100%; height: auto; }
-.wp-caption p, .wp-caption br, .thumbnail-caption p, .thumbnail-caption br { line-height: 21px; margin: 0; padding: 3px; }
+.wp-caption p, .wp-caption br, .thumbnail-caption p, .thumbnail-caption br { line-height: 21px; margin: 0; padding: 2px; }
 .wp-caption:before, .thumbnail-caption:before { position: absolute; left: 0; top: 0; }
 .wp-caption:after, .thumbnail-caption:after { position: absolute; right: 0; top: 0; }
 
