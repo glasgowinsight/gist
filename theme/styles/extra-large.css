@@ -47,7 +47,7 @@ h1, .single h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
 .posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 300px; }
 
-.section-feature .posts .main { width: 456px; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
+.section-feature .posts .main { width: 456px !important; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 
 .section-feature .posts .right { position: relative; left: 456px; }
 

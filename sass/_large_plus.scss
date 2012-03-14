@@ -8,7 +8,7 @@ $wide_column: 300px;
 .section-feature { position: relative; }
 .posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $wide_column; }
 
-.section-feature .posts .main { width: 2 * $column + $margin; max-width: none; position: absolute; left: $column + $margin; margin: $margin 0; }
+.section-feature .posts .main { width: 2 * $column + $margin !important; max-width: none; position: absolute; left: $column + $margin; margin: $margin 0; }
 .section-feature .posts .right { position: relative; left: 2 * $column + $margin; }
 .section-feature .posts .left, .posts .main, .section-about .row { margin-right: $margin; }
 
