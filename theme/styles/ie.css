@@ -1,4 +1,4 @@
-html, body { overflow-x: visible; }
+html, body { overflow-x: auto; }
 
 .extract img, .single #content .post img { max-width: none; }
 
