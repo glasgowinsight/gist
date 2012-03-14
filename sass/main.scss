@@ -57,7 +57,7 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 5px; text-transform: up
 }
 a { text-decoration: none; }
 
-ul.blank li { list-style: none inside; }
+ul.blank li { list-style: none inside none; }
 
 @mixin link{ 
 	text-decoration: none; 

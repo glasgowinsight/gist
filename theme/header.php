@@ -51,10 +51,10 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('styles/large.css'); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo resource('styles/ie.css'); ?>" />
 <![endif]-->
-<link rel="stylesheet" type="text/css" media="all and (min-width: 1280px)" href="<?php echo resource('styles/extra-large.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 970px) and (max-width: 1280px)" href="<?php echo resource('styles/large.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 724px) and (max-width: 970px)" href="<?php echo resource('styles/medium.css'); ?>" />
-<link rel="stylesheet" type="text/css" media="all and (min-width: 478px) and (max-width: 724px)" href="<?php echo resource('styles/small.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="(min-width: 1280px)" href="<?php echo resource('styles/extra-large.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="(min-width: 970px) and (max-width: 1280px)" href="<?php echo resource('styles/large.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="(min-width: 724px) and (max-width: 970px)" href="<?php echo resource('styles/medium.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="(min-width: 478px) and (max-width: 724px)" href="<?php echo resource('styles/small.css'); ?>" />
 
 <?php wp_enqueue_script('twitter') ?>
 <?php wp_enqueue_script( 'jquery' ); ?>

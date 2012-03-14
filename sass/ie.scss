@@ -1,17 +1,4 @@
-@import "colours";
-
-@for $i from 1 to 5 {
-	$category: nth($categories, $i);
-	$normal: nth($normals, $i);
-	$dark: nth($darks, $i);
-	$light: nth($lights, $i);
-	
-	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} {
-		.bleed-left, .bleed-right, .bleed-switch, .bleed-switch2 {
-			background: #{$normal};
-			img { display:none !important; }
-		}
-	}
-}
-
-#searchForm { top: 50px }
+html, body { overflow-x: visible; }
+.extract img, .single #content .post img { max-width: none; }
+.single h1 img, .single h2 img, .single #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { height: auto !important; } 
+#searchForm { top: 100px; }
