@@ -41,10 +41,10 @@ $wide_column: 300px;
 }
 
 .wp-caption {
-	width: 2 * $column;
-	img { width: $column; float: left; }
-	p { width: $column - 2 * $inner; float: right; }
-	&:after { right: $column; }
+	width: 2 * $wide_column;
+	img { width: 1.5 * $wide_column; float: left; }
+	p { width: 0.5 * $wide_column - 2 * $inner; float: right; }
+	&:after { right: 0.5 * $wide_column; }
 }
 
 $categories: feature snippet podcast about;
