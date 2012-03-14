@@ -69,7 +69,7 @@ dd { margin-bottom: 10px; }
 .section-feature a.link-back:before, .section-feature .link-container-back a:before, .category-feature a.link-back:before, .category-feature .link-container-back a:before, .parent-feature a.link-back:before, .parent-feature .link-container-back a:before, .single-feature #searchForm a.link-back:before, .single-feature #searchForm .link-container-back a:before { content: url(../images/arrow_feature_back.png); white-space: nowrap; padding-right: 2px; }
 .section-feature a.link-back:hover:before, .section-feature .link-container-back a:hover:before, .category-feature a.link-back:hover:before, .category-feature .link-container-back a:hover:before, .parent-feature a.link-back:hover:before, .parent-feature .link-container-back a:hover:before, .single-feature #searchForm a.link-back:hover:before, .single-feature #searchForm .link-container-back a:hover:before { content: url(../images/arrow_hover_back.png); }
 
-.single-feature #logo { background: #580ead; }
+.section-feature #logo, .category-feature #logo, .parent-feature #logo, .single-feature #logo { background: #580ead; }
 
 #access .feature { background: #370470; }
 #access .feature:hover { background: #580ead; }
@@ -92,7 +92,7 @@ dd { margin-bottom: 10px; }
 .section-snippet a.link-back:before, .section-snippet .link-container-back a:before, .category-snippet a.link-back:before, .category-snippet .link-container-back a:before, .parent-snippet a.link-back:before, .parent-snippet .link-container-back a:before, .single-snippet #searchForm a.link-back:before, .single-snippet #searchForm .link-container-back a:before { content: url(../images/arrow_snippet_back.png); white-space: nowrap; padding-right: 2px; }
 .section-snippet a.link-back:hover:before, .section-snippet .link-container-back a:hover:before, .category-snippet a.link-back:hover:before, .category-snippet .link-container-back a:hover:before, .parent-snippet a.link-back:hover:before, .parent-snippet .link-container-back a:hover:before, .single-snippet #searchForm a.link-back:hover:before, .single-snippet #searchForm .link-container-back a:hover:before { content: url(../images/arrow_hover_back.png); }
 
-.single-snippet #logo { background: #91b52d; }
+.section-snippet #logo, .category-snippet #logo, .parent-snippet #logo, .single-snippet #logo { background: #91b52d; }
 
 #access .snippet { background: #739d00; }
 #access .snippet:hover { background: #91b52d; }
@@ -115,7 +115,7 @@ dd { margin-bottom: 10px; }
 .section-podcast a.link-back:before, .section-podcast .link-container-back a:before, .category-podcast a.link-back:before, .category-podcast .link-container-back a:before, .parent-podcast a.link-back:before, .parent-podcast .link-container-back a:before, .single-podcast #searchForm a.link-back:before, .single-podcast #searchForm .link-container-back a:before { content: url(../images/arrow_podcast_back.png); white-space: nowrap; padding-right: 2px; }
 .section-podcast a.link-back:hover:before, .section-podcast .link-container-back a:hover:before, .category-podcast a.link-back:hover:before, .category-podcast .link-container-back a:hover:before, .parent-podcast a.link-back:hover:before, .parent-podcast .link-container-back a:hover:before, .single-podcast #searchForm a.link-back:hover:before, .single-podcast #searchForm .link-container-back a:hover:before { content: url(../images/arrow_hover_back.png); }
 
-.single-podcast #logo { background: #ffbb00; }
+.section-podcast #logo, .category-podcast #logo, .parent-podcast #logo, .single-podcast #logo { background: #ffbb00; }
 
 #access .podcast { background: #a67a00; }
 #access .podcast:hover { background: #ffbb00; }
@@ -138,7 +138,7 @@ dd { margin-bottom: 10px; }
 .section-about a.link-back:before, .section-about .link-container-back a:before, .category-about a.link-back:before, .category-about .link-container-back a:before, .parent-about a.link-back:before, .parent-about .link-container-back a:before, .single-about #searchForm a.link-back:before, .single-about #searchForm .link-container-back a:before { content: url(../images/arrow_about_back.png); white-space: nowrap; padding-right: 2px; }
 .section-about a.link-back:hover:before, .section-about .link-container-back a:hover:before, .category-about a.link-back:hover:before, .category-about .link-container-back a:hover:before, .parent-about a.link-back:hover:before, .parent-about .link-container-back a:hover:before, .single-about #searchForm a.link-back:hover:before, .single-about #searchForm .link-container-back a:hover:before { content: url(../images/arrow_hover_back.png); }
 
-.single-about #logo { background: red; }
+.section-about #logo, .category-about #logo, .parent-about #logo, .single-about #logo { background: red; }
 
 #access .about { background: #a60000; }
 #access .about:hover { background: red; }

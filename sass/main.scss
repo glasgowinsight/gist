@@ -122,7 +122,7 @@ dd { margin-bottom: 10px; }
 		}
 	}
 	
-	.single-#{$category} {
+	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} {
 		#logo { background: $normal; }
 	}
 
