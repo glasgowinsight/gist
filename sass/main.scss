@@ -69,7 +69,7 @@ ul.blank li { list-style: none inside none; }
 	&:hover { color: #ffffff; } 
 }
 
-#logo { background: nth($normals, 1); width: 212px; height: 128px; max-width: none; }
+#logo { background: nth($normals, 1); width: 212px; height: 128px; padding: 0; max-width: none; }
 #logo img { z-index: 0 !important; }
 .home #searchForm a { 
 	@include link;
