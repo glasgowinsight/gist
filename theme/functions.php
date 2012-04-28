@@ -68,7 +68,7 @@ function fix_caption_width($val, $attr, $content = null) {
 	if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
 
 	return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '">'
-		. do_shortcode( $content ) . '<p class="wp-caption-text">// ' . $caption . '</p><br style="clear:both"/></div>';
+		. do_shortcode( $content ) . '<p class="wp-caption-text link-container">// ' . $caption . '</p><br style="clear:both"/></div>';
 }
 
 add_filter('comment_form_default_fields', 'comments');
