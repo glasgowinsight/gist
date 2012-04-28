@@ -1,0 +1,30 @@
+$positions: -40px -140px -240px -340px;
+@import "medium_plus";
+
+$column: 218px;
+
+#page { width: 3 * $column + 2 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $column; }
+.references { position: absolute; bottom: 0; }
+.single{
+	#other .post { width: $column; }
+	#article { width: 2 * $column; }
+	.aside { width: $column; }
+} 
+.posts .main, .section-about .row { margin-right: $margin; }
+#main, .row3, .clear { clear:both; }
+.archive, .search, #other {
+	.post { margin-left: $margin; }
+	.clear3 { clear:left; margin-left: 0; }
+}
+
+
+.wp-caption {
+	width: 2 * $column;
+	img { width: 1.5 * $column; float: left; }
+	p { width: 0.5 * $column - 2 * $inner; float: right; }
+	&:after { right: 0.5 * $column; }
+}
+
+
+h1, .single h2, #nav-below h3 { width: $column; }

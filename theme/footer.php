@@ -2,40 +2,24 @@
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the id=main div and all content
- * after.
+ * Contains the closing of the id=main div and all content after
  *
  * @package WordPress
- * @subpackage Gist
+ * @subpackage The GIST
  */
 ?>
+
 	</div><!-- #main -->
 
-	<div id="footer" role="contentinfo">
-		<div id="site-info">
-			<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<?php bloginfo( 'name' ); ?>
-			</a>
-		</div><!-- #site-info -->
+	<div id="colophon" role="contentinfo">
 
-		<div id="site-generator">
-			<a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>" rel="generator">
-				Proudly powered by WordPress
-			</a>
-		</div><!-- #site-generator -->
-	</div><!-- #footer -->
+			<div id="site-generator">
+				// <?php bloginfo( 'name' ); ?> - <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" class="plain" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
+			</div>
+	</div><!-- #colophon -->
+</div><!-- #page -->
 
-</div><!-- #wrapper -->
-
-<!-- WP-Minify JS -->
-<?php
-	/* Always have wp_footer() just before the closing </body>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to reference JavaScript files.
-	 */
-
-	wp_footer();
-?>
+<?php wp_footer(); ?>
 
 </body>
 </html>

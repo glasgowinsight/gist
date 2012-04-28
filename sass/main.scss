@@ -1,0 +1,198 @@
+@import "colours";
+@import "widths";
+
+body, html { 
+	font-family: "Franklin Gothic Book",
+		"Franklin Gothic Medium",
+		"Franklin Gothic",
+		"ITC Franklin Gothic",
+		"ITC Franklin Gothic Std",
+		TradeGothic,
+		"News Gothic MT",
+		"URW Gothic L",
+		Arial,
+		sans-serif;
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+div.twtr-widget { 
+	font-family: "Franklin Gothic Book",
+		"Franklin Gothic Medium",
+		"Franklin Gothic",
+		"ITC Franklin Gothic",
+		"ITC Franklin Gothic Std",
+		TradeGothic,
+		"News Gothic MT",
+		"URW Gothic L",
+		Arial,
+		sans-serif
+		!important;
+		
+  font-size: 13px !important;
+}
+
+h1, h2, h3, h4, h5, h6, #access #navList a {
+  font-size: 16px;
+  font-weight: bold;
+  a { color: black; }
+}
+
+.section-link { clear:both; float: right; }
+h1, .section-link { font-size: 24px; margin-bottom: $margin; }
+h3 { font-size: 18px; text-align: center; margin-bottom: $half_margin; text-transform: uppercase; }
+#colophon { clear: both; }
+#site-generator { margin: $margin 0; float: right; }
+.wp-caption p { font-weight: bold; }
+
+.entry-content { line-height: $big_margin; }
+.entry-content, .category-archive-meta, #author-info { 
+	p, br { margin-bottom: $margin; }
+}
+.entry-header { text-transform: uppercase; text-align: center; margin-bottom: $margin; }
+.single #content .entry-header { text-transform: none; text-align: left; }
+
+#access a, h1, .single h2, .archive #nav-below h3, .search #nav-below h3 { 
+	color: white;
+	a { color: white; } 
+}
+a { text-decoration: none; }
+
+ul.blank li { list-style: none inside none; }
+
+@mixin link{ 
+	text-decoration: none; 
+	color: #000000; 
+	font-weight: bold; 
+	border-bottom: 1px dotted;
+	
+	&:hover { color: #ffffff; } 
+}
+
+#logo { background: nth($normals, 1); width: 212px; height: 128px; padding: 0; max-width: none; }
+#logo img { z-index: 0 !important; }
+.home #searchForm a { 
+	@include link;
+	border-color: nth($normals, 1);
+	&:hover { background-color: nth($normals, 1); }
+	&:after { content: url(../images/arrow_feature.png); }
+	&:hover:after{ content: url(../images/arrow_hover.png); }
+}
+
+#access {
+	position: relative; 
+	overflow-y: hidden; 
+	&:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
+}
+
+.twtr-hd h3 { display: none; }
+.twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
+
+dt { float: left; margin-right: $half_margin; font-weight: bold; }
+dd { margin-bottom: $margin; }
+
+@for $i from 1 to 5 {
+	$category: nth($categories, $i);
+	$normal: nth($normals, $i);
+	$dark: nth($darks, $i);
+	$light: nth($lights, $i);
+	
+	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
+		li { list-style: url(../images/bullet_#{$category}.png) inside; }
+		.wp-caption, .thumbnail-caption {
+			background-color: #{$light};
+			&:before, &:after { content: url(../images/img_#{$category}.png); }
+			p { z-index: 1; } 
+		}
+	}
+	
+	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} #searchForm {
+		a.link, .link-container a {
+			@include link;
+			border-color: #{$normal};
+			&:hover { background-color: #{$normal}; }
+			&:after { content: url(../images/arrow_#{$category}.png); white-space: nowrap; padding-left: $inner; }
+			&:hover:after{ content: url(../images/arrow_hover.png); }
+		}
+		a.link-back, .link-container-back a {
+			@include link;
+			border-color: #{$normal};
+			&:hover { background-color: #{$normal}; }
+			&:before { content: url(../images/arrow_#{$category}_back.png); white-space: nowrap; padding-right: $inner;	}
+			&:hover:before{ content: url(../images/arrow_hover_back.png); }
+		}
+	}
+	
+	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} {
+		#logo { background: $normal; }
+	}
+
+	
+	#access .#{$category} { 
+		background: #{$dark}; 
+		&:hover { background: #{$normal}; }
+	}
+	
+	.parent-#{$category} {
+		.aside, .wp-caption p { background-color: #{$light}; }
+	}
+}
+
+.single, .section, .archive, .search {
+	h1, h2, #nav-below h3 { 
+		position: relative;
+		img { 
+			position: absolute !important; 
+			height: 100% !important; 
+			max-height: none !important; 
+			max-width: none !important; 
+			z-index: -1; 
+		}
+	}
+}
+#article .post { float: none; }
+	
+.bleed-right img { left: 0; top: 0; }
+.bleed-left, .bleed-switch, .bleed-switch2 {
+	 img { right: 0; top: 0; }
+}
+
+.aside { padding: $half_margin; margin: $half_margin; }
+.addthis_toolbox { float: right; }
+.licence { clear: both; padding-top: $margin; }
+#searchForm { 
+	text-align: center; 
+	form { margin-top: $margin; }
+	label { display: none; }
+}
+
+/* Stuff for the 1 column layout that will mostly get overwritten */
+.extract img { max-width: 100%; height: auto; } 
+#page { max-width: 454px; margin: 0 auto; padding: 0 $margin; }
+#nav-below div { text-align: center; }
+.twtr-doc { width: 100% !important; margin: $margin auto; }
+.entry-thumbnail { text-align: center; margin-bottom: $margin; }
+#access { max-width: 227px; margin: $margin auto; }
+#access a { display: block; width:100%; }
+#access li, h1, .single h2, #nav-below h3 { padding: $inner $big_margin $inner $half_margin; }
+h1, .single h2, #nav-below h3 { max-width: 202px; margin: $margin auto; }
+.post, .articles { margin: $margin auto; } 
+#logo { margin: $margin auto; }
+.single #content .post, #author-avatar {
+	img { max-width: 100%; height: auto; margin: auto; display: block; }
+}
+.wp-caption, .thumbnail-caption { 
+	margin: auto; 
+	position: relative; 
+	overflow: hidden; 
+	line-height: 0; 
+	max-width: 100%; 
+	height: auto;
+	
+	p, br { line-height: $big_margin; margin: 0; padding: $inner; }
+	&:before { position: absolute; left: 0; top: 0; }
+	&:after{ position: absolute; right: 0; top: 0; }
+}
+.thumbnail-caption { display: inline-block; }
+label { display: block; }
+

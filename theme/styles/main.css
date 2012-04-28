@@ -1,0 +1,199 @@
+body, html { font-family: "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "ITC Franklin Gothic Std", TradeGothic, "News Gothic MT", "URW Gothic L", Arial, sans-serif; font-size: 13px; overflow-x: hidden; }
+
+div.twtr-widget { font-family: "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "ITC Franklin Gothic Std", TradeGothic, "News Gothic MT", "URW Gothic L", Arial, sans-serif !important; font-size: 13px !important; }
+
+h1, h2, h3, h4, h5, h6, #access #navList a { font-size: 16px; font-weight: bold; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #access #navList a a { color: black; }
+
+.section-link { clear: both; float: right; }
+
+h1, .section-link { font-size: 24px; margin-bottom: 14px; }
+
+h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: uppercase; }
+
+#colophon { clear: both; }
+
+#site-generator { margin: 14px 0; float: right; }
+
+.wp-caption p { font-weight: bold; }
+
+.entry-content { line-height: 21px; }
+
+.entry-content p, .entry-content br, .category-archive-meta p, .category-archive-meta br, #author-info p, #author-info br { margin-bottom: 14px; }
+
+.entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
+
+.single #content .entry-header { text-transform: none; text-align: left; }
+
+#access a, h1, .single h2, .archive #nav-below h3, .search #nav-below h3 { color: white; }
+#access a a, h1 a, .single h2 a, .archive #nav-below h3 a, .search #nav-below h3 a { color: white; }
+
+a { text-decoration: none; }
+
+ul.blank li { list-style: none inside none; }
+
+#logo { background: #580ead; width: 212px; height: 128px; padding: 0; max-width: none; }
+
+#logo img { z-index: 0 !important; }
+
+.home #searchForm a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #580ead; }
+.home #searchForm a:hover { color: #ffffff; }
+.home #searchForm a:hover { background-color: #580ead; }
+.home #searchForm a:after { content: url(../images/arrow_feature.png); }
+.home #searchForm a:hover:after { content: url(../images/arrow_hover.png); }
+
+#access { position: relative; overflow-y: hidden; }
+#access:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
+
+.twtr-hd h3 { display: none; }
+
+.twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
+
+dt { float: left; margin-right: 7px; font-weight: bold; }
+
+dd { margin-bottom: 14px; }
+
+.section-feature li, .category-feature li, .parent-feature li { list-style: url(../images/bullet_feature.png) inside; }
+.section-feature .wp-caption, .section-feature .thumbnail-caption, .category-feature .wp-caption, .category-feature .thumbnail-caption, .parent-feature .wp-caption, .parent-feature .thumbnail-caption { background-color: #9c6ad6; }
+.section-feature .wp-caption:before, .section-feature .wp-caption:after, .section-feature .thumbnail-caption:before, .section-feature .thumbnail-caption:after, .category-feature .wp-caption:before, .category-feature .wp-caption:after, .category-feature .thumbnail-caption:before, .category-feature .thumbnail-caption:after, .parent-feature .wp-caption:before, .parent-feature .wp-caption:after, .parent-feature .thumbnail-caption:before, .parent-feature .thumbnail-caption:after { content: url(../images/img_feature.png); }
+.section-feature .wp-caption p, .section-feature .thumbnail-caption p, .category-feature .wp-caption p, .category-feature .thumbnail-caption p, .parent-feature .wp-caption p, .parent-feature .thumbnail-caption p { z-index: 1; }
+
+.section-feature a.link, .section-feature .link-container a, .category-feature a.link, .category-feature .link-container a, .parent-feature a.link, .parent-feature .link-container a, .single-feature #searchForm a.link, .single-feature #searchForm .link-container a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #580ead; }
+.section-feature a.link:hover, .section-feature .link-container a:hover, .category-feature a.link:hover, .category-feature .link-container a:hover, .parent-feature a.link:hover, .parent-feature .link-container a:hover, .single-feature #searchForm a.link:hover, .single-feature #searchForm .link-container a:hover { color: #ffffff; }
+.section-feature a.link:hover, .section-feature .link-container a:hover, .category-feature a.link:hover, .category-feature .link-container a:hover, .parent-feature a.link:hover, .parent-feature .link-container a:hover, .single-feature #searchForm a.link:hover, .single-feature #searchForm .link-container a:hover { background-color: #580ead; }
+.section-feature a.link:after, .section-feature .link-container a:after, .category-feature a.link:after, .category-feature .link-container a:after, .parent-feature a.link:after, .parent-feature .link-container a:after, .single-feature #searchForm a.link:after, .single-feature #searchForm .link-container a:after { content: url(../images/arrow_feature.png); white-space: nowrap; padding-left: 2px; }
+.section-feature a.link:hover:after, .section-feature .link-container a:hover:after, .category-feature a.link:hover:after, .category-feature .link-container a:hover:after, .parent-feature a.link:hover:after, .parent-feature .link-container a:hover:after, .single-feature #searchForm a.link:hover:after, .single-feature #searchForm .link-container a:hover:after { content: url(../images/arrow_hover.png); }
+.section-feature a.link-back, .section-feature .link-container-back a, .category-feature a.link-back, .category-feature .link-container-back a, .parent-feature a.link-back, .parent-feature .link-container-back a, .single-feature #searchForm a.link-back, .single-feature #searchForm .link-container-back a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #580ead; }
+.section-feature a.link-back:hover, .section-feature .link-container-back a:hover, .category-feature a.link-back:hover, .category-feature .link-container-back a:hover, .parent-feature a.link-back:hover, .parent-feature .link-container-back a:hover, .single-feature #searchForm a.link-back:hover, .single-feature #searchForm .link-container-back a:hover { color: #ffffff; }
+.section-feature a.link-back:hover, .section-feature .link-container-back a:hover, .category-feature a.link-back:hover, .category-feature .link-container-back a:hover, .parent-feature a.link-back:hover, .parent-feature .link-container-back a:hover, .single-feature #searchForm a.link-back:hover, .single-feature #searchForm .link-container-back a:hover { background-color: #580ead; }
+.section-feature a.link-back:before, .section-feature .link-container-back a:before, .category-feature a.link-back:before, .category-feature .link-container-back a:before, .parent-feature a.link-back:before, .parent-feature .link-container-back a:before, .single-feature #searchForm a.link-back:before, .single-feature #searchForm .link-container-back a:before { content: url(../images/arrow_feature_back.png); white-space: nowrap; padding-right: 2px; }
+.section-feature a.link-back:hover:before, .section-feature .link-container-back a:hover:before, .category-feature a.link-back:hover:before, .category-feature .link-container-back a:hover:before, .parent-feature a.link-back:hover:before, .parent-feature .link-container-back a:hover:before, .single-feature #searchForm a.link-back:hover:before, .single-feature #searchForm .link-container-back a:hover:before { content: url(../images/arrow_hover_back.png); }
+
+.section-feature #logo, .category-feature #logo, .parent-feature #logo, .single-feature #logo { background: #580ead; }
+
+#access .feature { background: #370470; }
+#access .feature:hover { background: #580ead; }
+
+.parent-feature .aside, .parent-feature .wp-caption p { background-color: #9c6ad6; }
+
+.section-snippet li, .category-snippet li, .parent-snippet li { list-style: url(../images/bullet_snippet.png) inside; }
+.section-snippet .wp-caption, .section-snippet .thumbnail-caption, .category-snippet .wp-caption, .category-snippet .thumbnail-caption, .parent-snippet .wp-caption, .parent-snippet .thumbnail-caption { background-color: #d4f870; }
+.section-snippet .wp-caption:before, .section-snippet .wp-caption:after, .section-snippet .thumbnail-caption:before, .section-snippet .thumbnail-caption:after, .category-snippet .wp-caption:before, .category-snippet .wp-caption:after, .category-snippet .thumbnail-caption:before, .category-snippet .thumbnail-caption:after, .parent-snippet .wp-caption:before, .parent-snippet .wp-caption:after, .parent-snippet .thumbnail-caption:before, .parent-snippet .thumbnail-caption:after { content: url(../images/img_snippet.png); }
+.section-snippet .wp-caption p, .section-snippet .thumbnail-caption p, .category-snippet .wp-caption p, .category-snippet .thumbnail-caption p, .parent-snippet .wp-caption p, .parent-snippet .thumbnail-caption p { z-index: 1; }
+
+.section-snippet a.link, .section-snippet .link-container a, .category-snippet a.link, .category-snippet .link-container a, .parent-snippet a.link, .parent-snippet .link-container a, .single-snippet #searchForm a.link, .single-snippet #searchForm .link-container a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #91b52d; }
+.section-snippet a.link:hover, .section-snippet .link-container a:hover, .category-snippet a.link:hover, .category-snippet .link-container a:hover, .parent-snippet a.link:hover, .parent-snippet .link-container a:hover, .single-snippet #searchForm a.link:hover, .single-snippet #searchForm .link-container a:hover { color: #ffffff; }
+.section-snippet a.link:hover, .section-snippet .link-container a:hover, .category-snippet a.link:hover, .category-snippet .link-container a:hover, .parent-snippet a.link:hover, .parent-snippet .link-container a:hover, .single-snippet #searchForm a.link:hover, .single-snippet #searchForm .link-container a:hover { background-color: #91b52d; }
+.section-snippet a.link:after, .section-snippet .link-container a:after, .category-snippet a.link:after, .category-snippet .link-container a:after, .parent-snippet a.link:after, .parent-snippet .link-container a:after, .single-snippet #searchForm a.link:after, .single-snippet #searchForm .link-container a:after { content: url(../images/arrow_snippet.png); white-space: nowrap; padding-left: 2px; }
+.section-snippet a.link:hover:after, .section-snippet .link-container a:hover:after, .category-snippet a.link:hover:after, .category-snippet .link-container a:hover:after, .parent-snippet a.link:hover:after, .parent-snippet .link-container a:hover:after, .single-snippet #searchForm a.link:hover:after, .single-snippet #searchForm .link-container a:hover:after { content: url(../images/arrow_hover.png); }
+.section-snippet a.link-back, .section-snippet .link-container-back a, .category-snippet a.link-back, .category-snippet .link-container-back a, .parent-snippet a.link-back, .parent-snippet .link-container-back a, .single-snippet #searchForm a.link-back, .single-snippet #searchForm .link-container-back a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #91b52d; }
+.section-snippet a.link-back:hover, .section-snippet .link-container-back a:hover, .category-snippet a.link-back:hover, .category-snippet .link-container-back a:hover, .parent-snippet a.link-back:hover, .parent-snippet .link-container-back a:hover, .single-snippet #searchForm a.link-back:hover, .single-snippet #searchForm .link-container-back a:hover { color: #ffffff; }
+.section-snippet a.link-back:hover, .section-snippet .link-container-back a:hover, .category-snippet a.link-back:hover, .category-snippet .link-container-back a:hover, .parent-snippet a.link-back:hover, .parent-snippet .link-container-back a:hover, .single-snippet #searchForm a.link-back:hover, .single-snippet #searchForm .link-container-back a:hover { background-color: #91b52d; }
+.section-snippet a.link-back:before, .section-snippet .link-container-back a:before, .category-snippet a.link-back:before, .category-snippet .link-container-back a:before, .parent-snippet a.link-back:before, .parent-snippet .link-container-back a:before, .single-snippet #searchForm a.link-back:before, .single-snippet #searchForm .link-container-back a:before { content: url(../images/arrow_snippet_back.png); white-space: nowrap; padding-right: 2px; }
+.section-snippet a.link-back:hover:before, .section-snippet .link-container-back a:hover:before, .category-snippet a.link-back:hover:before, .category-snippet .link-container-back a:hover:before, .parent-snippet a.link-back:hover:before, .parent-snippet .link-container-back a:hover:before, .single-snippet #searchForm a.link-back:hover:before, .single-snippet #searchForm .link-container-back a:hover:before { content: url(../images/arrow_hover_back.png); }
+
+.section-snippet #logo, .category-snippet #logo, .parent-snippet #logo, .single-snippet #logo { background: #91b52d; }
+
+#access .snippet { background: #739d00; }
+#access .snippet:hover { background: #91b52d; }
+
+.parent-snippet .aside, .parent-snippet .wp-caption p { background-color: #d4f870; }
+
+.section-podcast li, .category-podcast li, .parent-podcast li { list-style: url(../images/bullet_podcast.png) inside; }
+.section-podcast .wp-caption, .section-podcast .thumbnail-caption, .category-podcast .wp-caption, .category-podcast .thumbnail-caption, .parent-podcast .wp-caption, .parent-podcast .thumbnail-caption { background-color: #ffda73; }
+.section-podcast .wp-caption:before, .section-podcast .wp-caption:after, .section-podcast .thumbnail-caption:before, .section-podcast .thumbnail-caption:after, .category-podcast .wp-caption:before, .category-podcast .wp-caption:after, .category-podcast .thumbnail-caption:before, .category-podcast .thumbnail-caption:after, .parent-podcast .wp-caption:before, .parent-podcast .wp-caption:after, .parent-podcast .thumbnail-caption:before, .parent-podcast .thumbnail-caption:after { content: url(../images/img_podcast.png); }
+.section-podcast .wp-caption p, .section-podcast .thumbnail-caption p, .category-podcast .wp-caption p, .category-podcast .thumbnail-caption p, .parent-podcast .wp-caption p, .parent-podcast .thumbnail-caption p { z-index: 1; }
+
+.section-podcast a.link, .section-podcast .link-container a, .category-podcast a.link, .category-podcast .link-container a, .parent-podcast a.link, .parent-podcast .link-container a, .single-podcast #searchForm a.link, .single-podcast #searchForm .link-container a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #ffbb00; }
+.section-podcast a.link:hover, .section-podcast .link-container a:hover, .category-podcast a.link:hover, .category-podcast .link-container a:hover, .parent-podcast a.link:hover, .parent-podcast .link-container a:hover, .single-podcast #searchForm a.link:hover, .single-podcast #searchForm .link-container a:hover { color: #ffffff; }
+.section-podcast a.link:hover, .section-podcast .link-container a:hover, .category-podcast a.link:hover, .category-podcast .link-container a:hover, .parent-podcast a.link:hover, .parent-podcast .link-container a:hover, .single-podcast #searchForm a.link:hover, .single-podcast #searchForm .link-container a:hover { background-color: #ffbb00; }
+.section-podcast a.link:after, .section-podcast .link-container a:after, .category-podcast a.link:after, .category-podcast .link-container a:after, .parent-podcast a.link:after, .parent-podcast .link-container a:after, .single-podcast #searchForm a.link:after, .single-podcast #searchForm .link-container a:after { content: url(../images/arrow_podcast.png); white-space: nowrap; padding-left: 2px; }
+.section-podcast a.link:hover:after, .section-podcast .link-container a:hover:after, .category-podcast a.link:hover:after, .category-podcast .link-container a:hover:after, .parent-podcast a.link:hover:after, .parent-podcast .link-container a:hover:after, .single-podcast #searchForm a.link:hover:after, .single-podcast #searchForm .link-container a:hover:after { content: url(../images/arrow_hover.png); }
+.section-podcast a.link-back, .section-podcast .link-container-back a, .category-podcast a.link-back, .category-podcast .link-container-back a, .parent-podcast a.link-back, .parent-podcast .link-container-back a, .single-podcast #searchForm a.link-back, .single-podcast #searchForm .link-container-back a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: #ffbb00; }
+.section-podcast a.link-back:hover, .section-podcast .link-container-back a:hover, .category-podcast a.link-back:hover, .category-podcast .link-container-back a:hover, .parent-podcast a.link-back:hover, .parent-podcast .link-container-back a:hover, .single-podcast #searchForm a.link-back:hover, .single-podcast #searchForm .link-container-back a:hover { color: #ffffff; }
+.section-podcast a.link-back:hover, .section-podcast .link-container-back a:hover, .category-podcast a.link-back:hover, .category-podcast .link-container-back a:hover, .parent-podcast a.link-back:hover, .parent-podcast .link-container-back a:hover, .single-podcast #searchForm a.link-back:hover, .single-podcast #searchForm .link-container-back a:hover { background-color: #ffbb00; }
+.section-podcast a.link-back:before, .section-podcast .link-container-back a:before, .category-podcast a.link-back:before, .category-podcast .link-container-back a:before, .parent-podcast a.link-back:before, .parent-podcast .link-container-back a:before, .single-podcast #searchForm a.link-back:before, .single-podcast #searchForm .link-container-back a:before { content: url(../images/arrow_podcast_back.png); white-space: nowrap; padding-right: 2px; }
+.section-podcast a.link-back:hover:before, .section-podcast .link-container-back a:hover:before, .category-podcast a.link-back:hover:before, .category-podcast .link-container-back a:hover:before, .parent-podcast a.link-back:hover:before, .parent-podcast .link-container-back a:hover:before, .single-podcast #searchForm a.link-back:hover:before, .single-podcast #searchForm .link-container-back a:hover:before { content: url(../images/arrow_hover_back.png); }
+
+.section-podcast #logo, .category-podcast #logo, .parent-podcast #logo, .single-podcast #logo { background: #ffbb00; }
+
+#access .podcast { background: #a67a00; }
+#access .podcast:hover { background: #ffbb00; }
+
+.parent-podcast .aside, .parent-podcast .wp-caption p { background-color: #ffda73; }
+
+.section-about li, .category-about li, .parent-about li { list-style: url(../images/bullet_about.png) inside; }
+.section-about .wp-caption, .section-about .thumbnail-caption, .category-about .wp-caption, .category-about .thumbnail-caption, .parent-about .wp-caption, .parent-about .thumbnail-caption { background-color: #ff7373; }
+.section-about .wp-caption:before, .section-about .wp-caption:after, .section-about .thumbnail-caption:before, .section-about .thumbnail-caption:after, .category-about .wp-caption:before, .category-about .wp-caption:after, .category-about .thumbnail-caption:before, .category-about .thumbnail-caption:after, .parent-about .wp-caption:before, .parent-about .wp-caption:after, .parent-about .thumbnail-caption:before, .parent-about .thumbnail-caption:after { content: url(../images/img_about.png); }
+.section-about .wp-caption p, .section-about .thumbnail-caption p, .category-about .wp-caption p, .category-about .thumbnail-caption p, .parent-about .wp-caption p, .parent-about .thumbnail-caption p { z-index: 1; }
+
+.section-about a.link, .section-about .link-container a, .category-about a.link, .category-about .link-container a, .parent-about a.link, .parent-about .link-container a, .single-about #searchForm a.link, .single-about #searchForm .link-container a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
+.section-about a.link:hover, .section-about .link-container a:hover, .category-about a.link:hover, .category-about .link-container a:hover, .parent-about a.link:hover, .parent-about .link-container a:hover, .single-about #searchForm a.link:hover, .single-about #searchForm .link-container a:hover { color: #ffffff; }
+.section-about a.link:hover, .section-about .link-container a:hover, .category-about a.link:hover, .category-about .link-container a:hover, .parent-about a.link:hover, .parent-about .link-container a:hover, .single-about #searchForm a.link:hover, .single-about #searchForm .link-container a:hover { background-color: red; }
+.section-about a.link:after, .section-about .link-container a:after, .category-about a.link:after, .category-about .link-container a:after, .parent-about a.link:after, .parent-about .link-container a:after, .single-about #searchForm a.link:after, .single-about #searchForm .link-container a:after { content: url(../images/arrow_about.png); white-space: nowrap; padding-left: 2px; }
+.section-about a.link:hover:after, .section-about .link-container a:hover:after, .category-about a.link:hover:after, .category-about .link-container a:hover:after, .parent-about a.link:hover:after, .parent-about .link-container a:hover:after, .single-about #searchForm a.link:hover:after, .single-about #searchForm .link-container a:hover:after { content: url(../images/arrow_hover.png); }
+.section-about a.link-back, .section-about .link-container-back a, .category-about a.link-back, .category-about .link-container-back a, .parent-about a.link-back, .parent-about .link-container-back a, .single-about #searchForm a.link-back, .single-about #searchForm .link-container-back a { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
+.section-about a.link-back:hover, .section-about .link-container-back a:hover, .category-about a.link-back:hover, .category-about .link-container-back a:hover, .parent-about a.link-back:hover, .parent-about .link-container-back a:hover, .single-about #searchForm a.link-back:hover, .single-about #searchForm .link-container-back a:hover { color: #ffffff; }
+.section-about a.link-back:hover, .section-about .link-container-back a:hover, .category-about a.link-back:hover, .category-about .link-container-back a:hover, .parent-about a.link-back:hover, .parent-about .link-container-back a:hover, .single-about #searchForm a.link-back:hover, .single-about #searchForm .link-container-back a:hover { background-color: red; }
+.section-about a.link-back:before, .section-about .link-container-back a:before, .category-about a.link-back:before, .category-about .link-container-back a:before, .parent-about a.link-back:before, .parent-about .link-container-back a:before, .single-about #searchForm a.link-back:before, .single-about #searchForm .link-container-back a:before { content: url(../images/arrow_about_back.png); white-space: nowrap; padding-right: 2px; }
+.section-about a.link-back:hover:before, .section-about .link-container-back a:hover:before, .category-about a.link-back:hover:before, .category-about .link-container-back a:hover:before, .parent-about a.link-back:hover:before, .parent-about .link-container-back a:hover:before, .single-about #searchForm a.link-back:hover:before, .single-about #searchForm .link-container-back a:hover:before { content: url(../images/arrow_hover_back.png); }
+
+.section-about #logo, .category-about #logo, .parent-about #logo, .single-about #logo { background: red; }
+
+#access .about { background: #a60000; }
+#access .about:hover { background: red; }
+
+.parent-about .aside, .parent-about .wp-caption p { background-color: #ff7373; }
+
+.single h1, .single h2, .single #nav-below h3, .section h1, .section h2, .section #nav-below h3, .archive h1, .archive h2, .archive #nav-below h3, .search h1, .search h2, .search #nav-below h3 { position: relative; }
+.single h1 img, .single h2 img, .single #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { position: absolute !important; height: 100% !important; max-height: none !important; max-width: none !important; z-index: -1; }
+
+#article .post { float: none; }
+
+.bleed-right img { left: 0; top: 0; }
+
+.bleed-left img, .bleed-switch img, .bleed-switch2 img { right: 0; top: 0; }
+
+.aside { padding: 7px; margin: 7px; }
+
+.addthis_toolbox { float: right; }
+
+.licence { clear: both; padding-top: 14px; }
+
+#searchForm { text-align: center; }
+#searchForm form { margin-top: 14px; }
+#searchForm label { display: none; }
+
+/* Stuff for the 1 column layout that will mostly get overwritten */
+.extract img { max-width: 100%; height: auto; }
+
+#page { max-width: 454px; margin: 0 auto; padding: 0 14px; }
+
+#nav-below div { text-align: center; }
+
+.twtr-doc { width: 100% !important; margin: 14px auto; }
+
+.entry-thumbnail { text-align: center; margin-bottom: 14px; }
+
+#access { max-width: 227px; margin: 14px auto; }
+
+#access a { display: block; width: 100%; }
+
+#access li, h1, .single h2, #nav-below h3 { padding: 2px 21px 2px 7px; }
+
+h1, .single h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
+
+.post, .articles { margin: 14px auto; }
+
+#logo { margin: 14px auto; }
+
+.single #content .post img, #author-avatar img { max-width: 100%; height: auto; margin: auto; display: block; }
+
+.wp-caption, .thumbnail-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; max-width: 100%; height: auto; }
+.wp-caption p, .wp-caption br, .thumbnail-caption p, .thumbnail-caption br { line-height: 21px; margin: 0; padding: 2px; }
+.wp-caption:before, .thumbnail-caption:before { position: absolute; left: 0; top: 0; }
+.wp-caption:after, .thumbnail-caption:after { position: absolute; right: 0; top: 0; }
+
+.thumbnail-caption { display: inline-block; }
+
+label { display: block; }

@@ -1,0 +1,23 @@
+@import "large_plus";
+
+#page { width: 4 * $wide_column + 3 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
+#sections, .section-about { width: 3 * $wide_column + 2 * $margin; float: left; }
+.section-podcast { float:right; width: $column; }
+.section-feature .posts .post, .section-feature .posts .articles, .section-podcast .posts .post, .section-podcast .posts .articles { width: $column; max-width: none; }
+.section-podcast .posts .post, .section-podcast .posts .articles { margin-left: 0; margin-right: $margin; }
+.single {
+	#article { width: 2 * $wide_column; }
+	.aside { width: $wide_column; }
+}
+.archive, .search {
+	.clear4 { clear:left; margin-left: 0; }
+}
+
+.wp-caption {
+	width: 2 * $wide_column;
+	img { width: 1.5 * $wide_column; float: left; }
+	p { width: 0.5 * $wide_column - 2 * $inner; float: right; }
+	&:after { right: 0.5 * $wide_column; }
+}
+
+.bleed-switch2 { img { left: 0; top: 0; } }
