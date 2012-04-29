@@ -12,7 +12,7 @@ for i in $(seq 2 5); do
   convert -size 8x8 "canvas:$bright" -background none -shear 14x0 "theme/images/bullet_$type.png"
   convert -size 400x40 \( "canvas:$dark" -background none -shear 14x0 \) \( "canvas:$bright" -background none -shear 14x0 \) -append "theme/images/nav_$type.png"
   convert -size 1000x40 "canvas:$bright" -background none -shear 14x0 "theme/images/bleed_${type}.png"
-  convert -size 20x400 "canvas:$dim" "theme/images/img_$type.png"
+  convert -size 20x800 "canvas:$dim" "theme/images/img_$type.png"
   convert arrow_black.png -fill "$bright" -opaque black theme/images/arrow_${type}.png
   convert theme/images/arrow_${type}.png -flop theme/images/arrow_${type}_back.png
 done
