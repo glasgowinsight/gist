@@ -17,6 +17,7 @@ get_header(); ?>
 	<?php 
 		global $post;
 		$categories = array('feature'=>10, 'snippet'=>3, 'podcast'=>1, 'event'=>-1, 'study'=>5);
+		$extras = array('event'=>array('meta_query'=>array(array('key'=>'event_date', 'value'=>date('Y-m-d'), 'compare'=>'<=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'start_date'));
 		$posts = array();
 		foreach (array_keys($categories) as $category) {
 			$posts[$category] = array();
@@ -31,6 +32,10 @@ get_header(); ?>
 			}			
 		}
 		
+		foreach (get_posts(array('meta_query'=>array(array('key'=>'highlight', 'value'=>date('Y-m-d'), 'compare'=>'<=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'highlight', 'posts_per_page'=>1)) as $post){
+			$posts['feature'][3] = $post;
+		}
+		
 		foreach (array_keys($categories) as $category) {
 			$posts_per_page = $categories[$category];
 			$i = 0;
@@ -38,11 +43,15 @@ get_header(); ?>
 			foreach ($posts[$category] as $post){
 				$loaded[] = $post->ID;
 			}
-			$cat_posts = get_posts(array(
+			$params = array(
 				'category_name'=>$category, 
 				'posts_per_page'=>$posts_per_page,
 				'post__not_in'=>$loaded
-			));
+			);
+			if (array_key_exists($category, $extras)) {
+				$params = array_merge($params, $extras[$category]);
+			}
+			$cat_posts = get_posts($params);
 			foreach ($cat_posts as $post){
 				while(array_key_exists($i, $posts[$category])){
 					$i++;
