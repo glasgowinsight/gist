@@ -17,7 +17,19 @@ get_header(); ?>
 	<?php 
 		global $post;
 		$categories = array('feature'=>10, 'snippet'=>3, 'podcast'=>1, 'event'=>-1, 'study'=>5);
-		$extras = array('event'=>array('meta_query'=>array(array('key'=>'end_date', 'value'=>date('Y-m-d'), 'compare'=>'>=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'order'=>'ASC', 'meta_key'=>'start_date'));
+		$extras = array(
+			'event'=>array(
+				'meta_query'=>array(array(
+					'key'=>'end_date', 
+					'value'=>date('Y-m-d'), 
+					'compare'=>'>=', 
+					'type'=>'DATE')
+				), 
+				'orderby'=>'meta_value', 
+				'order'=>'ASC', 
+				'meta_key'=>'start_date'
+			)
+		);
 		$posts = array();
 		foreach (array_keys($categories) as $category) {
 			$posts[$category] = array();
@@ -163,9 +175,7 @@ get_header(); ?>
 								<div class="entry-content">
 									<ul>
 										<?php if ($posts['event']): ?>
-											<?php $sliced = $posts['event']; ?>
-											<?php if ($categories['event'] > 0) $sliced = array_slice($sliced, 0, $categories['event']); ?>
-											<?php foreach ($sliced as $post): ?>
+											<?php foreach (array_slice($posts['event'], 0, $categories['event'] > 0 ? $categories['event'] : NULL) as $post): ?>
 												<?php setup_postdata($post); ?>
 												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 											<?php endforeach; ?>
@@ -211,9 +221,7 @@ get_header(); ?>
 							</div>
 							<div class="entry-content">
 								<ul>
-									<?php $sliced = $posts['study']; ?>
-									<?php if ($categories['study'] > 0) $sliced = array_slice($sliced, 0, $categories['study']); ?>
-									<?php foreach ($sliced as $post): ?>
+									<?php foreach (array_slice($posts['study'], 0, $categories['study'] > 0 ? $categories['study'] : NULL) as $post): ?>
 										<?php setup_postdata($post); ?>
 										<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 									<?php endforeach; ?>
