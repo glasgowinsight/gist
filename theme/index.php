@@ -45,7 +45,7 @@ get_header(); ?>
 		}
 		
 		foreach (get_posts(array('meta_query'=>array(array('key'=>'highlight', 'value'=>date('Y-m-d'), 'compare'=>'>=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'highlight', 'order'=>'ASC', 'posts_per_page'=>1)) as $post){
-			$posts['feature'][3] = $post;
+			$posts['feature'][2] = $post;
 		}
 		
 		foreach (array_keys($categories) as $category) {
@@ -180,7 +180,7 @@ get_header(); ?>
 										<?php if ($posts['event']): ?>
 											<?php foreach ($posts['event'] as $post): ?>
 												<?php setup_postdata($post); ?>
-												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
+												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php echo get_the_post_meta($post->ID, 'display_date')?>: <?php the_short_title(); ?></a></li>
 											<?php endforeach; ?>
 										<?php else: ?>
 											<li>No events scheduled</li>
