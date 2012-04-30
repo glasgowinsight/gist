@@ -41,7 +41,7 @@ get_header(); ?>
 			foreach(get_the_category($post->ID) as $category){
 				$category_name = $category->category_nicename;
 				$posts[$category_name][$position] = $post;
-			}			
+			}
 		}
 		
 		foreach (get_posts(array('meta_query'=>array(array('key'=>'highlight', 'value'=>date('Y-m-d'), 'compare'=>'>=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'highlight', 'order'=>'ASC', 'posts_per_page'=>1)) as $post){
@@ -52,8 +52,12 @@ get_header(); ?>
 			$posts_per_page = $categories[$category];
 			$i = 0;
 			$loaded = array();
-			foreach ($posts[$category] as $post){
+			foreach (array_keys($posts[$category]) as $position){
+				$post = $posts[$category][$position];
 				$loaded[] = $post->ID;
+				if($position < 0){
+					unset($posts[$category][$position]);
+				}
 			}
 			$params = array(
 				'category_name'=>$category, 
@@ -73,7 +77,6 @@ get_header(); ?>
 			}
 		}
 	?>
-
 		<div id="primary">
 			<div id="content" role="main">
 				<div id="sections">
@@ -175,7 +178,7 @@ get_header(); ?>
 								<div class="entry-content">
 									<ul>
 										<?php if ($posts['event']): ?>
-											<?php foreach (array_slice($posts['event'], 0, $categories['event'] > 0 ? $categories['event'] : NULL) as $post): ?>
+											<?php foreach ($posts['event'] as $post): ?>
 												<?php setup_postdata($post); ?>
 												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 											<?php endforeach; ?>
@@ -221,7 +224,7 @@ get_header(); ?>
 							</div>
 							<div class="entry-content">
 								<ul>
-									<?php foreach (array_slice($posts['study'], 0, $categories['study'] > 0 ? $categories['study'] : NULL) as $post): ?>
+									<?php foreach ($posts['study'] as $post): ?>
 										<?php setup_postdata($post); ?>
 										<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 									<?php endforeach; ?>
