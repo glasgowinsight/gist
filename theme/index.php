@@ -17,7 +17,7 @@ get_header(); ?>
 	<?php 
 		global $post;
 		$categories = array('feature'=>10, 'snippet'=>3, 'podcast'=>1, 'event'=>-1, 'study'=>5);
-		$extras = array('event'=>array('meta_query'=>array(array('key'=>'event_date', 'value'=>date('Y-m-d'), 'compare'=>'<=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'start_date'));
+		$extras = array('event'=>array('meta_query'=>array(array('key'=>'end_date', 'value'=>date('Y-m-d'), 'compare'=>'<=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'start_date'));
 		$posts = array();
 		foreach (array_keys($categories) as $category) {
 			$posts[$category] = array();
