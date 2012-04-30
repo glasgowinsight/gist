@@ -163,8 +163,10 @@ get_header(); ?>
 								<div class="entry-content">
 									<ul>
 										<?php if ($posts['event']): ?>
-											<?php foreach (array_slice($posts['event'], 0, $categories['event']) as $post):
-												setup_postdata($post); ?>
+											<?php $sliced = $posts['event']; ?>
+											<?php if ($categories['event'] > 0) $sliced = array_slice($sliced, 0, $categories['event']); ?>
+											<?php foreach ($sliced as $post): ?>
+												<?php setup_postdata($post); ?>
 												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 											<?php endforeach; ?>
 										<?php else: ?>
@@ -209,8 +211,10 @@ get_header(); ?>
 							</div>
 							<div class="entry-content">
 								<ul>
-									<?php foreach (array_slice($posts['study'], 0, $categories['study']) as $post):
-										setup_postdata($post); ?>
+									<?php $sliced = $posts['study']; ?>
+									<?php if ($categories['study'] > 0) $sliced = array_slice($sliced, 0, $categories['study']); ?>
+									<?php foreach ($sliced as $post): ?>
+										<?php setup_postdata($post); ?>
 										<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 									<?php endforeach; ?>
 								</ul>
