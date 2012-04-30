@@ -180,7 +180,7 @@ get_header(); ?>
 										<?php if ($posts['event']): ?>
 											<?php foreach ($posts['event'] as $post): ?>
 												<?php setup_postdata($post); ?>
-												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php echo get_post_meta($post->ID, 'display_date'); ?>: <?php the_short_title(); ?></a></li>
+												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php echo get_post_meta($post->ID, 'display_date', true); ?>: <?php the_short_title(); ?></a></li>
 											<?php endforeach; ?>
 										<?php else: ?>
 											<li>No events scheduled</li>
