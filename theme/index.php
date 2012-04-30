@@ -17,7 +17,7 @@ get_header(); ?>
 	<?php 
 		global $post;
 		$categories = array('feature'=>10, 'snippet'=>3, 'podcast'=>1, 'event'=>-1, 'study'=>5);
-		$extras = array('event'=>array('meta_query'=>array(array('key'=>'end_date', 'value'=>date('Y-m-d'), 'compare'=>'<=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'start_date'));
+		$extras = array('event'=>array('meta_query'=>array(array('key'=>'end_date', 'value'=>date('Y-m-d'), 'compare'=>'>=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'order'=>'ASC', 'meta_key'=>'start_date'));
 		$posts = array();
 		foreach (array_keys($categories) as $category) {
 			$posts[$category] = array();
@@ -32,7 +32,7 @@ get_header(); ?>
 			}			
 		}
 		
-		foreach (get_posts(array('meta_query'=>array(array('key'=>'highlight', 'value'=>date('Y-m-d'), 'compare'=>'<=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'highlight', 'posts_per_page'=>1)) as $post){
+		foreach (get_posts(array('meta_query'=>array(array('key'=>'highlight', 'value'=>date('Y-m-d'), 'compare'=>'>=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'highlight', 'order'=>'ASC', 'posts_per_page'=>1)) as $post){
 			$posts['feature'][3] = $post;
 		}
 		
