@@ -162,10 +162,14 @@ get_header(); ?>
 								</div>
 								<div class="entry-content">
 									<ul>
-										<?php foreach (array_slice($posts['event'], 0, $categories['event']) as $post):
-											setup_postdata($post); ?>
-											<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
-										<?php endforeach; ?>
+										<?php if ($posts['event']): ?>
+											<?php foreach (array_slice($posts['event'], 0, $categories['event']) as $post):
+												setup_postdata($post); ?>
+												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
+											<?php endforeach; ?>
+										<?php else: ?>
+											<li>No events scheduled</li>
+										<?php endif; ?>
 									</ul>
 								</div>
 							</div>
