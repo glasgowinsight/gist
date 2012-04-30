@@ -114,7 +114,7 @@ function gist_custom_excerpt_more( $output ) {
 add_filter( 'get_the_excerpt', 'gist_custom_excerpt_more' );
 
 function get_bleed(  ) {
-	$categories = array('feature', 'snippet', 'podcast', 'about');
+	$categories = array('feature', 'snippet', 'podcast', 'about', 'event', 'study');
 	foreach ($categories as $category) {
 		if ( in_category($category) || is_category($category) ){
 			return '<img src="' . resource('images/bleed_' . $category . '.png') . '"/>';

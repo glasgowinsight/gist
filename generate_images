@@ -1,6 +1,6 @@
 #!/bin/sh
 
-for i in $(seq 2 5); do
+for i in $(seq 2 7); do
   args=($(sed -e "s/;//g" sass/_colours.scss | cut -d" " -f$i))
   type=${args[0]}
   bright=${args[1]}
