@@ -58,6 +58,13 @@ get_header(); ?>
 								<?php endif; 
 							?>
 						</div>
+						<div class="short_references">
+							<?php $references = get_post_meta(get_the_ID(), 'short_references', True); ?>
+							<?php if ($references ): ?>
+								<h2 class="bleed-left"><?php echo $bleed; ?>References</h2>
+								<?php echo $references; ?>
+							<?php endif;?>
+						</div>
 					</div>
 
 					<div id="sidebar">
