@@ -228,6 +228,7 @@ get_header(); ?>
 										<?php setup_postdata($post); ?>
 										<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
 									<?php endforeach; ?>
+									<li><a href="<?php echo get_category_link_by_slug('study'); ?>" class="link">All Studies</a></li>
 								</ul>
 							</div>
 						</div>
