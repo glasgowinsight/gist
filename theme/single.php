@@ -39,9 +39,9 @@ get_header(); ?>
 							<h2 class="bleed-left"><?php echo $bleed; ?>Author</h2>
 							<div id="author-avatar">
 								<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-									<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyeleven_author_bio_avatar_size', 68 ) ); ?>
+									<?php userphoto_the_author_thumbnail() ?>
 								</a>
-							</div><!-- #author-avatar -->
+							</div>
 							<div id="author-description">
 								// <?php the_author_meta( 'description' ); ?>
 							</div>
