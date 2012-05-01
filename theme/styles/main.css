@@ -192,6 +192,8 @@ dd { margin-bottom: 14px; }
 
 #article .post { float: none; }
 
+#author-avatar img { float: right; }
+
 .bleed-right img { left: 0; top: 0; }
 
 .bleed-left img, .bleed-switch img, .bleed-switch2 img { right: 0; top: 0; }
