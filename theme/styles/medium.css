@@ -41,6 +41,8 @@ label { display: inline-block; width: 10em; }
 
 h1, .single h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
+.wp-caption img, .thumbnail-caption img { width: auto; }
+
 #page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; }
 
 .posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 218px; }

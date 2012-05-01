@@ -41,6 +41,8 @@ label { display: inline-block; width: 10em; }
 
 h1, .single h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
+.wp-caption img, .thumbnail-caption img { width: auto; }
+
 #main, .clear { clear: both; }
 
 .section-feature { position: relative; }

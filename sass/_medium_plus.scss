@@ -54,3 +54,7 @@ label { display: inline-block; width: 10em; }
 .bleed-switch img { left: 0; top: 0; }
 
 h1, .single h2, #nav-below h3 { max-width: none; margin: $margin 0; }
+
+.wp-caption, .thumbnail-caption {
+	img { width: auto; }
+}

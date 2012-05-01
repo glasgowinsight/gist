@@ -189,6 +189,7 @@ h1, .single h2, #nav-below h3 { max-width: 202px; margin: $margin auto; }
 	max-width: 100%; 
 	height: auto;
 	
+	img { width: 100%; }
 	p, br { line-height: $big_margin; margin: 0; padding: $inner; }
 	&:before { position: absolute; left: 0; top: 0; }
 	&:after{ position: absolute; right: 0; top: 0; }
