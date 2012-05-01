@@ -100,6 +100,7 @@ dd { margin-bottom: $margin; }
 	
 	.section-#{$category}, .category-#{$category}, .parent-#{$category} {
 		li { list-style: url(../images/bullet_#{$category}.png) inside; }
+		.aside { background-color: #{$light}; }
 		.wp-caption, .thumbnail-caption {
 			background-color: #{$light};
 			&:before, &:after { content: url(../images/img_#{$category}.png); }
@@ -132,10 +133,6 @@ dd { margin-bottom: $margin; }
 	#access .#{$category} { 
 		background: #{$dark}; 
 		&:hover { background: #{$normal}; }
-	}
-	
-	.parent-#{$category} {
-		.aside, .wp-caption p { background-color: #{$light}; }
 	}
 }
 
