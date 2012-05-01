@@ -76,7 +76,6 @@ h1, .single h2, #nav-below h3 { width: 300px; }
 
 .wp-caption { width: 600px; }
 .wp-caption img { width: 450px; float: left; }
-.wp-caption p { width: 146px; float: right; }
 .wp-caption:after { right: 150px; }
 
 .bleed-switch2 img { left: 0; top: 0; }

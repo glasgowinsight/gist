@@ -70,5 +70,4 @@ h1, .single h2, #nav-below h3 { width: 300px; }
 
 .wp-caption { width: 442px; }
 .wp-caption img { width: 331.5px; float: left; }
-.wp-caption p { width: 106.5px; float: right; }
 .wp-caption:after { right: 110.5px; }

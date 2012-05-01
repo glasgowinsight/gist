@@ -60,7 +60,6 @@ h1, .single h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
 .wp-caption { width: 436px; }
 .wp-caption img { width: 327px; float: left; }
-.wp-caption p { width: 105px; float: right; }
 .wp-caption:after { right: 109px; }
 
 h1, .single h2, #nav-below h3 { width: 218px; }
