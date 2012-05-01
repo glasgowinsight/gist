@@ -45,6 +45,9 @@ h3 { font-size: 18px; text-align: center; margin-bottom: $half_margin; text-tran
 #site-generator { margin: $margin 0; float: right; }
 .wp-caption p { font-weight: bold; }
 .wp-caption p, .references, .small-references { font-size: 11px; }
+references, small-references { 
+	br { margin-bottom: 7px; }
+}
 
 .entry-content { line-height: $big_margin; }
 .entry-content, .category-archive-meta, #author-info { 
