@@ -19,7 +19,7 @@ $column: 218px;
 }
 
 
-.alignleft, .alignright, .aligncenter {
+div.alignleft, div.alignright, div.aligncenter {
 	width: 2 * $column;
 	img { width: 1.5 * $column; float: left; }
 	&:after { right: 0.5 * $column; }

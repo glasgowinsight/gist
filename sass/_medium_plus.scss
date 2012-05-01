@@ -55,6 +55,6 @@ label { display: inline-block; width: 10em; }
 
 h1, .single h2, #nav-below h3 { max-width: none; margin: $margin 0; }
 
-.alignleft, .alignright, .aligncenter, .thumbnail-caption {
+div.alignleft, div.alignright, div.aligncenter, .thumbnail-caption {
 	img { width: auto; }
 }
