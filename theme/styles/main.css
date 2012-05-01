@@ -187,8 +187,8 @@ dd { margin-bottom: 14px; }
 #access .study { background: #a60000; }
 #access .study:hover { background: red; }
 
-.single h1, .single h2, .single #nav-below h3, .section h1, .section h2, .section #nav-below h3, .archive h1, .archive h2, .archive #nav-below h3, .search h1, .search h2, .search #nav-below h3 { position: relative; }
-.single h1 img, .single h2 img, .single #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { position: absolute !important; height: 100% !important; max-height: none !important; max-width: none !important; z-index: -1; }
+.single h1, .single h2, .single #nav-below h3, .section h1, .section h2, .section #nav-below h3, .archive h1, .archive h2, .archive #nav-below h3, .error404 h1, .error404 h2, .error404 #nav-below h3, .search h1, .search h2, .search #nav-below h3 { position: relative; }
+.single h1 img, .single h2 img, .single #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .error404 h1 img, .error404 h2 img, .error404 #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { position: absolute !important; height: 100% !important; max-height: none !important; max-width: none !important; z-index: -1; }
 
 #article .post { float: none; }
 
