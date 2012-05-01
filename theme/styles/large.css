@@ -41,7 +41,7 @@ label { display: inline-block; width: 10em; }
 
 h1, .single h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
-.wp-caption img, .thumbnail-caption img { width: auto; }
+.alignleft img, .alignright img, .aligncenter img, .thumbnail-caption img { width: auto; }
 
 #main, .clear { clear: both; }
 
@@ -70,6 +70,6 @@ h1, .single h2, #nav-below h3 { width: 300px; }
 
 .archive .clear3, .search .clear3 { clear: left; margin-left: 0; }
 
-.wp-caption { width: 442px; }
-.wp-caption img { width: 331.5px; float: left; }
-.wp-caption:after { right: 110.5px; }
+.alignleft, .alignright, .aligncenter { width: 442px; }
+.alignleft img, .alignright img, .aligncenter img { width: 331.5px; float: left; }
+.alignleft:after, .alignright:after, .aligncenter:after { right: 110.5px; }
