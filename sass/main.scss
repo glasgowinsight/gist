@@ -151,6 +151,11 @@ dd { margin-bottom: $margin; }
 #article .post { float: none; }
 #author-avatar img { float: right; }
 	
+.infoDisplay {
+	td { padding: 0 3px; }
+	td + td { text-align: right; }
+}
+	
 .bleed-right img { left: 0; top: 0; }
 .bleed-left, .bleed-switch, .bleed-switch2 {
 	 img { right: 0; top: 0; }
