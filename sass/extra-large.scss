@@ -16,7 +16,6 @@
 .wp-caption {
 	width: 2 * $wide_column;
 	img { width: 1.5 * $wide_column; float: left; }
-	p { width: 0.5 * $wide_column - 2 * $inner; float: right; }
 	&:after { right: 0.5 * $wide_column; }
 }
 

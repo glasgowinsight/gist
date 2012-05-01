@@ -22,7 +22,6 @@ $column: 218px;
 .wp-caption {
 	width: 2 * $column;
 	img { width: 1.5 * $column; float: left; }
-	p { width: 0.5 * $column - 2 * $inner; float: right; }
 	&:after { right: 0.5 * $column; }
 }
 
