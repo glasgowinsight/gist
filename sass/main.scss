@@ -45,6 +45,9 @@ h3 { font-size: 18px; text-align: center; margin-bottom: $half_margin; text-tran
 #site-generator { margin: $margin 0; float: right; }
 .wp-caption p { font-weight: bold; }
 .wp-caption p, .references, .small-references { font-size: 11px; }
+.references, .small-references { 
+	br { margin-bottom: 7px; }
+}
 
 .entry-content { line-height: $big_margin; }
 .entry-content, .category-archive-meta, #author-info { 
@@ -70,7 +73,7 @@ ul.blank li { list-style: none inside none; }
 	&:hover { color: #ffffff; } 
 }
 
-#logo { background: nth($normals, 1); width: 212px; height: 128px; padding: 0; max-width: none; }
+#logo { background: nth($normals, 1); width: 212px; height: 99px; padding: 0; max-width: none; }
 #logo img { z-index: 0 !important; }
 .home #searchForm a { 
 	@include link;
@@ -150,6 +153,11 @@ dd { margin-bottom: $margin; }
 }
 #article .post { float: none; }
 #author-avatar img { float: right; }
+	
+.infoDisplay {
+	td { padding: 0 3px; }
+	td + td { text-align: right; }
+}
 	
 .bleed-right img { left: 0; top: 0; }
 .bleed-left, .bleed-switch, .bleed-switch2 {

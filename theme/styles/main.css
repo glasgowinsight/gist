@@ -19,6 +19,8 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: up
 
 .wp-caption p, .references, .small-references { font-size: 11px; }
 
+.references br, .small-references br { margin-bottom: 7px; }
+
 .entry-content { line-height: 21px; }
 
 .entry-content p, .entry-content br, .category-archive-meta p, .category-archive-meta br, #author-info p, #author-info br { margin-bottom: 14px; }
@@ -34,7 +36,7 @@ a { text-decoration: none; }
 
 ul.blank li { list-style: none inside none; }
 
-#logo { background: #580ead; width: 212px; height: 128px; padding: 0; max-width: none; }
+#logo { background: #580ead; width: 212px; height: 99px; padding: 0; max-width: none; }
 
 #logo img { z-index: 0 !important; }
 
@@ -193,6 +195,9 @@ dd { margin-bottom: 14px; }
 #article .post { float: none; }
 
 #author-avatar img { float: right; }
+
+.infoDisplay td { padding: 0 3px; }
+.infoDisplay td + td { text-align: right; }
 
 .bleed-right img { left: 0; top: 0; }
 
