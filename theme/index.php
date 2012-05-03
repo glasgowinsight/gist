@@ -16,8 +16,8 @@ get_header(); ?>
 
 	<?php 
 		global $post;
-		$categories = array('feature'=>10, 'snippet'=>3, 'podcast'=>1, 'event'=>-1, 'study'=>5);
-		$extras = array(
+		$posts_per_page = array('feature'=>10, 'snippet'=>3, 'podcast'=>1, 'event'=>-1, 'study'=>5);
+		$extra_params = array(
 			'event'=>array(
 				'meta_query'=>array(array(
 					'key'=>'end_date', 
@@ -31,41 +31,37 @@ get_header(); ?>
 			)
 		);
 		$posts = array();
-		foreach (array_keys($categories) as $category) {
+		$post_ids = array();
+		foreach (array_keys($posts_per_page) as $category) {
 			$posts[$category] = array();
+			$post_ids[$category] = array();
 		}
 		
-		foreach (get_posts(array('meta_query'=>array(array('key'=>'homepage', 'value'=>'0', 'compare'=>'!=')))) as $post){
-			$position = get_post_meta($post->ID, 'homepage');
-			$position = intval($position[0]) - 1;
-			foreach(get_the_category($post->ID) as $category){
-				$category_name = $category->category_nicename;
-				$posts[$category_name][$position] = $post;
-			}
-		}
-		
-		foreach (get_posts(array('meta_query'=>array(array('key'=>'highlight', 'value'=>date('Y-m-d'), 'compare'=>'>=', 'type'=>'DATE')), 'orderby'=>'meta_value', 'meta_key'=>'highlight', 'order'=>'ASC', 'posts_per_page'=>1)) as $post){
-			$posts['feature'][2] = $post;
-		}
-		
-		foreach (array_keys($categories) as $category) {
-			$posts_per_page = $categories[$category];
-			$i = 0;
-			$loaded = array();
-			foreach (array_keys($posts[$category]) as $position){
-				$post = $posts[$category][$position];
-				$loaded[] = $post->ID;
-				if($position < 0){
-					unset($posts[$category][$position]);
+		foreach (get_posts(array('meta_query'=>array(array('key'=>'homepage', 'value'=>'%', 'compare'=>'LIKE')))) as $post){
+			foreach(get_post_meta($post->ID, 'homepage') as $homepage){
+				$parts = explode('_', $homepage);
+				if(count($parts)>2 && strtotime($parts[2])<time()){
+					continue;
+				}
+				$category_name = $parts[1];
+				$position = intval($parts[2]) - 1;
+				$post_ids[$category_name][] = $post->ID;
+				if($position > 0){
+					$posts[$category_name][$position] = $post;
 				}
 			}
+		}
+		
+		foreach (array_keys($posts_per_page) as $category) {
+			$i = 0;
+			
 			$params = array(
 				'category_name'=>$category, 
-				'posts_per_page'=>$posts_per_page,
-				'post__not_in'=>$loaded
+				'posts_per_page'=>$posts_per_page[$category],
+				'post__not_in'=>$post_ids[$category]
 			);
-			if (array_key_exists($category, $extras)) {
-				$params = array_merge($params, $extras[$category]);
+			if (array_key_exists($category, $extra_params)) {
+				$params = array_merge($params, $extra_params[$category]);
 			}
 			$cat_posts = get_posts($params);
 			foreach ($cat_posts as $post){
