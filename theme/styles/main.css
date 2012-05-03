@@ -36,7 +36,7 @@ a { text-decoration: none; }
 
 ul.blank li { list-style: none inside none; }
 
-#logo { background: #580ead; width: 212px; height: 128px; padding: 0; max-width: none; }
+#logo { background: #580ead; width: 212px; height: 99px; padding: 0; max-width: none; }
 
 #logo img { z-index: 0 !important; }
 
