@@ -37,16 +37,19 @@ get_header(); ?>
 			$post_ids[$category] = array();
 		}
 		
-		foreach (get_posts(array('meta_query'=>array(array('key'=>'homepage', 'value'=>'%', 'compare'=>'LIKE')))) as $post){
+		foreach (get_posts(array('meta_query'=>array(array('key'=>'homepage', 'value'=>'NONE', 'compare'=>'!=')))) as $post){
 			foreach(get_post_meta($post->ID, 'homepage') as $homepage){
 				$parts = explode('_', $homepage);
+				if(count($parts)<2){
+					continue;
+				}
 				if(count($parts)>2 && strtotime($parts[2])<time()){
 					continue;
 				}
-				$category_name = $parts[1];
-				$position = intval($parts[2]) - 1;
+				$category_name = $parts[0];
+				$position = intval($parts[1]) - 1;
 				$post_ids[$category_name][] = $post->ID;
-				if($position > 0){
+				if($position >= 0){
 					$posts[$category_name][$position] = $post;
 				}
 			}
