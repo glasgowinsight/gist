@@ -58,23 +58,37 @@ get_header(); ?>
 								<?php endif; 
 							?>
 						</div>
-						<div class="short-references">
-							<?php $references = get_post_meta(get_the_ID(), 'short_references', True); ?>
-							<?php if ($references ): ?>
-								<h2 class="bleed-left"><?php echo $bleed; ?>References</h2>
-								<?php echo $references; ?>
-							<?php endif;?>
-						</div>
+						<?php if(!in_category('feature')):?>
+							<div class="links">
+								<?php foreach(get_post_meta(get_the_ID(), 'external_link') as $link): ?>
+									<?php echo $link; ?>
+								<?php endforeach;?>
+							</div>
+							<div class="short-references">
+								<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
+								<?php if ($references ): ?>
+									<h2 class="bleed-left"><?php echo $bleed; ?>References</h2>
+									<?php echo $references; ?>
+								<?php endif;?>
+							</div>
+						<?php endif; ?>
 					</div>
 
 					<div id="sidebar">
-						<div class="references">
-							<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
-							<?php if ($references ): ?>
-								<h2 class="bleed-switch"><?php echo $bleed; ?>References</h2>
-								<?php echo $references; ?>
-							<?php endif;?>
-						</div>
+						<?php if(in_category('feature')):?>
+							<div class="links">
+								<?php foreach(get_post_meta(get_the_ID(), 'external_link') as $link): ?>
+									<?php echo $link; ?>
+								<?php endforeach;?>
+							</div>
+							<div class="references">
+								<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
+								<?php if ($references ): ?>
+									<h2 class="bleed-switch"><?php echo $bleed; ?>References</h2>
+									<?php echo $references; ?>
+								<?php endif;?>
+							</div>
+						<?php endif; ?>
 						
 						<?php query_posts(array(
 							'category_name'=>'feature,snippet',
