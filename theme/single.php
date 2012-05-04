@@ -65,6 +65,7 @@ get_header(); ?>
 									<h2 class="bleed-left"><?php echo $bleed; ?>Links</h2>
 									<?php foreach($links as $link): ?>
 										<?php echo $link; ?>
+										<br/>
 									<?php endforeach;?>
 								<?php endif; ?>
 								<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
@@ -84,6 +85,7 @@ get_header(); ?>
 									<h2 class="bleed-switch"><?php echo $bleed; ?>Links</h2>
 									<?php foreach($links as $link): ?>
 										<?php echo $link; ?>
+										<br/>
 									<?php endforeach;?>
 								<?php endif; ?>
 								<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
