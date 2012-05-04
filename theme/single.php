@@ -59,35 +59,43 @@ get_header(); ?>
 							?>
 						</div>
 						<?php if(!in_category('feature')):?>
-							<div class="links">
-								<?php foreach(get_post_meta(get_the_ID(), 'external_link') as $link): ?>
-									<?php echo $link; ?>
-								<?php endforeach;?>
-							</div>
-							<div class="short-references">
-								<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
+							<?php $links = get_post_meta(get_the_ID(), 'external_link'); ?>
+							<?php if ($links):?>
+								<div class="short-links">
+									<h2 class="bleed-left"><?php echo $bleed; ?>Links</h2>
+									<?php foreach($links as $link): ?>
+										<?php echo $link; ?>
+									<?php endforeach;?>
+								</div>
+							<?php endif; ?>
+							<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
 								<?php if ($references ): ?>
+								<div class="short-references">
 									<h2 class="bleed-left"><?php echo $bleed; ?>References</h2>
 									<?php echo $references; ?>
-								<?php endif;?>
-							</div>
+								</div>
+							<?php endif;?>
 						<?php endif; ?>
 					</div>
 
 					<div id="sidebar">
 						<?php if(in_category('feature')):?>
-							<div class="links">
-								<?php foreach(get_post_meta(get_the_ID(), 'external_link') as $link): ?>
-									<?php echo $link; ?>
-								<?php endforeach;?>
-							</div>
-							<div class="references">
-								<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
+							<?php $links = get_post_meta(get_the_ID(), 'external_link'); ?>
+							<?php if ($links):?>
+								<div class="links">
+									<h2 class="bleed-switch"><?php echo $bleed; ?>Links</h2>
+									<?php foreach($links as $link): ?>
+										<?php echo $link; ?>
+									<?php endforeach;?>
+								</div>
+							<?php endif; ?>
+							<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
 								<?php if ($references ): ?>
+								<div class="references">
 									<h2 class="bleed-switch"><?php echo $bleed; ?>References</h2>
 									<?php echo $references; ?>
-								<?php endif;?>
-							</div>
+								</div>
+							<?php endif;?>
 						<?php endif; ?>
 						
 						<?php query_posts(array(
