@@ -140,9 +140,11 @@ get_header(); ?>
 				<div class="section  section-podcast">
 					<div><h1 class="bleed-switch2"><img src="<?php echo resource('images/bleed_podcast.png'); ?>"/><a href="<?php echo get_category_link_by_slug('podcast'); ?>">//&nbsp;Communicate</a></h1></div>
 					<div class="posts">
+                                                <!--
 						<div class="articles main">
 							<div id="twtr-widget"></div>
 						</div>
+                                                -->
 					
 						<?php $post = $posts['podcast'][0]; ?>
 						<?php setup_postdata($post); ?>
