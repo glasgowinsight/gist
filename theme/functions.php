@@ -26,6 +26,10 @@ function gist_setup() {
 }
 
 function filter_query($query) {
+        if ($query->is_feed) {
+                $query->set('category__not_in', array(id_by_slug('about'), id_by_slug('study')));
+        }
+            
 	if ( $query->is_archive && !isset($query->query_vars['posts_per_page'])) {
 		$query->query_vars['posts_per_page'] = 12;
 	}
