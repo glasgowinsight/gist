@@ -196,7 +196,8 @@ dd { margin-bottom: 14px; }
 
 #author-avatar img { float: right; }
 
-.infoDisplay td { padding: 0 3px; }
+table td { padding: 0 3px; }
+
 .infoDisplay td + td { text-align: right; }
 
 .bleed-right img { left: 0; top: 0; }

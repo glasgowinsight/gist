@@ -69,6 +69,9 @@
 		<p class="nocomments"><?php _e( 'Comments are closed.', 'twentyeleven' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+        <?php 
+            comment_form(array(
+                'comment_notes_before'=>'<p class="comment-notes">Your email address will not be published. Fields marked with an * are required. By commenting you consent to us placing <a href="' . get_page_link(get_page_by_title('Cookies')->ID) . '">cookies</a> on your computer.</p>'
+            )); ?>
 
 </div><!-- #comments -->
