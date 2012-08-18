@@ -55,6 +55,7 @@ function format_feed($content) {
         $content .= '<h2>References</h2>' . $references;
     }
     $content .= '</div>';
+    return $content;
 }
 add_filter('the_content_feed', 'format_feed');
 
