@@ -48,6 +48,9 @@ h3 { font-size: 18px; text-align: center; margin-bottom: $half_margin; text-tran
 .references, .small-references { 
 	br { margin-bottom: $half_margin; }
 }
+.comment { margin: $margin; }
+.comment-content { margin: $half_margin; }
+
 
 .entry-content { line-height: $big_margin; }
 .entry-content, .category-archive-meta, #author-info { 
@@ -111,7 +114,7 @@ dd { margin-bottom: $margin; }
 		}
 	}
 	
-	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} #searchForm {
+	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} #searchForm, .single-#{$category} .comment {
 		a.link, .link-container a {
 			@include link;
 			border-color: #{$normal};
