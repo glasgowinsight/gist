@@ -163,7 +163,7 @@ function format_comment( $comment, $args, $depth ) {
                         <div class="comment-content, link-container"><?php comment_text(); ?></div>
 
                         <div class="reply, link-container">
-                                <?php comment_reply_link( array_merge( $args, array( 'reply_text' => 'Reply <span>&darr;</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+                                <?php comment_reply_link( array_merge( $args, array( 'reply_text' => 'Reply', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
                         </div><!-- .reply -->
                 </article><!-- #comment-## -->
 
