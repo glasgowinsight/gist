@@ -21,9 +21,9 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: up
 
 .references br, .small-references br { margin-bottom: 7px; }
 
-.comment { margin: 14px; }
+.comment { margin: 14px 0; }
 
-.comment-content { margin: 7px; }
+.comment-content { margin: 7px 0; }
 
 .entry-content { line-height: 21px; }
 
