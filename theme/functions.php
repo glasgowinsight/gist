@@ -40,7 +40,7 @@ add_filter('pre_get_posts', 'filter_query');
 
 function format_feed($content) {
     if ( get_the_author_meta( 'description' ) && ( ! function_exists( 'is_multi_author' ) || is_multi_author() ) ) {
-        $content .= '<div id="author-description"> // ' . the_author_meta( 'description' ) . '</div>';
+        $content .= '<div id="author-description"> // ' . get_the_author_meta( 'description' ) . '</div>';
     }
     $content .= '<div>';
     $links = get_post_meta(get_the_ID(), 'external_link');
