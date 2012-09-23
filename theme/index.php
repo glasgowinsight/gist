@@ -33,7 +33,8 @@ get_header(); ?>
 				), 
 				'orderby'=>'meta_value', 
 				'order'=>'ASC', 
-				'meta_key'=>'start_date'
+                                'meta_key'=>'start_date',
+                                'post__not_in'=>array()
 			)
 		);
 		$posts = array();
