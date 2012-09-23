@@ -84,7 +84,7 @@ get_header(); ?>
 			<div id="content" role="main">
 				<div id="sections">
 					<div class="section section-latest">
-						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_latest.png'); ?>"/>//&nbsp;Latest Articles</h1></div>
+						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_latest.png'); ?>"/>//&nbsp;Latest</h1></div>
 						<div class="posts">
 							<div class="row3">
 								<?php $post = $posts['latest'][0]; ?>
