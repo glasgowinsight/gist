@@ -20,6 +20,7 @@ get_header(); ?>
 		$extra_params = array(
                         'latest'=>array(
                             'category__not_in'=>array(
+                                id_by_slug('event'), 
                                 id_by_slug('about'), 
                                 id_by_slug('study')
                             )
