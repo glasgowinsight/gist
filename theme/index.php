@@ -45,13 +45,10 @@ get_header(); ?>
 		foreach (get_posts(array('meta_query'=>array(array('key'=>'homepage', 'value'=>'NONE', 'compare'=>'!=')))) as $post){
 			foreach(get_post_meta($post->ID, 'homepage') as $homepage){
 				$parts = explode('_', $homepage);
-				if(count($parts)<2){
+				if(count($parts)>1 && strtotime($parts[1])<time()){
 					continue;
 				}
-				if(count($parts)>2 && strtotime($parts[2])<time()){
-					continue;
-				}
-				$position = intval($parts[1]) - 1;
+				$position = intval($parts[0]) - 1;
 				$post_ids[] = $post->ID;
 				if($position >= 0){
 					$posts['latest'][$position] = $post;
