@@ -78,6 +78,7 @@ get_header(); ?>
 					$i++;
 				}
 				$posts[$category][$i] = $post;
+				$post_ids[] = $post->ID;
 				$i++;
 			}
 		}
