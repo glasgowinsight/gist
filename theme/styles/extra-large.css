@@ -45,15 +45,15 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 #main, .clear { clear: both; }
 
-.section-feature { position: relative; }
+.section-latest { position: relative; }
 
 .posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 300px; }
 
-.section-feature .posts .main { width: 456px !important; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
+.section-latest .posts .main { width: 456px !important; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 
-.section-feature .posts .right { position: relative; left: 456px; }
+.section-latest .posts .right { position: relative; left: 456px; }
 
-.section-feature .posts .left, .posts .main, .section-about .row { margin-right: 14px; }
+.section-latest .posts .left, .posts .main, .section-about .row { margin-right: 14px; }
 
 .references { position: absolute; bottom: 0; }
 

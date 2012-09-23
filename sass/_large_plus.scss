@@ -5,12 +5,12 @@ $column: 221px;
 $wide_column: 300px;
 
 #main, .clear { clear: both; }
-.section-feature { position: relative; }
+.section-latest { position: relative; }
 .posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $wide_column; }
 
-.section-feature .posts .main { width: 2 * $column + $margin !important; max-width: none; position: absolute; left: $column + $margin; margin: $margin 0; }
-.section-feature .posts .right { position: relative; left: 2 * $column + $margin; }
-.section-feature .posts .left, .posts .main, .section-about .row { margin-right: $margin; }
+.section-latest .posts .main { width: 2 * $column + $margin !important; max-width: none; position: absolute; left: $column + $margin; margin: $margin 0; }
+.section-latest .posts .right { position: relative; left: 2 * $column + $margin; }
+.section-latest .posts .left, .posts .main, .section-about .row { margin-right: $margin; }
 
 .references { position: absolute; bottom: 0; }
 .archive, .search {
