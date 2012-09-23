@@ -16,8 +16,14 @@ get_header(); ?>
 
 	<?php 
 		global $post;
-		$posts_per_page = array('feature'=>10, 'snippet'=>3, 'podcast'=>1, 'event'=>-1, 'study'=>5);
+		$posts_per_page = array('latest'=>5, 'feature'=>7, 'snippet'=>7, 'podcast'=>1, 'event'=>-1, 'study'=>5);
 		$extra_params = array(
+                        'latest'=>array(
+                            'category__not_in'=>array(
+                                id_by_slug('about'), 
+                                id_by_slug('study')
+                            )
+                        ),
 			'event'=>array(
 				'meta_query'=>array(array(
 					'key'=>'end_date', 
@@ -34,7 +40,6 @@ get_header(); ?>
 		$post_ids = array();
 		foreach (array_keys($posts_per_page) as $category) {
 			$posts[$category] = array();
-			$post_ids[$category] = array();
 		}
 		
 		foreach (get_posts(array('meta_query'=>array(array('key'=>'homepage', 'value'=>'NONE', 'compare'=>'!=')))) as $post){
@@ -46,11 +51,10 @@ get_header(); ?>
 				if(count($parts)>2 && strtotime($parts[2])<time()){
 					continue;
 				}
-				$category_name = $parts[0];
 				$position = intval($parts[1]) - 1;
-				$post_ids[$category_name][] = $post->ID;
+				$post_ids[] = $post->ID;
 				if($position >= 0){
-					$posts[$category_name][$position] = $post;
+					$posts['latest'][$position] = $post;
 				}
 			}
 		}
@@ -59,10 +63,12 @@ get_header(); ?>
 			$i = 0;
 			
 			$params = array(
-				'category_name'=>$category, 
 				'posts_per_page'=>$posts_per_page[$category],
-				'post__not_in'=>$post_ids[$category]
+				'post__not_in'=>$post_ids
 			);
+                        if ($category != 'latest') {
+                            $params['category_name'] = $category;
+                        }
 			if (array_key_exists($category, $extra_params)) {
 				$params = array_merge($params, $extra_params[$category]);
 			}
@@ -79,47 +85,61 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 				<div id="sections">
-					<div class="section section-feature">
-						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_feature.png'); ?>"/><a href="<?php echo get_category_link_by_slug('feature'); ?>">//&nbsp;Features</a></h1></div>
+					<div class="section section-latest">
+						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_latest.png'); ?>"/>//&nbsp;Latest Articles</h1></div>
 						<div class="posts">
 							<div class="row3">
-								<?php $post = $posts['feature'][0]; ?>
+								<?php $post = $posts['latest'][0]; ?>
 								<?php setup_postdata($post); ?>
 								<?php get_extract('main', 'large_thumb'); ?>
 								<div class="row">
-									<?php $post = $posts['feature'][1]; ?>
+									<?php $post = $posts['latest'][1]; ?>
 									<?php setup_postdata($post); ?>
 									<?php get_extract('left', 'medium_thumb'); ?>
-									<?php $post = $posts['feature'][2]; ?>
+									<?php $post = $posts['latest'][2]; ?>
 									<?php setup_postdata($post); ?>
 									<?php get_extract('right', 'medium_thumb'); ?>
 									<br class="clear"/>
 								</div>
 							</div>
 							<div class="row">
-								<?php $post = $posts['feature'][3]; ?>
+								<?php $post = $posts['latest'][3]; ?>
 								<?php setup_postdata($post); ?>
 								<?php get_extract('left', 'medium_thumb'); ?>
-								<div class="articles right">
-									<div class="entry-header">
-										<h3 class="entry-title">More Features</h3>
-									</div>
-									<div class="entry-content">
-										<ul>
-											<?php for ($i = 4; $i < count($posts['feature']); $i++):
-												$post = $posts['feature'][$i];
-												setup_postdata($post); ?>
-												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
-											<?php endfor; ?>
-										</ul>
-									</div>
-								</div>
+								<?php $post = $posts['latest'][4]; ?>
+								<?php setup_postdata($post); ?>
+								<?php get_extract('right', 'medium_thumb'); ?>
 								<br class="clear"/>
 							</div>
 						</div>
-						<div class="section-link"><a href="<?php echo get_category_link_by_slug('feature'); ?>" class="link">All Features</a></div>
 					</div>
 					
+					<div class="section  section-feature">
+						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_feature.png'); ?>"/><a href="<?php echo get_category_link_by_slug('feature'); ?>">//&nbsp;Features</a></h1></div>
+						<div class="posts">
+							<?php $post = $posts['feature'][0]; ?>
+							<?php setup_postdata($post); ?>
+							<?php get_extract('main'); ?>
+							<?php $post = $posts['feature'][1]; ?>
+							<?php setup_postdata($post); ?>
+							<?php get_extract('left'); ?>
+                                                        <div class="articles right">
+                                                                <div class="entry-header">
+                                                                        <h3 class="entry-title">More Features</h3>
+                                                                </div>
+                                                                <div class="entry-content">
+                                                                        <ul>
+                                                                                <?php for ($i = 2; $i < count($posts['feature']); $i++):
+                                                                                        $post = $posts['feature'][$i];
+                                                                                        setup_postdata($post); ?>
+                                                                                        <li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
+                                                                                <?php endfor; ?>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+						</div>
+						<div class="section-link"><a href="<?php echo get_category_link_by_slug('feature'); ?>" class="link">All Features</a></div>
+					</div>
 					<div class="section  section-snippet">
 						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_snippet.png'); ?>"/><a href="<?php echo get_category_link_by_slug('snippet'); ?>">//&nbsp;Snippets</a></h1></div>
 						<div class="posts">
@@ -129,9 +149,20 @@ get_header(); ?>
 							<?php $post = $posts['snippet'][1]; ?>
 							<?php setup_postdata($post); ?>
 							<?php get_extract('left'); ?>
-							<?php $post = $posts['snippet'][2]; ?>
-							<?php setup_postdata($post); ?>
-							<?php get_extract('right'); ?>
+                                                        <div class="articles right">
+                                                                <div class="entry-header">
+                                                                        <h3 class="entry-title">More Snippets</h3>
+                                                                </div>
+                                                                <div class="entry-content">
+                                                                        <ul>
+                                                                                <?php for ($i = 2; $i < count($posts['snippet']); $i++):
+                                                                                        $post = $posts['snippet'][$i];
+                                                                                        setup_postdata($post); ?>
+                                                                                        <li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
+                                                                                <?php endfor; ?>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
 						</div>
 						<div class="section-link"><a href="<?php echo get_category_link_by_slug('snippet'); ?>" class="link">All Snippets</a></div>
 					</div>

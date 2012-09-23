@@ -1,7 +1,7 @@
 @import "large_plus";
 
 #page { width: 3 * $wide_column + 2 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
-.section-feature .posts .post, .section-feature .posts .articles, .single #related,  .single #latest, .single .references, .single #other .post { width: $column; max-width: none; }
+.section-latest .posts .post, .posts .articles, .single #related,  .single #latest, .single .references, .single #other .post { width: $column; max-width: none; }
 .single {
 	#article { width: 2 * $column; }
 	.aside { width: $column; }

@@ -67,7 +67,7 @@ h1, .single h2, #nav-below h3 { width: 300px; }
 
 .section-podcast { float: right; width: 221px; }
 
-.section-feature .posts .post, .section-feature .posts .articles, .section-podcast .posts .post, .section-podcast .posts .articles { width: 221px; max-width: none; }
+.section-latest .posts .post, .posts .articles, .section-podcast .posts .post, .section-podcast .posts .articles { width: 221px; max-width: none; }
 
 .section-podcast .posts .post, .section-podcast .posts .articles { margin-left: 0; margin-right: 14px; }
 
