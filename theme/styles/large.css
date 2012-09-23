@@ -63,7 +63,7 @@ h1, .single h2, #nav-below h3 { width: 300px; }
 
 #page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; }
 
-.section-latest .posts .post, .posts .articles, .single #related, .single #latest, .single .references, .single #other .post { width: 221px; max-width: none; }
+.section-latest .posts .post, .single #related, .single #latest, .single .references, .single #other .post { width: 221px; max-width: none; }
 
 .single #article { width: 442px; }
 .single .aside { width: 221px; }

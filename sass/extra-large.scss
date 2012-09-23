@@ -3,7 +3,7 @@
 #page { width: 4 * $wide_column + 3 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
 #sections, .section-about { width: 3 * $wide_column + 2 * $margin; float: left; }
 .section-podcast { float:right; width: $column; }
-.section-latest .posts .post, .posts .articles, .section-podcast .posts .post, .section-podcast .posts .articles { width: $column; max-width: none; }
+.section-latest .posts .post, .section-podcast .posts .post, .section-podcast .posts .articles { width: $column; max-width: none; }
 .section-podcast .posts .post, .section-podcast .posts .articles { margin-left: 0; margin-right: $margin; }
 .single {
 	#article { width: 2 * $wide_column; }
