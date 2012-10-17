@@ -61,8 +61,12 @@ get_header(); ?>
 		foreach (array_keys($posts_per_page) as $category) {
 			$i = 0;
 			
+                        $num_posts = $posts_per_page[$category];
+                        $num_posts -= count($posts[$category]);
+                        if($num_posts <= 0) continue;
+
 			$params = array(
-				'posts_per_page'=>$posts_per_page[$category],
+				'posts_per_page'=>$num_posts,
 				'post__not_in'=>$post_ids
 			);
                         if ($category != 'latest') {
