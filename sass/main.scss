@@ -98,7 +98,7 @@ ul.blank li { list-style: none inside none; }
 dt { float: left; margin-right: $half_margin; font-weight: bold; }
 dd { margin-bottom: $margin; }
 
-@for $i from 1 to 7 {
+@for $i from 1 to 9 {
 	$category: nth($categories, $i);
 	$normal: nth($normals, $i);
 	$dark: nth($darks, $i);
