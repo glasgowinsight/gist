@@ -274,4 +274,32 @@ function get_licence($post){
 	}
 }
 
-?>
+$note_types = array(
+    'correct' => array('prefix'=>'', 'suffix'=>''),
+    'note' => array('prefix'=>'', 'suffix'=>''),
+    'ref' => array('prefix'=>'[', 'suffix'=>']')
+);
+
+function define_note($atts, $content, $tag){
+    global $note_types;
+    $type = substr($tag, 1);
+    $id = $atts['id'];
+    $prefix = $note_types[$type]['prefix'];
+    $suffix = $note_types[$type]['suffix'];
+    return "<li><a name='${type}_${id}'></a>${prefix}${id}${suffix} $content</li>";
+}
+function link_note($atts, $content, $tag){
+    global $note_types;
+    $type = substr($tag, 1);
+    $id = $atts['id'];
+    $prefix = $note_types[$type]['prefix'];
+    $suffix = $note_types[$type]['suffix'];
+    return "${prefix}<a href='#${type}_${id}'>${id}</a>${suffix}";
+}
+
+foreach($note_types as $note_type => $note_config){
+    add_shortcode('d' . $note_type, 'define_note');
+    add_shortcode('l' . $note_type, 'link_note');
+}
+
+?>                   

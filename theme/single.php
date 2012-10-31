@@ -58,42 +58,34 @@ get_header(); ?>
 								<?php endif; 
 							?>
 						</div>
+                                                <?php 
+                                                    function show_notes($meta, $title, $class){
+                                                        global $bleed;
+                                                        $notes = get_post_meta(get_the_ID(), $meta, True);
+                                                        if ($notes ){
+                                                                echo '<h2 class="' . $class . '">' . $bleed . $title . '</h2>';
+                                                                echo '<ul>';
+                                                                echo do_shortcode($notes);
+                                                                echo '</ul>';
+                                                        }
+                                                    }
+                                                ?>
 						<?php if(!in_category('feature')):?>
 							<div class="short-references">
-								<?php $links = get_post_meta(get_the_ID(), 'external_link'); ?>
-								<?php if ($links):?>
-									<h2 class="bleed-left"><?php echo $bleed; ?>Links</h2>
-									<?php foreach($links as $link): ?>
-										<?php echo $link; ?>
-										<br/>
-									<?php endforeach;?>
-								<?php endif; ?>
-								<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
-								<?php if ($references ): ?>
-									<h2 class="bleed-left"><?php echo $bleed; ?>References</h2>
-									<?php echo $references; ?>
-								<?php endif;?>
+                                                            <?php show_notes('external_link', 'Links', 'bleed-left'); ?>
+                                                            <?php show_notes('notes', 'Notes', 'bleed-left'); ?>
+                                                            <?php show_notes('corrections', 'Corrections', 'bleed-left'); ?>
+                                                            <?php show_notes('references', 'References', 'bleed-left'); ?>
 							</div>
 						<?php endif; ?>
 					</div>
 
 					<div id="sidebar">
 						<?php if(in_category('feature')):?>
-							<div class="references">
-								<?php $links = get_post_meta(get_the_ID(), 'external_link'); ?>
-								<?php if ($links):?>
-									<h2 class="bleed-switch"><?php echo $bleed; ?>Links</h2>
-									<?php foreach($links as $link): ?>
-										<?php echo $link; ?>
-										<br/>
-									<?php endforeach;?>
-								<?php endif; ?>
-								<?php $references = get_post_meta(get_the_ID(), 'references', True); ?>
-								<?php if ($references ): ?>
-									<h2 class="bleed-switch"><?php echo $bleed; ?>References</h2>
-									<?php echo $references; ?>
-								<?php endif;?>
-							</div>
+                                                        <?php show_notes('external_link', 'Links', 'bleed-switch'); ?>
+                                                        <?php show_notes('notes', 'Notes', 'bleed-switch'); ?>
+                                                        <?php show_notes('corrections', 'Corrections', 'bleed-switch'); ?>
+                                                        <?php show_notes('references', 'References', 'bleed-switch'); ?>
 						<?php endif; ?>
 						
 						<?php query_posts(array(
