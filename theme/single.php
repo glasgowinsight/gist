@@ -81,6 +81,7 @@ get_header(); ?>
 					</div>
 
 					<div id="sidebar">
+                                            <div class="references">
 						<?php if(in_category('feature')):?>
                                                         <?php show_notes('external_link', 'Links', 'bleed-switch'); ?>
                                                         <?php show_notes('notes', 'Notes', 'bleed-switch'); ?>
@@ -98,6 +99,7 @@ get_header(); ?>
 								<?php get_archive_posts(3); ?>
 							</div>
 						<?php endif; ?>
+                                            </div>
 					</div>
 					<br style="clear:both"/>
 				</div>
