@@ -64,7 +64,7 @@ get_header(); ?>
                                                         $notes = get_post_meta(get_the_ID(), $meta, True);
                                                         if ($notes ){
                                                                 echo '<h2 class="' . $class . '">' . $bleed . $title . '</h2>';
-                                                                echo '<ul>';
+                                                                echo '<ul class="link-container notes-' . $meta . '">';
                                                                 echo do_shortcode($notes);
                                                                 echo '</ul>';
                                                         }
