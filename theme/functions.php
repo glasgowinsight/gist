@@ -294,7 +294,7 @@ function link_note($atts, $content, $tag){
     $id = $atts['id'];
     $prefix = $note_types[$type]['prefix'];
     $suffix = $note_types[$type]['suffix'];
-    return "${prefix}<a href='#${type}_${id}'>${id}</a>${suffix}";
+    return "${prefix}<a href='#${type}_${id}' class='link-down'>${id}</a>${suffix}";
 }
 
 foreach($note_types as $note_type => $note_config){
