@@ -54,6 +54,9 @@ h3 { font-size: 18px; text-align: center; margin-bottom: $half_margin; text-tran
 
 .entry-content { line-height: $big_margin; }
 .entry-content, .category-archive-meta, #author-info { 
+	br { 
+            margin-bottom: $margin; 
+        }
 	p, br, ul { 
             margin-bottom: $margin; 
             margin-top: $margin; 
