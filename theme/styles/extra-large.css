@@ -1,17 +1,17 @@
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
 
 .posts .right { margin-left: 14px; }
 
 .section-about .row .right { margin: 14px 0; }
 
-.single #sidebar, .single #related { float: right; clear: right; }
-.single #container { position: relative; }
-.single #other .post { margin-left: 14px; }
-.single #other h2 + .post { margin-left: 0; }
-.single #article { max-width: none; float: left; margin-right: 14px; padding: 0; }
-.single .aside { float: right; }
+.single #sidebar, .page #sidebar, .single #related, .page #related { float: right; clear: right; }
+.single #container, .page #container { position: relative; }
+.single #other .post, .page #other .post { margin-left: 14px; }
+.single #other h2 + .post, .page #other h2 + .post { margin-left: 0; }
+.single #article, .page #article { max-width: none; float: left; margin-right: 14px; padding: 0; }
+.single .aside, .page .aside { float: right; }
 
 #branding { position: relative; }
 
@@ -39,7 +39,7 @@ label { display: inline-block; width: 10em; }
 
 .bleed-switch img { left: 0; top: 0; }
 
-h1, .single h2, #nav-below h3 { max-width: none; margin: 14px 0; }
+h1, .single h2, .page h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
 div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption img { width: auto; }
 
@@ -47,7 +47,7 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .section-latest { position: relative; }
 
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 300px; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
 
 .section-latest .posts .main { width: 456px !important; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 
@@ -59,7 +59,7 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .archive .post, .search .post { margin-left: 14px; }
 
-h1, .single h2, #nav-below h3 { width: 300px; }
+h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
 #page { width: 1242px; max-width: none; margin: 0 auto; padding: 0 14px; }
 
@@ -71,8 +71,8 @@ h1, .single h2, #nav-below h3 { width: 300px; }
 
 .section-podcast .posts .post, .section-podcast .posts .articles { margin-left: 0; margin-right: 14px; }
 
-.single #article { width: 600px; }
-.single .aside { width: 300px; }
+.single #article, .page #article { width: 600px; }
+.single .aside, .page .aside { width: 300px; }
 
 .archive .clear4, .search .clear4 { clear: left; margin-left: 0; }
 

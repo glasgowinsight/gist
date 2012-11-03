@@ -4,8 +4,8 @@
 
 #ie8, #ie8 body { overflow-x: visible; }
 
-.extract img, .single #content .post img { max-width: none; }
+.extract img, .single #content .post img, .page #content .post img { max-width: none; }
 
-.single h1 img, .single h2 img, .single #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .error404 h1 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { height: auto !important; }
+.single h1 img, .page h1 img, .single h2 img, .page h2 img, .single #nav-below h3 img, .page #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .error404 h1 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { height: auto !important; }
 
 #searchForm { top: 100px; }

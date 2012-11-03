@@ -31,10 +31,10 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: up
 
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
 
-.single #content .entry-header { text-transform: none; text-align: left; }
+.single #content .entry-header, .page #content .entry-header { text-transform: none; text-align: left; }
 
-#access a, h1, .single h2, .archive #nav-below h3, .search #nav-below h3 { color: white; }
-#access a a, h1 a, .single h2 a, .archive #nav-below h3 a, .search #nav-below h3 a { color: white; }
+#access a, h1, .single h2, .page h2, .archive #nav-below h3, .search #nav-below h3 { color: white; }
+#access a a, h1 a, .single h2 a, .page h2 a, .archive #nav-below h3 a, .search #nav-below h3 a { color: white; }
 
 a { text-decoration: none; }
 
@@ -178,25 +178,25 @@ dd { margin-bottom: 14px; }
 .section-about .wp-caption:before, .section-about .wp-caption:after, .section-about .thumbnail-caption:before, .section-about .thumbnail-caption:after, .category-about .wp-caption:before, .category-about .wp-caption:after, .category-about .thumbnail-caption:before, .category-about .thumbnail-caption:after, .parent-about .wp-caption:before, .parent-about .wp-caption:after, .parent-about .thumbnail-caption:before, .parent-about .thumbnail-caption:after { content: url(../images/img_about.png); }
 .section-about .wp-caption p, .section-about .thumbnail-caption p, .category-about .wp-caption p, .category-about .thumbnail-caption p, .parent-about .wp-caption p, .parent-about .thumbnail-caption p { z-index: 1; position: relative; }
 
-.section-about li, .category-about li, .parent-about li, .single-about .notes-external_link li { list-style: url(../images/bullet_about.png) inside; }
+.section-about li, .category-about li, .parent-about li, .single-about .notes-external_link li, .page .notes-external_link li { list-style: url(../images/bullet_about.png) inside; }
 
-.section-about a.link, .section-about .link-container a[href], .category-about a.link, .category-about .link-container a[href], .parent-about a.link, .parent-about .link-container a[href], .single-about a.link, .single-about .link-container a[href] { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
-.section-about a.link:hover, .section-about .link-container a[href]:hover, .category-about a.link:hover, .category-about .link-container a[href]:hover, .parent-about a.link:hover, .parent-about .link-container a[href]:hover, .single-about a.link:hover, .single-about .link-container a[href]:hover { color: #ffffff; }
-.section-about a.link:hover, .section-about .link-container a[href]:hover, .category-about a.link:hover, .category-about .link-container a[href]:hover, .parent-about a.link:hover, .parent-about .link-container a[href]:hover, .single-about a.link:hover, .single-about .link-container a[href]:hover { background-color: red; }
-.section-about a.link:after, .section-about .link-container a[href]:after, .category-about a.link:after, .category-about .link-container a[href]:after, .parent-about a.link:after, .parent-about .link-container a[href]:after, .single-about a.link:after, .single-about .link-container a[href]:after { content: url(../images/arrow_about.png); white-space: nowrap; padding-left: 2px; }
-.section-about a.link:hover:after, .section-about .link-container a[href]:hover:after, .category-about a.link:hover:after, .category-about .link-container a[href]:hover:after, .parent-about a.link:hover:after, .parent-about .link-container a[href]:hover:after, .single-about a.link:hover:after, .single-about .link-container a[href]:hover:after { content: url(../images/arrow_hover.png); }
-.section-about a.link-back, .section-about .link-container-back a[href], .category-about a.link-back, .category-about .link-container-back a[href], .parent-about a.link-back, .parent-about .link-container-back a[href], .single-about a.link-back, .single-about .link-container-back a[href] { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
-.section-about a.link-back:hover, .section-about .link-container-back a[href]:hover, .category-about a.link-back:hover, .category-about .link-container-back a[href]:hover, .parent-about a.link-back:hover, .parent-about .link-container-back a[href]:hover, .single-about a.link-back:hover, .single-about .link-container-back a[href]:hover { color: #ffffff; }
-.section-about a.link-back:hover, .section-about .link-container-back a[href]:hover, .category-about a.link-back:hover, .category-about .link-container-back a[href]:hover, .parent-about a.link-back:hover, .parent-about .link-container-back a[href]:hover, .single-about a.link-back:hover, .single-about .link-container-back a[href]:hover { background-color: red; }
-.section-about a.link-back:before, .section-about .link-container-back a[href]:before, .category-about a.link-back:before, .category-about .link-container-back a[href]:before, .parent-about a.link-back:before, .parent-about .link-container-back a[href]:before, .single-about a.link-back:before, .single-about .link-container-back a[href]:before { content: url(../images/arrow_about_back.png); white-space: nowrap; padding-right: 2px; }
-.section-about a.link-back:hover:before, .section-about .link-container-back a[href]:hover:before, .category-about a.link-back:hover:before, .category-about .link-container-back a[href]:hover:before, .parent-about a.link-back:hover:before, .parent-about .link-container-back a[href]:hover:before, .single-about a.link-back:hover:before, .single-about .link-container-back a[href]:hover:before { content: url(../images/arrow_hover_back.png); }
-.section-about a.link-down, .section-about .link-container-down a[href], .category-about a.link-down, .category-about .link-container-down a[href], .parent-about a.link-down, .parent-about .link-container-down a[href], .single-about a.link-down, .single-about .link-container-down a[href] { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
-.section-about a.link-down:hover, .section-about .link-container-down a[href]:hover, .category-about a.link-down:hover, .category-about .link-container-down a[href]:hover, .parent-about a.link-down:hover, .parent-about .link-container-down a[href]:hover, .single-about a.link-down:hover, .single-about .link-container-down a[href]:hover { color: #ffffff; }
-.section-about a.link-down:hover, .section-about .link-container-down a[href]:hover, .category-about a.link-down:hover, .category-about .link-container-down a[href]:hover, .parent-about a.link-down:hover, .parent-about .link-container-down a[href]:hover, .single-about a.link-down:hover, .single-about .link-container-down a[href]:hover { background-color: red; }
-.section-about a.link-down:after, .section-about .link-container-down a[href]:after, .category-about a.link-down:after, .category-about .link-container-down a[href]:after, .parent-about a.link-down:after, .parent-about .link-container-down a[href]:after, .single-about a.link-down:after, .single-about .link-container-down a[href]:after { content: url(../images/arrow_about_down.png); white-space: nowrap; padding-left: 2px; }
-.section-about a.link-down:hover:after, .section-about .link-container-down a[href]:hover:after, .category-about a.link-down:hover:after, .category-about .link-container-down a[href]:hover:after, .parent-about a.link-down:hover:after, .parent-about .link-container-down a[href]:hover:after, .single-about a.link-down:hover:after, .single-about .link-container-down a[href]:hover:after { content: url(../images/arrow_hover_down.png); }
+.section-about a.link, .section-about .link-container a[href], .category-about a.link, .category-about .link-container a[href], .parent-about a.link, .parent-about .link-container a[href], .single-about a.link, .page a.link, .single-about .link-container a[href], .page .link-container a[href] { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
+.section-about a.link:hover, .section-about .link-container a[href]:hover, .category-about a.link:hover, .category-about .link-container a[href]:hover, .parent-about a.link:hover, .parent-about .link-container a[href]:hover, .single-about a.link:hover, .page a.link:hover, .single-about .link-container a[href]:hover, .page .link-container a[href]:hover { color: #ffffff; }
+.section-about a.link:hover, .section-about .link-container a[href]:hover, .category-about a.link:hover, .category-about .link-container a[href]:hover, .parent-about a.link:hover, .parent-about .link-container a[href]:hover, .single-about a.link:hover, .page a.link:hover, .single-about .link-container a[href]:hover, .page .link-container a[href]:hover { background-color: red; }
+.section-about a.link:after, .section-about .link-container a[href]:after, .category-about a.link:after, .category-about .link-container a[href]:after, .parent-about a.link:after, .parent-about .link-container a[href]:after, .single-about a.link:after, .page a.link:after, .single-about .link-container a[href]:after, .page .link-container a[href]:after { content: url(../images/arrow_about.png); white-space: nowrap; padding-left: 2px; }
+.section-about a.link:hover:after, .section-about .link-container a[href]:hover:after, .category-about a.link:hover:after, .category-about .link-container a[href]:hover:after, .parent-about a.link:hover:after, .parent-about .link-container a[href]:hover:after, .single-about a.link:hover:after, .page a.link:hover:after, .single-about .link-container a[href]:hover:after, .page .link-container a[href]:hover:after { content: url(../images/arrow_hover.png); }
+.section-about a.link-back, .section-about .link-container-back a[href], .category-about a.link-back, .category-about .link-container-back a[href], .parent-about a.link-back, .parent-about .link-container-back a[href], .single-about a.link-back, .page a.link-back, .single-about .link-container-back a[href], .page .link-container-back a[href] { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
+.section-about a.link-back:hover, .section-about .link-container-back a[href]:hover, .category-about a.link-back:hover, .category-about .link-container-back a[href]:hover, .parent-about a.link-back:hover, .parent-about .link-container-back a[href]:hover, .single-about a.link-back:hover, .page a.link-back:hover, .single-about .link-container-back a[href]:hover, .page .link-container-back a[href]:hover { color: #ffffff; }
+.section-about a.link-back:hover, .section-about .link-container-back a[href]:hover, .category-about a.link-back:hover, .category-about .link-container-back a[href]:hover, .parent-about a.link-back:hover, .parent-about .link-container-back a[href]:hover, .single-about a.link-back:hover, .page a.link-back:hover, .single-about .link-container-back a[href]:hover, .page .link-container-back a[href]:hover { background-color: red; }
+.section-about a.link-back:before, .section-about .link-container-back a[href]:before, .category-about a.link-back:before, .category-about .link-container-back a[href]:before, .parent-about a.link-back:before, .parent-about .link-container-back a[href]:before, .single-about a.link-back:before, .page a.link-back:before, .single-about .link-container-back a[href]:before, .page .link-container-back a[href]:before { content: url(../images/arrow_about_back.png); white-space: nowrap; padding-right: 2px; }
+.section-about a.link-back:hover:before, .section-about .link-container-back a[href]:hover:before, .category-about a.link-back:hover:before, .category-about .link-container-back a[href]:hover:before, .parent-about a.link-back:hover:before, .parent-about .link-container-back a[href]:hover:before, .single-about a.link-back:hover:before, .page a.link-back:hover:before, .single-about .link-container-back a[href]:hover:before, .page .link-container-back a[href]:hover:before { content: url(../images/arrow_hover_back.png); }
+.section-about a.link-down, .section-about .link-container-down a[href], .category-about a.link-down, .category-about .link-container-down a[href], .parent-about a.link-down, .parent-about .link-container-down a[href], .single-about a.link-down, .page a.link-down, .single-about .link-container-down a[href], .page .link-container-down a[href] { text-decoration: none; color: #000000; font-weight: bold; border-bottom: 1px dotted; border-color: red; }
+.section-about a.link-down:hover, .section-about .link-container-down a[href]:hover, .category-about a.link-down:hover, .category-about .link-container-down a[href]:hover, .parent-about a.link-down:hover, .parent-about .link-container-down a[href]:hover, .single-about a.link-down:hover, .page a.link-down:hover, .single-about .link-container-down a[href]:hover, .page .link-container-down a[href]:hover { color: #ffffff; }
+.section-about a.link-down:hover, .section-about .link-container-down a[href]:hover, .category-about a.link-down:hover, .category-about .link-container-down a[href]:hover, .parent-about a.link-down:hover, .parent-about .link-container-down a[href]:hover, .single-about a.link-down:hover, .page a.link-down:hover, .single-about .link-container-down a[href]:hover, .page .link-container-down a[href]:hover { background-color: red; }
+.section-about a.link-down:after, .section-about .link-container-down a[href]:after, .category-about a.link-down:after, .category-about .link-container-down a[href]:after, .parent-about a.link-down:after, .parent-about .link-container-down a[href]:after, .single-about a.link-down:after, .page a.link-down:after, .single-about .link-container-down a[href]:after, .page .link-container-down a[href]:after { content: url(../images/arrow_about_down.png); white-space: nowrap; padding-left: 2px; }
+.section-about a.link-down:hover:after, .section-about .link-container-down a[href]:hover:after, .category-about a.link-down:hover:after, .category-about .link-container-down a[href]:hover:after, .parent-about a.link-down:hover:after, .parent-about .link-container-down a[href]:hover:after, .single-about a.link-down:hover:after, .page a.link-down:hover:after, .single-about .link-container-down a[href]:hover:after, .page .link-container-down a[href]:hover:after { content: url(../images/arrow_hover_down.png); }
 
-.section-about #logo, .category-about #logo, .parent-about #logo, .single-about #logo { background: red; }
+.section-about #logo, .category-about #logo, .parent-about #logo, .single-about #logo, .page #logo { background: red; }
 
 #access .about { background: #a60000; }
 #access .about:hover { background: red; }
@@ -285,8 +285,8 @@ dd { margin-bottom: 14px; }
 #access .announcement { background: #a60000; }
 #access .announcement:hover { background: red; }
 
-.single h1, .single h2, .single #nav-below h3, .section h1, .section h2, .section #nav-below h3, .archive h1, .archive h2, .archive #nav-below h3, .error404 h1, .error404 h2, .error404 #nav-below h3, .search h1, .search h2, .search #nav-below h3 { position: relative; }
-.single h1 img, .single h2 img, .single #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .error404 h1 img, .error404 h2 img, .error404 #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { position: absolute !important; height: 100% !important; max-height: none !important; max-width: none !important; z-index: -1; }
+.single h1, .page h1, .single h2, .page h2, .single #nav-below h3, .page #nav-below h3, .section h1, .section h2, .section #nav-below h3, .archive h1, .archive h2, .archive #nav-below h3, .error404 h1, .error404 h2, .error404 #nav-below h3, .search h1, .search h2, .search #nav-below h3 { position: relative; }
+.single h1 img, .page h1 img, .single h2 img, .page h2 img, .single #nav-below h3 img, .page #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .error404 h1 img, .error404 h2 img, .error404 #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { position: absolute !important; height: 100% !important; max-height: none !important; max-width: none !important; z-index: -1; }
 
 #article .post { float: none; }
 
@@ -325,15 +325,15 @@ table td { padding: 0 3px; }
 
 #access a { display: block; width: 100%; }
 
-#access li, h1, .single h2, #nav-below h3 { padding: 2px 21px 2px 7px; }
+#access li, h1, .single h2, .page h2, #nav-below h3 { padding: 2px 21px 2px 7px; }
 
-h1, .single h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
+h1, .single h2, .page h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 
 .post, .articles { margin: 14px auto; }
 
 #logo { margin: 14px auto; }
 
-.single #content .post img, #author-avatar img { max-width: 100%; height: auto; margin: auto; display: block; }
+.single #content .post img, .page #content .post img, #author-avatar img { max-width: 100%; height: auto; margin: auto; display: block; }
 
 .wp-caption, .thumbnail-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; max-width: 100%; height: auto; }
 .wp-caption img, .thumbnail-caption img { width: 100%; }

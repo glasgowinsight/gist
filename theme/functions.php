@@ -201,7 +201,7 @@ function get_bleed(  ) {
 		}
 	}
 
-	return '<img src="' . resource('images/bleed_' . $category . '.png') . '"/>';
+	return '<img src="' . resource('images/bleed_about.png') . '"/>';
 }
 
 function the_short_title(){

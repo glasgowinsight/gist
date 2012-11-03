@@ -1,17 +1,17 @@
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
 
 .posts .right { margin-left: 14px; }
 
 .section-about .row .right { margin: 14px 0; }
 
-.single #sidebar, .single #related { float: right; clear: right; }
-.single #container { position: relative; }
-.single #other .post { margin-left: 14px; }
-.single #other h2 + .post { margin-left: 0; }
-.single #article { max-width: none; float: left; margin-right: 14px; padding: 0; }
-.single .aside { float: right; }
+.single #sidebar, .page #sidebar, .single #related, .page #related { float: right; clear: right; }
+.single #container, .page #container { position: relative; }
+.single #other .post, .page #other .post { margin-left: 14px; }
+.single #other h2 + .post, .page #other h2 + .post { margin-left: 0; }
+.single #article, .page #article { max-width: none; float: left; margin-right: 14px; padding: 0; }
+.single .aside, .page .aside { float: right; }
 
 #branding { position: relative; }
 
@@ -39,19 +39,19 @@ label { display: inline-block; width: 10em; }
 
 .bleed-switch img { left: 0; top: 0; }
 
-h1, .single h2, #nav-below h3 { max-width: none; margin: 14px 0; }
+h1, .single h2, .page h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
 div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption img { width: auto; }
 
 #page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; }
 
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: 218px; }
+.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 218px; }
 
 .references { position: absolute; bottom: 0; }
 
-.single #other .post { width: 218px; }
-.single #article { width: 436px; }
-.single .aside { width: 218px; }
+.single #other .post, .page #other .post { width: 218px; }
+.single #article, .page #article { width: 436px; }
+.single .aside, .page .aside { width: 218px; }
 
 .posts .main, .section-about .row { margin-right: 14px; }
 
@@ -64,4 +64,4 @@ div.alignleft, div.alignright, div.aligncenter { width: 436px; }
 div.alignleft img, div.alignright img, div.aligncenter img { width: 327px; float: left; }
 div.alignleft:after, div.alignright:after, div.aligncenter:after { right: 109px; }
 
-h1, .single h2, #nav-below h3 { width: 218px; }
+h1, .single h2, .page h2, #nav-below h3 { width: 218px; }

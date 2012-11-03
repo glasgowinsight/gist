@@ -15,7 +15,7 @@
 
 #searchForm { clear: both; text-align: left; }
 
-h1, .single h2, #nav-below h3 { width: 213px; max-width: none; margin: 14px 0; }
+h1, .single h2, .page h2, #nav-below h3 { width: 213px; max-width: none; margin: 14px 0; }
 
 #nav-below .nav-previous { float: left; }
 
