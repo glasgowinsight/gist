@@ -15,6 +15,7 @@
 get_header(); ?>
 
 <?php if ( have_posts() ): the_post();?>
+		<?php $bleed = get_bleed(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 				<div id="container">
