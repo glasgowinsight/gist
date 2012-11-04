@@ -299,7 +299,7 @@ function link_note($atts, $content, $tag){
     foreach($ids as $id){
         $links .= "<a href='#${type}_${id}' class='link-down'>${id}</a>";
     }
-    $links .= $suffix
+    $links .= $suffix;
 
     return $links;
 }
