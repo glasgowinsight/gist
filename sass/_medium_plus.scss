@@ -58,3 +58,5 @@ h1, .single h2, #nav-below h3 { max-width: none; margin: $margin 0; }
 div.alignleft, div.alignright, div.aligncenter, .thumbnail-caption {
 	img { width: auto; }
 }
+
+.page { @extend .single; } 
