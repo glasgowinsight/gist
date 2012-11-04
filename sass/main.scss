@@ -119,7 +119,7 @@ dd { margin-bottom: $margin; }
 		}
 	}
 
-	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} .notes-external_link {
+	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} .notes-external_link, .single-#{$category} .entry-content {
 		li { list-style: url(../images/bullet_#{$category}.png) inside; }
         }
 	
