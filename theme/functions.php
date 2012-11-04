@@ -291,10 +291,17 @@ function define_note($atts, $content, $tag){
 function link_note($atts, $content, $tag){
     global $note_types;
     $type = substr($tag, 1);
-    $id = $atts['id'];
+    $ids = explode(',', $atts['id']);
     $prefix = $note_types[$type]['prefix'];
     $suffix = $note_types[$type]['suffix'];
-    return "${prefix}<a href='#${type}_${id}' class='link-down'>${id}</a>${suffix}";
+
+    $links = $prefix;
+    foreach($ids as $id){
+        $links .= "<a href='#${type}_${id}' class='link-down'>${id}</a>";
+    }
+    $links .= $suffix
+
+    return $links;
 }
 
 foreach($note_types as $note_type => $note_config){
