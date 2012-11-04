@@ -297,8 +297,9 @@ function link_note($atts, $content, $tag){
 
     $links = $prefix;
     foreach($ids as $id){
-        $links .= "<a href='#${type}_${id}' class='link-down'>${id}</a>";
+        $links .= "<a href='#${type}_${id}' class='link-down'>${id}</a>,";
     }
+    $links = rtrim($links, ',');
     $links .= $suffix;
 
     return $links;
