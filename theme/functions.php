@@ -38,22 +38,27 @@ function filter_query($query) {
 }
 add_filter('pre_get_posts', 'filter_query');
 
+function show_rss_notes($meta, $title){
+    $result = '';
+    $notes = get_post_meta(get_the_ID(), $meta, True);
+    if ($notes ){
+        $result .= '<h2>' . $title . '</h2>';
+        $result .= '<ul>';
+        $result .= do_shortcode($notes);
+        $result .= '</ul>';
+    }
+    return $result;
+}
+
 function format_feed($content) {
     if ( get_the_author_meta( 'description' ) && ( ! function_exists( 'is_multi_author' ) || is_multi_author() ) ) {
         $content .= '<div id="author-description"> // ' . get_the_author_meta( 'description' ) . '</div>';
     }
-    $content .= '<div>';
-    $links = get_post_meta(get_the_ID(), 'external_link');
-    if ($links) {
-        $content .= '<h2>Links</h2>';
-        foreach($links as $link) {
-            $content .= $link . '<br/>';
-        }
-    }
-    $references = get_post_meta(get_the_ID(), 'references', True);
-    if ($references ) {
-        $content .= '<h2>References</h2>' . $references;
-    }
+    $content .= '<div style="list-style: none inside none;">';
+    $content .= show_rss_notes('external_link', 'Links');
+    $content .= show_rss_notes('notes', 'Notes');
+    $content .= show_rss_notes('corrections', 'Corrections');
+    $content .= show_rss_notes('references', 'References');
     $content .= '</div>';
     return $content;
 }
