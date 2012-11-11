@@ -312,4 +312,5 @@ function link_note($atts, $content, $tag){
 foreach($note_types as $note_type => $note_config){
     add_shortcode('d' . $note_type, 'define_note');
     add_shortcode('l' . $note_type, 'link_note');
-} ?>                   
+} 
+?>
