@@ -79,6 +79,17 @@
 	wp_head();
 ?>
 
+<?php
+        // If it's a single page and has a thumbnail, set that as the image displayed on Facebook
+        if( is_singular() ){
+            $thumbnail_id = get_post_thumbnail_id();
+            if( $thumbnail_id ){
+                $thumbnail_src = wp_get_attachment_image_src( $thumbnail_id, 'medium_thumb' );
+                echo '<meta property="og:image" content="' . $thumbnail_src[0] . '"/>';
+            }
+        }
+?>
+
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-35902654-1']);
