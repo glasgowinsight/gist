@@ -80,13 +80,15 @@
 ?>
 
 <?php
-        // If it's a single page and has a thumbnail, set that as the image displayed on Facebook
+        // If it's a single page set some meta-tags to be displayed on Facebook
         if( is_singular() ){
             $thumbnail_id = get_post_thumbnail_id();
             if( $thumbnail_id ){
                 $thumbnail_src = wp_get_attachment_image_src( $thumbnail_id, 'medium_thumb' );
                 echo '<meta property="og:image" content="' . $thumbnail_src[0] . '"/>';
             }
+
+            echo '<meta property="og:description" content="' . esc_attr(get_the_excerpt()) . '"/>';
         }
 ?>
 
