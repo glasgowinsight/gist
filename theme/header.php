@@ -85,10 +85,15 @@
             $thumbnail_id = get_post_thumbnail_id();
             if( $thumbnail_id ){
                 $thumbnail_src = wp_get_attachment_image_src( $thumbnail_id, 'medium_thumb' );
-                echo '<meta property="og:image" content="' . $thumbnail_src[0] . '"/>';
+                echo '<meta property="og:image" content="' . esc_url($thumbnail_src[0]) . '"/>';
             }
 
-            echo '<meta property="og:description" content="' . esc_attr(get_the_excerpt()) . '"/>';
+            $excerpt = get_the_excerpt();
+            $excerpt = str_replace(gist_continue_reading_link(), '', $excerpt);
+            echo '<meta property="og:description" content="' . esc_attr($excerpt) . '"/>';
+
+            echo '<meta property="og:url" content="' . esc_url(get_permalink()) . '"/>';
+            echo '<meta property="og:title" content="' . esc_attr(get_the_title()) . '"/>';
         }
 ?>
 
