@@ -14,7 +14,7 @@
 	<div id="colophon" role="contentinfo">
 
 			<div id="site-generator">
-				// <?php bloginfo( 'name' ); ?> - <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" class="plain" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
+				// <?php bloginfo( 'name' ); ?> - <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" class="link" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" class="plain" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
 			</div>
 	</div><!-- #colophon -->
 </div><!-- #page -->
