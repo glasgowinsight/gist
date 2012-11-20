@@ -1,3 +1,4 @@
+@import "aliases";
 @import "widths";
 
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
@@ -24,7 +25,7 @@
 	right: 0;
 }
 
-$categories: feature snippet podcast about;
+$categories: feature snippet podcast other;
 #access { 
 	margin: 0;
 	position: relative; 
@@ -58,5 +59,3 @@ h1, .single h2, #nav-below h3 { max-width: none; margin: $margin 0; }
 div.alignleft, div.alignright, div.aligncenter, .thumbnail-caption {
 	img { width: auto; }
 }
-
-.page { @extend .single; } 

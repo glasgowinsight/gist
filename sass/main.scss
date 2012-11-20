@@ -1,3 +1,4 @@
+@import "aliases";
 @import "colours";
 @import "widths";
 
@@ -104,7 +105,7 @@ ul.blank li { list-style: none inside none; }
 dt { float: left; margin-right: $half_margin; font-weight: bold; }
 dd { margin-bottom: $margin; }
 
-@for $i from 1 to 9 {
+@for $i from 1 to 6 {
 	$category: nth($categories, $i);
 	$normal: nth($normals, $i);
 	$dark: nth($darks, $i);
@@ -221,8 +222,3 @@ h1, .single h2, #nav-below h3 { max-width: 202px; margin: $margin auto; }
 .notes-external_link { line-height: $big_margin; margin: 0; padding: $inner; }
 .thumbnail-caption { display: inline-block; }
 label { display: block; }
-
-.page { 
-    @extend .single; 
-    @extend .single-about; 
-}

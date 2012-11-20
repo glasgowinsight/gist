@@ -1,4 +1,5 @@
 @import "widths";
+@import "aliases";
 
 $column: 213px;
 
@@ -41,5 +42,3 @@ label { display: inline-block; width: 10em; }
 		}
 	}
 }
-
-.page { @extend .single; } 

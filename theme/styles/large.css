@@ -28,8 +28,8 @@
 #access .snippet:hover { background: url(../images/nav_snippet.png) no-repeat 0 0; }
 #access .podcast { background: url(../images/nav_podcast.png) no-repeat 0 -40px; position: absolute; top: 0; right: -100px; width: 400px; }
 #access .podcast:hover { background: url(../images/nav_podcast.png) no-repeat 0 0; }
-#access .about { background: url(../images/nav_about.png) no-repeat 0 -40px; position: absolute; top: 0; right: -250px; width: 400px; }
-#access .about:hover { background: url(../images/nav_about.png) no-repeat 0 0; }
+#access .other, #access .study, #access .announcement, #access .event { background: url(../images/nav_other.png) no-repeat 0 -40px; position: absolute; top: 0; right: -250px; width: 400px; }
+#access .other:hover, #access .study:hover, #access .announcement:hover, #access .event:hover { background: url(../images/nav_other.png) no-repeat 0 0; }
 
 #nav-below .nav-previous { float: left; }
 
