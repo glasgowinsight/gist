@@ -1,10 +1,10 @@
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
 
 .posts .right { margin-left: 14px; }
 
-.section-about .row .right { margin: 14px 0; }
+.section-other .row .right, .section-study .row .right, .section-announcement .row .right, .section-event .row .right { margin: 14px 0; }
 
 .single #sidebar, .page #sidebar, .single #related, .page #related { float: right; clear: right; }
 .single #container, .page #container { position: relative; }
@@ -47,13 +47,13 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .section-latest { position: relative; }
 
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
+.posts .post, .posts .articles, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
 
 .section-latest .posts .main { width: 456px !important; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 
 .section-latest .posts .right { position: relative; left: 456px; }
 
-.section-latest .posts .left, .posts .main, .section-about .row { margin-right: 14px; }
+.section-latest .posts .left, .posts .main, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row { margin-right: 14px; }
 
 .references { position: absolute; bottom: 0; }
 
@@ -63,7 +63,7 @@ h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
 #page { width: 1242px; max-width: none; margin: 0 auto; padding: 0 14px; }
 
-#sections, .section-about { width: 928px; float: left; }
+#sections, .section-other, .section-study, .section-announcement, .section-event { width: 928px; float: left; }
 
 .section-podcast { float: right; width: 221px; }
 

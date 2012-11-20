@@ -4,14 +4,14 @@ $positions: -40px -140px -240px -340px;
 $column: 218px;
 
 #page { width: 3 * $column + 2 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $column; }
+.posts .post, .posts .articles, .section-other .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $column; }
 .references { position: absolute; bottom: 0; }
 .single{
 	#other .post { width: $column; }
 	#article { width: 2 * $column; }
 	.aside { width: $column; }
 } 
-.posts .main, .section-about .row { margin-right: $margin; }
+.posts .main, .section-other .row { margin-right: $margin; }
 #main, .row3, .clear { clear:both; }
 .archive, .search, #other {
 	.post { margin-left: $margin; }

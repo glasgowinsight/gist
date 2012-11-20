@@ -26,7 +26,7 @@ function gist_setup() {
 
 function filter_query($query) {
         if ($query->is_feed) {
-                $query->set('category__not_in', array(id_by_slug('about'), id_by_slug('study')));
+                $query->set('category__not_in', array(id_by_slug('study')));
         }
             
 	if ( $query->is_archive && !isset($query->query_vars['posts_per_page'])) {
@@ -198,14 +198,14 @@ function gist_custom_excerpt_more( $output ) {
 add_filter( 'get_the_excerpt', 'gist_custom_excerpt_more' );
 
 function get_bleed(  ) {
-	$categories = array('feature', 'snippet', 'podcast', 'about', 'event', 'study');
+	$categories = array('feature', 'snippet', 'podcast');
 	foreach ($categories as $category) {
 		if ( in_category($category) || is_category($category) ){
 			return '<img src="' . resource('images/bleed_' . $category . '.png') . '"/>';
 		}
 	}
 
-	return '<img src="' . resource('images/bleed_about.png') . '"/>';
+	return '<img src="' . resource('images/bleed_other.png') . '"/>';
 }
 
 function the_short_title(){

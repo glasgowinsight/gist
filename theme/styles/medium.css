@@ -1,10 +1,10 @@
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
 
 .posts .right { margin-left: 14px; }
 
-.section-about .row .right { margin: 14px 0; }
+.section-other .row .right, .section-study .row .right, .section-announcement .row .right, .section-event .row .right { margin: 14px 0; }
 
 .single #sidebar, .page #sidebar, .single #related, .page #related { float: right; clear: right; }
 .single #container, .page #container { position: relative; }
@@ -45,7 +45,7 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 #page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; }
 
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 218px; }
+.posts .post, .posts .articles, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 218px; }
 
 .references { position: absolute; bottom: 0; }
 
@@ -53,7 +53,7 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 .single #article, .page #article { width: 436px; }
 .single .aside, .page .aside { width: 218px; }
 
-.posts .main, .section-about .row { margin-right: 14px; }
+.posts .main, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row { margin-right: 14px; }
 
 #main, .row3, .clear { clear: both; }
 

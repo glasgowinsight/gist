@@ -2,10 +2,10 @@
 @import "widths";
 
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
-.posts .post, .posts .articles, .section-about .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { max-width: none; float: left; margin: $margin 0; padding: 0;}
+.posts .post, .posts .articles, .section-other .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { max-width: none; float: left; margin: $margin 0; padding: 0;}
 
 .posts .right { margin-left: $margin; }
-.section-about .row .right { margin: $margin 0; }
+.section-other .row .right { margin: $margin 0; }
 
 .single{
 	#sidebar, #related { float: right; clear: right; }
