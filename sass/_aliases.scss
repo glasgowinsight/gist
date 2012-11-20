@@ -1,0 +1,9 @@
+.page { 
+    @extend .single; 
+    @extend .single-other; 
+}
+.study, .announcement, .event { @extend .other; }
+.section-study, .section-announcement, .section-event { @extend .section-other; }
+.category-study, .category-announcement, .category-event { @extend .category-other; }
+.parent-study, .parent-announcement, .parent-event { @extend .parent-other; }
+.single-study, .single-announcement, .single-event { @extend .single-other; }

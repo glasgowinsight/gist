@@ -21,7 +21,6 @@ get_header(); ?>
                         'latest'=>array(
                             'category__not_in'=>array(
                                 id_by_slug('event'), 
-                                id_by_slug('about'), 
                                 id_by_slug('study')
                             )
                         ),
@@ -205,8 +204,8 @@ get_header(); ?>
 					<div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link">All Podcasts</a></div>
 				</div>
 				
-				<div class="section  section-about">
-					<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_about.png'); ?>"/><a href="<?php echo get_category_link_by_slug('about'); ?>">//&nbsp;Outside GIST</a></h1></div>
+				<div class="section  section-other">
+					<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_other.png'); ?>"/>//&nbsp;Outside GIST</h1></div>
 					<div class="posts">
 						<div class="row">
 							<div class="articles left">
@@ -271,7 +270,7 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
-					<div class="section-link"><a href="<?php echo get_category_link_by_slug('about'); ?>" class="link">About The GIST</a></div>
+					<div class="section-link"><a href="<?php echo get_permalink(get_page_by_title('About The GIST')); ?>" class="link">About The GIST</a></div>
 				</div>
 			</div>
 			<br class="clear"/>
