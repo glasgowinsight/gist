@@ -8,7 +8,7 @@ $column: 213px;
 .main img { float: left; margin-right: $margin; }
 .posts, .archive, .search, #latest, #other {
 	.post, .articles { width: $column; max-width: none; margin: $margin 0; padding: 0; }
-	.twitter-timeline { width: $column; max-width: none; margin: $margin auto; padding: 0; }
+	.twitter-timeline { width: 2 * $column + $margin; max-width: none; margin: $margin auto; padding: 0; }
 	.main { width: 2 * $column + $margin; }
 	.left { margin-right: $margin; }
 	.clear2 { clear: left; margin-right: $margin; }

@@ -181,7 +181,7 @@ table td {padding: 0 3px; }
 #access a { display: block; width:100%; }
 #access li, h1, .single h2, #nav-below h3 { padding: $inner $big_margin $inner $half_margin; }
 h1, .single h2, #nav-below h3 { max-width: 202px; margin: $margin auto; }
-.post, .articles { margin: $margin auto; } 
+.post, .articles, .twitter-timeline { margin: $margin auto; } 
 #logo { margin: $margin auto; }
 .single #content .post, #author-avatar {
 	img { max-width: 100%; height: auto; margin: auto; display: block; }

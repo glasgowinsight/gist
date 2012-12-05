@@ -238,7 +238,7 @@ table td { padding: 0 3px; }
 
 h1, .single h2, .page h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 
-.post, .articles { margin: 14px auto; }
+.post, .articles, .twitter-timeline { margin: 14px auto; }
 
 #logo { margin: 14px auto; }
 

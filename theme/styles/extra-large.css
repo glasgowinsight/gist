@@ -2,6 +2,8 @@
 
 .posts .post, .posts .articles, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
 
+.posts .twitter-timeline { margin: 14px auto; }
+
 .posts .right { margin-left: 14px; }
 
 .section-other .row .right, .section-study .row .right, .section-announcement .row .right, .section-event .row .right { margin: 14px 0; }
