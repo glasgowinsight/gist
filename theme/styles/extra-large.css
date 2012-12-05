@@ -47,7 +47,7 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .section-latest { position: relative; }
 
-.posts .post, .posts .articles, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
+.posts .post, .posts .articles, .posts .twitter-timeline, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
 
 .section-latest .posts .main { width: 456px !important; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
 
@@ -69,7 +69,7 @@ h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
 .section-latest .posts .post, .section-podcast .posts .post, .section-podcast .posts .articles { width: 221px; max-width: none; }
 
-.section-podcast .posts .post, .section-podcast .posts .articles { margin-left: 0; margin-right: 14px; }
+.section-podcast .posts .post, .section-podcast .posts .articles, .section-podcast .posts .twitter-timeline { margin-left: 0; margin-right: 14px; }
 
 .single #article, .page #article { width: 600px; }
 .single .aside, .page .aside { width: 300px; }

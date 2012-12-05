@@ -176,11 +176,10 @@ get_header(); ?>
 				<div class="section  section-podcast">
 					<div><h1 class="bleed-switch2"><img src="<?php echo resource('images/bleed_podcast.png'); ?>"/><a href="<?php echo get_category_link_by_slug('podcast'); ?>">//&nbsp;Communicate</a></h1></div>
 					<div class="posts">
-                                                <!--
 						<div class="articles main">
-							<div id="twtr-widget"></div>
+                                                    <a class="twitter-timeline" data-dnt=true href="https://twitter.com/GlasgowGist" data-widget-id="262183730460893184">Tweets by @GlasgowGist</a>
+                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						</div>
-                                                -->
 					
 						<?php $post = $posts['podcast'][0]; ?>
 						<?php setup_postdata($post); ?>

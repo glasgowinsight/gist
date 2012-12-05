@@ -17,22 +17,6 @@ body, html {
   overflow-x: hidden;
 }
 
-div.twtr-widget { 
-	font-family: "Franklin Gothic Book",
-		"Franklin Gothic Medium",
-		"Franklin Gothic",
-		"ITC Franklin Gothic",
-		"ITC Franklin Gothic Std",
-		TradeGothic,
-		"News Gothic MT",
-		"URW Gothic L",
-		Arial,
-		sans-serif
-		!important;
-		
-  font-size: 13px !important;
-}
-
 h1, h2, h3, h4, h5, h6, #access #navList a {
   font-size: 16px;
   font-weight: bold;
@@ -98,9 +82,6 @@ ul.blank li { list-style: none inside none; }
 	overflow-y: hidden; 
 	&:after { content: url(../images/cap_right.png); position: absolute; top: 0; right: 0; }
 }
-
-.twtr-hd h3 { display: none; }
-.twtr-hd h4, .twtr-hd h3 { float: left; clear: none; }
 
 dt { float: left; margin-right: $half_margin; font-weight: bold; }
 dd { margin-bottom: $margin; }
@@ -195,7 +176,6 @@ table td {padding: 0 3px; }
 .extract img { max-width: 100%; height: auto; } 
 #page { max-width: 454px; margin: 0 auto; padding: 0 $margin; }
 #nav-below div { text-align: center; }
-.twtr-doc { width: 100% !important; margin: $margin auto; }
 .entry-thumbnail { text-align: center; margin-bottom: $margin; }
 #access { max-width: 227px; margin: $margin auto; }
 #access a { display: block; width:100%; }
