@@ -69,7 +69,7 @@ h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
 .section-podcast { float: right; width: 221px; }
 
-.twitter-timeline { width: 221px; }
+.posts .articles .twitter-timeline { width: 221px; }
 
 .section-latest .posts .post, .section-podcast .posts .post, .section-podcast .posts .articles { width: 221px; max-width: none; }
 
