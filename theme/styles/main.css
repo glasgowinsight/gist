@@ -240,6 +240,8 @@ h1, .single h2, .page h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 
 .post, .articles, .twitter-timeline { margin: 14px auto; }
 
+.twitter-timeline { display: block; }
+
 #logo { margin: 14px auto; }
 
 .single #content .post img, .page #content .post img, #author-avatar img { max-width: 100%; height: auto; margin: auto; display: block; }
