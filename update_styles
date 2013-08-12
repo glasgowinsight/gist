@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/usr/bin/ruby
 
-sass --style compact --update sass/:theme/styles/
+system "sass --style compact --update sass/:theme/styles/"
