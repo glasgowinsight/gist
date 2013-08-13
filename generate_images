@@ -16,16 +16,16 @@ colours['categories'].each_with_index do |category, i|
     light.sub!(/rgb/, 'rgba')
     light.sub!(/\)/, ',0.5)')
 
-    commands << "convert -size 8x8 'canvas:#{normal}' -background none -shear 14x0 'theme/images/bullet_#{category}.png'"
-    commands << "convert -size 400x40 \\( 'canvas:#{dark}' -background none -shear 14x0 \\) \\( 'canvas:#{normal}' -background none -shear 14x0 \\) -append 'theme/images/nav_#{category}.png'"
-    commands << "convert -size 1000x40 'canvas:#{normal}' -background none -shear 14x0 'theme/images/bleed_#{category}.png'"
-    commands << "convert -size 20x800 'canvas:#{light}' 'theme/images/img_#{category}.png'"
-    commands << "convert arrow_black.png -fill '#{normal}' -opaque black theme/images/arrow_#{category}.png"
+    commands << "convert -size 8x8 \"canvas:#{normal}\" -background none -shear 14x0 \"theme/images/bullet_#{category}.png\""
+    commands << "convert -size 400x40 \"(\" \"canvas:#{dark}\" -background none -shear 14x0 \")\" \"(\" \"canvas:#{normal}\" -background none -shear 14x0 \")\" -append \"theme/images/nav_#{category}.png\""
+    commands << "convert -size 1000x40 \"canvas:#{normal}\" -background none -shear 14x0 \"theme/images/bleed_#{category}.png\""
+    commands << "convert -size 20x800 \"canvas:#{light}\" \"theme/images/img_#{category}.png\""
+    commands << "convert arrow_black.png -fill \"#{normal}\" -opaque black theme/images/arrow_#{category}.png"
     commands << "convert theme/images/arrow_#{category}.png -flop theme/images/arrow_#{category}_back.png"
     commands << "convert theme/images/arrow_#{category}.png -rotate 90 theme/images/arrow_#{category}_down.png"
 end
 
-commands << "convert arrow_black.png -fill 'rgb(255,255,255)' -opaque black theme/images/arrow_hover.png"
+commands << "convert arrow_black.png -fill \"rgb(255,255,255)\" -opaque black theme/images/arrow_hover.png"
 commands << "convert theme/images/arrow_hover.png -flop theme/images/arrow_hover_back.png"
 commands << "convert theme/images/arrow_hover.png -rotate 90 theme/images/arrow_hover_down.png"
 
@@ -33,10 +33,10 @@ capheight = 100
 offset = 14
 width = 24
 crop = "-crop #{width}x#{capheight}+#{offset}x0"
-commands << "convert -size 14x#{capheight} canvas:none -size 200x#{capheight} canvas:white +append -background none -shear 14x0 #{crop} 'theme/images/cap_right.png'"
-commands << "convert -size 14x#{capheight} canvas:white -size 200x#{capheight} canvas:none +append -background white -shear 14x0 #{crop} 'theme/images/cap_left.png'"
+commands << "convert -size 14x#{capheight} canvas:none -size 200x#{capheight} canvas:white +append -background none -shear 14x0 #{crop} \"theme/images/cap_right.png\""
+commands << "convert -size 14x#{capheight} canvas:white -size 200x#{capheight} canvas:none +append -background white -shear 14x0 #{crop} \"theme/images/cap_left.png\""
 
 commands.each do |command|
-    p command
+    print command, "\n"
     system command
 end
