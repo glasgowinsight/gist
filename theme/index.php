@@ -16,7 +16,7 @@ get_header(); ?>
 
 	<?php 
 		global $post;
-		$posts_per_page = array('latest'=>5, 'feature'=>7, 'snippet'=>7, 'podcast'=>1, 'event'=>-1, 'study'=>5);
+		$posts_per_page = array('latest'=>4, 'feature'=>3, 'snippet'=>3, 'podcast'=>1, 'event'=>-1, 'study'=>5);
 		$extra_params = array(
                         'latest'=>array(
                             'category__not_in'=>array(
@@ -93,25 +93,28 @@ get_header(); ?>
 					<div class="section section-latest">
 						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_latest.png'); ?>"/>//&nbsp;Latest</h1></div>
 						<div class="posts">
-							<div class="row3">
-								<?php $post = $posts['latest'][0]; ?>
+							<div class="row", style="height:351px; width:927px">
+								<?php $post = $posts['latest'][0]; //main big post?>
 								<?php setup_postdata($post); ?>
 								<?php get_extract('main', 'large_thumb'); ?>
-								<div class="row">
-									<?php $post = $posts['latest'][1]; ?>
-									<?php setup_postdata($post); ?>
-									<?php get_extract('left', 'medium_thumb'); ?>
-									<?php $post = $posts['latest'][2]; ?>
-									<?php setup_postdata($post); ?>
-									<?php get_extract('right', 'medium_thumb'); ?>
-									<br class="clear"/>
-								</div>
+								<!--<div class="row">-->
+									<?php /*$post = $posts['latest'][1]; */?>
+									<?php /*setup_postdata($post);*/ ?>
+									<?php /*get_extract('left', 'medium_thumb');*/ ?>
+									<?php /*$post = $posts['latest'][2]; */?>
+									<?php /*setup_postdata($post); */?>
+									<?php /*get_extract('right', 'medium_thumb'); */?>
+									<!--<br class="clear"/>-->
+								<!--</div>-->
 							</div>
 							<div class="row">
-								<?php $post = $posts['latest'][3]; ?>
+								<?php $post = $posts['latest'][1]; ?>
+								<?php setup_postdata($post); ?>
+								<?php get_extract('main', 'medium_thumb'); ?>
+								<?php $post = $posts['latest'][2]; ?>
 								<?php setup_postdata($post); ?>
 								<?php get_extract('left', 'medium_thumb'); ?>
-								<?php $post = $posts['latest'][4]; ?>
+								<?php $post = $posts['latest'][3]; ?>
 								<?php setup_postdata($post); ?>
 								<?php get_extract('right', 'medium_thumb'); ?>
 								<br class="clear"/>
@@ -128,20 +131,10 @@ get_header(); ?>
 							<?php $post = $posts['feature'][1]; ?>
 							<?php setup_postdata($post); ?>
 							<?php get_extract('left'); ?>
-                                                        <div class="articles right">
-                                                                <div class="entry-header">
-                                                                        <h3 class="entry-title">More Features</h3>
-                                                                </div>
-                                                                <div class="entry-content">
-                                                                        <ul>
-                                                                                <?php for ($i = 2; $i < count($posts['feature']); $i++):
-                                                                                        $post = $posts['feature'][$i];
-                                                                                        setup_postdata($post); ?>
-                                                                                        <li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
-                                                                                <?php endfor; ?>
-                                                                        </ul>
-                                                                </div>
-                                                        </div>
+							<?php $post = $posts['feature'][2]; ?>
+							<?php setup_postdata($post); ?>
+							<?php get_extract('right'); ?>
+                                                     
 						</div>
 						<div class="section-link"><a href="<?php echo get_category_link_by_slug('feature'); ?>" class="link">All Features</a></div>
 					</div>
@@ -154,20 +147,9 @@ get_header(); ?>
 							<?php $post = $posts['snippet'][1]; ?>
 							<?php setup_postdata($post); ?>
 							<?php get_extract('left'); ?>
-                                                        <div class="articles right">
-                                                                <div class="entry-header">
-                                                                        <h3 class="entry-title">More Snippets</h3>
-                                                                </div>
-                                                                <div class="entry-content">
-                                                                        <ul>
-                                                                                <?php for ($i = 2; $i < count($posts['snippet']); $i++):
-                                                                                        $post = $posts['snippet'][$i];
-                                                                                        setup_postdata($post); ?>
-                                                                                        <li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
-                                                                                <?php endfor; ?>
-                                                                        </ul>
-                                                                </div>
-                                                        </div>
+                            <?php $post = $posts['snippet'][2]; ?>
+							<?php setup_postdata($post); ?>
+							<?php get_extract('right'); ?>                         
 						</div>
 						<div class="section-link"><a href="<?php echo get_category_link_by_slug('snippet'); ?>" class="link">All Snippets</a></div>
 					</div>
@@ -203,77 +185,7 @@ get_header(); ?>
 					<div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link">All Podcasts</a></div>
 				</div>
 				
-				<div class="section  section-other">
-					<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_other.png'); ?>"/>//&nbsp;Outside GIST</h1></div>
-					<div class="posts">
-						<div class="row">
-							<div class="articles left">
-								<div class="entry-header">
-									<h3 class="entry-title">Events</h3>
-								</div>
-								<div class="entry-content">
-									<ul>
-										<?php if ($posts['event']): ?>
-											<?php foreach ($posts['event'] as $post): ?>
-												<?php setup_postdata($post); ?>
-												<li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php echo get_post_meta($post->ID, 'display_date', true); ?>: <?php the_short_title(); ?></a></li>
-											<?php endforeach; ?>
-										<?php else: ?>
-											<li>No events scheduled</li>
-										<?php endif; ?>
-									</ul>
-								</div>
-							</div>
-							<div class="articles right">
-								<div class="entry-header">
-									<h3 class="entry-title">Around The Web</h3>
-								</div>
-								<div class="entry-content">
-									<ul>
-										<li><a href="http://www.bluesci.org/" class="link">Bluesci</a></li>
-										<li><a href="http://www.eusci.org.uk/" class="link">EUSci</a></li>
-										<li><a href="http://www.aumag.co.uk/" class="link">Au magazine</a></li>
-									</ul>
-								</div>
-							</div>
-							<br class="clear"/>
-						</div>
-						<div class="articles left">
-							<div class="entry-header">
-								<h3 class="entry-title">University News</h3>
-							</div>
-							<div class="entry-content">
-								<?php echo rssinpage(array(
-									'rssfeed'=>
-										'http://www.gla.ac.uk/rss/news/index.xml,' .
-										'http://feeds2.feedburner.com/uos/hp,' .
-										'http://www.gcu.ac.uk/newsevents/feeds/feeds.php?s=fnunrn',
-									'rssformat'=>'Y',
-									'rssitems'=>5,
-									'rsscss'=>'link-container'
-								));	?>
-							</div>
-						</div>
-						<div class="articles right">
-							<div class="entry-header">
-								<h3 class="entry-title">Participants Needed</h3>
-							</div>
-							<div class="entry-content">
-								<ul>
-                                                                        <?php if ($posts['study']): ?>
-                                                                            <?php foreach ($posts['study'] as $post): ?>
-                                                                                    <?php setup_postdata($post); ?>
-                                                                                    <li><a href="<?php the_permalink(); ?>" class="link" rel="bookmark"><?php the_short_title(); ?></a></li>
-                                                                            <?php endforeach; ?>
-                                                                        <?php else: ?>
-                                                                            <li>No volunteers needed at present</li>
-                                                                        <?php endif; ?>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="section-link"><a href="<?php echo get_permalink(get_page_by_title('About The GIST')); ?>" class="link">About The GIST</a></div>
-				</div>
+				
 			</div>
 			<br class="clear"/>
 		</div>

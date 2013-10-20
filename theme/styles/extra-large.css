@@ -43,7 +43,7 @@ label { display: inline-block; width: 10em; }
 
 h1, .single h2, .page h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
-div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption img { width: auto; }
+div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption img { width: 300px; height: 148px }
 
 #main, .clear { clear: both; }
 
@@ -51,9 +51,9 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .posts .post, .posts .articles, .posts .twitter-timeline, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
 
-.section-latest .posts .main { width: 456px !important; max-width: none; position: absolute; left: 235px; margin: 14px 0; }
+.section-latest .posts .main { width: 300px !important; max-width: none; position: absolute; left: 315px; margin: 14px 0; }
 
-.section-latest .posts .right { position: relative; left: 456px; }
+.section-latest .posts .right { position: relative; left: 300px; }
 
 .section-latest .posts .left, .posts .main, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row { margin-right: 14px; }
 
@@ -69,9 +69,9 @@ h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
 .section-podcast { float: right; width: 221px; }
 
-.posts .articles .twitter-timeline { width: 221px; }
+.posts .articles .twitter-timeline { width: 300px; }
 
-.section-latest .posts .post, .section-podcast .posts .post, .section-podcast .posts .articles { width: 221px; max-width: none; }
+.section-latest .posts .post, .section-podcast .posts .post, .section-podcast .posts .articles { width: 300px; max-width: none; }
 
 .section-podcast .posts .post, .section-podcast .posts .articles, .section-podcast .posts .twitter-timeline { margin-left: 0; margin-right: 14px; }
 

@@ -226,7 +226,7 @@ table td { padding: 0 3px; }
 #searchForm label { display: none; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
-.extract img { max-width: 100%; height: auto; }
+.extract img { max-width: 300px; height: 148px; }
 
 #page { max-width: 454px; margin: 0 auto; padding: 0 14px; }
 
@@ -248,10 +248,10 @@ h1, .single h2, .page h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 
 #logo { margin: 14px auto; }
 
-.single #content .post img, .page #content .post img, #author-avatar img { max-width: 100%; height: auto; margin: auto; display: block; }
+.single #content .post img, .page #content .post img, #author-avatar img { max-width: 300px; height: auto; margin: auto; display: block; }
 
-.wp-caption, .thumbnail-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; max-width: 100%; height: auto; }
-.wp-caption img, .thumbnail-caption img { width: 100%; }
+.wp-caption, .thumbnail-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; height: auto; width: auto; }
+.wp-caption img, .thumbnail-caption img { width: auto; }
 .wp-caption p, .wp-caption br, .thumbnail-caption p, .thumbnail-caption br { line-height: 21px; margin: 0; padding: 2px; }
 .wp-caption:before, .thumbnail-caption:before { position: absolute; left: 0; top: 0; }
 .wp-caption:after, .thumbnail-caption:after { position: absolute; right: 0; top: 0; }
