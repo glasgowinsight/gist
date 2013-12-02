@@ -96,7 +96,7 @@ get_header(); ?>
 							<div class="row", style="height:351px; width:927px">
 								<?php $post = $posts['latest'][0]; //main big post?>
 								<?php setup_postdata($post); ?>
-								<?php get_extract('main', 'large_thumb'); ?>
+								<?php get_main_extract('big_main', 'large_thumb'); ?>
 								<!--<div class="row">-->
 									<?php /*$post = $posts['latest'][1]; */?>
 									<?php /*setup_postdata($post);*/ ?>
