@@ -72,7 +72,7 @@ ul.blank li { list-style: none inside none; }
 
 // old logo thing #logo { background: nth($normals, 1); width: 212px; height: 99px; padding: 0; max-width: none; }
 
-#logo { width: 261px; height: 99px; padding: 0; max-width: none; }
+#logo { width: 960px; height: 103px; padding: 0; max-width: none; }
 #logo img { z-index: 0 !important; }
 .home #searchForm a { 
 	@include link;

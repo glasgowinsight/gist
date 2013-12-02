@@ -30,9 +30,9 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: up
 .entry-content { line-height: 21px; }
 
 .entry-content br, .entry-content ul.longlist li, .category-archive-meta br, .category-archive-meta ul.longlist li, #author-info br, #author-info ul.longlist li { margin-bottom: 14px; }
-.entry-content p, .entry-content ul, .category-archive-meta p, .category-archive-meta ul, #author-info p, #author-info ul { margin-bottom: 14px; margin-top: 14px; }
+.entry-content p, .entry-content ul, .category-archive-meta p, .category-archive-meta ul, #author-info p, #author-info ul { margin-bottom: 14px; margin-top: 14px; width:300px}
 
-.entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
+.entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; width:300px}
 
 .single #content .entry-header, .page #content .entry-header { text-transform: none; text-align: left; }
 
@@ -43,7 +43,7 @@ a { text-decoration: none; }
 
 ul.blank li { list-style: none inside none; }
 
-#logo { width: 261px; height: 99px; padding: 0; max-width: none; }
+#logo { width: 960px; height: 103px; padding: 40px; max-width: none; }
 
 #logo img { z-index: 0 !important; }
 
@@ -226,13 +226,13 @@ table td { padding: 0 3px; }
 #searchForm label { display: none; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
-.extract img { max-width: 300px; height: 148px; }
+.extract img { max-width: 600px; max-height: 300px; }
 
 #page { max-width: 454px; margin: 0 auto; padding: 0 14px; }
 
 #nav-below div { text-align: center; }
 
-.entry-thumbnail { text-align: center; margin-bottom: 14px; }
+.entry-thumbnail { text-align: center; margin-bottom: 14px; width:300px}
 
 #access { max-width: 227px; margin: 14px auto; }
 
