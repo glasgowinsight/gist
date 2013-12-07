@@ -1,8 +1,8 @@
 @import "large_plus";
 
-#page { width: 4 * $wide_column + 3 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
+#page { width: 1400px; max-width: none; margin: 0 auto; padding: 0 $margin; background-color:whitesmoke;}
 #sections, .section-other { width: 3 * $wide_column + 2 * $margin; float: left; }
-.section-podcast { float:right; width: $column; }
+.section-podcast { float:right; width: $wide_column + 30; }
 .posts .articles .twitter-timeline { width: $wide_column; }
 .section-latest .posts .post, .section-podcast .posts .post, .section-podcast .posts .articles { width: $wide_column; max-width: none; }
 .section-podcast .posts {

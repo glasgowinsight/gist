@@ -17,7 +17,7 @@
 	.aside { float: right; }
 } 
 
-#branding { position: relative; }
+#branding { position: relative; background-color:whitesmoke }
 #logo { margin: $margin 0 0 0; float: left; }
 #searchForm {
 	text-align: left; 
@@ -58,5 +58,5 @@ label { display: inline-block; width: 10em; }
 h1, .single h2, #nav-below h3 { max-width: none; margin: $margin 0; }
 
 div.alignleft, div.alignright, div.aligncenter, .thumbnail-caption {
-	img { width: auto; }
+	img { width: 300px; height: 150px;}
 }

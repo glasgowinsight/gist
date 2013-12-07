@@ -15,6 +15,7 @@ body, html {
 		sans-serif;
   font-size: 13px;
   overflow-x: hidden;
+  background-color:#f2d0b8;
 }
 
 h1, h2, h3, h4, h5, h6, #access #navList a {
@@ -48,6 +49,7 @@ h3 { font-size: 18px; text-align: center; margin-bottom: $half_margin; text-tran
 	p, ul { 
             margin-bottom: $margin; 
             margin-top: $margin; 
+			width:300px
         }
 }
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: $margin; }
@@ -72,7 +74,7 @@ ul.blank li { list-style: none inside none; }
 
 // old logo thing #logo { background: nth($normals, 1); width: 212px; height: 99px; padding: 0; max-width: none; }
 
-#logo { width: 960px; height: 103px; padding: 0; max-width: none; }
+#logo { width: 960px; height: 103px; padding: 40px; max-width: none; }
 #logo img { z-index: 0 !important; }
 .home #searchForm a { 
 	@include link;
@@ -148,6 +150,7 @@ dd { margin-bottom: $margin; }
 .single, .section, .archive, .error404, .search {
 	h1, h2, #nav-below h3 { 
 		position: relative;
+		background-color:black;
 		img { 
 			position: absolute !important; 
 			height: 100% !important; 
@@ -178,10 +181,10 @@ table td {padding: 0 3px; }
 }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
-.extract img { max-width: 100%; height: auto; } 
+.extract img { max-width: 614px; max-height: 300px; } 
 #page { max-width: 454px; margin: 0 auto; padding: 0 $margin; }
 #nav-below div { text-align: center; }
-.entry-thumbnail { text-align: center; margin-bottom: $margin; }
+.entry-thumbnail { text-align: center; margin-bottom: $margin; width:300px}
 #access { max-width: 227px; margin: $margin auto; }
 #access a { display: block; width:100%; }
 #access li, h1, .single h2, #nav-below h3 { padding: $inner $big_margin $inner $half_margin; }
