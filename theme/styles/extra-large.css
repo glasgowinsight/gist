@@ -15,7 +15,7 @@
 .single #article, .page #article { max-width: none; float: left; margin-right: 14px; padding: 0; }
 .single .aside, .page .aside { float: right; }
 
-#branding { position: relative; }
+#branding { position: relative; background-color: whitesmoke; }
 
 #logo { margin: 14px 0 0 0; float: left; }
 
@@ -43,8 +43,7 @@ label { display: inline-block; width: 10em; }
 
 h1, .single h2, .page h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
-div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption img { width: 300px; height: 148px }
-.thumnail-caption-large img {width: 300px; height: 300px}
+div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption img { width: 300px; height: 150px; }
 
 #main, .clear { clear: both; }
 
@@ -52,7 +51,7 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .posts .post, .posts .articles, .posts .twitter-timeline, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
 
-.section-latest .posts .main { width: 300px !important; max-width: none; position: absolute; left: 315px; margin: 14px 0; }
+.section-latest .posts .main { width: 314px !important; max-width: none; position: absolute; left: 314px; margin: 14px 0; }
 
 .section-latest .posts .right { position: relative; left: 300px; }
 
@@ -64,11 +63,11 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
-#page { width: 1242px; max-width: none; margin: 0 auto; padding: 0 14px; }
+#page { width: 1400px; max-width: none; margin: 0 auto; padding: 0 14px; background-color: whitesmoke; }
 
 #sections, .section-other, .section-study, .section-announcement, .section-event { width: 928px; float: left; }
 
-.section-podcast { float: right; width: 221px; }
+.section-podcast { float: right; width: 330px; }
 
 .posts .articles .twitter-timeline { width: 300px; }
 

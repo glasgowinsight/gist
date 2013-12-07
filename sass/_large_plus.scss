@@ -8,8 +8,8 @@ $wide_column: 300px;
 .section-latest { position: relative; }
 .posts .post, .posts .articles, .posts .twitter-timeline, .section-other .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $wide_column; }
 
-.section-latest .posts .main { width: 2 * $column + $margin !important; max-width: none; position: absolute; left: $column + $margin; margin: $margin 0; }
-.section-latest .posts .right { position: relative; left: 2 * $column + $margin; }
+.section-latest .posts .main { width: $wide_column + $margin !important; max-width: none; position: absolute; left: $wide_column + $margin; margin: $margin 0; }
+.section-latest .posts .right { position: relative; left: $wide_column; }
 .section-latest .posts .left, .posts .main, .section-other .row { margin-right: $margin; }
 
 .references { position: absolute; bottom: 0; }

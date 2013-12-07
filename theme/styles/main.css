@@ -1,4 +1,4 @@
-body, html { font-family: "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "ITC Franklin Gothic Std", TradeGothic, "News Gothic MT", "URW Gothic L", Arial, sans-serif; font-size: 13px; overflow-x: hidden; }
+body, html { font-family: "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "ITC Franklin Gothic Std", TradeGothic, "News Gothic MT", "URW Gothic L", Arial, sans-serif; font-size: 13px; overflow-x: hidden; background-color: #f2d0b8; }
 
 h1, h2, h3, h4, h5, h6, #access #navList a { font-size: 16px; font-weight: bold; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #access #navList a a { color: black; }
@@ -30,9 +30,9 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: up
 .entry-content { line-height: 21px; }
 
 .entry-content br, .entry-content ul.longlist li, .category-archive-meta br, .category-archive-meta ul.longlist li, #author-info br, #author-info ul.longlist li { margin-bottom: 14px; }
-.entry-content p, .entry-content ul, .category-archive-meta p, .category-archive-meta ul, #author-info p, #author-info ul { margin-bottom: 14px; margin-top: 14px; width:300px}
+.entry-content p, .entry-content ul, .category-archive-meta p, .category-archive-meta ul, #author-info p, #author-info ul { margin-bottom: 14px; margin-top: 14px; width: 300px; }
 
-.entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; width:300px}
+.entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
 
 .single #content .entry-header, .page #content .entry-header { text-transform: none; text-align: left; }
 
@@ -200,7 +200,7 @@ dd { margin-bottom: 14px; }
 #access .other, #access .study, #access .announcement, #access .event { background: #7d0622; }
 #access .other:hover, #access .study:hover, #access .announcement:hover, #access .event:hover { background: #9f1838; }
 
-.single h1, .page h1, .single h2, .page h2, .single #nav-below h3, .page #nav-below h3, .section h1, .section h2, .section #nav-below h3, .archive h1, .archive h2, .archive #nav-below h3, .error404 h1, .error404 h2, .error404 #nav-below h3, .search h1, .search h2, .search #nav-below h3 { position: relative; }
+.single h1, .page h1, .single h2, .page h2, .single #nav-below h3, .page #nav-below h3, .section h1, .section h2, .section #nav-below h3, .archive h1, .archive h2, .archive #nav-below h3, .error404 h1, .error404 h2, .error404 #nav-below h3, .search h1, .search h2, .search #nav-below h3 { position: relative; background-color: black; }
 .single h1 img, .page h1 img, .single h2 img, .page h2 img, .single #nav-below h3 img, .page #nav-below h3 img, .section h1 img, .section h2 img, .section #nav-below h3 img, .archive h1 img, .archive h2 img, .archive #nav-below h3 img, .error404 h1 img, .error404 h2 img, .error404 #nav-below h3 img, .search h1 img, .search h2 img, .search #nav-below h3 img { position: absolute !important; height: 100% !important; max-height: none !important; max-width: none !important; z-index: -1; }
 
 #article .post { float: none; }
@@ -226,13 +226,13 @@ table td { padding: 0 3px; }
 #searchForm label { display: none; }
 
 /* Stuff for the 1 column layout that will mostly get overwritten */
-.extract img { max-width: 600px; max-height: 300px; }
+.extract img { max-width: 614px; max-height: 300px; }
 
 #page { max-width: 454px; margin: 0 auto; padding: 0 14px; }
 
 #nav-below div { text-align: center; }
 
-.entry-thumbnail { text-align: center; margin-bottom: 14px; width:300px}
+.entry-thumbnail { text-align: center; margin-bottom: 14px; width: 300px; }
 
 #access { max-width: 227px; margin: 14px auto; }
 
