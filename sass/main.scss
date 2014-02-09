@@ -74,7 +74,7 @@ ul.blank li { list-style: none inside none; }
 
 // old logo thing #logo { background: nth($normals, 1); width: 212px; height: 99px; padding: 0; max-width: none; }
 
-#logo { width: 960px; height: 103px; padding: 40px; max-width: none; }
+#logo {width:500px; height: 103px; padding: 40px; max-width: none; }
 #logo img { z-index: 0 !important; }
 .home #searchForm a { 
 	@include link;
@@ -137,7 +137,7 @@ dd { margin-bottom: $margin; }
 	}
 	
 	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} {
-		#logo { background: $normal; }
+		#logo { background: whitesmoke; }
 	}
 
 	
@@ -153,7 +153,7 @@ dd { margin-bottom: $margin; }
 		background-color:black;
 		img { 
 			position: absolute !important; 
-			height: 100% !important; 
+			/*height: 100% !important; */
 			max-height: none !important; 
 			max-width: none !important; 
 			z-index: -1; 
