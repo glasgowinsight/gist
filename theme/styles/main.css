@@ -27,12 +27,12 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: up
 
 .comment-content { margin: 7px 0; }
 
-.entry-content { line-height: 21px; }
+.entry-content { line-height: 21px; width: 300px; }
 
 .entry-content br, .entry-content ul.longlist li, .category-archive-meta br, .category-archive-meta ul.longlist li, #author-info br, #author-info ul.longlist li { margin-bottom: 14px; }
 .entry-content p, .entry-content ul, .category-archive-meta p, .category-archive-meta ul, #author-info p, #author-info ul { margin-bottom: 14px; margin-top: 14px; width: 300px; }
 
-.entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; }
+.entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; width: 300px; }
 
 .single #content .entry-header, .page #content .entry-header { text-transform: none; text-align: left; }
 
