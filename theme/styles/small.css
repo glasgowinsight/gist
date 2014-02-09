@@ -18,7 +18,9 @@
 
 .row, .clear { clear: both; }
 
-#logo { margin: 14px 0; float: left; }
+#logo { margin: 14px 0; float: left; width: 300px; height: 35px; }
+
+.gistlogo { width: 300px; height: 35px; }
 
 #searchForm { clear: both; text-align: left; }
 
@@ -30,8 +32,8 @@ h1, .single h2, .page h2, #nav-below h3 { width: 213px; max-width: none; margin:
 
 label { display: inline-block; width: 10em; }
 
-#access { margin: 0 auto; width: 150px; position: relative; float: right; overflow-y: visible; }
-#access:before { content: url(../images/cap_left.png); position: absolute; bottom: 0; left: 0; }
+#access { margin: 0 auto; width: 500px; position: relative; float: right; overflow-y: visible; }
+#access:before { position: absolute; bottom: 0; left: 0; }
 #access:after { content: ""; }
 #access li { padding: 0; }
 #access li a { position: relative; left: 30px; background-color: inherit; padding: 2px 0; }

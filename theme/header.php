@@ -54,7 +54,7 @@
 <link rel="stylesheet" type="text/css" media="(min-width: 1280px)" href="<?php echo resource('styles/extra-large.css'); ?>" />
 <link rel="stylesheet" type="text/css" media="(min-width: 790px) and (max-width: 1280px)" href="<?php echo resource('styles/large.css'); ?>" />
 <!--<link rel="stylesheet" type="text/css" media="(min-width: 724px) and (max-width: 970px)" href="<?php echo resource('styles/medium.css'); ?>" />-->
-<link rel="stylesheet" type="text/css" media="(min-width: 478px) and (max-width: 790px)" href="<?php echo resource('styles/small.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="(min-width: 400px) and (max-width: 790px)" href="<?php echo resource('styles/small.css'); ?>" />
 
 <?php wp_enqueue_script('twitter') ?>
 <?php wp_enqueue_script( 'jquery' ); ?>
@@ -116,7 +116,7 @@
 	<div id="branding" role="banner">
 			<h2 id="logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> - <?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" rel="home">
-					<img width="864" height="93" src="<?php echo resource('images/gist-logo-long.png'); ?>"/>
+					<img class="gistlogo" width="864" height="93" src="<?php echo resource('images/gist-logo-long.png'); ?>"/>
 				</a>
 			</h2>
 			
