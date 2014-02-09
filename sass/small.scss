@@ -6,8 +6,13 @@ $column: 213px;
 #page { width: 2 * $column + $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 .main img { float: left; margin-right: $margin; }
+.bigfatpost{height:600px; width:300px;}
+.entrypost {height:315px; width: 300px;}
+.entry-thumbnail {display:inline-block; width: 300px;}
+
+
 .posts, .archive, .search, #latest, #other {
-	.post, .articles { width: $column; max-width: none; margin: $margin 0; padding: 0; }
+	.post, .articles { width: 440px; max-width: none; margin: $margin 0; padding: 0; }
 	.twitter-timeline { width: 2 * $column + $margin; max-width: none; margin: $margin auto; padding: 0; }
 	.main { width: 2 * $column + $margin; }
 	.left { margin-right: $margin; }

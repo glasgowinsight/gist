@@ -45,11 +45,17 @@ h1, .single h2, .page h2, #nav-below h3 { max-width: none; margin: 14px 0; }
 
 div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption img { width: 300px; height: 150px; }
 
-#page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; }
+#page { width: 682px; max-width: none; margin: 0 auto; padding: 0 14px; background-color: whitesmoke; }
 
 .posts .post, .posts .articles, .posts .twitter-timeline, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 218px; }
 
 .references { position: absolute; bottom: 0; }
+
+.entrypost { height: 315px; width: 300px; display: inline-block; position: absolute; left: 628px; }
+
+.entry-thumbnail { display: inline-block; height: 315px; width: 600px; }
+
+.bigfatpost { height: 351px; width: 927px; }
 
 .single #other .post, .page #other .post { width: 218px; }
 .single #article, .page #article { width: 436px; }

@@ -3,9 +3,14 @@ $positions: -40px -140px -240px -340px;
 
 $column: 218px;
 
-#page { width: 3 * $column + 2 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
+#page { width: 3 * $column + 2 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; background-color: whitesmoke;}
 .posts .post, .posts .articles, .posts .twitter-timeline, .section-other .row, .archive .post, .search .post, .single #related, .single #latest, .single .references, .single #other .post { width: $column; }
 .references { position: absolute; bottom: 0; }
+
+.entrypost {height:315px; width: 300px; display:inline-block; position:absolute; left:628px;}
+.entry-thumbnail {display:inline-block; height:315px; width: 600px;}
+
+.bigfatpost{height:351px; width:927px;}
 .single{
 	#other .post { width: $column; }
 	#article { width: 2 * $column; }

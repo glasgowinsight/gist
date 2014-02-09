@@ -51,6 +51,8 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .posts .post, .posts .articles, .posts .twitter-timeline, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
 
+.bigfatpost { height: 351px; width: 927px; }
+
 .section-latest .posts .main { width: 314px !important; max-width: none; position: absolute; left: 314px; margin: 14px 0; }
 
 .section-latest .posts .right { position: relative; left: 300px; }
@@ -63,9 +65,13 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
-#page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; }
+#page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; background-color: whitesmoke; }
 
-.section-latest .posts .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 221px; max-width: none; }
+.entrypost { height: 315px; width: 300px; display: inline-block; position: absolute; left: 628px; }
+
+.entry-thumbnail { display: inline-block; width: 300px; }
+
+.section-latest .posts .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; max-width: none; }
 
 .single #article, .page #article { width: 442px; }
 .single .aside, .page .aside { width: 221px; }

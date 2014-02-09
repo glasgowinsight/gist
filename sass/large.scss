@@ -1,7 +1,11 @@
 @import "large_plus";
 
-#page { width: 3 * $wide_column + 2 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
-.section-latest .posts .post, .single #related,  .single #latest, .single .references, .single #other .post { width: $column; max-width: none; }
+#page { width: 3 * $wide_column + 2 * $margin; max-width: none; margin: 0 auto; padding: 0 $margin; background-color:whitesmoke;}
+
+.entrypost {height:315px; width: 300px; display:inline-block; position:absolute; left:628px;}
+.entry-thumbnail {display:inline-block; width: 300px;}
+
+.section-latest .posts .post, .single #related,  .single #latest, .single .references, .single #other .post { width: $wide_column; max-width: none; }
 .single {
 	#article { width: 2 * $column; }
 	.aside { width: $column; }
@@ -15,3 +19,5 @@ div.alignleft, div.alignright, div.aligncenter {
 	img { width: 1.5 * $column; float: left; }
 	&:after { right: 0.5 * $column; }
 }
+
+

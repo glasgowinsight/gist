@@ -93,7 +93,7 @@ get_header(); ?>
 					<div class="section section-latest">
 						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_latest.png'); ?>"/>//&nbsp;Latest</h1></div>
 						<div class="posts">
-							<div class="row", style="height:351px; width:927px">
+							<div class="bigfatpost">
 								<?php $post = $posts['latest'][0]; //main big post?>
 								<?php setup_postdata($post); ?>
 								<?php get_main_extract('big_main', 'large_thumb'); ?>

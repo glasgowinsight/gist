@@ -237,11 +237,11 @@ function get_extract( $classes = '', $thumb = 'medium_thumb' ) {	?>
 function get_main_extract( $classes = '', $thumb = 'large_thumb' ) {	?>
 	
 	
-	<div id="post-<?php the_ID(); ?>" <?php post_class('extract ' . $classes); ?>; style="height:320px; width:927px">
+	<div id="post-<?php the_ID(); ?>" <?php post_class('extract ' . $classes); ?> style="height:320px; width:927px">
 		
 		
 
-			<div class="entry-thumbnail"; style="display:inline-block; height:315px; width: 600px">
+			<div class="entry-thumbnail">
 				<div class="thumbnail-caption-large">
 					<a href="<?php the_permalink(); ?>" rel="bookmark">
 						<?php the_post_thumbnail( $thumb ); ?>
@@ -249,7 +249,7 @@ function get_main_extract( $classes = '', $thumb = 'large_thumb' ) {	?>
 				</div>
 			</div>
 			
-			<div style="height:315px; width: 300px; display:inline-block; position:absolute; left:628px;">
+			<div class="entrypost">
 				<div class="entry-header"; style="display:block">
 					<h3 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_short_title(); ?></a></h3>
 				</div>
@@ -261,8 +261,9 @@ function get_main_extract( $classes = '', $thumb = 'large_thumb' ) {	?>
 			</div>
 		<br style="clear:both"/>
 	
+	
 	</div><?php
-
+	
 }
 
 function get_archive_posts($limit=9999){
