@@ -32,6 +32,11 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: up
 .entry-content br, .entry-content ul.longlist li, .category-archive-meta br, .category-archive-meta ul.longlist li, #author-info br, #author-info ul.longlist li { margin-bottom: 14px; }
 .entry-content p, .entry-content ul, .category-archive-meta p, .category-archive-meta ul, #author-info p, #author-info ul { margin-bottom: 14px; margin-top: 14px; width: 300px; }
 
+.entry-content-single { line-height: 21px; width: 442px; }
+
+.entry-content-single br, .entry-content-single ul.longlist li, .category-archive-meta br, .category-archive-meta ul.longlist li, #author-info br, #author-info ul.longlist li { margin-bottom: 14px; }
+.entry-content-single p, .entry-content-single ul, .category-archive-meta p, .category-archive-meta ul, #author-info p, #author-info ul { margin-bottom: 14px; margin-top: 14px; width: 442px; }
+
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; width: 300px; }
 
 .single #content .entry-header, .page #content .entry-header { text-transform: none; text-align: left; }
@@ -248,7 +253,7 @@ h1, .single h2, .page h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 
 #logo { margin: 14px auto; }
 
-.single #content .post img, .page #content .post img, #author-avatar img { max-width: 300px; height: auto; margin: auto; display: block; }
+.single #content .post img, .page #content .post img, #author-avatar img { max-width: 442px; height: auto; margin: auto; display: block; }
 
 .wp-caption, .thumbnail-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; height: auto; width: auto; }
 .wp-caption img, .thumbnail-caption img { width: auto; }
