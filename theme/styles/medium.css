@@ -15,7 +15,7 @@
 .single #article, .page #article { max-width: none; float: left; margin-right: 14px; padding: 0; }
 .single .aside, .page .aside { float: right; }
 
-#branding { position: relative; background-color: whitesmoke; }
+#branding { position: relative; background-color: transparent; }
 
 #logo { margin: 14px 0 0 0; float: left; }
 

@@ -3,7 +3,7 @@
 
 $column: 213px;
 
-#page { width: 2 * $column + $margin; max-width: none; margin: 0 auto; padding: 0 $margin; }
+#page { width: 2 * $column + $margin; max-width: none; margin: 0 auto; padding: 0 $margin; background-color:rgb(224, 222, 207);}
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 .main img { float: left; margin-right: $margin; }
 .bigfatpost{height:600px; width:300px;}
