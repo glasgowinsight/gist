@@ -15,7 +15,8 @@ body, html {
 		sans-serif;
   font-size: 13px;
   overflow-x: hidden;
-  background-color:#f2d0b8;
+  background-image:url(../images/bkg.jpg) ;
+  background-attachment:fixed;
 }
 
 h1, h2, h3, h4, h5, h6, #access #navList a {
@@ -137,7 +138,7 @@ dd { margin-bottom: $margin; }
 	}
 	
 	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} {
-		#logo { background: whitesmoke; }
+		#logo { background: transparent; }
 	}
 
 	

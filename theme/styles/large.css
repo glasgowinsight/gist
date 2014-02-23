@@ -15,7 +15,7 @@
 .single #article, .page #article { max-width: none; float: left; margin-right: 14px; padding: 0; }
 .single .aside, .page .aside { float: right; }
 
-#branding { position: relative; background-color: whitesmoke; }
+#branding { position: relative; background-color: transparent; }
 
 #logo { margin: 14px 0 0 0; float: left; }
 
@@ -65,7 +65,7 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
-#page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; background-color: whitesmoke; }
+#page { width: 928px; max-width: none; margin: 0 auto; padding: 0 14px; background-color: #e0decf; }
 
 .entrypost { height: 315px; width: 300px; display: inline-block; position: absolute; left: 628px; }
 

@@ -1,4 +1,4 @@
-#page { width: 440px; max-width: none; margin: 0 auto; padding: 0 14px; }
+#page { width: 440px; max-width: none; margin: 0 auto; padding: 0 14px; background-color: #e0decf; }
 
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 

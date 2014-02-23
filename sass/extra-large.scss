@@ -1,6 +1,6 @@
 @import "large_plus";
 
-#page { width: 1400px; max-width: none; margin: 0 auto; padding: 0 $margin; background-color:whitesmoke;}
+#page { width: 1400px; max-width: none; margin: 0 auto; padding: 0 $margin; background-color:rgb(224, 222, 207);}
 #sections, .section-other { width: 3 * $wide_column + 2 * $margin; float: left; }
 .entrypost {height:315px; width: 300px; display:inline-block; position:absolute; left:628px;}
 .entry-thumbnail {display:inline-block; width: 300px;}
