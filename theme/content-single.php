@@ -13,7 +13,7 @@
 		<h1 class="entry-title bleed-left"><?php echo $bleed; ?><?php the_title(); ?></h1>
 	</div>
 
-	<div class="entry-content-single" 
+	<div class="entry-content-single">
 		<?php the_content(); ?>
 		<a href="#comments" class="link">Discuss</a> <?php do_action('addthis_widget', get_permalink(), the_title('', '', false), 'small_toolbox' ); ?>
 	</div>	

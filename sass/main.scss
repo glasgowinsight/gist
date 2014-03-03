@@ -55,16 +55,7 @@ h3 { font-size: 18px; text-align: center; margin-bottom: $half_margin; text-tran
 }
 
 .entry-content-single {line-height: $big_margin; width: 442px;}
-.entry-content-single, .category-archive-meta, #author-info{
-			br, ul.longlist li { 
-            margin-bottom: $margin; 
-        }
-			p, ul { 
-            margin-bottom: $margin; 
-            margin-top: $margin; 
-			width:442px;
-        }
-}
+
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: $margin; width: 300px; }
 .single #content .entry-header { text-transform: none; text-align: left; }
 

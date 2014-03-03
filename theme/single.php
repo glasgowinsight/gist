@@ -35,7 +35,7 @@ get_header(); ?>
 						<?php get_template_part( 'content', 'single' ); ?>
 						
 						<?php if ( get_the_author_meta( 'description' ) && ( ! function_exists( 'is_multi_author' ) || is_multi_author() ) ) : ?>
-						<div id="author-info" >
+						<div id="author-info">
 							<h2 class="bleed-left"><?php echo $bleed; ?>Author</h2>
 							<div id="author-avatar">
 								<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
@@ -47,7 +47,7 @@ get_header(); ?>
 							</div>
 						</div>
 						<?php endif; ?>
-						<div class="licence" >
+						<div class="licence">
 							<?php 
 								$licence=get_licence($post);
 								if( $licence != NULL ): ?>
@@ -71,7 +71,7 @@ get_header(); ?>
                                                     }
                                                 ?>
 						<?php if(!in_category('feature')):?>
-							<div class="short-references" >
+							<div class="short-references">
                                                             <?php show_notes('external_link', 'Links', 'bleed-left'); ?>
                                                             <?php show_notes('notes', 'Notes', 'bleed-left'); ?>
                                                             <?php show_notes('corrections', 'Corrections', 'bleed-left'); ?>
