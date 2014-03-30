@@ -71,6 +71,8 @@ h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
 .entry-thumbnail { display: inline-block; width: 300px; }
 
+.entry-content-single { line-height: 21px; width: 442px; }
+
 .section-latest .posts .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; max-width: none; }
 
 .single #article, .page #article { width: 442px; }

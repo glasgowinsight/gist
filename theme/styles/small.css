@@ -10,6 +10,8 @@
 
 .entry-thumbnail { display: inline-block; width: 300px; }
 
+.entry-content-single { line-height: 21px; }
+
 .posts .post, .posts .articles, .archive .post, .archive .articles, .search .post, .search .articles, #latest .post, #latest .articles, #other .post, #other .articles { width: 440px; max-width: none; margin: 14px 0; padding: 0; }
 .posts .twitter-timeline, .archive .twitter-timeline, .search .twitter-timeline, #latest .twitter-timeline, #other .twitter-timeline { width: 440px; max-width: none; margin: 14px auto; padding: 0; }
 .posts .main, .archive .main, .search .main, #latest .main, #other .main { width: 440px; }

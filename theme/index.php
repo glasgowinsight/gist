@@ -173,11 +173,11 @@ get_header(); ?>
 							</div>
 							<div class="entry-content">
 								<ul class="blank">
-									<li><img src="<?php echo resource('images/icon.png');?>"/><a href="https://groups.google.com/group/the-gist" class="link"><span>Join us</span></a></li>
+									<li><img src="<?php echo resource('images/icon.png');?>"/><a href="https://www.facebook.com/groups/GISTContributor/" class="link"><span>Join us</span></a></li>
 									<li><img src="<?php echo resource('images/rss.png');?>"/><a href="<?php bloginfo('rss2_url'); ?>" class="link"><span>Get the latest news</span></a></li>
 									<li><img src="<?php echo resource('images/email.png');?>"/><a href="mailto:editor@the-gist.org" class="link"><span>Talk to us</span></a></li>
 									<li><img src="<?php echo resource('images/twitter.png');?>"/><a href="http://twitter.com/GlasgowGist" class="link"><span>Follow us</span></a></li>
-									<li><img src="<?php echo resource('images/facebook.jpg');?>"/><a href="http://www.facebook.com/glasgow.gist" class="link"><span>Like us</span></a></li>
+									<li><img src="<?php echo resource('images/facebook.png');?>"/><a href="http://www.facebook.com/glasgow.gist" class="link"><span>Like us</span></a></li>
 								</ul>
 							</div>
 						</div>
