@@ -147,6 +147,8 @@ dd { margin-bottom: $margin; }
 			&:after { content: url(../images/arrow_#{$category}_down.png); white-space: nowrap; padding-left: $inner; }
 			&:hover:after{ content: url(../images/arrow_hover_down.png); }
 		}
+		.wp-caption-text a[href] {
+			color:white;}
 	}
 	
 	.section-#{$category}, .category-#{$category}, .parent-#{$category}, .single-#{$category} {
@@ -206,7 +208,7 @@ h1, .single h2, #nav-below h3 { max-width: 202px; margin: $margin auto; }
 .twitter-timeline { display: block; } 
 #logo { margin: $margin auto; }
 .single #content .post, #author-avatar {
-	img { max-width: 442px; height: auto; margin: auto; display: block; }
+	img { max-width: 300px; height: auto; margin: auto; display: block; }
 }
 .wp-caption, .thumbnail-caption { 
 	margin: auto; 
