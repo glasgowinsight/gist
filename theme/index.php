@@ -189,14 +189,10 @@ get_header(); ?>
 					</div>
 					<div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link">All Podcasts</a></div>
 				</div>
-
-				
-
 				<div class="section section-calendar">
 				<h1>//&nbsp;theGIST calendar</h1>
 				<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=glasgowinsight%40gmail.com&amp;color=%232952A3&amp;ctz=Europe%2FLondon" style=" border-width:0 " width="800" height="300" frameborder="0" scrolling="no"></iframe>
 				</div>
-
 				
 			</div>
 			<br class="clear"/>
