@@ -25,8 +25,8 @@ h1, h2, h3, h4, h5, h6, #access #navList a {
   a { color: black; }
 }
 
-sub { vertical-align: bottom; }
-sup { vertical-align: top; }
+sub { vertical-align: bottom; font-size:9px;}
+sup { vertical-align: top; font-size:9px; }
 
 .section-link { clear:both; float: right; }
 h1, .section-link { font-size: 24px; margin-bottom: $margin; }
@@ -208,7 +208,7 @@ h1, .single h2, #nav-below h3 { max-width: 202px; margin: $margin auto; }
 .twitter-timeline { display: block; } 
 #logo { margin: $margin auto; }
 .single #content .post, #author-avatar {
-	img { max-width: 300px; height: auto; margin: auto; display: block; }
+	img { max-width: 442px; height: auto; margin: auto; display: block; }
 }
 .wp-caption, .thumbnail-caption { 
 	margin: auto; 

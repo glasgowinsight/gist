@@ -3,9 +3,9 @@ body, html { font-family: "Franklin Gothic Book", "Franklin Gothic Medium", "Fra
 h1, h2, h3, h4, h5, h6, #access #navList a { font-size: 16px; font-weight: bold; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #access #navList a a { color: black; }
 
-sub { vertical-align: bottom; }
+sub { vertical-align: bottom; font-size: 9px; }
 
-sup { vertical-align: top; }
+sup { vertical-align: top; font-size: 9px; }
 
 .section-link { clear: both; float: right; }
 
@@ -246,7 +246,7 @@ h1, .single h2, .page h2, #nav-below h3 { max-width: 202px; margin: 14px auto; }
 
 #logo { margin: 14px auto; }
 
-.single #content .post img, .page #content .post img, #author-avatar img { max-width: 300px; height: auto; margin: auto; display: block; }
+.single #content .post img, .page #content .post img, #author-avatar img { max-width: 442px; height: auto; margin: auto; display: block; }
 
 .wp-caption, .thumbnail-caption { margin: auto; position: relative; overflow: hidden; line-height: 0; height: auto; width: auto; }
 .wp-caption img, .thumbnail-caption img { width: auto; }

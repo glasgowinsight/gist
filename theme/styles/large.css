@@ -83,3 +83,5 @@ h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 div.alignleft, div.alignright, div.aligncenter { width: 442px; }
 div.alignleft img, div.alignright img, div.aligncenter img { width: 331.5px; float: left; }
 div.alignleft:after, div.alignright:after, div.aligncenter:after { right: 110.5px; }
+
+.section-calendar iframe { width: 800px; height: 300px; }

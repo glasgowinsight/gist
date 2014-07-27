@@ -95,3 +95,5 @@ div.alignleft img, div.alignright img, div.aligncenter img { width: 450px; float
 div.alignleft:after, div.alignright:after, div.aligncenter:after { right: 150px; }
 
 .bleed-switch2 img { left: 0; top: 0; }
+
+.section-calendar iframe { width: 800px; height: 300px; }
