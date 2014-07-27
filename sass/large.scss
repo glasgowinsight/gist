@@ -5,6 +5,8 @@
 .entrypost {height:315px; width: 300px; display:inline-block; position:absolute; left:628px;}
 .entry-thumbnail {display:inline-block; width: 300px;}
 
+.entry-content-single {line-height: $big_margin; width: 442px;}
+
 .section-latest .posts .post, .single #related,  .single #latest, .single .references, .single #other .post { width: $wide_column; max-width: none; }
 .single {
 	#article { width: 2 * $column; }
@@ -20,4 +22,9 @@ div.alignleft, div.alignright, div.aligncenter {
 	&:after { right: 0.5 * $column; }
 }
 
+
+.section-calendar iframe {
+		width:800px;
+		height:300px;
+		}
 

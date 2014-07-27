@@ -1,0 +1,59 @@
+﻿Merge remote-tracking branch 'origin/test_site'
+
+Conflicts:
+	sass/extra-large.scss
+	sass/large.scss
+	sass/main.scss
+	sass/small.scss
+	theme/functions.php
+	theme/header.php
+	theme/index.php
+	theme/styles/extra-large.css
+	theme/styles/large.css
+	theme/styles/main.css
+	theme/styles/small.css
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	modified:   sass/extra-large.scss
+#	modified:   sass/large.scss
+#	modified:   sass/small.scss
+#	modified:   theme/content-single.php
+#	modified:   theme/functions.php
+#	modified:   theme/header.php
+#	renamed:    theme/images/email.png -> theme/images/email-old.png
+#	modified:   theme/images/email.png
+#	new file:   theme/images/email29.png
+#	renamed:    theme/images/facebook.jpg -> theme/images/facebook-old.jpg
+#	new file:   theme/images/facebook.png
+#	new file:   theme/images/facebook29.png
+#	renamed:    theme/images/icon.png -> theme/images/icon-old.png
+#	modified:   theme/images/icon.png
+#	new file:   theme/images/icon29.png
+#	new file:   theme/images/info.png
+#	new file:   theme/images/info_large.png
+#	renamed:    theme/images/rss.png -> theme/images/rss-old.png
+#	modified:   theme/images/rss.png
+#	new file:   theme/images/rss29.png
+#	renamed:    theme/images/twitter.png -> theme/images/twitter-old.png
+#	modified:   theme/images/twitter.png
+#	new file:   theme/images/twitter29.png
+#	modified:   theme/index.php
+#	modified:   theme/styles/extra-large.css
+#	modified:   theme/styles/large.css
+#	modified:   theme/styles/main.css
+#	modified:   theme/styles/small.css
+#
+

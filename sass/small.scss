@@ -11,6 +11,10 @@ $column: 213px;
 .entry-thumbnail {display:inline-block; width: 300px;}
 
 
+.entry-content-single {line-height: $big_margin;}
+
+
+
 .posts, .archive, .search, #latest, #other {
 	.post, .articles { width: 440px; max-width: none; margin: $margin 0; padding: 0; }
 	.twitter-timeline { width: 2 * $column + $margin; max-width: none; margin: $margin auto; padding: 0; }
@@ -50,3 +54,8 @@ label { display: inline-block; width: 10em; }
 		}
 	}
 }
+
+.section-calendar iframe {
+		width:300px;
+		height:300px;
+		}

@@ -173,18 +173,30 @@ get_header(); ?>
 							</div>
 							<div class="entry-content">
 								<ul class="blank">
-									<li><img src="<?php echo resource('images/icon.png');?>"/><a href="https://groups.google.com/group/the-gist" class="link"><span>Join us</span></a></li>
+								<li style="text-align: center; font-size:25px;"><a href="http://the-gist.org/procedures"><img src="<?php echo resource('images/info_large.png');?>"/></a>
+								</br><a href="http://the-gist.org/procedures" class="link"><span>Contributor Info</span></a></li>
+								</br>
+								</br>
+									<li><img src="<?php echo resource('images/icon.png');?>"/><a href="https://www.facebook.com/groups/GISTContributor/" class="link"><span>Join us</span></a></li>
 									<li><img src="<?php echo resource('images/rss.png');?>"/><a href="<?php bloginfo('rss2_url'); ?>" class="link"><span>Get the latest news</span></a></li>
 									<li><img src="<?php echo resource('images/email.png');?>"/><a href="mailto:editor@the-gist.org" class="link"><span>Talk to us</span></a></li>
 									<li><img src="<?php echo resource('images/twitter.png');?>"/><a href="http://twitter.com/GlasgowGist" class="link"><span>Follow us</span></a></li>
-									<li><img src="<?php echo resource('images/facebook.jpg');?>"/><a href="http://www.facebook.com/glasgow.gist" class="link"><span>Like us</span></a></li>
+									<li><img src="<?php echo resource('images/facebook.png');?>"/><a href="http://www.facebook.com/glasgow.gist" class="link"><span>Like us</span></a></li>
+									
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="section-link"><a href="<?php echo get_category_link_by_slug('podcast'); ?>" class="link">All Podcasts</a></div>
 				</div>
+
 				
+
+				<div class="section section-calendar">
+				<h1>//&nbsp;theGIST calendar</h1>
+				<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=glasgowinsight%40gmail.com&amp;color=%232952A3&amp;ctz=Europe%2FLondon" style=" border-width:0 " width="800" height="300" frameborder="0" scrolling="no"></iframe>
+				</div>
+
 				
 			</div>
 			<br class="clear"/>

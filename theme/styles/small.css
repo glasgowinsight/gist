@@ -10,6 +10,8 @@
 
 .entry-thumbnail { display: inline-block; width: 300px; }
 
+.entry-content-single { line-height: 21px; }
+
 .posts .post, .posts .articles, .archive .post, .archive .articles, .search .post, .search .articles, #latest .post, #latest .articles, #other .post, #other .articles { width: 440px; max-width: none; margin: 14px 0; padding: 0; }
 .posts .twitter-timeline, .archive .twitter-timeline, .search .twitter-timeline, #latest .twitter-timeline, #other .twitter-timeline { width: 440px; max-width: none; margin: 14px auto; padding: 0; }
 .posts .main, .archive .main, .search .main, #latest .main, #other .main { width: 440px; }
@@ -38,3 +40,5 @@ label { display: inline-block; width: 10em; }
 #access li { padding: 0; }
 #access li a { position: relative; left: 30px; background-color: inherit; padding: 2px 0; }
 #access li a:after { content: ""; position: absolute; width: 1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
+
+.section-calendar iframe { width: 300px; height: 300px; }

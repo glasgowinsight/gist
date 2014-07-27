@@ -14,7 +14,11 @@ function gist_setup() {
 	// This theme uses post thumbnails
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'large_thumb', 614, 300, True );
-	add_image_size( 'medium_thumb', 300, 300, True );
+
+	
+
+	add_image_size( 'medium_thumb', 300, 150, True );
+
 	add_image_size( 'small_thumb', 150, 110, True );
 
 	// Add default posts and comments RSS feed links to head

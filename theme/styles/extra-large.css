@@ -73,6 +73,8 @@ h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
 .entry-thumbnail { display: inline-block; width: 300px; }
 
+.entry-content-single { line-height: 21px; width: 884px; }
+
 .section-podcast { float: right; width: 400px; }
 
 .posts .articles .twitter-timeline { width: 300px; }
@@ -93,3 +95,5 @@ div.alignleft img, div.alignright img, div.aligncenter img { width: 450px; float
 div.alignleft:after, div.alignright:after, div.aligncenter:after { right: 150px; }
 
 .bleed-switch2 img { left: 0; top: 0; }
+
+.section-calendar iframe { width: 800px; height: 300px; }
