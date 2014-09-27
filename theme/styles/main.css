@@ -1,11 +1,11 @@
-body, html { font-family: "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "ITC Franklin Gothic Std", TradeGothic, "News Gothic MT", "URW Gothic L", Arial, sans-serif; font-size: 16px; overflow-x: hidden; background-image: url(../images/bkg.jpg); background-attachment: fixed; }
+body, html { font-family: "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "ITC Franklin Gothic Std", TradeGothic, "News Gothic MT", "URW Gothic L", Arial, sans-serif; font-size: 16px; background-image: url(../images/bkg.jpg); background-attachment: fixed; }
 
 h1, h2, h3, h4, h5, h6, #access #navList a { font-size: 16px; font-weight: bold; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #access #navList a a { color: black; }
 
-sub { vertical-align: bottom; font-size: 9px; }
+sub { vertical-align: bottom; }
 
-sup { vertical-align: top; font-size: 9px; }
+sup { vertical-align: top; }
 
 .section-link { clear: both; float: right; }
 
@@ -13,13 +13,13 @@ h1, .section-link { font-size: 24px; margin-bottom: 14px; }
 
 h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: uppercase; }
 
-#colophon { clear: both; height: 40px; }
+#colophon { clear: both; }
 
 #site-generator { margin: 14px 0; float: right; }
 
-.wp-caption p { background-color: black; }
+.wp-caption p { font-weight: bold; }
 
-.wp-caption p, .references, .small-references { font-size: 14px; }
+.wp-caption p, .references, .small-references { font-size: 11px; }
 
 .references br, .small-references br { margin-bottom: 7px; }
 
@@ -27,13 +27,10 @@ h3 { font-size: 18px; text-align: center; margin-bottom: 7px; text-transform: up
 
 .comment-content { margin: 7px 0; }
 
-.entry-content { line-height: 21px; width: 300px; }
+.entry-content { line-height: 21px; max-width: 442px; }
 
 .entry-content br, .entry-content ul.longlist li, .category-archive-meta br, .category-archive-meta ul.longlist li, #author-info br, #author-info ul.longlist li { margin-bottom: 14px; }
-.entry-content p, .entry-content ul, .category-archive-meta p, .category-archive-meta ul, #author-info p, #author-info ul { margin-bottom: 14px; margin-top: 14px; width: 300px; }
-
-.entry-content-single br, .entry-content-single ul.longlist li { margin-bottom: 14px; }
-.entry-content-single p, .entry-content-single ul { margin-bottom: 14px; margin-top: 14px; }
+.entry-content p, .entry-content ul, .category-archive-meta p, .category-archive-meta ul, #author-info p, #author-info ul { margin-bottom: 14px; margin-top: 14px; }
 
 .entry-header { text-transform: uppercase; text-align: center; margin-bottom: 14px; width: 300px; }
 
@@ -64,7 +61,9 @@ dt { float: left; margin-right: 7px; font-weight: bold; }
 dd { margin-bottom: 14px; }
 
 .section-latest .aside, .category-latest .aside, .parent-latest .aside { background-color: #9c6ad6; }
-.section-latest .wp-caption p, .section-latest .thumbnail-caption p, .category-latest .wp-caption p, .category-latest .thumbnail-caption p, .parent-latest .wp-caption p, .parent-latest .thumbnail-caption p { z-index: 1; position: static; color: white; }
+.section-latest .wp-caption, .section-latest .thumbnail-caption, .category-latest .wp-caption, .category-latest .thumbnail-caption, .parent-latest .wp-caption, .parent-latest .thumbnail-caption { background-color: #9c6ad6; }
+.section-latest .wp-caption:before, .section-latest .wp-caption:after, .section-latest .thumbnail-caption:before, .section-latest .thumbnail-caption:after, .category-latest .wp-caption:before, .category-latest .wp-caption:after, .category-latest .thumbnail-caption:before, .category-latest .thumbnail-caption:after, .parent-latest .wp-caption:before, .parent-latest .wp-caption:after, .parent-latest .thumbnail-caption:before, .parent-latest .thumbnail-caption:after { content: url(../images/img_latest.png); }
+.section-latest .wp-caption p, .section-latest .thumbnail-caption p, .category-latest .wp-caption p, .category-latest .thumbnail-caption p, .parent-latest .wp-caption p, .parent-latest .thumbnail-caption p { z-index: 1; position: relative; }
 
 .section-latest li, .category-latest li, .parent-latest li, .single-latest .notes-external_link li, .single-latest .entry-content li { list-style: url(../images/bullet_latest.png) inside; }
 
@@ -83,7 +82,6 @@ dd { margin-bottom: 14px; }
 .section-latest a.link-down:hover, .section-latest .link-container-down a[href]:hover, .category-latest a.link-down:hover, .category-latest .link-container-down a[href]:hover, .parent-latest a.link-down:hover, .parent-latest .link-container-down a[href]:hover, .single-latest a.link-down:hover, .single-latest .link-container-down a[href]:hover { background-color: #584a71; }
 .section-latest a.link-down:after, .section-latest .link-container-down a[href]:after, .category-latest a.link-down:after, .category-latest .link-container-down a[href]:after, .parent-latest a.link-down:after, .parent-latest .link-container-down a[href]:after, .single-latest a.link-down:after, .single-latest .link-container-down a[href]:after { content: url(../images/arrow_latest_down.png); white-space: nowrap; padding-left: 2px; }
 .section-latest a.link-down:hover:after, .section-latest .link-container-down a[href]:hover:after, .category-latest a.link-down:hover:after, .category-latest .link-container-down a[href]:hover:after, .parent-latest a.link-down:hover:after, .parent-latest .link-container-down a[href]:hover:after, .single-latest a.link-down:hover:after, .single-latest .link-container-down a[href]:hover:after { content: url(../images/arrow_hover_down.png); }
-.section-latest .wp-caption-text a[href], .category-latest .wp-caption-text a[href], .parent-latest .wp-caption-text a[href], .single-latest .wp-caption-text a[href] { color: white; }
 
 .section-latest #logo, .category-latest #logo, .parent-latest #logo, .single-latest #logo { background: transparent; }
 
@@ -91,7 +89,9 @@ dd { margin-bottom: 14px; }
 #access .latest:hover { background: #584a71; }
 
 .section-feature .aside, .category-feature .aside, .parent-feature .aside { background-color: #689bd3; }
-.section-feature .wp-caption p, .section-feature .thumbnail-caption p, .category-feature .wp-caption p, .category-feature .thumbnail-caption p, .parent-feature .wp-caption p, .parent-feature .thumbnail-caption p { z-index: 1; position: static; color: white; }
+.section-feature .wp-caption, .section-feature .thumbnail-caption, .category-feature .wp-caption, .category-feature .thumbnail-caption, .parent-feature .wp-caption, .parent-feature .thumbnail-caption { background-color: #689bd3; }
+.section-feature .wp-caption:before, .section-feature .wp-caption:after, .section-feature .thumbnail-caption:before, .section-feature .thumbnail-caption:after, .category-feature .wp-caption:before, .category-feature .wp-caption:after, .category-feature .thumbnail-caption:before, .category-feature .thumbnail-caption:after, .parent-feature .wp-caption:before, .parent-feature .wp-caption:after, .parent-feature .thumbnail-caption:before, .parent-feature .thumbnail-caption:after { content: url(../images/img_feature.png); }
+.section-feature .wp-caption p, .section-feature .thumbnail-caption p, .category-feature .wp-caption p, .category-feature .thumbnail-caption p, .parent-feature .wp-caption p, .parent-feature .thumbnail-caption p { z-index: 1; position: relative; }
 
 .section-feature li, .category-feature li, .parent-feature li, .single-feature .notes-external_link li, .single-feature .entry-content li { list-style: url(../images/bullet_feature.png) inside; }
 
@@ -110,7 +110,6 @@ dd { margin-bottom: 14px; }
 .section-feature a.link-down:hover, .section-feature .link-container-down a[href]:hover, .category-feature a.link-down:hover, .category-feature .link-container-down a[href]:hover, .parent-feature a.link-down:hover, .parent-feature .link-container-down a[href]:hover, .single-feature a.link-down:hover, .single-feature .link-container-down a[href]:hover { background-color: #00627e; }
 .section-feature a.link-down:after, .section-feature .link-container-down a[href]:after, .category-feature a.link-down:after, .category-feature .link-container-down a[href]:after, .parent-feature a.link-down:after, .parent-feature .link-container-down a[href]:after, .single-feature a.link-down:after, .single-feature .link-container-down a[href]:after { content: url(../images/arrow_feature_down.png); white-space: nowrap; padding-left: 2px; }
 .section-feature a.link-down:hover:after, .section-feature .link-container-down a[href]:hover:after, .category-feature a.link-down:hover:after, .category-feature .link-container-down a[href]:hover:after, .parent-feature a.link-down:hover:after, .parent-feature .link-container-down a[href]:hover:after, .single-feature a.link-down:hover:after, .single-feature .link-container-down a[href]:hover:after { content: url(../images/arrow_hover_down.png); }
-.section-feature .wp-caption-text a[href], .category-feature .wp-caption-text a[href], .parent-feature .wp-caption-text a[href], .single-feature .wp-caption-text a[href] { color: white; }
 
 .section-feature #logo, .category-feature #logo, .parent-feature #logo, .single-feature #logo { background: transparent; }
 
@@ -118,7 +117,9 @@ dd { margin-bottom: 14px; }
 #access .feature:hover { background: #00627e; }
 
 .section-snippet .aside, .category-snippet .aside, .parent-snippet .aside { background-color: #d4f870; }
-.section-snippet .wp-caption p, .section-snippet .thumbnail-caption p, .category-snippet .wp-caption p, .category-snippet .thumbnail-caption p, .parent-snippet .wp-caption p, .parent-snippet .thumbnail-caption p { z-index: 1; position: static; color: white; }
+.section-snippet .wp-caption, .section-snippet .thumbnail-caption, .category-snippet .wp-caption, .category-snippet .thumbnail-caption, .parent-snippet .wp-caption, .parent-snippet .thumbnail-caption { background-color: #d4f870; }
+.section-snippet .wp-caption:before, .section-snippet .wp-caption:after, .section-snippet .thumbnail-caption:before, .section-snippet .thumbnail-caption:after, .category-snippet .wp-caption:before, .category-snippet .wp-caption:after, .category-snippet .thumbnail-caption:before, .category-snippet .thumbnail-caption:after, .parent-snippet .wp-caption:before, .parent-snippet .wp-caption:after, .parent-snippet .thumbnail-caption:before, .parent-snippet .thumbnail-caption:after { content: url(../images/img_snippet.png); }
+.section-snippet .wp-caption p, .section-snippet .thumbnail-caption p, .category-snippet .wp-caption p, .category-snippet .thumbnail-caption p, .parent-snippet .wp-caption p, .parent-snippet .thumbnail-caption p { z-index: 1; position: relative; }
 
 .section-snippet li, .category-snippet li, .parent-snippet li, .single-snippet .notes-external_link li, .single-snippet .entry-content li { list-style: url(../images/bullet_snippet.png) inside; }
 
@@ -137,7 +138,6 @@ dd { margin-bottom: 14px; }
 .section-snippet a.link-down:hover, .section-snippet .link-container-down a[href]:hover, .category-snippet a.link-down:hover, .category-snippet .link-container-down a[href]:hover, .parent-snippet a.link-down:hover, .parent-snippet .link-container-down a[href]:hover, .single-snippet a.link-down:hover, .single-snippet .link-container-down a[href]:hover { background-color: #168055; }
 .section-snippet a.link-down:after, .section-snippet .link-container-down a[href]:after, .category-snippet a.link-down:after, .category-snippet .link-container-down a[href]:after, .parent-snippet a.link-down:after, .parent-snippet .link-container-down a[href]:after, .single-snippet a.link-down:after, .single-snippet .link-container-down a[href]:after { content: url(../images/arrow_snippet_down.png); white-space: nowrap; padding-left: 2px; }
 .section-snippet a.link-down:hover:after, .section-snippet .link-container-down a[href]:hover:after, .category-snippet a.link-down:hover:after, .category-snippet .link-container-down a[href]:hover:after, .parent-snippet a.link-down:hover:after, .parent-snippet .link-container-down a[href]:hover:after, .single-snippet a.link-down:hover:after, .single-snippet .link-container-down a[href]:hover:after { content: url(../images/arrow_hover_down.png); }
-.section-snippet .wp-caption-text a[href], .category-snippet .wp-caption-text a[href], .parent-snippet .wp-caption-text a[href], .single-snippet .wp-caption-text a[href] { color: white; }
 
 .section-snippet #logo, .category-snippet #logo, .parent-snippet #logo, .single-snippet #logo { background: transparent; }
 
@@ -145,7 +145,9 @@ dd { margin-bottom: 14px; }
 #access .snippet:hover { background: #168055; }
 
 .section-podcast .aside, .category-podcast .aside, .parent-podcast .aside { background-color: #ffda73; }
-.section-podcast .wp-caption p, .section-podcast .thumbnail-caption p, .category-podcast .wp-caption p, .category-podcast .thumbnail-caption p, .parent-podcast .wp-caption p, .parent-podcast .thumbnail-caption p { z-index: 1; position: static; color: white; }
+.section-podcast .wp-caption, .section-podcast .thumbnail-caption, .category-podcast .wp-caption, .category-podcast .thumbnail-caption, .parent-podcast .wp-caption, .parent-podcast .thumbnail-caption { background-color: #ffda73; }
+.section-podcast .wp-caption:before, .section-podcast .wp-caption:after, .section-podcast .thumbnail-caption:before, .section-podcast .thumbnail-caption:after, .category-podcast .wp-caption:before, .category-podcast .wp-caption:after, .category-podcast .thumbnail-caption:before, .category-podcast .thumbnail-caption:after, .parent-podcast .wp-caption:before, .parent-podcast .wp-caption:after, .parent-podcast .thumbnail-caption:before, .parent-podcast .thumbnail-caption:after { content: url(../images/img_podcast.png); }
+.section-podcast .wp-caption p, .section-podcast .thumbnail-caption p, .category-podcast .wp-caption p, .category-podcast .thumbnail-caption p, .parent-podcast .wp-caption p, .parent-podcast .thumbnail-caption p { z-index: 1; position: relative; }
 
 .section-podcast li, .category-podcast li, .parent-podcast li, .single-podcast .notes-external_link li, .single-podcast .entry-content li { list-style: url(../images/bullet_podcast.png) inside; }
 
@@ -164,7 +166,6 @@ dd { margin-bottom: 14px; }
 .section-podcast a.link-down:hover, .section-podcast .link-container-down a[href]:hover, .category-podcast a.link-down:hover, .category-podcast .link-container-down a[href]:hover, .parent-podcast a.link-down:hover, .parent-podcast .link-container-down a[href]:hover, .single-podcast a.link-down:hover, .single-podcast .link-container-down a[href]:hover { background-color: #d98600; }
 .section-podcast a.link-down:after, .section-podcast .link-container-down a[href]:after, .category-podcast a.link-down:after, .category-podcast .link-container-down a[href]:after, .parent-podcast a.link-down:after, .parent-podcast .link-container-down a[href]:after, .single-podcast a.link-down:after, .single-podcast .link-container-down a[href]:after { content: url(../images/arrow_podcast_down.png); white-space: nowrap; padding-left: 2px; }
 .section-podcast a.link-down:hover:after, .section-podcast .link-container-down a[href]:hover:after, .category-podcast a.link-down:hover:after, .category-podcast .link-container-down a[href]:hover:after, .parent-podcast a.link-down:hover:after, .parent-podcast .link-container-down a[href]:hover:after, .single-podcast a.link-down:hover:after, .single-podcast .link-container-down a[href]:hover:after { content: url(../images/arrow_hover_down.png); }
-.section-podcast .wp-caption-text a[href], .category-podcast .wp-caption-text a[href], .parent-podcast .wp-caption-text a[href], .single-podcast .wp-caption-text a[href] { color: white; }
 
 .section-podcast #logo, .category-podcast #logo, .parent-podcast #logo, .single-podcast #logo { background: transparent; }
 
@@ -172,7 +173,9 @@ dd { margin-bottom: 14px; }
 #access .podcast:hover { background: #d98600; }
 
 .section-other .aside, .section-study .aside, .section-announcement .aside, .section-event .aside, .category-other .aside, .category-study .aside, .category-announcement .aside, .category-event .aside, .parent-other .aside, .parent-study .aside, .parent-announcement .aside, .parent-event .aside { background-color: #ff7373; }
-.section-other .wp-caption p, .section-study .wp-caption p, .section-announcement .wp-caption p, .section-event .wp-caption p, .section-other .thumbnail-caption p, .section-study .thumbnail-caption p, .section-announcement .thumbnail-caption p, .section-event .thumbnail-caption p, .category-other .wp-caption p, .category-study .wp-caption p, .category-announcement .wp-caption p, .category-event .wp-caption p, .category-other .thumbnail-caption p, .category-study .thumbnail-caption p, .category-announcement .thumbnail-caption p, .category-event .thumbnail-caption p, .parent-other .wp-caption p, .parent-study .wp-caption p, .parent-announcement .wp-caption p, .parent-event .wp-caption p, .parent-other .thumbnail-caption p, .parent-study .thumbnail-caption p, .parent-announcement .thumbnail-caption p, .parent-event .thumbnail-caption p { z-index: 1; position: static; color: white; }
+.section-other .wp-caption, .section-study .wp-caption, .section-announcement .wp-caption, .section-event .wp-caption, .section-other .thumbnail-caption, .section-study .thumbnail-caption, .section-announcement .thumbnail-caption, .section-event .thumbnail-caption, .category-other .wp-caption, .category-study .wp-caption, .category-announcement .wp-caption, .category-event .wp-caption, .category-other .thumbnail-caption, .category-study .thumbnail-caption, .category-announcement .thumbnail-caption, .category-event .thumbnail-caption, .parent-other .wp-caption, .parent-study .wp-caption, .parent-announcement .wp-caption, .parent-event .wp-caption, .parent-other .thumbnail-caption, .parent-study .thumbnail-caption, .parent-announcement .thumbnail-caption, .parent-event .thumbnail-caption { background-color: #ff7373; }
+.section-other .wp-caption:before, .section-study .wp-caption:before, .section-announcement .wp-caption:before, .section-event .wp-caption:before, .section-other .wp-caption:after, .section-study .wp-caption:after, .section-announcement .wp-caption:after, .section-event .wp-caption:after, .section-other .thumbnail-caption:before, .section-study .thumbnail-caption:before, .section-announcement .thumbnail-caption:before, .section-event .thumbnail-caption:before, .section-other .thumbnail-caption:after, .section-study .thumbnail-caption:after, .section-announcement .thumbnail-caption:after, .section-event .thumbnail-caption:after, .category-other .wp-caption:before, .category-study .wp-caption:before, .category-announcement .wp-caption:before, .category-event .wp-caption:before, .category-other .wp-caption:after, .category-study .wp-caption:after, .category-announcement .wp-caption:after, .category-event .wp-caption:after, .category-other .thumbnail-caption:before, .category-study .thumbnail-caption:before, .category-announcement .thumbnail-caption:before, .category-event .thumbnail-caption:before, .category-other .thumbnail-caption:after, .category-study .thumbnail-caption:after, .category-announcement .thumbnail-caption:after, .category-event .thumbnail-caption:after, .parent-other .wp-caption:before, .parent-study .wp-caption:before, .parent-announcement .wp-caption:before, .parent-event .wp-caption:before, .parent-other .wp-caption:after, .parent-study .wp-caption:after, .parent-announcement .wp-caption:after, .parent-event .wp-caption:after, .parent-other .thumbnail-caption:before, .parent-study .thumbnail-caption:before, .parent-announcement .thumbnail-caption:before, .parent-event .thumbnail-caption:before, .parent-other .thumbnail-caption:after, .parent-study .thumbnail-caption:after, .parent-announcement .thumbnail-caption:after, .parent-event .thumbnail-caption:after { content: url(../images/img_other.png); }
+.section-other .wp-caption p, .section-study .wp-caption p, .section-announcement .wp-caption p, .section-event .wp-caption p, .section-other .thumbnail-caption p, .section-study .thumbnail-caption p, .section-announcement .thumbnail-caption p, .section-event .thumbnail-caption p, .category-other .wp-caption p, .category-study .wp-caption p, .category-announcement .wp-caption p, .category-event .wp-caption p, .category-other .thumbnail-caption p, .category-study .thumbnail-caption p, .category-announcement .thumbnail-caption p, .category-event .thumbnail-caption p, .parent-other .wp-caption p, .parent-study .wp-caption p, .parent-announcement .wp-caption p, .parent-event .wp-caption p, .parent-other .thumbnail-caption p, .parent-study .thumbnail-caption p, .parent-announcement .thumbnail-caption p, .parent-event .thumbnail-caption p { z-index: 1; position: relative; }
 
 .section-other li, .section-study li, .section-announcement li, .section-event li, .category-other li, .category-study li, .category-announcement li, .category-event li, .parent-other li, .parent-study li, .parent-announcement li, .parent-event li, .single-other .notes-external_link li, .page .notes-external_link li, .single-study .notes-external_link li, .single-announcement .notes-external_link li, .single-event .notes-external_link li, .single-other .entry-content li, .page .entry-content li, .single-study .entry-content li, .single-announcement .entry-content li, .single-event .entry-content li { list-style: url(../images/bullet_other.png) inside; }
 
@@ -191,7 +194,6 @@ dd { margin-bottom: 14px; }
 .section-other a.link-down:hover, .section-study a.link-down:hover, .section-announcement a.link-down:hover, .section-event a.link-down:hover, .section-other .link-container-down a[href]:hover, .section-study .link-container-down a[href]:hover, .section-announcement .link-container-down a[href]:hover, .section-event .link-container-down a[href]:hover, .category-other a.link-down:hover, .category-study a.link-down:hover, .category-announcement a.link-down:hover, .category-event a.link-down:hover, .category-other .link-container-down a[href]:hover, .category-study .link-container-down a[href]:hover, .category-announcement .link-container-down a[href]:hover, .category-event .link-container-down a[href]:hover, .parent-other a.link-down:hover, .parent-study a.link-down:hover, .parent-announcement a.link-down:hover, .parent-event a.link-down:hover, .parent-other .link-container-down a[href]:hover, .parent-study .link-container-down a[href]:hover, .parent-announcement .link-container-down a[href]:hover, .parent-event .link-container-down a[href]:hover, .single-other a.link-down:hover, .page a.link-down:hover, .single-study a.link-down:hover, .single-announcement a.link-down:hover, .single-event a.link-down:hover, .single-other .link-container-down a[href]:hover, .page .link-container-down a[href]:hover, .single-study .link-container-down a[href]:hover, .single-announcement .link-container-down a[href]:hover, .single-event .link-container-down a[href]:hover { background-color: #9f1838; }
 .section-other a.link-down:after, .section-study a.link-down:after, .section-announcement a.link-down:after, .section-event a.link-down:after, .section-other .link-container-down a[href]:after, .section-study .link-container-down a[href]:after, .section-announcement .link-container-down a[href]:after, .section-event .link-container-down a[href]:after, .category-other a.link-down:after, .category-study a.link-down:after, .category-announcement a.link-down:after, .category-event a.link-down:after, .category-other .link-container-down a[href]:after, .category-study .link-container-down a[href]:after, .category-announcement .link-container-down a[href]:after, .category-event .link-container-down a[href]:after, .parent-other a.link-down:after, .parent-study a.link-down:after, .parent-announcement a.link-down:after, .parent-event a.link-down:after, .parent-other .link-container-down a[href]:after, .parent-study .link-container-down a[href]:after, .parent-announcement .link-container-down a[href]:after, .parent-event .link-container-down a[href]:after, .single-other a.link-down:after, .page a.link-down:after, .single-study a.link-down:after, .single-announcement a.link-down:after, .single-event a.link-down:after, .single-other .link-container-down a[href]:after, .page .link-container-down a[href]:after, .single-study .link-container-down a[href]:after, .single-announcement .link-container-down a[href]:after, .single-event .link-container-down a[href]:after { content: url(../images/arrow_other_down.png); white-space: nowrap; padding-left: 2px; }
 .section-other a.link-down:hover:after, .section-study a.link-down:hover:after, .section-announcement a.link-down:hover:after, .section-event a.link-down:hover:after, .section-other .link-container-down a[href]:hover:after, .section-study .link-container-down a[href]:hover:after, .section-announcement .link-container-down a[href]:hover:after, .section-event .link-container-down a[href]:hover:after, .category-other a.link-down:hover:after, .category-study a.link-down:hover:after, .category-announcement a.link-down:hover:after, .category-event a.link-down:hover:after, .category-other .link-container-down a[href]:hover:after, .category-study .link-container-down a[href]:hover:after, .category-announcement .link-container-down a[href]:hover:after, .category-event .link-container-down a[href]:hover:after, .parent-other a.link-down:hover:after, .parent-study a.link-down:hover:after, .parent-announcement a.link-down:hover:after, .parent-event a.link-down:hover:after, .parent-other .link-container-down a[href]:hover:after, .parent-study .link-container-down a[href]:hover:after, .parent-announcement .link-container-down a[href]:hover:after, .parent-event .link-container-down a[href]:hover:after, .single-other a.link-down:hover:after, .page a.link-down:hover:after, .single-study a.link-down:hover:after, .single-announcement a.link-down:hover:after, .single-event a.link-down:hover:after, .single-other .link-container-down a[href]:hover:after, .page .link-container-down a[href]:hover:after, .single-study .link-container-down a[href]:hover:after, .single-announcement .link-container-down a[href]:hover:after, .single-event .link-container-down a[href]:hover:after { content: url(../images/arrow_hover_down.png); }
-.section-other .wp-caption-text a[href], .section-study .wp-caption-text a[href], .section-announcement .wp-caption-text a[href], .section-event .wp-caption-text a[href], .category-other .wp-caption-text a[href], .category-study .wp-caption-text a[href], .category-announcement .wp-caption-text a[href], .category-event .wp-caption-text a[href], .parent-other .wp-caption-text a[href], .parent-study .wp-caption-text a[href], .parent-announcement .wp-caption-text a[href], .parent-event .wp-caption-text a[href], .single-other .wp-caption-text a[href], .page .wp-caption-text a[href], .single-study .wp-caption-text a[href], .single-announcement .wp-caption-text a[href], .single-event .wp-caption-text a[href] { color: white; }
 
 .section-other #logo, .section-study #logo, .section-announcement #logo, .section-event #logo, .category-other #logo, .category-study #logo, .category-announcement #logo, .category-event #logo, .parent-other #logo, .parent-study #logo, .parent-announcement #logo, .parent-event #logo, .single-other #logo, .page #logo, .single-study #logo, .single-announcement #logo, .single-event #logo { background: transparent; }
 

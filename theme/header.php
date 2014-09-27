@@ -28,6 +28,9 @@
 	 * Print the <title> tag based on what is being viewed.
 	 */
 	global $page, $paged;
+	
+	
+	
 
 	wp_title( '|', true, 'right' );
 
@@ -54,7 +57,11 @@
 <link rel="stylesheet" type="text/css" media="(min-width: 1400px)" href="<?php echo resource('styles/extra-large.css'); ?>" />
 <link rel="stylesheet" type="text/css" media="(min-width: 800px) and (max-width: 1400px)" href="<?php echo resource('styles/large.css'); ?>" />
 <!--<link rel="stylesheet" type="text/css" media="(min-width: 724px) and (max-width: 970px)" href="<?php echo resource('styles/medium.css'); ?>" />-->
-<link rel="stylesheet" type="text/css" media="(min-width: 200px) and (max-width: 800px)" href="<?php echo resource('styles/small.css'); ?>" />
+<link rel="stylesheet" type="text/css" media="(min-width: 200px) and (max-width: 800px)" href="<?php echo resource('styles/small.css'); ?>"/ >
+
+
+
+
 
 <?php wp_enqueue_script('twitter') ?>
 <?php wp_enqueue_script( 'jquery' ); ?>
