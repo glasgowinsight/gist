@@ -53,6 +53,8 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .bigfatpost { height: 351px; width: 927px; }
 
+.section-latest .posts .big_main { width: 927px; }
+
 .section-latest .posts .main { width: 314px !important; max-width: none; position: absolute; left: 314px; margin: 14px 0; }
 
 .section-latest .posts .right { position: relative; left: 300px; }

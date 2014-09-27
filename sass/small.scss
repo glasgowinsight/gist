@@ -47,7 +47,7 @@ label { display: inline-block; width: 10em; }
 			left: 30px; 
 			background-color: inherit; 
 			padding: $inner 0;
-			&:after { content: ""; position: absolute; width:1000px; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
+			&:after { content: ""; position: absolute; height: 100%; z-index: -1; background-color: inherit; left: 50px; top: 0; }
 		}
 	}
 }

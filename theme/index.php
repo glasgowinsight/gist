@@ -89,9 +89,25 @@ get_header(); ?>
 	?>
 		<div id="primary">
 			<div id="content" role="main">
+			
+				<div class = "section section-other" style="display:inline-block;">
+						<div style="display:inline-block;">
+							<h1 style="background-color:#9F1838;"> Conference </h1> </div>
+						<div style="display:inline-block;">
+							<p> Check out the <a href="http://the-gist.org/conference" class="link">details</a> about our new exciting conference coming up very soon!
+						</div>
+				</div>
+			
+			
 				<div id="sections">
+					
+					
+					
 					<div class="section section-latest">
 						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_latest.png'); ?>"/>//&nbsp;Latest</h1></div>
+						
+						
+						
 						<div class="posts">
 							<div class="bigfatpost">
 								<?php $post = $posts['latest'][0]; //main big post?>
@@ -120,7 +136,9 @@ get_header(); ?>
 								<br class="clear"/>
 							</div>
 						</div>
+						
 					</div>
+					
 					
 					<div class="section  section-feature">
 						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_feature.png'); ?>"/><a href="<?php echo get_category_link_by_slug('feature'); ?>">//&nbsp;Features</a></h1></div>

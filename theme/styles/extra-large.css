@@ -53,6 +53,8 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .bigfatpost { height: 351px; width: 927px; }
 
+.section-latest .posts .big_main { width: 927px; }
+
 .section-latest .posts .main { width: 314px !important; max-width: none; position: absolute; left: 314px; margin: 14px 0; }
 
 .section-latest .posts .right { position: relative; left: 300px; }
@@ -81,7 +83,11 @@ h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
 .section-latest .posts .post .bigfatpost { width: 927px; }
 
-.section-latest .posts .post, .section-podcast .posts .post, .section-podcast .posts .articles { width: 300px; max-width: none; }
+.section-latest .row { width: 927px; }
+
+.section-latest .row .post { width: 300px; }
+
+.section-latest .posts, .section-podcast .posts, .section-podcast .posts .articles { width: 300px; max-width: none; }
 
 .section-podcast .posts .post, .section-podcast .posts .articles, .section-podcast .posts .twitter-timeline { margin-left: 0; margin-right: 14px; }
 

@@ -14,7 +14,7 @@ body, html {
 		Arial,
 		sans-serif;
   font-size: 16px;
-  overflow-x: hidden;
+  //overflow-x: hidden;
   background-image:url(../images/bkg.jpg) ;
   background-attachment:fixed;
 }
@@ -42,7 +42,7 @@ h3 { font-size: 18px; text-align: center; margin-bottom: $half_margin; text-tran
 .comment-content { margin: $half_margin 0; }
 
 
-.entry-content { line-height: $big_margin; width: 300px;}
+.entry-content { line-height: $big_margin; max-width: 442px;}
 .entry-content, .category-archive-meta, #author-info { 
 	br, ul.longlist li { 
             margin-bottom: $margin; 
@@ -50,7 +50,7 @@ h3 { font-size: 18px; text-align: center; margin-bottom: $half_margin; text-tran
 	p, ul { 
             margin-bottom: $margin; 
             margin-top: $margin; 
-			width:300px;
+			
         }
 }
 

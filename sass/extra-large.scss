@@ -7,10 +7,16 @@
 .entry-content-single {line-height: $big_margin; width: 884px;}
 
 
+
+
 .section-podcast { float:right; width: 400px; }
 .posts .articles .twitter-timeline { width: $wide_column; }
 .section-latest .posts .post .bigfatpost {width: 927px;}
-.section-latest .posts .post, .section-podcast .posts .post, .section-podcast .posts .articles { width: $wide_column; max-width: none; }
+
+.section-latest .row {width: 927px;}
+.section-latest .row .post {width: $wide_column;}
+.section-latest .posts, .section-podcast .posts, .section-podcast .posts .articles { width: $wide_column; max-width: none; }
+
 .section-podcast .posts {
     .post, .articles, .twitter-timeline { margin-left: 0; margin-right: $margin; }
 }

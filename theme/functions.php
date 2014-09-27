@@ -236,8 +236,11 @@ function get_extract( $classes = '', $thumb = 'medium_thumb' ) {	?>
 
 function get_main_extract( $classes = '', $thumb = 'large_thumb' ) {	?>
 	
+		
 	
-	<div id="post-<?php the_ID(); ?>" <?php post_class('extract ' . $classes); ?> style="height:320px; width:927px">
+	
+	
+	<div id="post-<?php the_ID(); ?>" <?php post_class('extract ' . $classes); ?> style="height:320px;">
 		
 		
 
