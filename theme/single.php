@@ -21,7 +21,7 @@ get_header(); ?>
 					<?php $rel = $related->show(get_the_ID(), true); ?>
 					<?php if ( $rel ): ?>
 							<div id="related">
-								<h2 class="bleed-switch"><?php echo $bleed; ?>Related Articles</h2>  
+								<h2 class="bleed-switch"><?php/* echo $bleed; */?>Related Articles</h2>  
 								<?php foreach ($rel as $post) : ?>
 									<?php $post_ids[] = $post->ID; ?>
 									<?php setup_postdata($post); ?>
@@ -96,7 +96,7 @@ get_header(); ?>
 							'post__not_in'=>$post_ids)); ?>
 						<?php if ( have_posts() ) : ?>
 							<div id="latest">
-								<h2 class="bleed-switch"><?php echo $bleed; ?>Latest Articles</h2>  
+								<h2 class="bleed-switch"><?php /*echo $bleed;*/ ?>Latest Articles</h2>  
 								<?php get_archive_posts(3); ?>
 							</div>
 						<?php endif; ?>

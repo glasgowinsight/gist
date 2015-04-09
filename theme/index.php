@@ -104,7 +104,9 @@ get_header(); ?>
 					
 					
 					<div class="section section-latest">
-						<div><h1 class="bleed-left"><img src="<?php echo resource('images/bleed_latest.png'); ?>"/>//&nbsp;Latest</h1></div>
+						<div><h1 class="bleed-left">
+						<!--<img src=" <?php /*echo resource('images/bleed_latest.png'); */?>"/> -->
+						//&nbsp;Latest</h1></div>
 						
 						
 						
