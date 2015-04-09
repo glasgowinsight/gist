@@ -1,12 +1,12 @@
 .post, .articles, .category-archive-meta, #author-info, #comments { float: left; }
 
-.posts .post, .posts .articles, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
+.posts .post, .posts .articles, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .section-sci4socarticlecompetition .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { max-width: none; float: left; margin: 14px 0; padding: 0; }
 
 .posts .twitter-timeline { margin: 14px auto; }
 
 .posts .right { margin-left: 14px; }
 
-.section-other .row .right, .section-study .row .right, .section-announcement .row .right, .section-event .row .right { margin: 14px 0; }
+.section-other .row .right, .section-study .row .right, .section-announcement .row .right, .section-event .row .right, .section-sci4socarticlecompetition .row .right { margin: 14px 0; }
 
 .single #sidebar, .page #sidebar, .single #related, .page #related { float: right; clear: right; }
 .single #container, .page #container { position: relative; }
@@ -30,8 +30,8 @@
 #access .snippet:hover { background: url(../images/nav_snippet.png) no-repeat 0 0; }
 #access .podcast { background: url(../images/nav_podcast.png) no-repeat 0 -40px; position: absolute; top: 0; right: -100px; width: 400px; }
 #access .podcast:hover { background: url(../images/nav_podcast.png) no-repeat 0 0; }
-#access .other, #access .study, #access .announcement, #access .event { background: url(../images/nav_other.png) no-repeat 0 -40px; position: absolute; top: 0; right: -250px; width: 400px; }
-#access .other:hover, #access .study:hover, #access .announcement:hover, #access .event:hover { background: url(../images/nav_other.png) no-repeat 0 0; }
+#access .other, #access .study, #access .announcement, #access .event, #access .sci4socarticlecompetition { background: url(../images/nav_other.png) no-repeat 0 -40px; position: absolute; top: 0; right: -250px; width: 400px; }
+#access .other:hover, #access .study:hover, #access .announcement:hover, #access .event:hover, #access .sci4socarticlecompetition:hover { background: url(../images/nav_other.png) no-repeat 0 0; }
 
 #nav-below .nav-previous { float: left; }
 
@@ -49,7 +49,7 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .section-latest { position: relative; }
 
-.posts .post, .posts .articles, .posts .twitter-timeline, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
+.posts .post, .posts .articles, .posts .twitter-timeline, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .section-sci4socarticlecompetition .row, .archive .post, .search .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; }
 
 .bigfatpost { height: 351px; width: 927px; }
 
@@ -59,7 +59,7 @@ div.alignleft img, div.alignright img, div.aligncenter img, .thumbnail-caption i
 
 .section-latest .posts .right { position: relative; left: 300px; }
 
-.section-latest .posts .left, .posts .main, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row { margin-right: 14px; }
+.section-latest .posts .left, .posts .main, .section-other .row, .section-study .row, .section-announcement .row, .section-event .row, .section-sci4socarticlecompetition .row { margin-right: 14px; }
 
 .references { position: absolute; bottom: 0; }
 
@@ -75,7 +75,11 @@ h1, .single h2, .page h2, #nav-below h3 { width: 300px; }
 
 .entry-content-single { line-height: 21px; width: 442px; }
 
-.section-latest .posts .post, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; max-width: none; }
+.section-latest .row { width: 927px; }
+
+.section-latest .row .post { width: 300px; }
+
+.section-latest .posts, .single #related, .page #related, .single #latest, .page #latest, .single .references, .page .references, .single #other .post, .page #other .post { width: 300px; max-width: none; }
 
 .single #article, .page #article { width: 442px; }
 .single .aside, .page .aside { width: 221px; }

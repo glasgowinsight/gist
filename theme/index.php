@@ -90,13 +90,13 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 			
-				<div class = "section section-other" style="display:inline-block;">
+				<!-- <div class = "section section-other" style="display:inline-block;">
 						<div style="display:inline-block;">
 							<h1 style="background-color:#9F1838;"> Conference </h1> </div>
 						<div style="display:inline-block;">
 							<p> Check out the <a href="http://the-gist.org/conference" class="link">details</a> about our new exciting conference coming up very soon!
 						</div>
-				</div>
+				</div> -->
 			
 			
 				<div id="sections">
