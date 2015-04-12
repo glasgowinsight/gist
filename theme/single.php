@@ -70,25 +70,25 @@ get_header(); ?>
                                                         }
                                                     }
                                                 ?>
-						<?php if(!in_category('feature')):?>
+						<?php /*if(!in_category('feature')):*/?> <!-- basically all articles should have the short refs now 12-4-15 -->
 							<div class="short-references">
                                                             <?php show_notes('external_link', 'Links', 'bleed-left'); ?>
                                                             <?php show_notes('notes', 'Notes', 'bleed-left'); ?>
                                                             <?php show_notes('corrections', 'Corrections', 'bleed-left'); ?>
                                                             <?php show_notes('references', 'References', 'bleed-left'); ?>
 							</div>
-						<?php endif; ?>
+						<?php /*endif;*/ ?>
 					</div>
 
 					<div id="sidebar">
-						<?php if(in_category('feature')):?>
-                                                    <div class="references">
-                                                        <?php show_notes('external_link', 'Links', 'bleed-switch'); ?>
+						<?php /*if(in_category('feature')):*/?> <!-- all articles to have short refs instead-->
+                                                <!--    <div class="references">
+                                                        <?php /*show_notes('external_link', 'Links', 'bleed-switch'); ?>
                                                         <?php show_notes('notes', 'Notes', 'bleed-switch'); ?>
                                                         <?php show_notes('corrections', 'Corrections', 'bleed-switch'); ?>
-                                                        <?php show_notes('references', 'References', 'bleed-switch'); ?>
-                                                    </div>
-						<?php endif; ?>
+                                                        <?php show_notes('references', 'References', 'bleed-switch'); */?>
+                                                    </div> -->
+						<?php /*endif; */?>
 						
 						<?php query_posts(array(
 							'category_name'=>'feature,snippet',
